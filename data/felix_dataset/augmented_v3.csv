@@ -1,0 +1,61 @@
+neutral,output,control,function,positions,multi_allowed,social_context,context,slangs,source
+Form sahi rakho warna injury hogi.,Form sahi rakho danda warna injury hogi.,ASSERT_WARNING,,,False,,,danda,groq_aug_v3_variant
+Kya tum mere saath market chaloge?,"Kya tum mere saath market chaloge, baat khatam?",ASSERT_NEUTRAL,,,False,,,baat khatam,groq_aug_v3_variant
+Notes share kar do.,Abhi notes share kar do.,REQUEST_URGENCY,,,False,,,Abhi,groq_aug_v3_variant
+Coffee bahut strong hai,Coffee bindaas strong hai,ASSERT_HAPPY,,,False,,,bindaas,groq_aug_v3_variant
+Mujhe yeh movie pasand aayi,Mujhe yeh movie bawaal pasand aayi,ASSERT_EXCITED,,,False,,,bawaal,groq_aug_v3_variant
+Mujhe naya phone lena hai,"Mujhe naya phone lena hai, kya scene hai?",REQUEST_NEUTRAL,,,False,,,Kya scene hai,groq_aug_v3_variant
+"Online gaming mein lag lag raha hai, mujhe kaafi pareshan kar raha hai.","Oye, online gaming mein lag lag raha hai, mujhe kaafi pareshan kar raha hai.",REQUEST_FRUSTRATION,,,False,,online gaming,Oye,groq_aug_v3_novel
+System crash ho gaya,"System crash ho gaya, scene off hai.",ASSERT_FRUSTRATION,,,False,,,scene off hai,groq_aug_v3_variant
+Station bahut door hai.,"Station bahut door hai, Dimaag ki dahi.",ASSERT_STRESS,,,False,,,Dimaag ki dahi,groq_aug_v3_variant
+Aaj weather kaafi pleasant hai,"Aaj weather kaafi pleasant hai, Tod-phod!",ASSERT_POSITIVE,,,False,,,Tod-phod,groq_aug_v3_variant
+Stock khatam ho gaya.,"Stock khatam ho gaya, scene off.",ASSERT_SADNESS,,,False,,,Scene off,groq_aug_v3_variant
+Weekend ka plan kya hai,"Weekend ka plan kya hai, palti maarna?",REQUEST_NEUTRAL,,,False,,,Palti maarna,groq_aug_v3_variant
+"Mera startup pitch bahut hi zabardast hai, team, let's crush it!","Mera startup pitch bahut hi zabardast kadak hai, team, let's crush it!",ASSERT_EXCITED,,,False,,startup pitch,kadak,groq_aug_v3_novel
+Naya update install kar liya,"Sun, naya update install kar liya",INFO_STATEMENT,,,False,,,sun,groq_aug_v3_variant
+Salary abhi tak nahi aayi.,"Salary abhi tak nahi aayi, yaar.",ASSERT_ANXIETY,,,False,,,Yaar,groq_aug_v3_variant
+Main tumhari help kar dunga,"Main tumhari help kar dunga, paisa vasool",ASSERT_POSITIVE,,,False,,,Paisa vasool,groq_aug_v3_variant
+Phone ka storage almost full ho gaya,"Phone ka storage almost full ho gaya, kalesh",ASSERT_FRUSTRATION,,,False,,,kalesh,groq_aug_v3_variant
+Usne match mein aakhri ball par six maara.,Usne match mein aakhri ball par badiya six maara.,ASSERT_HAPPY,,,False,,,badiya,groq_aug_v3_variant
+Nayi web series start ki,"Nayi web series start ki, bro.",INFO_STATEMENT,,,False,,,bro,groq_aug_v3_variant
+Proxy laga dena meri.,Proxy laga dena meri na.,REQUEST_NEUTRAL,,,False,,,na,groq_aug_v3_variant
+Market mein bahut bheed thi,"Market mein bahut kaand tha, bahut bheed thi",ASSERT_NEGATIVE,,,False,,,Kaand,groq_aug_v3_variant
+"Chai break ka time aagaya, sab log excited hain!","Chai break ka time aagaya, sab log excited hain, abe!",ASSERT_EXCITED,,,False,,chai break,abe,groq_aug_v3_novel
+Yeh naya mobile bahut fast chalta hai.,Yeh naya mobile kaam ka bahut fast chalta hai.,ASSERT_POSITIVE,,,False,,,kaam ka,groq_aug_v3_variant
+Movie ka script structure achha tha.,Movie ka script structure bass achha tha.,ASSERT_POSITIVE,,,False,,,Bass,groq_aug_v3_variant
+Assignment bahut lamba hai,Assignment ka load bahut lamba hai,ASSERT_ANXIETY,,,False,,,load,groq_aug_v3_variant
+Party bahut mazedaar thi,Party tezz-tarrar bahut mazedaar thi,ASSERT_POSITIVE,,,False,,,tezz-tarrar,groq_aug_v3_variant
+Office meeting mein sab log apni reports share karenge.,"Office meeting mein sab log apni reports share karenge, guru.",INFO_STATEMENT,,,False,,office meeting,guru,groq_aug_v3_novel
+Mera dil khush nahi hai jab street food khatam ho jata hai.,"Mera dil khush nahi hai jab street food khatam ho jata hai, Kaand ho gaya.",ASSERT_SADNESS,,,False,,street food,Kaand ho gaya,groq_aug_v3_novel
+Syllabus bahut zyada hai.,"Syllabus bahut zyada hai, body bol gayi.",ASSERT_STRESS,,,False,,,Body bol gayi,groq_aug_v3_variant
+Kripya shanti banaye rakhein,"Kripya shanti banaye rakhein, Scene kya hai?",ASSERT_NEUTRAL,,,False,,,Scene kya hai,groq_aug_v3_variant
+Local train mein dhakke lag rahe hain.,Local train mein Dhappa dhakke lag rahe hain.,ASSERT_FRUSTRATION,,,False,,,Dhappa,groq_aug_v3_variant
+Mera laptop charge nahi ho raha.,"Mera laptop charge nahi ho raha, dimaag kharab.",ASSERT_STRESS,,,False,,,dimaag kharab,groq_aug_v3_variant
+Mausam aaj bahut achha hai,"Mausam aaj bahut achha hai, YOLO",ASSERT_POSITIVE,,,False,,,YOLO,groq_aug_v3_variant
+Main kal raat bhar code likhta raha.,"Main kal raat bhar code likhta raha, Jaan nikal gayi.",ASSERT_STRESS,,,False,,,Jaan nikal gayi,groq_aug_v3_variant
+Pizza bahut tasty tha,"Pizza bahut tasty tha, Velle!",ASSERT_HAPPY,,,False,,,Velle,groq_aug_v3_variant
+"Maine tumhare liye surprise party arrange ki hai, please jaldi confirm karo.","Maine tumhare liye surprise party arrange ki hai, please jaldi confirm karo jugaad.",REQUEST_URGENCY,,,False,,surprise party,jugaad,groq_aug_v3_novel
+"Mera family dinner abhi tak start nahi hua, sab kaam se bhara hai.","Oye, mera family dinner abhi tak start nahi hua, sab kaam se bhara hai.",REQUEST_FRUSTRATION,,,False,,family dinner,Oye,groq_aug_v3_novel
+Class cancel ho gayi,"Bro, class cancel ho gayi",ASSERT_POSITIVE,,,False,,,Bro,groq_aug_v3_variant
+Mujhe samajh nahi aa raha,Mujhe dibba gol samajh nahi aa raha,ASSERT_NEGATIVE,,,False,,,dibba gol,groq_aug_v3_variant
+Uska style kaafi alag hai.,Uska style kaafi vella alag hai.,ASSERT_NEUTRAL,,,False,,,vella,groq_aug_v3_variant
+Main aaj bahut thak gaya hu.,"Main aaj bahut thak gaya hu, scene tight.",ASSERT_STRESS,,,False,,,Scene tight,groq_aug_v3_variant
+Movie ka climax bahut emotional tha.,Movie ka climax bahut senti tha.,ASSERT_SADNESS,,,False,,,senti,groq_aug_v3_variant
+Kripya shanti banaye rakhein,"Kripya, chill maar, shanti banaye rakhein",REQUEST_NEUTRAL,,,False,,,chill maar,groq_aug_v3_variant
+"Mera startup pitch bahut impressive lag raha hai, sabko convince karenge","Mera startup pitch bahut kadak impressive lag raha hai, sabko convince karenge",ASSERT_EXCITED,,,False,,startup pitch,kadak,groq_aug_v3_novel
+Main tumhari help kar dunga,"Main tumhari help kar dunga, bilkul paisa vasool.",ASSERT_POSITIVE,,,False,,,Paisa vasool,groq_aug_v3_variant
+"Mujhko chai break ka intezaar tha, ab mil raha hai!","Mujhko chai break ka intezaar tha, abe ab mil raha hai!",ASSERT_EXCITED,,,False,,chai break,abe,groq_aug_v3_novel
+Pizza bahut tasty tha,Pizza bahut Aag tasty tha,ASSERT_POSITIVE,,,False,,,Aag,groq_aug_v3_variant
+Mera laptop charge nahi ho raha.,"Mera laptop charge nahi ho raha, dimag kharab.",ASSERT_STRESS,,,False,,,dimag kharab,groq_aug_v3_variant
+Uska style kaafi alag hai.,"Uska style kaafi alag hai, vella.",ASSERT_NEUTRAL,,,False,,,vella,groq_aug_v3_variant
+Phone ki battery phir se drain ho gayi,"Phone ki battery phir se drain ho gayi, boss",ASSERT_FRUSTRATION,,,False,,,boss,groq_aug_v3_variant
+"Mujhe jaldi se hostel room ka lock fix karna hai, please.","Mujhe arre woh jaldi se hostel room ka lock fix karna hai, please.",REQUEST_URGENCY,,,False,,hostel room,arre woh,groq_aug_v3_novel
+"Yaar, meri bike achanak se kharab ho gayi, can't believe!","Yaar, meri bike achanak se Phut gaya kharab ho gayi, can't believe!",ASSERT_SURPRISE,,,False,,bike breakdown,Phut gaya,groq_aug_v3_novel
+Yeh brand kaafi viral ho raha hai.,"Yeh brand kaafi viral ho raha hai, savage!",ASSERT_POSITIVE,,,False,,,Savage,groq_aug_v3_variant
+Yeh gaana bahut achha hai,Yeh gaana ek number bahut achha hai,ASSERT_EXCITED,,,False,,,ek number,groq_aug_v3_variant
+Bhai party de raha hai aaj.,"Bhai aaj party de raha hai, Jhakaas",ASSERT_HAPPY,,,False,,,Jhakaas,groq_aug_v3_variant
+Yeh idea kaam nahi karega.,Yeh muft-khor idea kaam nahi karega.,ASSERT_NEGATIVE,,,False,,,Muft-khor,groq_aug_v3_variant
+Naya phone bahut mehenga hai.,Naya phone abe bahut mehenga hai.,ASSERT_NEUTRAL,,,False,,,abe,groq_aug_v3_variant
+Traffic jam bahut lamba tha,"Traffic jam bahut lamba tha, kat gaya.",ASSERT_SADNESS,,,False,,,kat gaya,groq_aug_v3_variant
+Meeting kal tak postpone ho gayi,"Chalo, meeting kal tak postpone ho gayi",REQUEST_NEUTRAL,,,False,,,Chalo,groq_aug_v3_variant
+Interview bahut aasaani se nikal gaya.,Interview bhadiya aasaani se nikal gaya.,ASSERT_POSITIVE,,,False,,,bhadiya,groq_aug_v3_variant
