@@ -1,0 +1,55 @@
+{
+  "traces": [
+    "outputs/orch_full_trace.json",
+    "outputs/orch_s2_trace.json",
+    "outputs/orch_s3_trace.json"
+  ],
+  "n_scenes": 15,
+  "semantic_sim_mean": 0.9293,
+  "semantic_sim_min": 0.6988,
+  "event_recall_mean": 0.7778,
+  "scenes": 15,
+  "slang_coverage": 0.5111,
+  "slang_density": 0.4889,
+  "slang_validity": 0.9833,
+  "slang_total": 20,
+  "slang_unique": 20,
+  "slang_diversity": 1.0,
+  "cmi_mean": 3.4713,
+  "en_ratio_mean": 0.0347,
+  "hi_ratio_mean": 0.9653,
+  "top_slang": [
+    [
+      "kya mast",
+      1
+    ],
+    [
+      "beast",
+      1
+    ],
+    [
+      "re",
+      1
+    ],
+    [
+      "scene hai",
+      1
+    ],
+    [
+      "mast",
+      1
+    ],
+    [
+      "aag",
+      1
+    ],
+    [
+      "waat lagi padi hai",
+      1
+    ],
+    [
+      "dil khush",
+      1
+    ]
+  ]
+}

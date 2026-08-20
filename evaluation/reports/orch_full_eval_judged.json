@@ -1,0 +1,51 @@
+{
+  "traces": [
+    "outputs/orch_full_trace.json"
+  ],
+  "n_scenes": 5,
+  "semantic_sim_mean": 0.9997,
+  "semantic_sim_min": 0.9993,
+  "event_recall_mean": 0.9,
+  "scenes": 5,
+  "slang_coverage": 0.8667,
+  "slang_density": 0.8,
+  "slang_validity": 1.0,
+  "slang_total": 10,
+  "slang_unique": 10,
+  "slang_diversity": 1.0,
+  "top_slang": [
+    [
+      "kya mast",
+      1
+    ],
+    [
+      "beast",
+      1
+    ],
+    [
+      "re",
+      1
+    ],
+    [
+      "scene hai",
+      1
+    ],
+    [
+      "mast",
+      1
+    ],
+    [
+      "aag",
+      1
+    ],
+    [
+      "waat lagi padi hai",
+      1
+    ],
+    [
+      "dil khush",
+      1
+    ]
+  ],
+  "context_appropriate": 0.0
+}
