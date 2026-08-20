@@ -28,8 +28,8 @@ You need **Python 3.10**, **git**, and an **internet connection**.
 
 **1. Clone the repo**
 ```bash
-git clone https://github.com/YOUR-USERNAME/hinglish-mas.git
-cd hinglish-mas
+git clone https://github.com/YOUR-USERNAME/Hinglish-Multi-Agent-Script-Generation.git
+cd <folder>
 ```
 
 **2. Create an environment and install packages**
