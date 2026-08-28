@@ -266,11 +266,9 @@ class SlangRewriter:
         self._last = None
 
     def _emotion_of(self, speaker: str) -> str:
+        from agents.name_utils import match_profile
         profiles = self.scratchpad.read("character_profiles") or {}
-        for k, v in profiles.items():
-            if k.lower() == speaker.lower():
-                return v.get("current_emotion", "neutral")
-        return "neutral"
+        return (match_profile(profiles, speaker) or {}).get("current_emotion", "neutral")
 
     def rewrite_line(self, speaker: str, utterance: str, scene_id: str) -> Tuple[str, dict]:
         decision = self.gate.run_all_gates(speaker, utterance, scene_id, self.intent_clf)

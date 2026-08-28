@@ -1,10 +1,12 @@
 from typing import List, Optional
 import json
+import re
 
 from transformers import pipeline, AutoTokenizer, AutoModel
 import torch
 
 from memory.scratchpad import CharacterProfile, Scratchpad
+from agents.name_utils import canonical_name, strip_honorific, same_person, display_name
 
 
 # ── NER model ─────────────────────────────────────────────────────────
@@ -16,20 +18,37 @@ SOCIAL_ROLE_KEYWORDS = {
     "elder": [
         "pitaji", "mataji", "dada", "nana", "bade", "uncle", "aunty",
         "dadaji", "naani", "chacha", "maama", "bauji", "ammaji", "taaya",
-        "taai", "nani", "dadi", "pardada"
+        "taai", "nani", "dadi", "pardada",
+        # English kinship terms the LLM sometimes uses instead of the Hindi name
+        "grandfather", "grandpa", "grandmother", "grandma", "granny",
+        "father", "dad", "daddy", "mother", "mom", "mummy", "aunt",
     ],
     "authority": [
         "sir", "madam", "doctor", "inspector", "principal", "sahib",
-        "ji", "adhikari", "mantri", "judge", "collector", "officer"
+        "ji", "adhikari", "mantri", "judge", "collector", "officer",
+        "professor", "prof", "teacher", "faculty", "acharya", "guru",
+        "adhyapak", "adhyapika", "prof.",
+        "prophaesar", "prophesar", "profesar", "prophae"   # transliterated प्रोफ़ेसर variants
     ],
     "peer": []   # default — no keywords needed
 }
 
 NON_CHARACTER_WORDS = {
+    # objects / places / groups
     "dayari", "diary", "kitab", "kitaben", "alamari", "nakshe", "nakshay",
     "dastavej", "dastavez", "sanket", "log", "chatron", "shodhakarta",
     "shodhakartaon", "nagar", "parishad", "nagar parishad", "vyakti",
-    "bhavan", "pustakalay"
+    "bhavan", "pustakalay",
+    # conversational fillers the LLM sometimes mislabels as a character name
+    "yaar", "yara", "bhai", "bhaiya", "dost", "dosto", "doston", "yr",
+    # abstract nouns / role words (not proper names)
+    "idea", "aidiya", "plan", "team", "group", "project", "startup", "app",
+    "data", "event", "stage", "manch", "company", "competition", "hackathon",
+    "vijeta", "vijet", "sapna", "sapne", "sapno", "mehnat", "prototype",
+    # merchant / shop role words (unnamed roles, not proper names). "kiran"
+    # is really किराना (grocery) after schwa-deletion, not the name "Kiran".
+    "kirana", "kiran", "kirane", "vyapari", "vyaapari", "byapari", "byopari",
+    "dukandar", "dukaandar", "dukaan", "dukan", "shopkeeper", "merchant",
 }
 
 class CharacterAnalyst:
@@ -61,6 +80,32 @@ class CharacterAnalyst:
         supplemented by NER on the raw romanized text.
         """
         profiles = {}
+        canon_to_key = {}   # canonical name -> display key currently in `profiles`
+
+        # Full romanized story text, used to drop names the LLM hallucinated
+        # (a real character's name appears somewhere in the actual story).
+        story_text = " ".join(c.get("text", "") for c in scene_chunks).lower()
+
+        def _is_plausible(raw: str) -> bool:
+            if not raw:
+                return False
+            core = canonical_name(raw)
+            token = core.split()[0] if core.split() else core
+            # blocklist check on both the raw form and the honorific-stripped core
+            if (raw.lower() in NON_CHARACTER_WORDS or core in NON_CHARACTER_WORDS
+                    or token in NON_CHARACTER_WORDS):
+                return False
+            if len(core) < 2 or len(token) < 3:
+                return False
+            # Kinship/role terms (e.g. an LLM writing "Grandfather" for दादाजी) are
+            # valid characters even if the English word isn't in the Hindi text.
+            kinship = set(SOCIAL_ROLE_KEYWORDS["elder"]) | set(SOCIAL_ROLE_KEYWORDS["authority"])
+            if token in kinship or core in kinship:
+                return True
+            # Hallucination guard: otherwise the honorific-stripped name must appear
+            # in the story as a WHOLE WORD, not just a fragment inside another word
+            # (drops "Vijet" from "vijeta", "Aidiy" from an ideas mention, etc.).
+            return re.search(rf"\b{re.escape(token)}\b", story_text) is not None
 
         for chunk, events in zip(scene_chunks, event_chain):
             # Primary: character names from Agent 1's event chain
@@ -77,21 +122,43 @@ class CharacterAnalyst:
                 print(f"  NER failed on scene {chunk['scene_id']}: {e}")
                 ner_names = []
 
-            # Merge, deduplicate (case-insensitive)
-            seen = {n.lower() for n in profiles.keys()}
-            all_names = [n for n in char_names if n.lower() not in NON_CHARACTER_WORDS]
-            for name in ner_names:
-                if (name.lower() not in seen
-                        and name.lower() not in {n.lower() for n in all_names}
-                        and name.lower() not in NON_CHARACTER_WORDS):
-                    all_names.append(name)
+            # Agent-1 names first (more reliable), then NER; merge by canonical
+            # identity so "Sharm" / "Prof. Sharma" collapse into one profile.
+            for raw in list(char_names) + ner_names:
+                if not _is_plausible(raw):
+                    continue
+                canon = canonical_name(raw)
+                _, had_auth = strip_honorific(raw)
 
-            for name in all_names:
-                # Only create profile if not already seen
-                if not any(n.lower() == name.lower() for n in profiles):
-                    profiles[name] = self._build_initial_profile(
-                        name, chunk["text"], events
-                    )
+                # find an existing group for this person (exact/prefix/fuzzy)
+                gkey = None
+                for existing in list(profiles.keys()):
+                    if same_person(existing, raw):
+                        gkey = existing
+                        break
+
+                if gkey is None:
+                    disp = display_name(raw)
+                    prof = self._build_initial_profile(raw, chunk["text"], events)
+                    prof["name"] = disp
+                    profiles[disp] = prof
+                    canon_to_key[canon] = disp
+                    continue
+
+                # Merge into the existing profile:
+                prof = profiles[gkey]
+                # (a) upgrade role if this surface form carries an authority title
+                if had_auth and prof.get("social_role") == "peer":
+                    prof["social_role"] = "authority"
+                    prof["slang_level"] = 0
+                # (b) prefer the fullest surface form, then tidy it for display
+                display = display_name(self._prefer_display(gkey, raw))
+                if display != gkey:
+                    profiles[display] = profiles.pop(gkey)
+                    profiles[display]["name"] = display
+                    for c, k in list(canon_to_key.items()):
+                        if k == gkey:
+                            canon_to_key[c] = display
 
         # Save pronoun map from the LAST scene's event chain
         # (it accumulates — last one has the fullest map)
@@ -103,17 +170,33 @@ class CharacterAnalyst:
         self.scratchpad.write("character_profiles", profiles)
         return profiles
 
+    @staticmethod
+    def _prefer_display(a: str, b: str) -> str:
+        """Pick the tidier display name for the same person: keep a title if one
+        form has it, otherwise the fuller (longer) surface form."""
+        a_core, a_auth = strip_honorific(a)
+        b_core, b_auth = strip_honorific(b)
+        if a_auth != b_auth:                 # keep the titled form ("Prof. Sharma")
+            return a if a_auth else b
+        # both titled or both plain -> the longer (more complete) spelling
+        return a if len(a.strip()) >= len(b.strip()) else b
+
     def _build_initial_profile(self, name: str, context_text: str,
                                 events: dict) -> dict:
         """
         Infer social role from keywords near the character name in the text.
         Returns a plain dict matching CharacterProfile schema.
         """
-        text_lower = context_text.lower()
+        # Match role keywords against the character's NAME as well as the scene
+        # text. The name (e.g. "Professor Sharma") often carries the honorific
+        # cleanly, whereas transliteration can mangle it in the body text
+        # (प्रोफ़ेसर -> "prophaesar"), so the name is the more reliable signal.
+        text_lower = (name + " " + context_text).lower()
         role = "peer"   # default
 
-        for role_type, keywords in SOCIAL_ROLE_KEYWORDS.items():
-            if any(kw in text_lower for kw in keywords):
+        # Check authority/elder before peer; honorifics win over the default.
+        for role_type in ("elder", "authority"):
+            if any(kw in text_lower for kw in SOCIAL_ROLE_KEYWORDS[role_type]):
                 role = role_type
                 break
 
@@ -139,10 +222,10 @@ class CharacterAnalyst:
         """
         profiles = self.scratchpad.read("character_profiles") or {}
 
-        # Case-insensitive lookup
+        # Tolerant lookup (honorifics + name variants merge to one profile)
         matched_key = None
         for key in profiles:
-            if key.lower() == char_name.lower():
+            if key.lower() == char_name.lower() or same_person(key, char_name):
                 matched_key = key
                 break
 

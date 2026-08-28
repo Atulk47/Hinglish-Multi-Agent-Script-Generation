@@ -15,7 +15,9 @@ LLM_BACKEND = "groq"  # "ollama" | "groq" | "hf"
 #   openai/gpt-oss-20b (fast, used here), openai/gpt-oss-120b, qwen/qwen3.6-27b.
 # gpt-oss/qwen are reasoning models -> pass reasoning_effort="low" (see GROQ_REASONING_EFFORT)
 # so the visible content isn't starved by reasoning tokens.
-GROQ_MODEL = "openai/gpt-oss-20b"
+# Default 20b (fast/cheap). If it hits its daily token cap, override without editing
+# code:  GROQ_MODEL=openai/gpt-oss-120b python run_pipeline.py ...  (120b = separate budget)
+GROQ_MODEL = os.getenv("GROQ_MODEL", "openai/gpt-oss-20b")
 GROQ_REASONING_EFFORT = "low"
 
 # ── Paths ─────────────────────────────────────────────────────────────

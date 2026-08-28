@@ -128,11 +128,21 @@ class NarrativeAnalyst:
                     )
                     return response.choices[0].message.content
                 except Exception as e:
+                    msg = str(e).lower()
+                    # A daily/per-minute token cap won't clear on a 2s retry, so
+                    # fail soft: return "" and let the caller insert a fallback
+                    # empty event for this scene instead of crashing the whole run.
+                    if "429" in msg or "rate limit" in msg or "quota" in msg:
+                        print(f"  Agent 1: rate limit reached — skipping this scene "
+                              f"(empty event). Detail: {str(e)[:100]}")
+                        return ""
                     if attempt < max_retries - 1:
                         print(f"  Groq call failed ({e}), retrying in 2s...")
                         time.sleep(2)
                     else:
-                        raise
+                        print(f"  Agent 1: giving up after {max_retries} attempts "
+                              f"— skipping this scene (empty event).")
+                        return ""
 
         elif self.backend == "hf":
             result = self.pipe(prompt, return_full_text=False)

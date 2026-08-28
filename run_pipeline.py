@@ -19,6 +19,7 @@ for _stream in (sys.stdout, sys.stderr):
         pass
 
 from orchestrator.pipeline import HinglishPipeline
+from evaluation.compare import build_comparison, print_comparison
 
 
 def main():
@@ -67,6 +68,10 @@ def main():
     print("=" * 64)
     print(final)
 
+    # Paired neutral-vs-slang comparison (for demos / the panel: shows the
+    # original sentence next to the slangified one, line by line).
+    comparison = build_comparison(sp.read("neutral_script"), sp.read("slang_script"))
+
     os.makedirs("outputs", exist_ok=True)
     txt_path = f"outputs/{args.session}_script.txt"
     json_path = f"outputs/{args.session}_trace.json"
@@ -79,6 +84,7 @@ def main():
             "character_profiles": sp.read("character_profiles"),
             "neutral_script": sp.read("neutral_script"),
             "slang_script": sp.read("slang_script"),
+            "comparison": comparison,
             "final_script": final,
         }, f, ensure_ascii=False, indent=2)
 

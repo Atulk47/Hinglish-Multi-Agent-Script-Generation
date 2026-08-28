@@ -42,11 +42,8 @@ class DialogueSynthesizer:
         speaker = characters[0] if characters else "SPEAKER"
         listener = characters[1] if len(characters) > 1 else "narrator"
 
-        profile = {}
-        for key in character_profiles:
-            if key.lower() == speaker.lower():
-                profile = character_profiles[key]
-                break
+        from agents.name_utils import match_profile
+        profile = match_profile(character_profiles, speaker)
 
         prompt = PASS1_PROMPT_TEMPLATE.format(
             scene_goal=event_chain_entry.get("scene_goal", ""),

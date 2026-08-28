@@ -25,12 +25,9 @@ class ThreeGateController:
         """
         profiles = self.scratchpad.read("character_profiles") or {}
 
-        # Case-insensitive lookup
-        profile = {}
-        for key in profiles:
-            if key.lower() == speaker_name.lower():
-                profile = profiles[key]
-                break
+        # Tolerant lookup (handles honorifics + name variants: "PROF. SHARMA" -> "Sharma")
+        from agents.name_utils import match_profile
+        profile = match_profile(profiles, speaker_name)
 
         role = profile.get("social_role", "peer")
         slang_level = profile.get("slang_level", 5)
