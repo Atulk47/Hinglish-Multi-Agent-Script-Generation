@@ -22,16 +22,32 @@ from __future__ import annotations
 import argparse, csv, itertools, json, os, random, re, time
 from collections import defaultdict
 
-from groq import Groq, RateLimitError
 from dotenv import load_dotenv
 import config
 
-# Free tier gives 1000 requests/DAY *per model*. Round-robin across both gpt-oss
-# models so we draw from two independent daily buckets (~2x throughput) and can
-# fail over instantly when one bucket is rate-limited. Both accept
-# reasoning_effort="low"; qwen does not, so it is intentionally excluded.
-AUG_MODELS = ["openai/gpt-oss-20b", "openai/gpt-oss-120b"]
+load_dotenv()   # load .env early so AUG_BACKEND and API keys can be set there
+
+# ── Backend selector: groq (default) or cerebras ───────────────────────
+# Choose with env var:  AUG_BACKEND=cerebras  python -m data_prep.augment_slang_dataset ...
+# Cerebras is very fast and its free tier is generous, so it's the go-to when Groq
+# is capped/unavailable. llama-3.3-70b is strong at Hinglish.
+AUG_BACKEND = os.getenv("AUG_BACKEND", "groq").lower()
+if AUG_BACKEND == "cerebras":
+    # gemma-4-31b: available on this account, not a reasoning model (cheaper per row,
+    # returns clean JSON), and strong at Hindi. Override with CEREBRAS_MODELS if needed.
+    from cerebras.cloud.sdk import Cerebras
+    AUG_MODELS = os.getenv("CEREBRAS_MODELS", "gemma-4-31b").split(",")
+    _IS_GROQ = False
+else:
+    from groq import Groq
+    AUG_MODELS = ["openai/gpt-oss-20b", "openai/gpt-oss-120b"]
+    _IS_GROQ = True
 _model_cycle = itertools.cycle(AUG_MODELS)
+
+# Seconds between API calls, to respect tight rate limits (Cerebras entry tier = 5
+# req/min). 0 = no pacing (Groq default). For Cerebras set AUG_MIN_INTERVAL=13.
+_MIN_INTERVAL = float(os.getenv("AUG_MIN_INTERVAL", "0"))
+_last_call = [0.0]
 
 load_dotenv()
 
@@ -111,21 +127,28 @@ def call_json(client, prompt, max_tokens=300):
     """Round-robin across AUG_MODELS. On a 429 (per-model daily/minute cap) try
     the next model immediately; only pause briefly if EVERY model is capped, so
     we never sit in the SDK's long retry backoff (client uses max_retries=0)."""
-    for _ in range(len(AUG_MODELS)):
+    for _ in range(6):
+        if _MIN_INTERVAL:                # pace to respect tight rate limits (e.g. Cerebras 5/min)
+            wait = _MIN_INTERVAL - (time.time() - _last_call[0])
+            if wait > 0:
+                time.sleep(wait)
         model = next(_model_cycle)
+        kwargs = dict(model=model, messages=[{"role": "user", "content": prompt}],
+                      temperature=0.7, max_tokens=max_tokens, timeout=30)
+        if _IS_GROQ:      # only Groq's gpt-oss reasoning models take this
+            kwargs["reasoning_effort"] = getattr(config, "GROQ_REASONING_EFFORT", "low")
         try:
-            resp = client.chat.completions.create(
-                model=model, messages=[{"role": "user", "content": prompt}],
-                temperature=0.7, max_tokens=max_tokens,
-                reasoning_effort=getattr(config, "GROQ_REASONING_EFFORT", "low"),
-                timeout=30)
-        except RateLimitError:
-            continue                     # this bucket is capped -> fail over to the other
-        except Exception:
+            resp = client.chat.completions.create(**kwargs)
+            _last_call[0] = time.time()
+        except Exception as e:
+            _last_call[0] = time.time()
+            msg = str(e).lower()
+            if "429" in msg or "rate" in msg or "limit" in msg or "quota" in msg:
+                time.sleep(_MIN_INTERVAL or 5)   # capped -> wait out the window and retry
+                continue
             time.sleep(2)                # transient network/API error -> brief cooldown
             return None
         return _parse_json(resp.choices[0].message.content)
-    time.sleep(5)                        # all models rate-limited this round
     return None
 
 
@@ -201,7 +224,12 @@ def main():
                   for r in real if r.get("neutral")]
     existing_neutrals = {_key(n) for n, _ in real_pairs}
     existing_outputs = {_key(r.get("output") or "") for r in real}
-    client = Groq(api_key=os.environ["GROQ_API_KEY"], timeout=30.0, max_retries=0)
+    if AUG_BACKEND == "cerebras":
+        client = Cerebras(api_key=os.environ["CEREBRAS_API_KEY"])
+        print(f"Augmenting with Cerebras: {AUG_MODELS}")
+    else:
+        client = Groq(api_key=os.environ["GROQ_API_KEY"], timeout=30.0, max_retries=0)
+        print(f"Augmenting with Groq: {AUG_MODELS}")
 
     cap = max(3, args.n // 40)          # per-slang usage cap this run
     run_used = defaultdict(int)
