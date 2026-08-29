@@ -60,3 +60,26 @@ USE_TRAINED_INTENT_CLF = True   # False = fall back to zero-shot BART-MNLI
 MURIL_SIMILARITY_THRESHOLD   = 0.82   # tune in Week 7
 EVENT_COVERAGE_RECALL_THRESHOLD = 0.5
 MAX_REWRITE_ATTEMPTS = 3
+
+# ── Anika: stricter validation + smart redo-loop thresholds ───────────
+# Per-line MuRIL similarity floor. Whole-scene similarity is coarse (a few
+# corrupted lines get averaged out), so we also flag any single line whose
+# neutral-vs-slang similarity drops below this.
+MURIL_LINE_SIM_THRESHOLD = 0.72
+
+# Below this whole-scene similarity we classify the scene as MEANING_DRIFT
+# (a distinct, more urgent failure than a borderline pass).
+MURIL_MEANING_DRIFT_THRESHOLD = 0.78
+
+# Minimum fraction of dialogue lines that should carry slang in a scene.
+# Below this we classify the scene as LOW_COVERAGE (or NO_SLANG if it is 0).
+MIN_SLANG_COVERAGE_PER_SCENE = 0.15
+
+# A scene is MONOTONOUS if more than this fraction of its applied slang
+# words are the same token (e.g. every line got "yaar").
+MAX_SLANG_REPETITION_RATIO = 0.60
+
+# Multipliers used by the redo loop to temporarily adjust the gate-3 density
+# budget for a failing scene on retry.
+DENSITY_MULTIPLIER_LOW_COVERAGE = 2.0    # loosen a bit
+DENSITY_MULTIPLIER_MEANING_DRIFT = 0.5   # tighten (fewer insertions)

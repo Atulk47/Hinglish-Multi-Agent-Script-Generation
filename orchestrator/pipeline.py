@@ -141,6 +141,13 @@ class HinglishPipeline:
         failed = set(state.get("failed_scenes", []))
         prev = {s["scene_id"]: s for s in (state.get("slang_script") or [])}
 
+        # Anika: on retry, use each failed scene's diagnosis to pick a
+        # *targeted* fix strategy instead of blindly re-running Agent 4.
+        diagnoses = state.get("scene_diagnoses") or {}
+        base_threshold = self.agent4.gate.density_threshold
+        low_mult = getattr(config, "DENSITY_MULTIPLIER_LOW_COVERAGE", 2.0)
+        drift_mult = getattr(config, "DENSITY_MULTIPLIER_MEANING_DRIFT", 0.5)
+
         self.agent4.reset()  # fresh density budget for this pass
         slang_script = []
         for scene in state["neutral_script"]:
@@ -149,8 +156,19 @@ class HinglishPipeline:
             if prev and sid not in failed and sid in prev:
                 slang_script.append(prev[sid])
                 continue
-            rewritten = self.agent4.rewrite_script([{"scene_id": sid,
-                                                     "dialogue": scene["dialogue"]}])[0]
+
+            mode = (diagnoses.get(sid, {}) or {}).get("failure_mode", "OK")
+            self._apply_retry_strategy(mode, base_threshold, low_mult, drift_mult)
+            if mode != "OK":
+                self._log(f"     -> retry {sid} in mode={mode} "
+                          f"(density_threshold={self.agent4.gate.density_threshold:.2f}, "
+                          f"permissive={self.agent4.gate._permissive})")
+            try:
+                rewritten = self.agent4.rewrite_script([{"scene_id": sid,
+                                                         "dialogue": scene["dialogue"]}])[0]
+            finally:
+                self.agent4.gate.set_permissive(False)
+                self.agent4.gate.density_threshold = base_threshold
             rewritten["events"] = scene["events"]
             slang_script.append(rewritten)
 
@@ -158,22 +176,63 @@ class HinglishPipeline:
         state["slang_script"] = slang_script
         return state
 
+    def _apply_retry_strategy(self, mode: str, base_threshold: float,
+                              low_mult: float, drift_mult: float) -> None:
+        """Configure the shared gate for one scene's retry, based on why it failed.
+
+          NO_SLANG      -> permissive mode: force something through gates 2+3
+          LOW_COVERAGE  -> loosen density budget (multiply threshold)
+          MEANING_DRIFT -> tighten density budget (fewer, safer insertions)
+          EVENT_LOSS    -> tighten density (Agent 4 changed too much text)
+          MONOTONOUS    -> reset variety counters so Agent 4 re-diversifies
+          OK / default  -> leave gates at defaults
+        """
+        gate = self.agent4.gate
+        gate.set_permissive(False)
+        gate.density_threshold = base_threshold
+
+        if mode == "NO_SLANG":
+            gate.set_permissive(True)
+        elif mode == "LOW_COVERAGE":
+            gate.density_threshold = min(1.0, base_threshold * low_mult)
+        elif mode in ("MEANING_DRIFT", "EVENT_LOSS"):
+            gate.density_threshold = max(0.05, base_threshold * drift_mult)
+        elif mode == "MONOTONOUS":
+            # variety only: keep gates as-is but wipe Agent 4's slang history
+            # so repeat-avoidance kicks in from a clean slate for this scene.
+            if hasattr(self.agent4, "_used"):
+                self.agent4._used.clear()
+            if hasattr(self.agent4, "_last"):
+                self.agent4._last = None
+
     def _validate(self, state: PipelineState) -> PipelineState:
-        self._log("── [6/6] MuRIL validation ──")
-        failed, scores = [], []
+        self._log("── [6/6] MuRIL validation (strict) ──")
+        failed, scores, diagnoses = [], [], {}
+        profiles = state.get("character_profiles") or {}
         for neutral, slang in zip(state["neutral_script"], state["slang_script"]):
-            res = self.validator.validate_scene(
-                neutral["dialogue"], slang["dialogue"],
-                neutral["events"].get("key_events", []))
-            scores.append(res["similarity"])
-            flag = "PASS" if res["passed"] else "RE-DO"
-            self._log(f"   {slang['scene_id']}: sim={res['similarity']:.3f} "
-                      f"recall={res['event_recall']:.2f} -> {flag}")
-            if not res["passed"]:
-                failed.append(slang["scene_id"])
+            sid = slang["scene_id"]
+            diag = self.validator.diagnose_scene(neutral, slang, profiles)
+            diagnoses[sid] = diag
+            scores.append(diag["similarity"])
+            flag = "PASS" if diag["passed"] else f"RE-DO[{diag['failure_mode']}]"
+            self._log(f"   {sid}: sim={diag['similarity']:.3f} "
+                      f"line_min={diag['line_min_similarity']:.3f} "
+                      f"recall={diag['event_recall']:.2f} "
+                      f"cov={diag['slang_coverage']:.0%} "
+                      f"var={diag['slang_variety']:.2f} -> {flag}")
+            if not diag["passed"]:
+                self._log(f"       reason: {diag['hint']}")
+                failed.append(sid)
+
         state["validation_scores"] = scores
         state["failed_scenes"] = failed
+        state["scene_diagnoses"] = diagnoses
         state["rewrite_count"] = state.get("rewrite_count", 0) + 1
+        # persist for post-run inspection / evaluation harness
+        try:
+            self.scratchpad.write("scene_diagnoses", diagnoses)
+        except Exception:
+            pass
         return state
 
     def _route_after_validate(self, state: PipelineState) -> Literal["rewrite", "assemble"]:
@@ -182,7 +241,12 @@ class HinglishPipeline:
         if state["rewrite_count"] >= MAX_REWRITE_ATTEMPTS:
             self._log(f"   max attempts ({MAX_REWRITE_ATTEMPTS}) reached — accepting best effort.")
             return "assemble"
-        self._log(f"   {len(state['failed_scenes'])} scene(s) failed — re-injecting.")
+        modes = [
+            (state.get("scene_diagnoses") or {}).get(sid, {}).get("failure_mode", "?")
+            for sid in state["failed_scenes"]
+        ]
+        self._log(f"   {len(state['failed_scenes'])} scene(s) failed "
+                  f"({', '.join(modes)}) — re-injecting with targeted fixes.")
         return "rewrite"
 
     def _assemble_output(self, state: PipelineState) -> PipelineState:
@@ -207,5 +271,6 @@ class HinglishPipeline:
             "slang_script": [], "validation_scores": [], "failed_scenes": [],
             "rewrite_count": 0, "final_script": "",
         }
+        init["scene_diagnoses"] = {}
         final_state = self.graph.invoke(init, {"recursion_limit": 25})
         return final_state["final_script"]
