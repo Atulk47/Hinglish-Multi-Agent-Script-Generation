@@ -1,0 +1,620 @@
+{
+  "romanized_text": "shahar ke bichon-bicha ek bahut purani pustakalay thi. log kahate the ki vahan ki kuch kitaben sau sal se bhi adhik purani hain. din men vahan chatron aur shodhakartaon ki bhida lagi rahati thi, lekin sham hote hi pura bhavan shant ho jata tha.\n\nek din arav nam k chatr itihas ki pariyojan ke lie samagri khojane vahan gaya. use ek dhul se dhaki hui alamari mili, jo samanyatah band rahati thi. alamari ke bhitar use chamadae ke kavar vali ek dayari dikhai di. dayari ke pahale panne para likha tha, jo bhi ise padhae, vaha saty ki khoj puri kare.\n\narav utsuk ho gaya. usane dayari padhana shuru kiya. usamen shahar ke ek bhule-bisare vyapari k ullekh tha, jisane varshon pahale kai garib parivaron ki madad ki thi, lekin usak nam itihas men kahin darj nahin tha. dayari men kuch sanket aur purane nakshe bhi bane hue the.\n\nagale kai dinon tak arav un sanketon k pich karat rah. antatah use nagar abhilekhagar men aise dastaveja mile jinhonne vyapari ki kahani ko saty siddh kara diya. usaki khoj ke bad nagar parishad ne us vyakti ke samman men ek smarak sthapit kiya.\n\narav ne sikh ki itihas keval badai ghatanaon k nahin, balki un logon k bhi hota hai jinake achche kary samay ke sath bhul die jate hain.",
+  "event_chain": [
+    {
+      "scene_id": "scene_01",
+      "key_events": [
+        "A very old library exists in the middle of the city",
+        "People say that some books there are older than a hundred years",
+        "During the day, students and researchers visit the library",
+        "In the evening, the entire building becomes quiet"
+      ],
+      "characters": [],
+      "scene_goal": "Introduce the setting of an ancient library and its daily rhythm",
+      "location": "An old library in the middle of the city",
+      "narrative_link": "Following the first scene, the story now introduces the ancient library",
+      "pronoun_map": {}
+    },
+    {
+      "scene_id": "scene_02",
+      "key_events": [
+        "Arav goes to search for materials for the project",
+        "He finds a dusty chest that is usually locked",
+        "Inside the chest he discovers a diary",
+        "The diary contains a note promising a complete search for truth"
+      ],
+      "characters": [
+        "Arav"
+      ],
+      "scene_goal": "Introduce Arav’s discovery of a hidden diary that sets the quest for truth",
+      "location": "Ancient library",
+      "narrative_link": "Following the previous scene’s introduction of the library’s daily rhythm, Arav now searches for materials",
+      "pronoun_map": {
+        "usne": "Ram",
+        "woh": "Sita"
+      }
+    },
+    {
+      "scene_id": "scene_03",
+      "key_events": [
+        "Arav becomes curious and begins reading the hidden diary",
+        "Arav discovers the diary contains a mention of a forgotten merchant who helped poor families years ago, though his name is not recorded in history, and includes clues and old maps"
+      ],
+      "characters": [
+        "Arav"
+      ],
+      "scene_goal": "Arav uncovers a clue that sets the quest for truth in motion",
+      "location": "Arav’s study/room",
+      "narrative_link": "Following Arav’s discovery of a hidden diary that sets the quest for truth, Arav now reads the diary and finds a mention of a forgotten merchant and old maps",
+      "pronoun_map": {
+        "usane": "Arav",
+        "usamen": "Arav",
+        "usak": "Arav"
+      }
+    },
+    {
+      "scene_id": "scene_04",
+      "key_events": [
+        "Arav continues following clues",
+        "Arav finds documents in city archives proving the merchant's story",
+        "After the discovery, the city council establishes a monument in honor of the merchant"
+      ],
+      "characters": [
+        "Arav"
+      ],
+      "scene_goal": "Reveal the truth about the merchant and honor him with a monument",
+      "location": "City archives",
+      "narrative_link": "Following Arav uncovers a clue that sets the quest for truth in motion, Arav now finds documents proving the merchant story and leads to a monument",
+      "pronoun_map": {
+        "usne": "Ram",
+        "woh": "Sita"
+      }
+    },
+    {
+      "scene_id": "scene_05",
+      "key_events": [
+        "Arav learns that history is not only about great events but also about people whose good deeds are forgotten over time"
+      ],
+      "characters": [
+        "Arav"
+      ],
+      "scene_goal": "Convey the lesson that history remembers both great events and forgotten good deeds",
+      "location": "Unknown",
+      "narrative_link": "Following the previous scene, Arav now learns about the broader scope of history",
+      "pronoun_map": {}
+    }
+  ],
+  "character_profiles": {
+    "Arav": {
+      "name": "Arav",
+      "age": null,
+      "social_role": "peer",
+      "slang_level": 5,
+      "relationship": {},
+      "current_emotion": "neutral",
+      "turn_count": 4,
+      "stress_index": 0.0
+    }
+  },
+  "neutral_script": [
+    {
+      "scene_id": "scene_01",
+      "dialogue": "SPEAKER: Shahar ke beech mein ek purana library hai, jo itna purana hai ki log kehte hain ki kuch kitabein ek sau saal se bhi purani hain.  \nSPEAKER: Din bhar yahan students aur researchers aate hain, har koi apne research ke liye yahan ki kitabain padhte hain.  \nSPEAKER: Raat ko jab sab log jaate hain, poora building khamoshi se ghire rehta hai.",
+      "events": {
+        "scene_id": "scene_01",
+        "key_events": [
+          "A very old library exists in the middle of the city",
+          "People say that some books there are older than a hundred years",
+          "During the day, students and researchers visit the library",
+          "In the evening, the entire building becomes quiet"
+        ],
+        "characters": [],
+        "scene_goal": "Introduce the setting of an ancient library and its daily rhythm",
+        "location": "An old library in the middle of the city",
+        "narrative_link": "Following the first scene, the story now introduces the ancient library",
+        "pronoun_map": {}
+      }
+    },
+    {
+      "scene_id": "scene_02",
+      "dialogue": "Arav: \"Yahan ke shelves mein kuch aisa dhoondh raha hoon jo mere project ke liye zaroori hai.\"  \nArav: \"Ek purana, dhool se bhara chest dekha, jo aam taur par lock kiya hua hota hai.\"  \nArav: \"Uske andar ek diary mili, jisme ek note hai: 'Sach ki poori khoj shuru ho rahi hai.'\"",
+      "events": {
+        "scene_id": "scene_02",
+        "key_events": [
+          "Arav goes to search for materials for the project",
+          "He finds a dusty chest that is usually locked",
+          "Inside the chest he discovers a diary",
+          "The diary contains a note promising a complete search for truth"
+        ],
+        "characters": [
+          "Arav"
+        ],
+        "scene_goal": "Introduce Arav’s discovery of a hidden diary that sets the quest for truth",
+        "location": "Ancient library",
+        "narrative_link": "Following the previous scene’s introduction of the library’s daily rhythm, Arav now searches for materials",
+        "pronoun_map": {
+          "usne": "Ram",
+          "woh": "Sita"
+        }
+      }
+    },
+    {
+      "scene_id": "scene_03",
+      "dialogue": "Arav: Diary khol ke padh raha hoon, aur mujhe ek purana naam mil raha hai—ek bhool gaya vyapari, jinhone gaon ki garib parivaron ki madad ki thi, lekin history mein unka koi record nahi hai.  \nArav: Diary mein kuch purane nakshon ka zikr hai, jo us vyapari ke raaste aur uski madad ki jagah dikhate hain.  \nArav: Yeh clues mere liye ek nayi khoj ki shuruaat hain, aur main sach ko samajhne ke liye tayyar hoon.",
+      "events": {
+        "scene_id": "scene_03",
+        "key_events": [
+          "Arav becomes curious and begins reading the hidden diary",
+          "Arav discovers the diary contains a mention of a forgotten merchant who helped poor families years ago, though his name is not recorded in history, and includes clues and old maps"
+        ],
+        "characters": [
+          "Arav"
+        ],
+        "scene_goal": "Arav uncovers a clue that sets the quest for truth in motion",
+        "location": "Arav’s study/room",
+        "narrative_link": "Following Arav’s discovery of a hidden diary that sets the quest for truth, Arav now reads the diary and finds a mention of a forgotten merchant and old maps",
+        "pronoun_map": {
+          "usane": "Arav",
+          "usamen": "Arav",
+          "usak": "Arav"
+        }
+      }
+    },
+    {
+      "scene_id": "scene_04",
+      "dialogue": "Arav: \"Yahan ke archives mein mujhe ek purana ledger mila, jismein merchant ke naam ke saath uski trading records aur uske contributions ka zikr hai.\"\n\nNarrator: \"Is document se saaf hota hai ki merchant ne city ke development mein mahatvapurn bhumika nibhayi, aur uski kahani ab sach ke roop mein samne aayi.\"\n\nArav: \"Is praman ke saath, city council ne faisla kiya hai ki ek monument banaya jayega, jisse uski yaad aur uske yogdan ko hamesha yaad rakha jayega.\"",
+      "events": {
+        "scene_id": "scene_04",
+        "key_events": [
+          "Arav continues following clues",
+          "Arav finds documents in city archives proving the merchant's story",
+          "After the discovery, the city council establishes a monument in honor of the merchant"
+        ],
+        "characters": [
+          "Arav"
+        ],
+        "scene_goal": "Reveal the truth about the merchant and honor him with a monument",
+        "location": "City archives",
+        "narrative_link": "Following Arav uncovers a clue that sets the quest for truth in motion, Arav now finds documents proving the merchant story and leads to a monument",
+        "pronoun_map": {
+          "usne": "Ram",
+          "woh": "Sita"
+        }
+      }
+    },
+    {
+      "scene_id": "scene_05",
+      "dialogue": "Arav: History sirf bade events ke liye hi yaad rakhi jati hai, lekin aksar chhoti achi kaam karne wale log bhool jaate hain.  \nArav: Isse hum samajhte hain ki yaad rakhna sirf naam ya ghatna nahi, balki insaan ki bhavnaon aur uske karam ka bhi hota hai.",
+      "events": {
+        "scene_id": "scene_05",
+        "key_events": [
+          "Arav learns that history is not only about great events but also about people whose good deeds are forgotten over time"
+        ],
+        "characters": [
+          "Arav"
+        ],
+        "scene_goal": "Convey the lesson that history remembers both great events and forgotten good deeds",
+        "location": "Unknown",
+        "narrative_link": "Following the previous scene, Arav now learns about the broader scope of history",
+        "pronoun_map": {}
+      }
+    }
+  ],
+  "slang_script": [
+    {
+      "scene_id": "scene_01",
+      "dialogue": "SPEAKER: Shahar ke beech mein ek purana library hai, jo itna purana hai ki log kehte hain ki kuch kitabein ek sau saal se bhi purani hain.\nSPEAKER: Din bhar yahan students aur researchers aate hain, har koi apne research ke liye yahan ki kitabain padhte hain, vibe.\nSPEAKER: Raat ko jab sab log jaate hain, poora building khamoshi se loot machai rehta hai.",
+      "decisions": [
+        {
+          "speaker": "SPEAKER",
+          "applied": false,
+          "go": false,
+          "gate_stopped": 2,
+          "intent": "INFORM_NEUTRAL",
+          "reason": "Intent 'INFORM_NEUTRAL' does not permit slang"
+        },
+        {
+          "speaker": "SPEAKER",
+          "applied": true,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "CASUAL_ASSERTION",
+          "reason": "All gates passed",
+          "slang": "vibe",
+          "slang_tokens_added": 1
+        },
+        {
+          "speaker": "SPEAKER",
+          "applied": true,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "CASUAL_ASSERTION",
+          "reason": "All gates passed",
+          "slang": "loot machai",
+          "slang_tokens_added": 1
+        }
+      ],
+      "events": {
+        "scene_id": "scene_01",
+        "key_events": [
+          "A very old library exists in the middle of the city",
+          "People say that some books there are older than a hundred years",
+          "During the day, students and researchers visit the library",
+          "In the evening, the entire building becomes quiet"
+        ],
+        "characters": [],
+        "scene_goal": "Introduce the setting of an ancient library and its daily rhythm",
+        "location": "An old library in the middle of the city",
+        "narrative_link": "Following the first scene, the story now introduces the ancient library",
+        "pronoun_map": {}
+      }
+    },
+    {
+      "scene_id": "scene_02",
+      "dialogue": "Arav: Yahan ke shelves mein kuch aisa dhoondh raha hoon jo mere project ke liye paisa vasool hai.\nArav: \"Ek purana, dhool se bhara chest dekha, jo aam taur par lock kiya hua hota hai.\"\nArav: \"Uske andar ek diary mili, jisme ek note hai: 'Sach ki poori khoj shuru ho rahi hai.'\"",
+      "decisions": [
+        {
+          "speaker": "Arav",
+          "applied": true,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "CASUAL_ASSERTION",
+          "reason": "All gates passed",
+          "slang": "Paisa vasool",
+          "slang_tokens_added": 1
+        },
+        {
+          "speaker": "Arav",
+          "applied": false,
+          "go": false,
+          "gate_stopped": 2,
+          "intent": "INFORM_NEUTRAL",
+          "reason": "Intent 'INFORM_NEUTRAL' does not permit slang"
+        },
+        {
+          "speaker": "Arav",
+          "applied": false,
+          "go": false,
+          "gate_stopped": 2,
+          "intent": "INFORM_NEUTRAL",
+          "reason": "Intent 'INFORM_NEUTRAL' does not permit slang"
+        }
+      ],
+      "events": {
+        "scene_id": "scene_02",
+        "key_events": [
+          "Arav goes to search for materials for the project",
+          "He finds a dusty chest that is usually locked",
+          "Inside the chest he discovers a diary",
+          "The diary contains a note promising a complete search for truth"
+        ],
+        "characters": [
+          "Arav"
+        ],
+        "scene_goal": "Introduce Arav’s discovery of a hidden diary that sets the quest for truth",
+        "location": "Ancient library",
+        "narrative_link": "Following the previous scene’s introduction of the library’s daily rhythm, Arav now searches for materials",
+        "pronoun_map": {
+          "usne": "Ram",
+          "woh": "Sita"
+        }
+      }
+    },
+    {
+      "scene_id": "scene_03",
+      "dialogue": "Arav: Diary khol ke padh raha hoon, aur mujhe ek purana naam mil raha hai—ek bhool gaya vyapari, jinhone gaon ki garib parivaron ki madad ki thi, lekin history mein unka koi record nahi hai.\nArav: Diary mein kuch purane nakshon ka zikr hai, jo us vyapari ke raaste aur uski madad ki jagah dikhate hain, scene.\nArav: Yeh clues mere liye ek nayi khoj ki shuruaat hain, aur main sach ko samajhne ke liye tayyar hoon, waat lag gayi.",
+      "decisions": [
+        {
+          "speaker": "Arav",
+          "applied": false,
+          "go": false,
+          "gate_stopped": 2,
+          "intent": "INFORM_NEUTRAL",
+          "reason": "Intent 'INFORM_NEUTRAL' does not permit slang"
+        },
+        {
+          "speaker": "Arav",
+          "applied": true,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "CASUAL_ASSERTION",
+          "reason": "All gates passed",
+          "slang": "Scene",
+          "slang_tokens_added": 1
+        },
+        {
+          "speaker": "Arav",
+          "applied": true,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "CASUAL_ASSERTION",
+          "reason": "All gates passed",
+          "slang": "Waat lag gayi",
+          "slang_tokens_added": 3
+        }
+      ],
+      "events": {
+        "scene_id": "scene_03",
+        "key_events": [
+          "Arav becomes curious and begins reading the hidden diary",
+          "Arav discovers the diary contains a mention of a forgotten merchant who helped poor families years ago, though his name is not recorded in history, and includes clues and old maps"
+        ],
+        "characters": [
+          "Arav"
+        ],
+        "scene_goal": "Arav uncovers a clue that sets the quest for truth in motion",
+        "location": "Arav’s study/room",
+        "narrative_link": "Following Arav’s discovery of a hidden diary that sets the quest for truth, Arav now reads the diary and finds a mention of a forgotten merchant and old maps",
+        "pronoun_map": {
+          "usane": "Arav",
+          "usamen": "Arav",
+          "usak": "Arav"
+        }
+      }
+    },
+    {
+      "scene_id": "scene_04",
+      "dialogue": "Arav: \"Yahan ke archives mein mujhe ek purana ledger mila, jismein merchant ke naam ke saath uski trading records aur uske contributions ka zikr hai.\"\nNarrator: Is document se saaf hota hai ki merchant ne city ke development mein mahatvapurn bhumika nibhayi, kya raita failaya, aur uski kahani ab sach ke roop mein samne aayi.\nArav: Is praman ke saath, city council ne faisla kiya hai ki ek monument banaya jayega, jisse uski yaad aur uske yogdan ko hamesha yaad rakha jayega, superb.",
+      "decisions": [
+        {
+          "speaker": "Arav",
+          "applied": false,
+          "go": false,
+          "gate_stopped": 2,
+          "intent": "INFORM_NEUTRAL",
+          "reason": "Intent 'INFORM_NEUTRAL' does not permit slang"
+        },
+        {
+          "speaker": "Narrator",
+          "applied": true,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "CASUAL_ASSERTION",
+          "reason": "All gates passed",
+          "slang": "kya raita failaya",
+          "slang_tokens_added": 3
+        },
+        {
+          "speaker": "Arav",
+          "applied": true,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "CASUAL_ASSERTION",
+          "reason": "All gates passed",
+          "slang": "superb",
+          "slang_tokens_added": 1
+        }
+      ],
+      "events": {
+        "scene_id": "scene_04",
+        "key_events": [
+          "Arav continues following clues",
+          "Arav finds documents in city archives proving the merchant's story",
+          "After the discovery, the city council establishes a monument in honor of the merchant"
+        ],
+        "characters": [
+          "Arav"
+        ],
+        "scene_goal": "Reveal the truth about the merchant and honor him with a monument",
+        "location": "City archives",
+        "narrative_link": "Following Arav uncovers a clue that sets the quest for truth in motion, Arav now finds documents proving the merchant story and leads to a monument",
+        "pronoun_map": {
+          "usne": "Ram",
+          "woh": "Sita"
+        }
+      }
+    },
+    {
+      "scene_id": "scene_05",
+      "dialogue": "Arav: History sirf bade events ke liye hi yaad rakhi jati hai, lekin aksar chhoti achi kaam karne wale log bhool jaate hain, senti mat kar.\nArav: Isse hum samajhte hain ki yaad rakhna sirf naam ya ghatna nahi, balki insaan ki bhavnaon aur uske karam ka bhi kha jati hai.",
+      "decisions": [
+        {
+          "speaker": "Arav",
+          "applied": true,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "CASUAL_ASSERTION",
+          "reason": "All gates passed",
+          "slang": "senti mat kar",
+          "slang_tokens_added": 3
+        },
+        {
+          "speaker": "Arav",
+          "applied": true,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "CASUAL_ASSERTION",
+          "reason": "All gates passed",
+          "slang": "Kha jati hai",
+          "slang_tokens_added": 1
+        }
+      ],
+      "events": {
+        "scene_id": "scene_05",
+        "key_events": [
+          "Arav learns that history is not only about great events but also about people whose good deeds are forgotten over time"
+        ],
+        "characters": [
+          "Arav"
+        ],
+        "scene_goal": "Convey the lesson that history remembers both great events and forgotten good deeds",
+        "location": "Unknown",
+        "narrative_link": "Following the previous scene, Arav now learns about the broader scope of history",
+        "pronoun_map": {}
+      }
+    }
+  ],
+  "comparison": [
+    {
+      "scene_id": "scene_01",
+      "location": "An old library in the middle of the city",
+      "lines": [
+        {
+          "speaker": "SPEAKER",
+          "neutral": "Shahar ke beech mein ek purana library hai, jo itna purana hai ki log kehte hain ki kuch kitabein ek sau saal se bhi purani hain.",
+          "slang": "Shahar ke beech mein ek purana library hai, jo itna purana hai ki log kehte hain ki kuch kitabein ek sau saal se bhi purani hain.",
+          "slang_added": null,
+          "slang_applied": false,
+          "intent": "INFORM_NEUTRAL",
+          "gate_stopped": 2,
+          "changed": false
+        },
+        {
+          "speaker": "SPEAKER",
+          "neutral": "Din bhar yahan students aur researchers aate hain, har koi apne research ke liye yahan ki kitabain padhte hain.",
+          "slang": "Din bhar yahan students aur researchers aate hain, har koi apne research ke liye yahan ki kitabain padhte hain, vibe.",
+          "slang_added": "vibe",
+          "slang_applied": true,
+          "intent": "CASUAL_ASSERTION",
+          "gate_stopped": null,
+          "changed": true
+        },
+        {
+          "speaker": "SPEAKER",
+          "neutral": "Raat ko jab sab log jaate hain, poora building khamoshi se ghire rehta hai.",
+          "slang": "Raat ko jab sab log jaate hain, poora building khamoshi se loot machai rehta hai.",
+          "slang_added": "loot machai",
+          "slang_applied": true,
+          "intent": "CASUAL_ASSERTION",
+          "gate_stopped": null,
+          "changed": true
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_02",
+      "location": "Ancient library",
+      "lines": [
+        {
+          "speaker": "ARAV",
+          "neutral": "\"Yahan ke shelves mein kuch aisa dhoondh raha hoon jo mere project ke liye zaroori hai.\"",
+          "slang": "Yahan ke shelves mein kuch aisa dhoondh raha hoon jo mere project ke liye paisa vasool hai.",
+          "slang_added": "Paisa vasool",
+          "slang_applied": true,
+          "intent": "CASUAL_ASSERTION",
+          "gate_stopped": null,
+          "changed": true
+        },
+        {
+          "speaker": "ARAV",
+          "neutral": "\"Ek purana, dhool se bhara chest dekha, jo aam taur par lock kiya hua hota hai.\"",
+          "slang": "\"Ek purana, dhool se bhara chest dekha, jo aam taur par lock kiya hua hota hai.\"",
+          "slang_added": null,
+          "slang_applied": false,
+          "intent": "INFORM_NEUTRAL",
+          "gate_stopped": 2,
+          "changed": false
+        },
+        {
+          "speaker": "ARAV",
+          "neutral": "\"Uske andar ek diary mili, jisme ek note hai: 'Sach ki poori khoj shuru ho rahi hai.'\"",
+          "slang": "\"Uske andar ek diary mili, jisme ek note hai: 'Sach ki poori khoj shuru ho rahi hai.'\"",
+          "slang_added": null,
+          "slang_applied": false,
+          "intent": "INFORM_NEUTRAL",
+          "gate_stopped": 2,
+          "changed": false
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_03",
+      "location": "Arav’s study/room",
+      "lines": [
+        {
+          "speaker": "ARAV",
+          "neutral": "Diary khol ke padh raha hoon, aur mujhe ek purana naam mil raha hai—ek bhool gaya vyapari, jinhone gaon ki garib parivaron ki madad ki thi, lekin history mein unka koi record nahi hai.",
+          "slang": "Diary khol ke padh raha hoon, aur mujhe ek purana naam mil raha hai—ek bhool gaya vyapari, jinhone gaon ki garib parivaron ki madad ki thi, lekin history mein unka koi record nahi hai.",
+          "slang_added": null,
+          "slang_applied": false,
+          "intent": "INFORM_NEUTRAL",
+          "gate_stopped": 2,
+          "changed": false
+        },
+        {
+          "speaker": "ARAV",
+          "neutral": "Diary mein kuch purane nakshon ka zikr hai, jo us vyapari ke raaste aur uski madad ki jagah dikhate hain.",
+          "slang": "Diary mein kuch purane nakshon ka zikr hai, jo us vyapari ke raaste aur uski madad ki jagah dikhate hain, scene.",
+          "slang_added": "Scene",
+          "slang_applied": true,
+          "intent": "CASUAL_ASSERTION",
+          "gate_stopped": null,
+          "changed": true
+        },
+        {
+          "speaker": "ARAV",
+          "neutral": "Yeh clues mere liye ek nayi khoj ki shuruaat hain, aur main sach ko samajhne ke liye tayyar hoon.",
+          "slang": "Yeh clues mere liye ek nayi khoj ki shuruaat hain, aur main sach ko samajhne ke liye tayyar hoon, waat lag gayi.",
+          "slang_added": "Waat lag gayi",
+          "slang_applied": true,
+          "intent": "CASUAL_ASSERTION",
+          "gate_stopped": null,
+          "changed": true
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_04",
+      "location": "City archives",
+      "lines": [
+        {
+          "speaker": "ARAV",
+          "neutral": "\"Yahan ke archives mein mujhe ek purana ledger mila, jismein merchant ke naam ke saath uski trading records aur uske contributions ka zikr hai.\"",
+          "slang": "\"Yahan ke archives mein mujhe ek purana ledger mila, jismein merchant ke naam ke saath uski trading records aur uske contributions ka zikr hai.\"",
+          "slang_added": null,
+          "slang_applied": false,
+          "intent": "INFORM_NEUTRAL",
+          "gate_stopped": 2,
+          "changed": false
+        },
+        {
+          "speaker": "NARRATOR",
+          "neutral": "\"Is document se saaf hota hai ki merchant ne city ke development mein mahatvapurn bhumika nibhayi, aur uski kahani ab sach ke roop mein samne aayi.\"",
+          "slang": "Is document se saaf hota hai ki merchant ne city ke development mein mahatvapurn bhumika nibhayi, kya raita failaya, aur uski kahani ab sach ke roop mein samne aayi.",
+          "slang_added": "kya raita failaya",
+          "slang_applied": true,
+          "intent": "CASUAL_ASSERTION",
+          "gate_stopped": null,
+          "changed": true
+        },
+        {
+          "speaker": "ARAV",
+          "neutral": "\"Is praman ke saath, city council ne faisla kiya hai ki ek monument banaya jayega, jisse uski yaad aur uske yogdan ko hamesha yaad rakha jayega.\"",
+          "slang": "Is praman ke saath, city council ne faisla kiya hai ki ek monument banaya jayega, jisse uski yaad aur uske yogdan ko hamesha yaad rakha jayega, superb.",
+          "slang_added": "superb",
+          "slang_applied": true,
+          "intent": "CASUAL_ASSERTION",
+          "gate_stopped": null,
+          "changed": true
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_05",
+      "location": "Unknown",
+      "lines": [
+        {
+          "speaker": "ARAV",
+          "neutral": "History sirf bade events ke liye hi yaad rakhi jati hai, lekin aksar chhoti achi kaam karne wale log bhool jaate hain.",
+          "slang": "History sirf bade events ke liye hi yaad rakhi jati hai, lekin aksar chhoti achi kaam karne wale log bhool jaate hain, senti mat kar.",
+          "slang_added": "senti mat kar",
+          "slang_applied": true,
+          "intent": "CASUAL_ASSERTION",
+          "gate_stopped": null,
+          "changed": true
+        },
+        {
+          "speaker": "ARAV",
+          "neutral": "Isse hum samajhte hain ki yaad rakhna sirf naam ya ghatna nahi, balki insaan ki bhavnaon aur uske karam ka bhi hota hai.",
+          "slang": "Isse hum samajhte hain ki yaad rakhna sirf naam ya ghatna nahi, balki insaan ki bhavnaon aur uske karam ka bhi kha jati hai.",
+          "slang_added": "Kha jati hai",
+          "slang_applied": true,
+          "intent": "CASUAL_ASSERTION",
+          "gate_stopped": null,
+          "changed": true
+        }
+      ]
+    }
+  ],
+  "final_script": "# HINGLISH SCREENPLAY\n\n## SCENE_01\n*Location: An old library in the middle of the city*\n\nSPEAKER: Shahar ke beech mein ek purana library hai, jo itna purana hai ki log kehte hain ki kuch kitabein ek sau saal se bhi purani hain.\nSPEAKER: Din bhar yahan students aur researchers aate hain, har koi apne research ke liye yahan ki kitabain padhte hain, vibe.\nSPEAKER: Raat ko jab sab log jaate hain, poora building khamoshi se loot machai rehta hai.\n\n---\n\n## SCENE_02\n*Location: Ancient library*\n\nArav: Yahan ke shelves mein kuch aisa dhoondh raha hoon jo mere project ke liye paisa vasool hai.\nArav: \"Ek purana, dhool se bhara chest dekha, jo aam taur par lock kiya hua hota hai.\"\nArav: \"Uske andar ek diary mili, jisme ek note hai: 'Sach ki poori khoj shuru ho rahi hai.'\"\n\n---\n\n## SCENE_03\n*Location: Arav’s study/room*\n\nArav: Diary khol ke padh raha hoon, aur mujhe ek purana naam mil raha hai—ek bhool gaya vyapari, jinhone gaon ki garib parivaron ki madad ki thi, lekin history mein unka koi record nahi hai.\nArav: Diary mein kuch purane nakshon ka zikr hai, jo us vyapari ke raaste aur uski madad ki jagah dikhate hain, scene.\nArav: Yeh clues mere liye ek nayi khoj ki shuruaat hain, aur main sach ko samajhne ke liye tayyar hoon, waat lag gayi.\n\n---\n\n## SCENE_04\n*Location: City archives*\n\nArav: \"Yahan ke archives mein mujhe ek purana ledger mila, jismein merchant ke naam ke saath uski trading records aur uske contributions ka zikr hai.\"\nNarrator: Is document se saaf hota hai ki merchant ne city ke development mein mahatvapurn bhumika nibhayi, kya raita failaya, aur uski kahani ab sach ke roop mein samne aayi.\nArav: Is praman ke saath, city council ne faisla kiya hai ki ek monument banaya jayega, jisse uski yaad aur uske yogdan ko hamesha yaad rakha jayega, superb.\n\n---\n\n## SCENE_05\n*Location: Unknown*\n\nArav: History sirf bade events ke liye hi yaad rakhi jati hai, lekin aksar chhoti achi kaam karne wale log bhool jaate hain, senti mat kar.\nArav: Isse hum samajhte hain ki yaad rakhna sirf naam ya ghatna nahi, balki insaan ki bhavnaon aur uske karam ka bhi kha jati hai.\n\n---\n"
+}

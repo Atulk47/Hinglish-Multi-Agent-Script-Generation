@@ -16,6 +16,16 @@ class ThreeGateController:
         self.density_threshold = slang_density_threshold
         # {scene_id: {"total": int, "slang": int}}
         self._scene_slang_counts = {}
+        # Anika: emergency override used by the redo loop when a scene
+        # got 0 slang. Skips gate 2 (pragmatic) and gate 3 (density) so
+        # something can be inserted; gate 1 (elders/authority) still applies.
+        self._permissive = False
+
+    def set_permissive(self, enabled: bool) -> None:
+        """Toggle permissive mode. In permissive mode gates 2 and 3 always
+        pass, but gate 1 still blocks elders/authority. Use only for a
+        targeted retry, then set back to False."""
+        self._permissive = bool(enabled)
 
     # ── GATE 1: Speaker Eligibility ───────────────────────────────────
     def gate1_speaker_eligible(self, speaker_name: str) -> bool:
@@ -61,6 +71,8 @@ class ThreeGateController:
         }
 
         intent = intent_classifier.classify(utterance)
+        if self._permissive:
+            return True, intent
         eligible = intent in SLANG_PERMITTED_INTENTS
         return eligible, intent
 
@@ -76,6 +88,9 @@ class ThreeGateController:
 
         counts = self._scene_slang_counts[scene_id]
         counts["total"] += utterance_token_count
+
+        if self._permissive:
+            return True
 
         if counts["total"] == 0:
             return True
