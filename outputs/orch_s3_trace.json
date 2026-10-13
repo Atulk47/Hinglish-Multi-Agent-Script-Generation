@@ -1,0 +1,450 @@
+{
+  "romanized_text": "ek vidyalay men varshik vijnana pradarshani ayojit ki j rahi thi. is bar chatron ko ais mdala banan tha jo kisi vastavik samasy k samadhan prastut kare.\n\nnain aur usake mitron ne ek smart robot banane k nirnay liya. unak vichar tha ki robot bujaurg logon ki dainik gatividhiyon men sahayat kara sake. unhonne kai saptah tak dijain taiyar kiya, programing ki aur vibhinn sensar jodae.\n\npradarshani ke din robot ne agantukon k svagat kiya, davaiyon ki yad dilane k pradarshan kiya aur avashyakat padane para sahayat sandesh bhejane ki kshamat bhi dikhai. logon ko yaha pariyojan bahut pasand ai.\n\nnirnayak mandal ne chatron se kai takaniki prashn puche. nain aur usaki tim ne atmavishvas ke sath sabhi prashnon ke uttar die. unhonne batay ki bhavishy men ve robot men svasthy nigarani ki suvidh bhi jodana chahate hain.\n\ndin ke ant men unaki pariyojan ko pratham puraskar mil. puraskar se adhik khushi unhen is bat ki thi ki unak vichar samaj ke lie upayogi sabit ho sakat hai.",
+  "event_chain": [
+    {
+      "scene_id": "scene_01",
+      "key_events": [
+        "Annual science exhibition is being organized in a school",
+        "Students are to create a model that presents a solution to a real problem"
+      ],
+      "characters": [],
+      "scene_goal": "Introduce the setting and the task for the students",
+      "location": "A school",
+      "narrative_link": "Following the first scene, the school is organizing an annual science exhibition",
+      "pronoun_map": {}
+    },
+    {
+      "scene_id": "scene_02",
+      "key_events": [
+        "Nain and his friends decide to build a smart robot",
+        "They believe the robot can assist elderly people in daily activities",
+        "They spend several weeks designing, programming, and adding various sensors to the robot"
+      ],
+      "characters": [
+        "Nain"
+      ],
+      "scene_goal": "Establish the planning and development process for the smart robot",
+      "location": "Unspecified lab or workshop",
+      "narrative_link": "Following the introduction of the setting and task for the students, Nain now decides to build a smart robot with his friends",
+      "pronoun_map": {
+        "usne": "Ram",
+        "woh": "Sita"
+      }
+    },
+    {
+      "scene_id": "scene_03",
+      "key_events": [
+        "Robot welcomes visitors at the exhibition",
+        "Robot demonstrates medication reminder feature",
+        "Robot shows ability to send help messages"
+      ],
+      "characters": [],
+      "scene_goal": "Showcase the robot’s capabilities to the audience",
+      "location": "Exhibition venue",
+      "narrative_link": "Following the planning and development process, the robot now demonstrates its functions",
+      "pronoun_map": {}
+    },
+    {
+      "scene_id": "scene_04",
+      "key_events": [
+        "Nain and his team answer technical questions posed by the decision committee",
+        "They announce plans to add health monitoring features to the robot in the future"
+      ],
+      "characters": [
+        "Nain"
+      ],
+      "scene_goal": "Demonstrate Nain’s confidence and future development plans for the robot",
+      "location": "meeting room",
+      "narrative_link": "Following the showcase of the robot’s capabilities to the audience, Nain now answers technical questions and outlines future plans",
+      "pronoun_map": {
+        "usne": "Ram",
+        "woh": "Sita"
+      }
+    },
+    {
+      "scene_id": "scene_05",
+      "key_events": [
+        "Unaki pariyojan ko pratham puraskar mil gaya",
+        "Unaki khushi se bataya ki uske vichar samaj ke liye upayogi sabit ho sakte hain"
+      ],
+      "characters": [
+        "Ram",
+        "Sita"
+      ],
+      "scene_goal": "Showcase the recognition of the project and its potential impact",
+      "location": "Unspecified",
+      "narrative_link": "Following Nain’s confidence and future development plans for the robot, Sita now receives the first prize for her project",
+      "pronoun_map": {
+        "usne": "Ram",
+        "woh": "Sita"
+      }
+    }
+  ],
+  "character_profiles": {
+    "Nain": {
+      "name": "Nain",
+      "age": null,
+      "social_role": "peer",
+      "slang_level": 5,
+      "relationship": {},
+      "current_emotion": "neutral",
+      "turn_count": 2,
+      "stress_index": 0.0
+    },
+    "Ram": {
+      "name": "Ram",
+      "age": null,
+      "social_role": "peer",
+      "slang_level": 5,
+      "relationship": {},
+      "current_emotion": "happy",
+      "turn_count": 1,
+      "stress_index": 0.0
+    },
+    "Sita": {
+      "name": "Sita",
+      "age": null,
+      "social_role": "peer",
+      "slang_level": 5,
+      "relationship": {},
+      "current_emotion": "happy",
+      "turn_count": 1,
+      "stress_index": 0.0
+    }
+  },
+  "neutral_script": [
+    {
+      "scene_id": "scene_01",
+      "dialogue": "SPEAKER: Aaj humari school mein annual science exhibition ka aayojan ho raha hai.  \nSPEAKER: Is exhibition mein students ko ek aisa model banana hoga jo kisi real problem ka solution dikhaye.  \nSPEAKER: Aap sab apne ideas ko soch samajh kar, ek prabhavshali aur upyogi model tayar karein.",
+      "events": {
+        "scene_id": "scene_01",
+        "key_events": [
+          "Annual science exhibition is being organized in a school",
+          "Students are to create a model that presents a solution to a real problem"
+        ],
+        "characters": [],
+        "scene_goal": "Introduce the setting and the task for the students",
+        "location": "A school",
+        "narrative_link": "Following the first scene, the school is organizing an annual science exhibition",
+        "pronoun_map": {}
+      }
+    },
+    {
+      "scene_id": "scene_02",
+      "dialogue": "Nain: Hum sab milke ek smart robot banane ka plan kar rahe hain, jisse buzurg log apne roz ke kaam aasani se kar saken.  \nFriend: Haan, hum sensors aur AI algorithms add karenge, taki robot unki daily activities ko samajh sake aur unki madad kar sake.  \nNain: Pichle kuch hafton se hum design, programming aur sensor integration pe kaam kar rahe hain, aur ab final testing ke liye ready hain.",
+      "events": {
+        "scene_id": "scene_02",
+        "key_events": [
+          "Nain and his friends decide to build a smart robot",
+          "They believe the robot can assist elderly people in daily activities",
+          "They spend several weeks designing, programming, and adding various sensors to the robot"
+        ],
+        "characters": [
+          "Nain"
+        ],
+        "scene_goal": "Establish the planning and development process for the smart robot",
+        "location": "Unspecified lab or workshop",
+        "narrative_link": "Following the introduction of the setting and task for the students, Nain now decides to build a smart robot with his friends",
+        "pronoun_map": {
+          "usne": "Ram",
+          "woh": "Sita"
+        }
+      }
+    },
+    {
+      "scene_id": "scene_03",
+      "dialogue": "SPEAKER: Namaste, sabhi ko hamare exhibition mein swagat hai.  \nSPEAKER: Yeh robot aapke liye dawai ki reminder set kar sakta hai; bas aapko time batayein aur vo aapko yaad dilayega.  \nSPEAKER: Agar kabhi koi emergency ho, to robot turant help message bhej sakta hai, jisse aapko turant sahayata milegi.",
+      "events": {
+        "scene_id": "scene_03",
+        "key_events": [
+          "Robot welcomes visitors at the exhibition",
+          "Robot demonstrates medication reminder feature",
+          "Robot shows ability to send help messages"
+        ],
+        "characters": [],
+        "scene_goal": "Showcase the robot’s capabilities to the audience",
+        "location": "Exhibition venue",
+        "narrative_link": "Following the planning and development process, the robot now demonstrates its functions",
+        "pronoun_map": {}
+      }
+    },
+    {
+      "scene_id": "scene_04",
+      "dialogue": "Nain: \"Committee ke sawalon ka jawab dene ke liye, humne sensor integration aur power management ko optimize kiya hai, jisse robot ki operational efficiency 30% badh gayi hai.\"  \nNain: \"Aane wale mahino mein, hum health monitoring modules add karne ka plan kar rahe hain, jisse robot real-time vitals track kar sake aur emergency alerts bhej sake.\"  \nNain: \"Isse humara robot na sirf daily tasks mein madad karega, balki user ki health ko bhi proactively monitor karega, jo ki hamara long-term vision hai.\"",
+      "events": {
+        "scene_id": "scene_04",
+        "key_events": [
+          "Nain and his team answer technical questions posed by the decision committee",
+          "They announce plans to add health monitoring features to the robot in the future"
+        ],
+        "characters": [
+          "Nain"
+        ],
+        "scene_goal": "Demonstrate Nain’s confidence and future development plans for the robot",
+        "location": "meeting room",
+        "narrative_link": "Following the showcase of the robot’s capabilities to the audience, Nain now answers technical questions and outlines future plans",
+        "pronoun_map": {
+          "usne": "Ram",
+          "woh": "Sita"
+        }
+      }
+    },
+    {
+      "scene_id": "scene_05",
+      "dialogue": "Ram: Sita, tumhari project ko pehla puraskar mil gaya hai!  \nRam: Yeh samajh ke khush hoon ki tumhare vichar samaj ke liye upayogi sabit ho sakte hain.  \nRam: Aage bhi aise hi innovative ideas lekar aao, hum sab tumhare saath hain.",
+      "events": {
+        "scene_id": "scene_05",
+        "key_events": [
+          "Unaki pariyojan ko pratham puraskar mil gaya",
+          "Unaki khushi se bataya ki uske vichar samaj ke liye upayogi sabit ho sakte hain"
+        ],
+        "characters": [
+          "Ram",
+          "Sita"
+        ],
+        "scene_goal": "Showcase the recognition of the project and its potential impact",
+        "location": "Unspecified",
+        "narrative_link": "Following Nain’s confidence and future development plans for the robot, Sita now receives the first prize for her project",
+        "pronoun_map": {
+          "usne": "Ram",
+          "woh": "Sita"
+        }
+      }
+    }
+  ],
+  "slang_script": [
+    {
+      "scene_id": "scene_01",
+      "dialogue": "SPEAKER: Aaj humari school mein annual science exhibition ka aayojan ho raha hai.\nSPEAKER: Is exhibition mein students ko ek aisa model banana hoga jo kisi real problem ka solution dikhaye, scene tight.\nSPEAKER: Aap sab apne ideas ko soch samajh kar, ek prabhavshali aur upyogi model tayar karein, next level.",
+      "decisions": [
+        {
+          "speaker": "SPEAKER",
+          "applied": false,
+          "go": false,
+          "gate_stopped": 2,
+          "intent": "INFORM_NEUTRAL",
+          "reason": "Intent 'INFORM_NEUTRAL' does not permit slang"
+        },
+        {
+          "speaker": "SPEAKER",
+          "applied": true,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "CASUAL_ASSERTION",
+          "reason": "All gates passed",
+          "slang": "Scene tight",
+          "slang_tokens_added": 2
+        },
+        {
+          "speaker": "SPEAKER",
+          "applied": true,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "CASUAL_ASSERTION",
+          "reason": "All gates passed",
+          "slang": "next level",
+          "slang_tokens_added": 2
+        }
+      ],
+      "events": {
+        "scene_id": "scene_01",
+        "key_events": [
+          "Annual science exhibition is being organized in a school",
+          "Students are to create a model that presents a solution to a real problem"
+        ],
+        "characters": [],
+        "scene_goal": "Introduce the setting and the task for the students",
+        "location": "A school",
+        "narrative_link": "Following the first scene, the school is organizing an annual science exhibition",
+        "pronoun_map": {}
+      }
+    },
+    {
+      "scene_id": "scene_02",
+      "dialogue": "Nain: Hum sab milke ek smart robot banane ka plan kar rahe hain, jisse buzurg log apne roz ke kaam aasani se kar saken.\nFriend: Haan, hum sensors aur AI algorithms add karenge, taki robot unki daily activities ko samajh sake aur unki madad kar sake.\nNain: Pichle kuch hafton se hum design, programming aur sensor integration pe kaam kar rahe hain, aur ab final testing ke liye ready hain.",
+      "decisions": [
+        {
+          "speaker": "Nain",
+          "applied": false,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "CASUAL_ASSERTION",
+          "reason": "All gates passed"
+        },
+        {
+          "speaker": "Friend",
+          "applied": false,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "CASUAL_ASSERTION",
+          "reason": "All gates passed"
+        },
+        {
+          "speaker": "Nain",
+          "applied": false,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "CASUAL_ASSERTION",
+          "reason": "All gates passed"
+        }
+      ],
+      "events": {
+        "scene_id": "scene_02",
+        "key_events": [
+          "Nain and his friends decide to build a smart robot",
+          "They believe the robot can assist elderly people in daily activities",
+          "They spend several weeks designing, programming, and adding various sensors to the robot"
+        ],
+        "characters": [
+          "Nain"
+        ],
+        "scene_goal": "Establish the planning and development process for the smart robot",
+        "location": "Unspecified lab or workshop",
+        "narrative_link": "Following the introduction of the setting and task for the students, Nain now decides to build a smart robot with his friends",
+        "pronoun_map": {
+          "usne": "Ram",
+          "woh": "Sita"
+        }
+      }
+    },
+    {
+      "scene_id": "scene_03",
+      "dialogue": "SPEAKER: Namaste, sabhi ko hamare exhibition mein swagat hai.\nSPEAKER: Yeh robot aapke liye dawai ki reminder set kar sakta hai; bas aapko time batayein aur vo aapko yaad dilayega.\nSPEAKER: Agar kabhi koi emergency ho, to robot turant help message bhej sakta hai, jisse aapko turant sahayata milegi.",
+      "decisions": [
+        {
+          "speaker": "SPEAKER",
+          "applied": false,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "CASUAL_ASSERTION",
+          "reason": "All gates passed"
+        },
+        {
+          "speaker": "SPEAKER",
+          "applied": false,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "CASUAL_ASSERTION",
+          "reason": "All gates passed"
+        },
+        {
+          "speaker": "SPEAKER",
+          "applied": false,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "CASUAL_ASSERTION",
+          "reason": "All gates passed"
+        }
+      ],
+      "events": {
+        "scene_id": "scene_03",
+        "key_events": [
+          "Robot welcomes visitors at the exhibition",
+          "Robot demonstrates medication reminder feature",
+          "Robot shows ability to send help messages"
+        ],
+        "characters": [],
+        "scene_goal": "Showcase the robot’s capabilities to the audience",
+        "location": "Exhibition venue",
+        "narrative_link": "Following the planning and development process, the robot now demonstrates its functions",
+        "pronoun_map": {}
+      }
+    },
+    {
+      "scene_id": "scene_04",
+      "dialogue": "Nain: \"Committee ke sawalon ka jawab dene ke liye, humne sensor integration aur power management ko optimize kiya hai, jisse robot ki operational efficiency 30% badh gayi hai.\"\nNain: \"Aane wale mahino mein, hum health monitoring modules add karne ka plan kar rahe hain, jisse robot real-time vitals track kar sake aur emergency alerts bhej sake.\"\nNain: \"Isse humara robot na sirf daily tasks mein madad karega, balki user ki health ko bhi proactively monitor karega, jo ki hamara long-term vision hai.\"",
+      "decisions": [
+        {
+          "speaker": "Nain",
+          "applied": false,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "CASUAL_ASSERTION",
+          "reason": "All gates passed"
+        },
+        {
+          "speaker": "Nain",
+          "applied": false,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "CASUAL_ASSERTION",
+          "reason": "All gates passed"
+        },
+        {
+          "speaker": "Nain",
+          "applied": false,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "CASUAL_ASSERTION",
+          "reason": "All gates passed"
+        }
+      ],
+      "events": {
+        "scene_id": "scene_04",
+        "key_events": [
+          "Nain and his team answer technical questions posed by the decision committee",
+          "They announce plans to add health monitoring features to the robot in the future"
+        ],
+        "characters": [
+          "Nain"
+        ],
+        "scene_goal": "Demonstrate Nain’s confidence and future development plans for the robot",
+        "location": "meeting room",
+        "narrative_link": "Following the showcase of the robot’s capabilities to the audience, Nain now answers technical questions and outlines future plans",
+        "pronoun_map": {
+          "usne": "Ram",
+          "woh": "Sita"
+        }
+      }
+    },
+    {
+      "scene_id": "scene_05",
+      "dialogue": "Ram: Sita, tumhari project ko pehla puraskar mil gaya hai!\nRam: Yeh samajh ke khush hoon ki tumhare vichar samaj ke liye upayogi sabit ho sakte hain.\nRam: Aage bhi aise hi innovative ideas lekar aao, hum sab tumhare saath hain.",
+      "decisions": [
+        {
+          "speaker": "Ram",
+          "applied": false,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "CASUAL_ASSERTION",
+          "reason": "All gates passed"
+        },
+        {
+          "speaker": "Ram",
+          "applied": false,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "CASUAL_ASSERTION",
+          "reason": "All gates passed"
+        },
+        {
+          "speaker": "Ram",
+          "applied": false,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "CASUAL_ASSERTION",
+          "reason": "All gates passed"
+        }
+      ],
+      "events": {
+        "scene_id": "scene_05",
+        "key_events": [
+          "Unaki pariyojan ko pratham puraskar mil gaya",
+          "Unaki khushi se bataya ki uske vichar samaj ke liye upayogi sabit ho sakte hain"
+        ],
+        "characters": [
+          "Ram",
+          "Sita"
+        ],
+        "scene_goal": "Showcase the recognition of the project and its potential impact",
+        "location": "Unspecified",
+        "narrative_link": "Following Nain’s confidence and future development plans for the robot, Sita now receives the first prize for her project",
+        "pronoun_map": {
+          "usne": "Ram",
+          "woh": "Sita"
+        }
+      }
+    }
+  ],
+  "final_script": "# HINGLISH SCREENPLAY\n\n## SCENE_01\n*Location: A school*\n\nSPEAKER: Aaj humari school mein annual science exhibition ka aayojan ho raha hai.\nSPEAKER: Is exhibition mein students ko ek aisa model banana hoga jo kisi real problem ka solution dikhaye, scene tight.\nSPEAKER: Aap sab apne ideas ko soch samajh kar, ek prabhavshali aur upyogi model tayar karein, next level.\n\n---\n\n## SCENE_02\n*Location: Unspecified lab or workshop*\n\nNain: Hum sab milke ek smart robot banane ka plan kar rahe hain, jisse buzurg log apne roz ke kaam aasani se kar saken.\nFriend: Haan, hum sensors aur AI algorithms add karenge, taki robot unki daily activities ko samajh sake aur unki madad kar sake.\nNain: Pichle kuch hafton se hum design, programming aur sensor integration pe kaam kar rahe hain, aur ab final testing ke liye ready hain.\n\n---\n\n## SCENE_03\n*Location: Exhibition venue*\n\nSPEAKER: Namaste, sabhi ko hamare exhibition mein swagat hai.\nSPEAKER: Yeh robot aapke liye dawai ki reminder set kar sakta hai; bas aapko time batayein aur vo aapko yaad dilayega.\nSPEAKER: Agar kabhi koi emergency ho, to robot turant help message bhej sakta hai, jisse aapko turant sahayata milegi.\n\n---\n\n## SCENE_04\n*Location: meeting room*\n\nNain: \"Committee ke sawalon ka jawab dene ke liye, humne sensor integration aur power management ko optimize kiya hai, jisse robot ki operational efficiency 30% badh gayi hai.\"\nNain: \"Aane wale mahino mein, hum health monitoring modules add karne ka plan kar rahe hain, jisse robot real-time vitals track kar sake aur emergency alerts bhej sake.\"\nNain: \"Isse humara robot na sirf daily tasks mein madad karega, balki user ki health ko bhi proactively monitor karega, jo ki hamara long-term vision hai.\"\n\n---\n\n## SCENE_05\n*Location: Unspecified*\n\nRam: Sita, tumhari project ko pehla puraskar mil gaya hai!\nRam: Yeh samajh ke khush hoon ki tumhare vichar samaj ke liye upayogi sabit ho sakte hain.\nRam: Aage bhi aise hi innovative ideas lekar aao, hum sab tumhare saath hain.\n\n---\n"
+}

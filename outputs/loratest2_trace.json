@@ -1,0 +1,638 @@
+{
+  "romanized_text": "arav aur riy ek hi skul men padhate the aur pakke dost the. ek din skul men vijnana mele ki ghoshan hui. arav bahut utsahit hokar riy ke pas daudaa aur bol, riya, hamen is bar kuch jabaradasta banan hai. agar ham jit gae to pure skul men hamar nam hog. riy ne hansate hue kaha, bilkula, chal aj se hi shuru karate hain.\n\ndonon ne milakar ek chot robot banane k phaisal kiya. lekin kuch hi dinon men mushkilen ane lagin. ek sham robot k sarkit bara-bara jal jata tha. arav jhunjhal kara bol, yaha kam hi nahin kara rah. mainne itani mehanat ki aur sab bekar j rah hai. riy ne use shant karate hue kaha, itana pareshan mat ho, ham phir se koshish karenge.\n\nusi rat arav apani dadi ke pas gaya aur sari bat batai. dadi ghar ki sabase bujaurg sadasy thin. arav ne kaha, dadi, mujhe lagat hai main har jaung. dadi ne pyar se usak sir sahalay aur bolin, beta, dhairy rakho. mehanat kabhi bekar nahin jati. har asaphalat kuch sikhati hai. arav ko unaki bat se nai himmat mili.\n\nagale din vijnana mele men adhyapak sharm sabhi pariyojanaon ki janch kara rahe the. ve apani sakhati ke lie jane jate the. unhonne arav se puch, tumane yaha robot kaise banay aur isak asali upayog kya hai? arav ne shanti se har saval k uttar diya. adhyapak sharm ne sir hilakar kaha, tumhari mehanat sapha dikhai deti hai.\n\nparinam ki ghoshan hui aur arav tath riy ki tim pratham ai. riy khushi se chillai, hama jit gae! mujhe yakin hi nahin ho rah. arav ne hansate hue kaha, mainne kaha tha n, ham kamal kara denge. us sham donon doston ne apani jit k jashn manay aur dadi ko dhanyavad kaha jinaki baton ne unhen kabhi har nahin manane di.",
+  "event_chain": [
+    {
+      "scene_id": "scene_01",
+      "key_events": [
+        "Announcement of a science fair at the school",
+        "Arav excitedly runs to Riy and proposes to create an amazing project for the fair",
+        "Riy laughs and agrees to start the project immediately"
+      ],
+      "characters": [
+        "Arav",
+        "Riy"
+      ],
+      "scene_goal": "Arav and Riy decide to collaborate on a project for the upcoming science fair",
+      "location": "School",
+      "narrative_link": "Following the first scene, Arav now proposes a project to Riy",
+      "pronoun_map": {}
+    },
+    {
+      "scene_id": "scene_02",
+      "key_events": [
+        "Arav and Riy decide to build a small robot together",
+        "The robot repeatedly catches fire during testing",
+        "Riy calms Arav and promises to try again"
+      ],
+      "characters": [
+        "Arav",
+        "Riy"
+      ],
+      "scene_goal": "Show the initial failure of their project and Riy’s encouragement to keep trying",
+      "location": "Lab",
+      "narrative_link": "Following their decision to collaborate, Arav now faces setbacks and Riy offers support",
+      "pronoun_map": {}
+    },
+    {
+      "scene_id": "scene_03",
+      "key_events": [
+        "Arav goes to his grandmother and tells her everything about his situation",
+        "The grandmother gives him advice and encouragement, boosting his confidence"
+      ],
+      "characters": [
+        "Arav",
+        "Dadi"
+      ],
+      "scene_goal": "To provide emotional support and motivation for Arav after the project's failure",
+      "location": "Arav’s grandmother’s home",
+      "narrative_link": "Following the initial failure of their project and Riy’s encouragement to keep trying, Arav now seeks guidance from his grandmother",
+      "pronoun_map": {}
+    },
+    {
+      "scene_id": "scene_04",
+      "key_events": [
+        "Sharm checks all projects and asks Arav how he made the robot and its real use",
+        "Arav calmly answers all questions",
+        "Sharm nods and praises Arav’s hard work"
+      ],
+      "characters": [
+        "Arav",
+        "Sharm"
+      ],
+      "scene_goal": "Show Arav’s competence and receive positive reinforcement after project failure",
+      "location": "Vijnana Mela",
+      "narrative_link": "Following the previous scene, Arav now answers Sharm’s questions",
+      "pronoun_map": {}
+    },
+    {
+      "scene_id": "scene_05",
+      "key_events": [],
+      "characters": [],
+      "scene_goal": "Unknown",
+      "location": "Unknown",
+      "narrative_link": "",
+      "pronoun_map": {}
+    }
+  ],
+  "character_profiles": {
+    "Arav": {
+      "name": "Arav",
+      "age": null,
+      "social_role": "peer",
+      "slang_level": 5,
+      "relationship": {},
+      "current_emotion": "neutral",
+      "turn_count": 4,
+      "stress_index": 0.0
+    },
+    "Riy": {
+      "name": "Riy",
+      "age": null,
+      "social_role": "peer",
+      "slang_level": 5,
+      "relationship": {},
+      "current_emotion": "neutral",
+      "turn_count": 2,
+      "stress_index": 0.0
+    },
+    "Dadi": {
+      "name": "Dadi",
+      "age": null,
+      "social_role": "elder",
+      "slang_level": 0,
+      "relationship": {},
+      "current_emotion": "neutral",
+      "turn_count": 1,
+      "stress_index": 0.0
+    },
+    "Sharm": {
+      "name": "Sharm",
+      "age": null,
+      "social_role": "authority",
+      "slang_level": 0,
+      "relationship": {},
+      "current_emotion": "neutral",
+      "turn_count": 1,
+      "stress_index": 0.0
+    }
+  },
+  "neutral_script": [
+    {
+      "scene_id": "scene_01",
+      "dialogue": "Arav: \"Arre Riy, school mein science fair aane wala hai, aur main soch raha hoon ki hum ek zabardast project banayein.\"  \nRiy: \"Haan, sahi hai. Tumhare idea se shuru karte hain, turant kaam shuru karte hain.\"  \nArav: \"Bhai, chalo abhi se plan banate hain aur project ko perfect karte hain.\"",
+      "events": {
+        "scene_id": "scene_01",
+        "key_events": [
+          "Announcement of a science fair at the school",
+          "Arav excitedly runs to Riy and proposes to create an amazing project for the fair",
+          "Riy laughs and agrees to start the project immediately"
+        ],
+        "characters": [
+          "Arav",
+          "Riy"
+        ],
+        "scene_goal": "Arav and Riy decide to collaborate on a project for the upcoming science fair",
+        "location": "School",
+        "narrative_link": "Following the first scene, Arav now proposes a project to Riy",
+        "pronoun_map": {}
+      }
+    },
+    {
+      "scene_id": "scene_02",
+      "dialogue": "Arav: Humne robot banane ka plan kiya tha, lekin test ke dauran baar baar aag lagti ja rahi hai.  \nRiy: Thoda ruk ja, Arav. Yeh ek learning process hai; hum isko samajh kar phir se try karenge.  \nArav: Thik hai, Riy. Main phir se design ko revise karunga aur hum ek baar phir se start karenge.",
+      "events": {
+        "scene_id": "scene_02",
+        "key_events": [
+          "Arav and Riy decide to build a small robot together",
+          "The robot repeatedly catches fire during testing",
+          "Riy calms Arav and promises to try again"
+        ],
+        "characters": [
+          "Arav",
+          "Riy"
+        ],
+        "scene_goal": "Show the initial failure of their project and Riy’s encouragement to keep trying",
+        "location": "Lab",
+        "narrative_link": "Following their decision to collaborate, Arav now faces setbacks and Riy offers support",
+        "pronoun_map": {}
+      }
+    },
+    {
+      "scene_id": "scene_03",
+      "dialogue": "Arav: Dadi, project fail ho gaya, sab kuch bekar lag raha hai, mujhe samajh nahi aa raha ki aage kya karun.  \nDadi: Arav, har safar mein kabhi kabhi girna hota hai, lekin usse uthane ka jazba hi toh aapko aage badhata hai.  \nArav: Shukriya dadi, aapki baat se mera hausla phir se jag gaya.",
+      "events": {
+        "scene_id": "scene_03",
+        "key_events": [
+          "Arav goes to his grandmother and tells her everything about his situation",
+          "The grandmother gives him advice and encouragement, boosting his confidence"
+        ],
+        "characters": [
+          "Arav",
+          "Dadi"
+        ],
+        "scene_goal": "To provide emotional support and motivation for Arav after the project's failure",
+        "location": "Arav’s grandmother’s home",
+        "narrative_link": "Following the initial failure of their project and Riy’s encouragement to keep trying, Arav now seeks guidance from his grandmother",
+        "pronoun_map": {}
+      }
+    },
+    {
+      "scene_id": "scene_04",
+      "dialogue": "Arav: \"Robot ka design simple hai, main ne modular architecture use kiya, jisse maintenance aur upgrades asaan ho jate hain. Iska primary use hai data collection aur real-time monitoring of environmental parameters.\"  \nSharm: \"Bahut accha, Arav. Tumne jo framework banaya, usse process efficiency 30% se badh gayi. Bahut mehnat ki hai tumne.\"  \nArav: \"Shukriya, Sharm. Yeh project humare team ke liye ek learning experience raha, aur main khush hoon ki humne apni galti se kuch naya seekha.\"",
+      "events": {
+        "scene_id": "scene_04",
+        "key_events": [
+          "Sharm checks all projects and asks Arav how he made the robot and its real use",
+          "Arav calmly answers all questions",
+          "Sharm nods and praises Arav’s hard work"
+        ],
+        "characters": [
+          "Arav",
+          "Sharm"
+        ],
+        "scene_goal": "Show Arav’s competence and receive positive reinforcement after project failure",
+        "location": "Vijnana Mela",
+        "narrative_link": "Following the previous scene, Arav now answers Sharm’s questions",
+        "pronoun_map": {}
+      }
+    },
+    {
+      "scene_id": "scene_05",
+      "dialogue": "SPEAKER: Kya aapko lagta hai ki humare project ki timeline sahi hai?  \nSPEAKER: Agar koi delay hota hai, toh humein turant update dena chahiye.  \nSPEAKER: Aapke suggestions se hum process ko behtar bana sakte hain.",
+      "events": {
+        "scene_id": "scene_05",
+        "key_events": [],
+        "characters": [],
+        "scene_goal": "Unknown",
+        "location": "Unknown",
+        "narrative_link": "",
+        "pronoun_map": {}
+      }
+    }
+  ],
+  "slang_script": [
+    {
+      "scene_id": "scene_01",
+      "dialogue": "Arav: Arre boss, school mein science fair aane wala hai, aur main soch raha hoon ki hum ek zabardast project banayein.\nRiy: Haan bro, sahi hai. Tumhare idea se shuru karte hain, turant kaam shuru karte hain.\nArav: Abe bhai, chalo abhi se plan banate hain aur project ko perfect karte hain.",
+      "decisions": [
+        {
+          "speaker": "Arav",
+          "applied": true,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "CASUAL_ASSERTION",
+          "reason": "All gates passed",
+          "slang": "boss",
+          "slang_tokens_added": 1
+        },
+        {
+          "speaker": "Riy",
+          "applied": true,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "CASUAL_ASSERTION",
+          "reason": "All gates passed",
+          "slang": "bro",
+          "slang_tokens_added": 1
+        },
+        {
+          "speaker": "Arav",
+          "applied": true,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "CASUAL_ASSERTION",
+          "reason": "All gates passed",
+          "slang": "abe",
+          "slang_tokens_added": 1
+        }
+      ],
+      "events": {
+        "scene_id": "scene_01",
+        "key_events": [
+          "Announcement of a science fair at the school",
+          "Arav excitedly runs to Riy and proposes to create an amazing project for the fair",
+          "Riy laughs and agrees to start the project immediately"
+        ],
+        "characters": [
+          "Arav",
+          "Riy"
+        ],
+        "scene_goal": "Arav and Riy decide to collaborate on a project for the upcoming science fair",
+        "location": "School",
+        "narrative_link": "Following the first scene, Arav now proposes a project to Riy",
+        "pronoun_map": {}
+      }
+    },
+    {
+      "scene_id": "scene_02",
+      "dialogue": "Arav: Robot banane ka plan kiya tha, ab toh dimaag kharab ho gayi hain yaar.\nRiy: Arav bhai, thoda ruk ja, mera toh jeb khaali hain.\nArav: Thik hai yaar, Riy. Main phir se design ko revise karunga aur hum ek baar phir se start karenge.",
+      "decisions": [
+        {
+          "speaker": "Arav",
+          "applied": true,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "ASSERT_FRUSTRATION",
+          "reason": "All gates passed",
+          "slang": "ab toh dimaag",
+          "slang_tokens_added": 1
+        },
+        {
+          "speaker": "Riy",
+          "applied": true,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "CASUAL_ASSERTION",
+          "reason": "All gates passed",
+          "slang": "bhai mera toh",
+          "slang_tokens_added": 1
+        },
+        {
+          "speaker": "Arav",
+          "applied": true,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "CASUAL_ASSERTION",
+          "reason": "All gates passed",
+          "slang": "yaar",
+          "slang_tokens_added": 1
+        }
+      ],
+      "events": {
+        "scene_id": "scene_02",
+        "key_events": [
+          "Arav and Riy decide to build a small robot together",
+          "The robot repeatedly catches fire during testing",
+          "Riy calms Arav and promises to try again"
+        ],
+        "characters": [
+          "Arav",
+          "Riy"
+        ],
+        "scene_goal": "Show the initial failure of their project and Riy’s encouragement to keep trying",
+        "location": "Lab",
+        "narrative_link": "Following their decision to collaborate, Arav now faces setbacks and Riy offers support",
+        "pronoun_map": {}
+      }
+    },
+    {
+      "scene_id": "scene_03",
+      "dialogue": "Arav: Yaar dadi, project fail ho gaya, sab kuch bekar lag raha hai, mujhe samajh nahi aa raha ki aage kya karun.\nDadi: Arav, har safar mein kabhi kabhi girna hota hai, lekin usse uthane ka jazba hi toh aapko aage badhata hai.\nArav: Shukriya dadi, aapki baat se mera hausla phir se jag gaya.",
+      "decisions": [
+        {
+          "speaker": "Arav",
+          "applied": true,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "CASUAL_ASSERTION",
+          "reason": "All gates passed",
+          "slang": "yaar",
+          "slang_tokens_added": 1
+        },
+        {
+          "speaker": "Dadi",
+          "applied": false,
+          "go": false,
+          "gate_stopped": 1,
+          "intent": null,
+          "reason": "Speaker 'Dadi' is elder/authority or slang_level=0"
+        },
+        {
+          "speaker": "Arav",
+          "applied": false,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "ASSERT_POSITIVE",
+          "reason": "respectful/grateful line — slang skipped"
+        }
+      ],
+      "events": {
+        "scene_id": "scene_03",
+        "key_events": [
+          "Arav goes to his grandmother and tells her everything about his situation",
+          "The grandmother gives him advice and encouragement, boosting his confidence"
+        ],
+        "characters": [
+          "Arav",
+          "Dadi"
+        ],
+        "scene_goal": "To provide emotional support and motivation for Arav after the project's failure",
+        "location": "Arav’s grandmother’s home",
+        "narrative_link": "Following the initial failure of their project and Riy’s encouragement to keep trying, Arav now seeks guidance from his grandmother",
+        "pronoun_map": {}
+      }
+    },
+    {
+      "scene_id": "scene_04",
+      "dialogue": "Arav: \"Robot ka design simple hai, main ne modular architecture use kiya, jisse maintenance aur upgrades asaan ho jate hain. Iska primary use hai data collection aur real-time monitoring of environmental parameters.\"\nSharm: \"Bahut accha, Arav. Tumne jo framework banaya, usse process efficiency 30% se badh gayi. Bahut mehnat ki hai tumne.\"\nArav: \"Shukriya, Sharm. Yeh project humare team ke liye ek learning experience raha, aur main khush hoon ki humne apni galti se kuch naya seekha.\"",
+      "decisions": [
+        {
+          "speaker": "Arav",
+          "applied": false,
+          "go": false,
+          "gate_stopped": 2,
+          "intent": "INFORM_NEUTRAL",
+          "reason": "Intent 'INFORM_NEUTRAL' does not permit slang"
+        },
+        {
+          "speaker": "Sharm",
+          "applied": false,
+          "go": false,
+          "gate_stopped": 1,
+          "intent": null,
+          "reason": "Speaker 'Sharm' is elder/authority or slang_level=0"
+        },
+        {
+          "speaker": "Arav",
+          "applied": false,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "CASUAL_ASSERTION",
+          "reason": "respectful/grateful line — slang skipped"
+        }
+      ],
+      "events": {
+        "scene_id": "scene_04",
+        "key_events": [
+          "Sharm checks all projects and asks Arav how he made the robot and its real use",
+          "Arav calmly answers all questions",
+          "Sharm nods and praises Arav’s hard work"
+        ],
+        "characters": [
+          "Arav",
+          "Sharm"
+        ],
+        "scene_goal": "Show Arav’s competence and receive positive reinforcement after project failure",
+        "location": "Vijnana Mela",
+        "narrative_link": "Following the previous scene, Arav now answers Sharm’s questions",
+        "pronoun_map": {}
+      }
+    },
+    {
+      "scene_id": "scene_05",
+      "dialogue": "SPEAKER: Kya aapko lagta hai ki humare project ki timeline sahi hai?\nSPEAKER: Agar koi delay hota hai, toh humein bhai update dena chahiye yaar.\nSPEAKER: Aapke suggestions se hum process ko chill karenge, sab dekhte hoon.",
+      "decisions": [
+        {
+          "speaker": "SPEAKER",
+          "applied": false,
+          "go": false,
+          "gate_stopped": 2,
+          "intent": "QUESTION_FORMAL",
+          "reason": "Intent 'QUESTION_FORMAL' does not permit slang"
+        },
+        {
+          "speaker": "SPEAKER",
+          "applied": true,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "CASUAL_ASSERTION",
+          "reason": "All gates passed",
+          "slang": "bhai yaar",
+          "slang_tokens_added": 1
+        },
+        {
+          "speaker": "SPEAKER",
+          "applied": true,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "CASUAL_ASSERTION",
+          "reason": "All gates passed",
+          "slang": "chill karenge sab",
+          "slang_tokens_added": 1
+        }
+      ],
+      "events": {
+        "scene_id": "scene_05",
+        "key_events": [],
+        "characters": [],
+        "scene_goal": "Unknown",
+        "location": "Unknown",
+        "narrative_link": "",
+        "pronoun_map": {}
+      }
+    }
+  ],
+  "comparison": [
+    {
+      "scene_id": "scene_01",
+      "location": "School",
+      "lines": [
+        {
+          "speaker": "ARAV",
+          "neutral": "\"Arre Riy, school mein science fair aane wala hai, aur main soch raha hoon ki hum ek zabardast project banayein.\"",
+          "slang": "Arre boss, school mein science fair aane wala hai, aur main soch raha hoon ki hum ek zabardast project banayein.",
+          "slang_added": "boss",
+          "slang_applied": true,
+          "intent": "CASUAL_ASSERTION",
+          "gate_stopped": null,
+          "changed": true
+        },
+        {
+          "speaker": "RIY",
+          "neutral": "\"Haan, sahi hai. Tumhare idea se shuru karte hain, turant kaam shuru karte hain.\"",
+          "slang": "Haan bro, sahi hai. Tumhare idea se shuru karte hain, turant kaam shuru karte hain.",
+          "slang_added": "bro",
+          "slang_applied": true,
+          "intent": "CASUAL_ASSERTION",
+          "gate_stopped": null,
+          "changed": true
+        },
+        {
+          "speaker": "ARAV",
+          "neutral": "\"Bhai, chalo abhi se plan banate hain aur project ko perfect karte hain.\"",
+          "slang": "Abe bhai, chalo abhi se plan banate hain aur project ko perfect karte hain.",
+          "slang_added": "abe",
+          "slang_applied": true,
+          "intent": "CASUAL_ASSERTION",
+          "gate_stopped": null,
+          "changed": true
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_02",
+      "location": "Lab",
+      "lines": [
+        {
+          "speaker": "ARAV",
+          "neutral": "Humne robot banane ka plan kiya tha, lekin test ke dauran baar baar aag lagti ja rahi hai.",
+          "slang": "Robot banane ka plan kiya tha, ab toh dimaag kharab ho gayi hain yaar.",
+          "slang_added": "ab toh dimaag",
+          "slang_applied": true,
+          "intent": "ASSERT_FRUSTRATION",
+          "gate_stopped": null,
+          "changed": true
+        },
+        {
+          "speaker": "RIY",
+          "neutral": "Thoda ruk ja, Arav. Yeh ek learning process hai; hum isko samajh kar phir se try karenge.",
+          "slang": "Arav bhai, thoda ruk ja, mera toh jeb khaali hain.",
+          "slang_added": "bhai mera toh",
+          "slang_applied": true,
+          "intent": "CASUAL_ASSERTION",
+          "gate_stopped": null,
+          "changed": true
+        },
+        {
+          "speaker": "ARAV",
+          "neutral": "Thik hai, Riy. Main phir se design ko revise karunga aur hum ek baar phir se start karenge.",
+          "slang": "Thik hai yaar, Riy. Main phir se design ko revise karunga aur hum ek baar phir se start karenge.",
+          "slang_added": "yaar",
+          "slang_applied": true,
+          "intent": "CASUAL_ASSERTION",
+          "gate_stopped": null,
+          "changed": true
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_03",
+      "location": "Arav’s grandmother’s home",
+      "lines": [
+        {
+          "speaker": "ARAV",
+          "neutral": "Dadi, project fail ho gaya, sab kuch bekar lag raha hai, mujhe samajh nahi aa raha ki aage kya karun.",
+          "slang": "Yaar dadi, project fail ho gaya, sab kuch bekar lag raha hai, mujhe samajh nahi aa raha ki aage kya karun.",
+          "slang_added": "yaar",
+          "slang_applied": true,
+          "intent": "CASUAL_ASSERTION",
+          "gate_stopped": null,
+          "changed": true
+        },
+        {
+          "speaker": "DADI",
+          "neutral": "Arav, har safar mein kabhi kabhi girna hota hai, lekin usse uthane ka jazba hi toh aapko aage badhata hai.",
+          "slang": "Arav, har safar mein kabhi kabhi girna hota hai, lekin usse uthane ka jazba hi toh aapko aage badhata hai.",
+          "slang_added": null,
+          "slang_applied": false,
+          "intent": null,
+          "gate_stopped": 1,
+          "changed": false
+        },
+        {
+          "speaker": "ARAV",
+          "neutral": "Shukriya dadi, aapki baat se mera hausla phir se jag gaya.",
+          "slang": "Shukriya dadi, aapki baat se mera hausla phir se jag gaya.",
+          "slang_added": null,
+          "slang_applied": false,
+          "intent": "ASSERT_POSITIVE",
+          "gate_stopped": null,
+          "changed": false
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_04",
+      "location": "Vijnana Mela",
+      "lines": [
+        {
+          "speaker": "ARAV",
+          "neutral": "\"Robot ka design simple hai, main ne modular architecture use kiya, jisse maintenance aur upgrades asaan ho jate hain. Iska primary use hai data collection aur real-time monitoring of environmental parameters.\"",
+          "slang": "\"Robot ka design simple hai, main ne modular architecture use kiya, jisse maintenance aur upgrades asaan ho jate hain. Iska primary use hai data collection aur real-time monitoring of environmental parameters.\"",
+          "slang_added": null,
+          "slang_applied": false,
+          "intent": "INFORM_NEUTRAL",
+          "gate_stopped": 2,
+          "changed": false
+        },
+        {
+          "speaker": "SHARM",
+          "neutral": "\"Bahut accha, Arav. Tumne jo framework banaya, usse process efficiency 30% se badh gayi. Bahut mehnat ki hai tumne.\"",
+          "slang": "\"Bahut accha, Arav. Tumne jo framework banaya, usse process efficiency 30% se badh gayi. Bahut mehnat ki hai tumne.\"",
+          "slang_added": null,
+          "slang_applied": false,
+          "intent": null,
+          "gate_stopped": 1,
+          "changed": false
+        },
+        {
+          "speaker": "ARAV",
+          "neutral": "\"Shukriya, Sharm. Yeh project humare team ke liye ek learning experience raha, aur main khush hoon ki humne apni galti se kuch naya seekha.\"",
+          "slang": "\"Shukriya, Sharm. Yeh project humare team ke liye ek learning experience raha, aur main khush hoon ki humne apni galti se kuch naya seekha.\"",
+          "slang_added": null,
+          "slang_applied": false,
+          "intent": "CASUAL_ASSERTION",
+          "gate_stopped": null,
+          "changed": false
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_05",
+      "location": "Unknown",
+      "lines": [
+        {
+          "speaker": "SPEAKER",
+          "neutral": "Kya aapko lagta hai ki humare project ki timeline sahi hai?",
+          "slang": "Kya aapko lagta hai ki humare project ki timeline sahi hai?",
+          "slang_added": null,
+          "slang_applied": false,
+          "intent": "QUESTION_FORMAL",
+          "gate_stopped": 2,
+          "changed": false
+        },
+        {
+          "speaker": "SPEAKER",
+          "neutral": "Agar koi delay hota hai, toh humein turant update dena chahiye.",
+          "slang": "Agar koi delay hota hai, toh humein bhai update dena chahiye yaar.",
+          "slang_added": "bhai yaar",
+          "slang_applied": true,
+          "intent": "CASUAL_ASSERTION",
+          "gate_stopped": null,
+          "changed": true
+        },
+        {
+          "speaker": "SPEAKER",
+          "neutral": "Aapke suggestions se hum process ko behtar bana sakte hain.",
+          "slang": "Aapke suggestions se hum process ko chill karenge, sab dekhte hoon.",
+          "slang_added": "chill karenge sab",
+          "slang_applied": true,
+          "intent": "CASUAL_ASSERTION",
+          "gate_stopped": null,
+          "changed": true
+        }
+      ]
+    }
+  ],
+  "final_script": "# HINGLISH SCREENPLAY\n\n## SCENE_01\n*Location: School*\n\nArav: Arre boss, school mein science fair aane wala hai, aur main soch raha hoon ki hum ek zabardast project banayein.\nRiy: Haan bro, sahi hai. Tumhare idea se shuru karte hain, turant kaam shuru karte hain.\nArav: Abe bhai, chalo abhi se plan banate hain aur project ko perfect karte hain.\n\n---\n\n## SCENE_02\n*Location: Lab*\n\nArav: Robot banane ka plan kiya tha, ab toh dimaag kharab ho gayi hain yaar.\nRiy: Arav bhai, thoda ruk ja, mera toh jeb khaali hain.\nArav: Thik hai yaar, Riy. Main phir se design ko revise karunga aur hum ek baar phir se start karenge.\n\n---\n\n## SCENE_03\n*Location: Arav’s grandmother’s home*\n\nArav: Yaar dadi, project fail ho gaya, sab kuch bekar lag raha hai, mujhe samajh nahi aa raha ki aage kya karun.\nDadi: Arav, har safar mein kabhi kabhi girna hota hai, lekin usse uthane ka jazba hi toh aapko aage badhata hai.\nArav: Shukriya dadi, aapki baat se mera hausla phir se jag gaya.\n\n---\n\n## SCENE_04\n*Location: Vijnana Mela*\n\nArav: \"Robot ka design simple hai, main ne modular architecture use kiya, jisse maintenance aur upgrades asaan ho jate hain. Iska primary use hai data collection aur real-time monitoring of environmental parameters.\"\nSharm: \"Bahut accha, Arav. Tumne jo framework banaya, usse process efficiency 30% se badh gayi. Bahut mehnat ki hai tumne.\"\nArav: \"Shukriya, Sharm. Yeh project humare team ke liye ek learning experience raha, aur main khush hoon ki humne apni galti se kuch naya seekha.\"\n\n---\n\n## SCENE_05\n*Location: Unknown*\n\nSPEAKER: Kya aapko lagta hai ki humare project ki timeline sahi hai?\nSPEAKER: Agar koi delay hota hai, toh humein bhai update dena chahiye yaar.\nSPEAKER: Aapke suggestions se hum process ko chill karenge, sab dekhte hoon.\n\n---\n"
+}

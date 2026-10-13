@@ -32,3 +32,11 @@ outputs/*.txt
 
 # OS
 .DS_Store
+
+# Fine-tuned editor adapters v3/v4 (weights are already excluded by *.safetensors; tokenizer.json is ~10 MB each).
+# Share the weights separately (GitHub Release / Drive) - see README.
+models/slang-editor-lora-v*/*
+!models/slang-editor-lora-v*/adapter_config.json
+!models/slang-editor-lora-v*/prompt_version.txt
+kaggle_v*/old_adapter/
+claude_project_context.txt

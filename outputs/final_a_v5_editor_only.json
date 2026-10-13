@@ -1,0 +1,212 @@
+{
+ "slang_script": [
+  {
+   "scene_id": "scene_01",
+   "dialogue": "ARAV: Riy, school mein science fair announce hua hai, bhai. Mujhe lagta hai hum milke koi aisa project bana sakte hain jo sabko hairaan kar de aur jeet dilaye.\nRIY: Yeh bahut accha idea hai, Arav, badiya. Main turant hi shuru karne ke liye taiyar hoon.\nARAV: Toh chalo, abhi se planning shuru karte hain aur sabko dikhate hain ki hum kitne capable hain, sab set hai.",
+   "decisions": [
+    {
+     "speaker": "ARAV",
+     "applied": true,
+     "go": true,
+     "gate_stopped": null,
+     "intent": "CASUAL_ASSERTION",
+     "reason": "All gates passed",
+     "edited_clause": "Riy, school mein science fair announce hua hai.",
+     "engine": "groq-fallback",
+     "slang": "bhai",
+     "slang_tokens_added": 1
+    },
+    {
+     "speaker": "RIY",
+     "applied": true,
+     "go": true,
+     "gate_stopped": null,
+     "intent": "ASSERT_POSITIVE",
+     "reason": "All gates passed",
+     "edited_clause": "Yeh bahut accha idea hai, Arav.",
+     "engine": "groq-fallback",
+     "slang": "badiya",
+     "slang_tokens_added": 1
+    },
+    {
+     "speaker": "ARAV",
+     "applied": true,
+     "go": true,
+     "gate_stopped": null,
+     "intent": "CASUAL_ASSERTION",
+     "reason": "All gates passed",
+     "edited_clause": "Toh chalo, abhi se planning shuru karte hain aur sabko dikhate hain ki hum kitne capable hain.",
+     "engine": "groq-fallback",
+     "slang": "sab set hai",
+     "slang_tokens_added": 3
+    }
+   ]
+  },
+  {
+   "scene_id": "scene_02",
+   "dialogue": "ARAV: Hum dono ne chhota robot banane ka plan banaya tha, lekin aaj raat circuit mein aag lag gayi, aur mujhe lagta hai ki humara sab mehnat bekaar ho gayi.\nRIY: Chinta mat karo, yeh sirf ek choti si galti hai; hum isse seekhenge aur phir se try karenge, zaroor safal honge.",
+   "decisions": [
+    {
+     "speaker": "ARAV",
+     "applied": false,
+     "go": true,
+     "gate_stopped": null,
+     "intent": "CASUAL_ASSERTION",
+     "reason": "All gates passed",
+     "editor_note": "kept neutral (no-editable-clause)",
+     "editor_rejects": []
+    },
+    {
+     "speaker": "RIY",
+     "applied": false,
+     "go": true,
+     "gate_stopped": null,
+     "intent": "CASUAL_ASSERTION",
+     "reason": "All gates passed",
+     "editor_note": "kept neutral (abstained, groq:judge:2,meaning, groq:judge:2,meaning, groq:judge:2,meaning)",
+     "editor_rejects": [
+      {
+       "why": "abstained",
+       "text": "Chinta mat karo, yeh sirf ek choti si galti hai; hum isse seekhenge aur phir se try karenge, zaroor safal honge."
+      },
+      {
+       "why": "groq:judge:2,meaning",
+       "text": "Chinta mat karo, yeh sirf ek choti si galti hai; hum isse seekhenge aur phir se try karenge, zaroor safal honge, kya bakwaas hai"
+      },
+      {
+       "why": "groq:judge:2,meaning",
+       "text": "Chinta mat karo, yeh sirf ek choti si galti hai; hum isse seekhenge aur phir se try karenge, zaroor safal honge, kya bakwaas hai"
+      },
+      {
+       "why": "groq:judge:2,meaning",
+       "text": "Chinta mat karo, yeh sirf ek choti si galti hai; hum isse seekhenge aur phir se try karenge, zaroor safal honge, kya bakwaas hai"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "scene_id": "scene_03",
+   "dialogue": "ARAV: Dadi, aaj raat ko aapko sab kuch batana chahta tha, lekin mujhe darr hai ki main phir se nakam ho jaunga.\nDADI: Beta, dhairya rakho. Mehnat kabhi bekaar nahi jaati, bas thoda samay aur vishwas ki zaroorat hoti hai.\nARAV: Aapki baat sunke mujhe nayi himmat mil gayi hai, ab main phir se koshish karunga, jhakaas.",
+   "decisions": [
+    {
+     "speaker": "ARAV",
+     "applied": false,
+     "go": true,
+     "gate_stopped": null,
+     "intent": "CASUAL_ASSERTION",
+     "reason": "All gates passed",
+     "editor_note": "kept neutral (abstained, groq:judge:2,meaning, groq:judge:2,meaning, groq:judge:3)",
+     "editor_rejects": [
+      {
+       "why": "abstained",
+       "text": "Dadi, aaj raat ko aapko sab kuch batana chahta tha, lekin mujhe darr hai ki main phir se nakam ho jaunga."
+      },
+      {
+       "why": "groq:judge:2,meaning",
+       "text": "Dadi, aaj raat ko aapko sab kuch batana chahta tha, lekin mujhe darr hai ki main phir se nakam ho jaunga, jhand"
+      },
+      {
+       "why": "groq:judge:2,meaning",
+       "text": "Dadi, aaj raat ko aapko sab kuch batana chahta tha, lekin mujhe darr hai ki main phir se nakam ho jaunga, jhand"
+      },
+      {
+       "why": "groq:judge:3",
+       "text": "Dadi, aaj raat ko aapko sab kuch batana chahta tha, lekin mujhe darr hai ki main phir se nakam ho jaunga, full tension"
+      }
+     ]
+    },
+    {
+     "speaker": "DADI",
+     "applied": false,
+     "go": false,
+     "gate_stopped": null,
+     "intent": null,
+     "reason": "skipped: unattributed, formal or elder speaker"
+    },
+    {
+     "speaker": "ARAV",
+     "applied": true,
+     "go": true,
+     "gate_stopped": null,
+     "intent": "ASSERT_POSITIVE",
+     "reason": "All gates passed",
+     "edited_clause": "Aapki baat sunke mujhe nayi himmat mil gayi hai, ab main phir se koshish karunga.",
+     "engine": "groq-fallback",
+     "slang": "jhakaas",
+     "slang_tokens_added": 1
+    }
+   ]
+  },
+  {
+   "scene_id": "scene_04",
+   "dialogue": "SHARM: Arav, aapne yeh robot kaise banaya aur iska asli upyog kya hai?\nARAV: Maine microcontroller, sensors aur recycled parts ka upyog karke isse design kiya hai; iska mukhya kaam daily chores ko automate karna hai, jaise ki kapde fold karna aur chhote items ko sort karna.\nSHARM: Aapki mehnat yahan spasht dikh rahi hai, aur aapka prayas sarahniya hai.",
+   "decisions": [
+    {
+     "speaker": "SHARM",
+     "applied": false,
+     "go": false,
+     "gate_stopped": 1,
+     "intent": null,
+     "reason": "Speaker 'SHARM' is elder/authority or slang_level=0"
+    },
+    {
+     "speaker": "ARAV",
+     "applied": false,
+     "go": true,
+     "gate_stopped": null,
+     "intent": "CASUAL_ASSERTION",
+     "reason": "All gates passed",
+     "editor_note": "kept neutral (no-fit)",
+     "editor_rejects": []
+    },
+    {
+     "speaker": "SHARM",
+     "applied": false,
+     "go": false,
+     "gate_stopped": 1,
+     "intent": null,
+     "reason": "Speaker 'SHARM' is elder/authority or slang_level=0"
+    }
+   ]
+  },
+  {
+   "scene_id": "scene_05",
+   "dialogue": "ARAV: Yeh sach mein hamara jeet hai, maine pehle hi socha tha ki hum karenge, ab aage aur bhi bade sapne poore karenge, badiya.\nRIY: (khushi se) Yeh kaise ho sakta hai? Main vishwas hi nahi kar pa rahi, hamari jeet, zabardast!\nARAV: Dadi ko dhanyavaad, unki prerna ke bina yeh mumkin nahi hota. Ab hum milkar celebrate karte hain.",
+   "decisions": [
+    {
+     "speaker": "ARAV",
+     "applied": true,
+     "go": true,
+     "gate_stopped": null,
+     "intent": "ASSERT_POSITIVE",
+     "reason": "All gates passed",
+     "edited_clause": "Yeh sach mein hamara jeet hai, maine pehle hi socha tha ki hum karenge, ab aage aur bhi bade sapne poore karenge.",
+     "engine": "groq-fallback",
+     "slang": "badiya",
+     "slang_tokens_added": 1
+    },
+    {
+     "speaker": "RIY",
+     "applied": true,
+     "go": true,
+     "gate_stopped": null,
+     "intent": "CASUAL_ASSERTION",
+     "reason": "All gates passed",
+     "edited_clause": "Main vishwas hi nahi kar pa rahi, hamari jeet!",
+     "engine": "groq-fallback",
+     "slang": "zabardast",
+     "slang_tokens_added": 1
+    },
+    {
+     "speaker": "ARAV",
+     "applied": false,
+     "go": true,
+     "gate_stopped": null,
+     "intent": "ASSERT_POSITIVE",
+     "reason": "respectful/grateful line — slang skipped"
+    }
+   ]
+  }
+ ]
+}

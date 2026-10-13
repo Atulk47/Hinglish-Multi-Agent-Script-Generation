@@ -1,0 +1,249 @@
+#0
+ O: Yeh robot baar baar jal raha hai, aur humne koi solution nahi nikala.
+ E: Yeh robot baar baar jal raha hai, aur humne koi solution nahi nikala, sab panga ho gaya.   [panga]
+#1
+ O: Aap logon ko jo bhi zaroorat hai, main de sakta hoon.
+ E: Aap logon ko jo bhi zaroorat hai, main de sakta hoon, sabne jalwa kar diya.   [jalwa]
+#2
+ O: Agar koi delay hota hai, toh humein turant update dena chahiye.
+ E: Agar koi delay hota hai, toh humein turant update dena chahiye, yaar dil jeet liya.   [dil jeet liya]
+#3
+ O: Dadi, project fail ho gaya, sab kuch bekar lag raha hai, mujhe samajh nahi aa raha ki aage kya karun.
+ E: Dadi, project fail ho gaya, sab kuch bekar lag raha hai, mujhe samajh nahi aa raha ki aage kya karun, dimaag fry ho gaya.   [dimaag fry]
+#4
+ O: Rohan, tumhari team ko hardik badhai, aap sabko shabash.
+ E: Rohan, tumhari team ko hardik badhai, tumne phaad diya!   [phaad diya]
+#5
+ O: Library mein aaya, purane books ke beech mein ek khoya hua diary mila.
+ E: Library mein aaya, purane books ke beech mein ek khoya hua diary mila, jaan nikal gayi.   [jaan nikal gayi]
+#6
+ O: Aaj humari school mein annual science exhibition ka aayojan ho raha hai.
+ E: Aaj humari school mein annual science exhibition ka aayojan ho raha hai, ekdum ghatiya lag raha hai.   [ghatiya]
+#7
+ O: Yeh shuruat hai, aage aane wale challenges mein hum ek team ke roop mein hi aage badhenge.
+ E: Yeh shuruat hai, aage aane wale challenges mein hum ek team ke roop mein hi aage badhenge, full masti kiya.   [full masti]
+#8
+ O: Tumhare saath kaam karna hi mera motivation hai.
+ E: Tumhare saath kaam karna kiya tha, tumne kamaal mach gayi!   [kamaal]
+#9
+ O: Humara gaon Himalaya ke neeche hai, jahan sab log kheti aur pashu palan par nirbhar hain.
+ E: Humara gaon Himalaya ke neeche hai, jahan sab log kheti aur pashu palan par nirbhar hain, ekdum bekaar.   [bekaar]
+#10
+ O: Machine ruk gaya hai, aur main bas soch raha hoon ki kaun sa part kharab hua.
+ E: Machine ruk gaya hai, aur main bas soch raha hoon ki kaun sa part jhol ho gayi.   [jhol]
+#11
+ O: Dadi, main apne robot project ke baare mein soch raha hoon, lekin abhi tak koi safal result nahi mila.
+ E: Dadi, main apne robot project ke baare mein soch raha hoon, lekin abhi tak koi safal result nahi mila, dil baith raha hai.   [dil baith raha hai]
+#12
+ O: Bahut achha, hum dono milkar ek zabardast idea pe kaam karenge.
+ E: Ek number, hum dono milkar ek zabardast idea pe kaam karenge.   [ek number]
+#13
+ O: Main khud dukanadaron se baat karne ka faisla kar raha hoon.
+ E: Main khud dukanadaron se baat karne ka faisla kar raha hoon, sabdum gazab thi!   [gazab]
+#14
+ O: Hum dono milkar is problem ko solve karenge, bas thoda patience rakho.
+ E: Bhai, hum dono milkar is problem ko solve karenge, bas thoda patience rakho.   [bhai]
+#15
+ O: Yeh humari team ki shaan hai!
+ E: Yeh humari team ekdum zabardast hai!   [zabardast]
+#16
+ O: Diary mein kuch purane nakshon aur sanket bhi hain, jo humein us vyapari ki jagah tak le ja sakte hain.
+ E: Diary mein kuch purane nakshon aur sanket bhi hain, jo humein us vyapari ki jagah tak le ja sakte hain, meri toh ulta pad gaya hai.   [ulta pad gaya]
+#17
+ O: Tumne jo framework banaya, usse process efficiency 30% se badh gayi.
+ E: Tumne jo framework banaya, usse process efficiency 30% se badh gayi, ekdum kadak macha tha.   [kadak]
+#18
+ O: Main phir se design ko revise karunga aur hum ek baar phir se start karenge.
+ E: Main phir se design ko revise karunga aur hum ek baar phir se start karenge, sab khoob gadbad ho gayi yaar.   [gadbad]
+#19
+ O: Theek hai, main tumhare saath phir se try karunga.
+ E: Arre theek hai, main tumhare saath phir se try karunga.   [arre]
+#20
+ O: Pichle kuch mahino se koi baarish nahi hui, isse khet khushk ho gaye hain aur kisan bahut chintit hain.
+ E: Pichle kuch mahino se koi baarish nahi hui, isse khet khushk ho gaye hain aur kisan bahut chintit hain, meri toh ulta pad gaya.   [ulta pad gaya]
+#21
+ O: Main aaj aapke saamne AI ke baare mein kuch important baatein share karne ja raha hoon.
+ E: Main aaj aapke saamne AI ke baare mein kuch important baatein share karne ja raha hoon, ekdum faadu hai.   [faadu]
+#22
+ O: Yeh naksha humein ek chhoti gali tak le ja raha hai, jahan shayad aur bhi raaz chhupe hon.
+ E: Yeh naksha humein ek chhoti gali tak le ja raha hai, jahan shayad aur bhi raaz chhupe hon, gadbad ho gaya.   [gadbad]
+#23
+ O: Yeh robot baar baar jal raha hai, aur koi kaam nahi kar raha.
+ E: Yeh robot baar baar jal raha hai, aur koi kaam nahi kar raha, mera panga ho gaya.   [panga]
+#24
+ O: Theek hai, competition ka idea sahi hai.
+ E: Theek hai, competition ka idea sorted hai.   [sorted]
+#25
+ O: Aapki mehnat yahan spasht dikh rahi hai.
+ E: Aapki mehnat yahan spasht dikh rahi hai, ekdum on point lag rahe the.   [on point]
+#26
+ O: Agar koi aur detail chahiye ho toh bataiye.”
+ E: Agar koi aur detail chahiye ho toh bataiye, agar full masti hai.   [full masti]
+#27
+ O: Hard work clearly visible hai.”
+ E: Hard work clearly visible hai, ekdum lajawaab.   [lajawaab]
+#28
+ O: Yeh diary khol kar padhne se mujhe ek purana naam mil raha hai, ek vyapari jiska koi record history mein nahi hai.
+ E: Yeh diary khol kar padhne se mujhe ek purana naam mil raha hai, ek vyapari jiska koi record history mein nahi hai, yaar waat lag gayi.   [waat lag gayi]
+#29
+ O: Grandmother, main robot banane mein phir se fail ho gaya, sab kuch bekar lag raha hai.
+ E: Grandmother, main robot banane mein phir se fail ho gaya, sab kuch bekar lag raha hai, waat lag gayi yaar.   [waat lag gayi]
+#30
+ O: Aapke suggestions se hum process ko behtar bana sakte hain.
+ E: Aapke suggestions se hum process ko behtar bana sakte hain, kahin ka dil baith raha hai.   [dil baith raha hai]
+#31
+ O: School mein science fair aane wala hai, Riy.
+ E: School mein science fair aane wala hai, Riy. ekdum jhol ho gaya!   [jhol]
+#32
+ O: Din bhar students aur researchers yahan aate hain, par raat ko poora building shant ho jata hai.
+ E: Din bhar students aur researchers yahan aate hain, par raat ka building shant ho jata hai, ekdum bakwaas lag raha hai.   [bakwaas]
+#33
+ O: Ek purana, dhool se bhara chest dekha, jo aam taur par lock kiya hua hota hai.
+ E: Ek purana, dhool se bhara chest dekha, jo aam taur par lock kiya hua hota hai, ekdum faadu lag raha hai.   [faadu]
+#34
+ O: Yahan ki kitabein kai bar ek sau saal se bhi purani hoti hain, yeh kahaniyan bhi kahin se aati hain.
+ E: Yahan ki kitabein kai bar ek sau saal se bhi purani hoti hain, yeh kahaniyan bhi kahin se aati hain, full tension hai.   [full tension]
+#35
+ O: Din bhar yahan students aur researchers aate hain, har koi apne research ke liye yahan ki kitabain padhte hain.
+ E: Din bhar yahan students aur researchers aate hain, har koi apne research ke liye yahan ki kitabain padhte hain, ekdum bakwaas lag raha hai.   [bakwaas]
+#36
+ O: Shahar ke beech mein ek purana library hai, jo bahut hi prachin hai.
+ E: Shahar ke beech mein ek purana library hai, jo bahut hi ghapla hai.   [ghapla]
+#37
+ O: Shahar ke beech mein ek bahut hi purana library hai, jise log 'purana' kehte hain.
+ E: Shahar ke beech mein ek bahut hi purana library hai, jise log 'purana' kehte hain, dil jeet liya.   [dil jeet liya]
+#38
+ O: Aaj ke din, badal dhundh se bhar gaye hain, aur baarish shuru ho rahi hai.
+ E: Aaj ke din, badal dhundh se bhar gaye hain, aur baarish shuru ho rahi hai, ekdum flop ho gayi yaar.   [flop]
+#39
+ O: Aap sab apne ideas ko soch samajh kar, ek prabhavshali aur upyogi model tayar karein.
+ E: Aap sab apne ideas ko soch samajh kar, ek faadu aur upyogi model tayar karein.   [faadu]
+#40
+ O: Diary khol ke padh raha hoon, har page dhyan se dekh raha hoon.
+ E: Diary khol ke padh raha hoon, har page dhyan se dekh raha hoon, ekdum lit hai yaar.   [lit]
+#41
+ O: Din bhar students aur researchers aate hain, lekin raat ko poora building shaant ho jata hai.
+ E: Din bhar students aur researchers aate hain, lekin raat ko poora building bakwaas ho jata hai.   [bakwaas]
+#42
+ O: Rohan, main aapke saath hoon, aur sabhi yahan aapki sahayata ke liye hain.
+ E: Rohan, main aapke saath hoon, aur sabhi yahan aapki help ke liye hain, dil baith raha hai mera.   [dil baith raha hai]
+#43
+ O: Riy, school mein science fair announce hua hai.
+ E: Riy, school mein science fair announce hua hai, jaan nikal gayi!   [jaan nikal gayi]
+#44
+ O: Din ke samay, vidyarthi aur anusandhan karne wale yahan aate hain, kitabon ki khoj mein.
+ E: Din ke samay, vidyarthi aur anusandhan karne wale yahan aate hain, kitabon ki khoj mein, kahin bada panga ho gaya!   [panga]
+#45
+ O: Ek ek karke samasya ko identify karte hain.
+ E: Bhai, ek ek karke samasya ko identify karte hain.   [bhai]
+#46
+ O: Shukriya dadi, ab mujhe naya hausla mil gaya.
+ E: Shukriya dadi, ab mujhe naya hausla mast mili hai.   [mast]
+#47
+ O: Hum ek step back lete hain, design ko dekhte hain, aur phir se try karte hain.
+ E: Hum ek step back lete hain, design ko dekhte hain, aur phir se try karte hain, full masti lag raha hai.   [full masti]
+#48
+ O: Yahan ke shelves mein kuch aisa dhoondh raha hoon jo mere project ke liye zaroori hai.
+ E: Yahan ke shelves mein kuch aisa dhoondh raha hoon jo mere project ke liye zaroori hai, meri help kiya locha ho gaya.   [locha]
+#49
+ O: Din ke samay students aur researchers yahan aate hain, kitab ki khushboo aur padhai ki aawaz se bhara hua.
+ E: Din ke samay students aur researchers yahan aate hain, kitab ki khushboo aur padhai ki aawaz se flop ho gaya.   [flop]
+#50
+ O: Dhairya rakho, Kabir, humne tarpaulin pehle hi taiyaar kar liya hai, isliye ghabrane ki zaroorat nahi hai.
+ E: Dhairya rakho abey, Kabir, humne tarpaulin pehle hi taiyaar kar liya hai, isliye ghabrane ki zaroorat nahi hai.   [abey]
+#51
+ O: Office ka mahaul kaafi shaant hai, aur team ke log bhi sahayata karne ke liye taiyaar lag rahe the.
+ E: Office ka mahaul kaafi shaant hai, aur team ke log bhi chill karke help karne ke liye taiyaar lag rahe the.   [chill]
+#52
+ O: Mujhe dar hai ki mere samvaad mein kai shabd bhool jaungi, aur isse poora drishya kamzor ho sakta hai.
+ E: Mujhe dar hai ki mere samvaad mein kai shabd bhool jaungi, aur isse poora drishya kamzor ho sakta hai, full tension hai.   [full tension]
+#53
+ O: Humein apni galtiyon se seekhna chahiye, aur agli baar paani aur khana saath lekar nikalna chahiye.
+ E: Kya baat hai, humein apni galtiyon se seekhna chahiye, aur agli baar paani aur khana saath lekar nikalna chahiye.   [kya baat]
+#54
+ O: Humein is samasya ka hal jaldi nikalna chahiye, kyunki exam ki taiyari ke liye mujhe woh notes avashyak hain.
+ E: Humein is samasya ka hal jaldi nikalna chahiye, kyunki exam ki taiyari ke liye mujhe woh notes zaroori hain, dimaag fry ho gaya hai.   [dimaag fry]
+#55
+ O: Chinta mat karo, Varun, hum milkar is sthiti ko sudhaar sakte hain, aur orphanage ke bachchon ke liye yeh avashyak bhi hai.
+ E: Chinta mat karo yaar, Varun, hum milkar is sthiti ko sudhaar sakte hain, aur orphanage ke bachchon ke liye yeh avashyak bhi hai.   [yaar]
+#56
+ O: Theek hai, Sneha, main kal se apna plan banakar aaunga, taaki din ka kaam samay par poora ho sake.
+ E: Arre theek hai, Sneha, main kal se apna plan banakar aaunga, taaki din ka kaam samay par poora ho sake.   [arre]
+#57
+ O: Theek hai Yash, lekin mujhe lagta hai ki cycle ki chain pehle se hi dheeli hai.
+ E: Theek hai Yash, lekin mera toh dil baith raha hai ki cycle ki chain pehle se hi dheeli hai.   [dil baith raha hai]
+#58
+ O: Ek samasya abhi bhi hai, kyunki kuch bottles ka stock kam pad gaya hai aur doctor ne ise dhyan mein laane ko kaha.
+ E: Ek bakwaas samasya abhi bhi hai, kyunki kuch bottles ka stock kam pad gaya hai aur doctor ne ise dhyan mein laane ko kaha.   [bakwaas]
+#59
+ O: Mera maksad sirf itna tha ki aaj ka plan poora ho jaye, aur ab mujhe kaafi raahat mehsoos ho rahi hai.
+ E: Mera maksad sirf itna tha ki aaj ka plan poora ho jaye, aur ab mujhe kaafi raahat mehsoos ho rahi hai, dimaag fry ho raha hai.   [dimaag fry]
+#60
+ O: Cake ka order maine de diya hai, lekin bakery ne kaha hai ki delivery ke liye kal subah tak ka samay lagega.
+ E: Cake ka order maine de diya hai, lekin bakery ne kaha hai ki delivery ke liye kal subah tak ka samay lagega, sabne locha ho gaya.   [locha]
+#61
+ O: Naina, tumhari mehnat dekh kar mujhe bhi prerna milti hai, isliye yeh koi bada kaam nahin tha.
+ E: Naina, tumhari mehnat dekh kar mujhe bhi prerna milti hai, isliye yeh koi bada kaam nahin tha, ekdum fire thi.   [fire]
+#62
+ O: Hum milkar ek aisa plan banayenge jisse dono ka saamaan aaraam se samaa jaaye.
+ E: Hum milkar ek aisa plan banayenge jisse dono ka saamaan aaraam se samaa jaaye, sabka bada lafda ho gaya.   [lafda]
+#63
+ O: Haan Yash, mujhe bhi lagta hai ki yeh prayaas samaj ke liye bahut avashyak hai.
+ E: Haan Yash, mujhe bhi lagta hai ki yeh prayaas samaj ke liye bahut zaroori hai, meri toh full masti ho gaya.   [full masti]
+#64
+ O: Ab humein apna budget bhi dobara dekhna hoga, aur kharche ka hisaab avashyak roop se likhna hoga.
+ E: Ab humein apna budget bhi dobara dekhna hoga, aur kharche ka hisaab ekdum faadu likhna hoga.   [faadu]
+#65
+ O: Aakhirkar hum final tak pahunch gaye, aur yeh humari mehnat ka sabse bada parinaam hai.
+ E: Akhirkar hum final tak pahunch gaye, aur yeh humari mehnat ka sabse bada parinaam hai, jalwa ho gaya.   [jalwa]
+#66
+ O: Bahut accha, Pooja, tumhari baat sunkar hamare khiladiyon mein naya uttsaah aur dhairya aa gaya hai.
+ E: Bahut badiya, Pooja, tumhari baat sunkar hamare khiladiyon mein naya uttsaah aur dhairya aa gaya hai.   [badiya]
+#67
+ O: Haan Sneha, sach kahun toh main bhi bahut ghabraya hua tha subah mein.
+ E: Haan Sneha bro, sach kahun toh main bhi bahut ghabraya hua tha subah mein.   [bro]
+#68
+ O: Yeh sthiti mere liye bahut chinta ka vishay hai, kyunki us notebook mein mere saare maths ke notes likhe hue the.
+ E: Yeh sthiti mere liye bahut chinta ka vishay hai, kyunki us notebook mein mere saare maths ke notes likhe hue the, aur toh fatti padi hai.   [fatti padi hai]
+#69
+ O: Parinaam ghoshit hone mein abhi kuch samay lagega, aur tab tak hamein dhairya rakhna hoga.
+ E: Parinaam ghoshit hone mein abhi kuch time lagega, aur tab tak hamein dhairya rakhna hoga, ekdum jhand lag raha hai.   [jhand]
+#70
+ O: Humein pehle hi sthiti ka andaaza lagakar nirnay lena chahiye tha, jisse hamara samay aur paisa dono bach jaate.
+ E: Humein pehle hi sthiti ka andaaza lagakar nirnay lena chahiye tha, jisse hamara samay aur paisa dono bach jaate, ekdum gazab thi.   [gazab]
+#71
+ O: Kal ke match ke liye humne jo plan banaya tha, uska pehla hissa hum aaj poora kar chuke hain.
+ E: Kal ke match ke liye humne jo plan banaya tha, uska pehla hissa hum aaj poora kar chuke hain, waat lag gayi.   [waat lag gayi]
+#72
+ O: Dhairya rakhna avashyak hai, kyunki barish ke baad mausam aksar behtar ho jaata hai aur aakash saaf ho jaata hai.
+ E: Dhairya rakhna zaroori hai, kyunki barish ke baad mausam aksar behtar ho jaata hai aur aakash ka bada panga ho jaata hai.   [panga]
+#73
+ O: Chinta mat karo, Naina, hum agle do din mein yeh samasya aasaani se hal kar sakte hain.
+ E: Arre chinta mat karo, Naina, hum agle do din mein yeh samasya aasaani se hal kar sakte hain.   [arre]
+#74
+ O: Humne socha tha ki sthiti itni vyast nahi hogi, par ab chinta ho rahi hai.
+ E: Humne socha tha ki sthiti itni vyast nahi hogi, par ab tension ho rahi hai, fatti padi hai.   [fatti padi hai]
+#75
+ O: Main tumhari sthiti samajh sakta hoon, aur mera maksad sirf itna hai ki tumhari madad karoon.
+ E: Bhai, main tumhari sthiti samajh sakta hoon, aur mera maksad sirf itna hai ki tumhari madad karoon.   [bhai]
+#76
+ O: Yeh vichaar uttam hai, lekin mujhe lagta hai ki pehle hum ek saath baith kar har shelf ka hisaab lagaana chahiye.
+ E: Yeh vichaar faadu hai, lekin mujhe lagta hai ki pehle hum ek saath baith kar har shelf ka hisaab lagaana chahiye.   [faadu]
+#77
+ O: Lagta hai ki school ka website bhi dheere chal raha hai, isliye humein intezaar karna padega.
+ E: Lagta hai ki school ka website bhi dheere chal raha hai, isliye humein intezaar karna padega, jaan nikal gayi.   [jaan nikal gayi]
+#78
+ O: Mera kaam abhi tak poori tarah spasht nahi hai, lekin mentor ne kal tak sab samjhane ka vaada kiya hai.
+ E: Mera kaam abhi tak poori tarah spasht nahi hai, lekin mentor ne kal tak sab samjhane ka vaada kiya hai, waat lag gayi.   [waat lag gayi]
+#79
+ O: Main tumpe ilzaam nahi laga raha, main sirf yeh kehna chahta hoon ki samay kam hai aur plan theek se nahi bana.
+ E: Bhai, main tumpe ilzaam nahi laga raha, main sirf yeh kehna chahta hoon ki samay kam hai aur plan theek se nahi bana.   [bhai]
+#80
+ O: Mujhe lagta hai ki batter mein baking powder zyada daal diya gaya tha, isliye cake phool gaya.
+ E: Mujhe lagta hai ki batter mein baking powder zyada daal diya gaya tha, isliye cake ekdum full tension ho gayi.   [full tension]
+#81
+ O: Ab chinta karne se kuch nahi hoga, humein agle kadam ke baare mein sochna hoga.
+ E: Yaar, ab chinta karne se kuch nahi hoga, humein agle kadam ke baare mein sochna hoga.   [yaar]
+#82
+ O: Yeh achha hua ki tumne pehle se taiyari kar li, warna beech raaste mein bahut samasya ho sakti thi.
+ E: Yaar, yeh achha hua ki tumne pehle se taiyari kar li, warna beech raaste mein bahut samasya ho sakti thi.   [yaar]

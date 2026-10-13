@@ -1,0 +1,406 @@
+#250
+ O: Bahut badhiya, toh chalo ab hum sab milkar stall ko saja dein aur kal subah time par shuru karne ke liye taiyar rahein.
+ E: Bahut badiya, toh chalo ab hum sab milkar stall ko saja dein aur kal subah time par shuru karne ke liye taiyar rahein.   [badiya]
+#251
+ O: Bahut badhiya, toh chalo ab hum sab milkar stall ko saja dein aur kal subah time par shuru karne ke liye taiyar rahein.
+ E: Sorted, toh chalo ab hum sab milkar stall ko saja dein aur kal subah time par shuru karne ke liye taiyar rahein.   [sorted]
+#252
+ O: Haan Aditi, main bhi is baat se sahmat hoon, kyunki mera uttar bhi poori tarah se spasht nahin tha.
+ E: Haan Aditi, main bhi is baat se sahmat hoon, kasam se mera jawab bhi poori tarah se spasht nahin tha.   [kasam se]
+#253
+ O: Haan Aditi, main bhi is baat se sahmat hoon, kyunki mera uttar bhi poori tarah se spasht nahin tha.
+ E: Haan Aditi, main bhi is baat se sahmat hoon, kyunki bhai mera jawab bhi poori tarah se spasht nahin tha.   [bhai]
+#254
+ O: Maine ek galti ki thi, jiske karan hamara ek ank kat gaya, aur mujhe iska bahut afsos hai.
+ E: Maine ek lafda kiya tha, jiske karan hamara ek ank kat gaya, aur mujhe iska bahut afsos hai.   [lafda]
+#255
+ O: Maine ek galti ki thi, jiske karan hamara ek ank kat gaya, aur mujhe iska bahut afsos hai.
+ E: Maine ek ghapla kiya tha, jiske karan hamara ek ank kat gaya, aur mujhe iska bahut afsos hai.   [ghapla]
+#256
+ O: Maine ek galti ki thi, jiske karan hamara ek ank kat gaya, aur mujhe iska bahut afsos hai.
+ E: Maine ek locha kiya tha, jiske karan hamara ek ank kat gaya, aur mujhe iska bahut afsos hai.   [locha]
+#257
+ O: Yeh bahut accha vichar hai, aur main tumhari imaandari ki prashansa karta hoon jo tum apni kamzori ko sweekar kar rahe ho.
+ E: Yeh bahut solid vichar hai, aur main tumhari imaandari ki tareef karta hoon jo tum apni kamzori ko sweekar kar rahe ho.   [solid]
+#258
+ O: Yeh bahut accha vichar hai, aur main tumhari imaandari ki prashansa karta hoon jo tum apni kamzori ko sweekar kar rahe ho.
+ E: Yeh bahut kamaal ka vichar hai, aur main tumhari imaandari ki tareef karta hoon jo tum apni kamzori ko sweekar kar rahe ho.   [kamaal]
+#259
+ O: Yeh bahut accha vichar hai, aur main tumhari imaandari ki prashansa karta hoon jo tum apni kamzori ko sweekar kar rahe ho.
+ E: Yeh bahut badiya vichar hai, aur main tumhari imaandari ki tareef karta hoon jo tum apni kamzori ko sweekar kar rahe ho.   [badiya]
+#260
+ O: Arjun, aaj ke camp mein donors ki sankhya kaafi achhi hai, aur hum sabhi ke liye yeh ek sukhad anubhav hai.
+ E: Arjun, aaj ke camp mein donors ki sankhya kaafi achhi hai, aur hum sabhi ke liye yeh ek mast anubhav hai.   [mast]
+#261
+ O: Arjun, aaj ke camp mein donors ki sankhya kaafi achhi hai, aur hum sabhi ke liye yeh ek sukhad anubhav hai.
+ E: Arjun yaar, aaj ke camp mein donors ki sankhya kaafi achhi hai, aur hum sabhi ke liye yeh ek sukhad anubhav hai.   [yaar]
+#262
+ O: Arjun, aaj ke camp mein donors ki sankhya kaafi achhi hai, aur hum sabhi ke liye yeh ek sukhad anubhav hai.
+ E: Arjun, aaj ke camp mein donors ki sankhya kaafi badiya hai, aur hum sabhi ke liye yeh ek sukhad anubhav hai.   [badiya]
+#263
+ O: Woh bilkul theek kah rahe ho, pani ke tank ke paas ki jagah abhi bhi gandi aur beqaar padi hai.
+ E: Woh bilkul theek kah rahe ho, pani ke tank ke paas ki jagah abhi bhi gandi aur kachra padi hai.   [kachra]
+#264
+ O: Woh bilkul theek kah rahe ho, pani ke tank ke paas ki jagah abhi bhi gandi aur beqaar padi hai.
+ E: Woh bilkul theek kah rahe ho, pani ke tank ke paas ki jagah abhi bhi gandi aur ghatiya padi hai.   [ghatiya]
+#265
+ O: Woh bilkul theek kah rahe ho, pani ke tank ke paas ki jagah abhi bhi gandi aur beqaar padi hai.
+ E: Bhai, woh bilkul theek kah rahe ho, pani ke tank ke paas ki jagah abhi bhi gandi aur beqaar padi hai.   [bhai]
+#266
+ O: Chinta mat karo, Siddharth, hum apne paison ka hisab milkar lagayenge aur phir jo zaroori hai woh kharidenge.
+ E: Chill karo, Siddharth, hum apne paison ka hisab milkar lagayenge aur phir jo zaroori hai woh kharidenge.   [chill]
+#267
+ O: Chinta mat karo, Siddharth, hum apne paison ka hisab milkar lagayenge aur phir jo zaroori hai woh kharidenge.
+ E: Chinta mat karo Siddharth yaar, hum apne paison ka hisab milkar lagayenge aur phir jo zaroori hai woh kharidenge.   [yaar]
+#268
+ O: Chinta mat karo, Siddharth, hum apne paison ka hisab milkar lagayenge aur phir jo zaroori hai woh kharidenge.
+ E: Chinta mat karo, Siddharth, hum apne paison ka hisab milkar lagayenge aur phir jo zaroori hai woh kharidenge, sorted.   [sorted]
+#269
+ O: Main samajhti hoon ki yeh pareshani hai, lekin hume agle kadam ke baare mein sochna chahiye, aur galtiyon se seekhna chahiye.
+ E: Main samajhti hoon ki yeh pareshani hai yaar, lekin hume agle kadam ke baare mein sochna chahiye, aur galtiyon se seekhna chahiye.   [yaar]
+#270
+ O: Main samajhti hoon ki yeh pareshani hai, lekin hume agle kadam ke baare mein sochna chahiye, aur galtiyon se seekhna chahiye.
+ E: Chill, main samajhti hoon ki yeh pareshani hai, lekin hume agle kadam ke baare mein sochna chahiye, aur galtiyon se seekhna chahiye.   [chill]
+#271
+ O: Mujhe ispar bahut chinta ho rahi hai, kyunki woh notebook maine Neha se udhaar li thi aur main use sambhal kar rakhna chahti thi.
+ E: Mujhe ispar full tension ho rahi hai, kyunki woh notebook maine Neha se udhaar li thi aur main use sambhal kar rakhna chahti thi.   [full tension]
+#272
+ O: Chinta mat karo, Ananya, hum is bare mein ek bar phir se sochenge aur sahi kadam uthayenge.
+ E: Chinta mat karo, Ananya yaar, hum is bare mein ek bar phir se sochenge aur sahi kadam uthayenge.   [yaar]
+#273
+ O: Chinta mat karo, Ananya, hum is bare mein ek bar phir se sochenge aur sahi kadam uthayenge.
+ E: Chill karo, Ananya, hum is bare mein ek bar phir se sochenge aur sahi kadam uthayenge.   [chill]
+#274
+ O: Chinta mat karo, Ananya, hum is bare mein ek bar phir se sochenge aur sahi kadam uthayenge.
+ E: Chinta mat karo, Ananya, hum is bare mein ek bar phir se sochenge aur sahi kadam uthayenge, sorted.   [sorted]
+#275
+ O: Mujhe iss baat ki chinta ho rahi hai ki hum samay par sab kuch tayyar nahi kar paayenge, kyunki kaam bahut zyada baaki hai.
+ E: Mujhe iss baat ki full tension ho rahi hai ki hum samay par sab kuch tayyar nahi kar paayenge, kyunki kaam bahut zyada baaki hai.   [full tension]
+#276
+ O: Mujhe iss baat ki chinta ho rahi hai ki hum samay par sab kuch tayyar nahi kar paayenge, kyunki kaam bahut zyada baaki hai.
+ E: Mujhe iss baat se dil baith raha hai ki hum samay par sab kuch tayyar nahi kar paayenge, kyunki kaam bahut zyada baaki hai.   [dil baith raha hai]
+#277
+ O: Mujhe iss baat ki chinta ho rahi hai ki hum samay par sab kuch tayyar nahi kar paayenge, kyunki kaam bahut zyada baaki hai.
+ E: Yaar, mujhe iss baat ki chinta ho rahi hai ki hum samay par sab kuch tayyar nahi kar paayenge, kyunki kaam bahut zyada baaki hai.   [yaar]
+#278
+ O: Chinta mat karo, Naina, abhi bhi samay hai, aur hum milkar bachcha kaam jaldi nipta sakte hain.
+ E: Chinta mat karo Naina yaar, abhi bhi samay hai, aur hum milkar bachcha kaam jaldi nipta sakte hain.   [yaar]
+#279
+ O: Chinta mat karo, Sakshi, hum sabhi milkar is samasya ko jaldi hal kar sakte hain, aur kaam aasaani se aage badhega.
+ E: Chinta mat karo, Sakshi, hum sabhi milkar is samasya ko chutki mein hal kar sakte hain, aur kaam aasaani se aage badhega.   [chutki mein]
+#280
+ O: Chinta mat karo, Sakshi, hum sabhi milkar is samasya ko jaldi hal kar sakte hain, aur kaam aasaani se aage badhega.
+ E: Chinta mat karo Sakshi yaar, hum sabhi milkar is samasya ko jaldi hal kar sakte hain, aur kaam aasaani se aage badhega.   [yaar]
+#281
+ O: Yeh sthiti avashyak roop se nirasha paida karti hai, lekin hum ab bhi kuch behtar vikalp dhoondh sakte hain.
+ E: Yeh sthiti zaroori roop se full tension paida karti hai, lekin hum ab bhi kuch behtar vikalp dhoondh sakte hain.   [full tension]
+#282
+ O: Yeh sthiti avashyak roop se nirasha paida karti hai, lekin hum ab bhi kuch behtar vikalp dhoondh sakte hain.
+ E: Yaar, yeh sthiti avashyak roop se nirasha paida karti hai, lekin hum ab bhi kuch behtar vikalp dhoondh sakte hain.   [yaar]
+#283
+ O: Main tumhari sahayata ke liye aabhari hoon, Aditya, kyunki akele mein mujhe is paristhiti se nipatna kathin lag raha tha.
+ E: Main tumhari help ke liye aabhari hoon Aditya yaar, kyunki akele mein mujhe is paristhiti se nipatna kathin lag raha tha.   [yaar]
+#284
+ O: Main tumhari sahayata ke liye aabhari hoon, Aditya, kyunki akele mein mujhe is paristhiti se nipatna kathin lag raha tha.
+ E: Kasam se, main tumhari help ke liye aabhari hoon, Aditya, kyunki akele mein mujhe is paristhiti se nipatna kathin lag raha tha.   [kasam se]
+#285
+ O: Main tumhari baat se sehmat hoon, Rahul, aur mujhe vishwas hai ki hum jald hi is musibat se nikal jayenge.
+ E: Main tumhari baat se sehmat hoon Rahul bhai, aur mujhe bharosa hai ki hum jald hi is musibat se nikal jayenge.   [bhai]
+#286
+ O: Main tumhari baat se sehmat hoon, Rahul, aur mujhe vishwas hai ki hum jald hi is musibat se nikal jayenge.
+ E: Main tumhari baat se sehmat hoon Rahul yaar, aur mujhe bharosa hai ki hum jald hi is musibat se nikal jayenge.   [yaar]
+#287
+ O: Main tumhari baat se sehmat hoon, Rahul, aur mujhe vishwas hai ki hum jald hi is musibat se nikal jayenge.
+ E: Kasam se, main tumhari baat se sehmat hoon, Rahul, aur mujhe vishwas hai ki hum jald hi is musibat se nikal jayenge.   [kasam se]
+#288
+ O: Humne aaj ka din bahut mehnat se shuru kiya tha, isliye yeh sthiti avashyak roop se nirashajanak hai.
+ E: Humne aaj ka din bahut mehnat se shuru kiya tha, isliye yeh sthiti avashyak roop se waat lag gayi hai.   [waat lag gayi]
+#289
+ O: Humne aaj ka din bahut mehnat se shuru kiya tha, isliye yeh sthiti avashyak roop se nirashajanak hai.
+ E: Humne aaj ka din bahut mehnat se shuru kiya tha, isliye yeh sthiti zaroori roop se bekaar hai.   [bekaar]
+#290
+ O: Humne aaj ka din bahut mehnat se shuru kiya tha, isliye yeh sthiti avashyak roop se nirashajanak hai.
+ E: Humne aaj ka din bahut mehnat se shuru kiya tha, isliye yeh sthiti zaroori roop se ghatiya hai.   [ghatiya]
+#291
+ O: Sabse pehle hume dekhna chahiye ki kaun si cheezein zaroori hain, aur phir unhi ko priority dekar kharidna chahiye.
+ E: Sabse pehle hume dekhna chahiye boss ki kaun si cheezein zaroori hain, aur phir unhi ko priority dekar kharidna chahiye.   [boss]
+#292
+ O: Sabse pehle hume dekhna chahiye ki kaun si cheezein zaroori hain, aur phir unhi ko priority dekar kharidna chahiye.
+ E: Sabse pehle hume dekhna chahiye yaar ki kaun si cheezein zaroori hain, aur phir unhi ko priority dekar kharidna chahiye.   [yaar]
+#293
+ O: Sabse pehle hume dekhna chahiye ki kaun si cheezein zaroori hain, aur phir unhi ko priority dekar kharidna chahiye.
+ E: Sabse pehle hume dekhna chahiye bhai ki kaun si cheezein zaroori hain, aur phir unhi ko priority dekar kharidna chahiye.   [bhai]
+#294
+ O: Ananya, tum bilkul sahi kehti ho, lekin humein pehle dhairya ke saath team ke niyam samajhne chahiye.
+ E: Ananya yaar, tum bilkul sahi kehti ho, lekin humein pehle dhairya ke saath team ke niyam samajhne chahiye.   [yaar]
+#295
+ O: Ananya, tum bilkul sahi kehti ho, lekin humein pehle dhairya ke saath team ke niyam samajhne chahiye.
+ E: Arre Ananya, tum bilkul sahi kehti ho, lekin humein pehle dhairya ke saath team ke niyam samajhne chahiye.   [arre]
+#296
+ O: Yeh uttam vichar hai, Varun, aur mujhe vishwas hai ki sabhi chhatr is kaam mein hamara saath denge.
+ E: Yeh kya baat vichar hai, Varun, aur mujhe bharosa hai ki sabhi chhatr is kaam mein hamara saath denge.   [kya baat]
+#297
+ O: Yeh uttam vichar hai, Varun, aur mujhe vishwas hai ki sabhi chhatr is kaam mein hamara saath denge.
+ E: Yeh on point vichar hai, Varun, aur mujhe bharosa hai ki sabhi chhatr is kaam mein hamara saath denge.   [on point]
+#298
+ O: Yeh uttam vichar hai, Varun, aur mujhe vishwas hai ki sabhi chhatr is kaam mein hamara saath denge.
+ E: Yeh faadu vichar hai, Varun, aur mujhe bharosa hai ki sabhi chhatr is kaam mein hamara saath denge.   [faadu]
+#299
+ O: Pehle round mein humari team ne bahut accha pradarshan kiya, aur sabhi sadasyon ne apne-apne kaam ko poori lagan se nibhaya.
+ E: Pehle round mein humari team ne bahut jalwa pradarshan kiya, aur sabhi sadasyon ne apne-apne kaam ko poori lagan se nibhaya.   [jalwa]
+#300
+ O: Pehle round mein humari team ne bahut accha pradarshan kiya, aur sabhi sadasyon ne apne-apne kaam ko poori lagan se nibhaya.
+ E: Pehle round mein humari team ne dhamaal pradarshan kiya, aur sabhi sadasyon ne apne-apne kaam ko poori lagan se nibhaya.   [dhamaal]
+#301
+ O: Pehle round mein humari team ne bahut accha pradarshan kiya, aur sabhi sadasyon ne apne-apne kaam ko poori lagan se nibhaya.
+ E: Pehle round mein humari team ne bahut gazab pradarshan kiya, aur sabhi sadasyon ne apne-apne kaam ko poori lagan se nibhaya.   [gazab]
+#302
+ O: Yeh bahut accha prayaas hai, Kavya, aur main tumhari mehnat ki poori prashansa karta hoon, jisse hum zaroor safal honge.
+ E: Yeh bahut accha koshish hai, Kavya, kya baat, aur main tumhari mehnat ki poori tareef karta hoon, jisse hum zaroor safal honge.   [kya baat]
+#303
+ O: Tumne sahi samay par sahi hissa pehchana aur iske liye main tumhari prashansa karti hoon.
+ E: Tumne sahi samay par sahi hissa pehchana, on point, aur iske liye main tumhari tareef karti hoon.   [on point]
+#304
+ O: Tumne sahi samay par sahi hissa pehchana aur iske liye main tumhari prashansa karti hoon.
+ E: Kya baat, tumne sahi samay par sahi hissa pehchana aur iske liye main tumhari tareef karti hoon.   [kya baat]
+#305
+ O: Yeh bahut uttam prayaas hai, Neha, par hume pata hona chahiye ki kaun kaun si cheezein kis ke zimme hain.
+ E: Yeh bahut kamaal koshish hai, Neha, par hume pata hona chahiye ki kaun kaun si cheezein kis ke zimme hain.   [kamaal]
+#306
+ O: Yeh bahut uttam prayaas hai, Neha, par hume pata hona chahiye ki kaun kaun si cheezein kis ke zimme hain.
+ E: Yeh bahut badiya koshish hai, Neha, par hume pata hona chahiye ki kaun kaun si cheezein kis ke zimme hain.   [badiya]
+#307
+ O: Yeh bahut uttam prayaas hai, Neha, par hume pata hona chahiye ki kaun kaun si cheezein kis ke zimme hain.
+ E: Yeh bahut badiya koshish hai, Neha bro, par hume pata hona chahiye ki kaun kaun si cheezein kis ke zimme hain.   [bro]
+#308
+ O: Chinta mat karo, Mehak.
+ E: Chinta mat karo, Mehak bhai.   [bhai]
+#309
+ O: Chinta mat karo, Mehak.
+ E: Chinta mat karo, Mehak bro.   [bro]
+#310
+ O: Yeh bahut nirasha bhari baat hai, lekin hamari team ne pehle bhi kai baar mushkilon ka saamna kiya hai.
+ E: Yeh bahut kya bakwaas hai wali baat hai, lekin hamari team ne pehle bhi kai baar mushkilon ka saamna kiya hai.   [kya bakwaas hai]
+#311
+ O: Yeh bahut nirasha bhari baat hai, lekin hamari team ne pehle bhi kai baar mushkilon ka saamna kiya hai.
+ E: Yeh bahut bekaar baat hai, lekin hamari team ne pehle bhi kai baar mushkilon ka saamna kiya hai.   [bekaar]
+#312
+ O: Yeh bahut nirasha bhari baat hai, lekin hamari team ne pehle bhi kai baar mushkilon ka saamna kiya hai.
+ E: Yeh bahut bakwaas baat hai, lekin hamari team ne pehle bhi kai baar mushkilon ka saamna kiya hai.   [bakwaas]
+#313
+ O: Abhi toh hum khazane ke kareeb pahunch rahe hain, isliye hume apna dhairya banaye rakhna chahiye aur aage badhna chahiye.
+ E: Abey abhi toh hum khazane ke kareeb pahunch rahe hain, isliye hume apna dhairya banaye rakhna chahiye aur aage badhna chahiye.   [abey]
+#314
+ O: Abhi toh hum khazane ke kareeb pahunch rahe hain, isliye hume apna dhairya banaye rakhna chahiye aur aage badhna chahiye.
+ E: Boss, abhi toh hum khazane ke kareeb pahunch rahe hain, isliye hume apna dhairya banaye rakhna chahiye aur aage badhna chahiye.   [boss]
+#315
+ O: Tumhari mehnat ki main sachche dil se prashansa karta hoon.
+ E: Tumhari mehnat ki main sachche dil se tareef karta hoon, kasam se.   [kasam se]
+#316
+ O: Tumhari mehnat ki main sachche dil se prashansa karta hoon.
+ E: Bro, tumhari mehnat ki main sachche dil se tareef karta hoon.   [bro]
+#317
+ O: Accha hai ki tumne cups aur plates pehle hi le liye, warna is samay bahut bada nuksaan ho sakta tha.
+ E: Badiya hai ki tumne cups aur plates pehle hi le liye, warna is samay bahut bada nuksaan ho sakta tha.   [badiya]
+#318
+ O: Accha hai ki tumne cups aur plates pehle hi le liye, warna is samay bahut bada nuksaan ho sakta tha.
+ E: Sahi hai ki tumne cups aur plates pehle hi le liye, warna is samay bahut bada nuksaan ho sakta tha.   [sahi hai]
+#319
+ O: Accha hai ki tumne cups aur plates pehle hi le liye, warna is samay bahut bada nuksaan ho sakta tha.
+ E: Kamaal hai ki tumne cups aur plates pehle hi le liye, warna is samay bahut bada nuksaan ho sakta tha.   [kamaal]
+#320
+ O: Humne socha tha ki is baar sab kuch aasaani se ho jayega, lekin is ghalatfehmi ne hamari yojana ko thoda bigaad diya hai.
+ E: Humne socha tha ki is baar sab kuch aasaani se ho jayega, lekin is ghalatfehmi ne sab ulta pad gaya hamari yojana ko thoda bigaad diya hai.   [ulta pad gaya]
+#321
+ O: Humne socha tha ki is baar sab kuch aasaani se ho jayega, lekin is ghalatfehmi ne hamari yojana ko thoda bigaad diya hai.
+ E: Humne socha tha ki is baar sab kuch aasaani se ho jayega, lekin is ghalatfehmi ne hamari yojana mein thoda jhol kar diya hai.   [jhol]
+#322
+ O: Kal ke match ke liye humara plan spasht nahi hai, aur yeh baat mujhe bahut chinta mein daal rahi hai.
+ E: Kal ke match ke liye humara plan spasht nahi hai, aur yeh baat mujhe full tension mein daal rahi hai.   [full tension]
+#323
+ O: Sahi kaha, lekin humein apni galtiyon se seekhna chahiye aur agli baar zyada parishram ke saath taiyari karni chahiye.
+ E: Arre sahi kaha, lekin humein apni galtiyon se seekhna chahiye aur agli baar zyada koshish ke saath taiyari karni chahiye.   [arre]
+#324
+ O: Sahi kaha, lekin humein apni galtiyon se seekhna chahiye aur agli baar zyada parishram ke saath taiyari karni chahiye.
+ E: Sahi kaha bro, lekin humein apni galtiyon se seekhna chahiye aur agli baar zyada parishram ke saath taiyari karni chahiye.   [bro]
+#325
+ O: Yeh vichaar uttam hai, lekin mujhe lagta hai ki pehle hum ek saath baith kar har shelf ka hisaab lagaana chahiye.
+ E: Yeh vichaar solid hai, lekin mujhe lagta hai ki pehle hum ek saath baith kar har shelf ka hisaab lagaana chahiye.   [solid]
+#326
+ O: Yeh vichaar uttam hai, lekin mujhe lagta hai ki pehle hum ek saath baith kar har shelf ka hisaab lagaana chahiye.
+ E: Yeh vichaar on point hai, lekin mujhe lagta hai ki pehle hum ek saath baith kar har shelf ka hisaab lagaana chahiye.   [on point]
+#327
+ O: Yeh vichaar uttam hai, lekin mujhe lagta hai ki pehle hum ek saath baith kar har shelf ka hisaab lagaana chahiye.
+ E: Yeh vichaar kadak hai, lekin mujhe lagta hai ki pehle hum ek saath baith kar har shelf ka hisaab lagaana chahiye.   [kadak]
+#328
+ O: Chinta mat karo, Rahul, hum dono ne ek plan banaya tha, aur usi plan ke anusaar hum aage badhenge.
+ E: Arre chinta mat karo, Rahul, hum dono ne ek plan banaya tha, aur usi plan ke anusaar hum aage badhenge.   [arre]
+#329
+ O: Chinta mat karo, Rahul, hum dono ne ek plan banaya tha, aur usi plan ke anusaar hum aage badhenge.
+ E: Chinta mat karo, Rahul bro, hum dono ne ek plan banaya tha, aur usi plan ke anusaar hum aage badhenge.   [bro]
+#330
+ O: Yeh vichar uttam hai, lekin chanda jutane mein samay lagega aur hamare paas sirf do hafte bache hain.
+ E: Yeh vichar solid hai, lekin chanda jutane mein samay lagega aur hamare paas sirf do hafte bache hain.   [solid]
+#331
+ O: Yeh vichar uttam hai, lekin chanda jutane mein samay lagega aur hamare paas sirf do hafte bache hain.
+ E: Yeh vichar on point hai, lekin chanda jutane mein samay lagega aur hamare paas sirf do hafte bache hain.   [on point]
+#332
+ O: Yeh vichar uttam hai, lekin chanda jutane mein samay lagega aur hamare paas sirf do hafte bache hain.
+ E: Yeh vichar kadak hai, lekin chanda jutane mein samay lagega aur hamare paas sirf do hafte bache hain.   [kadak]
+#333
+ O: Bahut achha, Samar, tumhara nirnay uttam hai, aur mujhe pura bharosa hai ki tum saflata prapt karoge.
+ E: Bahut achha, Samar, tumhara nirnay solid hai, aur mujhe pura bharosa hai ki tum saflata prapt karoge.   [solid]
+#334
+ O: Bahut achha, Samar, tumhara nirnay uttam hai, aur mujhe pura bharosa hai ki tum saflata prapt karoge.
+ E: Bahut achha, Samar, tumhara nirnay on point hai, aur mujhe pura bharosa hai ki tum saflata prapt karoge.   [on point]
+#335
+ O: Bahut achha, Samar, tumhara nirnay uttam hai, aur mujhe pura bharosa hai ki tum saflata prapt karoge.
+ E: Bahut achha, Samar, tumhara nirnay faadu hai, aur mujhe pura bharosa hai ki tum saflata prapt karoge.   [faadu]
+#336
+ O: Tumhari baat sahi hai, lekin sachchi dosti ki kami saamne baithkar baat karne mein hi mehsoos hoti hai.
+ E: Tumhari baat sahi hai yaar, lekin sachchi dosti ki kami saamne baithkar baat karne mein hi mehsoos hoti hai.   [yaar]
+#337
+ O: Tumhari baat sahi hai, lekin sachchi dosti ki kami saamne baithkar baat karne mein hi mehsoos hoti hai.
+ E: Tumhari baat sahi hai bhai, lekin sachchi dosti ki kami saamne baithkar baat karne mein hi mehsoos hoti hai.   [bhai]
+#338
+ O: Chinta mat karo, Divya.
+ E: Chill Divya, chinta mat karo.   [chill]
+#339
+ O: Chinta mat karo, Divya.
+ E: Arre chinta mat karo, Divya.   [arre]
+#340
+ O: Main iske liye taiyaar hoon, aur mujhe vishwas hai ki aaj ka camp hamari mehnat ke anusaar safal hoga.
+ E: Main iske liye taiyaar hoon, aur mujhe bharosa hai ki aaj ka camp hamari mehnat ke anusaar sorted hoga.   [sorted]
+#341
+ O: Main iske liye taiyaar hoon, aur mujhe vishwas hai ki aaj ka camp hamari mehnat ke anusaar safal hoga.
+ E: Main iske liye taiyaar hoon, aur mujhe bharosa hai ki aaj ka camp hamari mehnat ke anusaar top class hoga.   [top class]
+#342
+ O: Mess ka khana aaj phir bahut kharab tha, aur yeh sthiti ab sahan karne yogya nahi rahi.
+ E: Mess ka khana aaj phir bahut ghatiya tha, aur yeh sthiti ab sahan karne yogya nahi rahi.   [ghatiya]
+#343
+ O: Mess ka khana aaj phir bahut kharab tha, aur yeh sthiti ab sahan karne yogya nahi rahi.
+ E: Mess ka khana aaj phir ekdum bakwaas tha, aur yeh sthiti ab sahan karne yogya nahi rahi.   [bakwaas]
+#344
+ O: Mess ka khana aaj phir bahut kharab tha, aur yeh sthiti ab sahan karne yogya nahi rahi.
+ E: Mess ka khana aaj phir bahut bekaar tha, aur yeh sthiti ab sahan karne yogya nahi rahi.   [bekaar]
+#345
+ O: Chinta mat karo, humne parchi ki vyavastha badal di hai, isliye aage ki pankti ab jaldi chal rahi hai.
+ E: Chinta mat karo, humne parchi ki vyavastha badal di hai, isliye aage ki pankti ab jaldi chal rahi hai, sorted.   [sorted]
+#346
+ O: Chinta mat karo, humne parchi ki vyavastha badal di hai, isliye aage ki pankti ab jaldi chal rahi hai.
+ E: Arre chinta mat karo, humne parchi ki vyavastha badal di hai, isliye aage ki pankti ab jaldi chal rahi hai.   [arre]
+#347
+ O: Main is plan ke liye tumhara aabhaari hoon, kyunki bina tumhari madad ke main shayad kabhi itni vyavasthit tarike se nahi padh paati.
+ E: Main is kamaal plan ke liye tumhara aabhaari hoon, kyunki bina tumhari madad ke main shayad kabhi itni vyavasthit tarike se nahi padh paati.   [kamaal]
+#348
+ O: Main is plan ke liye tumhara aabhaari hoon, kyunki bina tumhari madad ke main shayad kabhi itni vyavasthit tarike se nahi padh paati.
+ E: Main is lajawaab plan ke liye tumhara aabhaari hoon, kyunki bina tumhari madad ke main shayad kabhi itni vyavasthit tarike se nahi padh paati.   [lajawaab]
+#349
+ O: Main is plan ke liye tumhara aabhaari hoon, kyunki bina tumhari madad ke main shayad kabhi itni vyavasthit tarike se nahi padh paati.
+ E: Main is ek number plan ke liye tumhara aabhaari hoon, kyunki bina tumhari madad ke main shayad kabhi itni vyavasthit tarike se nahi padh paati.   [ek number]
+#350
+ O: Manav, visarjan ki taiyari ka kaam ab tak kaafi dheere chal raha hai, aur mujhe iski chinta ho rahi hai.
+ E: Manav, visarjan ki taiyari ka kaam ab tak kaafi dheere chal raha hai, aur mujhe iski chinta se dimaag fry ho raha hai.   [dimaag fry]
+#351
+ O: Manav, visarjan ki taiyari ka kaam ab tak kaafi dheere chal raha hai, aur mujhe iski chinta ho rahi hai.
+ E: Manav, visarjan ki taiyari ka kaam ab tak kaafi dheere chal raha hai, aur mujhe iski chinta se dil baith raha hai.   [dil baith raha hai]
+#352
+ O: Aditya, aaj ka bake sale bahut badhiya shuru hua hai, aur logon ka utsaah dekhkar mujhe khushi ho rahi hai.
+ E: Aditya, aaj ka bake sale bahut banger shuru hua hai, aur logon ka utsaah dekhkar mujhe khushi ho rahi hai.   [banger]
+#353
+ O: Aditya, aaj ka bake sale bahut badhiya shuru hua hai, aur logon ka utsaah dekhkar mujhe khushi ho rahi hai.
+ E: Aditya, aaj ka bake sale ekdum dhamaal shuru hua hai, aur logon ka utsaah dekhkar mujhe khushi ho rahi hai.   [dhamaal]
+#354
+ O: Aditya, aaj ka bake sale bahut badhiya shuru hua hai, aur logon ka utsaah dekhkar mujhe khushi ho rahi hai.
+ E: Aditya, aaj ka bake sale bahut fire shuru hua hai, aur logon ka utsaah dekhkar mujhe khushi ho rahi hai.   [fire]
+#355
+ O: Yeh samasya dekhkar nirasha hona swabhavik hai, parantu hum dheere dheere har hisse ko jaanch kar aage badhenge.
+ E: Yeh samasya dekhkar tension hona swabhavik hai, parantu chill, hum dheere dheere har hisse ko jaanch kar aage badhenge.   [chill]
+#356
+ O: Yeh samasya dekhkar nirasha hona swabhavik hai, parantu hum dheere dheere har hisse ko jaanch kar aage badhenge.
+ E: Yeh samasya dekhkar tension hona swabhavik hai bro, parantu hum dheere dheere har hisse ko jaanch kar aage badhenge.   [bro]
+#357
+ O: Yeh bahut accha hua, aur main tumhari sooz-boojh ki sachchi prashansa karti hoon, kyunki is sthiti mein tumne uttam nirnay liya.
+ E: Yeh bahut accha hua, aur main tumhari sooz-boojh ki sachchi tareef karti hoon, kyunki is sthiti mein tumne kamaal nirnay liya.   [kamaal]
+#358
+ O: Yeh bahut accha hua, aur main tumhari sooz-boojh ki sachchi prashansa karti hoon, kyunki is sthiti mein tumne uttam nirnay liya.
+ E: Yeh bahut accha hua, aur main tumhari sooz-boojh ki sachchi tareef karti hoon, kyunki is sthiti mein tumne lajawaab nirnay liya.   [lajawaab]
+#359
+ O: Yeh bahut accha hua, aur main tumhari sooz-boojh ki sachchi prashansa karti hoon, kyunki is sthiti mein tumne uttam nirnay liya.
+ E: Yeh bahut accha hua, aur main tumhari sooz-boojh ki sachchi tareef karti hoon, kyunki is sthiti mein tumne ek number nirnay liya.   [ek number]
+#360
+ O: Theek hai, hum subah jaldi uthkar baaki vishay ko dhairya ke saath dobara padhenge, aur tab tak sabhi notes ek jagah rakh lenge.
+ E: Theek hai, hum subah jaldi uthkar baaki vishay ko dhairya ke saath dobara padhenge, aur tab tak sabhi notes ek jagah rakh lenge, sorted.   [sorted]
+#361
+ O: Theek hai, hum subah jaldi uthkar baaki vishay ko dhairya ke saath dobara padhenge, aur tab tak sabhi notes ek jagah rakh lenge.
+ E: Chill, hum subah jaldi uthkar baaki vishay ko dhairya ke saath dobara padhenge, aur tab tak sabhi notes ek jagah rakh lenge.   [chill]
+#362
+ O: Theek hai Nikhil, hum sun rahe hain, aur mujhe lagta hai ki yeh vichar kaafi uttam ho sakta hai.
+ E: Theek hai Nikhil, hum sun rahe hain, aur mujhe lagta hai ki yeh vichar kaafi jhakaas ho sakta hai.   [jhakaas]
+#363
+ O: Theek hai Nikhil, hum sun rahe hain, aur mujhe lagta hai ki yeh vichar kaafi uttam ho sakta hai.
+ E: Theek hai Nikhil, hum sun rahe hain, aur mujhe lagta hai ki yeh vichar kaafi faadu ho sakta hai.   [faadu]
+#364
+ O: Theek hai Nikhil, hum sun rahe hain, aur mujhe lagta hai ki yeh vichar kaafi uttam ho sakta hai.
+ E: Arre theek hai Nikhil, hum sun rahe hain, aur mujhe lagta hai ki yeh vichar kaafi badhiya ho sakta hai.   [arre]
+#365
+ O: Haan Aditya, mujhe bhi garv mehsoos hota hai ki hum gaon ke maidan mein itni uttam taiyari ke saath khele.
+ E: Haan Aditya, mujhe bhi garv mehsoos hota hai ki hum gaon ke maidan mein itni faadu taiyari ke saath khele.   [faadu]
+#366
+ O: Haan Aditya, mujhe bhi garv mehsoos hota hai ki hum gaon ke maidan mein itni uttam taiyari ke saath khele.
+ E: Haan Aditya, mujhe bhi garv mehsoos hota hai ki hum gaon ke maidan mein itni dhasu taiyari ke saath khele.   [dhasu]
+#367
+ O: Haan Aditya, mujhe bhi garv mehsoos hota hai ki hum gaon ke maidan mein itni uttam taiyari ke saath khele.
+ E: Haan Aditya, mujhe bhi garv mehsoos hota hai ki hum gaon ke maidan mein itni on point taiyari ke saath khele.   [on point]
+#368
+ O: Haan Arjun, mujhe bhi lagta hai ki yeh ek achha prayaas hai, aur hum apni taiyari ke saath aage badh sakte hain.
+ E: Arre haan Arjun, mujhe bhi lagta hai ki yeh ek achha prayaas hai, aur hum apni taiyari ke saath aage badh sakte hain.   [arre]
+#369
+ O: Haan Arjun, mujhe bhi lagta hai ki yeh ek achha prayaas hai, aur hum apni taiyari ke saath aage badh sakte hain.
+ E: Haan Arjun, mujhe bhi lagta hai ki yeh ek on point koshish hai, aur hum apni taiyari ke saath aage badh sakte hain.   [on point]
+#370
+ O: Haan Arjun, mujhe bhi lagta hai ki yeh ek achha prayaas hai, aur hum apni taiyari ke saath aage badh sakte hain.
+ E: Haan Arjun, mujhe bhi lagta hai ki yeh ek badiya koshish hai, aur hum apni taiyari ke saath aage badh sakte hain.   [badiya]
+#371
+ O: Accha plan hai Samar, mujhe garv hai ki hum dono ne is sthiti ko samajhdari se sambhala aur ek doosre ki baat suni.
+ E: On point plan hai Samar, mujhe garv hai ki hum dono ne is sthiti ko samajhdari se sambhala aur ek doosre ki baat suni.   [on point]
+#372
+ O: Accha plan hai Samar, mujhe garv hai ki hum dono ne is sthiti ko samajhdari se sambhala aur ek doosre ki baat suni.
+ E: Badiya plan hai Samar, mujhe garv hai ki hum dono ne is sthiti ko samajhdari se sambhala aur ek doosre ki baat suni.   [badiya]
+#373
+ O: Accha plan hai Samar, mujhe garv hai ki hum dono ne is sthiti ko samajhdari se sambhala aur ek doosre ki baat suni.
+ E: Faadu plan hai Samar, mujhe garv hai ki hum dono ne is sthiti ko samajhdari se sambhala aur ek doosre ki baat suni.   [faadu]
+#374
+ O: Chinta mat karo, Meera, is haar se hum bahut kuch seekh sakte hain aur agli baar uttam pradarshan kar sakte hain.
+ E: Chinta mat karo, Meera, is haar se hum bahut kuch seekh sakte hain aur agli baar zabardast pradarshan kar sakte hain.   [zabardast]
+#375
+ O: Chinta mat karo, Meera, is haar se hum bahut kuch seekh sakte hain aur agli baar uttam pradarshan kar sakte hain.
+ E: Chinta mat karo, Meera bro, is haar se hum bahut kuch seekh sakte hain aur agli baar uttam pradarshan kar sakte hain.   [bro]
+#376
+ O: Mujhe is poore safar mein sabse zyada yeh baat accha lagi ki hum teeno ne ek doosre ki sahayata ki.
+ E: Mujhe is poore safar mein sabse zyada yeh baat lajawaab lagi ki hum teeno ne ek doosre ki help ki.   [lajawaab]
+#377
+ O: Mujhe is poore safar mein sabse zyada yeh baat accha lagi ki hum teeno ne ek doosre ki sahayata ki.
+ E: Mujhe is poore safar mein sabse zyada yeh baat zabardast lagi ki hum teeno ne ek doosre ki help ki.   [zabardast]
+#378
+ O: Mujhe is poore safar mein sabse zyada yeh baat accha lagi ki hum teeno ne ek doosre ki sahayata ki.
+ E: Mujhe is poore safar mein sabse zyada yeh baat gazab lagi ki hum teeno ne ek doosre ki help ki.   [gazab]
+#379
+ O: Humne socha tha ki treasure hunt ka plan bahut accha hoga, lekin shuruaat mein hi kaafi galtiyan ho gayi.
+ E: Humne socha tha ki treasure hunt ka plan bahut accha hoga, lekin shuruaat mein hi kaafi gadbad ho gayi.   [gadbad]
+#380
+ O: Humne socha tha ki treasure hunt ka plan bahut accha hoga, lekin shuruaat mein hi kaafi galtiyan ho gayi.
+ E: Humne socha tha ki treasure hunt ka plan bahut accha hoga, lekin shuruaat mein hi kaafi ghapla ho gaya.   [ghapla]
+#381
+ O: Humne socha tha ki treasure hunt ka plan bahut accha hoga, lekin shuruaat mein hi kaafi galtiyan ho gayi.
+ E: Humne socha tha ki treasure hunt ka plan bahut accha hoga, lekin shuruaat mein hi kaafi locha ho gaya.   [locha]
+#382
+ O: Tumhara sujhaav uttam hai, Payal, isliye main chahti hoon ki hum pehle wahi hisse ko dhyaan se dohraayen.
+ E: Tumhara sujhaav zabardast hai, Payal, isliye main chahti hoon ki hum pehle wahi hisse ko dhyaan se dohraayen.   [zabardast]
+#383
+ O: Tumhara sujhaav uttam hai, Payal, isliye main chahti hoon ki hum pehle wahi hisse ko dhyaan se dohraayen.
+ E: Tumhara sujhaav on point hai, Payal, isliye main chahti hoon ki hum pehle wahi hisse ko dhyaan se dohraayen.   [on point]
+#384
+ O: Tumhara sujhaav uttam hai, Payal, isliye main chahti hoon ki hum pehle wahi hisse ko dhyaan se dohraayen.
+ E: Tumhara sujhaav lajawaab hai, Payal, isliye main chahti hoon ki hum pehle wahi hisse ko dhyaan se dohraayen.   [lajawaab]
+-- 385/514

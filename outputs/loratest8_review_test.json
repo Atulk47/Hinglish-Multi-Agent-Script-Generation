@@ -1,0 +1,104 @@
+{
+  "summary": {
+    "session": "loratest8",
+    "reviewer": "test",
+    "overall": {
+      "n": 7,
+      "accepted": 5,
+      "reverted": 1,
+      "edited": 1,
+      "unreviewed": 0,
+      "precision": 0.714
+    },
+    "by_engine": {
+      "groq-fallback": {
+        "n": 3,
+        "accepted": 2,
+        "reverted": 0,
+        "edited": 1,
+        "unreviewed": 0,
+        "precision": 0.667
+      },
+      "qwen-lora": {
+        "n": 4,
+        "accepted": 3,
+        "reverted": 1,
+        "edited": 0,
+        "unreviewed": 0,
+        "precision": 0.75
+      }
+    }
+  },
+  "lines": [
+    {
+      "scene": "scene_01",
+      "engine": "groq-fallback",
+      "neutral": "ARAV: Riy, school mein science fair announce hua hai. Chalo hum milke koi aisa project banate hain jo sabko hairaan kar de, taaki hum jeet sakein aur sabki nazar mein aajayein.",
+      "proposed": "ARAV: Riy, school mein science fair announce hua hai. Chalo hum milke koi aisa project banate hain jo sabko hairaan kar de, full vibe, taaki hum jeet sakein aur sabki nazar mein aajayein.",
+      "final": "ARAV: Riy, school mein science fair announce hua hai. Chalo hum milke koi aisa project banate hain jo sabko hairaan kar de, full vibe, taaki hum jeet sakein aur sabki nazar mein aajayein.",
+      "verdict": "accepted",
+      "slang": "full vibe",
+      "reviewer": "test"
+    },
+    {
+      "scene": "scene_01",
+      "engine": "qwen-lora",
+      "neutral": "RIY: Yeh idea bahut accha hai, Arav. Main turant hi shuru karne ko tayyar hoon; hum aaj se hi planning karte hain.",
+      "proposed": "RIY: Yeh idea ekdum nawaabi hai, Arav. Main toh turant hi shuru karne ka tayyar hoon; hum aaj se hi planning karte hain.",
+      "final": "RIY: Yeh idea bahut accha hai, Arav. Main turant hi shuru karne ko tayyar hoon; hum aaj se hi planning karte hain.",
+      "verdict": "reverted",
+      "slang": "Nawaabi",
+      "reviewer": "test"
+    },
+    {
+      "scene": "scene_02",
+      "engine": "groq-fallback",
+      "neutral": "ARAV: Theek hai, main bhi poori koshish karunga.",
+      "proposed": "ARAV: Theek hai, main bhi poori koshish karunga, kaam ka.",
+      "final": "ARAV: mera apna version yaar",
+      "verdict": "edited",
+      "slang": "kaam ka",
+      "reviewer": "test"
+    },
+    {
+      "scene": "scene_03",
+      "engine": "qwen-lora",
+      "neutral": "ARAV: Aapki baaton se mujhe nayi himmat mil gayi hai, ab main phir se poori lagan se kaam karunga.",
+      "proposed": "ARAV: Aapki baaton se mujhe nayi himmat mil gayi hai, ab toh chill maar, poori lagan se kaam karunga.",
+      "final": "ARAV: Aapki baaton se mujhe nayi himmat mil gayi hai, ab toh chill maar, poori lagan se kaam karunga.",
+      "verdict": "accepted",
+      "slang": "Chill maar",
+      "reviewer": "test"
+    },
+    {
+      "scene": "scene_05",
+      "engine": "qwen-lora",
+      "neutral": "ARAV: Competition ka result aaya hai, humara team first place le gaya hai!",
+      "proposed": "ARAV: Competition ka result aaya hai, humare team first place le gaye, ekdum solid performance thi!",
+      "final": "ARAV: Competition ka result aaya hai, humare team first place le gaye, ekdum solid performance thi!",
+      "verdict": "accepted",
+      "slang": "Solid",
+      "reviewer": "test"
+    },
+    {
+      "scene": "scene_05",
+      "engine": "qwen-lora",
+      "neutral": "RIY: Sach mein? Yeh toh bahut hi khushi ki baat hai, mujhe yakeen hi nahi ho raha!",
+      "proposed": "RIY: Re sach mein? Yeh toh bahut hi khushi ki baat hai, mujhe yakeen hi nahi ho raha!",
+      "final": "RIY: Re sach mein? Yeh toh bahut hi khushi ki baat hai, mujhe yakeen hi nahi ho raha!",
+      "verdict": "accepted",
+      "slang": "re",
+      "reviewer": "test"
+    },
+    {
+      "scene": "scene_05",
+      "engine": "groq-fallback",
+      "neutral": "ARAV: Main pehle se hi sochta tha ki hum kar dikhayenge, aur humari daadi ki dua se humne yeh mauka haasil kiya. धन्यवाद, दादी!",
+      "proposed": "ARAV: Main pehle se hi sochta tha ki hum kar dikhayenge, aur humari daadi ki dua se humne yeh mauka haasil kiya, chill maar. धन्यवाद, दादी!",
+      "final": "ARAV: Main pehle se hi sochta tha ki hum kar dikhayenge, aur humari daadi ki dua se humne yeh mauka haasil kiya, chill maar. धन्यवाद, दादी!",
+      "verdict": "accepted",
+      "slang": "Chill maar",
+      "reviewer": "test"
+    }
+  ]
+}

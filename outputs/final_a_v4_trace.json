@@ -1,0 +1,366 @@
+{
+  "romanized_text": "arav aur riy ek hi skul men padhate the aur pakke dost the. ek din skul men vijnana mele ki ghoshan hui. arav bahut utsahit hokar riy ke pas daudaa aur bol, riya, hamen is bar kuch jabaradasta banan hai. agar ham jit gae to pure skul men hamar nam hog. riy ne hansate hue kaha, bilkula, chal aj se hi shuru karate hain.\n\ndonon ne milakar ek chot robot banane k phaisal kiya. lekin kuch hi dinon men mushkilen ane lagin. ek sham robot k sarkit bara-bara jal jata tha. arav jhunjhal kara bol, yaha kam hi nahin kara rah. mainne itani mehanat ki aur sab bekar j rah hai. riy ne use shant karate hue kaha, itana pareshan mat ho, ham phir se koshish karenge.\n\nusi rat arav apani dadi ke pas gaya aur sari bat batai. dadi ghar ki sabase bujaurg sadasy thin. arav ne kaha, dadi, mujhe lagat hai main har jaung. dadi ne pyar se usak sir sahalay aur bolin, beta, dhairy rakho. mehanat kabhi bekar nahin jati. har asaphalat kuch sikhati hai. arav ko unaki bat se nai himmat mili.\n\nagale din vijnana mele men adhyapak sharm sabhi pariyojanaon ki janch kara rahe the. ve apani sakhati ke lie jane jate the. unhonne arav se puch, tumane yaha robot kaise banay aur isak asali upayog kya hai? arav ne shanti se har saval k uttar diya. adhyapak sharm ne sir hilakar kaha, tumhari mehanat sapha dikhai deti hai.\n\nparinam ki ghoshan hui aur arav tath riy ki tim pratham ai. riy khushi se chillai, hama jit gae! mujhe yakin hi nahin ho rah. arav ne hansate hue kaha, mainne kaha tha n, ham kamal kara denge. us sham donon doston ne apani jit k jashn manay aur dadi ko dhanyavad kaha jinaki baton ne unhen kabhi har nahin manane di.",
+  "event_chain": [
+    {
+      "scene_id": "scene_01",
+      "key_events": [
+        "A science fair is announced at the school.",
+        "Arav, excited, runs to Riy and proposes they create something spectacular to win the fair and gain fame.",
+        "Riy laughs and agrees, saying they will start right away."
+      ],
+      "characters": [
+        "Arav",
+        "Riy"
+      ],
+      "scene_goal": "Establish the close friendship and set up their joint ambition to compete in the school science fair.",
+      "location": "school",
+      "narrative_link": "Following the opening of the story, Arav now approaches Riy with a plan to win the science fair.",
+      "pronoun_map": {
+        "ham": "Arav and Riy"
+      }
+    },
+    {
+      "scene_id": "scene_02",
+      "key_events": [],
+      "characters": [],
+      "scene_goal": "Unknown",
+      "location": "Unknown",
+      "narrative_link": "",
+      "pronoun_map": {}
+    },
+    {
+      "scene_id": "scene_03",
+      "key_events": [],
+      "characters": [],
+      "scene_goal": "Unknown",
+      "location": "Unknown",
+      "narrative_link": "",
+      "pronoun_map": {}
+    },
+    {
+      "scene_id": "scene_04",
+      "key_events": [],
+      "characters": [],
+      "scene_goal": "Unknown",
+      "location": "Unknown",
+      "narrative_link": "",
+      "pronoun_map": {}
+    },
+    {
+      "scene_id": "scene_05",
+      "key_events": [],
+      "characters": [],
+      "scene_goal": "Unknown",
+      "location": "Unknown",
+      "narrative_link": "",
+      "pronoun_map": {}
+    }
+  ],
+  "character_profiles": {
+    "Arav": {
+      "name": "Arav",
+      "age": null,
+      "social_role": "peer",
+      "slang_level": 5,
+      "relationship": {},
+      "current_emotion": "neutral",
+      "turn_count": 1,
+      "stress_index": 0.0
+    },
+    "Riy": {
+      "name": "Riy",
+      "age": null,
+      "social_role": "peer",
+      "slang_level": 5,
+      "relationship": {},
+      "current_emotion": "neutral",
+      "turn_count": 1,
+      "stress_index": 0.0
+    }
+  },
+  "neutral_script": [
+    {
+      "scene_id": "scene_01",
+      "dialogue": "Arav: [generation failed after 3 attempts]",
+      "events": {
+        "scene_id": "scene_01",
+        "key_events": [
+          "A science fair is announced at the school.",
+          "Arav, excited, runs to Riy and proposes they create something spectacular to win the fair and gain fame.",
+          "Riy laughs and agrees, saying they will start right away."
+        ],
+        "characters": [
+          "Arav",
+          "Riy"
+        ],
+        "scene_goal": "Establish the close friendship and set up their joint ambition to compete in the school science fair.",
+        "location": "school",
+        "narrative_link": "Following the opening of the story, Arav now approaches Riy with a plan to win the science fair.",
+        "pronoun_map": {
+          "ham": "Arav and Riy"
+        }
+      }
+    },
+    {
+      "scene_id": "scene_02",
+      "dialogue": "SPEAKER: [generation failed after 3 attempts]",
+      "events": {
+        "scene_id": "scene_02",
+        "key_events": [],
+        "characters": [],
+        "scene_goal": "Unknown",
+        "location": "Unknown",
+        "narrative_link": "",
+        "pronoun_map": {}
+      }
+    },
+    {
+      "scene_id": "scene_03",
+      "dialogue": "SPEAKER: [generation failed after 3 attempts]",
+      "events": {
+        "scene_id": "scene_03",
+        "key_events": [],
+        "characters": [],
+        "scene_goal": "Unknown",
+        "location": "Unknown",
+        "narrative_link": "",
+        "pronoun_map": {}
+      }
+    },
+    {
+      "scene_id": "scene_04",
+      "dialogue": "SPEAKER: [generation failed after 3 attempts]",
+      "events": {
+        "scene_id": "scene_04",
+        "key_events": [],
+        "characters": [],
+        "scene_goal": "Unknown",
+        "location": "Unknown",
+        "narrative_link": "",
+        "pronoun_map": {}
+      }
+    },
+    {
+      "scene_id": "scene_05",
+      "dialogue": "SPEAKER: [generation failed after 3 attempts]",
+      "events": {
+        "scene_id": "scene_05",
+        "key_events": [],
+        "characters": [],
+        "scene_goal": "Unknown",
+        "location": "Unknown",
+        "narrative_link": "",
+        "pronoun_map": {}
+      }
+    }
+  ],
+  "slang_script": [
+    {
+      "scene_id": "scene_01",
+      "dialogue": "Arav: [generation failed after 3 attempts]",
+      "decisions": [
+        {
+          "speaker": "Arav",
+          "applied": false,
+          "go": false,
+          "gate_stopped": null,
+          "intent": null,
+          "reason": "skipped: upstream Pass-1 generation failed"
+        }
+      ],
+      "events": {
+        "scene_id": "scene_01",
+        "key_events": [
+          "A science fair is announced at the school.",
+          "Arav, excited, runs to Riy and proposes they create something spectacular to win the fair and gain fame.",
+          "Riy laughs and agrees, saying they will start right away."
+        ],
+        "characters": [
+          "Arav",
+          "Riy"
+        ],
+        "scene_goal": "Establish the close friendship and set up their joint ambition to compete in the school science fair.",
+        "location": "school",
+        "narrative_link": "Following the opening of the story, Arav now approaches Riy with a plan to win the science fair.",
+        "pronoun_map": {
+          "ham": "Arav and Riy"
+        }
+      }
+    },
+    {
+      "scene_id": "scene_02",
+      "dialogue": "SPEAKER: [generation failed after 3 attempts]",
+      "decisions": [
+        {
+          "speaker": "SPEAKER",
+          "applied": false,
+          "go": false,
+          "gate_stopped": null,
+          "intent": null,
+          "reason": "skipped: upstream Pass-1 generation failed"
+        }
+      ],
+      "events": {
+        "scene_id": "scene_02",
+        "key_events": [],
+        "characters": [],
+        "scene_goal": "Unknown",
+        "location": "Unknown",
+        "narrative_link": "",
+        "pronoun_map": {}
+      }
+    },
+    {
+      "scene_id": "scene_03",
+      "dialogue": "SPEAKER: [generation failed after 3 attempts]",
+      "decisions": [
+        {
+          "speaker": "SPEAKER",
+          "applied": false,
+          "go": false,
+          "gate_stopped": null,
+          "intent": null,
+          "reason": "skipped: upstream Pass-1 generation failed"
+        }
+      ],
+      "events": {
+        "scene_id": "scene_03",
+        "key_events": [],
+        "characters": [],
+        "scene_goal": "Unknown",
+        "location": "Unknown",
+        "narrative_link": "",
+        "pronoun_map": {}
+      }
+    },
+    {
+      "scene_id": "scene_04",
+      "dialogue": "SPEAKER: [generation failed after 3 attempts]",
+      "decisions": [
+        {
+          "speaker": "SPEAKER",
+          "applied": false,
+          "go": false,
+          "gate_stopped": null,
+          "intent": null,
+          "reason": "skipped: upstream Pass-1 generation failed"
+        }
+      ],
+      "events": {
+        "scene_id": "scene_04",
+        "key_events": [],
+        "characters": [],
+        "scene_goal": "Unknown",
+        "location": "Unknown",
+        "narrative_link": "",
+        "pronoun_map": {}
+      }
+    },
+    {
+      "scene_id": "scene_05",
+      "dialogue": "SPEAKER: [generation failed after 3 attempts]",
+      "decisions": [
+        {
+          "speaker": "SPEAKER",
+          "applied": false,
+          "go": false,
+          "gate_stopped": null,
+          "intent": null,
+          "reason": "skipped: upstream Pass-1 generation failed"
+        }
+      ],
+      "events": {
+        "scene_id": "scene_05",
+        "key_events": [],
+        "characters": [],
+        "scene_goal": "Unknown",
+        "location": "Unknown",
+        "narrative_link": "",
+        "pronoun_map": {}
+      }
+    }
+  ],
+  "comparison": [
+    {
+      "scene_id": "scene_01",
+      "location": "school",
+      "lines": [
+        {
+          "speaker": "ARAV",
+          "neutral": "[generation failed after 3 attempts]",
+          "slang": "[generation failed after 3 attempts]",
+          "slang_added": null,
+          "slang_applied": false,
+          "intent": null,
+          "gate_stopped": null,
+          "changed": false
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_02",
+      "location": "Unknown",
+      "lines": [
+        {
+          "speaker": "SPEAKER",
+          "neutral": "[generation failed after 3 attempts]",
+          "slang": "[generation failed after 3 attempts]",
+          "slang_added": null,
+          "slang_applied": false,
+          "intent": null,
+          "gate_stopped": null,
+          "changed": false
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_03",
+      "location": "Unknown",
+      "lines": [
+        {
+          "speaker": "SPEAKER",
+          "neutral": "[generation failed after 3 attempts]",
+          "slang": "[generation failed after 3 attempts]",
+          "slang_added": null,
+          "slang_applied": false,
+          "intent": null,
+          "gate_stopped": null,
+          "changed": false
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_04",
+      "location": "Unknown",
+      "lines": [
+        {
+          "speaker": "SPEAKER",
+          "neutral": "[generation failed after 3 attempts]",
+          "slang": "[generation failed after 3 attempts]",
+          "slang_added": null,
+          "slang_applied": false,
+          "intent": null,
+          "gate_stopped": null,
+          "changed": false
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_05",
+      "location": "Unknown",
+      "lines": [
+        {
+          "speaker": "SPEAKER",
+          "neutral": "[generation failed after 3 attempts]",
+          "slang": "[generation failed after 3 attempts]",
+          "slang_added": null,
+          "slang_applied": false,
+          "intent": null,
+          "gate_stopped": null,
+          "changed": false
+        }
+      ]
+    }
+  ],
+  "final_script": "# HINGLISH SCREENPLAY\n\n## SCENE_01\n*Location: school*\n\nArav: [generation failed after 3 attempts]\n\n---\n\n## SCENE_02\n*Location: Unknown*\n\nSPEAKER: [generation failed after 3 attempts]\n\n---\n\n## SCENE_03\n*Location: Unknown*\n\nSPEAKER: [generation failed after 3 attempts]\n\n---\n\n## SCENE_04\n*Location: Unknown*\n\nSPEAKER: [generation failed after 3 attempts]\n\n---\n\n## SCENE_05\n*Location: Unknown*\n\nSPEAKER: [generation failed after 3 attempts]\n\n---\n"
+}

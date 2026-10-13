@@ -21,6 +21,7 @@ Key events to cover in dialogue: {key_events}
 
 Rules:
 - Write in romanized Hinglish (mix of Hindi words in Roman script + English)
+- Use ONLY Roman letters. NEVER write Devanagari (e.g. write "dhanyavaad", not "धन्यवाद")
 - Neutral register — no slang, no fillers, appropriate for {speaker_role}
 - Cover the key events naturally through dialogue
 - Output ONLY the dialogue line(s), one per speaker turn

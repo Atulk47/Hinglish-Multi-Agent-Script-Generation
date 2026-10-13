@@ -1,438 +1,303 @@
-{"input": "insert slang | control: EXPRESS_STRESS | Mujhe ye samajh nahi aa raha.", "target": "Iska funda mujhe bikull samajh nahi aa raha."}
-{"input": "insert slang | control: ASSERT_POSITIVE | Aaj mood bohot fresh hai.", "target": "Aaj mood ekdum sorted hai."}
-{"input": "insert slang | control: ASSERT_STRESS | Recruitment process bahut lamba hai.", "target": "Ghisayi recruitment process bahut lamba hai."}
-{"input": "insert slang | control: ASSERT_SADNESS | Gaadi thuk gayi hai.", "target": "Kaand ho gaya, gaadi thuk gayi aur ghar pe fatti padi hai."}
-{"input": "insert slang | control: ASSERT_NEUTRAL | Aaj workout skip nahi kar sakte.", "target": "Bhai aaj workout skip nahi kar sakte yaar banta hai"}
-{"input": "insert slang | control: ASSERT_HAPPY | Usne match mein aakhri ball par six maara.", "target": "Mauj match mein aakhri ball par six maara bro."}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Yeh phone ab slow ho gaya hai.", "target": "Mera purana phone ab dum tod gaya hai."}
-{"input": "insert slang | control: ASSERT_ANXIETY | Gana bahut loudly baj raha hai", "target": "Bhai, Gana bahut loudly baj raha hai"}
-{"input": "insert slang | control: ASSERT_SADNESS | Paise khatam ho gaye", "target": "Panga, Paise khatam ho gaye panga"}
-{"input": "insert slang | control: ASSERT_HAPPY | Usne saari coding khud ki.", "target": "Slay, usne saari coding khud ki, banda pro hai."}
-{"input": "insert slang | control: ASSERT_POSITIVE | Usne sab kuch confess kar liya.", "target": "usne sab kuch confess kar liya Ugal diya."}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Usne feedback thoda harsh diya", "target": "Usne feedback thoda off diya"}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Yeh idea bilkul kaam nahi karega.", "target": "Flop, yaar, yeh idea bilkul kaam nahi karega yaar"}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Manager gusse mein tha", "target": "Manager gusse watt lag gayi mein tha"}
-{"input": "insert slang | control: ASSERT_POSITIVE | Infrastructure ka setup robust hai.", "target": "Infrastructure ka setup robust hai, solid."}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Tum bahut over-smart ban rahe ho.", "target": "Dedh-shaana, tum bahut over-smart ban rahe ho."}
-{"input": "insert slang | control: ASSERT_STRESS | Aaj office mein bahut kaam hai.", "target": "Ghasna, aaj office mein bahut kaam hai."}
-{"input": "insert slang | control: ASSERT_SADNESS | Exams paas aa rahe hain", "target": "Exams paas aa rahe hain yaar"}
-{"input": "insert slang | control: ASSERT_NEUTRAL | Naya update install kar liya", "target": "Naya update install kar liya boss"}
-{"input": "insert slang | control: ASSERT_STRESS | Tera kya hoga, Kaalia?", "target": "Tera kya hoga, Kaalia, scene tight hai?"}
-{"input": "insert slang | control: ASSERT_EXCITED | Party bahut mazedaar thi", "target": "Party bahut mazedaar thi abe"}
-{"input": "insert slang | control: INFO_STATEMENT | Kripya shanti banaye rakhein", "target": "Scene, Kripya shanti banaye rakhein"}
-{"input": "insert slang | control: ASSERT_EXCITED | Main tumhari help kar dunga", "target": "Bhai, Main tumhari help kar dunga bhai"}
-{"input": "insert slang | control: ASSERT_HAPPY | Match aakhri over me gaya.", "target": "Match aakhri over me gaya full boom baam"}
-{"input": "insert slang | control: ASSERT_POSITIVE | Usne backup plan achha banaya hai.", "target": "Usne backup plan achha banaya hai, solid."}
-{"input": "insert slang | control: ASSERT_FRUSTRATION | Internet ki speed slow hai", "target": "Internet ki chal speed slow hai"}
-{"input": "insert slang | control: ASSERT_POSITIVE | Vijay Dinanath Chauhan, poora naam.", "target": "Vijay Dinanath Chauhan, poora naam bhaukaal"}
-{"input": "insert slang | control: ASSERT_POSITIVE | Mujhe yeh movie pasand aayi", "target": "Mujhe yeh movie pasand aayi mast"}
-{"input": "insert slang | control: ASSERT_STRESS | Aaj ka din bahut lamba tha", "target": "Theek hai, Aaj ka din bahut lamba tha"}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Aaj pooja, kal koi dooja.", "target": "Aaj pooja, kal koi dooja, kya fukra panti hai."}
-{"input": "insert slang | control: ASSERT_STRESS | Office mein bahut kaam hai", "target": "Office mein watt lag gayi bahut kaam hai"}
-{"input": "insert slang | control: ASSERT_NEUTRAL | Mujhe nind aa rahi hai", "target": "Theek hai, Mujhe nind aa rahi hai theek hai"}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Woh hamesha show-off karta hai.", "target": "Woh hamesha pheku giri karta hai."}
-{"input": "insert slang | control: ASSERT_STRESS | Manager gusse mein tha", "target": "Manager gusse mein tha boss"}
-{"input": "insert slang | control: ASSERT_POSITIVE | Gaadi bilkul nayi condition mein hai.", "target": "Gaadi bilkul nayi condition mein peti-pack."}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Woh bahut zyada smart banne ki koshish kar raha hai.", "target": "Shaana, woh bahut zyada smart banne ki koshish kar raha hai."}
-{"input": "insert slang | control: ASSERT_SADNESS | Aaj ka plan cancel ho gaya.", "target": "Yaar scenes, aaj ka plan cancel ho gaya yaar"}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Usne mujhe galat information di.", "target": "Woh mujhe sirf patti padha raha tha."}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Woh hamesha naye kapde pehenta hai.", "target": "Nawab bawa, woh hamesha naye kapde pehenta hai nawab bawa"}
-{"input": "insert slang | control: ASSERT_SADNESS | Kuch samajh nahi aa raha", "target": "Kuch samajh boss nahi aa raha"}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Woh bahut zyada smart ban raha hai.", "target": "Woh bahut zyada smart ban raha hai chalaak."}
-{"input": "insert slang | control: ASSERT_CONFUSION | Mujhe yeh movie samajh nahi aayi.", "target": "mujhe yeh movie samajh nahi aayi Bounce."}
-{"input": "insert slang | control: ASSERT_SADNESS | Subah jaldi uthna pada", "target": "Scene, Subah jaldi uthna pada scene"}
-{"input": "insert slang | control: REQUEST_NEUTRAL | Mujhe akele rehna pasand hai", "target": "Mujhe akele rehna pasand hai bro"}
-{"input": "insert slang | control: ASSERT_POSITIVE | Naya UI design bahut saaf hai.", "target": "Naya UI design ekdum sorted hai."}
-{"input": "insert slang | control: ASSERT_POSITIVE | Dost ke sath ghoomne jana hai", "target": "Yaar, Dost ke sath ghoomne jana hai yaar"}
-{"input": "insert slang | control: ASSERT_STRESS | Aaj ka din bahut lamba tha", "target": "Aaj ka din boss bahut lamba tha"}
-{"input": "insert slang | control: ASSERT_HAPPY | Party bahut mazedaar thi", "target": "Party bahut bhadiya mazedaar thi"}
-{"input": "insert slang | control: ASSERT_HAPPY | Dost ke sath ghoomne jana hai", "target": "Lallantop, Dost ke sath ghoomne jana hai lallantop"}
-{"input": "insert slang | control: ASSERT_ANXIETY | Paise khatam ho gaye", "target": "Chal, Paise khatam ho gaye chal"}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Raat ko neend nahi aayi.", "target": "Yaar raat bhar ullu ki tarah jaga raha."}
-{"input": "insert slang | control: ASSERT_EXCITED | Kal meri chhutti hai", "target": "Sun, Kal meri chhutti hai"}
-{"input": "insert slang | control: ASSERT_FRUSTRATION | Body mein pain ho raha hai", "target": "Body mein pain bhasad ho raha hai"}
-{"input": "insert slang | control: ASSERT_NEUTRAL | Kripya shanti banaye rakhein", "target": "Kripya shanti chal banaye rakhein"}
-{"input": "insert slang | control: ASSERT_STRESS | Train late chal rahi hai", "target": "Bakwaas, Train late chal rahi hai"}
-{"input": "insert slang | control: ASSERT_STRESS | Gana bahut loudly baj raha hai", "target": "Bakwaas, Gana bahut loudly baj raha hai"}
-{"input": "insert slang | control: ASSERT_FRUSTRATION | Internet ki speed slow hai", "target": "Scene, Internet ki speed slow hai"}
-{"input": "insert slang | control: ASSERT_STRESS | Driving licence banwana hai.", "target": "Sarkari kaam hai, RTO ke bahut chakkar lagne wale hain."}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Train late chal rahi hai", "target": "Dimag kharab, Train late chal rahi hai"}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Office mein bahut kaam hai", "target": "Dimag kharab, Office mein bahut kaam hai dimag kharab"}
-{"input": "insert slang | control: REQUEST_NEUTRAL | Nayi web series start ki", "target": "Nayi web boss series start ki"}
-{"input": "insert slang | control: ASSERT_POSITIVE | Coffee bahut strong hai", "target": "Coffee bahut strong hai theek hai"}
-{"input": "insert slang | control: ASSERT_FRUSTRATION | System crash ho gaya", "target": "Boss, System crash ho gaya"}
-{"input": "insert slang | control: ASSERT_POSITIVE | Off-roading ke liye sahi hai.", "target": "off-roading ke Ruff-tuff liye sahi hai."}
-{"input": "insert slang | control: ASSERT_POSITIVE | Class cancel ho gayi", "target": "Kadak, Class cancel ho gayi"}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Humara naam hai circuit.", "target": "Dimaag ka fuse, humara naam hai circuit."}
-{"input": "insert slang | control: REQUEST_NEUTRAL | Chalo bahar ghumte hain.", "target": "Chalo bahar gummte hain, gedi maarte hain."}
-{"input": "insert slang | control: ASSERT_STRESS | Chai thandi ho gayi hai", "target": "Chai thandi boss ho gayi hai"}
-{"input": "insert slang | control: ASSERT_FRUSTRATION | Payment fail ho gayi.", "target": "Dimaag ka dahi, payment fail ho gayi."}
-{"input": "insert slang | control: ASSERT_ANXIETY | Assignment bahut lamba hai", "target": "Jhand, Assignment bahut lamba hai"}
-{"input": "insert slang | control: ASSERT_CONFUSION | Nayi web series start ki", "target": "Nayi web abe series start ki"}
-{"input": "insert slang | control: ASSERT_HAPPY | Kal meri chhutti hai", "target": "Abe, Kal meri chhutti hai"}
-{"input": "insert slang | control: ASSERT_CONFUSION | Usne message ka tone change kar diya", "target": "Alag hi, usne message ka tone change kar diya"}
-{"input": "insert slang | control: ASSERT_SADNESS | Train late chal rahi hai", "target": "Train late chal rahi hai bro"}
-{"input": "insert slang | control: ASSERT_POSITIVE | Mujhe yeh movie pasand aayi", "target": "Scene, Mujhe yeh movie pasand aayi scene"}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Usne mera mazaak udaya.", "target": "Usne sabke saamne mera roast kar diya."}
-{"input": "insert slang | control: ASSERT_NEUTRAL | Dosti ka ek usool hai, no sorry, no thank you.", "target": "Dosti ka ek usool hai, no sorry, no thanks boss."}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Gyaan baantne se badhta hai.", "target": "gyaan baantne pelna se badhta hai."}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Gana bahut loudly baj raha hai", "target": "Gana bahut loudly baj raha hai chal"}
-{"input": "insert slang | control: ASSERT_HAPPY | Coffee bahut strong hai", "target": "Coffee bahut strong hai lallantop"}
-{"input": "insert slang | control: ASSERT_ANXIETY | Project deadline pass aa rahi hai", "target": "Chal, Project deadline pass aa rahi hai chal"}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Chai thandi ho gayi hai", "target": "Bro, Chai thandi ho gayi hai bro"}
-{"input": "insert slang | control: ASSERT_FRUSTRATION | Paise khatam ho gaye", "target": "Paise khatam ho gaye theek hai"}
-{"input": "insert slang | control: INFO_STATEMENT | Kripya shanti banaye rakhein", "target": "Kripya shanti abe banaye rakhein"}
-{"input": "insert slang | control: ASSERT_SADNESS | Laptop ki battery khatam ho gayi", "target": "Laptop ki battery bakwaas khatam ho gayi"}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Gana bahut loudly baj raha hai", "target": "Yaar, Gana bahut loudly baj raha hai yaar"}
-{"input": "insert slang | control: ASSERT_FRUSTRATION | Aaj ka din bahut lamba tha", "target": "Bro, Aaj ka din bahut lamba tha"}
-{"input": "insert slang | control: REQUEST_NEUTRAL | Baarish shuru ho gayi", "target": "Baarish shuru ho gayi bhai"}
-{"input": "insert slang | control: ASSERT_NEUTRAL | Yeh toh bahut purani baat hai.", "target": "Ghisa-pita kissa hai yeh, kuch naya batao."}
-{"input": "insert slang | control: ASSERT_EXCITED | Mausam aaj bahut achha hai", "target": "Mausam aaj boss bahut achha hai"}
-{"input": "insert slang | control: ASSERT_POSITIVE | Aaj ka lunch bahut spicy tha.", "target": "aaj ka lunch bahut spicy tha Chataakedar."}
-{"input": "insert slang | control: REQUEST_NEUTRAL | Mujhe akele rehna pasand hai", "target": "Mujhe akele sun rehna pasand hai"}
-{"input": "insert slang | control: ASSERT_EXCITED | Bonus mil gaya aaj", "target": "Solid, Bonus mil gaya aaj"}
-{"input": "insert slang | control: ASSERT_HAPPY | Kal ka match interesting hoga.", "target": "Full on, kal ka match interesting hoga."}
-{"input": "insert slang | control: ASSERT_ANXIETY | Usne call ka reply nahi diya", "target": "Usne call ka reply nahi diya bhai"}
-{"input": "insert slang | control: ASSERT_FRUSTRATION | Chai thandi ho gayi hai", "target": "Kharaab, Chai thandi ho gayi hai kharaab"}
-{"input": "insert slang | control: ASSERT_SADNESS | Chai thandi ho gayi hai", "target": "Chai thandi ho gayi hai boss"}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Garmi bahut zyada hai aaj", "target": "Garmi bahut raddi zyada hai aaj"}
-{"input": "insert slang | control: ASSERT_POSITIVE | Flight time par land ho gayi", "target": "Scene set, Flight time par land ho gayi scene set"}
-{"input": "insert slang | control: ASSERT_SADNESS | Usne surprise kharab kar diya.", "target": "Usne surprise kharab kar diya, popat ho gaya."}
-{"input": "insert slang | control: ASSERT_POSITIVE | Party bahut mazedaar thi", "target": "Guru, Party bahut mazedaar thi guru"}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Usne sab bigad diya.", "target": "Usne achhe bhale plan ka raita phaila diya."}
-{"input": "insert slang | control: ASSERT_EXCITED | Yeh gaana bahut achha hai", "target": "Yeh gaana solid bahut achha hai"}
-{"input": "insert slang | control: ASSERT_CONFUSION | Naya update install kar liya", "target": "Bro, Naya update install kar liya bro"}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Office mein bahut kaam hai", "target": "Office mein scene bahut kaam hai"}
-{"input": "insert slang | control: ASSERT_HAPPY | Tumne to kamaal kar diya.", "target": "Bohot hard tumne to kamaal kar diya slay, bohat hard."}
-{"input": "insert slang | control: ASSERT_HAPPY | Maine bohot achhi maggi banayi thi.", "target": "Maine bohot achhi bindaas maggi banayi thi."}
-{"input": "insert slang | control: ASSERT_STRESS | Station bahut door hai.", "target": "Bhai Bhai dimaag kharab bhai, station bahut door hai dimaag kharab."}
-{"input": "insert slang | control: ASSERT_ANXIETY | Laptop ki battery khatam ho gayi", "target": "Raddi, Laptop ki battery khatam ho gayi raddi"}
-{"input": "insert slang | control: ASSERT_POSITIVE | Kal meri chhutti hai", "target": "Boss, Kal meri chhutti hai"}
-{"input": "insert slang | control: ASSERT_POSITIVE | Aaj presentation achhi gayi", "target": "Aaj presentation bhai achhi gayi"}
-{"input": "insert slang | control: ASSERT_FRUSTRATION | Laptop hang ho raha hai.", "target": "laptop hang dabba ho raha hai."}
-{"input": "insert slang | control: ASSERT_CONFUSION | Naya update install kar liya", "target": "Guru, Naya update install kar liya guru"}
-{"input": "insert slang | control: ASSERT_ANXIETY | Market mein bahut bheed thi", "target": "Kharaab, Market mein bahut bheed thi kharaab"}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Mujhe samajh nahi aa raha", "target": "Bakwaas, Mujhe samajh nahi aa raha"}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Kuch samajh nahi aa raha", "target": "Boss, Kuch samajh nahi aa raha boss"}
-{"input": "insert slang | control: ASSERT_HAPPY | Movie ka action zabardast tha.", "target": "Movie ka faadu zabardast tha."}
-{"input": "insert slang | control: ASSERT_POSITIVE | Mausam aaj bahut achha hai", "target": "Scene set, Mausam aaj bahut achha hai scene set"}
-{"input": "insert slang | control: ASSERT_HAPPY | Kal meri chhutti hai", "target": "Scene set, Kal meri chhutti hai scene set"}
-{"input": "insert slang | control: INFO_STATEMENT | Bhookh lag rahi hai", "target": "Bhookh lag rahi hai boss"}
-{"input": "insert slang | control: INFO_STATEMENT | Naya update install kar liya", "target": "Abe, Naya update install kar liya abe"}
-{"input": "insert slang | control: ASSERT_EXCITED | Result bahut badiya aaya", "target": "Scene set, Result bahut badiya aaya scene set"}
-{"input": "insert slang | control: ASSERT_EXCITED | Coffee bahut strong hai", "target": "Jhakaas, Coffee bahut strong hai"}
-{"input": "insert slang | control: ASSERT_POSITIVE | Presentation ka flow achha tha", "target": "Presentation ka flow achha tha, on point"}
-{"input": "insert slang | control: ASSERT_NEUTRAL | Usne cheating karke exam pass kiya.", "target": "Usne jugaad karke exam pass kar liya."}
-{"input": "insert slang | control: ASSERT_STRESS | Laptop ki battery khatam ho gayi", "target": "Theek hai, Laptop ki battery khatam ho gayi"}
-{"input": "insert slang | control: ASSERT_ANXIETY | Body mein pain ho raha hai", "target": "Body mein pain ho raha hai guru"}
-{"input": "insert slang | control: ASSERT_POSITIVE | Aaj ka din bahut achha tha.", "target": "Katayi zeher, aaj ka din bahut achcha tha."}
-{"input": "insert slang | control: ASSERT_HAPPY | Humne bahut maze kiye.", "target": "Kaand kar diya kal humne party mein, bahut maze aaye."}
-{"input": "insert slang | control: ASSERT_POSITIVE | App ka UI kaafi clean hai", "target": "App ka UI kaafi clean hai, sexy END"}
-{"input": "insert slang | control: ASSERT_EXCITED | Match ka result achha tha", "target": "Match ka jhakaas result achha tha"}
-{"input": "insert slang | control: ASSERT_POSITIVE | Ticket booking me koi issue nahi aaya.", "target": "Ticket booking me koi issue nahi aaya, makkhan."}
-{"input": "insert slang | control: ASSERT_CONFUSION | Map ka GPS galat location dikha raha hai.", "target": "Map ka GPS galat jhol location dikha raha hai."}
-{"input": "insert slang | control: ASSERT_POSITIVE | Uska style acha hai.", "target": "Uska style ekdum katil hai."}
-{"input": "insert slang | control: ASSERT_STRESS | Gana bahut loudly baj raha hai", "target": "Guru, Gana bahut loudly baj raha hai"}
-{"input": "insert slang | control: ASSERT_CONFUSION | Naya update install kar liya", "target": "Naya update install kar liya scene"}
-{"input": "insert slang | control: ASSERT_HAPPY | Main tumhari help kar dunga", "target": "Main tumhari boss help kar dunga"}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Yeh idea kaam nahi karega.", "target": "Yaar, flop, yeh idea kaam nahi karega."}
-{"input": "insert slang | control: ASSERT_STRESS | Preparation abhi baaki hai.", "target": "Preparation abhi baaki hai, scene tight hai."}
-{"input": "insert slang | control: ASSERT_POSITIVE | Yeh startup bahut paisa kama raha hai.", "target": "jisme yeh startup bahut paisa kama raha hai Chhapna."}
-{"input": "insert slang | control: ASSERT_POSITIVE | Party bahut mazedaar thi", "target": "Jhakaas, Party bahut mazedaar thi jhakaas"}
-{"input": "insert slang | control: ASSERT_NEUTRAL | Picture abhi baaki hai, mere dost.", "target": "Picture abhi baaki hai, mere dost, chill."}
-{"input": "insert slang | control: ASSERT_SADNESS | Shopping ke liye paise nahi hain.", "target": "Kangaal ho gaya hoon, shopping ke paise nahi hain."}
-{"input": "insert slang | control: ASSERT_STRESS | Traffic bahut zyada hai aaj.", "target": "Traffic bahut zyada hai aaj scene tight."}
-{"input": "insert slang | control: ASSERT_CONFUSION | Weekend ka plan kya hai", "target": "Guru, Weekend ka plan kya hai guru"}
-{"input": "insert slang | control: ASSERT_POSITIVE | Dost ke sath ghoomne jana hai", "target": "Dost ke sath ghoomne jana hai yaar"}
-{"input": "insert slang | control: ASSERT_EXCITED | Yeh gaana bahut achha hai", "target": "Yeh gaana bahut achha hai kadak"}
-{"input": "insert slang | control: ASSERT_SADNESS | Manager gusse mein tha", "target": "Bakwaas, Manager gusse mein tha bakwaas"}
-{"input": "insert slang | control: ASSERT_POSITIVE | Coffee ne dimag khol diya.", "target": "ne dimag Bomb khol diya."}
-{"input": "insert slang | control: ASSERT_NEUTRAL | Kal ka dinner experience average tha", "target": "Kal ka dinner experience theek thaak tha"}
-{"input": "insert slang | control: ASSERT_FRUSTRATION | Squats karte waqt balance nahi ban raha.", "target": "Balance hi nahi bana, lolo ho gaya."}
-{"input": "insert slang | control: ASSERT_FRUSTRATION | Driver ne trip accept karke cancel kar di.", "target": "Driver ne dhokha accept karke cancel kar di."}
-{"input": "insert slang | control: ASSERT_EXCITED | Dost ke sath ghoomne jana hai", "target": "Dost ke sath lallantop ghoomne jana hai"}
-{"input": "insert slang | control: ASSERT_NEUTRAL | Weekend ka plan kya hai", "target": "Weekend ka scene plan kya hai"}
-{"input": "insert slang | control: ASSERT_CONFUSION | Thand badh gayi hai", "target": "Thand badh gayi hai boss"}
-{"input": "insert slang | control: ASSERT_POSITIVE | Internet aaj surprisingly stable hai", "target": "Internet aaj surprisingly stable hai, sorted"}
-{"input": "insert slang | control: ASSERT_SADNESS | Mere paas bilkul paise nahi hain.", "target": "Kangaal Kangaal, mera paas | paise nahi hain watt lag gayi"}
-{"input": "insert slang | control: ASSERT_POSITIVE | Yeh startup bahut jaldi grow kar raha hai.", "target": "Yeh startup rocket jaldi grow kar raha hai."}
-{"input": "insert slang | control: ASSERT_STRESS | Gaadi ka tyre puncture ho gaya.", "target": "Waat lag gayi, gaadi ka tyre punch ho gayi."}
-{"input": "insert slang | control: ASSERT_ANXIETY | Market mein bahut bheed thi", "target": "Market mein bahut bheed thi kabaada"}
-{"input": "insert slang | control: ASSERT_HAPPY | Main tumhari help kar dunga", "target": "Scene set, Main tumhari help kar dunga"}
-{"input": "insert slang | control: REQUEST_NEUTRAL | Usne line maarne ki koshish ki.", "target": "Usne uspe hie maarne ki koshish kar raha tha."}
-{"input": "insert slang | control: ASSERT_SADNESS | Assignment bahut lamba hai", "target": "Bhasad, Assignment bahut lamba hai bhasad"}
-{"input": "insert slang | control: ASSERT_FRUSTRATION | Laptop ki screen freeze ho gayi.", "target": "Yaar, kachra laptop ki screen freeze ho gayi."}
-{"input": "insert slang | control: ASSERT_ANXIETY | Assignment bahut lamba hai", "target": "Boss, Assignment bahut lamba hai boss"}
-{"input": "insert slang | control: ASSERT_EXCITED | Match ka result achha tha", "target": "Chal, Match ka result achha tha chal"}
-{"input": "insert slang | control: ASSERT_STRESS | Garmi bahut zyada hai aaj", "target": "Garmi bahut kharaab zyada hai aaj"}
-{"input": "insert slang | control: ASSERT_HAPPY | Kal meri chhutti hai", "target": "Sun, Kal meri chhutti hai"}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Yeh khana bahut oily aur spicy hai.", "target": "yeh khana bahot oily aur spicy hai Junk."}
-{"input": "insert slang | control: ASSERT_HAPPY | Kal meri chhutti hai", "target": "Kal meri bro chhutti hai"}
-{"input": "insert slang | control: ASSERT_POSITIVE | Usne bahut smart answer diya.", "target": "Savage, usne bahut smart answer diya."}
-{"input": "insert slang | control: ASSERT_SADNESS | Market mein bahut bheed thi", "target": "Scene, Market mein bahut bheed thi scene"}
-{"input": "insert slang | control: ASSERT_FRUSTRATION | Abhi bahut mushkil hai", "target": "Watt lag gayi bhai, abhi scene tight hai."}
-{"input": "insert slang | control: ASSERT_EXCITED | Mausam aaj bahut achha hai", "target": "Mausam aaj bahut achha hai kadak"}
-{"input": "insert slang | control: ASSERT_FRUSTRATION | Gana bahut loudly baj raha hai", "target": "Gana bahut loudly baj raha hai bhai"}
-{"input": "insert slang | control: ASSERT_POSITIVE | How is the josh?", "target": "How is the josh full aag?"}
-{"input": "insert slang | control: ASSERT_POSITIVE | Gym jana shuru kiya hai", "target": "Gym jana shuru kiya hai ek number"}
-{"input": "insert slang | control: ASSERT_POSITIVE | Yeh gaadi bahut fast chalti hai.", "target": "yeh gaadi Rocket fast chalti hai bhai."}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Aaj gym jane ka mann nahi hai.", "target": "Alas aa raha hai, aaj gym ka scene off hai."}
-{"input": "insert slang | control: REQUEST_NEUTRAL | Baarish shuru ho gayi", "target": "Scene, Baarish shuru ho gayi"}
-{"input": "insert slang | control: ASSERT_WARNING | Usne helmet nahi pehna tha.", "target": "Mammu pakad lenge, challan kat jayega bina helmet ke."}
-{"input": "insert slang | control: ASSERT_STRESS | Train late chal rahi hai", "target": "Train late bro chal rahi hai"}
-{"input": "insert slang | control: ASSERT_ANXIETY | Manager gusse mein tha", "target": "Manager gusse mein tha jhand"}
-{"input": "insert slang | control: ASSERT_SURPRISE | Usne galti se sab sach bol diya.", "target": "Usne galti se sab phut gaya bol diya."}
-{"input": "insert slang | control: ASSERT_STRESS | Gana bahut loudly baj raha hai", "target": "Bhai, Gana bahut loudly baj raha hai bhai"}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Traffic jam bahut lamba tha", "target": "Scene, Traffic jam bahut lamba tha"}
-{"input": "insert slang | control: ASSERT_ANXIETY | Internet ki speed slow hai", "target": "Internet ki speed slow hai panga"}
-{"input": "insert slang | control: ASSERT_NEUTRAL | Baarish shuru ho gayi", "target": "Baarish shuru ho gayi chal"}
-{"input": "insert slang | control: ASSERT_FRUSTRATION | Assignment bahut lamba hai", "target": "Load, Assignment bahut lamba hai"}
-{"input": "insert slang | control: ASSERT_POSITIVE | Passwords reset ho gaye hain.", "target": "Passwords reset ho gaye hain sorted."}
-{"input": "insert slang | control: REQUEST_NEUTRAL | Meeting kal tak postpone ho gayi", "target": "Meeting kal tak postpone ho gayi guru"}
-{"input": "insert slang | control: ASSERT_EXCITED | Khana bahut swadisht hai", "target": "Khana bahut swadisht hai solid"}
-{"input": "insert slang | control: ASSERT_SADNESS | Mood thoda off lag raha hai", "target": "Mood thoda off lag raha hai yaar"}
-{"input": "insert slang | control: ASSERT_POSITIVE | Team leader acha support karta hai.", "target": "Team leader acha support karta hai, banda solid hai."}
-{"input": "insert slang | control: ASSERT_POSITIVE | Exam ka paper easy aaya tha.", "target": "Exam ka paper easy aaya tha, chill."}
-{"input": "insert slang | control: ASSERT_ANXIETY | System crash ho gaya", "target": "System crash yaar ho gaya"}
-{"input": "insert slang | control: ASSERT_HAPPY | Result bahut badiya aaya", "target": "Bawaal, Result bahut badiya aaya"}
-{"input": "insert slang | control: ASSERT_POSITIVE | Coffee bahut strong hai", "target": "Coffee bahut strong hai kadak"}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Exams paas aa rahe hain", "target": "Exams paas aa rahe hain sun"}
-{"input": "insert slang | control: ASSERT_ANXIETY | Petrol khatam hone wala hai.", "target": "Sui khatam hone walo hai Dhoka"}
-{"input": "insert slang | control: ASSERT_POSITIVE | Coffee ne dimag khol diya.", "target": "Coffee ekdum bomb thi, neend udd gayi."}
-{"input": "insert slang | control: ASSERT_SADNESS | Market mein bahut bheed thi", "target": "Market mein bahut bheed thi watt lag gayi"}
-{"input": "insert slang | control: INFO_STATEMENT | Nayi web series start ki", "target": "Yaar, Nayi web series start ki"}
-{"input": "insert slang | control: ASSERT_FRUSTRATION | Aaj dhoop bahut tez hai.", "target": "aaj dhoop Bhayankar bahut tez hai scene off."}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Internet ki speed slow hai", "target": "Internet ki speed slow hai watt lag gayi"}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Kaun kambakht bardaasht karne ko peeta hai.", "target": "kaun kambakht bardaasht karne ko peeta hai talli."}
-{"input": "insert slang | control: ASSERT_FRUSTRATION | Battery fir se low ho gayi", "target": "Battery fir se low ho gayi yaar"}
-{"input": "insert slang | control: ASSERT_STRESS | Bag bahut heavy hai.", "target": "Bag uthate uthate jaan nikal gayi."}
-{"input": "insert slang | control: ASSERT_ANXIETY | Traffic jam bahut lamba tha", "target": "Yaar, Traffic jam bahut lamba tha yaar"}
-{"input": "insert slang | control: ASSERT_NEUTRAL | Aaj weather kaafi gloomy hai", "target": "Aaj weather kaafi gloomy hai, off"}
-{"input": "insert slang | control: ASSERT_NEUTRAL | Ye project deadline ke baad ka hai.", "target": "Ye project deadline ke baad ka hai, chill."}
-{"input": "insert slang | control: ASSERT_FRUSTRATION | Assignment bahut lamba hai", "target": "Scene, Assignment bahut lamba hai scene"}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Match ka first half kaafi slow tha", "target": "Match ka first half kaafi slow tha, pakau"}
-{"input": "insert slang | control: ASSERT_POSITIVE | Coffee bahut strong hai", "target": "Coffee bahut bro strong hai"}
-{"input": "insert slang | control: ASSERT_CONFUSION | Thand badh gayi hai", "target": "Thand badh gayi hai theek hai"}
-{"input": "insert slang | control: ASSERT_NEUTRAL | Kya tum mere saath market chaloge?", "target": "Scene kya hai, kya tum mere saath market chaloge bro?"}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Uska plan backfire ho gaya", "target": "Uska plan backfire ho gayi ulti pad gayi"}
-{"input": "insert slang | control: ASSERT_SADNESS | Assignment bahut lamba hai", "target": "Yaar, Assignment bahut lamba hai yaar"}
-{"input": "insert slang | control: ASSERT_SADNESS | Kuch samajh nahi aa raha", "target": "Abe, Kuch samajh nahi aa raha abe"}
-{"input": "insert slang | control: ASSERT_HAPPY | Main tumhari help kar dunga", "target": "Lallantop, Main tumhari help kar dunga lallantop"}
-{"input": "insert slang | control: ASSERT_EXCITED | Bonus mil gaya aaj", "target": "Lallantop, Bonus mil gaya aaj lallantop"}
-{"input": "insert slang | control: ASSERT_ANXIETY | Gana bahut loudly baj raha hai", "target": "Bekaar, Gana bahut loudly baj raha hai"}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Woh hamesha doston ke saath rehta hai.", "target": "Mandali woh hamesha doston ke saath rehta hai, scene | mandali, scene"}
-{"input": "insert slang | control: ASSERT_SADNESS | Garmi bahut zyada hai aaj", "target": "Chal, Garmi bahut zyada hai aaj"}
-{"input": "insert slang | control: ASSERT_HAPPY | Ticket confirm ho gayi.", "target": "Mauj ho gayi, ticket confirm ho gayi, bindaas!"}
-{"input": "insert slang | control: ASSERT_EXCITED | Match ka result achha tha", "target": "Match ka bhadiya result achha tha"}
-{"input": "insert slang | control: ASSERT_CONFUSION | Yeh movie bilkul samajh nahi aayi.", "target": "yeh movie bilkul Khichdi samajh nahi aayi scene."}
-{"input": "insert slang | control: ASSERT_STRESS | Traffic jam bahut lamba tha", "target": "Dimag kharab, Traffic jam bahut lamba tha"}
-{"input": "insert slang | control: ASSERT_POSITIVE | Ye dress sasti mil gayi.", "target": "Kodi ke bhaav, ye dress sasti mil gayi."}
-{"input": "insert slang | control: ASSERT_FRUSTRATION | Assignment bahut lamba hai", "target": "Dimag kharab, Assignment bahut lamba hai dimag kharab"}
-{"input": "insert slang | control: ASSERT_EXCITED | Dost ke sath ghoomne jana hai", "target": "Dost ke sath jhakaas ghoomne jana hai"}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Usne saara kaam kharab kar diya.", "target": "usne saara kaam Raita kharab kar diya."}
-{"input": "insert slang | control: ASSERT_STRESS | Assignment bahut lamba hai", "target": "Assignment bahut theek hai lamba hai"}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Ye kaam mere se nahi hoga.", "target": "Bas ki nahi, ye kaam mere se nahi hoga."}
-{"input": "insert slang | control: ASSERT_NEUTRAL | Chalo jaldi nikalte hain.", "target": "Chalo nikalte hain Fatt se."}
-{"input": "insert slang | control: ASSERT_ANXIETY | Traffic jam bahut lamba tha", "target": "Traffic jam abe bahut lamba tha"}
-{"input": "insert slang | control: ASSERT_HAPPY | Main tumhari help kar dunga", "target": "Chal, Main tumhari help kar dunga"}
-{"input": "insert slang | control: ASSERT_SADNESS | Tum ja rahe ho? Tum mat jao.", "target": "Tum ja rahe ho? Tum mat jao, senti mat kar."}
-{"input": "insert slang | control: ASSERT_CONFUSION | Meeting ka agenda clear nahi tha", "target": "Meeting ka agenda clear nahi tha, unclear"}
-{"input": "insert slang | control: INFO_STATEMENT | Nayi web series start ki", "target": "Nayi web guru series start ki"}
-{"input": "insert slang | control: ASSERT_SURPRISE | Result dekh kar main shock ho gaya.", "target": "Result dekh kar main fat gayi ho gaya."}
-{"input": "insert slang | control: ASSERT_SADNESS | Salary abhi tak nahi aayi.", "target": "Dukhi aatma, salary abhi tak nahi aayi."}
-{"input": "insert slang | control: ASSERT_POSITIVE | Project finish ho gaya.", "target": "Project finish ho gaya khatam, bye-bye | END"}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Yeh idea bilkul kaam nahi karega.", "target": "Flop hai yeh idea, iska koi future nahi hai yaar."}
-{"input": "insert slang | control: ASSERT_SADNESS | Internet ki speed slow hai", "target": "Internet ki speed slow hai scene"}
-{"input": "insert slang | control: ASSERT_POSITIVE | Match bahut interesting tha.", "target": "Match bahut kaatil tha."}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Yeh laptop bahut jaldi garam ho jata hai.", "target": "hain yeh laptop bahut jaldi garam ho jata hai Heeta."}
-{"input": "insert slang | control: ASSERT_CONFUSION | Tum nahi samjhoge, Anjali.", "target": "Tum nahi samjhoge, Anjali, bounce jayega."}
-{"input": "insert slang | control: ASSERT_HAPPY | Class cancel ho gayi", "target": "Class cancel ho gayi solid"}
-{"input": "insert slang | control: ASSERT_POSITIVE | Main tumhari help kar dunga", "target": "Kadak, Main tumhari help kar dunga kadak"}
-{"input": "insert slang | control: ASSERT_POSITIVE | Aaj presentation achhi gayi", "target": "Mast, Aaj presentation achhi gayi mast"}
-{"input": "insert slang | control: ASSERT_POSITIVE | Highway par traffic kam hai.", "target": "Highway par traffic kam hai, driving ekdum smooth hai."}
-{"input": "insert slang | control: ASSERT_FRUSTRATION | Traffic jam bahut lamba tha", "target": "Traffic jam bahut lamba tha boss"}
-{"input": "insert slang | control: REQUEST_NEUTRAL | Meeting kal tak postpone ho gayi", "target": "Abe, Meeting kal tak postpone ho gayi abe"}
-{"input": "insert slang | control: ASSERT_STRESS | Garmi bahut zyada hai aaj", "target": "Garmi bahut raddi zyada hai aaj"}
-{"input": "insert slang | control: ASSERT_FRUSTRATION | Train late chal rahi hai", "target": "Train late load chal rahi hai"}
-{"input": "insert slang | control: ASSERT_POSITIVE | App ka UI kaafi clean hai", "target": "App ka UI kaafi clean hai, sexy"}
-{"input": "insert slang | control: ASSERT_POSITIVE | Usne saara kaam akele kiya.", "target": "One-man army hai woh, pura event akele manage kar liya."}
-{"input": "insert slang | control: ASSERT_HAPPY | Aaj presentation achhi gayi", "target": "Scene, Aaj presentation achhi gayi"}
-{"input": "insert slang | control: ASSERT_EXCITED | Yeh gaana bahut achha hai", "target": "Yeh gaana bahut achha hai bro"}
-{"input": "insert slang | control: ASSERT_SADNESS | Subah jaldi uthna pada", "target": "Subah jaldi sun uthna pada"}
-{"input": "insert slang | control: ASSERT_STRESS | Body mein pain ho raha hai", "target": "Body mein pain bhai ho raha hai"}
-{"input": "insert slang | control: REQUEST_NEUTRAL | Weekend ka plan kya hai", "target": "Guru, Weekend ka plan kya hai"}
-{"input": "insert slang | control: ASSERT_HAPPY | Game ka graphix bohot acha hai.", "target": "Game ka graphix bohot acha hai. Next level |"}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Subah jaldi uthna pada", "target": "Bro, Subah jaldi uthna pada bro"}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Mujhe samajh nahi aa raha", "target": "Bhasad, Mujhe samajh nahi aa raha bhasad"}
-{"input": "insert slang | control: ASSERT_CONFUSION | Nayi web series start ki", "target": "Sun, Nayi web series start ki"}
-{"input": "insert slang | control: ASSERT_NEUTRAL | Mujhe akele rehna pasand hai", "target": "Mujhe akele rehna pasand hai chal"}
-{"input": "insert slang | control: ASSERT_CONFUSION | Naya update install kar liya", "target": "Sun, Naya update install kar liya sun"}
-{"input": "insert slang | control: REQUEST_URGENCY | Train chhuthne wali hai.", "target": "Jaldi kar, train chhuthne wali hai, bhag!"}
-{"input": "insert slang | control: REQUEST_NEUTRAL | Raat ko der ho gayi", "target": "Boss, Raat ko der ho gayi boss"}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Woh hamesha jhooth bolta hai.", "target": "Yaar woh number one ka fenku hai."}
-{"input": "insert slang | control: ASSERT_POSITIVE | Party bahut mazedaar thi", "target": "Party bahut guru mazedaar thi"}
-{"input": "insert slang | control: ASSERT_HAPPY | Kal meri chhutti hai", "target": "Bro, Kal meri chhutti hai"}
-{"input": "insert slang | control: ASSERT_NEGATIVE | System crash ho gaya", "target": "Bhasad, System crash ho gaya bhasad"}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Train late chal rahi hai", "target": "Bhai, Train late chal rahi hai bhai"}
-{"input": "insert slang | control: ASSERT_FRUSTRATION | Garmi bahut zyada hai aaj", "target": "Garmi bahut zyada hai aaj siyappa"}
-{"input": "insert slang | control: ASSERT_POSITIVE | Aaj mausam bohot pyara hai.", "target": "Aaj vibe bohot pyara hai."}
-{"input": "insert slang | control: ASSERT_NEUTRAL | Meeting kal tak postpone ho gayi", "target": "Meeting kal tak bhai postpone ho gayi"}
-{"input": "insert slang | control: ASSERT_NEUTRAL | Aaj kal woh bahut gym ja raha hai.", "target": "Shauk dekh rahe ho, aaj kal body-shody banane mein laga hai."}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Aaj ka client call bahut lamba chala.", "target": "aaj ka client call bahut lamba chala Khich gaya."}
-{"input": "insert slang | control: ASSERT_STRESS | Driving licence banwana hai.", "target": "Sarkari Sarkari chakkar, driving licence banwana hai Chakkar."}
-{"input": "insert slang | control: ASSERT_WARNING | Brake sahi se kaam nahi kar rahe.", "target": "Dheele brake sahi se kaam nahi kar rahe, ram bharose."}
-{"input": "insert slang | control: ASSERT_POSITIVE | Roz gym jana ek commitment hai.", "target": "Scene set, Roz gym jana ek commitment hai."}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Mujhe samajh nahi aa raha", "target": "Mujhe samajh bakwaas nahi aa raha"}
-{"input": "insert slang | control: ASSERT_HAPPY | Usne match mein aakhri ball par six maara.", "target": "Mauj usne match mein aakhri ball par six maara bro."}
-{"input": "insert slang | control: ASSERT_POSITIVE | Client ne proposal accept kar liya.", "target": "Client ne proposal accept kar liya sorted."}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Assignment bahut lamba hai", "target": "Bekaar, Assignment bahut lamba hai"}
-{"input": "insert slang | control: EXPRESS_STRESS | Kuch nahi, bas chinta hai.", "target": "kuch nahi, tension bas chinta hai."}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Usne bahut jhooth bola.", "target": "Usne bahot jhoot bola lapetna"}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Exams paas aa rahe hain", "target": "Exams paas aa rahe hain bekaar"}
-{"input": "insert slang | control: ASSERT_POSITIVE | Jaa jee le apni zindagi.", "target": "jaa jee le apna zindagi mauj kar."}
-{"input": "insert slang | control: ASSERT_POSITIVE | Vijay Dinanath Chauhan, poora naam.", "target": "Vijay Dinanath Chauhan, poora naam, full bhaukaal."}
-{"input": "insert slang | control: ASSERT_EXCITED | Bonus mil gaya aaj", "target": "Bonus mil gaya aaj sun"}
-{"input": "insert slang | control: ASSERT_POSITIVE | Movie ka script structure achha tha.", "target": "Movie ka script structure achha tha, solid."}
-{"input": "insert slang | control: ASSERT_SADNESS | Khana order karne me late ho gaya.", "target": "Khana order karne mein pet me chuhed ho gaya."}
-{"input": "insert slang | control: ASSERT_POSITIVE | Kal meri chhutti hai", "target": "Jhakaas, Kal meri chhutti hai jhakaas"}
-{"input": "insert slang | control: ASSERT_HAPPY | Aaj presentation achhi gayi", "target": "Mast, Aaj presentation achhi gayi mast"}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Project deadline pass aa rahi hai", "target": "Project deadline pass aa rahi hai chal"}
-{"input": "insert slang | control: ASSERT_EXCITED | Party bahut mazedaar thi", "target": "Party bahut faadu mazedaar thi"}
-{"input": "insert slang | control: ASSERT_ANXIETY | Market mein bahut bheed thi", "target": "Market mein bahut bheed thi abe"}
-{"input": "insert slang | control: ASSERT_NEUTRAL | Yeh toh luck ki baat hai.", "target": "Yaar | Yeh toh luck ki baat hai jadu."}
-{"input": "insert slang | control: ASSERT_POSITIVE | Bonus mil gaya aaj", "target": "Abe, Bonus mil gaya aaj"}
-{"input": "insert slang | control: ASSERT_POSITIVE | Hum ek baar jeete hain, ek baar marte hain.", "target": "Hum ek baar jeete hain, ek baar marte hain, YOLO bhai."}
-{"input": "insert slang | control: ASSERT_NEUTRAL | Bhookh lag rahi hai", "target": "Sun, Bhookh lag rahi hai sun"}
-{"input": "insert slang | control: ASSERT_HAPPY | Flash sale mein phone mil gaya.", "target": "Pro level luck tha, flash sale mein phone mil gaya."}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Usne kaafi drama kiya", "target": "Usne kaafi drama kiya, overacting"}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Market mein bahut bheed thi", "target": "Raddi, Market mein bahut bheed thi raddi"}
-{"input": "insert slang | control: ASSERT_SADNESS | Tussi ja rahe ho? Tussi na jao.", "target": "tussi ja rahe senti ho? Tussi na jao."}
-{"input": "insert slang | control: ASSERT_FRUSTRATION | Aaj ka din bahut lamba tha", "target": "Guru, Aaj ka din bahut lamba tha"}
-{"input": "insert slang | control: ASSERT_HAPPY | Yeh gaana bahut achha hai", "target": "Yeh gaana yaar bahut achha hai"}
-{"input": "insert slang | control: REQUEST_NEUTRAL | All is well.", "target": "All is well, bas chill maar."}
-{"input": "insert slang | control: ASSERT_ANXIETY | Garmi bahut zyada hai aaj", "target": "Panga, Garmi bahut zyada hai aaj"}
-{"input": "insert slang | control: ASSERT_STRESS | Chai thandi ho gayi hai", "target": "Load, Chai thandi ho gayi hai load"}
-{"input": "insert slang | control: ASSERT_SADNESS | Market mein bahut bheed thi", "target": "Dimag kharab, Market mein bahut bheed thi"}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Uska dimaag kharab ho gaya hai.", "target": "Uska dimaag kharab ho gaya hai satiya gaya."}
-{"input": "insert slang | control: ASSERT_ANXIETY | Internet ki speed slow hai", "target": "Internet ki speed slow hai yaar"}
-{"input": "insert slang | control: ASSERT_POSITIVE | Coffee bahut strong hai", "target": "Coffee bahut strong hai ek number"}
-{"input": "insert slang | control: ASSERT_NEUTRAL | Aaj ka din thoda dull sa laga", "target": "Aaj ka din thoda dull sa laga, off"}
-{"input": "insert slang | control: ASSERT_POSITIVE | Flash mob ka dance bahut energetic tha.", "target": "Flash mob ke dance faad, baahut energetic tha."}
-{"input": "insert slang | control: EXPRESS_STRESS | Usne humko pakad liya, bohot daanta.", "target": "usne humko pakad liya, waat lagayi yaar"}
-{"input": "insert slang | control: ASSERT_FRUSTRATION | System crash ho gaya", "target": "Chal, System crash ho gaya"}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Body mein pain ho raha hai", "target": "Body mein pain yaar ho raha hai"}
-{"input": "insert slang | control: INFO_STATEMENT | Baarish shuru ho gayi", "target": "Baarish shuru ho gayi abe"}
-{"input": "insert slang | control: ASSERT_STRESS | Traffic jam bahut lamba tha", "target": "Traffic jam bahut lamba tha bakwaas"}
-{"input": "insert slang | control: ASSERT_POSITIVE | Aaj ka mood better hai", "target": "Aaj ka mood better hai, sorted"}
-{"input": "insert slang | control: ASSERT_POSITIVE | Movie ka climax acha tha.", "target": "Movie ka climax acha tha sir-fira"}
-{"input": "insert slang | control: ASSERT_POSITIVE | Sara shehar mujhe lion ke naam se janta hai.", "target": "Sara shehar mujhe lion ke naam se janta hai, bhaukaal."}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Gana bahut loudly baj raha hai", "target": "Gana bahut loudly baj raha hai bro"}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Woh hamesha free ka khana dhoondta hai.", "target": "Muft-khor hai woh, hamesha free ka khana dhoondta hai."}
-{"input": "insert slang | control: INFO_STATEMENT | Dava kha li maine", "target": "Dava kha scene li maine"}
-{"input": "insert slang | control: ASSERT_POSITIVE | Class cancel ho gayi", "target": "Bro, Class cancel ho gayi bro"}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Usne party mein bahut hungama kiya.", "target": "Drama usne party mein bahut hungama kiya overacting."}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Internet ki speed slow hai", "target": "Internet ki speed slow hai bekaar"}
-{"input": "insert slang | control: ASSERT_HAPPY | Mujhe yeh movie pasand aayi", "target": "Mujhe yeh kaint movie pasand aayi"}
-{"input": "insert slang | control: ASSERT_CONFUSION | Raat ko der ho gayi", "target": "Raat ko yaar der ho gayi"}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Internet ki speed slow hai", "target": "Internet ki kabaada speed slow hai"}
-{"input": "insert slang | control: ASSERT_CONFUSION | Uska reaction thoda weird tha", "target": "Alag hi, uska reaction thoda weird tha"}
-{"input": "insert slang | control: ASSERT_CONFUSION | Raat ko der ho gayi", "target": "Abe, Raat ko der ho gayi abe"}
-{"input": "insert slang | control: ASSERT_ANXIETY | Project deadline pass aa rahi hai", "target": "Kabaada, Project deadline pass aa rahi hai"}
-{"input": "insert slang | control: ASSERT_POSITIVE | Match mein hum jeet gaye.", "target": "Humne dusri team ko ekdum pel diya."}
-{"input": "insert slang | control: ASSERT_HAPPY | Yeh gaana bahut achha hai", "target": "Yeh gaana abe bahut achha hai"}
-{"input": "insert slang | control: REQUEST_NEUTRAL | Naya update install kar liya", "target": "Boss, Naya update install kar liya boss"}
-{"input": "insert slang | control: ASSERT_ANXIETY | Refund abhi tak nahi aaya.", "target": "refund abhi Locha tak nahi aaya."}
-{"input": "insert slang | control: ASSERT_EXCITED | Dost ke sath ghoomne jana hai", "target": "Dost ke sath chal ghoomne jana hai"}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Internet ki speed slow hai", "target": "Yaar, Internet ki speed slow hai"}
-{"input": "insert slang | control: ASSERT_EXCITED | Khana bahut swadisht hai", "target": "Scene, Khana bahut swadisht hai scene"}
-{"input": "insert slang | control: ASSERT_POSITIVE | Flight time par land ho gayi", "target": "Bhadiya, Flight time par land ho gayi"}
-{"input": "insert slang | control: ASSERT_POSITIVE | Match ka result achha tha", "target": "Match ka result achha tha scene set"}
-{"input": "insert slang | control: INFO_STATEMENT | Mujhe akele rehna pasand hai", "target": "Mujhe akele bhai rehna pasand hai"}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Woh hamesha rota rehta hai.", "target": "Woh toh ek number ka cry-baby hai."}
-{"input": "insert slang | control: INFO_STATEMENT | Naya update install kar liya", "target": "Naya update install kar liya boss"}
-{"input": "insert slang | control: ASSERT_HAPPY | Aaj presentation achhi gayi", "target": "Bawaal, Aaj presentation achhi gayi bawaal"}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Kuch samajh nahi aa raha", "target": "Kuch samajh kabaada nahi aa raha"}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Uska dimaag kharab ho gaya hai.", "target": "Satiya gaya, uska dimaag kharab ho gaya hai."}
-{"input": "insert slang | control: ASSERT_ANXIETY | Paise khatam ho gaye", "target": "Paise khatam kharaab ho gaye"}
-{"input": "insert slang | control: ASSERT_STRESS | Train late chal rahi hai", "target": "Raddi, Train late chal rahi hai raddi"}
-{"input": "insert slang | control: ASSERT_SADNESS | Train late chal rahi hai", "target": "Raddi, Train late chal rahi hai raddi"}
-{"input": "insert slang | control: INFO_STATEMENT | Naya update install kar liya", "target": "Scene, Naya update install kar liya"}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Usne pura assignment copy kiya hai.", "target": "Bro usne pura assignment juggad se banaya hai."}
-{"input": "insert slang | control: ASSERT_EXCITED | Match ka result achha tha", "target": "Abe, Match ka result achha tha abe"}
-{"input": "insert slang | control: ASSERT_HAPPY | Match aakhri over me gaya.", "target": "Match aakhri over me gaya, full boom baam hua."}
-{"input": "insert slang | control: ASSERT_FRUSTRATION | Professor ne extra class li.", "target": "Kya yaar, professor ne extra class li, dimaag kharab ho gaya."}
-{"input": "insert slang | control: ASSERT_POSITIVE | Uska dimaag bahut tezz hai.", "target": "Uska dimaag ekdum computer jaisa chalta hai."}
-{"input": "insert slang | control: ASSERT_HAPPY | Party bahut mazedaar thi", "target": "Party bahut jhakaas mazedaar thi"}
-{"input": "insert slang | control: ASSERT_STRESS | Project deadline pass aa rahi hai", "target": "Project deadline pass raddi aa rahi hai"}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Cab ka AC kaam nahi kar raha.", "target": "Cab ka AC kar nahi rakha dabba."}
-{"input": "insert slang | control: ASSERT_FRUSTRATION | Usne mere baare mein afwah failayi.", "target": "Kaleshi, Raudra, usne mere baare mein afwah failayi, Kaleshi, Raudra"}
-{"input": "insert slang | control: ASSERT_POSITIVE | Zindagi badi honi chahiye, lambi nahi.", "target": "Zindagi badi honi chahiye, lambi nahi, vibe hai."}
-{"input": "insert slang | control: ASSERT_POSITIVE | Party bahut mazedaar thi", "target": "Kadak, Party bahut mazedaar thi kadak"}
-{"input": "insert slang | control: ASSERT_FRUSTRATION | Service centre wale loot rahe hain.", "target": "Pocket dhili Pocket dhili choro, service centre wale loot rahe hain Chor."}
-{"input": "insert slang | control: ASSERT_SADNESS | Body mein pain ho raha hai", "target": "Body mein pain ho raha hai bakwaas"}
-{"input": "insert slang | control: ASSERT_NEUTRAL | Woh bahut ameer hai.", "target": "Bade log hain bhai, unka level hi alag hai."}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Yeh rasta bahut lamba hai.", "target": "yeh rasta Thakaau lamba hai scene."}
-{"input": "insert slang | control: ASSERT_ANXIETY | Yeh rasta bahut sunsaan aur darawna hai.", "target": "Ekdum sannata hai yahan, rasta kaafi darawna hai."}
-{"input": "insert slang | control: REQUEST_NEUTRAL | Meeting kal tak postpone ho gayi", "target": "Abe, Meeting kal tak postpone ho gayi"}
-{"input": "insert slang | control: ASSERT_NEUTRAL | Usne idea reject kar diya", "target": "Usne idea reject kar diya, seedha"}
-{"input": "insert slang | control: ASSERT_POSITIVE | Coffee bahut strong hai", "target": "Coffee bahut solid strong hai"}
-{"input": "insert slang | control: REQUEST_NEUTRAL | Nayi web series start ki", "target": "Nayi web series start ki guru"}
-{"input": "insert slang | control: ASSERT_POSITIVE | Coffee bahut strong hai", "target": "Sun, Coffee bahut strong hai"}
-{"input": "insert slang | control: ASSERT_NEUTRAL | Kripya shanti banaye rakhein", "target": "Abe, Kripya shanti banaye rakhein"}
-{"input": "insert slang | control: ASSERT_POSITIVE | Match mein humne unhe hara diya.", "target": "Match mein humne unhe hara diya Dho diya."}
-{"input": "insert slang | control: ASSERT_EXCITED | Mausam aaj bahut achha hai", "target": "Scene set, Mausam aaj bahut achha hai scene set"}
-{"input": "insert slang | control: ASSERT_POSITIVE | Yeh dress tum par achhi lag rahi hai.", "target": "hain, yeh dress tum par achhi lag rahi hai Zeher."}
-{"input": "insert slang | control: ASSERT_SADNESS | Traffic jam bahut lamba tha", "target": "Panga, Traffic jam bahut lamba tha"}
-{"input": "insert slang | control: INFO_STATEMENT | Thand badh gayi hai", "target": "Thand badh guru gayi hai"}
-{"input": "insert slang | control: ASSERT_POSITIVE | Khana bahut swadisht hai", "target": "Bhadiya, Khana bahut swadisht hai"}
-{"input": "insert slang | control: ASSERT_CONFUSION | Mujhe akele rehna pasand hai", "target": "Boss, Mujhe akele rehna pasand hai boss"}
-{"input": "insert slang | control: REQUEST_URGENCY | Aaj ka schedule kaafi packed hai", "target": "Aaj ka schedule kaafi packed hai, scene tight"}
-{"input": "insert slang | control: ASSERT_CONFUSION | RSA encryption samajh nahi aa raha.", "target": "RSA encryption sar ke upar se bounce ho raha hai."}
-{"input": "insert slang | control: ASSERT_POSITIVE | Usne kaam bina complaint ke kar diya", "target": "Usne kaam bina complaint ke kar diya, smooth"}
-{"input": "insert slang | control: ASSERT_HAPPY | Bike ka silencer change kiya hai.", "target": "Patakha Patakha shor, bike ka silencer change kiya haayaa Shor"}
-{"input": "insert slang | control: ASSERT_ANXIETY | Kuch samajh nahi aa raha", "target": "Watt lag gayi, Kuch samajh nahi aa raha"}
-{"input": "insert slang | control: REQUEST_URGENCY | Lab manual submit karni hai.", "target": "Jaldi lab manual submit karni hai, scene tight hai."}
-{"input": "insert slang | control: ASSERT_SADNESS | Train late chal rahi hai", "target": "Train late bro chal rahi hai"}
-{"input": "insert slang | control: ASSERT_STRESS | Office mein bahut kaam hai", "target": "Bro, Office mein bahut kaam hai bro"}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Aaj ka mausam bahut garm hai.", "target": "Bhuna-hua aaj ka mausam bahut garm hai."}
-{"input": "insert slang | control: ASSERT_HAPPY | Gym jana shuru kiya hai", "target": "Gym jana shuru kiya hai bhadiya"}
-{"input": "insert slang | control: ASSERT_ANXIETY | Internet ki speed slow hai", "target": "Yaar, Internet ki speed slow hai"}
-{"input": "insert slang | control: ASSERT_HAPPY | Match ka result achha tha", "target": "Kadak, Match ka result achha tha kadak"}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Train late chal rahi hai", "target": "Yaar, Train late chal rahi hai yaar"}
-{"input": "insert slang | control: ASSERT_POSITIVE | App ka interface kaafi smooth hai.", "target": "App ka interface ekdum makkhan hai."}
-{"input": "insert slang | control: ASSERT_POSITIVE | Coffee ne dimag khol diya.", "target": "coffee ne Bomb dimag khol diya."}
-{"input": "insert slang | control: ASSERT_EXCITED | Party bahut mazedaar thi", "target": "Party bahut solid mazedaar thi"}
-{"input": "insert slang | control: ASSERT_POSITIVE | Main tumhe bhool jaun ye ho nahi sakta.", "target": "Main tumhe bhool jaun ye ho nahi sakta, tu apna bhai hai."}
-{"input": "insert slang | control: ASSERT_FRUSTRATION | Traffic me fasa hua hu.", "target": "Traffic me fasa hua hu bheja fry"}
-{"input": "insert slang | control: ASSERT_HAPPY | Kal ka match interesting hoga.", "target": "Kal ka match full on interesting hoga"}
-{"input": "insert slang | control: ASSERT_FRUSTRATION | Garmi bahut zyada hai aaj", "target": "Garmi bahut zyada hai aaj load"}
-{"input": "insert slang | control: ASSERT_WARNING | Brake sahi se kaam nahi kar rahe.", "target": "Dheele brake sahi se kaam nahi kar rahe, ram bharose | Ram bharose"}
-{"input": "insert slang | control: ASSERT_CONFUSION | Thand badh gayi hai", "target": "Scene, Thand badh gayi hai scene"}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Quiz bahut achanak tha.", "target": "Oye oye, quiz bahut achanak tha popat."}
-{"input": "insert slang | control: ASSERT_POSITIVE | Khana bahut spicy aur swadisht tha", "target": "Chataakedar aag, khana bahut Chataakedar spicy aur swadisht tha |END| aag"}
-{"input": "insert slang | control: EXPRESS_STRESS | Kal viva hai, maine kuch nahi padha.", "target": "Kal viva hai, meri fatti padi hai."}
-{"input": "insert slang | control: ASSERT_POSITIVE | Party bahut mazedaar thi", "target": "Party bahut faadu mazedaar thi"}
-{"input": "insert slang | control: ASSERT_POSITIVE | Pachas tola, pachas tola.", "target": "Pachas tola, pachas tola maal."}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Woh ladka bahut zyada bol raha hai.", "target": "Chalaak ladka, scene, bahut zyada bol raha hai."}
-{"input": "insert slang | control: ASSERT_FRUSTRATION | Aaj dhoop bahut tez hai.", "target": "Bhayankar aaj dhoop bahut tez hai scene off"}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Internet ki speed slow hai", "target": "Internet ki scene speed slow hai"}
-{"input": "insert slang | control: ASSERT_FRUSTRATION | System crash ho gaya", "target": "System crash bakwaas ho gaya"}
-{"input": "insert slang | control: ASSERT_HAPPY | Usne sunroof wali car li hai.", "target": "Nawaabi check karo, sunroof leke pura tashan maar raha hai."}
-{"input": "insert slang | control: ASSERT_EXCITED | Pizza bahut tasty tha", "target": "Scene set, Pizza bahut tasty tha scene set"}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Prof ne achanak test rakh diya.", "target": "Prof ne achanak test rakh diya, sabka popat ho gaya."}
-{"input": "insert slang | control: ASSERT_HAPPY | New gym gear khareeda maine.", "target": "new gym gear khareeda maine Jhakaas."}
-{"input": "insert slang | control: ASSERT_POSITIVE | Yeh startup bahut jaldi grow kar raha hai.", "target": "yeh startup bahut jaldi Rocket grow kar raha hai."}
-{"input": "insert slang | control: ASSERT_NEUTRAL | Bhookh lag rahi hai", "target": "Bhookh lag rahi hai yaar"}
-{"input": "insert slang | control: ASSERT_STRESS | Office mein bahut kaam hai", "target": "Office mein bahut kaam hai raddi"}
-{"input": "insert slang | control: ASSERT_FRUSTRATION | Paise khatam ho gaye", "target": "Kabaada, Paise khatam ho gaye"}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Train late chal rahi hai", "target": "Train late abe chal rahi hai"}
-{"input": "insert slang | control: ASSERT_EXCITED | Kal meri chhutti hai", "target": "Bhai, Kal meri chhutti hai bhai"}
-{"input": "insert slang | control: ASSERT_NEGATIVE | Usne kaafi excuses diye", "target": "Usne kaafi excuses diye, drama"}
-{"input": "insert slang | control: ASSERT_NEUTRAL | Trainer bahut strict hai hamara.", "target": "Trainer hamara kaafi khatarnak hai."}
-{"input": "insert slang | control: ASSERT_POSITIVE | Chinta mat karo, sab badhiya hai.", "target": "Chinta mat karo, sab badhiya hai, makkhan."}
-{"input": "insert slang | control: ASSERT_STRESS | Project deadline pass aa rahi hai", "target": "Project deadline pass aa rahi hai sun"}
-{"input": "insert slang | control: ASSERT_SADNESS | Mujhe samajh nahi aa raha", "target": "Mujhe samajh watt lag gayi nahi aa raha"}
-{"input": "insert slang | control: ASSERT_STRESS | Sattar minute hai tumhare paas.", "target": "sattar minute ghas hai tumhare paas."}
-{"input": "insert slang | control: ASSERT_POSITIVE | Movie ka ending bahut acha tha.", "target": "Movie ka ending bahut acha tha bawaal"}
-{"input": "insert slang | control: INFO_STATEMENT | Bhookh lag rahi hai", "target": "Yaar, Bhookh lag rahi hai yaar"}
-{"input": "insert slang | control: ASSERT_STRESS | Kuch samajh nahi aa raha", "target": "Kuch samajh nahi aa raha bro"}
+{"input": "insert slang | control: ASSERT_HAPPY | Bhai, pitch ekdum solid tha, ab bas funding aane wali hai!", "target": "Bhai, pitch ekdum solid tha, ab bas note chhapna shuru hone wala hai!"}
+{"input": "insert slang | control: ASSERT_HAPPY | Windows seat mil gayi.", "target": "Windows seat mil gayi yaar."}
+{"input": "insert slang | control: ASSERT_EXCITED | Wahan ka nightlife bahut mazedaar tha.", "target": "Wahan ka nightlife ekdum maze ka tha, mast time guzra."}
+{"input": "insert slang | control: ASSERT_EXCITED | Dost ke sath ghoomne jana hai", "target": "Boss, dost ke sath ghoomne jana hai"}
+{"input": "insert slang | control: ASSERT_POSITIVE | Aaj ka khaana acha bana tha.", "target": "Aaj ka khaana ekdum badiya bana tha."}
+{"input": "insert slang | control: ASSERT_EXCITED | Nayi web series ka trailer aaj release hone wala hai.", "target": "Nayi web series ka trailer aaj release hone wala hai, ekdum hype hai bhai."}
+{"input": "insert slang | control: ASSERT_ANXIETY | Usne reply ka wait karwaya", "target": "Usne reply ka Sannata karwa diya"}
+{"input": "insert slang | control: ASSERT_ANXIETY | Kal interview hai aur mujhe bahut ghabrahat ho rahi hai.", "target": "Kal interview hai aur mujhe full tension ho rahi hai."}
+{"input": "insert slang | control: CASUAL_ASSERTION | Uski baatein bahut aaram se aur acche tareeke se hoti hain.", "target": "Uski baatein ekdum smooth hoti hain, bina atke."}
+{"input": "insert slang | control: ASSERT_HAPPY | Bike ka silencer change kiya hai.", "target": "Bike ka silencer change kiya hai, ab toh Beast lag rahi hai."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Uska naya gaana sunne mein bahut mast hai.", "target": "Uska naya gaana ekdum faadu hai."}
+{"input": "insert slang | control: ASSERT_STRESS | Exam ka syllabus itna bada hai ki samajh nahi aa raha kahan se shuru karun.", "target": "Exam ka syllabus itna bada hai, yaar waat lagi hui hai, kahan se shuru karun."}
+{"input": "insert slang | control: ASSERT_EXCITED | Gym mein aaj ka workout ekdum intense tha, sab log josh mein the.", "target": "Gym mein aaj ka workout ekdum fire tha, sab log josh mein the."}
+{"input": "insert slang | control: CASUAL_ASSERTION | Kal subah cricket match dekhne ka plan hai, sab log aa rahe hain.", "target": "Kal subah cricket match dekhne ka plan hai, sab log aa rahe hain yaar."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Is mahine ke sabse achhe sales numbers humari team ke the.", "target": "Is mahine ke sales numbers humari team ke number one rahe."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Family dinner pe sab saath hain, bahut maza aa raha hai.", "target": "Family dinner pe sab saath hain, full vibe hai, bahut maza aa raha hai."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Uska cooking video aaj sab jagah dikh raha hai.", "target": "Uska cooking video aaj sab jagah viral ho gaya hai."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Kal raat ki movie night bahut acchi thi.", "target": "Kal raat ki movie night ekdum mast thi."}
+{"input": "insert slang | control: ASSERT_ANXIETY | Results aane wale hain aur mujhe bahut dar lag raha hai.", "target": "Results aane wale hain aur mere liye full tension hai yaar."}
+{"input": "insert slang | control: ASSERT_STRESS | Is hafte assignments aur project dono baaki hain, bahut kaam hai.", "target": "Is hafte assignments aur project dono baaki hain, kaam ka pahaad lag gaya hai."}
+{"input": "insert slang | control: CASUAL_ASSERTION | Plan theek hai, hum kal subah nikal rahe hain.", "target": "Plan sahi hai, hum kal subah nikal rahe hain."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Uska ek chhota sa video bahut sara log dekh rahe hain aur share kar rahe hain.", "target": "Uska ek chhota sa video ekdum viral ho gaya hai."}
+{"input": "insert slang | control: ASSERT_FRUSTRATION | Uski wahi purani kahaaniyaan sunke main thak gaya hoon.", "target": "Uski wahi purani kahaaniyaan sun sunke pakaa diya usne."}
+{"input": "insert slang | control: ASSERT_STRESS | Exams sar par hain aur syllabus abhi baaki hai.", "target": "Exams sir pe hain aur syllabus abhi baaki hai, tension ho rahi hai."}
+{"input": "insert slang | control: ASSERT_NEGATIVE | Market mein bahut bheed thi", "target": "Market mein bahut bheed thi, mera toh kat gaya"}
+{"input": "insert slang | control: ASSERT_POSITIVE | Uski mehnat rang laayi.", "target": "Uski mehnat rang laayi, ekdum chha gaya."}
+{"input": "insert slang | control: ASSERT_EXCITED | Finally chutti mil gayi, ab aaram.", "target": "Finally chutti mil gayi, ekdum maze karenge!"}
+{"input": "insert slang | control: ASSERT_CONFUSION | Yeh movie bilkul samajh nahi aayi.", "target": "Is movie mein kuch locha hai, bilkul samajh nahi aayi."}
+{"input": "insert slang | control: ASSERT_NEGATIVE | Woh log bina baat ke humein ghoor rahe the.", "target": "Woh log bina baat ke humein ghoor rahe the, kaafi weird lag raha tha."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Uski nayi dance performance ne sabka dhyaan khincha.", "target": "Uski nayi dance performance ne toh pura jalwa bikhera."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Mujhe yeh movie pasand aayi", "target": "Movie ne toh dho diya, mujhe bohot pasand aayi"}
+{"input": "insert slang | control: ASSERT_EXCITED | Hackathon mein humne pehla prize jeet liya!", "target": "Hackathon mein humne toh jhanda gaad diya bhai!"}
+{"input": "insert slang | control: CASUAL_ASSERTION | Tum sahi keh rahe ho, woh banda sach mein galat hai.", "target": "Tum sahi keh rahe ho, sahi pakde ho, woh banda galat hai."}
+{"input": "insert slang | control: ASSERT_HAPPY | Aaj naukri ka interview achha gaya aur sab sahi raha.", "target": "Aaj naukri ka interview achha gaya, dil khush ho gaya."}
+{"input": "insert slang | control: ASSERT_EXCITED | Salary aa gayi hai, ab shopping karne ka mann hai.", "target": "Salary aa gayi hai, ab toh mauj hi mauj, shopping karne ka mann hai."}
+{"input": "insert slang | control: ASSERT_STRESS | Kal ka exam hai aur abhi tak syllabus poora nahi hua.", "target": "Kal exam hai aur syllabus abhi tak nahi hua, bahut tension hai."}
+{"input": "insert slang | control: ASSERT_EXCITED | Lottery mein itne paise mil gaye ki vishwas nahi ho raha.", "target": "Lottery mein itne paise mil gaye, yaar ekdum jackpot!"}
+{"input": "insert slang | control: ASSERT_HAPPY | Flight time par land ho gayi", "target": "Flight ekdum patakha time par land ho gayi"}
+{"input": "insert slang | control: CASUAL_ASSERTION | Dosto ke saath raat bhar game khelte rahe.", "target": "Dosto ke saath raat bhar game khelte rahe, full masti hui."}
+{"input": "insert slang | control: CASUAL_ASSERTION | Tune meri charger kahan rakh di, mujhe nahi mil rahi.", "target": "Abey tune meri charger kahan rakh di, mujhe nahi mil rahi."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Farewell party mein uski entry sabse zabardast thi.", "target": "Farewell party mein uski entry ka jalwa hi alag tha."}
+{"input": "insert slang | control: ASSERT_HAPPY | Match ka result achha tha", "target": "Match ka result aur drip dono achhe the"}
+{"input": "insert slang | control: ASSERT_POSITIVE | Tune naya haircut karwaya, bahut accha lag raha hai.", "target": "Tune naya haircut karwaya, sahi hai yaar, bahut accha lag raha hai."}
+{"input": "insert slang | control: REQUEST_NEUTRAL | Meeting kal tak postpone ho gayi", "target": "Meeting kal tak postpone ho gayi na"}
+{"input": "insert slang | control: REQUEST_URGENCY | Laptop ki battery abhi mar gayi aur kal submission hai.", "target": "Laptop ki battery abhi mar gayi, kal submission hai, gaya kaam se."}
+{"input": "insert slang | control: ASSERT_NEGATIVE | Aaj mera mood theek nahi hai, kuch accha nahi lag raha.", "target": "Aaj mera mood ekdum off hai, kuch accha nahi lag raha."}
+{"input": "insert slang | control: ASSERT_FRUSTRATION | Woh meeting mein ek hi baat baar baar dohrata raha.", "target": "Woh meeting mein ek hi baat baar baar dohrata raha, pura pakaa diya."}
+{"input": "insert slang | control: ASSERT_EXCITED | Kal hum dono Goa ja rahe hain, bahut mazaa aane wala hai.", "target": "Kal hum dono Goa ja rahe hain, yeh trip toh apna raaj hone wala hai!"}
+{"input": "insert slang | control: ASSERT_POSITIVE | Mujhe yeh movie pasand aayi", "target": "Chill maar, mujhe yeh movie pasand aayi"}
+{"input": "insert slang | control: ASSERT_HAPPY | Dost ki gaadi mein ghoomne jayenge.", "target": "Dost ki gaadi mein tashan se ghoomne jayenge."}
+{"input": "insert slang | control: CASUAL_ASSERTION | Aaj Sunday hai, bas aaram se ghar pe baithe hain.", "target": "Aaj Sunday hai, bas ghar pe chill kar rahe hain."}
+{"input": "insert slang | control: ASSERT_FRUSTRATION | Food delivery ka intezaar karte karte ek ghanta ho gaya.", "target": "Food delivery ka intezaar karte karte ek ghanta lag gaye."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Freshers party mein tumne jo dance kiya, sab bahut impressed hue.", "target": "Freshers party mein tumne jo dance kiya, sab ke dil chha gaye."}
+{"input": "insert slang | control: ASSERT_EXCITED | Gaming tournament mein aaj hum hi sabse aage chal rahe hain.", "target": "Gaming tournament mein aaj apna raaj chal raha hai, hum hi aage hain."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Team ne presentation mein bahut acha perform kiya.", "target": "Team ne presentation mein ekdum chha gaye bro!"}
+{"input": "insert slang | control: REQUEST_NEUTRAL | Yaar ek short chai break le lein kya?", "target": "Yaar chill maar, ek short chai break le lein kya?"}
+{"input": "insert slang | control: ASSERT_NEGATIVE | Usne feedback thoda harsh diya", "target": "Usne third class feedback diya, thoda harsh tha"}
+{"input": "insert slang | control: ASSERT_POSITIVE | Humne poori raat mehnat ki aur project time pe submit kiya.", "target": "Humne poori raat mehnat ki aur project time pe submit kiya, ekdum paisa vasool."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Uska dance video aaj poore internet pe chal raha hai.", "target": "Uska dance video aaj poore internet pe viral ho gaya!"}
+{"input": "insert slang | control: ASSERT_POSITIVE | Film ne box office par bahut kamaai ki.", "target": "Film ne box office par superhit kamaai ki."}
+{"input": "insert slang | control: ASSERT_EXCITED | Mera naya side business achha chalne laga, orders aa rahe hain.", "target": "Mera naya side business ekdum jackpot lag gaya, orders aa rahe hain!"}
+{"input": "insert slang | control: ASSERT_POSITIVE | Sunset ka view itna khoobsurat tha ki hum dekhte hi reh gaye.", "target": "Sunset ka view ekdum gazab tha, dekhte hi reh gaye."}
+{"input": "insert slang | control: ASSERT_SADNESS | Aaj barish ki wajah se mera mood bilkul kharab hai.", "target": "Aaj barish ki wajah se mera mood off hai, kuch acha nahi lag raha."}
+{"input": "insert slang | control: ASSERT_EXCITED | Aaj raat sab log game khelne wale hain.", "target": "Aaj raat ka scene set hai, sab log game khelne wale hain."}
+{"input": "insert slang | control: ASSERT_NEGATIVE | Plan last minute pe cancel ho gaya.", "target": "Plan last minute pe cancel, pura scene off ho gaya."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Chai ka pehla ghoont bahut tez aur strong tha.", "target": "Chai ka pehla ghoont ekdum kadak tha, mazaa aa gaya."}
+{"input": "insert slang | control: ASSERT_EXCITED | Concert ki tickets aaj mil gayi, main bahut excited hoon.", "target": "Concert ki tickets mil gayi, main full excited hoon yaar!"}
+{"input": "insert slang | control: ASSERT_FRUSTRATION | Project deadline pass aa rahi hai", "target": "Project deadline pass aa rahi hai, gajab scene hai"}
+{"input": "insert slang | control: ASSERT_POSITIVE | Wo ladki bina kisi tension ke har kisi se baat karti hai.", "target": "Wo ladki bindaas hai, bina kisi tension ke har kisi se baat karti hai."}
+{"input": "insert slang | control: ASSERT_EXCITED | Cricket ground pe aaj humari team ka dabdaba rahega.", "target": "Cricket ground pe aaj apna raaj chalega, humari team ka dabdaba rahega."}
+{"input": "insert slang | control: ASSERT_NEGATIVE | Is app ka interface bilkul kaam ka nahi hai.", "target": "Is app ka interface ekdum bekaar hai."}
+{"input": "insert slang | control: ASSERT_EXCITED | Kal raat DJ ne shaadi mein bahut badhiya music bajaya.", "target": "Kal raat DJ ne shaadi mein ekdum tod-phod music bajaya."}
+{"input": "insert slang | control: CASUAL_ASSERTION | Maine tumhara sujhaav bilkul sahi samjha tha.", "target": "Maine tumhara sujhaav bilkul sahi pakde tha, ekdum theek."}
+{"input": "insert slang | control: ASSERT_EXCITED | Kal mere cricket match ka pehla din hai, main bahut excited hoon.", "target": "Kal mere cricket match ka pehla din hai, full excited hoon."}
+{"input": "insert slang | control: ASSERT_EXCITED | Match ka last over shuru hone wala hai.", "target": "Match ka last over, ab scene set hai bhai!"}
+{"input": "insert slang | control: ASSERT_POSITIVE | Mausam aaj itna accha hai ki bahar ghoomne ka mann kar raha hai.", "target": "Aaj ka mausam toh gazab hai, bahar ghoomne ka mann kar raha."}
+{"input": "insert slang | control: ASSERT_ANXIETY | Kal exam hai aur mujhe kuch yaad nahi hai.", "target": "Kal exam hai aur mujhe kuch yaad nahi, full tension ho rahi hai."}
+{"input": "insert slang | control: ASSERT_NEUTRAL | Shaam ki party ka kya plan hai?", "target": "Vella, shaam ki party ka kya plan hai?"}
+{"input": "insert slang | control: ASSERT_POSITIVE | Mushkil waqt mein wo hamesha mere saath khada raha, bahut bharosemand hai.", "target": "Mushkil waqt mein wo hamesha mere saath khada raha, sachcha dost hai yaar."}
+{"input": "insert slang | control: ASSERT_STRESS | Assignment bahut lamba hai", "target": "Assignment itna lamba hai ki dimag kharab ho gaya"}
+{"input": "insert slang | control: CASUAL_ASSERTION | Tu bina soche bas directly point pe baat kar.", "target": "Tu ekdum chill hoke directly point pe baat kar."}
+{"input": "insert slang | control: ASSERT_STRESS | Market mein bahut bheed thi", "target": "Market mein bahut bhasad thi"}
+{"input": "insert slang | control: CASUAL_ASSERTION | Is baar ka cricket match dekhne mein bahut maza aaya.", "target": "Is baar ka cricket match dekhne mein kamaal ka maza aaya."}
+{"input": "insert slang | control: REQUEST_URGENCY | Exam se pehle hi pata chala ki syllabus badal gaya hai.", "target": "Exam se pehle pata chala syllabus badal gaya, ab toh gaya scene."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Usne smart choice ki.", "target": "Usne ekdum paisa vasool smart choice ki."}
+{"input": "insert slang | control: REQUEST_FRUSTRATION | Yaar ye office meeting khatam hi nahi ho rahi, bahut pak gaya hoon.", "target": "Yaar ye office meeting ka scene khatam hi nahi ho raha, bahut pak gaya hoon."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Is hafte ka mausam ghoomne ke liye bahut accha hai.", "target": "Is hafte ka mausam ghoomne ke liye ekdum badiya hai."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Mera naya phone kal aaya aur camera kaafi achha hai.", "target": "Mera naya phone kal aaya aur camera ekdum rocket hai."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Uska naya song sun ke lagta hai ki yeh bahut hit hoga.", "target": "Uska naya song sunke laga yeh toh lit hone wala hai."}
+{"input": "insert slang | control: CASUAL_ASSERTION | Usne mushkil sawal ka jawab bahut aasani se diya.", "target": "Usne mushkil sawal ka jawab kamaal ke andaaz mein diya."}
+{"input": "insert slang | control: ASSERT_STRESS | Exam se pehle itna saara syllabus baaki hai aur main bahut pareshan hoon.", "target": "Exam se pehle itna syllabus baaki hai, mujhe bahut tension ho rahi hai."}
+{"input": "insert slang | control: ASSERT_NEGATIVE | Usne mujhse jhooth bol kar paise liye.", "target": "Usne mujhse jhooth bol kar paise liye, ab toh usey roast karna banta hai."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Usne topic change bahut smartly kiya.", "target": "Usne topic change bahut smartly kiya, Jackpot!"}
+{"input": "insert slang | control: REQUEST_NEUTRAL | Meeting kal tak postpone ho gayi", "target": "Meeting kal tak postpone ho gayi, ab kya scene hai?"}
+{"input": "insert slang | control: ASSERT_STRESS | Kal interview hai aur mujhe abhi tak kuch yaad nahi hua.", "target": "Kal interview hai aur mujhe kuch yaad nahi, sir pe tension hai."}
+{"input": "insert slang | control: ASSERT_STRESS | Mahine ke end mein paise bahut kam bache hain.", "target": "Mahine ke end mein ekdum jeb khaali hai yaar."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Dosto ke saath cricket match ka plan shaandaar bana.", "target": "Dosto ke saath cricket match ka plan ekdum faadu bana."}
+{"input": "insert slang | control: ASSERT_ANXIETY | Results aane wale hain aur mera dil bahut ghabra raha hai.", "target": "Results aane wale hain, ab toh full tension ho rahi hai yaar."}
+{"input": "insert slang | control: ASSERT_NEGATIVE | Woh restaurant ka khana bilkul bekaar tha, bahut mehenga bhi tha.", "target": "Woh restaurant ka khana bilkul bakwaas tha, bahut mehenga bhi tha."}
+{"input": "insert slang | control: ASSERT_STRESS | Mahine ke bees din mein hi meri saari bachat khatam ho gayi.", "target": "Mahine ke bees din mein hi meri saari bachat khatam, jeb khaali ho gayi."}
+{"input": "insert slang | control: CASUAL_ASSERTION | Aaj Sunday hai, bas ghar par aaram se movie dekhenge.", "target": "Aaj Sunday hai, bas ghar par chill karenge aur movie dekhenge."}
+{"input": "insert slang | control: ASSERT_NEGATIVE | Canteen ka khana aaj bahut kharab tha, ek bhi bite pasand nahi aaya.", "target": "Canteen ka khana aaj ekdum bakwaas tha, ek bhi bite pasand nahi aaya."}
+{"input": "insert slang | control: ASSERT_HAPPY | Purane doston se milkar bahut maza aaya, scene ekdum set tha.", "target": "Purane doston se milkar bahut maza aaya, scene ekdum pro level set tha."}
+{"input": "insert slang | control: CASUAL_ASSERTION | Kal subah jaldi uthna hai, alarm laga dena.", "target": "Kal subah jaldi uthna hai yaar, alarm laga dena."}
+{"input": "insert slang | control: CASUAL_ASSERTION | Sun, aaj shaam ko free hai kya?", "target": "Arre sun, aaj shaam ko free hai kya?"}
+{"input": "insert slang | control: ASSERT_POSITIVE | Woh banda kaafi bhara hua hai, har kaam mein mahir hai.", "target": "Woh bhai solid banda hai, har kaam mein mahir hai."}
+{"input": "insert slang | control: ASSERT_FRUSTRATION | Monsoon mein bus ka intezaar karte karte bahut thak gaya tha.", "target": "Monsoon mein bus ka wait karte karte toh jaan nikal gayi yaar."}
+{"input": "insert slang | control: ASSERT_WARNING | Manager aaj gusse me hai.", "target": "Manager aaj full-throttle gusse me hai."}
+{"input": "insert slang | control: ASSERT_STRESS | Itne saare assignments ek saath dekh kar mera dimaag thak gaya.", "target": "Itne saare assignments dekh kar dimaag fry ho gaya."}
+{"input": "insert slang | control: ASSERT_ANXIETY | Interview ke time mujhe kuch yaad hi nahi aaya.", "target": "Interview ke time ekdum dimaag block ho gaya, kuch yaad hi nahi aaya."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Naye jootay pehenne mein bilkul aaram hai.", "target": "Naye jootay pehenne mein ekdum butter smooth feel ho raha hai."}
+{"input": "insert slang | control: ASSERT_SADNESS | Assignment bahut lamba hai", "target": "Assignment ka toh bada kaand hai, bahut lamba hai"}
+{"input": "insert slang | control: ASSERT_FRUSTRATION | Wifi phir se band ho gaya, online class beech mein ruk gayi.", "target": "Wifi phir se band ho gaya, dimaag kharab ho gaya yaar."}
+{"input": "insert slang | control: ASSERT_HAPPY | Mom ne ghar pe mere favourite gulab jamun banaye.", "target": "Mom ne ghar pe gulab jamun banaye, dil khush ho gaya."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Sunset ka nazara itna sundar tha ki bas dekhte rahe.", "target": "Sunset ka nazara itna gajab tha ki bas dekhte rahe."}
+{"input": "insert slang | control: ASSERT_NEGATIVE | Itni der se delivery nahi aayi aur call bhi nahi utha raha, ajeeb hai.", "target": "Itni der se delivery nahi aayi aur call bhi nahi utha raha, kaafi weird hai."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Trip ne saari thakaan door kar di.", "target": "Trip ne saari thakaan door kar di, ekdum refreshing tha."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Main tumhari help kar dunga", "target": "Main tumhari help kar dunga, jackpot lag gaya na!"}
+{"input": "insert slang | control: ASSERT_POSITIVE | Naye phone ki speed bahut tez hai.", "target": "Naye phone ki speed ekdum rocket hai yaar."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Dadi ki banayi saree ko sab ne bahut pasand kiya aur tareef ki.", "target": "Dadi ki banayi saree ko sab ne dekha aur bola ekdum chaandi hai."}
+{"input": "insert slang | control: CASUAL_ASSERTION | Kal gym jaane ka plan bana liya hai.", "target": "Kal gym jaane ka plan bana liya re."}
+{"input": "insert slang | control: ASSERT_EXCITED | Cousin ki shaadi ki confirmation hui toh ghar mein sab khush the.", "target": "Cousin ki confirmation hui toh ghar mein khushi ka mahaul ban gaya."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Aaj ka match bahut exiting hone wala hai.", "target": "Aaj ka match aag hone wala hai."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Subah ki thandi hawa mein chai peena bahut achha laga.", "target": "Subah ki thandi hawa mein chai peena ekdum refreshing laga."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Naye software update ke baad app ekdum smoothly chal raha hai.", "target": "Naye software update ke baad app ekdum butter smooth chal raha hai."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Uska naya gaana sun ke sab log impress ho gaye.", "target": "Uska naya gaana sun ke sab log impress ho gaye, ekdum chha gaye."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Is cafe ki coffee ka swaad bahut acha hai.", "target": "Is cafe ki coffee ka swaad ekdum paani hai, ek baar try karo."}
+{"input": "insert slang | control: ASSERT_EXCITED | Concert mein jab gaana shuru hua toh sab jhoom uthe.", "target": "Concert mein jab gaana shuru hua toh pura mahaul electric ho gaya."}
+{"input": "insert slang | control: EXPRESS_SADNESS | Road trip cancel ho gaya, mera mood bahut kharab hai.", "target": "Road trip cancel ho gaya, mera mood bahut bakwaas hai."}
+{"input": "insert slang | control: EXPRESS_SADNESS | Mera net itna slow hai ki game beech mein hi crash ho gaya", "target": "Bhai mera net itna slow hai ki game beech mein hi crash ho gaya"}
+{"input": "insert slang | control: ASSERT_POSITIVE | Uski presentation bahut smooth thi, koi galti nahi hui.", "target": "Uski presentation butter smooth thi, koi galti nahi hui."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Code review jaldi khatam ho gaya.", "target": "Code review jaldi khatam ho gaya, funda clear hai."}
+{"input": "insert slang | control: CASUAL_ASSERTION | Mujhe is weekend ke liye koi tension nahi hai.", "target": "Is weekend mujhe bina tension ke relax karna hai."}
+{"input": "insert slang | control: REQUEST_URGENCY | Train chhootne wali hai, jaldi bhaag ke pakad lo.", "target": "Train chhootne wali hai, fatafat bhaag ke pakad lo!"}
+{"input": "insert slang | control: ASSERT_POSITIVE | Us chhote bacche ki masoom muskaan sabko pasand aayi.", "target": "Us chhote bacche ki masoom muskaan ne sabka dil jeet liya."}
+{"input": "insert slang | control: INFO_STATEMENT | Aaj ka college lecture bahut boring tha yaar", "target": "Aaj ka college lecture bahut boring tha boss yaar"}
+{"input": "insert slang | control: CASUAL_ASSERTION | Sun na, kal ka plan kya hai?", "target": "Abey sun na, kal ka plan kya hai?"}
+{"input": "insert slang | control: ASSERT_HAPPY | Match ka result achha tha", "target": "Match ka result achha tha, chha gaya!"}
+{"input": "insert slang | control: ASSERT_POSITIVE | Is restaurant ka khana kaafi swaadisht hai.", "target": "Is restaurant ka khana ekdum gajab hai."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Naye cafe ka decor aur music dono bahut acche lage.", "target": "Naye cafe ka decor aur music dono ekdum lit lage."}
+{"input": "insert slang | control: ASSERT_FRUSTRATION | Chauthi manzil tak seedhiyan chadhte chadhte main bahut thak gaya.", "target": "Chauthi manzil tak seedhiyan chadhte chadhte meri toh jaan nikal gayi."}
+{"input": "insert slang | control: ASSERT_NEUTRAL | Aaj weather kaafi gloomy hai", "target": "Aaj weather ekdam gloomy hai"}
+{"input": "insert slang | control: ASSERT_POSITIVE | Naya cafe kaafi achha hai, coffee aur snacks dono theek hain.", "target": "Naya cafe kaafi badiya hai, coffee aur snacks dono mast hain."}
+{"input": "insert slang | control: ASSERT_HAPPY | Khana bahut swadisht hai", "target": "Khana sorted hai, bahut swadisht hai"}
+{"input": "insert slang | control: ASSERT_POSITIVE | Is gaane ki dhun bahut hi alag aur acchi hai.", "target": "Is gaane ki dhun ekdum gazab hai."}
+{"input": "insert slang | control: ASSERT_NEGATIVE | Ye question syllabus ke bahar se aaya.", "target": "Ye khataara question syllabus ke bahar se aaya."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Wedding ka decoration dekhke sab hairaan reh gaye, bahut sundar tha.", "target": "Wedding ka decoration dekhke sab hairaan, ekdum gajab tha."}
+{"input": "insert slang | control: CASUAL_ASSERTION | Tum kal library chal rahe ho na, theek hai?", "target": "Tum kal library chal rahe ho na, sahi hai?"}
+{"input": "insert slang | control: ASSERT_POSITIVE | Uska jawab sunke sab khush ho gaye.", "target": "Uska jawab sunke sabne kaha, waah kya baat hai!"}
+{"input": "insert slang | control: POSITIVE_EVAL | Train miss ho gayi par ab naye hotel mein stay milega, maza aayega", "target": "Train miss ho gayi par ab naye hotel mein stay milega, Jhakaas maza aayega"}
+{"input": "insert slang | control: EXPRESS_STRESS | Yaar ye street food ki line bahut lambi hai, main thak gaya hoon.", "target": "Yaar ye street food ki line bahut lambi hai, kya bakwaas hai, main thak gaya hoon."}
+{"input": "insert slang | control: REQUEST_URGENCY | Exam ka result kal aana hai, aur abhi tak notes bhi poore nahi hue.", "target": "Exam ka result kal aana hai, aur abhi tak notes bhi fatafat poore karne hain."}
+{"input": "insert slang | control: ASSERT_EXCITED | Match ka result achha tha", "target": "Match ka result jhakaas tha"}
+{"input": "insert slang | control: ASSERT_STRESS | Electricity bill dekha toh pata chala ki bahut zyada aaya hai.", "target": "Electricity bill dekha toh waat lag gayi, itna zyada kaise aaya?"}
+{"input": "insert slang | control: ASSERT_POSITIVE | Lecture ka content kaafi useful tha", "target": "Lecture ka content ekdum makkhan tha, kaafi useful tha"}
+{"input": "insert slang | control: ASSERT_POSITIVE | Tere naye jacket ka design bahut badhiya hai.", "target": "Tere naye jacket ka design ekdum faadu hai."}
+{"input": "insert slang | control: CASUAL_ASSERTION | Maine tumhe pehle bhi bataya tha ki woh nahi aayega.", "target": "Maine tumhe pehle bhi bataya tha, kasam se, ki woh nahi aayega."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Uska naya gaana sunke dil khush ho gaya, kamaal ka hai.", "target": "Uska naya gaana sunke laga, kya gajab banaya hai!"}
+{"input": "insert slang | control: ASSERT_NEGATIVE | Usne deal cancel kar di.", "target": "Usne deal cancel kar di aur saara raita fail gaya."}
+{"input": "insert slang | control: ASSERT_EXCITED | Kal humara trip hai, pehli baar pahad pe ja rahe hain.", "target": "Kal humara trip hai, pehli baar pahad pe ja rahe hain, full excited hoon!"}
+{"input": "insert slang | control: ASSERT_ANGER | Mujhe surprise party nahi chahiye thi, tum logo ne mera mood kharab kar diya.", "target": "Mujhe surprise party nahi chahiye thi, tum logo ne ye kya Kaand kar diya."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Us singer ki awaaz itni sundar thi ki sab hairan rah gaye.", "target": "Us singer ki awaaz itni gazab thi ki sab hairan rah gaye."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Is restaurant ka paneer tikka bahut accha bana hai.", "target": "Is restaurant ka paneer tikka ekdum lit bana hai."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Is naye phone ka price kam tha aur features bhi achhe hain.", "target": "Is naye phone ka price kam tha aur features bhi, ekdum paisa vasool hai."}
+{"input": "insert slang | control: ASSERT_NEGATIVE | Gyaan baantne se badhta hai.", "target": "Gyaan flex karne se nahi, baantne se badhta hai."}
+{"input": "insert slang | control: ASSERT_STRESS | Model train karne mein time lagta hai.", "target": "Chal, model train karne mein time lagta hai."}
+{"input": "insert slang | control: ASSERT_STRESS | Projects ki deadline aur meetings ne mera dimaag thaka diya hai.", "target": "Projects ki deadline aur meetings se dimaag ki dahi ho gayi hai."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Uski nayi startup ki growth bahut tezi se ho rahi hai.", "target": "Uski nayi startup ki growth ekdum rocket ki tarah ho rahi hai."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Uski nayi web series ne sab records tod diye.", "target": "Uski nayi web series superhit ho gayi."}
+{"input": "insert slang | control: ASSERT_EXCITED | Naye phone ke launch ko lekar sab bahut utsahit hain.", "target": "Naye phone ke launch ko lekar kaafi hype hai, sab excited hain."}
+{"input": "insert slang | control: ASSERT_EXCITED | Concert ke tickets mil gaye aur hum sab bahut excited hain.", "target": "Concert ke tickets mil gaye, ab toh ekdum bomb feel ho raha hai!"}
+{"input": "insert slang | control: ASSERT_ANXIETY | Interview ka call aaya hai aur kal hai, kaafi ghabra raha hoon.", "target": "Interview ka call aaya hai aur kal hai, full tension ho rahi hai."}
+{"input": "insert slang | control: ASSERT_NEGATIVE | Woh har baar bahana banata hai.", "target": "Woh har baar bahana banata hai, bada natak karta hai."}
+{"input": "insert slang | control: ASSERT_EXCITED | Purane dost milke coffee pe baatein kar rahe hain.", "target": "Purane dost milke coffee pe baatein kar rahe hain, khushi ka mahaul hai!"}
+{"input": "insert slang | control: ASSERT_NEUTRAL | Order bahut late ho gaya hai, ab kuch karna padega.", "target": "Order bahut late ho gaya hai, ab koi jugaad karna padega."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Is baar Goa trip ka plan bahut badhiya bana hai.", "target": "Is baar Goa trip ka plan gazab bana hai."}
+{"input": "insert slang | control: ASSERT_EXCITED | Match ka result achha tha", "target": "Match ka result bawaal tha"}
+{"input": "insert slang | control: CASUAL_ASSERTION | Maa ne aaj jo rajma chawal banaye, woh bahut acche the.", "target": "Maa ne aaj jo rajma chawal banaye, kamaal the ekdum."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Uska bike ride ka plan bilkul perfect aur smooth chal raha hai.", "target": "Uska bike ride ka plan butter smooth chal raha hai, koi tension nahi."}
+{"input": "insert slang | control: CASUAL_ASSERTION | Mere senior ne mujhe project mein poori help ki, bahut accha hai woh.", "target": "Mere senior toh boss hain yaar, project mein poori help ki."}
+{"input": "insert slang | control: REQUEST_URGENCY | Flight miss ho gayi toh poora plan kharab ho jayega.", "target": "Flight miss ho gayi toh poora scene bigad jayega."}
+{"input": "insert slang | control: ASSERT_EXCITED | Yaar, festival shopping ke liye bahut excited hoon, maza aayega!", "target": "Yaar, festival shopping ke liye solid excited hoon, maza aayega!"}
+{"input": "insert slang | control: ASSERT_STRESS | Monsoon aa gaya aur assignments ki deadline paas hai.", "target": "Monsoon aa gaya aur assignments ki deadline sir pe hai."}
+{"input": "insert slang | control: CASUAL_ASSERTION | Kal ka picnic plan cancel ho gaya kyunki mausam kharab hai.", "target": "Kal ka picnic plan cancel ho gaya, re yaar mausam hi kharab hai."}
+{"input": "insert slang | control: CASUAL_ASSERTION | Maine tujhe pehle hi bataya tha ki woh nahi aayega.", "target": "Kasam se maine tujhe pehle hi bataya tha ki woh nahi aayega."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Power cut ke time Rohan ne mujhe apni torch di.", "target": "Power cut ke time Rohan ne torch de di, yaar woh sachcha dost hai."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Uska hindi gaana sunke lagta hai usne bahut mehnat ki hai.", "target": "Uska hindi gaana sunke lagta hai ekdum zabardast kaam kiya hai."}
+{"input": "insert slang | control: ASSERT_EXCITED | Pahadon par trip ka plan sunkar sab bahut maze mein aa gaye.", "target": "Pahadon par trip ka plan sunkar sab mauj mein aa gaye!"}
+{"input": "insert slang | control: ASSERT_POSITIVE | Trip ka plan achhe se ban gaya.", "target": "Trip ka plan ekdum solid ban gaya."}
+{"input": "insert slang | control: ASSERT_NEGATIVE | Naya update bilkul kaam ka nahi hai.", "target": "Naya update ekdum bekaar hai, kuch bhi theek nahi."}
+{"input": "insert slang | control: ASSERT_EXCITED | Maine online lottery ticket liya aur sach mein mera inaam lag gaya.", "target": "Maine online lottery ticket liya aur seedha jackpot lag gaya!"}
+{"input": "insert slang | control: ASSERT_POSITIVE | Humne milke problem solve kar li.", "target": "Humne milke problem ekdum chutki mein solve kar li."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Yeh deal bilkul sahi hai.", "target": "Yeh deal toh rocket hai, bilkul sahi hai."}
+{"input": "insert slang | control: ASSERT_EXCITED | Finally breakup ho gaya, ab party karte hain!", "target": "Sun, finally breakup ho gaya, ab party karte hain!"}
+{"input": "insert slang | control: ASSERT_POSITIVE | Itne kam paise mein itna bada thali mil gaya.", "target": "Itne kam paise mein ye thali toh paisa vasool hai."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Is cafe ki coffee aur interior dono itne achhe hain ki bar bar aana hai.", "target": "Is cafe ki coffee aur interior dono next level hain, bar bar aana hai."}
+{"input": "insert slang | control: ASSERT_SADNESS | Assignment bahut lamba hai", "target": "Assignment bahut lamba hai, waat lag gayi"}
+{"input": "insert slang | control: ASSERT_POSITIVE | Uska project presentation bahut mazboot aur solid tha.", "target": "Uska project presentation ekdum solid tha, koi shak nahi."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Sheher ke naye cafe ki coffee kaafi achhi hai.", "target": "Sheher ke naye cafe ki coffee ekdum top class hai."}
+{"input": "insert slang | control: ASSERT_EXCITED | Pizza bahut tasty tha", "target": "Pizza bahut tasty tha, scene set ho gaya"}
+{"input": "insert slang | control: ASSERT_HAPPY | Bonus mil gaya aaj", "target": "Kya mast, bonus mil gaya aaj"}
+{"input": "insert slang | control: ASSERT_POSITIVE | Itne kam daam mein itni achhi quality ka jacket milna bahut badi baat hai.", "target": "Itne kam daam mein itni achhi quality, paisa vasool hai."}
+{"input": "insert slang | control: ASSERT_NEGATIVE | Canteen ka samosa aaj bilkul bekaar aur thanda tha.", "target": "Canteen ka samosa aaj ekdum ghatiya aur thanda tha, mood off ho gaya."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Mera naya gym outfit kaafi stylish dikh raha hai.", "target": "Mera naya gym outfit ekdum lit dikh raha hai."}
+{"input": "insert slang | control: CASUAL_ASSERTION | Ek chai pilao, phir kaam shuru karte hain.", "target": "Boss, ek chai pilao, phir kaam shuru karte hain."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Chhoti si bachchi ne apne gaane se sabko khush kar diya.", "target": "Chhoti si bachchi ne apne gaane se sabka dil jeet liya."}
+{"input": "insert slang | control: ASSERT_EXCITED | Uska naya gaana sunke sab log bahut excited ho gaye.", "target": "Uska naya gaana ekdum fire hai, sunke sab log pagal ho gaye!"}
+{"input": "insert slang | control: ASSERT_POSITIVE | Aaj presentation achhi gayi", "target": "Aaj presentation ekdum cut-to-cut aur achhi gayi"}
+{"input": "insert slang | control: ASSERT_EXCITED | Holi pe sabne milkar khoob naach kiya.", "target": "Holi pe sabne milkar dhamaal naach kiya!"}
+{"input": "insert slang | control: ASSERT_STRESS | Ek saath teen assignment ki deadline hai aur main bahut pareshaan hoon.", "target": "Ek saath teen assignment ki deadline hai, dimaag ki dahi ho gayi hai."}
+{"input": "insert slang | control: ASSERT_EXCITED | Cricket mein last over mein chhakka lagte hi stadium mein shor macha.", "target": "Last over mein chhakka lagte hi stadium mein bomb phat gaya."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Pizza bahut tasty tha", "target": "Pizza bahut tasty tha, sorted!"}
+{"input": "insert slang | control: REQUEST_URGENCY | Kal ki trip ke liye bags pack karne hain aur ticket book karna hai.", "target": "Kal ki trip ke liye bags fatafat pack karne hain, ticket bhi book karna hai."}
+{"input": "insert slang | control: ASSERT_SADNESS | Laptop ki battery khatam ho gayi", "target": "Laptop ki battery ka toh kat gaya"}
+{"input": "insert slang | control: REQUEST_URGENCY | Train chhootne wali hai, jaldi station pahunchna padega.", "target": "Train chhootne wali hai, jaldi nahi pahunche toh gaya scene."}
+{"input": "insert slang | control: ASSERT_NEGATIVE | Woh bina wajah mera mazaak bana raha tha, aur ye sab drama tha.", "target": "Woh bina wajah mera mazaak bana raha tha, bas natak chal raha tha."}
+{"input": "insert slang | control: ASSERT_ANXIETY | System crash ho gaya", "target": "System crash hone ka scene ho gaya"}
+{"input": "insert slang | control: ASSERT_ANXIETY | Mujhe is interview ko lekar ghabrahat ho rahi hai.", "target": "Is interview ko lekar full tension ho rahi hai yaar."}
+{"input": "insert slang | control: POSITIVE_EVAL | Festival shopping ka experience bahut sahi tha, sab kuch mil gaya.", "target": "Festival shopping ka experience ekdum Jhakaas tha, sab kuch mil gaya."}
+{"input": "insert slang | control: ASSERT_EXCITED | Purane dost saalon baad mile aur humne poori raat baatein ki.", "target": "Purane dost saalon baad mile aur poori raat baatein, ekdum maze hi maze."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Tera naya haircut bahut accha lag raha hai.", "target": "Tera naya haircut ekdum dhasu lag raha hai bhai."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Pehli naukri ka pehla din bahut acha gaya.", "target": "Pehli naukri ka pehla din ekdum unforgettable gaya."}
+{"input": "insert slang | control: ASSERT_EXCITED | Weekend par hum sab raat bhar party karne wale hain.", "target": "Weekend par hum sab raat bhar full on party karne wale hain."}
+{"input": "insert slang | control: EXPRESS_SADNESS | Yaar mera network itna bekar hai ki match haar gaya", "target": "Yaar bhai mera network itna bekar hai ki match haar gaya"}
+{"input": "insert slang | control: ASSERT_POSITIVE | Class cancel ho gayi", "target": "Class faad cancel ho gayi"}
+{"input": "insert slang | control: ASSERT_POSITIVE | Raat ko drive karna maza aata hai.", "target": "Raat ko drive karna ekdum set hai, maza aata hai."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Usne gym mein aaj ek naya record banaya.", "target": "Usne gym mein aaj ek naya record banaya, ekdum beast hai woh."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Aaj ka outfit bahut mehnga hai.", "target": "Aaj ka outfit toh jackpot hai, bahut mehnga hai."}
+{"input": "insert slang | control: CASUAL_ASSERTION | Theek hai, kal shaam ko 7 baje milte hain.", "target": "Sahi hai, kal shaam ko 7 baje milte hain."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Gym ke baad ka protein shake bahut badhiya laga.", "target": "Gym ke baad ka protein shake ekdum kadak laga."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Uska bowling spell aaj ekdum shandar tha.", "target": "Uska bowling spell aaj superb tha, kamaal ka performance."}
+{"input": "insert slang | control: ASSERT_FEAR | Yaar, agar boss ne chai break pe dekh liya toh bahut pitega main.", "target": "Yaar, agar boss ne chai break pe dekh liya toh bada kaand ho jayega."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Yeh naya gaana sunke maza aa gaya, bahut accha bana hai.", "target": "Yeh naya gaana toh jhakaas hai, sunke maza aa gaya!"}
+{"input": "insert slang | control: REQUEST_URGENCY | Train nikal rahi hai, jaldi station pahuncho!", "target": "Train nikal rahi hai, gaya scene, jaldi station pahuncho!"}
+{"input": "insert slang | control: ASSERT_POSITIVE | Naye cafe ka coffee aur ambience dono bahut achhe hain.", "target": "Naye cafe ka coffee aur ambience dono next level hain."}
+{"input": "insert slang | control: ASSERT_NEGATIVE | Train late chal rahi hai", "target": "Train late chal rahi hai, ungli mat karo"}
+{"input": "insert slang | control: CASUAL_ASSERTION | Mujhe lagta hai hum ghar se aage nikal jaane chahiye.", "target": "Arre, mujhe lagta hai hum ghar se aage nikal jaane chahiye."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Is restaurant mein 200 rupaye mein kaafi bada thaali mil gaya.", "target": "Is restaurant mein 200 rupaye mein bada thaali mil gaya, paisa vasool hai."}
+{"input": "insert slang | control: CASUAL_ASSERTION | Chalo pehle kuch kha lete hain, bhookh lagi hai.", "target": "Chalo pehle pet puja kar lete hain, bhookh lagi hai."}
+{"input": "insert slang | control: ASSERT_EXCITED | Kal ka trip pe jaane ke liye main bahut excited hoon.", "target": "Kal ke trip ke liye main full excited hoon!"}
+{"input": "insert slang | control: REQUEST_URGENCY | Mujhe abhi ye project jama karna hai, bahut jaldi hai.", "target": "Mujhe abhi ye project jama karna hai, urgent hai bhai."}
+{"input": "insert slang | control: REQUEST_URGENCY | Bus nikal rahi hai, jaldi se bag utha aur bahar aa ja.", "target": "Bus nikal rahi hai, fatafat bag utha aur bahar aa ja."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Uska gym routine dekh kar sab hairan hain, bahut strong hai.", "target": "Uska gym routine dekh kar sab hairan hain, woh toh beast hai."}
+{"input": "insert slang | control: CASUAL_ASSERTION | Tum mere sabse achhe dost ho, sach mein.", "target": "Tum toh boss ho yaar, sabse best dost."}
+{"input": "insert slang | control: ASSERT_NEGATIVE | Uska naya haircut dekh kar sab ko ajeeb laga.", "target": "Uska naya haircut dekh kar sab ko weird laga, pata nahi kya socha."}
+{"input": "insert slang | control: ASSERT_EXCITED | Kal humari trip hai aur hum sab kaafi excited hain.", "target": "Kal humari trip hai, hum sab full excited hain!"}
+{"input": "insert slang | control: ASSERT_SADNESS | Aaj mood bilkul kharab hai, kuch karne ka man hi nahi kar raha.", "target": "Aaj mera mood off hai, kuch karne ka man hi nahi kar raha."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Is hotel ka breakfast buffet bahut accha tha.", "target": "Is hotel ka breakfast buffet ekdum top class tha."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Uska naya look dekh kar sab hairaan reh gaye.", "target": "Uska naya look dekh kar sab hairaan the, gazab lag raha tha."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Usne wo maths ka sawal bahut aasaani se solve kar diya.", "target": "Usne wo maths ka sawal chutki mein solve kar diya."}
+{"input": "insert slang | control: ASSERT_SADNESS | Yaar ye college lecture bahut boring hai, mann nahi kar raha sunne ka.", "target": "Yaar ye college lecture ka scene bahut boring hai, mann nahi kar raha sunne ka."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Gym mein aaj usne bahut zyada weight utha diya.", "target": "Gym mein aaj usne beast mode mein zyada weight utha diya."}
+{"input": "insert slang | control: CASUAL_ASSERTION | Sun na, mujhe ek zaroori baat batani hai.", "target": "Sun yaar, ek zaroori baat batani hai."}
+{"input": "insert slang | control: ASSERT_HAPPY | Mujhe yeh movie pasand aayi", "target": "Mujhe yeh movie khatarnak pasand aayi"}
+{"input": "insert slang | control: ASSERT_NEGATIVE | Barish ki wajah se humara picnic ka plan kharab ho gaya.", "target": "Barish ki wajah se humare picnic ke plan ka band baj gaya."}
+{"input": "insert slang | control: REQUEST_URGENCY | Abhi ke abhi yeh kaam poora karna hai.", "target": "Abhi ke abhi yeh kaam niptaana hai, warna gaya kaam se."}
+{"input": "insert slang | control: ASSERT_FRUSTRATION | WiFi connection subah se band hai.", "target": "WiFi connection subah se kachra ho rakha hai."}
+{"input": "insert slang | control: CASUAL_ASSERTION | Aaj office jaldi nikal gaya, aaram se ghar pahunch jaunga.", "target": "Aaj office jaldi nikal gaya, bina tension aaram se ghar pahunch jaunga."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Itna traffic jam hai par meri gaadi ka AC bahut sahi chal raha hai", "target": "Itna traffic jam hai par meri gaadi ka AC flex kar raha hai"}
+{"input": "insert slang | control: CASUAL_ASSERTION | Tu kal raat kahan gayab ho gaya tha?", "target": "Abey tu kal raat kahan gayab ho gaya tha?"}
+{"input": "insert slang | control: ASSERT_POSITIVE | Result bahut badiya aaya", "target": "Vibe-check: Result bahut badiya aaya"}
+{"input": "insert slang | control: CASUAL_ASSERTION | Maine aaj shaadi ka invitation receive kiya.", "target": "Maine aaj shaadi ka invitation kasam se receive kiya."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Kal ki barish ka nazara kaafi sundar tha.", "target": "Kal ki barish ka nazara ekdum gazab tha yaar."}
+{"input": "insert slang | control: ASSERT_STRESS | Itni garmi mein bahar jaana mushkil hai.", "target": "Itni garmi mein toh haalat kharab ho gayi."}
+{"input": "insert slang | control: ASSERT_STRESS | Is mahine itne kharche ho gaye ki paise khatam ho gaye.", "target": "Is mahine kharche itne ho gaye ki jeb khaali ho gayi."}
+{"input": "insert slang | control: ASSERT_EXCITED | Diwali par ghar mein rang birange lights aur patakhe lage hain.", "target": "Diwali par ghar mein lights aur patakhon ka ekdum dhamaal hai."}
+{"input": "insert slang | control: CASUAL_ASSERTION | Uska bike chalane ka style bina kisi jhatke ke bahut aaram wala hai.", "target": "Uska bike chalane ka style ekdum smooth hai, koi jhatka nahi."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Subah ki chai ke saath baarish dekhna bahut achha laga.", "target": "Subah ki chai ke saath baarish dekhna ekdum mast laga."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Is naye cafe ka coffee aur interior dono kamaal ke hain.", "target": "Is naye cafe ka coffee aur interior dono gajab hain."}
+{"input": "insert slang | control: ASSERT_CONFUSION | Abhi scene clear nahi hai", "target": "Abe, abhi scene clear nahi hai"}
+{"input": "insert slang | control: CASUAL_ASSERTION | Group project ka presentation aaram se ho gaya.", "target": "Group project ka presentation smoothly ho gaya, koi dikkat nahi."}
+{"input": "insert slang | control: ASSERT_EXCITED | Naya gaming console dekh ke mujhe bahut excitement ho gayi.", "target": "Naya gaming console dekh ke toh main fida ho gaya bhai."}
+{"input": "insert slang | control: ASSERT_FRUSTRATION | Khana order kiya tha, bahut late aaya.", "target": "Khana order kiya tha, itna late aaya ki pak gaya."}
+{"input": "insert slang | control: ASSERT_STRESS | Placement season chal raha hai, sab pareshan hain.", "target": "Placement season chal raha hai, sabki waat lagi hui hai."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Khana bahut swadisht hai", "target": "Khana ekdum phaad swadisht hai"}
+{"input": "insert slang | control: ASSERT_WARNING | Agar mera food delivery late hua toh main complaint kar dunga", "target": "Agar mera food delivery late hua toh main complaint kar dunga be"}
+{"input": "insert slang | control: CASUAL_ASSERTION | Chalo raat ko chhat par baithke gaane sunte hain aur timepass karte hain.", "target": "Chalo aaj raat chhat par baithke gaane sunte hain, full masti karenge."}
+{"input": "insert slang | control: ASSERT_FRUSTRATION | Wifi phir se band ho gaya, online class mein kaafi dikkat aa rahi hai.", "target": "Wifi phir se band, online class mein dikkat, lag gaye yaar."}
+{"input": "insert slang | control: ASSERT_NEGATIVE | Uski baatein sun kar lag raha tha ki woh sirf drama kar raha hai.", "target": "Uski baatein sun kar lag raha tha ki woh sirf natak kar raha hai."}
+{"input": "insert slang | control: ASSERT_STRESS | Itne saare kaam ek saath aa gaye ki mera dimaag thak gaya hai.", "target": "Itne saare kaam ek saath aa gaye, yaar dimaag fry ho gaya hai."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Uska video aaj sabke phone pe chal raha hai.", "target": "Uska video aaj ekdum viral ho gaya hai."}
+{"input": "insert slang | control: ASSERT_NEUTRAL | Mujhe nind aa rahi hai", "target": "Yaar, mujhe nind aa rahi hai"}
+{"input": "insert slang | control: ASSERT_POSITIVE | Mummy ne ek minute mein poora khana taiyaar kar diya.", "target": "Mummy ne chutki mein poora khana taiyaar kar diya."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Pizza bahut tasty tha", "target": "Pizza ka taste on point tha"}
+{"input": "insert slang | control: ASSERT_SADNESS | Aaj mera mood kharab hai, kuch achha nahi lag raha.", "target": "Aaj mera mood off hai, kuch achha nahi lag raha."}
+{"input": "insert slang | control: ASSERT_FRUSTRATION | Yeh laptop kaafi hang ho raha hai.", "target": "Yeh laptop kaafi hang ho raha hai, loot machi hai!"}
+{"input": "insert slang | control: REQUEST_FRUSTRATION | Yaar, road trip plan karne mein kitni mehnat lagti hai", "target": "Yaar, road trip plan karne ka kya scene hai, kitni mehnat lagti hai"}
+{"input": "insert slang | control: ASSERT_STRESS | Diwali ki shopping list bahut lambi hai, samajh nahi aa raha.", "target": "Diwali ki shopping list itni lambi hai, dimaag fry ho raha hai."}
+{"input": "insert slang | control: ASSERT_HAPPY | Match ka result achha tha", "target": "Match ka result achha tha, mauj aa gayi"}
+{"input": "insert slang | control: ASSERT_EXCITED | Kal hum pehli baar trek pe jaane wale hain.", "target": "Kal hum pehli baar trek pe jaane ke liye fida ho rahe hain!"}
+{"input": "insert slang | control: ASSERT_FRUSTRATION | Subah se bijli nahi hai aur mera laptop bhi band hai.", "target": "Subah se bijli nahi hai, jhand ho gayi, laptop bhi band hai."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Flight time par land ho gayi", "target": "Flight time par land ho gayi, ab machayenge!"}
+{"input": "insert slang | control: ASSERT_FRUSTRATION | Traffic mein ek ghanta phansa raha, mujhe bahut gussa aaya.", "target": "Traffic mein ek ghanta phansa raha, dimaag kharab ho gaya."}
+{"input": "insert slang | control: ASSERT_FRUSTRATION | System crash ho gaya", "target": "System crash ho gaya, dimaag ka dahi ho gaya."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Kal raat ki party mein mahaul bahut badhiya tha.", "target": "Kal raat ki party ekdum lit thi yaar."}
+{"input": "insert slang | control: ASSERT_EXCITED | Kal hostel mein hum sab ne ek bada plan banaya hai.", "target": "Kal hostel mein hum sab ne ek bomb plan banaya hai, maza aayega!"}
+{"input": "insert slang | control: ASSERT_STRESS | Is hafte office mein bahut saara kaam jama ho gaya hai.", "target": "Is hafte office mein kaam ka pahaad jama ho gaya hai."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Nukkad ke dhaabe ka butter chicken bahut hi badhiya tha.", "target": "Nukkad ke dhaabe ka butter chicken ekdum tagda tha."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Tumne ek hi shot mein poora cheez bana diya, bahut achha.", "target": "Tumne ek hi shot mein poora cheez bana diya, kya baat hai!"}
+{"input": "insert slang | control: ASSERT_FRUSTRATION | Itni der se padh raha hoon, ab sir mein dard ho raha hai.", "target": "Itni der se padh raha hoon, ab toh sar phat raha hai."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Uska naya laptop bahut acchi performance deta hai.", "target": "Uska naya laptop solid performance deta hai, speed dekh ke maza aa gaya."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Us hotel ki service aur khana dono hi bahut achhe the.", "target": "Us hotel ki service aur khana dono top class the."}
+{"input": "insert slang | control: ASSERT_POSITIVE | Yeh restaurant ka khana sach mein accha hai.", "target": "Yeh restaurant ka khana sach mein ekdum mast hai."}

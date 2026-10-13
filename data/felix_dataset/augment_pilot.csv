@@ -1,0 +1,41 @@
+neutral,output,control,function,positions,multi_allowed,social_context,context,slangs,source
+Mera phone ka screen toot gaya hai.,"Mera phone ka screen toot gaya hai, bhai.",ASSERT_STRESS,filler,END,False,,phone repair,bhai,groq_augment_v2
+Road trip ke beech mein humein ek ajeeb traffic jam ka samna karna pada.,"Road trip ke beech mein humein ek ajeeb traffic jam ka samna karna pada, pura bhootka.",ASSERT_SURPRISE,intensifier,END,False,,road trip,bhootka,groq_augment_v2
+Unhone pitch me apni idea ko clearly explain kiya.,Unhone pitch me apni idea ko bindaas clearly explain kiya.,ASSERT_SURPRISE,intensifier,MIDDLE,False,,startup pitch,bindaas,groq_augment_v2
+Interview ke baad main bahut nervous feel kar raha hoon.,"Interview ke baad main bahut nervous feel kar raha hoon, fatt gaya.",ASSERT_FEAR,intensifier,END,False,,job interview,fatt gaya,groq_augment_v2
+Aaj humare boss ki birthday surprise party hai.,Aaj humare boss ki birthday surprise party bindaas hai.,ASSERT_HAPPY,positive_eval,END,False,,surprise party,bindaas,groq_augment_v2
+Bhetre ke ghar mein bijli ki kami ho gayi.,Bhetre ke ghar mein bijli chook gaya.,ASSERT_NEGATIVE,negative_eval,MIDDLE,False,,power cut,chook gaya,groq_augment_v2
+Power cut ho gaya hai,Power cut ho gaya hai chill,ASSERT_HAPPY,positive_eval,END,False,,power cut,chill,groq_augment_v2
+Sabko society meeting mein bataya ki budget cut karna hoga.,Kaand! Sabko society meeting mein bataya ki budget cut karna hoga.,ASSERT_ANGER,negative_eval,START,False,,society meeting,kaand,groq_augment_v2
+Delivery boy ka khana abhi tak nahi aaya.,Delivery boy bhatka ka khana abhi tak nahi aaya.,ASSERT_ANGER,negative_eval,MIDDLE,False,,food delivery late,bhatka,groq_augment_v2
+Maine friend ke liye surprise party plan ki.,"Maine friend ke liye surprise party plan ki, dhoom machal rahi hai.",ASSERT_EXCITED,positive_eval,END,False,,surprise party,dhoom machal rahi hai,groq_augment_v2
+Society meeting is about to start.,"Society meeting is about to start, it's going to be khatarnak.",ASSERT_ANXIETY,intensifier,END,False,,society meeting,khatarnak,groq_augment_v2
+Usne ek naya phone kharida.,"Usne ek naya phone kharida, full-on bindaas.",ASSERT_SURPRISE,intensifier,END,False,,new phone,bindaas,groq_augment_v2
+Investor ki presentation bahut tedious lag rahi hai.,Investor ki presentation bahut tedious lag rahi hai yaar.,ASSERT_FRUSTRATION,filler,END,False,,startup pitch,yaar,groq_augment_v2
+Movie ka plot interesting tha.,Movie ka plot bindaas interesting tha.,ASSERT_EXCITED,positive_eval,MIDDLE,False,,movie review,bindaas,groq_augment_v2
+Street food ka taste ab bahut kharab hai,Street food ka taste ab bhi bahut kharab hai,ASSERT_SADNESS,filler,MIDDLE,False,,street food,bhi,groq_augment_v2
+Electricity bill bahut high hai,"Arre, Electricity bill bahut high hai",ASSERT_FRUSTRATION,discourse_marker,START,False,,electricity bill,Arre,groq_augment_v2
+"Bhai, chai aur samosa khane ka time aa gaya.","Bhai, chai aur samosa khane ka time aa gaya dude.",ASSERT_EXCITED,filler,END,False,,street food,dude,groq_augment_v2
+Yeh film ka plot bilkul predictable tha.,Bhoot! Yeh film ka plot bilkul predictable tha.,ASSERT_SURPRISE,discourse_marker,START,False,,movie review,Bhoot!,groq_augment_v2
+Maine abhi ek naya phone kharida.,"Maine abhi ek naya phone kharida, kya scene.",REQUEST_NEUTRAL,positive_eval,END,False,,new phone,kya scene,groq_augment_v2
+Aaj raat power cut ho gaya hai.,"Aaj raat power cut ho gaya hai, yaar.",REQUEST_URGENCY,urgency_marker,END,False,,power cut,yaar,groq_augment_v2
+Chai break pe milne ka mazaa aata hai,Chai break pe milne ka mazaa aata hai bindaas,ASSERT_EXCITED,intensifier,END,False,,chai break,bindaas,groq_augment_v2
+Unhone mere ghar mein bina bataye party rakh di.,"Kya bhoot, unhone bina bataye mere ghar mein party rakh di.",ASSERT_ANGER,negative_eval,MIDDLE,False,,surprise party,kya bhoot,groq_augment_v2
+Old friends meetup is getting delayed.,"Old friends meetup is getting delayed, kya drama.",ASSERT_FRUSTRATION,intensifier,END,False,,old friends meetup,kya drama,groq_augment_v2
+Team ko batting mein dhyaan dena chahiye.,"Team ko batting mein dhyaan dena chahiye, bro.",ASSERT_WARNING,urgency_marker,END,False,,cricket match,bro,groq_augment_v2
+Humara product investors ke liye bahut valuable hai.,Humara product bindaas investors ke liye bahut valuable hai.,ASSERT_EXCITED,positive_eval,MIDDLE,False,,startup pitch,bindaas,groq_augment_v2
+Aaj ki society meeting mein sab ne apne suggestions diye.,"Aaj ki society meeting mein sab ne apne suggestions diye, bro.",REQUEST_NEUTRAL,filler,END,False,,society meeting,bro,groq_augment_v2
+Delivery ka order abhi tak nahi aaya.,"Delivery ka order abhi tak nahi aaya, bhai!",ASSERT_NEGATIVE,urgency_marker,END,False,,food delivery late,bhai,groq_augment_v2
+"Bhai, meri bike kharab ho gayi.","Bhai, meri bike kharab ho gayi, yaar.",REQUEST_NEUTRAL,filler,END,False,,bike breakdown,yaar,groq_augment_v2
+Mujhe lagta hai humari relationship khatam ho gayi.,Mujhe lagta hai humari relationship breakup ka drama khatam ho gayi.,ASSERT_STRESS,descriptor,MIDDLE,False,,breakup,breakup ka drama,groq_augment_v2
+Mujhe lagta hai surprise party cancel ho sakti hai.,Mujhe lagta hai sparty cancel ho sakti hai.,ASSERT_WARNING,descriptor,MIDDLE,False,,surprise party,sparty,groq_augment_v2
+Match ka score dekh ke maza aaya.,"Match ka score dekh ke maza aaya, full on.",ASSERT_EXCITED,intensifier,END,False,,cricket match,full on,groq_augment_v2
+Placement season ke dauran kaafi pressure hai.,Placement season ke dauran kaafi zordar pressure hai.,ASSERT_HAPPY,intensifier,MIDDLE,False,,placement season,zordar,groq_augment_v2
+Main internship mein bahut nervous hoon.,"Main internship mein fitt hoon, bahut nervous.",ASSERT_FEAR,negative_eval,MIDDLE,False,,internship,fitt,groq_augment_v2
+Chalo match dekhte hain.,"Chalo match dekhte hain, boss.",REQUEST_NEUTRAL,filler,END,False,,cricket match,boss,groq_augment_v2
+Food delivery bahut der se aayi,Food delivery tune ne bahut der se aayi,ASSERT_STRESS,urgency_marker,MIDDLE,False,,food delivery late,tune ne,groq_augment_v2
+Baraat abhi aayi hai,Baraat abhi aayi hai yaar,REQUEST_NEUTRAL,discourse_marker,END,False,,wedding function,yaar,groq_augment_v2
+Film ka plot bahut hi kharab tha.,"Film ka plot bahut hi kharab tha, banda.",ASSERT_SADNESS,negative_eval,END,False,,movie review,banda,groq_augment_v2
+Lecture mein late hone se marks down ho sakte hain.,"Lecture mein late hona, marks down ho sakte hain, bro.",ASSERT_WARNING,urgency_marker,END,False,,college lecture,bro,groq_augment_v2
+Internship ka first week bahut stressful hai.,Internship ka first week bahut bhasad stressful hai.,ASSERT_ANXIETY,intensifier,MIDDLE,False,,internship,bhasad,groq_augment_v2
+Phone ka screen repair kaam kar raha hai.,"Phone ka screen repair kaam kar raha hai, dude.",ASSERT_POSITIVE,intensifier,END,False,,phone repair,dude,groq_augment_v2

@@ -1,0 +1,524 @@
+{
+  "romanized_text": "arav aur riy ek hi skul men padhate the aur pakke dost the. ek din skul men vijnana mele ki ghoshan hui. arav bahut utsahit hokar riy ke pas daudaa aur bol, riya, hamen is bar kuch jabaradasta banan hai. agar ham jit gae to pure skul men hamar nam hog. riy ne hansate hue kaha, bilkula, chal aj se hi shuru karate hain.\n\ndonon ne milakar ek chot robot banane k phaisal kiya. lekin kuch hi dinon men mushkilen ane lagin. ek sham robot k sarkit bara-bara jal jata tha. arav jhunjhal kara bol, yaha kam hi nahin kara rah. mainne itani mehanat ki aur sab bekar j rah hai. riy ne use shant karate hue kaha, itana pareshan mat ho, ham phir se koshish karenge.\n\nusi rat arav apani dadi ke pas gaya aur sari bat batai. dadi ghar ki sabase bujaurg sadasy thin. arav ne kaha, dadi, mujhe lagat hai main har jaung. dadi ne pyar se usak sir sahalay aur bolin, beta, dhairy rakho. mehanat kabhi bekar nahin jati. har asaphalat kuch sikhati hai. arav ko unaki bat se nai himmat mili.\n\nagale din vijnana mele men adhyapak sharm sabhi pariyojanaon ki janch kara rahe the. ve apani sakhati ke lie jane jate the. unhonne arav se puch, tumane yaha robot kaise banay aur isak asali upayog kya hai? arav ne shanti se har saval k uttar diya. adhyapak sharm ne sir hilakar kaha, tumhari mehanat sapha dikhai deti hai.\n\nparinam ki ghoshan hui aur arav tath riy ki tim pratham ai. riy khushi se chillai, hama jit gae! mujhe yakin hi nahin ho rah. arav ne hansate hue kaha, mainne kaha tha n, ham kamal kara denge. us sham donon doston ne apani jit k jashn manay aur dadi ko dhanyavad kaha jinaki baton ne unhen kabhi har nahin manane di.",
+  "event_chain": [
+    {
+      "scene_id": "scene_01",
+      "key_events": [
+        "Announcement of a science fair at the school",
+        "Arav excitedly runs to Riy and proposes to create an amazing project for the fair",
+        "Riy laughs and agrees to start the project immediately"
+      ],
+      "characters": [
+        "Arav",
+        "Riy"
+      ],
+      "scene_goal": "Arav and Riy decide to collaborate on a project for the upcoming science fair",
+      "location": "school",
+      "narrative_link": "Following the first scene, Arav now proposes a project to Riy",
+      "pronoun_map": {}
+    },
+    {
+      "scene_id": "scene_02",
+      "key_events": [
+        "Arav and Riy decide to build a small robot together",
+        "The robot repeatedly catches fire during testing",
+        "Riy calms them and promises to try again"
+      ],
+      "characters": [
+        "Arav",
+        "Riy"
+      ],
+      "scene_goal": "Shows the initial attempt at building the robot and the challenges faced, setting up future perseverance",
+      "location": "Their workshop or lab",
+      "narrative_link": "Following their decision to collaborate on a project for the upcoming science fair, Arav and Riy now attempt to build a robot but encounter setbacks",
+      "pronoun_map": {}
+    },
+    {
+      "scene_id": "scene_03",
+      "key_events": [
+        "Arav visits his grandmother and shares his feelings about his confidence in winning",
+        "Grandmother gives him advice and encouragement, telling him to be patient and that hard work never goes to waste",
+        "Arav gains new courage from his grandmother’s words"
+      ],
+      "characters": [
+        "Arav",
+        "Dadi"
+      ],
+      "scene_goal": "Arav receives encouragement and renewed confidence to persevere in his robot-building efforts",
+      "location": "Grandmother’s house",
+      "narrative_link": "Following the initial attempt at building the robot and the challenges faced, Arav now seeks guidance from his grandmother",
+      "pronoun_map": {}
+    },
+    {
+      "scene_id": "scene_04",
+      "key_events": [
+        "Adhyapak Sharm checks all projects at the science fair",
+        "He asks Arav how he built the robot and its real use",
+        "Arav calmly answers all questions",
+        "Sharm nods and praises Arav’s hard work"
+      ],
+      "characters": [
+        "Arav",
+        "Adhyapak Sharm"
+      ],
+      "scene_goal": "Reinforces Arav’s confidence and showcases his expertise",
+      "location": "Science fair venue",
+      "narrative_link": "Following the previous encouragement, Arav now confidently answers questions about his robot",
+      "pronoun_map": {}
+    },
+    {
+      "scene_id": "scene_05",
+      "key_events": [
+        "Announcement of the result and Arav and Riy’s team winning first place",
+        "Riy cheers, exclaiming that they have won",
+        "Arav laughs and affirms that they will perform excellently",
+        "That evening the two friends celebrate their victory and thank their grandmother"
+      ],
+      "characters": [
+        "Arav",
+        "Riy"
+      ],
+      "scene_goal": "Showcase the celebration of Arav and Riy’s victory and gratitude towards their grandmother",
+      "location": "Unspecified",
+      "narrative_link": "Following the reinforcement of Arav’s confidence and showcase of his expertise, Arav and Riy celebrate their victory",
+      "pronoun_map": {}
+    }
+  ],
+  "character_profiles": {
+    "Arav": {
+      "name": "Arav",
+      "age": null,
+      "social_role": "peer",
+      "slang_level": 5,
+      "relationship": {},
+      "current_emotion": "neutral",
+      "turn_count": 5,
+      "stress_index": 0.0
+    },
+    "Riy": {
+      "name": "Riy",
+      "age": null,
+      "social_role": "peer",
+      "slang_level": 5,
+      "relationship": {},
+      "current_emotion": "neutral",
+      "turn_count": 3,
+      "stress_index": 0.0
+    },
+    "Dadi": {
+      "name": "Dadi",
+      "age": null,
+      "social_role": "elder",
+      "slang_level": 0,
+      "relationship": {},
+      "current_emotion": "neutral",
+      "turn_count": 1,
+      "stress_index": 0.0
+    },
+    "Adhyapak Sharm": {
+      "name": "Adhyapak Sharm",
+      "age": null,
+      "social_role": "authority",
+      "slang_level": 0,
+      "relationship": {},
+      "current_emotion": "neutral",
+      "turn_count": 1,
+      "stress_index": 0.0
+    }
+  },
+  "neutral_script": [
+    {
+      "scene_id": "scene_01",
+      "dialogue": "Arav: School mein science fair aane wala hai, aur main soch raha hoon ki hum ek zabardast project banayein.  \nRiy: Hahaha, sahi hai! Main turant shuru karne ke liye ready hoon.  \nArav: Great, chalo abhi se plan banate hain.",
+      "events": {
+        "scene_id": "scene_01",
+        "key_events": [
+          "Announcement of a science fair at the school",
+          "Arav excitedly runs to Riy and proposes to create an amazing project for the fair",
+          "Riy laughs and agrees to start the project immediately"
+        ],
+        "characters": [
+          "Arav",
+          "Riy"
+        ],
+        "scene_goal": "Arav and Riy decide to collaborate on a project for the upcoming science fair",
+        "location": "school",
+        "narrative_link": "Following the first scene, Arav now proposes a project to Riy",
+        "pronoun_map": {}
+      }
+    },
+    {
+      "scene_id": "scene_02",
+      "dialogue": "Arav: [generation failed after 3 attempts]",
+      "events": {
+        "scene_id": "scene_02",
+        "key_events": [
+          "Arav and Riy decide to build a small robot together",
+          "The robot repeatedly catches fire during testing",
+          "Riy calms them and promises to try again"
+        ],
+        "characters": [
+          "Arav",
+          "Riy"
+        ],
+        "scene_goal": "Shows the initial attempt at building the robot and the challenges faced, setting up future perseverance",
+        "location": "Their workshop or lab",
+        "narrative_link": "Following their decision to collaborate on a project for the upcoming science fair, Arav and Riy now attempt to build a robot but encounter setbacks",
+        "pronoun_map": {}
+      }
+    },
+    {
+      "scene_id": "scene_03",
+      "dialogue": "Arav: [generation failed after 3 attempts]",
+      "events": {
+        "scene_id": "scene_03",
+        "key_events": [
+          "Arav visits his grandmother and shares his feelings about his confidence in winning",
+          "Grandmother gives him advice and encouragement, telling him to be patient and that hard work never goes to waste",
+          "Arav gains new courage from his grandmother’s words"
+        ],
+        "characters": [
+          "Arav",
+          "Dadi"
+        ],
+        "scene_goal": "Arav receives encouragement and renewed confidence to persevere in his robot-building efforts",
+        "location": "Grandmother’s house",
+        "narrative_link": "Following the initial attempt at building the robot and the challenges faced, Arav now seeks guidance from his grandmother",
+        "pronoun_map": {}
+      }
+    },
+    {
+      "scene_id": "scene_04",
+      "dialogue": "Arav: [generation failed after 3 attempts]",
+      "events": {
+        "scene_id": "scene_04",
+        "key_events": [
+          "Adhyapak Sharm checks all projects at the science fair",
+          "He asks Arav how he built the robot and its real use",
+          "Arav calmly answers all questions",
+          "Sharm nods and praises Arav’s hard work"
+        ],
+        "characters": [
+          "Arav",
+          "Adhyapak Sharm"
+        ],
+        "scene_goal": "Reinforces Arav’s confidence and showcases his expertise",
+        "location": "Science fair venue",
+        "narrative_link": "Following the previous encouragement, Arav now confidently answers questions about his robot",
+        "pronoun_map": {}
+      }
+    },
+    {
+      "scene_id": "scene_05",
+      "dialogue": "Arav: [generation failed after 3 attempts]",
+      "events": {
+        "scene_id": "scene_05",
+        "key_events": [
+          "Announcement of the result and Arav and Riy’s team winning first place",
+          "Riy cheers, exclaiming that they have won",
+          "Arav laughs and affirms that they will perform excellently",
+          "That evening the two friends celebrate their victory and thank their grandmother"
+        ],
+        "characters": [
+          "Arav",
+          "Riy"
+        ],
+        "scene_goal": "Showcase the celebration of Arav and Riy’s victory and gratitude towards their grandmother",
+        "location": "Unspecified",
+        "narrative_link": "Following the reinforcement of Arav’s confidence and showcase of his expertise, Arav and Riy celebrate their victory",
+        "pronoun_map": {}
+      }
+    }
+  ],
+  "slang_script": [
+    {
+      "scene_id": "scene_01",
+      "dialogue": "Arav: School mein science fair aane wala hai, aur main soch raha hoon ki hum ek zabardast project banayein.\nRiy: Hahaha, sahi hai! Arre, main turant shuru karne ke liye ready hoon.\nArav: Great, chalo abhi se plan banate hain.",
+      "decisions": [
+        {
+          "speaker": "Arav",
+          "applied": false,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "CASUAL_ASSERTION",
+          "reason": "All gates passed",
+          "editor_note": "kept neutral (gate:appended-or-inserted-slang)",
+          "editor_rejects": [
+            {
+              "why": "gate:appended-or-inserted-slang",
+              "text": "School mein science fair aane wala hai, aur main soch raha hoon ki hum ek zabardast project banayein, ekdum kadak."
+            }
+          ]
+        },
+        {
+          "speaker": "Riy",
+          "applied": true,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "CASUAL_ASSERTION",
+          "reason": "All gates passed",
+          "edited_clause": "Main turant shuru karne ke liye ready hoon.",
+          "engine": "qwen-lora",
+          "slang": "arre",
+          "slang_tokens_added": 1
+        },
+        {
+          "speaker": "Arav",
+          "applied": false,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "CASUAL_ASSERTION",
+          "reason": "All gates passed",
+          "editor_note": "kept neutral (gate:appended-or-inserted-slang)",
+          "editor_rejects": [
+            {
+              "why": "gate:appended-or-inserted-slang",
+              "text": "Great, chalo abhi se plan sorted banate hain."
+            }
+          ]
+        }
+      ],
+      "events": {
+        "scene_id": "scene_01",
+        "key_events": [
+          "Announcement of a science fair at the school",
+          "Arav excitedly runs to Riy and proposes to create an amazing project for the fair",
+          "Riy laughs and agrees to start the project immediately"
+        ],
+        "characters": [
+          "Arav",
+          "Riy"
+        ],
+        "scene_goal": "Arav and Riy decide to collaborate on a project for the upcoming science fair",
+        "location": "school",
+        "narrative_link": "Following the first scene, Arav now proposes a project to Riy",
+        "pronoun_map": {}
+      }
+    },
+    {
+      "scene_id": "scene_02",
+      "dialogue": "Arav: [generation failed after 3 attempts]",
+      "decisions": [
+        {
+          "speaker": "Arav",
+          "applied": false,
+          "go": false,
+          "gate_stopped": null,
+          "intent": null,
+          "reason": "skipped: upstream Pass-1 generation failed"
+        }
+      ],
+      "events": {
+        "scene_id": "scene_02",
+        "key_events": [
+          "Arav and Riy decide to build a small robot together",
+          "The robot repeatedly catches fire during testing",
+          "Riy calms them and promises to try again"
+        ],
+        "characters": [
+          "Arav",
+          "Riy"
+        ],
+        "scene_goal": "Shows the initial attempt at building the robot and the challenges faced, setting up future perseverance",
+        "location": "Their workshop or lab",
+        "narrative_link": "Following their decision to collaborate on a project for the upcoming science fair, Arav and Riy now attempt to build a robot but encounter setbacks",
+        "pronoun_map": {}
+      }
+    },
+    {
+      "scene_id": "scene_03",
+      "dialogue": "Arav: [generation failed after 3 attempts]",
+      "decisions": [
+        {
+          "speaker": "Arav",
+          "applied": false,
+          "go": false,
+          "gate_stopped": null,
+          "intent": null,
+          "reason": "skipped: upstream Pass-1 generation failed"
+        }
+      ],
+      "events": {
+        "scene_id": "scene_03",
+        "key_events": [
+          "Arav visits his grandmother and shares his feelings about his confidence in winning",
+          "Grandmother gives him advice and encouragement, telling him to be patient and that hard work never goes to waste",
+          "Arav gains new courage from his grandmother’s words"
+        ],
+        "characters": [
+          "Arav",
+          "Dadi"
+        ],
+        "scene_goal": "Arav receives encouragement and renewed confidence to persevere in his robot-building efforts",
+        "location": "Grandmother’s house",
+        "narrative_link": "Following the initial attempt at building the robot and the challenges faced, Arav now seeks guidance from his grandmother",
+        "pronoun_map": {}
+      }
+    },
+    {
+      "scene_id": "scene_04",
+      "dialogue": "Arav: [generation failed after 3 attempts]",
+      "decisions": [
+        {
+          "speaker": "Arav",
+          "applied": false,
+          "go": false,
+          "gate_stopped": null,
+          "intent": null,
+          "reason": "skipped: upstream Pass-1 generation failed"
+        }
+      ],
+      "events": {
+        "scene_id": "scene_04",
+        "key_events": [
+          "Adhyapak Sharm checks all projects at the science fair",
+          "He asks Arav how he built the robot and its real use",
+          "Arav calmly answers all questions",
+          "Sharm nods and praises Arav’s hard work"
+        ],
+        "characters": [
+          "Arav",
+          "Adhyapak Sharm"
+        ],
+        "scene_goal": "Reinforces Arav’s confidence and showcases his expertise",
+        "location": "Science fair venue",
+        "narrative_link": "Following the previous encouragement, Arav now confidently answers questions about his robot",
+        "pronoun_map": {}
+      }
+    },
+    {
+      "scene_id": "scene_05",
+      "dialogue": "Arav: [generation failed after 3 attempts]",
+      "decisions": [
+        {
+          "speaker": "Arav",
+          "applied": false,
+          "go": false,
+          "gate_stopped": null,
+          "intent": null,
+          "reason": "skipped: upstream Pass-1 generation failed"
+        }
+      ],
+      "events": {
+        "scene_id": "scene_05",
+        "key_events": [
+          "Announcement of the result and Arav and Riy’s team winning first place",
+          "Riy cheers, exclaiming that they have won",
+          "Arav laughs and affirms that they will perform excellently",
+          "That evening the two friends celebrate their victory and thank their grandmother"
+        ],
+        "characters": [
+          "Arav",
+          "Riy"
+        ],
+        "scene_goal": "Showcase the celebration of Arav and Riy’s victory and gratitude towards their grandmother",
+        "location": "Unspecified",
+        "narrative_link": "Following the reinforcement of Arav’s confidence and showcase of his expertise, Arav and Riy celebrate their victory",
+        "pronoun_map": {}
+      }
+    }
+  ],
+  "comparison": [
+    {
+      "scene_id": "scene_01",
+      "location": "school",
+      "lines": [
+        {
+          "speaker": "ARAV",
+          "neutral": "School mein science fair aane wala hai, aur main soch raha hoon ki hum ek zabardast project banayein.",
+          "slang": "School mein science fair aane wala hai, aur main soch raha hoon ki hum ek zabardast project banayein.",
+          "slang_added": null,
+          "slang_applied": false,
+          "intent": "CASUAL_ASSERTION",
+          "gate_stopped": null,
+          "changed": false
+        },
+        {
+          "speaker": "RIY",
+          "neutral": "Hahaha, sahi hai! Main turant shuru karne ke liye ready hoon.",
+          "slang": "Hahaha, sahi hai! Arre, main turant shuru karne ke liye ready hoon.",
+          "slang_added": "arre",
+          "slang_applied": true,
+          "intent": "CASUAL_ASSERTION",
+          "gate_stopped": null,
+          "changed": true
+        },
+        {
+          "speaker": "ARAV",
+          "neutral": "Great, chalo abhi se plan banate hain.",
+          "slang": "Great, chalo abhi se plan banate hain.",
+          "slang_added": null,
+          "slang_applied": false,
+          "intent": "CASUAL_ASSERTION",
+          "gate_stopped": null,
+          "changed": false
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_02",
+      "location": "Their workshop or lab",
+      "lines": [
+        {
+          "speaker": "ARAV",
+          "neutral": "[generation failed after 3 attempts]",
+          "slang": "[generation failed after 3 attempts]",
+          "slang_added": null,
+          "slang_applied": false,
+          "intent": null,
+          "gate_stopped": null,
+          "changed": false
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_03",
+      "location": "Grandmother’s house",
+      "lines": [
+        {
+          "speaker": "ARAV",
+          "neutral": "[generation failed after 3 attempts]",
+          "slang": "[generation failed after 3 attempts]",
+          "slang_added": null,
+          "slang_applied": false,
+          "intent": null,
+          "gate_stopped": null,
+          "changed": false
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_04",
+      "location": "Science fair venue",
+      "lines": [
+        {
+          "speaker": "ARAV",
+          "neutral": "[generation failed after 3 attempts]",
+          "slang": "[generation failed after 3 attempts]",
+          "slang_added": null,
+          "slang_applied": false,
+          "intent": null,
+          "gate_stopped": null,
+          "changed": false
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_05",
+      "location": "Unspecified",
+      "lines": [
+        {
+          "speaker": "ARAV",
+          "neutral": "[generation failed after 3 attempts]",
+          "slang": "[generation failed after 3 attempts]",
+          "slang_added": null,
+          "slang_applied": false,
+          "intent": null,
+          "gate_stopped": null,
+          "changed": false
+        }
+      ]
+    }
+  ],
+  "final_script": "# HINGLISH SCREENPLAY\n\n## SCENE_01\n*Location: school*\n\nArav: School mein science fair aane wala hai, aur main soch raha hoon ki hum ek zabardast project banayein.\nRiy: Hahaha, sahi hai! Arre, main turant shuru karne ke liye ready hoon.\nArav: Great, chalo abhi se plan banate hain.\n\n---\n\n## SCENE_02\n*Location: Their workshop or lab*\n\nArav: [generation failed after 3 attempts]\n\n---\n\n## SCENE_03\n*Location: Grandmother’s house*\n\nArav: [generation failed after 3 attempts]\n\n---\n\n## SCENE_04\n*Location: Science fair venue*\n\nArav: [generation failed after 3 attempts]\n\n---\n\n## SCENE_05\n*Location: Unspecified*\n\nArav: [generation failed after 3 attempts]\n\n---\n"
+}

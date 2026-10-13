@@ -1,0 +1,156 @@
+_judge,_reason,control,neutral,output,slang
+null,judge,ASSERT_ANXIETY,Gana bahut loudly baj raha hai,"Gana bahut loudly baj raha hai, dhoka nahi lagta",Dhoka
+null,judge,ASSERT_HAPPY,Mujhe yeh movie pasand aayi,Mujhe yeh movie Khatarnak pasand aayi,Khatarnak
+null,judge,ASSERT_SADNESS,Subah jaldi uthna pada,"Subah jaldi uthna pada, FOMO ki wajah se",FOMO
+"{""is_hinglish"": true, ""grammatical"": false, ""meaning_preserved"": true, ""intent_match"": false, ""is_real_slang"": false}",judge,ASSERT_HAPPY,Main tumhari help kar dunga,"Main tumhari help kar dunga, Bawal",Bawal
+"{""is_hinglish"": true, ""grammatical"": true, ""meaning_preserved"": true, ""intent_match"": true, ""is_real_slang"": false}",judge,ASSERT_WARNING,Form sahi rakho warna injury hogi.,"Form sahi rakho, warna e-lafda injury hogi.",e-lafda
+"{""is_hinglish"": true, ""grammatical"": true, ""meaning_preserved"": true, ""intent_match"": true, ""is_real_slang"": false}",judge,ASSERT_NEUTRAL,Kya tum mere saath market chaloge?,"Kya tum mere saath market chaloge, baap?",baap
+"{""is_hinglish"": true, ""grammatical"": true, ""meaning_preserved"": true, ""intent_match"": true, ""is_real_slang"": false}",judge,REQUEST_URGENCY,Notes share kar do.,Notes jaldi share kar do.,Jaldi
+"{""is_hinglish"": false, ""grammatical"": false, ""meaning_preserved"": true, ""intent_match"": true, ""is_real_slang"": false}",judge,ASSERT_WARNING,"Kal ka interview bahut tough hai, time pe pahunchna mat bhoolna.","Kal ka interview bahut tough hai, Full-throttle time pe pahunchna mat bhoolna.",Full-throttle
+"{""is_hinglish"": true, ""grammatical"": true, ""meaning_preserved"": true, ""intent_match"": true, ""is_real_slang"": false}",judge,ASSERT_HAPPY,Coffee bahut strong hai,Coffee bahut chaka-chak strong hai,chaka-chak
+null,judge,ASSERT_HAPPY,Dost ki gaadi mein ghoomne jayenge.,Dost ki gaadi mein dil khush ho ke ghoomne jayenge.,dil khush
+null,judge,ASSERT_SADNESS,Gana bahut loudly baj raha hai,"Gana bahut loudly baj raha hai, FOMO mat hone do",FOMO
+null,judge,ASSERT_ANXIETY,Kuch samajh nahi aa raha,"Kuch samajh nahi aa raha, Sannata.",Sannata
+"{""is_hinglish"": true, ""grammatical"": true, ""meaning_preserved"": true, ""intent_match"": true, ""is_real_slang"": false}",judge,ASSERT_EXCITED,Yeh gaana bahut achha hai,Yeh gaana bahut superb hai,superb
+null,judge,ASSERT_ANXIETY,Traffic ki wajah se main bahut late hoon.,Traffic ki wajah se main bahut Dhoka ho gaya.,Dhoka
+null,judge,ASSERT_ANXIETY,Project deadline pass aa rahi hai,"Project deadline pass aa rahi hai, dimag kharab mat karna",dimag kharab
+null,judge,ASSERT_EXCITED,Mujhe yeh movie pasand aayi,Mujhe yeh movie bhadiya pasand aayi,bhadiya
+,duplicate,REQUEST_NEUTRAL,Mujhe naya phone lena hai,"Mujhe naya phone lena hai, Kya scene hai?",Kya scene hai
+null,judge,ASSERT_NEUTRAL,Nayi web series start ki,Nayi web series start ki baap,baap
+null,judge,ASSERT_NEGATIVE,Wo hamesha show off karta hai.,Wo hamesha talli show off karta hai.,talli
+,slang_absent,ASSERT_ANXIETY,System crash ho gaya,"System crash ho gaya, bhai, totally fatti padi hai",fatti padi hai
+null,judge,REQUEST_FRUSTRATION,"Mujhe online gaming karni hai, lekin server bahut slow hai.","Oye, mujhe online gaming karni hai, lekin server bahut slow hai.",Oye
+"{""is_hinglish"": true, ""grammatical"": false, ""meaning_preserved"": false, ""intent_match"": false, ""is_real_slang"": false}",judge,REQUEST_NEUTRAL,Mujhe aaj ki college lecture bahut boring lag rahi hai.,Mujhe aaj ki college lecture song bahut boring lag rahi hai.,song
+"{""is_hinglish"": true, ""grammatical"": true, ""meaning_preserved"": true, ""intent_match"": true, ""is_real_slang"": false}",judge,ASSERT_FRUSTRATION,Internet ki speed slow hai,"Internet ki speed slow hai, Dabba.",Dabba
+"{""is_hinglish"": true, ""grammatical"": false, ""meaning_preserved"": true, ""intent_match"": true, ""is_real_slang"": false}",judge,ASSERT_FRUSTRATION,Traffic jam bahut lamba tha,Traffic jam pak bahut lamba tha,pak
+"{""is_hinglish"": false, ""grammatical"": false, ""meaning_preserved"": false, ""intent_match"": false, ""is_real_slang"": false}",judge,ASSERT_NEUTRAL,Main dhyan nahi de raha tha.,"Main dhyan nahi de raha tha, mirchi.",mirchi
+null,judge,ASSERT_FRUSTRATION,System crash ho gaya,"System crash ho gaya, raita faila diya.",raita faila diya
+null,judge,ASSERT_POSITIVE,Aaj weather kaafi pleasant hai,Aaj weather kaafi Tezz-tarrar pleasant hai,Tezz-tarrar
+null,judge,ASSERT_SADNESS,Stock khatam ho gaya.,"Stock khatam ho gaya, scenes",Scenes
+"{""is_hinglish"": true, ""grammatical"": false, ""meaning_preserved"": false, ""intent_match"": false, ""is_real_slang"": false}",judge,ASSERT_FRUSTRATION,Exams paas aa rahe hain,"Exams paas aa rahe hain, loot machi hai.",Loot machi hai
+"{""is_hinglish"": true, ""grammatical"": false, ""meaning_preserved"": false, ""intent_match"": false, ""is_real_slang"": false}",judge,REQUEST_NEUTRAL,Weekend ka plan kya hai,"Weekend ka plan kya hai, palti maar?",Palti maar
+null,judge,ASSERT_NEGATIVE,Yeh khana bilkul swadisht nahi hai.,"Yeh khana bilkul swadisht nahi hai, chep diya.",Chep diya
+null,judge,ASSERT_FRUSTRATION,Coding mein error aa raha hai.,"Coding mein error aa raha hai, chuna laga diya.",Chuna laga diya
+"{""is_hinglish"": true, ""grammatical"": true, ""meaning_preserved"": false, ""intent_match"": false, ""is_real_slang"": false}",judge,ASSERT_NEGATIVE,Hostel ka WiFi bahut slow hai.,"Afwah, hostel ka WiFi bahut slow hai.",Afwah
+null,judge,ASSERT_NEGATIVE,Yeh toh asambhav hai.,Yeh toh asambhav hi pakaayega.,pakaayega
+null,judge,ASSERT_NEGATIVE,Usne mujhse jhooth bol kar paise liye.,"Usne mujhse jhooth bol kar paise liye, chhapri.",chhapri
+"{""is_hinglish"": true, ""grammatical"": false, ""meaning_preserved"": true, ""intent_match"": true, ""is_real_slang"": false}",judge,ASSERT_HAPPY,Match ka result achha tha,"Match ka result achha tha, note chhapna.",Note chhapna
+"{""is_hinglish"": false, ""grammatical"": false, ""meaning_preserved"": true, ""intent_match"": true, ""is_real_slang"": false}",judge,ASSERT_ANXIETY,Salary abhi tak nahi aayi.,"Salary abhi tak nahi aayi, Sui?",Sui
+,duplicate,ASSERT_FRUSTRATION,Phone ka storage almost full ho gaya,"Phone ka storage almost full ho gaya, kalesh",kalesh
+null,judge,ASSERT_SADNESS,Manager gusse mein tha,"Manager gusse mein tha, pet me chuhe",pet me chuhe
+"{""is_hinglish"": true, ""grammatical"": true, ""meaning_preserved"": true, ""intent_match"": true, ""is_real_slang"": false}",judge,ASSERT_HAPPY,Usne match mein aakhri ball par six maara.,"Usne match mein aakhri ball par six maara, badiya!",badiya
+null,judge,REQUEST_NEUTRAL,"Mujhe internship mil gayi hai, ab thoda kaam karna hai.","Mujhe Fattu internship mil gayi hai, ab thoda kaam karna hai.",Fattu
+,duplicate,INFO_STATEMENT,Nayi web series start ki,"Nayi web series start ki, bro",bro
+"{""is_hinglish"": true, ""grammatical"": true, ""meaning_preserved"": false, ""intent_match"": false, ""is_real_slang"": true}",judge,REQUEST_NEUTRAL,Proxy laga dena meri.,"Proxy laga dena meri, kya scene hai?",kya scene hai
+"{""is_hinglish"": true, ""grammatical"": true, ""meaning_preserved"": false, ""intent_match"": false, ""is_real_slang"": false}",judge,ASSERT_HAPPY,Party mein maza aayega.,Party mein maza zeher ki tarah aayega.,zeher
+"{""is_hinglish"": false, ""grammatical"": false, ""meaning_preserved"": false, ""intent_match"": false, ""is_real_slang"": false}",judge,ASSERT_FRUSTRATION,Aaj ka din bahut lamba tha,Aaj ka din bahut Raudra lamba tha,Raudra
+"{""is_hinglish"": true, ""grammatical"": false, ""meaning_preserved"": true, ""intent_match"": true, ""is_real_slang"": false}",judge,ASSERT_POSITIVE,Mujhe internship mil gayi.,"Mujhe internship mil gayi, halwa!",Halwa
+null,judge,REQUEST_NEUTRAL,"Mera placement season aaya hai, tension kam karna zaroori hai.","Mera placement season chalo aaya hai, tension kam karna zaroori hai.",chalo
+"{""is_hinglish"": false, ""grammatical"": false, ""meaning_preserved"": false, ""intent_match"": false, ""is_real_slang"": false}",judge,ASSERT_NEUTRAL,Mujhe bhookh lag rahi hai.,Mujhe seedha bhookh lag rahi hai.,seedha
+null,judge,ASSERT_NEGATIVE,Woh hamesha apne aap ko smart samajhta hai.,"Woh hamesha apne aap ko smart samajhta hai, rigged jaise lagta hai.",Rigged
+,duplicate,INFO_STATEMENT,Weekend ka plan kya hai,"Weekend ka plan kya hai, bro?",bro
+null,judge,ASSERT_STRESS,Office mein bahut kaam hai,"Office mein bahut kaam hai, Watt lag gayi.",Watt lag gayi
+,duplicate,ASSERT_POSITIVE,Yeh naya mobile bahut fast chalta hai.,Yeh naya mobile kaam ka bahut fast chalta hai.,kaam ka
+null,judge,ASSERT_POSITIVE,Movie ka script structure achha tha.,"Movie ka script structure achha tha, Bawa.",Bawa
+"{""is_hinglish"": true, ""grammatical"": true, ""meaning_preserved"": false, ""intent_match"": false, ""is_real_slang"": false}",judge,ASSERT_ANXIETY,Assignment bahut lamba hai,"Assignment bahut lamba hai, kharaab.",kharaab
+"{""is_hinglish"": true, ""grammatical"": false, ""meaning_preserved"": false, ""intent_match"": false, ""is_real_slang"": false}",judge,ASSERT_STRESS,Office mein bahut kaam hai,"Office mein bahut kaam hai, duvidha.",Duvidha
+"{""is_hinglish"": true, ""grammatical"": true, ""meaning_preserved"": true, ""intent_match"": true, ""is_real_slng"": false}",judge,INFO_STATEMENT,"Kal ki office meeting bahut important thi, sab ko ready rehna chahiye.","Kal ki office meeting guru bahut important thi, sab ko ready rehna chahiye.",guru
+null,judge,ASSERT_SADNESS,Yeh garma garam chaat ka taste aaj bahut bekar lag raha hai.,Yeh garma garam chaat ka taste aaj Kangaal bahut bekar lag raha hai.,Kangaal
+"{""is_hinglish"": true, ""grammatical"": false, ""meaning_preserved"": false, ""intent_match"": false, ""is_real_slang"": false}",judge,ASSERT_STRESS,Syllabus bahut zyada hai.,Syllabus Bumper-to-bumper bahut zyada hai.,Bumper-to-bumper
+"{""is_hinglish"": false, ""grammatical"": false, ""meaning_preserved"": false, ""intent_match"": false, ""is_real_slang"": false}",judge,ASSERT_ANXIETY,Market mein bahut bheed thi,"Market mein bahut bheed thi, fatti padi hai",fatti padi hai
+null,judge,ASSERT_POSITIVE,Usne situation kaafi maturely handle ki,"Usne situation kaafi maturely handle ki, phaad diya.",phaad diya
+"{""is_hinglish"": true, ""grammatical"": false, ""meaning_preserved"": false, ""intent_match"": false, ""is_real_slang"": false}",judge,ASSERT_POSITIVE,Sara shehar mujhe lion ke naam se janta hai.,Sara shehar mujhe lion ke naam se phaar diya janta hai.,phaar diya
+"{""is_hinglish"": true, ""grammatical"": false, ""meaning_preserved"": true, ""intent_match"": true, ""is_real_slang"": false}",judge,ASSERT_ANXIETY,Body mein pain ho raha hai,"Body mein pain ho raha hai, Sui.",Sui
+"{""is_hinglish"": true, ""grammatical"": false, ""meaning_preserved"": true, ""intent_match"": false, ""is_real_slang"": false}",judge,ASSERT_EXCITED,Pizza bahut tasty tha,"Pizza bahut tasty tha, lallantop!",lallantop
+,duplicate,ASSERT_HAPPY,Pizza bahut tasty tha,"Pizza bahut tasty tha, Velle.",Velle
+null,judge,ASSERT_HAPPY,Kal meri chhutti hai,"Kal meri chhutti hai, bilkul paisa vasool.",paisa vasool
+"{""is_hinglish"": true, ""grammatical"": true, ""meaning_preserved"": true, ""intent_match"": true, ""is_real_slang"": false}",judge,REQUEST_URGENCY,"Mujhe abhi surprise party plan karni hai, time kam hai.","Mujhe abhi jaldi surprise party plan karni hai, time kam hai.",jaldi
+"{""is_hinglish"": true, ""grammatical"": false, ""meaning_preserved"": true, ""intent_match"": true, ""is_real_slang"": false}",judge,ASSERT_POSITIVE,Class cancel ho gayi,"Class cancel ho gayi, chaka-chak",Chaka-chak
+"{""is_hinglish"": true, ""grammatical"": false, ""meaning_preserved"": false, ""intent_match"": true, ""is_real_slang"": false}",judge,ASSERT_NEGATIVE,Presentation save karna bhool gaya.,"Presentation save karna bhool gaya, pocket dhili",pocket dhili
+,duplicate,INFO_STATEMENT,Kripya shanti banaye rakhein,"Kripya shanti banaye rakhein, theek hai",theek hai
+null,judge,ASSERT_NEUTRAL,Baarish shuru ho gayi,"Baarish shuru ho gayi, yahi scene hai.",yahi scene hai
+"{""is_hinglish"": true, ""grammatical"": true, ""meaning_preserved"": true, ""intent_match"": false, ""is_real_slang"": true}",judge,ASSERT_FRUSTRATION,Garmi bahut zyada hai aaj,"Garmi bahut zyada hai aaj, Gajab scene hai!",Gajab scene hai
+"{""is_hinglish"": true, ""grammatical"": true, ""meaning_preserved"": false, ""intent_match"": false, ""is_real_slang"": true}",judge,ASSERT_HAPPY,Match ka result achha tha,"Match ka result achha tha, kya bawal!",kya bawal
+"{""is_hinglish"": false, ""grammatical"": false, ""meaning_preserved"": false, ""intent_match"": false, ""is_real_slang"": false}",judge,ASSERT_NEGATIVE,Mujhse yeh kaam nahi hoga.,"Mujhse yeh kaam nahi hoga, Danda",Danda
+"{""is_hinglish"": false, ""grammatical"": true, ""meaning_preserved"": true, ""intent_match"": true, ""is_real_slang"": false}",judge,ASSERT_NEUTRAL,Khana thik thak bana tha.,Khana seedha thik thak bana tha.,seedha
+"{""is_hinglish"": true, ""grammatical"": false, ""meaning_preserved"": true, ""intent_match"": true, ""is_real_slang"": false}",judge,ASSERT_POSITIVE,Mera task complete ho gaya hai.,"Mera task complete ho gaya hai, Ruff-tuff.",Ruff-tuff
+null,judge,ASSERT_POSITIVE,Gym jana shuru kiya hai,Gym jana bindaas shuru kiya hai,bindaas
+"{""is_hinglish"": true, ""grammatical"": true, ""meaning_preserved"": true, ""intent_match"": true, ""is_real_slang"": false}",judge,ASSERT_HAPPY,Class cancel ho gayi aaj ki.,"Class cancel ho gayi aaj ki, mauj se.",Mauj
+null,judge,ASSERT_POSITIVE,Maine naya phone order kiya.,"Scene set, maine naya phone order kiya.",Scene set
+null,judge,ASSERT_NEGATIVE,Woh hamesha naye kapde pehenta hai.,Woh hamesha off naye kapde pehenta hai,off
+null,judge,ASSERT_NEGATIVE,Chai thandi ho gayi hai,Chai thandi ho gayi hai bawa,bawa
+null,judge,ASSERT_NEGATIVE,Traffic jam bahut lamba tha,"Traffic jam bahut lamba tha, Scam level ka.",Scam
+"{""is_hinglish"": true, ""grammatical"": false, ""meaning_preserved"": false, ""intent_match"": false, ""is_real_slang"": false}",judge,ASSERT_POSITIVE,"Mera college lecture bahut interesting tha, sab ne dhyan se suna.","Mera college lecture bahut interesting Bass tha, sab ne dhyan se suna.",Bass
+"{""is_hinglish"": true, ""grammatical"": false, ""meaning_preserved"": true, ""intent_match"": true, ""is_real_slang"": false}",judge,ASSERT_FRUSTRATION,Assignment bahut lamba hai,"Assignment bahut lamba hai, chuna laga diya.",Chuna laga diya
+null,judge,ASSERT_SADNESS,Market mein bahut bheed thi,"Market mein bahut bheed thi, senti mat kar.",senti mat kar
+"{""is_hinglish"": false, ""grammatical"": false, ""meaning_preserved"": true, ""intent_match"": true, ""is_real_slang"": false}",judge,ASSERT_POSITIVE,Match ka result achha tha,"Match ka result achha tha, Done-dana-don.",Done-dana-don
+null,judge,ASSERT_POSITIVE,"Meri chai break bahut relaxing hai, sab stress door ho jata hai","Meri chai break Dhuaan bahut relaxing hai, sab stress door ho jata hai",Dhuaan
+"{""is_hinglish"": true, ""grammatical"": false, ""meaning_preserved"": false, ""intent_match"": true, ""is_real_slang"": false}",judge,ASSERT_NEGATIVE,Usne exam mein cheating ki thi.,Usne exam mein Patti padhana ki cheating ki thi.,Patti padhana
+null,judge,ASSERT_STRESS,Subah jaldi uthna pada,"Subah jaldi uthna pada, waat lagi padi hai",waat lagi padi hai
+"{""is_hinglish"": false, ""grammatical"": false, ""meaning_preserved"": false, ""intent_match"": false, ""is_real_slang"": false}",judge,ASSERT_WARNING,"Yeh group project deadline pass ho jayegi, sabko dhyan se karna chahiye.","Yeh group project deadline Phut le pass ho jayegi, sabko dhyan se karna chahiye.",Phut le
+null,judge,REQUEST_URGENCY,Main bas nikal hi raha hoon.,Main bas bhag nikal hi raha hoon.,bhag
+"{""is_hinglish"": true, ""grammatical"": false, ""meaning_preserved"": false, ""intent_match"": false, ""is_real_slang"": false}",judge,ASSERT_WARNING,Mujhe lagta hai exam ke results thik nahi honge.,Mujhe lagta hai exam ke results Ratta thik nahi honge.,Ratta
+"{""is_hinglish"": false, ""grammatical"": false, ""meaning_preserved"": false, ""intent_match"": false, ""is_real_slang"": false}",judge,ASSERT_POSITIVE,Kal meri chhutti hai,"Kal meri chhutti hai, chhapna!",Chhapna
+"{""is_hinglish"": true, ""grammatical"": true, ""meaning_preserved"": false, ""intent_match"": false, ""is_real_slang"": false}",judge,ASSERT_NEUTRAL,"Nahin, bas ghar pe hi relax karna hai.","Nahin, bas Chhotu ghar pe hi relax karna hai.",Chhotu
+"{""is_hinglish"": true, ""grammatical"": false, ""meaning_preserved"": false, ""intent_match"": false, ""is_real_slang"": false}",judge,ASSERT_POSITIVE,Lecture ka content kaafi useful tha,Lecture ka content kaafi loot useful tha,Loot
+null,judge,EXPRESS_STRESS,"Thappar se darr nahi lagta sahab, pyar se lagta hai.","Thappar se darr nahi lagta sahab, kya bakwaas hai, pyar se lagta hai.",kya bakwaas hai
+"{""is_hinglish"": true, ""grammatical"": false, ""meaning_preserved"": false, ""intent_match"": false, ""is_real_slang"": false}",judge,ASSERT_ANXIETY,Exams paas aa rahe hain,"Exams paas aa rahe hain, dhoka nahi.",Dhoka
+"{""is_hinglish"": true, ""grammatical"": true, ""meaning_preserved"": true, ""intent_match"": true, ""is_real_slang"": false}",judge,ASSERT_NEGATIVE,Internet ki speed slow hai,"Internet ki speed slow hai, bounce gaya.",bounce gaya
+"{""is_hinglish"": true, ""grammatical"": false, ""meaning_preserved"": false, ""intent_match"": false, ""is_real_slang"": false}",judge,ASSERT_NEUTRAL,Thand badh gayi hai,Thand average badh gayi hai,average
+null,judge,ASSERT_SADNESS,Manager gusse mein tha,"Manager gusse mein tha, Kangaal vibe mein",Kangaal
+,slang_absent,EXPRESS_STRESS,"Mujhe chai break chahiye, varna kaam ka pressure bahut ho raha hai.","Mujhe chai break chahiye, varna kaam ka pressure fattipadi hai bahut ho raha hai.",fatti padi hai
+null,judge,ASSERT_NEGATIVE,Meeting thodi zyada lambi ho gayi,"Meeting thodi zyada lambi ho gayi, bounce gaya.",bounce gaya
+"{""is_hinglish"": false, ""grammatical"": false, ""meaning_preserved"": false, ""intent_match"": false, ""is_real_slang"": false}",judge,ASSERT_ANXIETY,Paise khatam ho gaye,"Paise khatam ho gaye, Kachua.",Kachua
+"{""is_hinglish"": true, ""grammatical"": false, ""meaning_preserved"": true, ""intent_match"": true, ""is_real_slang"": false}",judge,ASSERT_POSITIVE,Result bahut badiya aaya,"Result bahut badiya aaya, Computer",Computer
+"{""is_hinglish"": true, ""grammatical"": false, ""meaning_preserved"": false, ""intent_match"": true, ""is_real_slang"": false}",judge,ASSERT_NEGATIVE,Yeh naya gaana bahut boring hai.,Yeh naya gaana Jaam boring hai.,Jaam
+"{""is_hinglish"": true, ""grammatical"": false, ""meaning_preserved"": false, ""intent_match"": false, ""is_real_slang"": false}",judge,ASSERT_HAPPY,Match ka result achha tha,Match ka result kand achha tha,Kand
+"{""is_hinglish"": true, ""grammatical"": false, ""meaning_preserved"": false, ""intent_match"": false, ""is_real_slang"": false}",judge,ASSERT_SADNESS,Gana bahut loudly baj raha hai,"Gana bahut loudly baj raha hai, kaat diya",kaat diya
+"{""is_hinglish"": false, ""grammatical"": false, ""meaning_preserved"": false, ""intent_match"": false, ""is_real_slang"": false}",judge,ASSERT_NEGATIVE,Fest ka budget ab khatam ho gaya.,Fest ka budget ab fekta khatam ho gaya.,fekta
+"{""is_hinglish"": true, ""grammatical"": false, ""meaning_preserved"": false, ""intent_match"": false, ""is_real_slang"": false}",judge,ASSERT_FRUSTRATION,Traffic jam bahut lamba tha,Traffic jam bahut Raudra lamba tha,Raudra
+null,judge,ASSERT_HAPPY,Flight time par land ho gayi,"Flight time par, kand, land ho gayi",Kand
+null,judge,ASSERT_SADNESS,Paise khatam ho gaye,"Paise khatam ho gaye, senti mat kar",senti mat kar
+"{""is_hinglish"": true, ""grammatical"": true, ""meaning_preserved"": false, ""intent_match"": false, ""is_real_slang"": false}",judge,ASSERT_NEUTRAL,Mujhe akele rehna pasand hai,"Mujhe akele rehna pasand hai, outdated cheezon se door.",Outdated
+"{""is_hinglish"": true, ""grammatical"": true, ""meaning_preserved"": false, ""intent_match"": true, ""is_real_slang"": true}",judge,ASSERT_NEGATIVE,System crash ho gaya,"System crash ho gaya, kaat diya.",Kaat diya
+null,judge,ASSERT_SADNESS,Project deadline pass aa rahi hai,"Project deadline pass aa rahi hai, kismat kharab.",kismat kharab
+null,judge,ASSERT_POSITIVE,Jahanpanah tussi great ho.,"Jahanpanah, tussi jackpot great ho.",jackpot
+"{""is_hinglish"": true, ""grammatical"": false, ""meaning_preserved"": false, ""intent_match"": false, ""is_real_slang"": false}",judge,ASSERT_NEUTRAL,Weekend ka plan kya hai,Weekend ka dabba plan kya hai?,dabba
+"{""is_hinglish"": true, ""grammatical"": false, ""meaning_preserved"": false, ""intent_match"": false, ""is_real_slang"": false}",judge,ASSERT_SADNESS,Market mein bahut bheed thi,Market mein load bheed thi,load
+"{""is_hinglish"": true, ""grammatical"": false, ""meaning_preserved"": true, ""intent_match"": true, ""is_real_slang"": false}",judge,ASSERT_WARNING,"Bhai, street food bahut tasty hai but hygiene ka dhyan rakhna.","Bhai, street food bahut tasty hai Ratta but hygiene ka dhyan rakhna.",Ratta
+"{""is_hinglish"": true, ""grammatical"": true, ""meaning_preserved"": true, ""intent_match"": true, ""is_real_slang"": false}",judge,REQUEST_URGENCY,"Meri bike abhi road pe kharab ho gayi hai, help karo.","Meri bike abhi road pe kharab ho gayi hai, Jaldi help karo.",Jaldi
+"{""is_hinglish"": true, ""grammatical"": false, ""meaning_preserved"": true, ""intent_match"": true, ""is_real_slang"": false}",judge,ASSERT_FRUSTRATION,"Yaar, street food ka line bahut lambi hai, patience khatam ho gaya.","Yaar, street food ka line Rat-rat bahut lambi hai, patience khatam ho gaya.",Rat-rat
+"{""is_hinglish"": true, ""grammatical"": false, ""meaning_preserved"": false, ""intent_match"": false, ""is_real_slang"": false}",judge,ASSERT_HAPPY,Party mein maza aayega.,Party mein maza op aayega.,op
+"{""is_hinglish"": true, ""grammatical"": false, ""meaning_preserved"": true, ""intent_match"": true, ""is_real_slang"": false}",judge,ASSERT_STRESS,Cardio karte waqt saans phool gayi.,"Cardio karte waqt saans phool gayi, watt lag.",watt lag
+"{""is_hinglish"": true, ""grammatical"": true, ""meaning_preserved"": true, ""intent_match"": false, ""is_real_slang"": false}",judge,ASSERT_FRUSTRATION,Project deadline pass aa rahi hai,"Project deadline pass aa rahi hai, Shaanpatti.",Shaanpatti
+null,judge,POSITIVE_EVAL,"Meri family ka dinner bahut mazedaar tha, sab khush ho gaye.","Meri family ka dinner Jhakaas bahut mazedaar tha, sab khush ho gaye.",Jhakaas
+null,judge,ASSERT_EXCITED,Mujhe yeh movie pasand aayi,Mujhe yeh movie faadu pasand aayi,faadu
+,duplicate,ASSERT_EXCITED,Dost ke sath ghoomne jana hai,Dost ke sath ek number ghoomne jana hai,ek number
+"{""is_hinglish"": true, ""grammatical"": true, ""meaning_preserved"": false, ""intent_match"": true, ""is_real_slang"": false}",judge,ASSERT_FRUSTRATION,Cab driver ne ride cancel kar di.,Cab driver ne dhokha deke ride cancel kar di.,Dhokha
+null,judge,ASSERT_POSITIVE,Coffee bahut strong hai,Coffee bahut glow-up strong hai,Glow-up
+"{""is_hinglish"": true, ""grammatical"": false, ""meaning_preserved"": false, ""intent_match"": false, ""is_real_slang"": false}",judge,ASSERT_POSITIVE,Party bahut mazedaar thi,"Party bahut mazedaar thi, Raftar!",Raftar
+"{""is_hinglish"": true, ""grammatical"": true, ""meaning_preserved"": true, ""intent_match"": true, ""is_real_slang"": false}",judge,ASSERT_WARNING,"Chup raho, koi sun lega.","Chup raho, koi sun lega, sus.",Sus
+,duplicate,ASSERT_EXCITED,Yeh gaana bahut achha hai,"Yeh gaana bahut achha hai, scene set.",scene set
+null,judge,ASSERT_NEGATIVE,Woh hamesha jhooth bolta hai.,"Woh hamesha jhooth bolta hai, Kaatil.",Kaatil
+"{""is_hinglish"": false, ""grammatical"": true, ""meaning_preserved"": false, ""intent_match"": false, ""is_real_slang"": false}",judge,ASSERT_SADNESS,Aaj ka din bahut lamba tha,Aaj ka din bahut kangaal lamba tha,kangaal
+"{""is_hinglish"": false, ""grammatical"": false, ""meaning_preserved"": true, ""intent_match"": true, ""is_real_slang"": false}",judge,ASSERT_SADNESS,Mere parents ke saath dinner bahut boring lag raha tha.,"Mere parents ke saath dinner bahut boring lag raha tha, Dukhi aatma.",Dukhi aatma
+null,judge,ASSERT_POSITIVE,Aaj presentation achhi gayi,Aaj presentation sir-fira achhi gayi,sir-fira
+"{""is_hinglish"": false, ""grammatical"": false, ""meaning_preserved"": false, ""intent_match"": false, ""is_real_slang"": false}",judge,ASSERT_POSITIVE,Hamari chhoriyan chhoron se kam hain kya?,"Hamari chhoriyan chhoron se kam hain kya, Halwa?",Halwa
+null,judge,ASSERT_NEGATIVE,Market mein bahut bheed thi,"Market mein bahut bheed thi, muft-khor.",muft-khor
+null,judge,ASSERT_ANXIETY,"Mera phone crash ho gaya, repair shop se jaldi milna chahiye.","Mera phone crash ho gaya, kangaal repair shop se jaldi milna chahiye.",kangaal
+"{""is_hinglish"": true, ""grammatical"": false, ""meaning_preserved"": false, ""intent_match"": false, ""is_real_slang"": false}",judge,ASSERT_POSITIVE,Usne topic change bahut smartly kiya.,Usne topic change bahut smartly Halwa kiya.,Halwa
+null,judge,INFO_STATEMENT,"Mera naya phone aaj aaya hai, camera bahut mast hai.","Mera naya phone bro aaj aaya hai, camera bahut mast hai.",bro
+,length,ASSERT_WARNING,Chup bilkul chup.,"Chup bilkul chup, Dheele.",Dheele
+,duplicate,ASSERT_SADNESS,Mujhe samajh nahi aa raha,"Mujhe samajh nahi aa raha, Bhai",Bhai
+,duplicate,INFO_STATEMENT,Meeting kal tak postpone ho gayi,"Meeting kal tak postpone ho gayi, boss.",boss
+"{""is_hinglish"": true, ""grammatical"": false, ""meaning_preserved"": false, ""intent_match"": true, ""is_real_slang"": false}",judge,ASSERT_NEGATIVE,Product ki quality achhi nahi hai.,"Product ki quality achhi nahi hai, beizzati.",Beizzati
+,duplicate,INFO_STATEMENT,Meeting kal tak postpone ho gayi,"Meeting kal tak postpone ho gayi, theek hai.",theek hai
+"{""is_hinglish"": false, ""grammatical"": false, ""meaning_preserved"": false, ""intent_match"": false, ""is_real_slang"": false}",judge,ASSERT_NEUTRAL,Tumhari nayi watch bahut mehngi lag rahi hai.,"Tumhari nayi watch bahut mehngi lag rahi hai, khatam hai.",Khatam hai
+null,judge,ASSERT_FRUSTRATION,Traffic jam bahut lamba tha,"Traffic jam bahut lamba tha, Kachra",Kachra
+"{""is_hinglish"": true, ""grammatical"": false, ""meaning_preserved"": false, ""intent_match"": false, ""is_real_slang"": false}",judge,ASSERT_CONFUSION,Bhookh lag rahi hai,"Bhookh lag rahi hai, Bounce",Bounce
+null,judge,ASSERT_CONFUSION,Usne message ka tone change kar diya,Usne message ka tone popat kar diya,Popat kar diya
+"{""is_hinglish"": false, ""grammatical"": false, ""meaning_preserved"": false, ""intent_match"": true, ""is_real_slang"": false}",judge,EXPRESS_STRESS,"Kal viva hai, maine kuch nahi padha.","Kal viva hai, maine kuch nahi padha, kyunki fatti padi hai",fatti padi hai
+,duplicate,INFO_STATEMENT,Meeting kal tak postpone ho gayi,"Meeting kal tak postpone ho gayi, boss",boss
+null,judge,ASSERT_CONFUSION,Naya update install kar liya,"Naya update install kar liya, raita faila",raita faila
+"{""is_hinglish"": true, ""grammatical"": true, ""meaning_preserved"": true, ""intent_match"": false, ""is_real_slang"": true}",judge,ASSERT_EXCITED,Class cancel ho gayi,Class cancel ho gayi bhai,bhai
+"{""is_hinglish"": false, ""grammatical"": true, ""meaning_preserved"": false, ""intent_match"": false, ""is_real_slang"": false}",judge,ASSERT_CONFUSION,Baarish shuru ho gayi,"Baarish shuru ho gayi, jhol",jhol
+"{""is_hinglish"": false, ""grammatical"": false, ""meaning_preserved"": false, ""intent_match"": false, ""is_real_slang"": false}",judge,REQUEST_NEUTRAL,Naya update install kar liya,"Naya update install kar liya, hit maarne ki",hit maarne ki
+"{""is_hinglish"": true, ""grammatical"": false, ""meaning_preserved"": true, ""intent_match"": true, ""is_real_slang"": false}",judge,ASSERT_NEGATIVE,Traffic jam bahut lamba tha,"Traffic jam bahut lamba tha, phek",Phek

@@ -18,6 +18,7 @@ llama-3.1-8b-instant was retired by Groq):
 """
 from __future__ import annotations
 from typing import Literal
+import re
 import time
 
 from langgraph.graph import StateGraph, END
@@ -84,6 +85,9 @@ class HinglishPipeline:
 
     def _log(self, *a):
         if self.verbose:
+            # elapsed-time stamp on stage headers, so slow stages are visible in every log
+            if a and isinstance(a[0], str) and a[0].startswith("──"):
+                a = (f"[+{time.time() - getattr(self, '_t_start', time.time()):.0f}s] " + a[0],) + a[1:]
             print(*a)
 
     # ── Nodes ──────────────────────────────────────────────────────────
@@ -128,11 +132,32 @@ class HinglishPipeline:
         neutral = []
         for chunk, events in zip(state["scene_chunks"], state["event_chain"]):
             dialogue = self.agent3.generate_pass1(chunk, state["character_profiles"], events)
+            # Agent 3 sometimes slips a Devanagari word into the dialogue (seen: "धन्यवाद, दादी!").
+            # Everything downstream (register guard, editor, validator) expects Roman script, so
+            # romanize any leak with the same rule-based transliterator used on the input.
+            if re.search(r"[ऀ-ॿ]", dialogue):
+                dialogue = re.sub(r"[ऀ-ॿ]+(?:[\sऀ-ॿ]*[ऀ-ॿ])?",
+                                  lambda m: self.transliterator.transliterate_sentence(m.group(0)).strip(),
+                                  dialogue)
             neutral.append({"scene_id": events["scene_id"], "dialogue": dialogue,
                             "events": events})
             time.sleep(0.3)
         self.scratchpad.write("neutral_script", neutral)
         state["neutral_script"] = neutral
+        # Fail LOUDLY if upstream LLM calls failed (almost always a Groq rate/daily-token cap).
+        # Otherwise the run completes and looks plausible but the screenplay is invalid.
+        failed_p1 = [n["scene_id"] for n in neutral if "[generation failed" in n["dialogue"]]
+        empty_ev = [e["scene_id"] for e in state["event_chain"] if not e.get("key_events")]
+        if failed_p1 or empty_ev:
+            print("\n" + "!" * 68)
+            if failed_p1:
+                print(f"  WARNING: Pass-1 dialogue FAILED for {len(failed_p1)} scene(s): {failed_p1}")
+            if empty_ev:
+                print(f"  WARNING: Agent 1 returned NO events for {len(empty_ev)} scene(s): {empty_ev}")
+            print("  Likely a Groq rate / daily-token limit. These results are NOT valid.")
+            print("  Retry with the other model pool, e.g. PowerShell:")
+            print('      $env:GROQ_MODEL="openai/gpt-oss-120b"')
+            print("!" * 68 + "\n")
         return state
 
     def _inject_slang(self, state: PipelineState) -> PipelineState:
@@ -214,13 +239,19 @@ class HinglishPipeline:
             diag = self.validator.diagnose_scene(neutral, slang, profiles)
             diagnoses[sid] = diag
             scores.append(diag["similarity"])
-            flag = "PASS" if diag["passed"] else f"RE-DO[{diag['failure_mode']}]"
+            flag = ("PASS" if diag["passed"]
+                    else "PASS (neutral by design)" if diag.get("failure_mode") == "NO_SLANG"
+                    else f"RE-DO[{diag['failure_mode']}]")
             self._log(f"   {sid}: sim={diag['similarity']:.3f} "
                       f"line_min={diag['line_min_similarity']:.3f} "
                       f"recall={diag['event_recall']:.2f} "
                       f"cov={diag['slang_coverage']:.0%} "
                       f"var={diag['slang_variety']:.2f} -> {flag}")
-            if not diag["passed"]:
+            if not diag["passed"] and diag.get("failure_mode") == "NO_SLANG":
+                # The editor found nothing that fits this scene. Forcing slang here is what produced
+                # "fire" on a fearful line, so a scene that stays neutral is ACCEPTED, not re-done.
+                self._log("       kept neutral by design (no fitting slang) - not re-done")
+            elif not diag["passed"]:
                 self._log(f"       reason: {diag['hint']}")
                 failed.append(sid)
 
@@ -265,6 +296,7 @@ class HinglishPipeline:
 
     # ── Public entry ───────────────────────────────────────────────────
     def run(self, hindi_story: str) -> str:
+        self._t_start = time.time()
         init: PipelineState = {
             "raw_hindi_text": hindi_story, "romanized_text": "", "scene_chunks": [],
             "event_chain": [], "character_profiles": {}, "neutral_script": [],

@@ -1,0 +1,113 @@
+{
+  "romanized_text": "ek din arav nam k chatr pustakalay gaya. use ek purani dayari mili. dayari men ek bhule-bisare vyapari ki kahani thi.",
+  "event_chain": [
+    {
+      "scene_id": "scene_01",
+      "key_events": [
+        "Arav goes to the library",
+        "Arav finds an old diary",
+        "The diary contains a story of a forgotten merchant"
+      ],
+      "characters": [
+        "Arav"
+      ],
+      "scene_goal": "Introduces Arav’s discovery of the diary and sets up the merchant’s story",
+      "location": "Library",
+      "narrative_link": "Following the opening of the story, Arav now goes to the library",
+      "pronoun_map": {
+        "use": "Arav"
+      }
+    }
+  ],
+  "character_profiles": {
+    "Arav": {
+      "name": "Arav",
+      "age": null,
+      "social_role": "peer",
+      "slang_level": 5,
+      "relationship": {},
+      "current_emotion": "neutral",
+      "turn_count": 1,
+      "stress_index": 0.0
+    }
+  },
+  "neutral_script": [
+    {
+      "scene_id": "scene_01",
+      "dialogue": "Arav: Library mein aaya, purane books ke beech mein ek khoya hua diary mila.  \nArav: Diary kholte hi, ek bhool gaya vyapari ki kahani padh raha hoon, jo hamare sheher ki itihas ko badal sakti hai.  \nArav: Is kahani ko samajhne ke liye, mujhe aur gehraai se padhna hoga.",
+      "events": {
+        "scene_id": "scene_01",
+        "key_events": [
+          "Arav goes to the library",
+          "Arav finds an old diary",
+          "The diary contains a story of a forgotten merchant"
+        ],
+        "characters": [
+          "Arav"
+        ],
+        "scene_goal": "Introduces Arav’s discovery of the diary and sets up the merchant’s story",
+        "location": "Library",
+        "narrative_link": "Following the opening of the story, Arav now goes to the library",
+        "pronoun_map": {
+          "use": "Arav"
+        }
+      }
+    }
+  ],
+  "slang_script": [
+    {
+      "scene_id": "scene_01",
+      "dialogue": "Arav: Library mein aaya, purane books ke beech mein ek khoya hua diary mila, bawaal.\nArav: Diary kholte hi, ek bhool gaya vyapari ki kahani padh raha hoon, panga, jo hamare sheher ki itihas ko badal sakti hai.\nArav: Is kahani ko samajhne ke liye, mujhe aur gehraai se padhna hoga, bekaar.",
+      "decisions": [
+        {
+          "speaker": "Arav",
+          "applied": true,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "CASUAL_ASSERTION",
+          "reason": "All gates passed",
+          "slang": "bawaal",
+          "slang_tokens_added": 1
+        },
+        {
+          "speaker": "Arav",
+          "applied": true,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "CASUAL_ASSERTION",
+          "reason": "All gates passed",
+          "slang": "panga",
+          "slang_tokens_added": 1
+        },
+        {
+          "speaker": "Arav",
+          "applied": true,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "CASUAL_ASSERTION",
+          "reason": "All gates passed",
+          "slang": "bekaar",
+          "slang_tokens_added": 1
+        }
+      ],
+      "events": {
+        "scene_id": "scene_01",
+        "key_events": [
+          "Arav goes to the library",
+          "Arav finds an old diary",
+          "The diary contains a story of a forgotten merchant"
+        ],
+        "characters": [
+          "Arav"
+        ],
+        "scene_goal": "Introduces Arav’s discovery of the diary and sets up the merchant’s story",
+        "location": "Library",
+        "narrative_link": "Following the opening of the story, Arav now goes to the library",
+        "pronoun_map": {
+          "use": "Arav"
+        }
+      }
+    }
+  ],
+  "final_script": "# HINGLISH SCREENPLAY\n\n## SCENE_01\n*Location: Library*\n\nArav: Library mein aaya, purane books ke beech mein ek khoya hua diary mila, bawaal.\nArav: Diary kholte hi, ek bhool gaya vyapari ki kahani padh raha hoon, panga, jo hamare sheher ki itihas ko badal sakti hai.\nArav: Is kahani ko samajhne ke liye, mujhe aur gehraai se padhna hoga, bekaar.\n\n---\n"
+}

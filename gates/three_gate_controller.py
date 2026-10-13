@@ -39,6 +39,19 @@ class ThreeGateController:
         from agents.name_utils import match_profile
         profile = match_profile(profiles, speaker_name)
 
+        # Fallback when Agent 1 didn't create a profile for this speaker (it can
+        # name a character by an unnamed role, e.g. "Grandmother"/"Amma", so no
+        # profile exists). Without this, an unprofiled speaker defaults to peer
+        # and wrongly gets slang. Check the speaker TAG itself for a kinship /
+        # authority term and block if found.
+        if not profile:
+            import re
+            from agents.agent2_character import SOCIAL_ROLE_KEYWORDS
+            tag = speaker_name.lower()
+            blocking = SOCIAL_ROLE_KEYWORDS["elder"] + SOCIAL_ROLE_KEYWORDS["authority"]
+            if any(re.search(rf"\b{re.escape(kw)}\b", tag) for kw in blocking):
+                return False   # tag is itself an elder/authority word
+
         role = profile.get("social_role", "peer")
         slang_level = profile.get("slang_level", 5)
 

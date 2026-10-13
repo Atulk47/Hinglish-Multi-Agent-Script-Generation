@@ -1,0 +1,1201 @@
+﻿neutral,output,slangs,control,source
+Kal ka concert bahut acha tha.,Kal ka concert ekdum zabardast tha.,zabardast,POSITIVE,claude_gen2
+"Kal hum trip pe ja rahe hain, main bahut khush hoon.","Kal hum trip pe ja rahe hain, main toh full excited hoon.",full excited,EXCITED,claude_gen2
+Hostel mein raat ko sab dost milke baithte hain aur hasste hain.,"Hostel mein raat ko sab dost milke baithte hain, bas masti hoti hai.",masti,CASUAL,claude_gen2
+"Chal aaram se chai pite hain, koi chinta nahi hai.","Chal aaram se chai pite hain, bina tension ke.",bina tension,CASUAL,claude_gen2
+Is restaurant ka butter chicken bahut acha hai.,Is restaurant ka butter chicken gajab hai yaar.,gajab,POSITIVE,claude_gen2
+"Wifi band hai aur assignment submit karna hai, mujhe kuch samajh nahi aa raha.","Wifi band hai aur assignment submit karna hai, dimaag fry ho gaya hai.",dimaag fry,STRESSED,claude_gen2
+"Tune gym join kar liya, yeh acha decision hai.","Tune gym join kar liya, yeh toh sahi hai bhai.",sahi hai,POSITIVE,claude_gen2
+Mere startup ki sales is mahine bahut tezi se badh rahi hain.,Mere startup ki sales is mahine rocket ki tarah badh rahi hain.,rocket,POSITIVE,claude_gen2
+Job interview ke pehle mujhe bahut dar lag raha hai.,Job interview ke pehle mera dil baith raha hai.,dil baith raha hai,ANXIOUS,claude_gen2
+Meri dance reel ko kal se lakhon views mil rahe hain.,"Meri dance reel kal se viral ho gayi, lakhon views mil rahe hain.",viral,POSITIVE,claude_gen2
+"Power cut hai aur kal exam hai, mujhe bahut ghabrahat ho rahi hai.","Power cut hai aur kal exam hai, full tension ho rahi hai.",full tension,ANXIOUS,claude_gen2
+"Maine tujhe sach bola, mujhe pata nahi tha ki woh aayega.","Kasam se bol raha hoon, mujhe pata nahi tha ki woh aayega.",kasam se,CASUAL,claude_gen2
+"Tune meri baat samajh li, bilkul wahi kehna chahta tha.","Tune sahi pakde, bilkul wahi kehna chahta tha.",sahi pakde,CASUAL,claude_gen2
+"Aaj match hai, sab log tayyar ho jao.","Aaj match hai, game on, sab log tayyar ho jao.",game on,EXCITED,claude_gen2
+"Kal college fest mein hum sab nachenge, bahut maza aayega.","Kal college fest mein hum sab nachenge, dhamaal machega.",dhamaal,EXCITED,claude_gen2
+"Aaj traffic nahi tha, toh office bina rukawat ke pahunch gaya.","Aaj traffic nahi tha, toh office ekdum smooth pahunch gaya.",smooth,CASUAL,claude_gen2
+"Yeh gaana mujhe bahut pasand aaya, baar baar sunne ka mann hai.","Yeh gaana ekdum mast hai, baar baar sunne ka mann hai.",mast,POSITIVE,claude_gen2
+Hamare naye professor ka padhane ka tarika bahut badhiya hai.,Hamare naye professor ka padhane ka tarika top class hai.,top class,POSITIVE,claude_gen2
+"Mera roommate hamesha madad karta hai, woh bahut acha insaan hai.","Mera roommate hamesha madad karta hai, woh ek solid banda hai.",solid banda,POSITIVE,claude_gen2
+Padosi ka shor sunke mujhe bahut gussa aa raha hai.,Padosi ka shor sunke mera sar phat raha hai.,sar phat raha hai,FRUSTRATED,claude_gen2
+Tere naye jacket ka design bahut badhiya hai.,Tere naye jacket ka design ekdum faadu hai.,faadu,POSITIVE,claude_gen2
+Tu naye haircut mein bahut acha lag raha hai.,Tu naye haircut mein ekdum fit hai.,fit hai,POSITIVE,claude_gen2
+"Aaj baarish ki wajah se picnic cancel ho gaya, mujhe bura lag raha hai.","Aaj baarish ki wajah se picnic cancel ho gaya, mera mood off hai.",mood off,SAD,claude_gen2
+"Is hafte project, report aur presentation, sab kuch ek saath karna hai.","Is hafte project, report aur presentation, kaam ka pahaad ek saath aa gaya hai.",kaam ka pahaad,STRESSED,claude_gen2
+"Boss ne abhi file maangi hai aur meri battery khatam ho gayi, jaldi karna hai.","Boss ne abhi file maangi hai aur meri battery khatam, ab toh gaya kaam se.",gaya kaam se,URGENT,claude_gen2
+Kal raat DJ ne shaadi mein bahut badhiya music bajaya.,Kal raat DJ ne shaadi mein ekdum tod-phod music bajaya.,tod-phod,EXCITED,claude_gen2
+Is cafe ki coffee bahut acchi hai.,Is cafe ki coffee ekdum superb hai.,superb,POSITIVE,claude_gen2
+Agar abhi form submit nahi kiya toh deadline nikal jayegi.,"Abhi form submit nahi kiya toh gaya scene, deadline nikal jayegi.",gaya scene,URGENT,claude_gen2
+Laptop ka update bina kisi dikkat ke ho gaya.,Laptop ka update ekdum smoothly ho gaya.,smoothly,CASUAL,claude_gen2
+"Kal bade client ke saath meeting hai, mujhe dar lag raha hai.","Kal bade client ke saath meeting hai, yaar full tension hai.",full tension,ANXIOUS,claude_gen2
+Raat ko do baje bhi woh meri help ke liye aa gaya.,"Raat ko do baje bhi woh meri help ke liye aa gaya, sachcha dost hai yaar.",sachcha dost,POSITIVE,claude_gen2
+Gaming mein uska aim bahut accha hai.,"Gaming mein uska aim ekdum paani hai, bhai.",paani,POSITIVE,claude_gen2
+Exam kal hai aur syllabus abhi baaki hai.,"Exam kal hai aur syllabus baaki hai, tension high hai yaar.",tension high,STRESSED,claude_gen2
+Stadium mein match ke waqt mahaul bahut josh wala tha.,Stadium mein match ke waqt mahaul ekdum electric tha.,electric,EXCITED,claude_gen2
+Sunday ko ghar pe aaram se movie dekhenge.,"Sunday ko ghar pe chill karenge, movie dekhenge.",chill,CASUAL,claude_gen2
+"Aaj mera mood theek nahi hai, kuch accha nahi lag raha.","Aaj mera mood ekdum off hai, kuch accha nahi lag raha.",off,NEGATIVE/DISAPPOINTED,claude_gen2
+Hostel ka khana aaj bahut badhiya tha.,Hostel ka khana aaj ekdum top class tha.,top class,POSITIVE,claude_gen2
+Kal main pehli baar paragliding karne ja raha hoon.,"Kal main pehli baar paragliding karne ja raha hoon, full excited hoon!",full excited,EXCITED,claude_gen2
+"Kya kar raha hai tu, chai bana na jaldi.","Kya kar raha hai re, chai bana na jaldi.",re,CASUAL,claude_gen2
+Farewell party mein uski entry sabse zabardast thi.,Farewell party mein uski entry ka jalwa hi alag tha.,jalwa,POSITIVE,claude_gen2
+Concert mein gaana shuru hua aur sab nachne lage.,"Concert mein gaana shuru hua aur bawaal ho gaya, sab nachne lage.",bawaal,EXCITED,claude_gen2
+Group project ki deadline bilkul paas aa gayi hai.,Group project ki deadline ekdum sir pe aa gayi hai.,sir pe,STRESSED,claude_gen2
+Barish mein dost ke saath bike pe ghoomne mein maza aaya.,Barish mein dost ke saath bike pe ghoomne mein bahut masti aayi.,masti,CASUAL,claude_gen2
+"Chalo, plan theek hai, shaam ko milte hain.","Chalo sahi hai, shaam ko milte hain.",sahi,CASUAL,claude_gen2
+Uski presentation ki slides bilkul perfect thi.,Uski presentation ki slides ekdum on point thi.,on point,POSITIVE,claude_gen2
+Placement ke interviews mein meri bahut buri halat ho gayi.,Placement ke interviews mein meri haalat kharab ho gayi.,haalat kharab,STRESSED,claude_gen2
+Delivery late aayi aur khana bhi thanda tha.,"Delivery late aayi aur khana thanda tha, ekdum bekaar service.",bekaar,NEGATIVE/DISAPPOINTED,claude_gen2
+Sardi mein garam adrak wali chai bahut badhiya lagti hai.,Sardi mein kadak adrak wali chai ka alag hi maza hai.,kadak,POSITIVE,claude_gen2
+Main toh us nayi bike ko dekhte hi pasand kar baitha.,Main toh us nayi bike pe dekhte hi fida ho gaya.,fida,EXCITED,claude_gen2
+Uski cooking mein swaad bahut zabardast hai.,Uski cooking mein gazab ka swaad hai.,gazab,POSITIVE,claude_gen2
+Aaj canteen ke samose ka taste pehle jaisa nahi tha.,"Aaj canteen ke samose ka taste pehle jaisa nahi tha, kuch weird sa lag raha tha.",weird,NEGATIVE/DISAPPOINTED,claude_gen2
+"Shaadi ki playlist bahut achhi thi, sabko pasand aayi.","Shaadi ki playlist ekdum on point thi, sabko pasand aayi.",on point,POSITIVE,claude_gen2
+Kal concert ke liye main bahut excited hoon.,Kal concert ke liye main full excited hoon yaar.,full excited,EXCITED,claude_gen2
+"Hotel ki service bahut achhi thi, staff bhi helpful tha.","Hotel ki service top class thi, staff bhi helpful tha.",top class,POSITIVE,claude_gen2
+"Wi-Fi baar baar disconnect ho raha hai, kaam nahi ho pa raha.","Wi-Fi baar baar disconnect ho raha hai, ekdum jhand ho gayi, kaam nahi ho pa raha.",jhand,FRUSTRATED,claude_gen2
+Usne maths ka mushkil sawaal turant solve kar diya.,Usne maths ka mushkil sawaal chutki mein solve kar diya.,chutki mein,POSITIVE,claude_gen2
+"Kal interview hai, isliye main bahut tension mein hoon.","Kal interview hai, isliye main full tension mein hoon.",full tension,ANXIOUS,claude_gen2
+"Chal na, chai peene chalte hain, thoda break lete hain.","Chal na re, chai peene chalte hain, thoda break lete hain.",re,CASUAL,claude_gen2
+Result aane wala hai aur mujhe bahut ghabrahat ho rahi hai.,Result aane wala hai aur mera dil baith raha hai.,dil baith raha hai,ANXIOUS,claude_gen2
+Woh bina kisi jhijhak ke stage par gaana gaa gayi.,"Woh bindaas stage par gaana gaa gayi, bina kisi jhijhak ke.",bindaas,POSITIVE,claude_gen2
+Weekend ka Goa trip pakka ho gaya hai.,"Weekend ka Goa trip pakka ho gaya, scene set hai!",scene set hai,EXCITED,claude_gen2
+"Naye game ka trailer bahut dhamakedar hai, release ka wait nahi hota.","Naye game ka trailer ekdum fire hai, release ka wait nahi hota.",fire,EXCITED,claude_gen2
+"Uska bowling spell kaafi achha tha, match palat diya.","Uska bowling spell ekdum solid tha, match palat diya.",solid,POSITIVE,claude_gen2
+Chhote bachche ke dance ne sabko khush kar diya.,Chhote bachche ke dance ne sabka dil jeet liya.,dil jeet liya,POSITIVE,claude_gen2
+"Ghanto se traffic mein fasa hoon, ab bahut thak gaya hoon.","Ghanto se traffic mein fasa hoon, yaar ab pak gaya hoon.",pak gaya,FRUSTRATED,claude_gen2
+"Shaadi ka venue bahut shaandar tha, bilkul mahal jaisa.","Shaadi ka venue ekdum royal tha, bilkul mahal jaisa.",royal,POSITIVE,claude_gen2
+"Exam se pehle poora syllabus bacha hai, bahut pareshani hai.","Exam se pehle poora syllabus bacha hai, waat lagi padi hai.",waat lagi,STRESSED,claude_gen2
+"Tune time par aakar achha kiya, warna late ho jaate.","Tune time par aakar sahi kiya, warna late ho jaate.",sahi,CASUAL,claude_gen2
+Is hafte ki nayi film bahut achha chal rahi hai.,Is hafte ki nayi film superhit ja rahi hai.,superhit,POSITIVE,claude_gen2
+Mummy ke haath ki biryani bahut badhiya thi.,Mummy ke haath ki biryani zabardast thi.,zabardast,POSITIVE,claude_gen2
+Uski nayi job ka offer kaafi achha hai.,Uski nayi job ka offer gajab hai.,gajab,POSITIVE,claude_gen2
+Hostel mein kal raat sabne milkar khoob maze kiye.,Hostel mein kal raat sabne milkar full masti ki.,full masti,EXCITED,claude_gen2
+Is web series ka end mujhe bilkul pasand nahi aaya.,"Is web series ka end ekdum bakwaas tha, bilkul pasand nahi aaya.",bakwaas,NEGATIVE/DISAPPOINTED,claude_gen2
+Do din se bukhar hai aur bahut kamzori lag rahi hai.,"Do din se bukhar hai, haalat kharab ho gayi hai, bahut kamzori lag rahi hai.",haalat kharab,STRESSED,claude_gen2
+India-Pakistan match ko lekar sab bahut josh mein hain.,"India-Pakistan match ko lekar sab josh mein hain, ekdum bawaal!",bawaal,EXCITED,claude_gen2
+"Syllabus abhi tak khatam nahi hua aur kal exam hai, bahut tension hai.","Syllabus abhi tak khatam nahi hua aur kal exam hai, ekdum waat lagi hui hai.",waat lagi,STRESSED,claude_gen2
+Is bike ka engine highway par bahut zabardast chalta hai.,Is bike ka engine highway par ekdum beast chalta hai.,beast,POSITIVE,claude_gen2
+"Itne kam paise mein buffet tha, poora value for money laga.","Itne kam paise mein buffet tha, ekdum paisa vasool laga.",paisa vasool,POSITIVE,claude_gen2
+"Aaj Sunday hai, bas ghar par aaram se movie dekhenge.","Aaj Sunday hai, bas ghar par chill karenge aur movie dekhenge.",chill,CASUAL,claude_gen2
+Stadium ka mahaul final match mein bahut josh wala tha.,Stadium ka mahaul final match mein ekdum electric tha.,electric,EXCITED,claude_gen2
+Naye laptop ka touchpad bahut aaram se chalta hai.,Naye laptop ka touchpad ekdum butter smooth chalta hai.,butter smooth,POSITIVE,claude_gen2
+"Tumne chai mein adrak daala, ye accha idea tha.","Tumne chai mein adrak daala, ye idea sahi tha yaar.",sahi,CASUAL,claude_gen2
+"Sun, tune meri charger kahan rakhi thi?","Arre sun, tune meri charger kahan rakhi thi?",arre,CASUAL,claude_gen2
+"Barish ki wajah se trip cancel ho gayi, mera mood kharab hai.","Barish ki wajah se trip cancel ho gayi, mera mood off hai.",mood off,SAD,claude_gen2
+"Customer care walon ne ek ghante tak hold par rakha, bahut irritate kiya.",Customer care walon ne ek ghante tak hold par rakh ke pakaa diya.,pakaa diya,FRUSTRATED,claude_gen2
+"Sach bol raha hoon, maine tera tiffin nahi khaya.","Kasam se bol raha hoon, maine tera tiffin nahi khaya.",kasam se,CASUAL,claude_gen2
+"Client ko ye report abhi chahiye, jaldi bhej do.","Client ko ye report abhi chahiye, ekdum urgent hai, jaldi bhej do.",urgent,URGENT,claude_gen2
+Shaadi ki taiyari mein ghar ka sabka bura haal ho gaya hai.,Shaadi ki taiyari mein ghar ka sabka haalat kharab ho gaya hai.,haalat kharab,STRESSED,claude_gen2
+Uski presentation ka har point bilkul theek aur sahi tha.,Uski presentation ka har point ekdum on point tha.,on point,POSITIVE,claude_gen2
+"Tune apne haath se pasta banaya, ye accha hai.","Tune apne haath se pasta banaya, ye toh sahi hai yaar.",sahi hai,POSITIVE,claude_gen2
+Mummy ke haath ka gajar halwa khake mujhe bahut khushi hui.,Mummy ke haath ka gajar halwa khake dil khush ho gaya.,dil khush,HAPPY,claude_gen2
+Us chhote bachche ke gaane ne sabko pasand aa gaya.,Us chhote bachche ke gaane ne sabka dil jeet liya.,dil jeet liya,POSITIVE,claude_gen2
+Is concert ka light show bahut hi shandaar tha.,Is concert ka light show ekdum next level tha.,next level,POSITIVE,claude_gen2
+Month end hai aur office mein bahut saara kaam pending hai.,Month end hai aur office mein kaam ka pahaad pada hai.,kaam ka pahaad,STRESSED,claude_gen2
+Kal ki biryani ka swaad bahut zabardast tha.,Kal ki biryani ekdum tagda thi.,tagda,POSITIVE,claude_gen2
+"Traffic mein do ghante phase rahe, mujhe bahut gussa aa raha hai.","Traffic mein do ghante phase rahe, dimaag kharab ho gaya hai.",dimaag kharab,FRUSTRATED,claude_gen2
+"Uska naya reel dekha, bahut hi zabardast edit kiya hai.","Uska naya reel dekha, ekdum fire edit kiya hai.",fire,EXCITED,claude_gen2
+Is season ka last episode mujhe thoda kharab laga.,Is season ka last episode thoda off laga mujhe.,off,NEGATIVE,claude_gen2
+"Wifi band hai aur kal tak project submit karna hai, bahut pareshani hai.","Wifi band hai aur kal tak project submit karna hai, dimaag fry ho gaya hai.",dimaag fry,STRESSED,claude_gen2
+"Is hostel ka khaana bahut kharab hai, dekhne mein bhi bura lagta hai.","Is hostel ka khaana ekdum ghatiya hai, dekhne mein bhi bura lagta hai.",ghatiya,NEGATIVE,claude_gen2
+Mujhe ye file aaj shaam tak bhejni hai.,"Mujhe ye file aaj shaam tak bhejni hai, bohot urgent hai.",urgent,URGENT,claude_gen2
+Is restaurant ka butter chicken bahut accha tha.,Is restaurant ka butter chicken ekdum paani tha.,paani,POSITIVE,claude_gen2
+Kal ki movie ka ending mujhe pasand nahi aayi.,"Kal ki movie ka ending ekdum faaltu tha, maza nahi aaya.",faaltu,NEGATIVE,claude_gen2
+Uski nayi YouTube channel ki growth bahut tez hai.,Uska nayi YouTube channel ekdum rocket ho gaya hai.,rocket,POSITIVE,claude_gen2
+Is baar Goa trip ka plan bahut badhiya bana hai.,Is baar Goa trip ka plan gazab bana hai.,gazab,POSITIVE,claude_gen2
+"Kal subah milte hain, chai pe baat karenge.","Kal subah milte hain bhai, chai pe baat karenge.",bhai,CASUAL,claude_gen2
+Tere presentation ke saare points bilkul theek the.,Tere presentation ke saare points ekdum on point the.,on point,POSITIVE,claude_gen2
+"Ek saath teen assignments aur ek project, bahut pressure hai.","Ek saath teen assignments aur ek project, dimaag fry ho gaya hai.",dimaag fry,STRESSED,claude_gen2
+Birthday party mein uska dance sabko pasand aaya.,Birthday party mein uska dance dekh ke woh chha gaya.,chha gaya,POSITIVE,claude_gen2
+"Aaj mera mood theek nahi hai, kuch accha nahi lag raha.","Aaj mera mood off hai, kuch accha nahi lag raha.",off,NEGATIVE,claude_gen2
+"Wifi baar baar disconnect ho raha hai, kaam nahi ho pa raha.","Wifi baar baar disconnect ho raha hai, jaan nikal gayi, kaam nahi ho pa raha.",jaan nikal gayi,FRUSTRATED,claude_gen2
+"Kal se chhutti shuru, ab poora hafta ghoomenge.","Kal se chhutti shuru, ab poora hafta mauj karenge.",mauj,EXCITED,claude_gen2
+"Concert ke tickets mil gaye, ab sab kuch tay hai.","Concert ke tickets mil gaye, scene set hai ab to.",scene set hai,EXCITED,claude_gen2
+Agar abhi nahi nikle to train chhoot jayegi.,"Agar abhi nahi nikle to scene bigad jayega, train chhoot jayegi.",scene bigad jayega,URGENT,claude_gen2
+Mera roommate hamesha sabki madad karta hai.,"Mera roommate ekdum solid banda hai, hamesha sabki madad karta hai.",solid banda,POSITIVE,claude_gen2
+"Boss ko galti pata chal gayi, ab bahut daant padegi.","Boss ko galti pata chal gayi, ab to waat lag gayi hai.",waat lag gayi,STRESSED,claude_gen2
+Barish mein bhutte aur chai ka combination bahut accha hai.,Barish mein bhutte aur chai ka combination ekdum mast hai.,mast,POSITIVE,claude_gen2
+"Theek hai, kal shaam ko 7 baje milte hain.","Sahi hai, kal shaam ko 7 baje milte hain.",sahi,CASUAL,claude_gen2
+"Aaj kuch plan nahi hai, bas ghar pe aaram karenge.","Aaj kuch plan nahi hai, bas ghar pe chill karenge.",chill,CASUAL,claude_gen2
+Maa ke haath ki biryani ka swad kamaal hai.,Maa ke haath ki biryani ka swad lajawaab hai.,lajawaab,POSITIVE,claude_gen2
+Food delivery ka intezaar karte karte ek ghanta ho gaya.,Food delivery ka intezaar karte karte ek ghanta lag gaye.,lag gaye,FRUSTRATED,claude_gen2
+Is app ka naya update bilkul accha nahi hai.,Is app ka naya update ekdum bekaar hai.,bekaar,NEGATIVE,claude_gen2
+Uska internship ka kaam sabko bahut pasand aaya.,"Uska internship ka kaam ekdum dhasu raha, sabko pasand aaya.",dhasu,POSITIVE,claude_gen2
+"Kal exam ka result aane wala hai, mujhe dar lag raha hai.","Kal exam ka result aane wala hai, dil baith raha hai.",dil baith raha hai,ANXIOUS,claude_gen2
+"Guests aa rahe hain, jaldi se ghar saaf karo.","Guests aa rahe hain, fatafat ghar saaf karo.",fatafat,URGENT,claude_gen2
+"Tune meri charger kahan rakh di, mujhe nahi mil rahi.","Abey tune meri charger kahan rakh di, mujhe nahi mil rahi.",abey,CASUAL,claude_gen2
+Mahine ke aakhir mein mere paas ek paisa nahi bacha.,"Mahine ke aakhir mein jeb khaali hai, ek paisa nahi bacha.",jeb khaali,STRESSED,claude_gen2
+Kal raat ki party mein bahut maza aaya.,"Kal raat ki party bomb thi, bahut maza aaya.",bomb,EXCITED,claude_gen2
+"Meeting aaram se ho gayi, koi dikkat nahi aayi.","Meeting smoothly ho gayi, koi dikkat nahi aayi.",smoothly,CASUAL,claude_gen2
+Agar assignment aaj jama nahi hua to bahut badi dikkat hogi.,Assignment aaj jama nahi hua to gaya kaam se.,gaya kaam se,URGENT,claude_gen2
+Subah ki chai bahut achhi bani hai.,Subah ki chai ekdum kadak bani hai.,kadak,POSITIVE,claude_gen2
+Uske gaane ne sabko khush kar diya.,Uske gaane ne sabka dil jeet liya.,dil jeet liya,POSITIVE,claude_gen2
+Tu itni der se kya kar raha hai wahan?,Tu itni der se kya kar raha hai re wahan?,re,CASUAL,claude_gen2
+Mummy ke haath ki biryani bahut swadisht thi.,Mummy ke haath ki biryani ekdum lajawaab thi.,lajawaab,POSITIVE,claude_gen2
+Kal ke match mein usne bahut achha khel dikhaya.,Kal ke match mein usne zabardast khel dikhaya.,zabardast,POSITIVE,claude_gen2
+Kal mere saath movie dekhne chalega kya?,"Bro, kal mere saath movie dekhne chalega kya?",bro,CASUAL,claude_gen2
+Concert mein bheed ka josh dekhne layak tha.,Concert mein bheed ka josh ekdum electric tha.,electric,EXCITED,claude_gen2
+Aaj raat dance floor par hum bahut dhamaal karenge.,Aaj raat dance floor par hum tod-phod machayenge.,tod-phod,EXCITED,claude_gen2
+Chhutti mein hum sab dost goa ghoomne ja rahe hain.,"Chhutti mein hum sab dost goa ja rahe hain, ab toh mauj hi mauj.",mauj,EXCITED,claude_gen2
+"Ek chai pilao, phir kaam shuru karte hain.","Boss, ek chai pilao, phir kaam shuru karte hain.",boss,CASUAL,claude_gen2
+Uski lambi kahaniyon se main thak gaya hoon.,Uski lambi kahaniyon ne pakaa diya yaar.,pakaa diya,FRUSTRATED,claude_gen2
+Uski nayi reel bahut popular ho rahi hai.,"Uski nayi reel ekdum fire hai, sab dekh rahe hain.",fire,EXCITED,claude_gen2
+Baarish ki wajah se aaj ka trip cancel ho gaya.,Baarish ki wajah se aaj ke trip ka scene off ho gaya.,scene off,NEGATIVE/DISAPPOINTED,claude_gen2
+"Traffic mein ek ghanta phansa raha, mujhe bahut gussa aaya.","Traffic mein ek ghanta phansa raha, dimaag kharab ho gaya.",dimaag kharab,FRUSTRATED,claude_gen2
+Uske naye phone ka camera bahut achha hai.,Uske naye phone ka camera ekdum tagda hai.,tagda,POSITIVE,claude_gen2
+Chauthi manzil tak seedhiyan chadhte chadhte main bahut thak gaya.,Chauthi manzil tak seedhiyan chadhte chadhte meri toh jaan nikal gayi.,jaan nikal gayi,FRUSTRATED,claude_gen2
+Is restaurant ka paneer tikka bahut achha hai.,Is restaurant ka paneer tikka gajab hai.,gajab,POSITIVE,claude_gen2
+Shaadi ke ghar mein sab log bahut khush hain.,Shaadi ke ghar mein poora khushi ka mahaul hai.,khushi ka mahaul,EXCITED,claude_gen2
+Result aane se pehle mujhe bahut ghabrahat ho rahi hai.,Result aane se pehle mera dil baith raha hai.,dil baith raha hai,ANXIOUS,claude_gen2
+"Aaj sunday hai, ghar par aaram se time bitayenge.","Aaj sunday hai, ghar par chill karenge.",chill,CASUAL,claude_gen2
+Subah ki chai ke saath baarish dekhna bahut achha laga.,Subah ki chai ke saath baarish dekhna ekdum mast laga.,mast,POSITIVE,claude_gen2
+Do ghante traffic mein fansne se main bahut thak gaya.,Do ghante traffic mein fansne se meri toh jaan nikal gayi.,jaan nikal gayi,FRUSTRATED,claude_gen2
+Hotel ka room aur service dono bahut shaandaar the.,Hotel ka room aur service dono ekdum royal the.,royal,POSITIVE,claude_gen2
+Tu kal party mein kyun nahi aaya?,Tu kal party mein kyun nahi aaya re?,re,CASUAL,claude_gen2
+Kal raat concert mein bahut maza aaya.,"Kal raat ka concert ekdum lit tha, bahut maza aaya.",lit,POSITIVE,claude_gen2
+Is mahine hamari sales bahut tezi se badhi.,Is mahine hamari sales rocket ki tarah badhi.,rocket,POSITIVE,claude_gen2
+Tune cricket match ke liye achha plan banaya.,Tune cricket match ke liye ekdum sahi plan banaya.,sahi,CASUAL,claude_gen2
+Meri dance reel kal raat achanak bahut failne lagi.,Meri dance reel kal raat achanak viral ho gayi.,viral,POSITIVE,claude_gen2
+Is web series ka ending mujhe bilkul pasand nahi aaya.,Is web series ka ending ekdum bakwaas tha.,bakwaas,NEGATIVE/DISAPPOINTED,claude_gen2
+Final match mein stadium ka mahaul bahut josh bhara tha.,Final match mein stadium ka mahaul ekdum electric tha.,electric,EXCITED,claude_gen2
+Us thele wale bhaiya ke golgappe ne mujhe khush kar diya.,Us thele wale bhaiya ke golgappe ne toh dil jeet liya.,dil jeet liya,POSITIVE,claude_gen2
+Hum kal subah Manali road trip pe nikal rahe hain.,"Hum full excited hain, kal subah Manali road trip pe nikal rahe hain.",full excited,EXCITED,claude_gen2
+"Presentation se pehle laptop band ho gaya, ab jaldi kuch karna hoga.","Presentation se pehle laptop band ho gaya, main toh gaya kaam se, jaldi kuch karna hoga.",gaya kaam se,URGENT,claude_gen2
+Kal exam hai aur syllabus abhi bhi adhura hai.,"Kal exam hai aur syllabus adhura hai, haalat kharab hai meri.",haalat kharab,STRESSED,claude_gen2
+"Ranked match shuru hone wala hai, chalo khelte hain.","Ranked match shuru hone wala hai, chalo game on!",game on,EXCITED,claude_gen2
+Aaj ki meeting mein kuch kaam ki baat nahi hui.,"Aaj ki meeting ekdum faaltu thi, kuch kaam ki baat nahi hui.",faaltu,NEGATIVE/DISAPPOINTED,claude_gen2
+Station pahunchne se pehle hi meri train chhoot gayi lagti hai.,"Station pahunchne se pehle hi gaya scene, meri train chhoot gayi lagti hai.",gaya scene,URGENT,claude_gen2
+Khana delivery mein aaj bahut der ho gayi.,Khana delivery mein aaj bahut der ho gayi yaar.,yaar,CASUAL,claude_gen2
+Gym ke baad ka protein shake bahut badhiya laga.,Gym ke baad ka protein shake ekdum kadak laga.,kadak,POSITIVE,claude_gen2
+Online class mein aaj network bahut kharab tha.,Online class mein aaj network ekdum bekaar tha.,bekaar,NEGATIVE/DISAPPOINTED,claude_gen2
+"Chalo pehle kuch kha lete hain, bahut bhookh lagi hai.","Chalo pehle pet puja kar lete hain, bahut bhookh lagi hai.",pet puja,CASUAL,claude_gen2
+Wi-Fi theek karne mein mujhe poore char ghante lage.,Wi-Fi theek karne mein poore char ghante lag gaye.,lag gaye,FRUSTRATED,claude_gen2
+Naye phone ka camera bahut zabardast hai.,Naye phone ka camera ekdum dhasu hai.,dhasu,POSITIVE,claude_gen2
+Barish ki wajah se trip cancel hone par main udaas hoon.,Barish ki wajah se trip cancel hone par mera mood off hai.,mood off,SAD,claude_gen2
+Kal raat ko hum sab ghar pe gaming karenge.,"Kal raat ko hum sab ghar pe gaming karenge, kya scene hai yaar!",kya scene hai,EXCITED,claude_gen2
+Goa trip ke liye sabki chhutti approve ho gayi.,"Goa trip ke liye sabki chhutti approve ho gayi, ab toh mauj hi mauj hai.",mauj,EXCITED,claude_gen2
+Uski dance reel kaafi logon ne dekhi.,"Uski dance reel ekdum viral ho gayi, sabne dekhi.",viral,POSITIVE,claude_gen2
+Kal mera internship ka final interview hai.,"Kal mera internship ka final interview hai, bhai tension high hai.",tension high,STRESSED,claude_gen2
+Itne kam daam mein itna accha khana mila.,"Itne kam daam mein itna accha khana mila, ekdum paisa vasool tha.",paisa vasool,POSITIVE,claude_gen2
+Is hafte office mein bahut saara kaam jama ho gaya hai.,Is hafte office mein toh kaam ka pahaad jama ho gaya hai.,kaam ka pahaad,STRESSED,claude_gen2
+Subah se wifi band hai aur client call bhi hai.,"Subah se wifi band hai aur client call bhi hai, sar phat raha hai yaar.",sar phat raha hai,FRUSTRATED,claude_gen2
+Barish ki wajah se humara movie night ka plan cancel ho gaya.,Barish ki wajah se humara movie night ka scene off ho gaya.,scene off,NEGATIVE,claude_gen2
+Aaj pata nahi kyun mera mood theek nahi hai.,Aaj pata nahi kyun mera mood ekdum off hai.,off,NEGATIVE,claude_gen2
+Uski nayi bike ka sound bahut accha hai.,Uski nayi bike ka sound ekdum jhakaas hai.,jhakaas,POSITIVE,claude_gen2
+Aaj raat college fest mein hum sab dance karenge.,Aaj raat college fest mein hum sab milke tod-phod dance karenge!,tod-phod,EXCITED,claude_gen2
+Is cafe ki coffee sabse badhiya hai.,"Is cafe ki coffee toh number one hai, kahin nahi milegi aisi.",number one,POSITIVE,claude_gen2
+Naye bande ne pehle hi din presentation mein sabko impress kar diya.,"Naye bande ne pehle hi din presentation mein chha gaya, sab impress ho gaye.",chha gaya,POSITIVE,claude_gen2
+"Chal theek hai, kal shaam ko milte hain.","Chal sahi hai, kal shaam ko milte hain.",sahi,CASUAL,claude_gen2
+Power cut ki wajah se garmi mein bahut bura haal ho gaya.,Power cut ki wajah se garmi mein haalat kharab ho gayi hai.,haalat kharab,STRESSED,claude_gen2
+"Aaj kuch kaam nahi hai, bas ghar pe aaram karenge.","Aaj kuch kaam nahi hai, bas ghar pe chill karenge.",chill,CASUAL,claude_gen2
+Is baar mess ka khana bahut kharab tha.,Is baar mess ka khana ekdum ghatiya tha.,ghatiya,NEGATIVE,claude_gen2
+Is game ka graphics pichle wale se kaafi behtar hai.,"Is game ka graphics ekdum next level hai, pichle wale se kaafi aage.",next level,POSITIVE,claude_gen2
+"Chalo pehle kuch kha lete hain, bhookh lagi hai.","Chalo pehle pet puja kar lete hain, bhookh lagi hai.",pet puja,CASUAL,claude_gen2
+Kal ka concert bahut accha tha.,Kal ka concert ekdum superb tha.,superb,POSITIVE,claude_gen2
+"Tune akele poora project sambhal liya, accha kiya.","Wah, kya baat hai! Tune akele poora project sambhal liya.",kya baat,POSITIVE,claude_gen2
+Chhoti si bachchi ne gaana gaake sabko khush kar diya.,Chhoti si bachchi ne gaana gaake sabka dil jeet liya.,dil jeet liya,POSITIVE,claude_gen2
+Uska aaj ka behaviour mujhe thoda ajeeb laga.,Uska aaj ka behaviour mujhe thoda weird laga.,weird,NEGATIVE,claude_gen2
+Exam ki taiyari karte karte mera sar ghoom raha hai.,Exam ki taiyari karte karte mera dimaag fry ho gaya hai.,dimaag fry,STRESSED,claude_gen2
+Mushkil waqt mein woh hamesha mere saath khada raha.,"Mushkil waqt mein woh hamesha mere saath khada raha, sachcha dost hai woh.",sachcha dost,POSITIVE,claude_gen2
+"Ye files ek ghante mein bhej dena, boss ko chahiye.","Ye files fatafat bhej dena, boss ko abhi chahiye.",fatafat,URGENT,claude_gen2
+Uska stand-up act sabko bahut pasand aaya hostel fest mein.,Uska stand-up act hostel fest mein ekdum chha gaya.,chha gaya,POSITIVE,claude_gen2
+Goa trip pe humein bahut mazaa aane wala hai.,Goa trip pe toh maze hi maze hone wale hain!,maze hi maze,EXCITED,claude_gen2
+"Tumhari baat bilkul sahi hai, poora sahi point pakda.","Tumhari baat ekdum on point hai, poora sahi pakda.",on point,POSITIVE,claude_gen2
+Is baar ki Diwali sale bahut kamyaab rahi.,Is baar ki Diwali sale superhit rahi.,superhit,POSITIVE,claude_gen2
+"Dekh, delivery wala aa gaya, jaake khana le aa.","Dekh bhai, delivery wala aa gaya, jaake khana le aa.",bhai,CASUAL,claude_gen2
+"Salary ke saath bonus bhi aa gaya, bahut khushi hui.","Salary ke saath bonus bhi aa gaya, yaar jackpot lag gaya!",jackpot,EXCITED,claude_gen2
+"Aaj raat gaming tournament shuru ho raha hai, taiyaar ho jao.","Aaj raat gaming tournament hai, game on, taiyaar ho jao!",game on,EXCITED,claude_gen2
+"Mummy ne aaj rajma chawal banaye, tu jaldi aa.","Mummy ne aaj rajma chawal banaye, tu jaldi aa yaar.",yaar,CASUAL,claude_gen2
+Naye phone ka performance bina atke bahut accha chalta hai.,Naye phone ka performance ekdum butter smooth chalta hai.,butter smooth,POSITIVE,claude_gen2
+Nani ke haath ki biryani ka swaad kamaal ka tha.,Nani ke haath ki biryani ka swaad lajawaab tha.,lajawaab,POSITIVE,claude_gen2
+Barish mein chai aur pakode ka combo bahut accha lagta hai.,Barish mein chai aur pakode ka combo ekdum mast lagta hai.,mast,POSITIVE,claude_gen2
+"Dhyaan se dekh, tune meri charger kahan rakhi?","Abey dhyaan se dekh, tune meri charger kahan rakhi?",abey,CASUAL,claude_gen2
+"Itne dino baad purane doston se mile, bahut accha laga.","Itne dino baad purane doston se mile, dil khush ho gaya.",dil khush,HAPPY,claude_gen2
+Gym mein aaj usne bahut zyada weight utha diya.,Gym mein aaj usne beast mode mein zyada weight utha diya.,beast,POSITIVE,claude_gen2
+Cousin ki shaadi ke baad ghar mein sab bahut khush hain.,Cousin ki shaadi ke baad ghar mein khushi ka mahaul hai.,khushi ka mahaul,EXCITED,claude_gen2
+Weekend pe kisi ki parwah kiye bina cycling karne ka mann hai.,"Weekend pe bindaas cycling karne ka mann hai, kisi ki parwah nahi.",bindaas,POSITIVE,claude_gen2
+Concert mein humne khoob dhamaal kiya aur sab kuch hila diya.,"Concert mein humne tod-phod machaya, sab kuch hila diya.",tod-phod,EXCITED,claude_gen2
+"Cafe ka naya menu bahut accha hai, sab kuch badhiya hai.","Cafe ka naya menu superb hai, sab kuch badhiya hai.",superb,POSITIVE,claude_gen2
+"Is hafte project, report aur meetings, kaam bahut zyada hai.","Is hafte project, report aur meetings, kaam ka pahaad lag gaya hai.",kaam ka pahaad,STRESSED,claude_gen2
+"Exam se ek raat pehle syllabus adhoora tha, bura haal ho gaya.","Exam se ek raat pehle syllabus adhoora tha, poori waat lag gayi.",waat lag gayi,STRESSED,claude_gen2
+Uska naya hairstyle bahut stylish lag raha hai.,Uska naya hairstyle ekdum tagda lag raha hai.,tagda,POSITIVE,claude_gen2
+Kal interview hai aur mujhe bahut ghabrahat ho rahi hai.,Kal interview hai aur mujhe full tension ho rahi hai.,full tension,ANXIOUS,claude_gen2
+"Traffic mein phans gaye, ghanta bhar se ek jagah khade hain.","Traffic mein lag gaye, ghanta bhar se ek jagah khade hain.",lag gaye,FRUSTRATED,claude_gen2
+Cricket ground pe aaj humari team ka dabdaba rahega.,"Cricket ground pe aaj apna raaj chalega, humari team ka dabdaba rahega.",apna raaj,EXCITED,claude_gen2
+Hostel ke mess mein aaj khaana achha bana hai.,Hostel ke mess mein aaj khaana zabardast bana hai.,zabardast,POSITIVE,claude_gen2
+"Kal hum sab trip pe jaa rahe hain, bahut utsuk hoon.","Kal hum sab trip pe jaa rahe hain, main toh full excited hoon.",full excited,EXCITED,claude_gen2
+Chhutti ke din dost ke ghar baithke time bitaya.,Chhutti ke din dost ke ghar baithke bas masti mein time bitaya.,masti,CASUAL,claude_gen2
+"Aaj office jaldi nikal gaya, aaram se ghar pahunch jaunga.","Aaj office jaldi nikal gaya, bina tension aaram se ghar pahunch jaunga.",bina tension,CASUAL,claude_gen2
+Food delivery wale ne khaana time se pehle pahuncha diya.,"Food delivery wale ne khaana time se pehle pahuncha diya, gajab service hai.",gajab,POSITIVE,claude_gen2
+Wifi baar baar band ho raha hai aur meeting chal rahi hai.,"Wifi baar baar band ho raha hai aur meeting chal rahi hai, dimaag fry ho gaya.",dimaag fry,STRESSED,claude_gen2
+"Tune gym jaana shuru kiya, ye achhi baat hai.","Tune gym jaana shuru kiya, ye toh sahi hai yaar.",sahi hai,POSITIVE,claude_gen2
+"Naye phone ki speed bahut tez hai, sab kuch turant khulta hai.","Naye phone ki speed ekdum rocket hai, sab kuch turant khulta hai.",rocket,POSITIVE,claude_gen2
+Result aane wala hai aur mujhe bahut ghabrahat ho rahi hai.,Result aane wala hai aur mera toh dil baith raha hai.,dil baith raha hai,ANXIOUS,claude_gen2
+Meri photo ko Instagram pe bahut logon ne dekha aur pasand kiya.,"Meri photo Instagram pe viral ho gayi, bahut logon ne dekha aur pasand kiya.",viral,POSITIVE,claude_gen2
+Kal job interview hai aur mujhe bahut chinta ho rahi hai.,Kal job interview hai aur yaar full tension chal raha hai.,full tension,ANXIOUS,claude_gen2
+Sach bolun toh mujhe ye gaana bahut pasand hai.,"Kasam se, mujhe ye gaana bahut pasand hai.",kasam se,CASUAL,claude_gen2
+"Tune uski chaalaaki sahi samajh li, usne jhooth bola tha.","Tune sahi pakde yaar, usne jhooth bola tha.",sahi pakde,CASUAL,claude_gen2
+"Aaj raat IPL ka final hai, ab sab taiyar hain.","Aaj raat IPL ka final hai, game on, sab taiyar hain.",game on,EXCITED,claude_gen2
+"Shaadi mein sab naachne ke liye taiyar hain, bahut maza aayega.","Shaadi mein sab naachne ke liye taiyar hain, aaj toh dhamaal machega.",dhamaal,EXCITED,claude_gen2
+"Aaj traffic nahi tha, safar aaram se kat gaya.","Aaj traffic nahi tha, safar ekdum smooth kat gaya.",smooth,CASUAL,claude_gen2
+"Chai break ke saath pakode mile, bahut achha laga.","Chai break ke saath pakode mile, ekdum mast laga.",mast,POSITIVE,claude_gen2
+Naye restaurant ka khaana aur service dono bahut badhiya the.,Naye restaurant ka khaana aur service dono top class the.,top class,POSITIVE,claude_gen2
+"Mera roommate mushkil mein hamesha madad karta hai, bahut achha insaan hai.","Mera roommate mushkil mein hamesha madad karta hai, solid banda hai yaar.",solid banda,POSITIVE,claude_gen2
+Bijli chali gayi aur garmi se mujhe bahut jhunjhalahat ho rahi hai.,Bijli chali gayi aur garmi se mera sar phat raha hai.,sar phat raha hai,FRUSTRATED,claude_gen2
+Uska naya hairstyle bahut badhiya lag raha hai.,Uska naya hairstyle ekdum faadu lag raha hai.,faadu,POSITIVE,claude_gen2
+"Is baar ka plan bilkul sahi baitha hai, sab theek hai.","Is baar ka plan bilkul fit hai, sab set hai.",fit hai,POSITIVE,claude_gen2
+Aaj mausam kharab hai aur mujhe kuch achha nahi lag raha.,"Aaj mausam kharab hai aur mera mood off hai, kuch achha nahi lag raha.",mood off,SAD,claude_gen2
+"Is hafte assignments aur project dono baaki hain, bahut kaam hai.","Is hafte assignments aur project dono baaki hain, kaam ka pahaad lag gaya hai.",kaam ka pahaad,STRESSED,claude_gen2
+"Boss ko report abhi tak nahi bheji, ab bahut mushkil hogi.","Boss ko report abhi tak nahi bheji, ab toh gaya kaam se.",gaya kaam se,URGENT,claude_gen2
+"Kal mera interview hai, thoda dar lag raha hai.","Kal mera interview hai, full tension chal raha hai yaar.",full tension,ANXIOUS,claude_gen2
+Usne gaane mein bahut accha guitar bajaya.,Usne gaane mein guitar kamaal bajaya yaar.,kamaal,CASUAL,claude_gen2
+"Itne saare assignments aa gaye, kuch samajh nahi aa raha.","Itne saare assignments aa gaye, dimaag fry ho gaya hai.",dimaag fry,STRESSED,claude_gen2
+Subah ki thandi hawa mein chai peena accha lagta hai.,Subah ki thandi hawa mein chai peena ekdum refreshing lagta hai.,refreshing,POSITIVE,claude_gen2
+"Phone repair wale ne phir se bola ki kal aana, bahut gussa aa raha hai.","Phone repair wale ne phir bola kal aana, ekdum jhand ho gayi hai.",jhand,FRUSTRATED,claude_gen2
+Is weekend road trip pe jaane ke liye main bahut excited hoon.,"Is weekend road trip ka bada hype hai, main toh bahut excited hoon.",hype,EXCITED,claude_gen2
+Tu kab aa raha hai party mein?,Tu kab aa raha hai re party mein?,re,CASUAL,claude_gen2
+Wahan ka chole bhature bahut badhiya tha.,Wahan ka chole bhature top class tha.,top class,POSITIVE,claude_gen2
+"Match shuru hone wala hai, sab taiyaar ho jao.","Match shuru hone wala hai, sab ready ho jao, game on!",game on,EXCITED,claude_gen2
+Diwali ki shopping mein aaj poora din bitana hai.,Diwali ki shopping mein aaj full on din bitana hai.,full on,EXCITED,claude_gen2
+"Itni tareef sunke gaya tha, par picture bilkul bekar nikli.","Itni tareef sunke gaya tha, par picture toh poori flop nikli.",flop,NEGATIVE,claude_gen2
+"Boss ne ek hi din mein teen presentations maang li hain, bahut pareshani hai.","Boss ne ek hi din mein teen presentations maang li hain, meri toh waat lag gayi.",waat lag gayi,STRESSED,claude_gen2
+"Haan, plan toh theek hai, chalte hain.","Haan, plan sahi hai, chalte hain.",sahi,CASUAL,claude_gen2
+"Bike ki service ho gayi, ab chalane mein aaram aayega.","Bike ki service ho gayi yaar, ab chalane mein aaram aayega.",yaar,CASUAL,claude_gen2
+"Purane dost se barso baad mile, bahut khushi hui.","Purane dost se barso baad mile, dil khush ho gaya.",dil khush,HAPPY,claude_gen2
+"Train chhootne wali hai, jaldi se ticket book kar do.","Train chhootne wali hai, fatafat ticket book kar do.",fatafat,URGENT,claude_gen2
+"Aaj gaming mein maine sabko hara diya, ab meri chalti hai.","Aaj gaming mein maine sabko hara diya, ab toh apna raaj hai.",apna raaj,EXCITED,claude_gen2
+"Wo bar bar wahi kahani sunata hai, ab tang aa gaya hoon.","Wo bar bar wahi kahani suna ke pakaa diya hai, ab tang aa gaya hoon.",pakaa diya,FRUSTRATED,claude_gen2
+Naye laptop pe sab kuch bina ruke chalta hai.,Naye laptop pe sab kuch butter smooth chalta hai.,butter smooth,POSITIVE,claude_gen2
+Birthday par dosto ke saath bahut maza karenge.,Birthday par dosto ke saath full masti karenge.,full masti,EXCITED,claude_gen2
+Kal exam hai aur abhi tak adha syllabus baaki hai.,"Kal exam hai aur abhi tak adha syllabus baaki hai, tension high hai bhai.",tension high,STRESSED,claude_gen2
+Shaadi ki taiyaariyon mein ghar par bahut kaam pada hai.,Shaadi ki taiyaariyon mein ghar par kaam ka pahaad pada hai.,kaam ka pahaad,STRESSED,claude_gen2
+"Subah se bhookha hoon aur traffic mein phase hue bahut der ho gayi, bura haal hai.","Subah se bhookha hoon aur traffic mein phase hue ghanta ho gaya, haalat kharab hai.",haalat kharab,STRESSED,claude_gen2
+Is concert ka sound system bahut zabardast tha.,Is concert ka sound system next level tha.,next level,POSITIVE,claude_gen2
+Kal college fest mein humne stage pe performance di.,Kal college fest mein humne stage pe tod-phod performance di.,tod-phod,EXCITED,claude_gen2
+Is cafe ki coffee kaafi achhi hai.,Is cafe ki coffee superb hai yaar.,superb,POSITIVE,claude_gen2
+"Boss ko report abhi chahiye, jaldi bhejo.","Boss ko report abhi chahiye, jaldi bhejo warna gaya scene.",gaya scene,URGENT,claude_gen2
+Aaj ka flight check-in bina kisi dikkat ke ho gaya.,"Aaj ka flight check-in smoothly ho gaya, koi dikkat nahi.",smoothly,CASUAL,claude_gen2
+Kal mera interview hai aur mujhe darr lag raha hai.,Kal mera interview hai aur main full tension mein hoon.,full tension,ANXIOUS,claude_gen2
+Mushkil waqt mein Rohan hamesha mere saath khada raha.,"Mushkil waqt mein Rohan hamesha mere saath khada raha, sachcha dost hai woh.",sachcha dost,POSITIVE,claude_gen2
+Is biryani ka swaad bahut zabardast hai.,"Is biryani mein toh paani hai, swaad bahut zabardast hai.",paani,POSITIVE,claude_gen2
+Kal exam hai aur syllabus abhi bhi baaki hai.,"Kal exam hai aur syllabus abhi bhi baaki hai, tension high hai.",tension high,STRESSED,claude_gen2
+Match ke last over mein stadium ka mahaul bahut josh wala tha.,Match ke last over mein stadium ka mahaul ekdum electric tha.,electric,EXCITED,claude_gen2
+"Aaj Sunday hai, bas ghar pe aaram karenge aur kuch nahi.","Aaj Sunday hai, bas ghar pe chill karenge aur kuch nahi.",chill,CASUAL,claude_gen2
+Itni mehnat ke baad bhi result dekh ke mood kharab ho gaya.,Itni mehnat ke baad bhi result dekh ke mood off ho gaya.,off,NEGATIVE,claude_gen2
+Shaadi mein khane ka intezaam bahut badhiya tha.,Shaadi mein khane ka intezaam top class tha.,top class,POSITIVE,claude_gen2
+"Kal hum sab Goa trip pe ja rahe hain, bahut maza aayega.","Kal hum sab Goa trip pe ja rahe hain, main toh full excited hoon.",full excited,EXCITED,claude_gen2
+"Tu kab aa raha hai party mein, bata na.","Tu kab aa raha hai party mein, bata na re.",re,CASUAL,claude_gen2
+Naye gaming setup mein usne sabko haraa diya.,"Naye gaming setup mein usne sabko haraa diya, ekdum jalwa tha uska.",jalwa,POSITIVE,claude_gen2
+Group project ka saara kaam mere upar aa gaya hai.,Group project ka saara kaam mere sir pe aa gaya hai.,sir pe,STRESSED,claude_gen2
+Baarish mein dosto ke saath chai pi aur bahut maza kiya.,Baarish mein dosto ke saath chai pi aur khoob masti ki.,masti,CASUAL,claude_gen2
+"Chal theek hai, kal shaam ko milte hain phir.","Chal sahi hai, kal shaam ko milte hain phir.",sahi,CASUAL,claude_gen2
+Uski presentation ke saare points bilkul seedhe aur sahi the.,Uski presentation ke saare points ekdum on point the.,on point,POSITIVE,claude_gen2
+Placement ke chakkar mein raat bhar jaagne se meri halat kharab ho gayi.,Placement ke chakkar mein raat bhar jaagne se meri haalat kharab ho gayi hai.,haalat kharab,STRESSED,claude_gen2
+Food delivery ek ghanta late aayi aur khana bhi thanda tha.,"Food delivery ek ghanta late aayi aur khana bhi thanda tha, ekdum bekaar service.",bekaar,NEGATIVE,claude_gen2
+"Subah ki chai aur Mumbai ki baarish, mazaa hi alag hai.","Subah ki kadak chai aur Mumbai ki baarish, mazaa hi alag hai.",kadak,POSITIVE,claude_gen2
+"Purane doston se milke main bahut khush hoon, unke bina rehna mushkil tha.","Purane doston se milke main toh fida ho gaya, unke bina rehna mushkil tha.",fida,EXCITED,claude_gen2
+Aaj ka sunset dekhne mein bahut sundar tha.,"Aaj ka sunset gazab tha, dekhne mein bahut sundar.",gazab,POSITIVE,claude_gen2
+Is film ka ending mujhe thoda ajeeb laga.,Is film ka ending mujhe thoda weird laga.,weird,NEGATIVE,claude_gen2
+"Uska presentation ekdum sahi tha, har point cover kiya.","Uska presentation ekdum on point tha, har point cover kiya.",on point,POSITIVE,claude_gen2
+Kal hostel wale trip pe jaane ke liye main bahut excited hoon.,Kal hostel wale trip pe jaane ke liye main full excited hoon.,full excited,EXCITED,claude_gen2
+Is naye cafe ki coffee bahut badhiya hai.,Is naye cafe ki coffee ekdum top class hai.,top class,POSITIVE,claude_gen2
+"Train ek ghante late ho gayi, ab mera poora plan kharab ho gaya.","Train ek ghante late ho gayi, ab mera poora plan jhand ho gaya.",jhand,FRUSTRATED,claude_gen2
+Usne wo maths ka sawal bahut aasaani se solve kar diya.,Usne wo maths ka sawal chutki mein solve kar diya.,chutki mein,POSITIVE,claude_gen2
+"Kal result aane wala hai, mujhe bahut ghabrahat ho rahi hai.","Kal result aane wala hai, main toh full tension mein hoon.",full tension,ANXIOUS,claude_gen2
+"Tu itni der se kahan tha, kab se wait kar raha hoon.","Tu itni der se kahan tha re, kab se wait kar raha hoon.",re,CASUAL,claude_gen2
+Interview se pehle mujhe bahut ghabrahat ho rahi hai.,Interview se pehle mera dil baith raha hai.,dil baith raha hai,ANXIOUS,claude_gen2
+Bike pe lamba ride karke aaj mujhe bahut maza aaya.,Bike pe lamba ride karke aaj ekdum bindaas maza aaya.,bindaas,POSITIVE,claude_gen2
+"Concert ke tickets mil gaye, ab sab kuch tay ho gaya hai.","Concert ke tickets mil gaye, scene set hai ab toh!",scene set hai,EXCITED,claude_gen2
+"Aaj raat gaming tournament hai, bahut maza aane wala hai.","Aaj raat gaming tournament hai, ekdum fire maza aane wala hai.",fire,EXCITED,claude_gen2
+Is naye phone ki battery life bahut achhi hai.,Is naye phone ki battery life solid hai.,solid,POSITIVE,claude_gen2
+Pehli job ke pehle din hi usne sabko khush kar diya.,Pehli job ke pehle din hi usne sabka dil jeet liya.,dil jeet liya,POSITIVE,claude_gen2
+Food delivery ka intezaar karte karte main bahut pareshan ho gaya.,Food delivery ka intezaar karte karte main pak gaya.,pak gaya,FRUSTRATED,claude_gen2
+"Hotel ka room bahut shandaar tha, poora raja jaisa feel hua.","Hotel ka room ekdum royal tha, poora raja jaisa feel hua.",royal,POSITIVE,claude_gen2
+"Exam se ek raat pehle syllabus adhoora hai, bahut bura haal hai.","Exam se ek raat pehle syllabus adhoora hai, meri toh waat lagi hui hai.",waat lagi,STRESSED,claude_gen2
+"Haan, ye idea theek lag raha hai, chalo karte hain.","Haan, ye idea sahi lag raha hai, chalo karte hain.",sahi,CASUAL,claude_gen2
+Uski nayi web series ne sabko bahut pasand aayi.,"Uski nayi web series toh superhit nikli, sabko pasand aayi.",superhit,POSITIVE,claude_gen2
+Cricket match mein uska last over ka spell bahut shandaar tha.,Cricket match mein uska last over ka spell zabardast tha.,zabardast,POSITIVE,claude_gen2
+Wo nayi biryani ki dukaan ka khana bahut hi acha hai.,Wo nayi biryani ki dukaan ka khana gajab hai.,gajab,POSITIVE,claude_gen2
+Dosto ke saath beach trip pe hum sab bahut maze karenge.,Dosto ke saath beach trip pe hum sab full masti karenge.,full masti,EXCITED,claude_gen2
+Ye naya canteen ka khana bilkul achha nahi hai.,Ye naya canteen ka khana ekdum bakwaas hai.,bakwaas,NEGATIVE,claude_gen2
+Ek hafte ke deadline ke baad mera bahut bura haal ho gaya hai.,Ek hafte ke deadline ke baad meri toh haalat kharab ho gayi hai.,haalat kharab,STRESSED,claude_gen2
+"Shaadi mein sab nach rahe the, bahut dhamaal tha.","Shaadi mein sab nach rahe the, ekdum bawaal tha.",bawaal,EXCITED,claude_gen2
+Exam se pehle raat ko syllabus khatam karna mushkil tha.,Exam se pehle raat ko syllabus khatam karte karte waat lagi gayi.,waat lagi,STRESSED,claude_gen2
+Kal ke cricket match mein usne bahut accha khela.,Kal ke cricket match mein woh beast ki tarah khela.,beast,POSITIVE,claude_gen2
+Is mela ka ticket sasta tha aur sab kuch badhiya tha.,"Is mela ka ticket sasta tha aur sab kuch badhiya, ekdum paisa vasool.",paisa vasool,POSITIVE,claude_gen2
+"Aaj Sunday hai, ghar par aaram se baithe hain.","Aaj Sunday hai, ghar par bas chill kar rahe hain.",chill,CASUAL,claude_gen2
+Concert mein jab gaana shuru hua toh sab jhoom uthe.,Concert mein jab gaana shuru hua toh pura mahaul electric ho gaya.,electric,EXCITED,claude_gen2
+Naye phone ka camera aur performance dono bahut accha chal raha hai.,Naye phone ka camera aur performance dono butter smooth chal raha hai.,butter smooth,POSITIVE,claude_gen2
+Chai ke saath dost ke saath baat karna accha lagta hai.,Chai ke saath dost ke saath baat karna sahi lagta hai.,sahi,CASUAL,claude_gen2
+"Mujhe laga tha bus aayegi, par woh pehle hi nikal chuki thi.","Arre mujhe laga tha bus aayegi, par woh pehle hi nikal chuki thi.",arre,CASUAL,claude_gen2
+"Barish ki wajah se road trip cancel ho gayi, bura lag raha hai.","Barish ki wajah se road trip cancel ho gayi, mood off ho gaya.",mood off,SAD,claude_gen2
+Wifi baar baar disconnect ho raha tha aur mujhe bahut gussa aaya.,"Wifi baar baar disconnect hoke pakaa diya, bahut gussa aaya.",pakaa diya,FRUSTRATED,claude_gen2
+Maine sach mein kal raat dher saari maggi khayi thi.,Kasam se maine kal raat dher saari maggi khayi thi.,kasam se,CASUAL,claude_gen2
+"Yeh report abhi bhejna zaroori hai, boss ne bola hai.","Yeh report abhi bhejna urgent hai, boss ne bola hai.",urgent,URGENT,claude_gen2
+Shaadi ki taiyari mein pichle hafte se bahut thak gaye hain.,Shaadi ki taiyari mein pichle hafte se haalat kharab ho gayi hai.,haalat kharab,STRESSED,claude_gen2
+Uska design bilkul sahi aur perfect tha.,Uska design ekdum on point tha.,on point,POSITIVE,claude_gen2
+"Tune naya haircut karwaya, bahut accha lag raha hai.","Tune naya haircut karwaya, sahi hai yaar, bahut accha lag raha hai.",sahi hai,POSITIVE,claude_gen2
+Maa ke haath ka rajma chawal khaake bahut khushi hui.,Maa ke haath ka rajma chawal khaake dil khush ho gaya.,dil khush,HAPPY,claude_gen2
+Us chhote bacche ki masoom muskaan sabko pasand aayi.,Us chhote bacche ki masoom muskaan ne sabka dil jeet liya.,dil jeet liya,POSITIVE,claude_gen2
+Bike ride par pahadon ka nazara bahut shaandaar tha.,Bike ride par pahadon ka nazara next level tha.,next level,POSITIVE,claude_gen2
+Is mahine office mein itna kaam hai ki saans lene ki fursat nahi.,"Is mahine office mein kaam ka pahaad hai, saans lene ki fursat nahi.",kaam ka pahaad,STRESSED,claude_gen2
+Nukkad ke dhaabe ka butter chicken bahut hi badhiya tha.,Nukkad ke dhaabe ka butter chicken ekdum tagda tha.,tagda,POSITIVE,claude_gen2
+"Traffic mein ek ghanta phanse rahe, bahut gussa aa raha hai.","Traffic mein ek ghanta phanse rahe, dimaag kharab ho gaya.",dimaag kharab,FRUSTRATED,claude_gen2
+Kal ke concert ki playlist bahut zabardast hai.,Kal ke concert ki playlist ekdum fire hai.,fire,EXCITED,claude_gen2
+Itni der se intezaar kiya aur movie ka ending bura nikla.,Itni der se intezaar kiya aur movie ka ending bilkul off nikla.,off,NEGATIVE,claude_gen2
+"Ek saath assignment, project aur interview ki taiyari karni hai.","Ek saath assignment, project aur interview ki taiyari, dimaag fry ho gaya hai.",dimaag fry,STRESSED,claude_gen2
+Is restaurant ka khana aur service dono bahut bure the.,Is restaurant ka khana aur service dono ekdum ghatiya the.,ghatiya,NEGATIVE,claude_gen2
+"Client ko report abhi bhejni hai, time nahi hai.","Client ko report abhi bhejni hai, bahut urgent hai, time nahi hai.",urgent,URGENT,claude_gen2
+Is baar bonus bahut accha mila hai.,"Is baar bonus mein toh paani hi paani hai, bahut accha mila.",paani,POSITIVE,claude_gen2
+"Kal ka movie night ka plan cancel ho gaya, mood kharab hai.","Kal ka movie night ka plan cancel ho gaya, sab faaltu ho gaya, mood kharab hai.",faaltu,NEGATIVE,claude_gen2
+Mera naya phone bahut tez chal raha hai.,Mera naya phone rocket ki tarah chal raha hai.,rocket,POSITIVE,claude_gen2
+Is baar ki monsoon trip ka view bahut accha tha.,Is baar ki monsoon trip ka view gazab tha.,gazab,POSITIVE,claude_gen2
+Kal shaam ko mere saath chai pe chalega?,"Bhai, kal shaam ko mere saath chai pe chalega?",bhai,CASUAL,claude_gen2
+"Uska internship ka presentation bilkul sahi tha, koi galti nahi.","Uska internship ka presentation ekdum on point tha, koi galti nahi.",on point,POSITIVE,claude_gen2
+"Wifi down hai aur kal tak assignment jama karna hai, bahut tension hai.","Wifi down hai aur kal tak assignment jama karna hai, dimaag fry ho gaya hai.",dimaag fry,STRESSED,claude_gen2
+"Food delivery ka ek ghanta wait kiya, ab bhookh se bura haal hai.","Food delivery ka ek ghanta wait kiya, bhookh se jaan nikal gayi.",jaan nikal gayi,FRUSTRATED,claude_gen2
+"Kal birthday party hai, sab dost aa rahe hain.","Kal birthday party hai, sab dost aa rahe hain, full mauj hogi!",mauj,EXCITED,claude_gen2
+"Goa trip ke tickets book ho gaye, sab kuch ready hai.","Goa trip ke tickets book ho gaye, scene set hai, sab kuch ready hai!",scene set hai,EXCITED,claude_gen2
+"Boss ko aaj hi file chahiye, der hui toh problem hogi.","Boss ko aaj hi file chahiye, der hui toh scene bigad jayega.",scene bigad jayega,URGENT,claude_gen2
+Mera roommate bahut bharosemand aur madadgaar insaan hai.,"Mera roommate ekdum solid banda hai, hamesha madad karta hai.",solid banda,POSITIVE,claude_gen2
+Exam ka paper itna mushkil tha ki sab fail hone wale hain.,Exam ka paper itna mushkil tha ki sabki waat lag gayi.,waat lag gayi,STRESSED,claude_gen2
+"Mummy ne aaj jo biryani banayi, bahut acchi thi.","Mummy ne aaj jo biryani banayi, ekdum mast thi.",mast,POSITIVE,claude_gen2
+"Theek hai, kal subah milte hain.","Sahi hai, kal subah milte hain.",sahi,CASUAL,claude_gen2
+"Aaj Sunday hai, kuch kaam nahi karna, bas aaram karna hai.","Aaj Sunday hai, kuch kaam nahi karna, bas chill karna hai.",chill,CASUAL,claude_gen2
+Family dinner mein dadi ke haath ka khana bahut swadisht tha.,Family dinner mein dadi ke haath ka khana lajawaab tha.,lajawaab,POSITIVE,claude_gen2
+"Traffic mein do ghante phase rahe, bahut thak gaye.","Traffic mein do ghante lag gaye, bahut thak gaye.",lag gaye,FRUSTRATED,claude_gen2
+Is baar ki web series ka ending bahut kharab tha.,Is baar ki web series ka ending ekdum bekaar tha.,bekaar,NEGATIVE,claude_gen2
+Uska cricket match mein pradarshan bahut shandaar raha.,Uska cricket match mein pradarshan ekdum dhasu raha.,dhasu,POSITIVE,claude_gen2
+"Kal result aane wala hai, mujhe bahut dar lag raha hai.","Kal result aane wala hai, dil baith raha hai.",dil baith raha hai,ANXIOUS,claude_gen2
+"Mehmaan aa rahe hain, jaldi se ghar saaf kar do.","Mehmaan aa rahe hain, fatafat ghar saaf kar do.",fatafat,URGENT,claude_gen2
+Tu mera charger kahan rakh ke bhool gaya?,Abey tu mera charger kahan rakh ke bhool gaya?,abey,CASUAL,claude_gen2
+Mahine ke aakhir mein paise bilkul khatam ho jaate hain.,"Mahine ke aakhir mein ekdum jeb khaali ho jaati hai, kuch bachta hi nahi.",jeb khaali,STRESSED,claude_gen2
+Kal raat ka concert bahut shandaar tha.,"Kal raat ka concert ekdum bomb tha, maza aa gaya!",bomb,EXCITED,claude_gen2
+"Presentation poora ho gaya, koi dikkat nahi aayi.","Presentation smoothly poora ho gaya, koi dikkat nahi aayi.",smoothly,CASUAL,claude_gen2
+"Maa ne aaj jo kheer banayi, woh bahut achhi thi.","Maa ne aaj jo kheer banayi, ekdum kadak thi.",kadak,POSITIVE,claude_gen2
+Us chhote bacche ke gaane ne sabko khush kar diya.,Us chhote bacche ke gaane ne toh sabka dil jeet liya.,dil jeet liya,POSITIVE,claude_gen2
+"Tum itni der se kahan ho, kab se wait kar rahe hain.","Tum itni der se kahan ho re, kab se wait kar rahe hain.",re,CASUAL,claude_gen2
+Is dukaan ki jalebi ka swaad bahut badhiya hai.,Is dukaan ki jalebi ka swaad ekdum lajawaab hai.,lajawaab,POSITIVE,claude_gen2
+Bike pe ladakh ka safar bahut achha raha.,Bike pe ladakh ka safar zabardast raha.,zabardast,POSITIVE,claude_gen2
+Kal ka match saath mein dekhne chalte hain.,"Bro, kal ka match saath mein dekhne chalte hain.",bro,CASUAL,claude_gen2
+Final match ka mahaul stadium mein bahut josh wala tha.,Final match ka mahaul stadium mein ekdum electric tha.,electric,EXCITED,claude_gen2
+Humne gaming tournament mein saari teams ko haraya.,"Humne gaming tournament mein tod-phod machayi, saari teams ko haraya.",tod-phod,EXCITED,claude_gen2
+Salary aate hi hum dosto ne party kar li.,Salary aate hi hum dosto ne mauj kar li party mein.,mauj,EXCITED,claude_gen2
+"Chai ka ek cup aur laa de, please.","Boss, chai ka ek cup aur laa de, please.",boss,CASUAL,claude_gen2
+Uski lambi baatein sunte sunte hum thak gaye.,Usne apni lambi baatein sunaake pakaa diya hume.,pakaa diya,FRUSTRATED,claude_gen2
+Uska naya hairstyle aur kapde dekh ke sab impress ho gaye.,Uska naya hairstyle aur kapde ekdum fire lag rahe the.,fire,EXCITED,claude_gen2
+Baarish ki wajah se humara picnic cancel ho gaya.,"Baarish ki wajah se humara picnic cancel ho gaya, poora scene off.",scene off,NEGATIVE,claude_gen2
+"Traffic mein ek ghanta fanse rahe, bahut gussa aaya.","Traffic mein ek ghanta fanse rahe, dimaag kharab ho gaya.",dimaag kharab,FRUSTRATED,claude_gen2
+Interview mein usne bahut achhe jawab diye.,Interview mein usne ekdum tagda jawab diye.,tagda,POSITIVE,claude_gen2
+Exam se pehle raat bhar padhai karke bahut thakan hui.,Exam se pehle raat bhar padhai karke jaan nikal gayi.,jaan nikal gayi,FRUSTRATED,claude_gen2
+Is baar diwali ki rangoli bahut sundar bani hai.,Is baar diwali ki rangoli gajab ki bani hai.,gajab,POSITIVE,claude_gen2
+Shaadi mein sab log nachte hue bahut khush the.,"Shaadi mein sab nachte hue the, poora khushi ka mahaul tha.",khushi ka mahaul,EXCITED,claude_gen2
+Weekend pe hum ghar pe aaram se movie dekhenge.,Weekend pe hum ghar pe chill karke movie dekhenge.,chill,CASUAL,claude_gen2
+Aaj ki chai ka swaad bahut acchha hai.,Aaj ki chai ekdum mast bani hai.,mast,POSITIVE,claude_gen2
+"Traffic mein ek ghanta phansa raha, bahut pareshani hui.","Traffic mein ek ghanta phansa raha, jaan nikal gayi.",jaan nikal gayi,FRUSTRATED,claude_gen2
+Shaadi ka venue bahut shandaar aur bhavya tha.,Shaadi ka venue ekdum royal tha.,royal,POSITIVE,claude_gen2
+Tu kal match dekhne aa raha hai na?,Tu kal match dekhne aa raha hai na re?,re,CASUAL,claude_gen2
+College fest ka mahaul kaafi zabardast tha.,College fest ka mahaul ekdum lit tha.,lit,POSITIVE,claude_gen2
+Is mahine meri salary bahut tezi se badhi.,Is mahine meri salary rocket ki tarah upar gayi.,rocket,POSITIVE,claude_gen2
+"Haan, woh restaurant jaana theek rahega.","Haan, woh restaurant jaana sahi rahega.",sahi,CASUAL,claude_gen2
+Uska dance video bahut logon tak pahunch gaya.,Uska dance video poora viral ho gaya.,viral,POSITIVE,claude_gen2
+Kal raat ki picture bilkul achhi nahi thi.,Kal raat ki picture ekdum bakwaas thi.,bakwaas,NEGATIVE/DISAPPOINTED,claude_gen2
+Final ke last over ne sabko bahut utsahit kar diya.,Final ke last over mein poora stadium electric ho gaya.,electric,EXCITED,claude_gen2
+Kal road trip pe jaane ke liye main bahut utsuk hoon.,Kal road trip pe jaane ke liye main full excited hoon.,full excited,EXCITED,claude_gen2
+Laptop ki battery abhi mar gayi aur kal submission hai.,"Laptop ki battery abhi mar gayi, kal submission hai, gaya kaam se.",gaya kaam se,URGENT,claude_gen2
+"Exam se pehle syllabus baaki hai, bahut tension hai.","Exam se pehle syllabus baaki hai, haalat kharab hai.",haalat kharab,STRESSED,claude_gen2
+"Chalo, ab gaming tournament shuru karte hain.","Chalo, game on, ab gaming tournament shuru karte hain.",game on,EXCITED,claude_gen2
+Yeh naya serial dekhna samay ki barbaadi hai.,Yeh naya serial dekhna ekdum faaltu hai.,faaltu,NEGATIVE/DISAPPOINTED,claude_gen2
+"Boss ne meeting beech mein hi bula li, ab dikkat hogi.","Boss ne meeting beech mein hi bula li, gaya scene ab.",gaya scene,URGENT,claude_gen2
+Mujhe kal subah jaldi uthna hai.,Mujhe kal subah jaldi uthna hai yaar.,yaar,CASUAL,claude_gen2
+Is momo ki chutney bahut tez aur swaadisht hai.,Is momo ki chutney ekdum kadak hai.,kadak,POSITIVE,claude_gen2
+Yeh online food delivery ka experience bilkul kharab raha.,Yeh online food delivery ka experience ekdum bekaar raha.,bekaar,NEGATIVE/DISAPPOINTED,claude_gen2
+Placement ke interview ke baad sab bahut pareshan hain.,Placement ke interview ke baad sabki waat lagi hui hai.,waat lagi,STRESSED,claude_gen2
+Bank ke chakkar lagate lagate poora din nikal gaya.,Bank ke chakkar lagate lagate poora din lag gaye.,lag gaye,FRUSTRATED,claude_gen2
+"Barish ki wajah se picnic cancel ho gaya, udaas hoon.","Barish ki wajah se picnic cancel ho gaya, mood off hai.",mood off,SAD,claude_gen2
+"Yeh movie dekhne ka koi fayda nahi tha, bahut boring thi.","Yeh movie ekdum faaltu thi yaar, dekhne ka koi fayda nahi tha.",faaltu,NEGATIVE,claude_gen2
+Wifi baar baar disconnect ho raha hai aur kaam ruk gaya hai.,"Wifi baar baar disconnect ho raha hai, dimaag kharab ho gaya, kaam ruk gaya hai.",dimaag kharab,FRUSTRATED,claude_gen2
+Mere college ka dost hamesha mushkil mein saath deta hai.,"Mere college ka dost sachcha dost hai, hamesha mushkil mein saath deta hai.",sachcha dost,POSITIVE,claude_gen2
+Kal hum road trip pe Manali ja rahe hain.,"Kal hum road trip pe Manali ja rahe hain, main toh full excited hoon!",full excited,EXCITED,claude_gen2
+Itne saare deadlines hain ki kuch samajh nahi aa raha.,"Itne saare deadlines hain, dimaag ki dahi ho gayi hai, kuch samajh nahi aa raha.",dimaag ki dahi,STRESSED,claude_gen2
+Aaj ki biryani bahut achhi bani thi.,"Aaj ki biryani ekdum paani bani thi, maza aa gaya!",paani,POSITIVE,claude_gen2
+Jaldi pahunch warna train nikal jayegi aur sab gadbad ho jayega.,"Jaldi pahunch yaar, warna train nikal gayi toh scene bigad jayega.",scene bigad jayega,URGENT,claude_gen2
+Is hafte office mein bahut zyada kaam pending hai.,"Is hafte office mein kaam ka pahaad pada hai, saans lene ki fursat nahi.",kaam ka pahaad,STRESSED,claude_gen2
+Mujhe concert ke front row ke tickets mil gaye!,"Mujhe concert ke front row ke tickets mil gaye, ekdum jackpot!",jackpot,EXCITED,claude_gen2
+Nayi cafe ki coffee bahut achhi thi.,"Nayi cafe ki coffee ekdum chaka-chak thi, ek aur cup banta hai.",chaka-chak,POSITIVE,claude_gen2
+"Aaj Sunday hai, bas aaram se ghar pe baithe hain.","Aaj Sunday hai, bas ghar pe chill kar rahe hain.",chill,CASUAL,claude_gen2
+"Itne paise mein itna accha khana, bahut worth it tha.","Itne paise mein itna accha khana, ekdum paisa vasool tha!",paisa vasool,POSITIVE,claude_gen2
+Kal interview hai aur mujhe thoda dar lag raha hai.,Kal interview hai aur bahut tension ho rahi hai yaar.,tension,STRESSED,claude_gen2
+Uska naya gaana bahut badhiya hai.,"Uska naya gaana ekdum kadak hai, repeat pe chal raha hai.",kadak,POSITIVE,claude_gen2
+Din bhar Excel sheets dekhte dekhte thak gaya hoon.,Din bhar Excel sheets dekhte dekhte dimaag fry ho gaya hai.,dimaag fry,STRESSED,claude_gen2
+"Kya kar raha hai tu, chai peene chalega?","Kya kar raha hai re tu, chai peene chalega?",re,CASUAL,claude_gen2
+Bike phir se kharab ho gayi aur ab late ho jaunga.,"Bike phir se kharab ho gayi, ekdum jhand hai yaar, ab late ho jaunga.",jhand,FRUSTRATED,claude_gen2
+"Padosi ka speaker raat bhar bajta raha, neend nahi aayi.","Padosi ka speaker raat bhar bajta raha, sar phat raha hai, neend nahi aayi.",sar phat raha hai,FRUSTRATED,claude_gen2
+Barish ki wajah se weekend ka plan cancel ho gaya.,"Barish ki wajah se weekend ka plan cancel ho gaya, scene off ho gaya.",scene off,NEGATIVE,claude_gen2
+"Yeh report abhi bhejna zaroori hai, boss intezaar kar rahe hain.","Yeh report abhi bhejna urgent hai, boss intezaar kar rahe hain.",urgent,URGENT,claude_gen2
+Mahine ka aakhri hafta hai aur paise bilkul khatam ho gaye.,"Mahine ka aakhri hafta hai aur jeb khaali hai, paise bilkul khatam ho gaye.",jeb khaali,STRESSED,claude_gen2
+"Tumne presentation mein kamaal kar diya, sabko pasand aaya.","Tum toh presentation mein chha gaye yaar, sabko pasand aaya!",chha gaye,POSITIVE,claude_gen2
+Mera dance video bahut logon ne dekha aur share kiya.,"Mera dance video viral ho gaya, bahut logon ne dekha aur share kiya!",viral,POSITIVE,claude_gen2
+Kal se chhutti shuru hai aur humne goa ka plan banaya hai.,"Kal se chhutti shuru hai, goa ka plan hai, ab toh bas mauj hi mauj!",mauj,EXCITED,claude_gen2
+Maa ke haath ka khana khake bahut khushi hui.,Maa ke haath ka khana khake dil khush ho gaya.,dil khush,HAPPY,claude_gen2
+Kal ka gaming tournament mein maine first position li.,"Kal ke gaming tournament mein maine first position li, ekdum dhasu performance tha!",dhasu,POSITIVE,claude_gen2
+Placement ke ek hafte pehle bahut zyada pressure hai.,"Placement se ek hafte pehle toh waat lag gayi hai, pressure hi pressure hai.",waat lag gayi,STRESSED,claude_gen2
+Gym mein uska deadlift dekh ke sab hairan reh gaye.,"Gym mein uska deadlift dekh ke sab hairan reh gaye, banda ekdum beast hai.",beast,POSITIVE,claude_gen2
+Kal hum sab pehli baar beach trip pe ja rahe hain.,"Kal hum sab pehli baar beach trip pe ja rahe hain, main toh full excited hoon!",full excited,EXCITED,claude_gen2
+Baarish mein ghar ke bahar nikalte hi sab kapde geele ho gaye.,"Baarish mein ghar ke bahar nikalte hi lag gaye, sab kapde geele ho gaye.",lag gaye,FRUSTRATED,claude_gen2
+"Maa ne aaj jo rajma chawal banaye, woh bahut acche the.","Maa ne aaj jo rajma chawal banaye, kamaal the ekdum.",kamaal,CASUAL,claude_gen2
+Kal raat ke concert mein uski awaaz bahut sundar lag rahi thi.,Kal raat ke concert mein uski awaaz lajawaab lag rahi thi.,lajawaab,POSITIVE,claude_gen2
+"Is weekend farmhouse party ka plan bana hai, bahut mazedaar hoga.","Is weekend farmhouse party ka plan bana hai, kya scene hai yaar, bahut mazedaar hoga!",kya scene hai,EXCITED,claude_gen2
+Aaj ki lambi meeting se main bahut thak gaya hoon.,"Aaj ki lambi meeting se main pak gaya hoon, bas ab ghar jaana hai.",pak gaya,FRUSTRATED,claude_gen2
+"Tune apni dost ke liye jo surprise party rakhi, woh bahut acchi thi.","Tune apni dost ke liye jo surprise party rakhi, kya baat hai, bahut acchi thi!",kya baat,POSITIVE,claude_gen2
+"Chalo aaj raat Maggi banate hain, mujhe bahut bhookh lagi hai.","Chalo yaar aaj raat Maggi banate hain, mujhe bahut bhookh lagi hai.",yaar,CASUAL,claude_gen2
+Pados ki shaadi ka DJ subah se bahut tez bajaa raha hai.,Pados ki shaadi ka DJ subah se itna tez bajaa raha hai ki sar phat raha hai.,sar phat raha hai,FRUSTRATED,claude_gen2
+Sunset point se pahaadon ka nazara bahut khoobsurat tha.,"Sunset point se pahaadon ka nazara gazab tha, wahan se hatne ka dil nahi kiya.",gazab,POSITIVE,claude_gen2
+Exam sar par hai aur maine abhi tak syllabus khatam nahi kiya.,Exam sir pe hai aur maine abhi tak syllabus khatam nahi kiya.,sir pe,STRESSED,claude_gen2
+"Kal raat jo movie dekhi, uski kahani bilkul achhi nahi thi.","Kal raat jo movie dekhi, uski kahani ekdum bekaar thi, paise barbaad.",bekaar,NEGATIVE,claude_gen2
+Itni hype ke baad bhi uski nayi film bilkul nahi chali.,Itni hype ke baad bhi uski nayi film ekdum flop ho gayi.,flop,NEGATIVE,claude_gen2
+Hamare college ke ladko ne inter-college fest mein sabko hara diya.,"Hamare college ke ladke inter-college fest mein chha gaye, sabko hara diya!",chha gaye,POSITIVE,claude_gen2
+Interview ke time sawal sunte hi mujhe kuch yaad nahi aaya.,"Interview ke time sawal sunte hi mera dimaag block ho gaya, kuch yaad nahi aaya.",dimaag block,ANXIOUS,claude_gen2
+Aaj ka pura din kaam bina kisi dikkat ke nipat gaya.,"Aaj ka pura din kaam ekdum smoothly nipat gaya, koi dikkat nahi aayi.",smoothly,CASUAL,claude_gen2
+Result aane se pehle mujhe bahut ghabrahat ho rahi hai.,"Result aane se pehle mera dil baith raha hai, bahut ghabrahat ho rahi hai.",dil baith raha hai,ANXIOUS,claude_gen2
+Mela mein jhoole aur golgappe ke saath bahut anand aaya.,Mela mein jhoole aur golgappe ke saath full maze aaye!,maze,EXCITED,claude_gen2
+Barish mein roadside ki garam chai bahut acchi lagti hai.,Barish mein roadside ki garam chai ekdum kadak lagti hai.,kadak,POSITIVE,claude_gen2
+Plumber ne leak hua pipe thodi der mein theek kar diya.,Plumber ne leak hua pipe chutki mein theek kar diya.,chutki mein,POSITIVE,claude_gen2
+Naye phone ka camera aur battery dono bahut acche hain.,Naye phone ka camera aur battery dono superb hain.,superb,POSITIVE,claude_gen2
+Kal ki cricket match ka final over bahut romanchak tha.,"Kal ki cricket match ka final over ekdum bomb tha, dhadkan ruk gayi thi!",bomb,EXCITED,claude_gen2
+Hostel mein kal raat sabne milke party ki.,Hostel mein kal raat sabne milke ekdum dhamaal party ki.,dhamaal,EXCITED,claude_gen2
+Is baar ka placement season achha raha.,Is baar ka placement season ekdum zabardast raha.,zabardast,POSITIVE,claude_gen2
+"Kal ka exam easy hai, tum relax raho.","Kal ka exam easy hai, tum bina tension raho yaar.",bina tension,CASUAL,claude_gen2
+Kal client ke saamne presentation hai aur slides ready nahi hain.,"Kal client ke saamne presentation hai aur slides ready nahi hain, tension high hai yaar.",tension high,STRESSED,claude_gen2
+Weekend pe goa ka plan fix ho gaya hai.,"Weekend pe goa ka scene set hai, ekdum pakka plan ho gaya.",scene set hai,EXCITED,claude_gen2
+Phone ka camera kaafi achha hai is price mein.,Phone ka camera is price mein gazab hai yaar.,gazab,POSITIVE,claude_gen2
+Itna wait kiya aur movie bilkul bekaar nikli.,Itna wait kiya aur movie ekdum faaltu nikli.,faaltu,NEGATIVE/DISAPPOINTED,claude_gen2
+Uska naya gaana sabko pasand aa raha hai.,"Uska naya gaana ekdum superhit ja raha hai, sabko pasand aa raha hai.",superhit,POSITIVE,claude_gen2
+Maa ke haath ka rajma chawal hamesha swaadisht lagta hai.,Maa ke haath ka rajma chawal hamesha lajawaab lagta hai.,lajawaab,POSITIVE,claude_gen2
+"Phone paani mein gir gaya, ab chalu nahi ho raha.","Phone paani mein gir gaya, ab toh gaya kaam se, chalu hi nahi ho raha.",gaya kaam se,URGENT,claude_gen2
+Rohan ne gym mein aaj bahut zyada weight uthaya.,"Rohan ne gym mein aaj itna weight uthaya, ekdum beast hai yaar.",beast,POSITIVE,claude_gen2
+Barish mein traffic itna hai ki ghanton se phase hue hain.,Barish mein traffic itna hai ki ghanton se lag gaye hain yaar.,lag gaye,FRUSTRATED,claude_gen2
+"Coffee peene chalein kya, thoda timepass karte hain.","Bro, coffee peene chalein kya, thoda timepass karte hain.",bro,CASUAL,claude_gen2
+Shaadi mein hamara poora family bahut shaan se pahuncha.,Shaadi mein hamara poora family ekdum royal style mein pahuncha.,royal,POSITIVE,claude_gen2
+"Kal raat ka concert bahut badhiya tha, sab naach rahe the.","Kal raat ka concert ekdum fire tha, sab naach rahe the.",fire,EXCITED,claude_gen2
+Dosto ke saath road trip pe jaane mein bahut mazaa aayega.,Dosto ke saath road trip pe jaane mein ekdum maze aayenge yaar.,maze,EXCITED,claude_gen2
+Aaj office ka sab kaam bina dikkat ke ho gaya.,Aaj office ka sab kaam ekdum smoothly ho gaya.,smoothly,CASUAL,claude_gen2
+Is baar Diwali pe bahut badi sale aa rahi hai.,Is baar Diwali pe ekdum bomb sale aa rahi hai yaar.,bomb,EXCITED,claude_gen2
+Uski dance performance dekhke sab hairaan reh gaye.,"Uski dance performance ekdum gajab thi, sab hairaan reh gaye.",gajab,POSITIVE,claude_gen2
+Monsoon mein chai aur pakode ka combination achha lagta hai.,Monsoon mein chai aur pakode ka combination ekdum mast lagta hai.,mast,POSITIVE,claude_gen2
+"Aaj mera mood theek nahi hai, kuch achha nahi lag raha.","Aaj mera mood ekdum off hai, kuch achha nahi lag raha.",off,NEGATIVE/DISAPPOINTED,claude_gen2
+Naye cafe ki service aur khaana dono bahut achhe the.,Naye cafe ki service aur khaana dono ekdum top class the.,top class,POSITIVE,claude_gen2
+Is app se bill ka payment ek second mein ho jata hai.,Is app se bill ka payment chutki mein ho jata hai yaar.,chutki mein,POSITIVE,claude_gen2
+Chhutti mein cousins ke saath ghar pe bahut khel kood hoti hai.,Chhutti mein cousins ke saath ghar pe ekdum masti hoti hai.,masti,CASUAL,claude_gen2
+Tumhara naya laptop mere kaam ke liye bilkul sahi hai.,Tumhara naya laptop mere kaam ke liye ekdum fit hai yaar.,fit hai,POSITIVE,claude_gen2
+Aaj meri baat kisi se karne ka man nahi hai.,"Aaj mera mood off hai, kisi se baat karne ka man nahi hai.",mood off,SAD,claude_gen2
+Barish ki wajah se aaj ka match cancel ho gaya.,"Barish ki wajah se aaj ka match cancel ho gaya, bada off feel ho raha hai.",off,NEGATIVE/DISAPPOINTED,claude_gen2
+Kal mujhe phone repair karwane ke liye chalna hai.,Kal mujhe phone repair karwane ke liye chalna hai bro.,bro,CASUAL,claude_gen2
+Tu bhi hamare saath chai peene chal na.,Tu bhi hamare saath chai peene chal na yaar.,yaar,CASUAL,claude_gen2
+Salary aate hi sabse pehle tumhe treat dunga.,Salary aate hi sabse pehle tujhe treat dunga boss.,boss,CASUAL,claude_gen2
+Usne aaj gym mein bahut zyada weight utha diya.,"Usne aaj gym mein itna weight utha diya, ekdum beast hai woh.",beast,POSITIVE,claude_gen2
+Sunday ko hum ghar pe aaram se movie dekhenge.,Sunday ko hum ghar pe chill karke movie dekhenge.,chill,CASUAL,claude_gen2
+"Kal exam ka result aane wala hai, mujhe dar lag raha hai.","Kal exam ka result aane wala hai, full tension chal raha hai.",full tension,ANXIOUS,claude_gen2
+Kal raat ki birthday party bahut zabardast hone wali hai.,Kal raat ki birthday party mein dhamaal hone wala hai.,dhamaal,EXCITED,claude_gen2
+Is hafte ki web series ka ending bilkul pasand nahi aaya.,Is hafte ki web series ka ending ekdum bakwaas tha.,bakwaas,NEGATIVE/DISAPPOINTED,claude_gen2
+Mere nayi hostel ka khana bilkul acha nahi hai.,Mere nayi hostel ka khana ekdum bekaar hai.,bekaar,NEGATIVE/DISAPPOINTED,claude_gen2
+Is cafe ki coffee kaafi acchi hai.,Is cafe ki coffee ekdum badiya hai.,badiya,POSITIVE,claude_gen2
+Goa wali hamari trip kabhi bhulne layak nahi thi.,Goa wali hamari trip ekdum unforgettable thi.,unforgettable,POSITIVE,claude_gen2
+Mere liye is shaadi mein yeh kurta bilkul sahi rahega.,Mere liye is shaadi mein yeh kurta ekdum fit hai.,fit hai,POSITIVE,claude_gen2
+Aaj placement ke interview mein sab kuch mere control mein tha.,"Aaj placement ke interview mein apna raaj tha, sab kuch control mein.",apna raaj,EXCITED,claude_gen2
+Final match mein kal itna josh hone wala hai ki poochho mat.,"Final match mein kal bawaal hone wala hai, poochho mat.",bawaal,EXCITED,claude_gen2
+Usne woh puzzle ek second mein solve kar diya.,Usne woh puzzle chutki mein solve kar diya.,chutki mein,POSITIVE,claude_gen2
+"Tune phir se meri charger kho di, kya kar raha hai tu?","Abey, tune phir se meri charger kho di, kya kar raha hai tu?",abey,CASUAL,claude_gen2
+"Itne kam daam mein yeh laptop mil gaya, bahut accha deal hai.","Itne kam daam mein yeh laptop mil gaya, ekdum paisa vasool deal hai.",paisa vasool,POSITIVE,claude_gen2
+"Haan, tune bilkul theek kaha, hum kal hi nikalte hain.","Haan, tune bilkul sahi kaha, hum kal hi nikalte hain.",sahi,CASUAL,claude_gen2
+"Is mahine boss ne bonus de diya, ab to maze hi maze hain.","Is mahine boss ne bonus de diya, ab to chaandi hi chaandi hai.",chaandi,POSITIVE,claude_gen2
+Naye flat ka kaam ab bilkul theek chal raha hai.,Naye flat ka kaam ab ekdum chaka-chak chal raha hai.,chaka-chak,POSITIVE,claude_gen2
+Naye phone mein apps bahut tezi se aur bina ruke chalte hain.,Naye phone mein apps ekdum butter smooth chalte hain.,butter smooth,POSITIVE,claude_gen2
+Hamara naya manager bahut acha aur bharosemand insaan hai.,"Hamara naya manager ekdum solid banda hai, bharosemand bhi.",solid banda,POSITIVE,claude_gen2
+Usne pura assignment ek ghante mein khatam kar diya.,Usne pura assignment chutki mein khatam kar diya.,chutki mein,POSITIVE,claude_gen2
+Kal raat ki wedding sangeet bahut badiya thi.,Kal raat ki wedding sangeet ekdum lit thi.,lit,POSITIVE,claude_gen2
+"Is mahine salary ke saath bonus bhi mila, kaafi faayda hua.","Is mahine salary ke saath bonus bhi mila, ekdum chaandi ho gayi.",chaandi,POSITIVE,claude_gen2
+"Chai ka kulhad idhar rakh de, phir baat karte hain.","Abey chai ka kulhad idhar rakh de, phir baat karte hain.",abey,CASUAL,claude_gen2
+"Itni der se delivery nahi aayi aur call bhi nahi utha raha, ajeeb hai.","Itni der se delivery nahi aayi aur call bhi nahi utha raha, kaafi weird hai.",weird,NEGATIVE,claude_gen2
+Gym mein aaj usne bahut heavy weight utha liya.,"Gym mein aaj usne heavy weight utha liya, ekdum beast hai woh.",beast,POSITIVE,claude_gen2
+Barish mein bhige bina ghar pahunchna mushkil hai.,"Yaar, barish mein bhige bina ghar pahunchna mushkil hai.",yaar,CASUAL,claude_gen2
+"Tera plan theek lag raha hai, chalo wahi karte hain.","Tera plan sahi lag raha hai, chalo wahi karte hain.",sahi,CASUAL,claude_gen2
+Naye phone ka camera kaafi badhiya photos khinchta hai.,Naye phone ka camera ekdum dhaasu photos khinchta hai.,dhaasu,POSITIVE,claude_gen2
+"Aaj raat concert ke tickets mil gaye, bahut maza aane wala hai.","Aaj raat concert ke tickets mil gaye, ekdum bomb hone wala hai.",bomb,EXCITED,claude_gen2
+"Itne kam time mein usne pura gaana gaa diya, bahut badhiya.","Itne kam time mein usne pura gaana gaa diya, kya baat!",kya baat,POSITIVE,claude_gen2
+"Station tak chhod dega kya mujhe, bike pe time lagega.","Bhai, station tak chhod dega kya mujhe, bike pe time lagega.",bhai,CASUAL,claude_gen2
+Bijli baar baar ja rahi hai aur kaam bhi nahi ho pa raha.,"Bijli baar baar ja rahi hai aur kaam bhi nahi ho pa raha, dimaag kharab ho gaya hai.",dimaag kharab,FRUSTRATED,claude_gen2
+Maa ke haath ki dal ka swaad kaafi accha tha.,Maa ke haath ki dal ka swaad ekdum lajawaab tha.,lajawaab,POSITIVE,claude_gen2
+"Boss ko abhi report chahiye, thoda jaldi bhej do.","Boss ko report abhi chahiye, ekdum urgent hai, jaldi bhej do.",urgent,URGENT,claude_gen2
+Weekend pe sab dost milke goa jaane ka plan bana rahe hain.,"Weekend pe sab dost milke goa jaane ka plan bana rahe hain, full masti hogi.",masti,CASUAL,claude_gen2
+Street food wale ka golgappa bahut tasty tha aaj.,Street food wale ka golgappa ekdum faadu tha aaj.,faadu,POSITIVE,claude_gen2
+Meeting ka sab kaam bina kisi dikkat ke nipat gaya.,Meeting ka sab kaam ekdum smooth nipat gaya.,smooth,CASUAL,claude_gen2
+"Train miss ho gayi aur ab agli ka intezaar karna padega, bahut pareshani hai.","Train miss ho gayi aur ab agli ka intezaar karna padega, pura jhand ho gaya.",jhand,FRUSTRATED,claude_gen2
+Uski dukaan ka chole bhature kaafi accha hota hai.,Uski dukaan ka chole bhature ekdum top class hota hai.,top class,POSITIVE,claude_gen2
+Kal trip pe nikalna hai aur main bahut utsuk hoon.,Kal trip pe nikalna hai aur main full excited hoon.,full excited,EXCITED,claude_gen2
+Interview mein question sunke mujhe kuch yaad hi nahi aaya.,"Interview mein question sunke mera dimaag block ho gaya, kuch yaad hi nahi aaya.",dimaag block,ANXIOUS,claude_gen2
+Naya software install hua aur sab kuch aaram se chal raha hai.,Naya software install hua aur sab kuch smoothly chal raha hai.,smoothly,CASUAL,claude_gen2
+Mera padosi har kisi ki madad ke liye hamesha taiyaar rehta hai.,"Mera padosi solid banda hai, har kisi ki madad ke liye hamesha taiyaar rehta hai.",solid banda,POSITIVE,claude_gen2
+Kal subah presentation hai aur slides abhi tak adhoori hain.,Kal subah presentation sir pe hai aur slides abhi tak adhoori hain.,sir pe,STRESSED,claude_gen2
+Naye gym ka equipment bahut accha hai.,Naye gym ka equipment ekdum top class hai.,top class,POSITIVE,claude_gen2
+Aaj fantasy cricket mein mera team sabse upar chal raha hai.,"Aaj fantasy cricket mein apna raaj chal raha hai, team sabse upar hai.",apna raaj,EXCITED,claude_gen2
+Chai ke liye nukkad par chalein kya?,"Boss, chai ke liye nukkad par chalein kya?",boss,CASUAL,claude_gen2
+Ghar mein shaadi hai aur saare cousins aaye hain.,"Ghar mein shaadi hai, saare cousins aaye hain, ekdum mauj hai.",mauj,EXCITED,claude_gen2
+"Tumne jo playlist banayi hai, bahut acchi hai.","Tumne jo playlist banayi hai, ekdum sahi hai.",sahi hai,POSITIVE,claude_gen2
+Goa trip par dosto ke saath khoob maza aane wala hai.,Goa trip par dosto ke saath maze hi maze aane wale hain.,maze hi maze,EXCITED,claude_gen2
+"Concert ke tickets mil gaye, sab log bahut khush hain.","Concert ke tickets mil gaye, kya scene hai yaar, sab bahut khush hain.",kya scene hai,EXCITED,claude_gen2
+Aaj ki cricket match mein usne bahut accha catch pakda.,Aaj ki cricket match mein usne kamaal ka catch pakda.,kamaal,CASUAL,claude_gen2
+"Subah ki traffic mein phanse, meeting ke liye late ho gaye.","Subah ki traffic mein lag gaye, meeting ke liye late ho gaye.",lag gaye,FRUSTRATED,claude_gen2
+Wifi phir se band ho gaya aur kaam atka hua hai.,"Wifi ne phir jhand kar diya, kaam atka hua hai.",jhand,FRUSTRATED,claude_gen2
+Mushkil waqt mein usne meri bahut madad ki.,"Mushkil waqt mein usne meri bahut madad ki, sachcha dost hai woh.",sachcha dost,POSITIVE,claude_gen2
+Mela ghoomne ke baad hum sabne jamke khana khaya.,Mela ghoomne ke baad hum sabne jamke pet puja ki.,pet puja,CASUAL,claude_gen2
+Mera bhai gym mein bahut bhaari weight utha leta hai.,"Mera bhai gym mein bhaari weight utha leta hai, ekdum beast hai.",beast,POSITIVE,claude_gen2
+Uski dance performance bahut shandaar thi.,Uski dance performance ekdum next level thi.,next level,POSITIVE,claude_gen2
+Barish ki wajah se humara picnic ka plan kharab ho gaya.,Barish ki wajah se humare picnic ke plan ka band baj gaya.,band baj gaya,NEGATIVE,claude_gen2
+Maa ke haath ka rajma chawal khake bahut accha laga.,Maa ke haath ka rajma chawal khake dil khush ho gaya.,dil khush,HAPPY,claude_gen2
+"Pehli baar bike chalane ko mili, mujhe bahut pasand aayi.","Pehli baar bike chalane ko mili, main toh isspe fida ho gaya.",fida,EXCITED,claude_gen2
+Aaj ka street food bahut zabardast tha.,Aaj ka street food ekdum fire tha.,fire,EXCITED,claude_gen2
+Placement interview kal hai aur mujhe ghabrahat ho rahi hai.,Placement interview kal hai aur mujhe bahut tension ho rahi hai.,tension,STRESSED,claude_gen2
+Birthday party mein sabne khoob naach kiya aur maza aaya.,"Birthday party ekdum lit thi, sabne khoob naach kiya.",lit,POSITIVE,claude_gen2
+Kal raat ki movie bahut buri thi.,Kal raat ki movie ekdum bekaar thi.,bekaar,NEGATIVE,claude_gen2
+Meeting itni lambi chali ki main thak gaya.,Meeting itni lambi chali ki main pak gaya.,pak gaya,FRUSTRATED,claude_gen2
+Pehle din office mein mera mood kharab ho gaya.,Pehle din office mein mera mood off ho gaya.,off,NEGATIVE,claude_gen2
+"Kal results aane wale hain, mujhe thoda dar lag raha hai.","Kal results aane wale hain, dil baith raha hai mera.",dil baith raha hai,ANXIOUS,claude_gen2
+"Ye naya serial bilkul bekaar nikla, time barbaad hua.","Ye naya serial toh ekdum faaltu nikla, time barbaad hua.",faaltu,NEGATIVE/DISAPPOINTED,claude_gen2
+Maa ke haath ka khana aaj bahut accha laga.,Maa ke haath ka khana aaj ekdum chaka-chak laga.,chaka-chak,POSITIVE,claude_gen2
+Weekend pe dost ke ghar movie night rakhi hai.,"Weekend pe dost ke ghar movie night rakhi hai, masti hogi.",masti,CASUAL,claude_gen2
+"Bhai tune sahi baat samjhi, wahi toh main keh raha tha.","Bhai tune sahi pakde, wahi toh main keh raha tha.",sahi pakde,CASUAL,claude_gen2
+"Traffic mein phase hue hain, aadha ghanta aur lagega.","Traffic mein phase hue hain yaar, aadha ghanta aur lagega.",yaar,CASUAL,claude_gen2
+Birthday party ko lekar sab log bahut excited hain.,Birthday party ko lekar sab ke andar kaafi hype hai.,hype,EXCITED,claude_gen2
+Gym mein aaj usne bahut zyada weight utha diya.,"Gym mein aaj usne itna weight utha diya, banda beast hai.",beast,POSITIVE,claude_gen2
+Internship ke pehle hi din presentation mein sabko impress kar diya.,Internship ke pehle hi din presentation mein jhanda gaad diya.,jhanda gaad diya,EXCITED,claude_gen2
+Road trip ka plan bahut badhiya bana hai.,Road trip ka plan zabardast bana hai.,zabardast,POSITIVE,claude_gen2
+Family dinner mein biryani bahut acchi bani thi.,Family dinner mein biryani superb bani thi.,superb,POSITIVE,claude_gen2
+Subah ki chai ke saath baarish ka mausam bahut accha lag raha hai.,Subah ki chai ke saath baarish ka mausam ekdum mast lag raha hai.,mast,POSITIVE,claude_gen2
+Is hafte teen deadlines ek saath aa gayi hain.,Is hafte teen deadlines ek saath sir pe aa gayi hain.,sir pe,STRESSED,claude_gen2
+Naye flat mein shift hone ka kaam aaram se ho gaya.,Naye flat mein shift hone ka kaam ekdum smooth ho gaya.,smooth,CASUAL,claude_gen2
+"Mujhe ye file abhi turant chahiye, client call pe hai.","Mujhe ye file abhi urgent chahiye, client call pe hai.",urgent,URGENT,claude_gen2
+Canteen ka khana aaj kal bahut kharab ho gaya hai.,Canteen ka khana aaj kal ekdum ghatiya ho gaya hai.,ghatiya,NEGATIVE/DISAPPOINTED,claude_gen2
+Concert mein bheed ka josh dekhne layak tha.,Concert mein bheed ka josh electric tha.,electric,EXCITED,claude_gen2
+Aaj subah se mera mood theek nahi hai.,Aaj subah se mera mood off hai.,off,NEGATIVE/DISAPPOINTED,claude_gen2
+"Server baar baar crash ho raha hai, pura din kharab ho gaya.","Server baar baar crash ho raha hai, pura din ka jhand ho gaya.",jhand,FRUSTRATED,claude_gen2
+"Barish ki wajah se cricket ka plan cancel ho gaya, mood kharab ho gaya.","Barish ki wajah se cricket ka plan cancel ho gaya, poora scene off ho gaya.",scene off,NEGATIVE/DISAPPOINTED,claude_gen2
+"Chal bhai, aaj ka bill main de deta hoon.","Chal boss, aaj ka bill main de deta hoon.",boss,CASUAL,claude_gen2
+Unki shaadi ka dance performance sabko bahut pasand aaya.,Unki shaadi ka dance performance toh superhit nikla.,superhit,POSITIVE,claude_gen2
+Aaj ka outfit tujh par bahut accha lag raha hai.,Aaj ka outfit tujh pe ekdum fit hai.,fit hai,POSITIVE,claude_gen2
+College ke purane doston ke saath trip pe jaane ko main bahut utsuk hoon.,"College ke purane doston ke saath trip pe jaana hai, full masti hone wali hai.",full masti,EXCITED,claude_gen2
+Diwali ke liye maine naye kapde kharide.,Diwali ke liye maine ekdum paani wale naye kapde kharide.,paani,POSITIVE,claude_gen2
+Mama ne aaj biryani banayi hai.,"Mama ne aaj biryani banayi hai, main toh fida ho gaya!",fida,EXCITED,claude_gen2
+Is chai ka swaad bahut acha hai.,Is chai ka swaad ekdum tagda hai.,tagda,POSITIVE,claude_gen2
+Woh bike chalate hue bahut khush lagta hai.,Woh bike chalate hue ekdum bindaas lagta hai.,bindaas,POSITIVE,claude_gen2
+Aaj ka concert bahut acha tha.,Aaj ka concert ekdum zabardast tha.,zabardast,POSITIVE,claude_gen2
+Tumhara placement ka plan bahut mazboot hai.,Tumhara placement ka plan ekdum solid hai.,solid,POSITIVE,claude_gen2
+Mushkil waqt mein Rohan hamesha mere saath khada raha.,"Mushkil waqt mein Rohan hamesha mere saath khada raha, woh mera sachcha dost hai.",sachcha dost,POSITIVE,claude_gen2
+Mujhe sale mein sab kuch aadhe daam pe mil gaya.,"Mujhe sale mein sab kuch aadhe daam pe mil gaya, ekdum jackpot lag gaya!",jackpot,EXCITED,claude_gen2
+"Kal subah jaldi uthna hai, alarm laga dena.","Bhai, kal subah jaldi uthna hai, alarm laga dena.",bhai,CASUAL,claude_gen2
+Naya gaana sunke din ban gaya.,Naya gaana sunke din ekdum chaka-chak ban gaya.,chaka-chak,POSITIVE,claude_gen2
+"Chalo theek hai, shaam ko cafe mein milte hain.","Chalo sahi hai, shaam ko cafe mein milte hain.",sahi,CASUAL,claude_gen2
+Uski dadi ne apni baaton se sabko khush kar diya.,Uski dadi ne apni baaton se sabka dil jeet liya.,dil jeet liya,POSITIVE,claude_gen2
+Meri dance reel bahut zyada logon ne dekhi.,"Meri dance reel toh ekdum viral ho gayi, sabne dekhi.",viral,POSITIVE,claude_gen2
+Final match mein bahut zordaar mukabla chal raha hai.,Final match mein ekdum bawaal mukabla chal raha hai!,bawaal,EXCITED,claude_gen2
+"Phone kahan rakha hai, dhyaan se dekho na.","Abey, phone kahan rakha hai, dhyaan se dekho na.",abey,CASUAL,claude_gen2
+Yeh assignment baar baar karte karte main thak gaya hoon.,Yeh assignment baar baar karte karte meri toh pak gaya hai.,pak gaya,FRUSTRATED,claude_gen2
+Maa ke haath ka khana hamesha bahut swadisht hota hai.,Maa ke haath ka khana hamesha lajawaab hota hai.,lajawaab,POSITIVE,claude_gen2
+Mechanic ne phone ki screen jaldi theek kar di.,Mechanic ne phone ki screen chutki mein theek kar di.,chutki mein,POSITIVE,claude_gen2
+Kal exam hai aur abhi tak kuch nahi padha.,"Kal exam hai aur abhi tak kuch nahi padha, tension high hai yaar.",tension high,STRESSED,claude_gen2
+"Pehle khana kha lete hain, phir kaam shuru karenge.","Pehle thodi pet puja kar lete hain, phir kaam shuru karenge.",pet puja,CASUAL,claude_gen2
+"Boss ko report abhi chahiye, aur main late ho gaya hoon.","Boss ko report abhi chahiye, aur main late ho gaya, ab toh gaya kaam se.",gaya kaam se,URGENT,claude_gen2
+"Yeh kya, tumne mera charger phir se le liya?","Arre, yeh kya, tumne mera charger phir se le liya?",arre,CASUAL,claude_gen2
+Result ka intezaar karte hue mujhe bahut ghabrahat ho rahi hai.,Result ka intezaar karte hue mera dil baith raha hai.,dil baith raha hai,ANXIOUS,claude_gen2
+Is gaming laptop ki performance kamaal ki hai.,Is gaming laptop ki performance ekdum beast hai.,beast,POSITIVE,claude_gen2
+Birthday party mein sabne khoob nacha aur khaya.,"Birthday party mein sabne khoob nacha aur khaya, ekdum maze hi maze!",maze,EXCITED,claude_gen2
+Aaj ka khaana acha bana tha.,Aaj ka khaana ekdum badiya bana tha.,badiya,POSITIVE,claude_gen2
+Is hotel ki service bilkul acchi nahi thi.,"Is hotel ki service ekdum ghatiya thi, mood kharab ho gaya.",ghatiya,NEGATIVE,claude_gen2
+"Itne saare assignments ek saath aa gaye, bahut stress hai.","Itne saare assignments ek saath aa gaye, dimaag fry ho gaya hai.",dimaag fry,STRESSED,claude_gen2
+Interview ke time mujhe kuch yaad hi nahi aaya.,"Interview ke time dimaag block ho gaya, kuch yaad hi nahi aaya.",dimaag block,ANXIOUS,claude_gen2
+Naya phone bahut aaraam se chal raha hai.,Naya phone ekdum butter smooth chal raha hai.,butter smooth,POSITIVE,claude_gen2
+Train chhootne wali hai aur main abhi tak ghar pe hoon.,"Train chhootne wali hai aur main abhi tak ghar pe hoon, gaya kaam se!",gaya kaam se,URGENT,claude_gen2
+"Tune itni jaldi presentation bana li, bahut acha.","Tune itni jaldi presentation bana li, kya baat hai!",kya baat,POSITIVE,claude_gen2
+"Kal boss ke saath meeting hai, mujhe chinta ho rahi hai.","Kal boss ke saath meeting hai, bahut tension ho rahi hai.",tension,STRESSED,claude_gen2
+Baarish ki wajah se humara picnic cancel ho gaya.,Baarish ki wajah se humara picnic scene off ho gaya.,scene off,NEGATIVE,claude_gen2
+"Chal, chai peene chalte hain, bahut thak gaya hoon.","Chal yaar, chai peene chalte hain, bahut thak gaya hoon.",yaar,CASUAL,claude_gen2
+Aaj match mein humari team poori tarah chhayi hui hai.,Aaj match mein humari team ka apna raaj chal raha hai.,apna raaj,EXCITED,claude_gen2
+"Mujhe kal subah jaldi utha dena, please.","Bro, mujhe kal subah jaldi utha dena, please.",bro,CASUAL,claude_gen2
+Meri pasandida dukaan hamesha ke liye band ho gayi.,"Meri pasandida dukaan hamesha ke liye band ho gayi, dil toot gaya.",dil toot gaya,SAD,claude_gen2
+Shaadi mein dance floor pe sabne bahut masti ki.,Shaadi mein dance floor pe sabne tod-phod masti ki.,tod-phod,EXCITED,claude_gen2
+Woh gym mein bahut bhaari weights utha leta hai.,"Woh gym mein bhaari weights utha leta hai, ekdum beast hai.",beast,POSITIVE,claude_gen2
+Usne woh puzzle bahut aasaani se hal kar diya.,Usne woh puzzle chutki mein hal kar diya.,chutki mein,POSITIVE,claude_gen2
+Uski wahi purani kahaaniyaan sunke main thak gaya hoon.,Uski wahi purani kahaaniyaan sun sunke pakaa diya usne.,pakaa diya,FRUSTRATED,claude_gen2
+Kal college fest mein bahut maza aane wala hai.,Kal college fest mein dhamaal hone wala hai.,dhamaal,EXCITED,claude_gen2
+"Sun na, kal ka plan kya hai?","Abey sun na, kal ka plan kya hai?",abey,CASUAL,claude_gen2
+Result aate hi ghar mein sab bahut khush ho gaye.,Result aate hi ghar mein khushi ka mahaul ban gaya.,khushi ka mahaul,EXCITED,claude_gen2
+Dosto ke saath road trip pe bahut mazedaar time bitaya.,Dosto ke saath road trip pe poore maze kiye.,maze,EXCITED,claude_gen2
+Is gaane ki dhun bahut hi alag aur acchi hai.,Is gaane ki dhun ekdum gazab hai.,gazab,POSITIVE,claude_gen2
+Pados mein itna shor hai ki mujhe sir dard ho raha hai.,Pados mein itna shor hai ki sar phat raha hai.,sar phat raha hai,FRUSTRATED,claude_gen2
+Weekend ki party ki saari taiyaari poori ho chuki hai.,"Weekend ki party ka scene set hai, sab taiyaari ho chuki hai.",scene set hai,EXCITED,claude_gen2
+"Woh trip pe akela ghoom raha hai, kisi ki parwah nahi.","Woh trip pe akela bindaas ghoom raha hai, kisi ki parwah nahi.",bindaas,POSITIVE,claude_gen2
+Uska YouTube channel kaafi tezi se grow kar raha hai.,Uska YouTube channel ekdum rocket ki tarah grow kar raha hai.,rocket,POSITIVE,claude_gen2
+Hostel ki chhat pe aaj raat party hai.,Hostel ki chhat pe aaj raat full masti party hai.,full masti,EXCITED,claude_gen2
+Is weekend bike ride pe jaane ka plan bahut accha hai.,"Is weekend bike ride pe jaane ka plan hai, maze hi maze honge.",maze hi maze,EXCITED,claude_gen2
+"Aaj Sunday hai, bas ghar pe aaram se baithenge.","Aaj Sunday hai, bas ghar pe chill karenge.",chill,CASUAL,claude_gen2
+Naye phone ka camera aur performance dono bahut badhiya chalte hain.,Naye phone ka camera aur performance dono ekdum butter smooth chalte hain.,butter smooth,POSITIVE,claude_gen2
+"Kal match dekhne stadium ja rahe hain, bahut utsaah hai.","Kal match dekhne stadium ja rahe hain, hum toh full excited hain.",full excited,EXCITED,claude_gen2
+Gym mein aaj ka workout bahut zabardast tha.,Gym mein aaj ka workout ekdum fire tha.,fire,EXCITED,claude_gen2
+Uski nayi movie ka pehla gaana sabko pasand aaya.,"Uski nayi movie ka pehla gaana superhit ho gaya, sabko pasand aaya.",superhit,POSITIVE,claude_gen2
+"Tum chaiye toh ghar pe aa jao, koi dikkat nahi hai.","Tum chaiye toh ghar pe aa jao, bina tension, koi dikkat nahi hai.",bina tension,CASUAL,claude_gen2
+Wifi phir se band ho gaya aur kaam bhi ruk gaya.,"Wifi phir se band ho gaya, ekdum jhand, aur kaam bhi ruk gaya.",jhand,FRUSTRATED,claude_gen2
+Kal raat ki college fest bahut shaandaar thi.,Kal raat ki college fest ekdum lit thi.,lit,POSITIVE,claude_gen2
+Mujhe lagta hai ki hum train miss kar denge.,Mujhe lagta hai yaar ki hum train miss kar denge.,yaar,CASUAL,claude_gen2
+Mere phone repair ke time usne mujhe apni gaadi udhaar di.,"Mere phone repair ke time usne mujhe apni gaadi udhaar di, sachcha dost hai woh.",sachcha dost,POSITIVE,claude_gen2
+Placement ke season mein mere paas bahut saara kaam pending hai.,Placement ke season mein mere paas kaam ka pahaad pending pada hai.,kaam ka pahaad,STRESSED,claude_gen2
+Mahine ke aakhir mein mere paas ek bhi paisa nahi bacha.,"Mahine ke aakhir mein jeb khaali hai, ek bhi paisa nahi bacha.",jeb khaali,STRESSED,claude_gen2
+"Maine tumhara dabba nahi liya, sach bol raha hoon.","Kasam se maine tumhara dabba nahi liya, sach bol raha hoon.",kasam se,CASUAL,claude_gen2
+"Gaming tournament kal se shuru ho raha hai, ab tayyar ho jao.","Gaming tournament kal se shuru ho raha hai, game on, ab tayyar ho jao.",game on,EXCITED,claude_gen2
+Uski lambi kahaniyon ne sabko bore kar diya.,Uski lambi kahaniyon ne sabko pakaa diya.,pakaa diya,FRUSTRATED,claude_gen2
+Is restaurant ka khana kaafi swaadisht hai.,Is restaurant ka khana ekdum gajab hai.,gajab,POSITIVE,claude_gen2
+"Usne late aane ka bahana banaya, phir bhi sab jaante hain ki jhooth hai.","Usne late aane ka natak kiya, phir bhi sab jaante hain ki jhooth hai.",natak,NEGATIVE,claude_gen2
+Mujhe lucky draw mein ek naya laptop mil gaya.,"Mujhe lucky draw mein ek naya laptop mil gaya, ekdum jackpot lag gaya.",jackpot,EXCITED,claude_gen2
+Is mahine mere paas bonus aur nayi job dono aa gaye.,"Is mahine bonus aur nayi job dono aa gaye, ekdum chaandi ho gayi.",chaandi,POSITIVE,claude_gen2
+Naye phone ki speed bahut tez hai.,Naye phone ki speed ekdum rocket hai yaar.,rocket,POSITIVE,claude_gen2
+Mujhe abhi ek zaroori document print karna hai.,"Mujhe abhi ek urgent document print karna hai, jaldi chal.",urgent,URGENT,claude_gen2
+Tere bhai ki bike bahut badhiya lag rahi hai.,Tere bhai ki bike ekdum dhasu lag rahi hai.,dhasu,POSITIVE,claude_gen2
+Group project ka presentation aaram se ho gaya.,"Group project ka presentation smoothly ho gaya, koi dikkat nahi.",smoothly,CASUAL,claude_gen2
+Kal college fest mein kya hone wala hai?,"Kal college fest mein kya scene hai bhai, bata na!",kya scene hai,EXCITED,claude_gen2
+Maine tera charger kal hi wapas rakh diya tha.,"Arre, maine tera charger kal hi wapas rakh diya tha.",arre,CASUAL,claude_gen2
+Wo har baar late aane ke naye bahane banata hai.,Wo har baar late aane ka naya natak karta hai.,natak,NEGATIVE,claude_gen2
+Aaj mess mein meri pasand ka khana bana hai.,"Aaj mess mein apna raaj hai, meri pasand ka khana bana hai!",apna raaj,EXCITED,claude_gen2
+Baarish ki wajah se humara picnic ka plan kharab ho gaya.,Baarish ki wajah se humare picnic ka band baj gaya.,band baj gaya,NEGATIVE,claude_gen2
+Kal rooftop pe dosto ke saath bahut maza aane wala hai.,Kal rooftop pe dosto ke saath full masti hone wali hai!,full masti,EXCITED,claude_gen2
+Kal raat ki party mein mahaul bahut badhiya tha.,Kal raat ki party ekdum lit thi yaar.,lit,POSITIVE,claude_gen2
+"Sun, thoda side hat, mujhe nikalna hai.","Abey, thoda side hat, mujhe nikalna hai.",abey,CASUAL,claude_gen2
+Sunday ko aaram se uthna aur din bhar kuch na karna mujhe pasand hai.,"Sunday ko bina tension aaram se uthna aur din bhar kuch na karna, mast hai.",bina tension,CASUAL,claude_gen2
+"Is baar interview ka result mere haq mein aaya, sab aasaan ho gaya.","Is baar interview ekdum paani ho gaya, result mere haq mein aaya.",paani,POSITIVE,claude_gen2
+"Wifi band hai aur kal tak report bhejni hai, bahut pareshani ho rahi hai.","Wifi band hai aur kal tak report bhejni hai, dimaag ki dahi ho gayi hai.",dimaag ki dahi,STRESSED,claude_gen2
+Bijli chali gayi aur meri saari file save hone se pehle hi band ho gayi.,Bijli chali gayi aur meri saari file save hone se pehle hi jhand ho gayi.,jhand,FRUSTRATED,claude_gen2
+Humari team ne finals mein bahut zabardast performance di.,Humari team ne finals mein ekdum chha gaye yaar!,chha gaye,POSITIVE,claude_gen2
+Goa ki wo trip hamesha yaad rahegi.,Goa ki wo trip ekdum unforgettable thi yaar.,unforgettable,POSITIVE,claude_gen2
+Mujhe sale mein wo jacket aadhi keemat pe mil gayi!,"Mujhe sale mein wo jacket aadhi keemat pe mil gayi, ekdum jackpot lag gaya!",jackpot,EXCITED,claude_gen2
+"Ek ghante se traffic mein phase hain, ab thak gaya hoon.","Ek ghante se traffic mein phase hain, ab toh pak gaya hoon.",pak gaya,FRUSTRATED,claude_gen2
+Main toh us cafe ki cold coffee ka deewana ho gaya hoon.,Main toh us cafe ki cold coffee pe fida ho gaya hoon!,fida,EXCITED,claude_gen2
+"Kal placement ka result aane wala hai, mujhe bahut ghabrahat ho rahi hai.","Kal placement ka result aane wala hai, bahut tension ho rahi hai yaar.",tension,STRESSED,claude_gen2
+"Itne kam daam mein itna accha khana mila, mazaa aa gaya.","Itne kam daam mein itna accha khana mila, ekdum paisa vasool!",paisa vasool,POSITIVE,claude_gen2
+"Kal humari office trip hai, mujhe bahut accha lag raha hai.","Kal humari office trip hai, main toh full excited hoon yaar.",full excited,EXCITED,claude_gen2
+Nayi gym routine ke baad meri body bahut accha feel kar rahi hai.,Nayi gym routine ke baad meri body ekdum fit hai bhai.,fit hai,POSITIVE,claude_gen2
+Cousin ki shaadi mein sabne bahut accha dance kiya.,Cousin ki shaadi mein sab dance floor pe chha gaye.,chha gaye,POSITIVE,claude_gen2
+Exam ke din paas hain aur syllabus abhi bhi adha pada hai.,"Exam ke din paas hain aur syllabus adha pada hai, haalat kharab hai meri.",haalat kharab,STRESSED,claude_gen2
+"Mera pasandida cafe band ho gaya, mujhe bahut bura laga.","Mera pasandida cafe band ho gaya, sach mein dil toot gaya.",dil toot gaya,SAD,claude_gen2
+Project ki presentation abhi taiyaar nahi hui toh dikkat ho jayegi.,"Presentation abhi taiyaar nahi hui, jaldi kar warna scene bigad jayega.",scene bigad jayega,URGENT,claude_gen2
+Mahine ke aakhir mein mere paas paise nahi bache hain.,Mahine ke aakhir mein ekdum jeb khaali ho gayi hai yaar.,jeb khaali,STRESSED,claude_gen2
+"Mummy ne jo biryani banayi, uska swaad bahut accha tha.","Mummy ne jo biryani banayi, uska swaad lajawaab tha.",lajawaab,POSITIVE,claude_gen2
+Wahan ka sunset view bahut sundar tha.,Wahan ka sunset view ekdum zabardast tha.,zabardast,POSITIVE,claude_gen2
+Lambi walk ke baad humne street food khaya.,Lambi walk ke baad humne street food se pet puja kar li.,pet puja,CASUAL,claude_gen2
+"Concert ki tickets mil gayi, mujhe bahut khushi hai.","Concert ki tickets mil gayi, ab toh bomb mazaa aane wala hai!",bomb,EXCITED,claude_gen2
+Yeh naya phone ka camera kaafi accha hai.,Yeh naya phone ka camera kaafi badiya hai.,badiya,POSITIVE,claude_gen2
+Padosi ke ghar ka shor sunke mujhe bahut gussa aa raha hai.,Padosi ke ghar ke shor se mera sar phat raha hai yaar.,sar phat raha hai,FRUSTRATED,claude_gen2
+Humari team ne college fest mein pehla inaam jeet liya.,"Humari team ne college fest mein jhanda gaad diya, pehla inaam jeet liya!",jhanda gaad diya,EXCITED,claude_gen2
+Diwali sale mein mujhe bahut sasta saman mil gaya.,"Diwali sale mein toh meri chaandi ho gayi, sab sasta mil gaya.",chaandi,POSITIVE,claude_gen2
+"Uska naya reel dekha, bahut hi accha bana hai.","Uska naya reel dekha, ekdum fire bana hai bhai.",fire,EXCITED,claude_gen2
+Train ka time nikal gaya aur ab pakadna mushkil hai.,"Train ka time nikal gaya, ab toh gaya scene yaar.",gaya scene,URGENT,claude_gen2
+"Itne kam daam mein itna accha khana mila, mujhe maza aa gaya.","Itne kam daam mein itna accha khana, ekdum paisa vasool ho gaya.",paisa vasool,POSITIVE,claude_gen2
+Uska comedy video bahut zyada failne laga hai.,Uska comedy video toh poora viral ho gaya hai.,viral,POSITIVE,claude_gen2
+Boss ne ek hi din mein teen deadlines de di hain.,Boss ne ek hi din mein teen deadlines sir pe daal di hain.,sir pe,STRESSED,claude_gen2
+Naye laptop pe sab kuch bina ruke chal raha hai.,Naye laptop pe sab kuch butter smooth chal raha hai.,butter smooth,POSITIVE,claude_gen2
+"Wedding ka decoration dekhke sab hairaan reh gaye, bahut sundar tha.","Wedding ka decoration dekhke sab hairaan, ekdum gajab tha.",gajab,POSITIVE,claude_gen2
+"Mujhe lagta hai aaj baarish hone wali hai, chhatri le lo.","Mujhe lagta hai aaj baarish hone wali hai yaar, chhatri le lo.",yaar,CASUAL,claude_gen2
+Uski nayi jacket pehenke woh bahut stylish lag raha hai.,Uski nayi jacket pehenke woh ekdum kadak lag raha hai.,kadak,POSITIVE,claude_gen2
+Kal interview hai aur mujhe bahut ghabrahat ho rahi hai.,Kal interview hai aur mere liye tension high hai yaar.,tension high,STRESSED,claude_gen2
+Aaj office mein sab kuch aaram se chal raha hai.,Aaj office mein sab kuch ekdum smooth chal raha hai.,smooth,CASUAL,claude_gen2
+Is baar diwali ki sajaavat bahut achhi lag rahi hai.,"Is baar diwali ki sajaavat mein ekdum paani hai, sab dekhte reh gaye.",paani,POSITIVE,claude_gen2
+Uski nayi website ka design pehle se bahut behtar hai.,Uski nayi website ka design ekdum next level hai yaar.,next level,POSITIVE,claude_gen2
+Kal raat ka concert bahut shandaar tha.,Kal raat ka concert ekdum zabardast tha.,zabardast,POSITIVE,claude_gen2
+Maa ne ek ghante mein poori shaadi ka menu tayyar kar diya.,Maa ne ek ghante mein poori shaadi ka menu chutki mein tayyar kar diya.,chutki mein,POSITIVE,claude_gen2
+Birthday party mein sab log bahut khush the.,"Birthday party mein ekdum khushi ka mahaul tha, sab naach rahe the.",khushi ka mahaul,EXCITED,claude_gen2
+"Boss ko report abhi chahiye, warna problem ho jayegi.","Boss ko report abhi chahiye, warna gaya scene bhai!",gaya scene,URGENT,claude_gen2
+Match ke last over mein usne bahut badhiya batting ki.,Match ke last over mein usne ekdum fire batting ki!,fire,EXCITED,claude_gen2
+Uska dance reel kal raat se bahut logon ne dekha hai.,Uska dance reel kal raat se ekdum viral ho gaya hai.,viral,POSITIVE,claude_gen2
+Mahine ke end mein paise bilkul khatam ho gaye hain.,Mahine ke end mein ekdum jeb khaali ho gayi hai yaar.,jeb khaali,STRESSED,claude_gen2
+Hostel ke dost raat bhar saath baithkar hanste rahe.,Hostel ke dost raat bhar saath baithkar masti karte rahe.,masti,CASUAL,claude_gen2
+Barish mein bhutte ka swaad bahut accha laga.,Barish mein bhutte ka swaad ekdum jhakaas laga.,jhakaas,POSITIVE,claude_gen2
+Group project ke itne saare changes dekhkar main thak gaya.,Group project ke itne saare changes dekhkar dimaag ki dahi ho gayi.,dimaag ki dahi,STRESSED,claude_gen2
+Naye phone ki screen bina atke bahut tezi se chalti hai.,Naye phone ki screen ekdum butter smooth chalti hai.,butter smooth,POSITIVE,claude_gen2
+Baarish ki wajah se humara trek ka plan cancel ho gaya.,Baarish ki wajah se humara trek ka scene off ho gaya.,scene off,NEGATIVE,claude_gen2
+Usne interview mein sabko bahut impress kiya.,Usne interview mein ekdum jhanda gaad diya yaar!,jhanda gaad diya,EXCITED,claude_gen2
+Traffic mein ek ghanta phansne se mujhe bahut gussa aa gaya.,Traffic mein ek ghanta phansne se ekdum dimaag kharab ho gaya.,dimaag kharab,FRUSTRATED,claude_gen2
+Purane dost se baat hui toh mujhe thoda udaas lag raha hai.,Purane dost se baat hui toh mera mood off ho gaya.,mood off,SAD,claude_gen2
+"Chalo pehle kuch kha lete hain, phir kaam shuru karenge.","Chalo pehle pet puja kar lete hain, phir kaam shuru karenge.",pet puja,CASUAL,claude_gen2
+Subah ki chai bahut achhi bani hai aaj.,Subah ki chai ekdum kadak bani hai aaj.,kadak,POSITIVE,claude_gen2
+Goa trip mein hum sabko bahut aanand aane wala hai.,Goa trip mein toh maze hi maze hone wale hain!,maze hi maze,EXCITED,claude_gen2
+Unki nayi film ko sabne bahut pasand kiya.,"Unki nayi film ekdum superhit nikli, sabko pasand aayi.",superhit,POSITIVE,claude_gen2
+Presentation mein uska idea sabko bahut pasand aaya.,Presentation mein uska idea ekdum chha gaya.,chha gaya,POSITIVE,claude_gen2
+Is mahine meri sales bahut tezi se badhi hain.,Is mahine meri sales ekdum rocket ki tarah badhi hain.,rocket,POSITIVE,claude_gen2
+"Itne kam daam mein itna accha khaana mila, maza aa gaya.","Itne kam daam mein itna accha khaana mila, ekdum paisa vasool!",paisa vasool,POSITIVE,claude_gen2
+Bank mein aaj kaafi der lagi aur kaam bhi nahi hua.,"Bank mein aaj pure lag gaye, kaafi der lagi aur kaam bhi nahi hua.",lag gaye,FRUSTRATED,claude_gen2
+Woh har baar late aane ka bahana banata hai.,Woh har baar late aane ka naya natak karta hai.,natak,NEGATIVE/DISAPPOINTED,claude_gen2
+Is hafte ki nayi movie box office pe chali nahi.,Is hafte ki nayi movie box office pe ekdum flop ho gayi.,flop,NEGATIVE/DISAPPOINTED,claude_gen2
+"Raat ko meeting mein sab kuch kaam ka nahi tha, time barbaad hua.","Raat ko meeting mein sab kuch faaltu tha, time barbaad hua.",faaltu,NEGATIVE/DISAPPOINTED,claude_gen2
+"Shaadi ka venue bahut shaandaar tha, sab ko pasand aaya.","Shaadi ka venue ekdum royal tha, sab ko pasand aaya.",royal,POSITIVE,claude_gen2
+Phone repair ke baad bhi battery bilkul kharab chal rahi hai.,Phone repair ke baad bhi battery ekdum bekaar chal rahi hai.,bekaar,NEGATIVE/DISAPPOINTED,claude_gen2
+"Raat bhar ek hi lecture sunna pada, ab dimaag thak gaya hai.","Raat bhar ek hi lecture sunke pak gaya yaar, ab dimaag thak gaya hai.",pak gaya,FRUSTRATED,claude_gen2
+Gaming tournament mein aaj mera hi dabdaba chalega.,"Gaming tournament mein aaj apna raaj chalega, dekhna tum log.",apna raaj,EXCITED,claude_gen2
+"Kal sham ko chai pe milte hain, kuch baat karni hai.","Arre kal sham ko chai pe milte hain, kuch baat karni hai.",arre,CASUAL,claude_gen2
+"Ghar mein sab cousins aaye hain, bahut maza aa raha hai.","Ghar mein sab cousins aaye hain, pura khushi ka mahaul hai.",khushi ka mahaul,EXCITED,claude_gen2
+Internship ka pehla hafta bina kisi dikkat ke nikal gaya.,Internship ka pehla hafta ekdum smoothly nikal gaya.,smoothly,CASUAL,claude_gen2
+Concert mein jab band aaya to poori crowd josh mein aa gayi.,Concert mein jab band aaya to poori crowd mein electric energy aa gayi.,electric,EXCITED,claude_gen2
+Uska naya haircut kaafi accha lag raha hai.,Uska naya haircut ekdum dhaasu lag raha hai.,dhaasu,POSITIVE,claude_gen2
+Kal submission hai aur maine abhi tak kuch start hi nahi kiya.,"Kal submission hai aur maine kuch start nahi kiya, ab toh gaya kaam se.",gaya kaam se,URGENT,claude_gen2
+Subah ki barish ke baad hawa bahut taazi lag rahi hai.,Subah ki barish ke baad hawa ekdum refreshing lag rahi hai.,refreshing,POSITIVE,claude_gen2
+Farewell party mein uski dance performance sabse alag thi.,Farewell party mein uski dance performance ne jalwa bikher diya.,jalwa,POSITIVE,claude_gen2
+Is baar trip pe jao aur paison ki chinta mat karo.,"Is baar trip pe jao bina tension, paison ki chinta mat karo.",bina tension,CASUAL,claude_gen2
+Chhoti si bachchi ne apni pyaari baaton se sabko khush kar diya.,Chhoti si bachchi ne apni pyaari baaton se sabka dil jeet liya.,dil jeet liya,POSITIVE,claude_gen2
+Uska presentation bilkul sahi aur seedha mudde par tha.,"Uska presentation ekdum on point tha, seedha mudde par.",on point,POSITIVE,claude_gen2
+Sale mein mujhe branded jacket aadhi keemat pe mil gayi.,"Sale mein branded jacket aadhi keemat pe mil gayi, jackpot lag gaya yaar.",jackpot,EXCITED,claude_gen2
+Road trip pe doston ke saath bahut maza aaya.,Road trip pe doston ke saath ekdum maze aaye.,maze,EXCITED,claude_gen2
+Holi pe sabne milke bahut masti ki aur rang khele.,"Holi pe sabne milke dhamaal macha diya, khoob rang khele.",dhamaal,EXCITED,claude_gen2
+Uska naya bike bahut zabardast lag raha hai.,Uska naya bike ekdum dhasu lag raha hai.,dhasu,POSITIVE,claude_gen2
+"Exam se pehle hi server band ho gaya, sab kuch bigad gaya.","Exam se pehle hi server down, pura jhand ho gaya yaar.",jhand,FRUSTRATED,claude_gen2
+Maa ke haath ki biryani ka swaad bahut accha tha.,"Maa ke haath ki biryani ekdum tagda thi, swaad hi alag tha.",tagda,POSITIVE,claude_gen2
+Aaj ka presentation bina kisi dikkat ke ho gaya.,"Aaj ka presentation ekdum smooth ho gaya, koi dikkat nahi aayi.",smooth,CASUAL,claude_gen2
+Goa ki woh trip hamesha yaad rahegi.,"Goa ki woh trip ekdum unforgettable thi, hamesha yaad rahegi.",unforgettable,POSITIVE,claude_gen2
+Uska naya gaana sunke maza aa gaya.,"Uska naya gaana ekdum kamaal hai yaar, sunke maza aa gaya.",kamaal,CASUAL,claude_gen2
+Barish ki wajah se humara picnic plan cancel ho gaya.,"Barish ki wajah se picnic ka scene off ho gaya yaar, sab mood kharab.",scene off,NEGATIVE,claude_gen2
+"Uska naya phone bahut badhiya hai, camera bhi acha hai.","Uska naya phone ekdum dhasu hai bhai, camera bhi mast hai.",dhasu,POSITIVE,claude_gen2
+Tere is kurte mein tu bahut acha lag raha hai.,"Tere is kurte mein tu ekdum fit hai yaar, full jachh raha hai.",fit hai,POSITIVE,claude_gen2
+"Kal ki lecture bilkul bekaar thi, kuch samajh nahi aaya.","Kal ki lecture ekdum faaltu thi yaar, kuch samajh hi nahi aaya.",faaltu,NEGATIVE,claude_gen2
+"Weekend pe sab dost mil rahe hain, bahut maza aayega.","Weekend pe sab dost mil rahe hain, ekdum scene set hai!",scene set hai,EXCITED,claude_gen2
+Main toh uski cooking par bahut khush hoon.,Main toh uski cooking pe ekdum fida hoon yaar!,fida,EXCITED,claude_gen2
+"Jaldi se form bhar do, last date aaj hai.","Fatafat form bhar do yaar, last date aaj hi hai!",fatafat,URGENT,claude_gen2
+"Raat ko jab mujhe zaroorat thi, woh turant aa gaya.","Raat ko jab zaroorat thi, woh turant aa gaya, ekdum sachcha dost hai.",sachcha dost,POSITIVE,claude_gen2
+Dhaaba pe chai aur samose ka bahut maza aaya.,Dhaaba pe chai aur samose ke saath ekdum maze aa gaye yaar!,maze,EXCITED,claude_gen2
+"Tune itni jaldi project khatam kar diya, bahut badhiya.","Tune itni jaldi project khatam kar diya, kya baat hai yaar!",kya baat,POSITIVE,claude_gen2
+Exam ke pehle itna syllabus dekhke main pareshan hoon.,Exam se pehle itna syllabus dekhke mera dimaag fry ho gaya hai.,dimaag fry,STRESSED,claude_gen2
+Is Diwali par maa ne bahut accha khana banaya.,Is Diwali pe maa ne ekdum jhakaas khana banaya yaar.,jhakaas,POSITIVE,claude_gen2
+"Bar-bar wahi galti karte ho, mujhe bahut gussa aata hai.","Bar-bar wahi galti karte ho yaar, mera dimaag kharab ho jata hai.",dimaag kharab,FRUSTRATED,claude_gen2
+"Uska naya reel bahut badhiya hai, sab share kar rahe hain.","Uska naya reel ekdum fire hai, sab share kar rahe hain.",fire,EXCITED,claude_gen2
+Interview mein usne bahut accha jawab diya.,"Interview mein usne ekdum paani kar diya, full confident tha.",paani,POSITIVE,claude_gen2
+Cricket match ke baad poori gali mein jashn manaya gaya.,Cricket match ke baad gali mein ekdum bomb jashn tha yaar!,bomb,EXCITED,claude_gen2
+"Is chai ka swaad bahut accha hai, mazedaar hai.","Is chai ka swaad ekdum kadak hai yaar, maza aa gaya.",kadak,POSITIVE,claude_gen2
+Shaadi mein sab ne bahut dance kiya aur dhoom machayi.,Shaadi mein sabne ekdum tod-phod dance kiya yaar!,tod-phod,EXCITED,claude_gen2
+Final presentation mein humari team ne sabko impress kar diya.,"Final presentation mein humari team chha gaye yaar, sab impress ho gaye.",chha gaye,POSITIVE,claude_gen2
+"Office mein is hafte kaam bahut zyada hai, saans lene ki fursat nahi.","Office mein is hafte ekdum kaam ka pahaad hai, saans lene ki fursat nahi.",kaam ka pahaad,STRESSED,claude_gen2
+Nayi bike ka engine bahut smooth chalta hai.,Nayi bike ka engine ekdum butter smooth chalta hai yaar.,butter smooth,POSITIVE,claude_gen2
+Aaj mera phone repair ho gaya.,"Aaj mera phone repair ho gaya, dil khush ho gaya yaar.",dil khush,HAPPY,claude_gen2
+Maa ke haath ka rajma chawal bahut accha tha.,Maa ke haath ka rajma chawal ekdum jhakaas tha.,jhakaas,POSITIVE,claude_gen2
+Kal raat ki birthday party kaafi mazedaar thi.,"Kal raat ki birthday party ekdum lit thi, bhai!",lit,POSITIVE,claude_gen2
+"Itni der se wait kiya, aur flight cancel ho gayi.","Itni der se wait kiya, aur flight cancel ho gayi, mood ekdum off ho gaya.",off,NEGATIVE,claude_gen2
+Tune meri problem ka sahi andaza lagaya.,"Haan bhai, tune sahi pakde, meri problem yahi thi.",sahi pakde,CASUAL,claude_gen2
+"Chabi yahin thi, mujhe laga kho gayi.","Arre, chabi yahin thi, mujhe laga kho gayi.",arre,CASUAL,claude_gen2
+Is chaat ki plate mein bahut saari cheezein thi.,"Is chaat ki plate mein itna sab kuch tha, ekdum paisa vasool.",paisa vasool,POSITIVE,claude_gen2
+Kal hum sab beach trip pe ja rahe hain.,"Kal hum sab beach trip pe ja rahe hain, bohot maze aane waale hain!",maze,EXCITED,claude_gen2
+Wo mushkil waqt mein hamesha mere saath khada raha.,"Wo mushkil waqt mein hamesha mere saath khada raha, ekdum sachcha dost hai.",sachcha dost,POSITIVE,claude_gen2
+Aaj ki meeting bina kisi dikkat ke nipat gayi.,"Aaj ki meeting smoothly nipat gayi, koi dikkat hi nahi hui.",smoothly,CASUAL,claude_gen2
+Shaadi mein sab log naach rahe the aur sab khush the.,"Shaadi mein sab naach rahe the, poora khushi ka mahaul tha.",khushi ka mahaul,EXCITED,claude_gen2
+"Chai jaldi bana do, hume nikalna hai.","Chai fatafat bana do, hume nikalna hai.",fatafat,URGENT,claude_gen2
+Chhutti ke din hum doston ke saath khoob enjoy karenge.,Chhutti ke din hum doston ke saath full masti karenge!,full masti,EXCITED,claude_gen2
+Laptop ka charger kho gaya aur kal submission hai.,"Laptop ka charger kho gaya aur kal submission hai, ab toh gaya kaam se.",gaya kaam se,URGENT,claude_gen2
+Is naye gym ke equipment kaafi achhe hain.,Is naye gym ke equipment ekdum solid hain.,solid,POSITIVE,claude_gen2
+Placement mein humari team ne bahut accha kiya.,"Placement mein humari team ke log chha gaye, sabko offer mil gaye.",chha gaye,POSITIVE,claude_gen2
+Exams sar par hain aur syllabus abhi baaki hai.,"Exams sir pe hain aur syllabus abhi baaki hai, tension ho rahi hai.",sir pe,STRESSED,claude_gen2
+Tumhari nayi haircut bahut achhi lag rahi hai.,Tumhari nayi haircut gajab lag rahi hai yaar.,gajab,POSITIVE,claude_gen2
+Naye phone ka interface bahut tez chalta hai.,"Naye phone ka interface butter smooth chalta hai, zero lag.",butter smooth,POSITIVE,claude_gen2
+Din bhar ki meetings ke baad mera sar dard kar raha hai.,Din bhar ki meetings ke baad dimaag fry ho gaya hai.,dimaag fry,STRESSED,claude_gen2
+Is hafte office mein bahut saara kaam jama ho gaya hai.,Is hafte office mein kaam ka pahaad jama ho gaya hai.,kaam ka pahaad,STRESSED,claude_gen2
+Barish mein bike kharab ho gayi aur main late ho gaya.,"Barish mein bike kharab ho gayi, ekdum waat lagi aur main late ho gaya.",waat lagi,STRESSED,claude_gen2
+"Aaj match ke tickets mil gaye, kitna accha hai!","Aaj match ke tickets mil gaye, kya scene hai yaar!",kya scene hai,EXCITED,claude_gen2
+Mere purane dost ne mushkil waqt mein mera saath diya.,"Mere purane dost ne mushkil waqt mein saath diya, sachcha dost hai yaar.",sachcha dost,POSITIVE,claude_gen2
+Office mein aaj bahut zyada kaam mil gaya.,"Office mein aaj toh poori tarah lag gaye, kaam hi kaam mil gaya.",lag gaye,FRUSTRATED,claude_gen2
+Is cafe ki cold coffee bahut achhi hai.,Is cafe ki cold coffee ekdum solid hai.,solid,POSITIVE,claude_gen2
+Usne guitar pe purana gaana bajaya.,Usne guitar pe purana gaana kamaal bajaya.,kamaal,CASUAL,claude_gen2
+Holi pe sabne milkar khoob naach kiya.,Holi pe sabne milkar dhamaal naach kiya!,dhamaal,EXCITED,claude_gen2
+Wo interview ke baad bhi shaant ghoom raha tha.,Wo interview ke baad bhi ekdum bindaas ghoom raha tha.,bindaas,POSITIVE,claude_gen2
+Kal raat ki movie mujhe bilkul pasand nahi aayi.,"Kal raat ki movie ekdum bakwaas thi, bilkul pasand nahi aayi.",bakwaas,NEGATIVE/DISAPPOINTED,claude_gen2
+Barish ki wajah se humara pura road trip kharab ho gaya.,Barish ki wajah se humare road trip ka band baj gaya.,band baj gaya,NEGATIVE/DISAPPOINTED,claude_gen2
+Pehli job mein roz bahut saara kaam hota hai.,"Pehli job mein roz kaam ka pahaad hota hai, saans lene ki fursat nahi.",kaam ka pahaad,STRESSED,claude_gen2
+Agar papa ko pata chala toh badi dikkat ho jayegi.,"Agar papa ko pata chala toh gaya scene, badi dikkat ho jayegi.",gaya scene,URGENT,claude_gen2
+Aaj gym mein sabse zyada weight maine uthaya.,"Aaj gym mein apna raaj raha, sabse zyada weight maine uthaya!",apna raaj,EXCITED,claude_gen2
+Kal result aane wala hai aur mujhe ghabrahat ho rahi hai.,Kal result aane wala hai aur main full tension mein hoon.,full tension,ANXIOUS,claude_gen2
+Match haarne ke baad sabka mood kharab ho gaya.,Match haarne ke baad sabka mood off ho gaya.,off,NEGATIVE/DISAPPOINTED,claude_gen2
+Exams ke chakkar mein meri neend aur khana dono gadbad hain.,"Exams ke chakkar mein meri haalat kharab hai, neend aur khana dono gadbad.",haalat kharab,STRESSED,claude_gen2
+Chhat se sunset ka nazara bahut sundar tha.,Chhat se sunset ka nazara gazab tha.,gazab,POSITIVE,claude_gen2
+Street food walon ki chaat aaj bahut swaadisht thi.,Street food walon ki chaat aaj superb thi.,superb,POSITIVE,claude_gen2
+College trip pe hum sabne bahut maze kiye.,College trip pe hum sabne full masti ki.,full masti,EXCITED,claude_gen2
+"Weekend pe dost aa rahe hain, ab maza aayega.","Weekend pe dost aa rahe hain, ab toh mauj hi mauj hai!",mauj,EXCITED,claude_gen2
+Boss ne ek hi din mein teen deadlines de di.,"Boss ne ek hi din mein teen deadlines de di, poori waat lagi hui hai.",waat lagi,STRESSED,claude_gen2
+Doctor ki report aane se pehle mujhe bahut darr lag raha hai.,Doctor ki report aane se pehle mera dil baith raha hai.,dil baith raha hai,ANXIOUS,claude_gen2
+Subah ki chai aur thandi hawa ne mann khush kar diya.,Subah ki chai aur thandi hawa ekdum refreshing lagi.,refreshing,POSITIVE,claude_gen2
+"Chal chai peene chalte hain, thoda break lete hain.","Chal bhai chai peene chalte hain, thoda break lete hain.",bhai,CASUAL,claude_gen2
+"Itni mehnat ke baad bhi project reject ho gaya, bahut bura laga.","Itni mehnat ke baad bhi project reject, ekdum jhand ho gayi.",jhand,FRUSTRATED,claude_gen2
+"Concert ke tickets khatam ho gaye, ab jaana mushkil hai.","Concert ke tickets khatam ho gaye, scene off ho gaya, ab jaana mushkil hai.",scene off,NEGATIVE/DISAPPOINTED,claude_gen2
+Uski shaadi ka venue kaafi accha aur shaandaar tha.,"Uski shaadi ka venue ekdum royal tha, kya shaandaar setup tha.",royal,POSITIVE,claude_gen2
+"Kal placement ka result aane wala hai, mujhe ghabrahat ho rahi hai.","Kal placement ka result aane wala hai, yaar dil baith raha hai mera.",dil baith raha hai,ANXIOUS,claude_gen2
+Maa ke haath ki biryani aaj kaafi zabardast bani thi.,"Maa ke haath ki biryani aaj ekdum paani thi, maza aa gaya.",paani,POSITIVE,claude_gen2
+Diwali ki shopping ke liye pura parivaar bazaar gaya hai.,"Diwali ki shopping ke liye pura parivaar bazaar gaya hai, ghar mein khushi ka mahaul hai.",khushi ka mahaul,EXCITED,claude_gen2
+"Tu itni der se kahan tha, main kab se wait kar raha hoon.","Abey tu itni der se kahan tha, main kab se wait kar raha hoon.",abey,CASUAL,claude_gen2
+"Tune pehli baar mein hi driving test clear kar liya, bahut accha.","Pehli baar mein hi driving test clear kar liya, kya baat hai tere mein!",kya baat,POSITIVE,claude_gen2
+Kal college fest mein kaafi mazedaar performance hone wali hai.,Kal college fest mein ekdum dhamaal performance hone wali hai.,dhamaal,EXCITED,claude_gen2
+"Yeh movie kaafi buri thi, paisa aur time dono barbaad.","Yeh movie ekdum bakwaas thi, paisa aur time dono barbaad.",bakwaas,NEGATIVE,claude_gen2
+Aaj ka meeting itna lamba chala ki main thak gaya.,Aaj ka meeting itna lamba chala ki ekdum pak gaya main.,pak gaya,FRUSTRATED,claude_gen2
+Uski nayi film boxoffice par bilkul nahi chali.,Uski nayi film boxoffice par ekdum flop ho gayi.,flop,NEGATIVE,claude_gen2
+Usne job interview ke saare sawaal aasaani se solve kar diye.,Usne job interview ke saare sawaal chutki mein solve kar diye.,chutki mein,POSITIVE,claude_gen2
+"Chal theek hai, sham ko chai peene chalte hain.","Sahi hai chal, sham ko chai peene chalte hain.",sahi,CASUAL,claude_gen2
+"Is baar cricket match mein hamari team hi jeetegi, pakka.","Is baar cricket match mein apna raaj chalega, hamari team hi jeetegi pakka.",apna raaj,EXCITED,claude_gen2
+Naye flat ka interior kaafi accha aur sundar lag raha hai.,Naye flat ka interior ekdum chaka-chak lag raha hai.,chaka-chak,POSITIVE,claude_gen2
+"Itni mehnat ki thi, par presentation bilkul kharab ho gayi.","Itni mehnat ki thi, par presentation ka ekdum band baj gaya.",band baj gaya,NEGATIVE,claude_gen2
+Subah ki chai aur biscuit ka combination bahut accha hai.,Subah ki chai aur biscuit ka combination ekdum kadak hai.,kadak,POSITIVE,claude_gen2
+"Aaj kuch plan nahi hai, bas ghar par aaram karenge.","Aaj kuch plan nahi hai, bas ghar par chill karenge.",chill,CASUAL,claude_gen2
+"Tune bilkul theek jagah par haath rakha, yehi toh problem thi.","Tune sahi pakde, yehi toh problem thi.",sahi pakde,CASUAL,claude_gen2
+Mera naya phone bina atke bahut tezi se chalta hai.,Mera naya phone ekdum butter smooth chalta hai.,butter smooth,POSITIVE,claude_gen2
+Gym mein aaj ka workout kaafi accha aur dumdaar tha.,Gym mein aaj ka workout ekdum solid tha.,solid,POSITIVE,claude_gen2
+"Rafi ke gaane sunke dil ko bahut sukoon milta hai, bahut accha.","Rafi ke gaane sunke dil ko sukoon milta hai, ekdum lajawaab.",lajawaab,POSITIVE,claude_gen2
+"Kal subah ki train chhoot gayi aur exam bhi hai, bada tension hai.","Kal subah ki train chhoot gayi aur exam bhi hai, ekdum waat lag gayi.",waat lag gayi,STRESSED,claude_gen2
+"Aaj raat khaane mein kya banana hai, tu bata.","Bhai aaj raat khaane mein kya banana hai, tu bata.",bhai,CASUAL,claude_gen2
+Purane dost saalon baad mile aur humne poori raat baatein ki.,"Purane dost saalon baad mile aur poori raat baatein, ekdum maze hi maze.",maze hi maze,EXCITED,claude_gen2
+"Pehli salary aane ki khushi bahut badi hoti hai, yaar.","Pehli salary aane ki khushi gazab hoti hai, yaar.",gazab,POSITIVE,claude_gen2
+Kal ka presentation yaad karke mujhe ghabrahat ho rahi hai.,Kal ka presentation yaad karke mera dimaag block ho raha hai.,dimaag block,ANXIOUS,claude_gen2
+Hum sab weekend pe Goa ja rahe hain.,"Hum sab weekend pe Goa ja rahe hain, bomb plan hai yaar.",bomb,EXCITED,claude_gen2
+Kal ke concert ka sound system bahut accha tha.,Kal ke concert ka sound system superb tha.,superb,POSITIVE,claude_gen2
+Ek saath teen assignment ki deadline hai aur main bahut pareshaan hoon.,"Ek saath teen assignment ki deadline hai, dimaag ki dahi ho gayi hai.",dimaag ki dahi,STRESSED,claude_gen2
+Aaj ki biryani bahut badhiya bani thi.,Aaj ki biryani ekdum paani thi.,paani,POSITIVE,claude_gen2
+Wo bina kisi tension ke interview dene chala gaya.,Wo ekdum bindaas hokar interview dene chala gaya.,bindaas,POSITIVE,claude_gen2
+"Pichle do ghante se accounts ka kaam kar raha hoon, thak gaya hoon.","Pichle do ghante se accounts ka kaam kar raha hoon, dimaag fry ho gaya hai.",dimaag fry,STRESSED,claude_gen2
+Is baar ka cricket match dekhne mein bahut maza aaya.,Is baar ka cricket match dekhne mein kamaal ka maza aaya.,kamaal,CASUAL,claude_gen2
+Wifi baar baar band ho raha hai aur mujhe bahut gussa aa raha hai.,"Wifi baar baar band ho raha hai, ek ghante se pakaa diya hai isne.",pakaa diya,FRUSTRATED,claude_gen2
+Maa ke haath ki khichdi barish mein bahut acchi lagti hai.,Maa ke haath ki khichdi barish mein ekdum lajawaab lagti hai.,lajawaab,POSITIVE,claude_gen2
+Usne apna purana phone jaldi se theek kar diya.,Usne apna purana phone chutki mein theek kar diya.,chutki mein,POSITIVE,claude_gen2
+Is hafte ki movie mujhe bilkul pasand nahi aayi.,"Is hafte ki movie ekdum bakwaas thi, paise doob gaye.",bakwaas,NEGATIVE/DISAPPOINTED,claude_gen2
+Subah ki adrak wali chai bahut acchi lagi.,Subah ki adrak wali chai ekdum kadak lagi.,kadak,POSITIVE,claude_gen2
+Hostel mein aaj raat sab milkar party kar rahe hain.,"Hostel mein aaj raat sab milkar party kar rahe hain, maze hi maze hone wale hain.",maze hi maze,EXCITED,claude_gen2
+Uski nayi bike bahut tez chalti hai.,Uski nayi bike ekdum rocket ki tarah chalti hai.,rocket,POSITIVE,claude_gen2
+Bahar ka mausam aaj bahut accha lag raha hai.,Bahar ka mausam aaj ekdum mast lag raha hai.,mast,POSITIVE,claude_gen2
+Maine tumhe pehle hi bola tha ki chaabi mez pe rakhi hai.,"Arre, maine tumhe pehle hi bola tha ki chaabi mez pe rakhi hai.",arre,CASUAL,claude_gen2
+Jab final mein chhakka laga to poora stadium khushi se jhoom utha.,Jab final mein chhakka laga to poora stadium electric ho gaya.,electric,EXCITED,claude_gen2
+"Hum road trip ke liye bilkul taiyaar hain, bas nikalna baaki hai.","Hum road trip ke liye full on taiyaar hain, bas nikalna baaki hai.",full on,EXCITED,claude_gen2
+"Chinta mat karo, main ye saara kaam sambhal lunga.","Chinta mat karo boss, main ye saara kaam sambhal lunga.",boss,CASUAL,claude_gen2
+Kal mere cousin ki shaadi hai aur main bahut utsahit hoon.,Kal mere cousin ki shaadi hai aur main full excited hoon.,full excited,EXCITED,claude_gen2
+Bijli jaane se aaj ka poora din kharab ho gaya.,Bijli jaane se aaj ka poora din bekaar ho gaya.,bekaar,NEGATIVE/DISAPPOINTED,claude_gen2
+Uska bhashan bilkul sahi aur seedha mudde par tha.,"Uska bhashan ekdum on point tha, seedha mudde par.",on point,POSITIVE,claude_gen2
+Ek hi baat baar baar sun ke ab mujhe bahut chidh ho gayi hai.,Ek hi baat baar baar sun ke ab mera pak gaya hai.,pak gaya,FRUSTRATED,claude_gen2
+Is budget mein ye sofa bilkul theek baith raha hai.,Is budget mein ye sofa ekdum fit hai.,fit hai,POSITIVE,claude_gen2
+Bank ke bahar line mein do ghante khade rehna pada.,"Bank ke bahar line mein do ghante khade rehna pada, jaan nikal gayi.",jaan nikal gayi,FRUSTRATED,claude_gen2
+Tumne chai mein sahi cheez daali hai.,"Tumne chai mein sahi pakde cheez daali hai, adrak ne kaam kar diya.",sahi pakde,CASUAL,claude_gen2
+Interview ka pehla round kaafi aaram se nikal gaya.,Interview ka pehla round kaafi smooth nikal gaya.,smooth,CASUAL,claude_gen2
+Mere bhai ne subah se ek hi baat dohra rakhi hai.,Mere bhai ne subah se ek hi baat dohra ke pakaa diya.,pakaa diya,FRUSTRATED,claude_gen2
+Tumne itne kam budget mein party arrange kar li.,"Tumne itne kam budget mein party arrange kar li, kamaal kar diya yaar.",kamaal,CASUAL,claude_gen2
+Uska presentation bilkul sahi aur seedha tha.,Uska presentation ekdum on point tha.,on point,POSITIVE,claude_gen2
+Train ka khana bilkul accha nahi tha aaj.,"Train ka khana aaj ekdum ghatiya tha, bhookh bhi mar gayi.",ghatiya,NEGATIVE/DISAPPOINTED,claude_gen2
+Mummy ne diwali ke liye saari mithai jaldi bana li.,Mummy ne diwali ke liye saari mithai chutki mein bana li.,chutki mein,POSITIVE,claude_gen2
+Placement mein usne sabko peeche chhod diya.,"Placement mein woh ekdum chha gaya, sabko peeche chhod diya.",chha gaya,POSITIVE,claude_gen2
+Cricket match ke baad humne khushi se ghar tak gaana gaya.,Cricket match ke baad humne bindaas hokar ghar tak gaana gaya.,bindaas,POSITIVE,claude_gen2
+Aaj office mein mahaul theek nahi lag raha tha.,Aaj office mein mahaul kuch off lag raha tha.,off,NEGATIVE/DISAPPOINTED,claude_gen2
+Padosi ka behaviour aaj mujhe thoda ajeeb laga.,Padosi ka behaviour aaj mujhe thoda weird laga.,weird,NEGATIVE/DISAPPOINTED,claude_gen2
+Wifi band hone se pura kaam ruk gaya aur deadline paas hai.,"Wifi band hone se pura kaam ruk gaya, deadline paas hai aur ekdum jhand ho gayi.",jhand,FRUSTRATED,claude_gen2
+Chhoti si bachchi ne apne gaane se sabko khush kar diya.,Chhoti si bachchi ne apne gaane se sabka dil jeet liya.,dil jeet liya,POSITIVE,claude_gen2
+Mausi ke haath ka biryani bahut accha tha.,Mausi ke haath ki biryani ekdum tagda thi.,tagda,POSITIVE,claude_gen2
+Kal raat ki movie night bahut acchi thi.,Kal raat ki movie night ekdum mast thi.,mast,POSITIVE,claude_gen2
+Gym mein aaj usne bahut zyada weight utha liya.,"Gym mein aaj usne itna weight utha liya, ekdum beast hai woh.",beast,POSITIVE,claude_gen2
+Hotel ki service aur room dono bahut acche the.,Hotel ki service aur room dono ekdum top class the.,top class,POSITIVE,claude_gen2
+Hamari team ne farewell pe bahut accha performance diya.,"Hamari team ne farewell pe aisa performance diya, sab log chha gaye.",chha gaye,POSITIVE,claude_gen2
+Concert mein diljit ka entry seen bahut zabardast tha.,Concert mein diljit ka entry seen ekdum fire tha.,fire,EXCITED,claude_gen2
+Shaadi mein dulhe ki entry se sabki nazar usi pe thi.,Shaadi mein dulhe ne aisa jalwa dikhaya ki sabki nazar usi pe thi.,jalwa,POSITIVE,claude_gen2
+Sunday ko dosto ke saath trip ka plan ban gaya hai.,"Sunday ko dosto ke saath trip ka plan ban gaya, ekdum bawaal hone wala hai.",bawaal,EXCITED,claude_gen2
+Aaj ghar mein sab ek saath baithke khana khaya.,"Aaj ghar mein sab ek saath baithke khana khaya, dil khush ho gaya.",dil khush,HAPPY,claude_gen2
+Holi pe saare dost mil gaye aur khoob khel hua.,"Holi pe saare dost mil gaye, ab toh maze hi maze hain.",maze hi maze,EXCITED,claude_gen2
+Phone ka charger baar baar kharab ho raha hai aur mujhe pareshani ho rahi hai.,"Phone ka charger baar baar kharab ho raha hai, ab toh pak gaya yaar.",pak gaya,FRUSTRATED,claude_gen2
+"Naya web series bilkul achhi nahi thi, mujhe bura laga.","Naya web series poori flop nikli, bahut bura laga yaar.",flop,NEGATIVE/DISAPPOINTED,claude_gen2
+"Bus nikalne wali hai, jaldi karo warna train miss ho jayegi.","Jaldi karo yaar, bus nikalne wali hai, nahi toh scene bigad jayega.",scene bigad jayega,URGENT,claude_gen2
+"Tumne aaj presentation mein bahut accha kaam kiya, sab khush the.","Aaj presentation mein tum toh chha gaye, sab khush the.",chha gaye,POSITIVE,claude_gen2
+"Canteen ka khana aaj bahut kharab tha, ek bhi bite pasand nahi aaya.","Canteen ka khana aaj ekdum bakwaas tha, ek bhi bite pasand nahi aaya.",bakwaas,NEGATIVE/DISAPPOINTED,claude_gen2
+"Salary aate hi bonus bhi mil gaya, ab mauj hai.","Salary ke saath bonus bhi aa gaya, ab toh chaandi hi chaandi hai.",chaandi,POSITIVE,claude_gen2
+Is coffee shop ki service aur ambience dono bahut accha hai.,Is coffee shop ki service aur ambience dono top class hain.,top class,POSITIVE,claude_gen2
+"Kal interview hai aur mujhe kuch yaad nahi aa raha, bahut ghabrahat ho rahi hai.","Kal interview hai aur dimaag block ho gaya, kuch yaad hi nahi aa raha.",dimaag block,ANXIOUS,claude_gen2
+Itne assignments ek saath aa gaye hain ki sochna mushkil ho gaya hai.,Itne assignments ek saath aa gaye ki dimaag ki dahi ho gayi hai.,dimaag ki dahi,STRESSED,claude_gen2
+Nani ke haath ka khana aaj bahut accha laga.,Nani ke haath ka khana aaj ekdum jhakaas laga.,jhakaas,POSITIVE,claude_gen2
+Hamari team ne is baar sabse accha kaam kiya hai.,"Hamari team is baar number one rahi, sabse accha kaam kiya.",number one,POSITIVE,claude_gen2
+"Kal hostel mein sab milke movie night karenge, bahut mazaa aayega.","Kal hostel mein movie night hai, bhai maze hi maze honge.",maze hi maze,EXCITED,claude_gen2
+Chhoti si bachchi ne apni masoom baaton se sabko khush kar diya.,Chhoti si bachchi ne apni masoom baaton se sabka dil jeet liya.,dil jeet liya,POSITIVE,claude_gen2
+"Naya phone bahut tezi se chalta hai, zara bhi atakta nahi.","Naya phone ekdum butter smooth chalta hai, zara bhi atakta nahi.",butter smooth,POSITIVE,claude_gen2
+Is hafte ka mausam ghoomne ke liye bahut accha hai.,Is hafte ka mausam ghoomne ke liye ekdum badiya hai.,badiya,POSITIVE,claude_gen2
+"Pados wale uncle ka behaviour aaj kuch ajeeb sa tha, samajh nahi aaya.","Pados wale uncle ka behaviour aaj kaafi weird tha, samajh nahi aaya.",weird,NEGATIVE/DISAPPOINTED,claude_gen2
+"Is mechanic ne mera scooter bahut accha theek kiya, kaam pakka hai.","Is mechanic ne mera scooter solid theek kiya, kaam pakka hai.",solid,POSITIVE,claude_gen2
+"Mujhe is nayi sneakers se pyaar ho gaya hai, bahut pasand aaye.","Main toh in nayi sneakers pe fida ho gaya, bahut pasand aaye.",fida,EXCITED,claude_gen2
+"Phone repair wale ne teen din lagaye aur phir bhi kaam nahi hua, bahut gussa aaya.","Phone repair wale ne teen din lagaye aur phir bhi jhand kar diya, bahut gussa aaya.",jhand,FRUSTRATED,claude_gen2
+"Shaadi mein sab nachne wale hain, bahut majaa aane wala hai.","Shaadi mein sab nachne wale hain, aaj toh poora dhamaal hoga.",dhamaal,EXCITED,claude_gen2
+"Pichle hafte ki class mein bahut bekaar baatein hui, koi kaam ka nahi tha.","Pichle hafte ki class mein bahut faaltu baatein hui, koi kaam ka nahi tha.",faaltu,NEGATIVE/DISAPPOINTED,claude_gen2
+Mera naya roommate bahut madadgaar aur bharosemand insaan hai.,"Mera naya roommate ekdum solid banda hai, har waqt madad ko ready.",solid banda,POSITIVE,claude_gen2
+Tumhara reply bilkul sahi aur zaroori baat par tha.,"Tumhara reply ekdum on point tha, bilkul sahi baat boli.",on point,POSITIVE,claude_gen2
+"Is baar ka Diwali sale bahut kamyaab raha, sabne khub kharidari ki.","Is baar ka Diwali sale superhit raha, sabne khub kharidari ki.",superhit,POSITIVE,claude_gen2
+Kal coffee shop mein purane dost mil gaye.,Yaar kal coffee shop mein purane dost mil gaye.,yaar,CASUAL,claude_gen2
+"Train nikalne wali hai, jaldi ticket book karo.","Train nikalne wali hai, fatafat ticket book karo.",fatafat,URGENT,claude_gen2
+Diwali ki shopping mein poora din nikal gaya.,"Diwali ki shopping mein poore din ke lag gaye, kuch hua bhi nahi.",lag gaye,FRUSTRATED,claude_gen2
+Kal interview hai aur mujhe kuch yaad nahi aa raha.,"Kal interview hai aur kuch yaad nahi aa raha, tension high hai.",tension high,STRESSED,claude_gen2
+"Padosi ki shaadi ka DJ raat bhar bajta raha, bahut pareshani hui.","Padosi ki shaadi ka DJ raat bhar bajta raha, sar phat raha hai ab.",sar phat raha hai,FRUSTRATED,claude_gen2
+Naye office ka canteen ka khana bahut accha hai.,Naye office ke canteen ka khana ekdum solid hai.,solid,POSITIVE,claude_gen2
+Exam hall mein pahunchte hi mujhe kuch samajh nahi aaya.,"Exam hall mein pahunchte hi dimaag block ho gaya, kuch samajh nahi aaya.",dimaag block,ANXIOUS,claude_gen2
+Naye phone ka software bahut tez aur aaram se chalta hai.,Naye phone ka software butter smooth chalta hai.,butter smooth,POSITIVE,claude_gen2
+Usne woh puzzle bahut jaldi suljha diya.,Usne woh puzzle chutki mein suljha diya.,chutki mein,POSITIVE,claude_gen2
+Mahine ke aakhir mein paise khatam ho gaye hain.,"Mahine ke aakhir mein jeb khaali ho gayi hai, kya karein.",jeb khaali,STRESSED,claude_gen2
+Kal submission hai aur abhi tak slides adhoori hain.,"Kal submission hai aur slides adhoori hain, bohot tension hai.",tension,STRESSED,claude_gen2
+Mera naya manager bahut madadgaar aur imaandaar insaan hai.,"Mera naya manager ekdum solid banda hai, madadgaar aur imaandaar.",solid banda,POSITIVE,claude_gen2
+Mausi ke haath ki chai bahut badhiya bani thi.,Mausi ke haath ki chai ekdum mast bani thi.,mast,POSITIVE,claude_gen2
+Bike kharab ho gayi aur office ke liye der ho gayi.,"Bike kharab ho gayi aur office ke liye late, ab toh waat lagi hai.",waat lagi,STRESSED,claude_gen2
+Cousin ki sangeet night mein sabne bahut dhamaal macha diya.,Cousin ki sangeet night mein sabne bawaal macha diya.,bawaal,EXCITED,claude_gen2
+Result aane wala hai aur mujhe bahut ghabrahat ho rahi hai.,Result aane wala hai aur dil baith raha hai mera.,dil baith raha hai,ANXIOUS,claude_gen2
+"Is baar hum aaram se, bina kisi dikkat ke trip pe jayenge.",Is baar hum bina tension ke aaram se trip pe jayenge.,bina tension,CASUAL,claude_gen2
+Kal raat ka cricket match dekhne ke liye hum sab taiyar hain.,"Kal raat ka cricket match dekhne ke liye game on hai, sab taiyar hain.",game on,EXCITED,claude_gen2
+Deadline sar par hai aur kaam bahut bacha hai.,Deadline sir pe hai aur kaam bahut bacha hai.,sir pe,STRESSED,claude_gen2
+Tu kal raat kahan gayab ho gaya tha?,Abey tu kal raat kahan gayab ho gaya tha?,abey,CASUAL,claude_gen2
+Gym mein uska stamina aur taqat dekh ke sab hairan hain.,"Gym mein uska stamina dekh ke sab bole, banda beast hai.",beast,POSITIVE,claude_gen2
+Festival sale mein is baar bahut fayda hua.,Festival sale mein is baar toh chaandi ho gayi.,chaandi,POSITIVE,claude_gen2
+Raat ko laptop crash ho gaya aur saara kaam ruk gaya.,"Raat ko laptop crash ho gaya, ekdum waat lag gayi, saara kaam ruk gaya.",waat lag gayi,STRESSED,claude_gen2
+Maa ke haath ka khana ghar jaake sabse zyada yaad aata hai.,"Kasam se, maa ke haath ka khana ghar jaake sabse zyada yaad aata hai.",kasam se,CASUAL,claude_gen2
+Hostel mein hum sab raat ko saath baithe the.,Hostel mein hum sab raat ko saath masti karne baithe the.,masti,CASUAL,claude_gen2
+Uski nayi bike dekhne mein kaafi acchi lag rahi hai.,Uski nayi bike ekdum dhaasu lag rahi hai.,dhaasu,POSITIVE,claude_gen2
+Office mein aaj mujhe bahut zyada kaam mil gaya.,"Office mein aaj mere toh lag gaye, itna kaam mil gaya.",lag gaye,FRUSTRATED,claude_gen2
+Uska dance video kaafi logon ne dekha.,Uska dance video ekdum viral ho gaya.,viral,POSITIVE,claude_gen2
+Kal se humari cricket tournament shuru ho rahi hai.,"Kal se humari cricket tournament shuru, game on!",game on,EXCITED,claude_gen2
+Maa ke haath ka khaana khake accha laga.,Maa ke haath ka khaana khake dil khush ho gaya.,dil khush,HAPPY,claude_gen2
+Mahine ke end mein paise bahut kam bache hain.,Mahine ke end mein ekdum jeb khaali hai yaar.,jeb khaali,STRESSED,claude_gen2
+Humari trip ka plan bahut accha ban gaya hai.,Humari trip ka plan ekdum bomb ban gaya hai.,bomb,EXCITED,claude_gen2
+Street food wala bhaiya kaafi accha golgappa banata hai.,Street food wala bhaiya zabardast golgappa banata hai.,zabardast,POSITIVE,claude_gen2
+Kal concert hai aur main bahut excited hoon.,Kal concert hai aur main toh full excited hoon.,full excited,EXCITED,claude_gen2
+Aaj chai ke saath purani yaadein taza ho gayi.,"Aaj chai pe ekdum sahi pakde, purani yaadein taza ho gayi.",sahi pakde,CASUAL,claude_gen2
+Agar abhi report submit nahi ki toh dikkat ho jayegi.,Agar abhi report submit nahi ki toh scene bigad jayega.,scene bigad jayega,URGENT,claude_gen2
+Kal raat ki party mein bahut maza aaya.,"Kal raat ki party ekdum lit thi, bahut maza aaya.",lit,POSITIVE,claude_gen2
+Uski lambi baatein sunke main thak gaya.,Uski lambi baatein sunke usne toh pakaa diya yaar.,pakaa diya,FRUSTRATED,claude_gen2
+Match mein last over ka mahaul kaafi dilchasp tha.,Match mein last over ka mahaul ekdum bawaal tha.,bawaal,EXCITED,claude_gen2
+Maine sach mein sab kuch time pe khatam kar diya.,Maine kasam se sab kuch time pe khatam kar diya.,kasam se,CASUAL,claude_gen2
+Wifi band ho gaya aur kaam bahut atka hua hai.,"Wifi band ho gaya, ab toh kaam ki waat lagi hui hai.",waat lagi,STRESSED,claude_gen2
+Train miss ho gayi aur plan kharab ho gaya.,Train miss ho gayi aur poora plan bekaar ho gaya.,bekaar,NEGATIVE,claude_gen2
+Aaj ki movie mujhe bilkul pasand nahi aayi.,"Aaj ki movie ekdum faaltu nikli, bilkul pasand nahi aayi.",faaltu,NEGATIVE,claude_gen2
+Main uski nayi playlist ka bahut bada fan ho gaya.,Main uski nayi playlist pe ekdum fida ho gaya.,fida,EXCITED,claude_gen2
+Phone ka charger kho gaya aur kal exam hai.,"Phone ka charger kho gaya aur kal exam hai, ab toh gaya kaam se.",gaya kaam se,URGENT,claude_gen2
+Interview ke time mujhe kuch yaad hi nahi aaya.,"Interview ke time ekdum dimaag block ho gaya, kuch yaad hi nahi aaya.",dimaag block,ANXIOUS,claude_gen2
+Nayi car ka engine bahut smooth chalta hai.,Nayi car ka engine ekdum butter smooth chalta hai.,butter smooth,POSITIVE,claude_gen2
+Yeh naya web series mujhe pasand nahi aayi.,"Yeh naya web series ekdum bekaar nikli, time waste ho gaya.",bekaar,NEGATIVE/DISAPPOINTED,claude_gen2
+Mere neighbour ka behaviour aaj thoda alag tha.,"Mere neighbour ka behaviour aaj ekdum weird tha, kuch samajh nahi aaya.",weird,NEGATIVE/DISAPPOINTED,claude_gen2
+Kal mera interview hai aur mujhe ghabrahat ho rahi hai.,"Kal mera interview hai yaar, abhi se dil baith raha hai.",dil baith raha hai,ANXIOUS,claude_gen2
+Aaj raat college fest mein sab log aa rahe hain.,"Aaj raat college fest mein sab aa rahe hain, bata kya scene hai!",kya scene hai,EXCITED,claude_gen2
+Tune itni jaldi poora project khatam kar diya.,"Tune itni jaldi poora project khatam kar diya, kya baat hai!",kya baat,POSITIVE,claude_gen2
+"Is weekend ghumne jaate hain, koi jaldi nahi hai.","Is weekend ghumne jaate hain, bina tension, aaram se.",bina tension,CASUAL,claude_gen2
+Barish ki wajah se humara trip cancel ho gaya.,"Barish ki wajah se humara trip cancel ho gaya, poora scene off ho gaya.",scene off,NEGATIVE/DISAPPOINTED,claude_gen2
+Uska guitar solo bahut hi kamaal tha.,"Uska guitar solo ekdum gazab tha, rongte khade ho gaye.",gazab,EXCITED,claude_gen2
+Main toh is nayi phone ke camera ka diwana ho gaya hoon.,Main toh is nayi phone ke camera pe fida ho gaya hoon.,fida,EXCITED,claude_gen2
+Office mein aaj phir se extra kaam mil gaya.,"Office mein aaj phir se extra kaam mil gaya, poore lag gaye yaar.",lag gaye,FRUSTRATED,claude_gen2
+"Is thali mein itna saara khana mila, bahut accha laga.","Is thali mein itna saara khana mila, ekdum paisa vasool deal hai.",paisa vasool,POSITIVE,claude_gen2
+Dost ke saath roadtrip pe jaane ka plan bana hai.,"Dost ke saath roadtrip pe jaane ka plan bana hai, ab toh mauj hi mauj.",mauj,EXCITED,claude_gen2
+Kal exam hai aur maine kuch bhi nahi padha.,"Kal exam hai aur maine kuch nahi padha, aaj toh waat lag gayi.",waat lag gayi,STRESSED,claude_gen2
+Laptop crash hone se meri saari presentation kharab ho gayi.,Laptop crash hone se meri saari presentation ka band baj gaya.,band baj gaya,NEGATIVE/DISAPPOINTED,claude_gen2
+Concert ka mahaul aaj bahut josh wala tha.,"Concert ka mahaul aaj ekdum electric tha, poori crowd jhoom rahi thi.",electric,EXCITED,claude_gen2
+Tera naya haircut bahut accha lag raha hai.,Tera naya haircut ekdum dhasu lag raha hai bhai.,dhasu,POSITIVE,claude_gen2
+Maa ke haath ka khana khaake bahut accha laga.,Maa ke haath ka khana khaake dil khush ho gaya.,dil khush,HAPPY,claude_gen2
+Boss ne aaj meeting mein sabko bahut daanta.,"Boss ne aaj meeting mein sabki waat lagi di, bahut daanta.",waat lagi,STRESSED,claude_gen2
+Registration ka process aaj bina rukawat ke ho gaya.,"Registration ka process aaj ekdum smooth ho gaya, koi dikkat nahi aayi.",smooth,CASUAL,claude_gen2
+Is cafe ki coffee aur mahaul dono bahut accha hai.,"Is cafe ki coffee aur mahaul dono superb hai, yahan baar baar aayenge.",superb,POSITIVE,claude_gen2
+Maine tujhe pehle hi bataya tha ki woh nahi aayega.,Kasam se maine tujhe pehle hi bataya tha ki woh nahi aayega.,kasam se,CASUAL,claude_gen2
+"Chal, jaldi nikal warna bus chhoot jayegi.","Abey chal, jaldi nikal warna bus chhoot jayegi.",abey,CASUAL,claude_gen2
+Aaj subah se mera mood theek nahi hai.,"Aaj subah se mera mood ekdum off hai, kuch accha nahi lag raha.",off,NEGATIVE/DISAPPOINTED,claude_gen2
+Results aane wale hain aur mujhe bahut dar lag raha hai.,Results aane wale hain aur mere liye full tension hai yaar.,full tension,ANXIOUS,claude_gen2
+Gaming tournament mein aaj hum hi sabse aage chal rahe hain.,"Gaming tournament mein aaj apna raaj chal raha hai, hum hi aage hain.",apna raaj,EXCITED,claude_gen2
+Diwali ki chhutti mein poora ghar ikattha ho gaya hai.,"Diwali ki chhutti mein poora ghar ikattha hai, ekdum khushi ka mahaul hai.",khushi ka mahaul,EXCITED,claude_gen2
+Kal client presentation hai aur slides abhi tak adhoori hain.,"Kal client presentation hai aur slides adhoori hain, meri toh waat lagi hui hai.",waat lagi,STRESSED,claude_gen2
+Interview ke time pe mujhe kuch yaad hi nahi aaya.,"Interview ke time pe dimaag block ho gaya, kuch yaad hi nahi aaya.",dimaag block,ANXIOUS,claude_gen2
+Is hotel ka wifi bilkul kaam nahi kar raha.,"Is hotel ka wifi ekdum bekaar hai, kaam hi nahi kar raha.",bekaar,NEGATIVE/DISAPPOINTED,claude_gen2
+Maa ke haath ki biryani aaj phir kamaal ki bani hai.,Maa ke haath ki biryani aaj phir ekdum paani bani hai.,paani,POSITIVE,claude_gen2
+Sheher ke naye cafe ki coffee kaafi achhi hai.,Sheher ke naye cafe ki coffee ekdum top class hai.,top class,POSITIVE,claude_gen2
+"Salary aa gayi hai, ab weekend pe shopping karenge.","Salary aa gayi yaar, ab weekend pe shopping mein mauj karenge.",mauj,EXCITED,claude_gen2
+Kal humara Goa ka trip hai aur main bahut utsuk hoon.,Kal humara Goa ka trip hai aur main full excited hoon.,full excited,EXCITED,claude_gen2
+Humare naye boss ne pehle hi hafte mein sab sambhal liya.,"Humare naye boss ekdum dhaasu nikle, pehle hi hafte mein sab sambhal liya.",dhaasu,POSITIVE,claude_gen2
+Main toh us Royal Enfield pe bahut mar-mita hoon.,Main toh us Royal Enfield pe ekdum fida hoon.,fida,EXCITED,claude_gen2
+Usne bijli ka bill ka issue turant solve kar diya.,Usne bijli ka bill ka issue chutki mein solve kar diya.,chutki mein,POSITIVE,claude_gen2
+Baarish ki wajah se humara picnic ka plan cancel ho gaya.,Baarish ki wajah se humara picnic ka scene off ho gaya.,scene off,NEGATIVE/DISAPPOINTED,claude_gen2
+Humari college team ne inter-state cricket tournament jeet liya.,Humari college team ne inter-state tournament mein jhanda gaad diya!,jhanda gaad diya,EXCITED,claude_gen2
+"Chal bhai, ab nikalte hain, bahut der ho gayi hai.","Chal boss, ab nikalte hain, bahut der ho gayi hai.",boss,CASUAL,claude_gen2
+Is Holi pe poore mohalle ne bahut dhoom machayi.,Is Holi pe poore mohalle ne full on dhoom machayi.,full on,EXCITED,claude_gen2
+Mujhe flight ka ticket bahut sasta mil gaya aaj.,"Mujhe flight ka ticket itna sasta mila, ekdum jackpot lag gaya.",jackpot,EXCITED,claude_gen2
+"Tune akele hi poori seminar ki taiyaari kar li, kya baat hai.","Tune akele hi poori seminar ki taiyaari kar li, ekdum kamaal hai yaar.",kamaal,CASUAL,claude_gen2
+Kal raat concert mein itni bheed thi ki dhoom macha di.,"Kal raat concert mein itni bheed thi, ekdum bawaal ho gaya.",bawaal,EXCITED,claude_gen2
+"Please yeh files abhi bhej do, kal subah tak chahiye.","Please yeh files abhi bhej do, urgent hai, kal subah tak chahiye.",urgent,URGENT,claude_gen2
+Dost ki shaadi mein humne raat bhar naach kiya aur khoob anand liya.,"Dost ki shaadi mein humne raat bhar naach kiya, ekdum maze aa gaye.",maze,EXCITED,claude_gen2
+Uski nayi web series ka climax ekdum shandaar tha.,Uski nayi web series ka climax ekdum faadu tha.,faadu,POSITIVE,claude_gen2
+Match haarne ke baad mujhe bahut bura laga.,Match haarne ke baad mera dil toot gaya yaar.,dil toot gaya,SAD,claude_gen2
+"Ab sab taiyaar hain, tournament shuru karte hain.","Ab sab taiyaar hain, game on, tournament shuru karte hain!",game on,EXCITED,claude_gen2
+Yaar kal raat ki movie ke baad cafe chalte hain.,"Bro, kal raat ki movie ke baad cafe chalte hain.",bro,CASUAL,claude_gen2
+Kal ki rooftop party bahut zabardast thi.,Kal ki rooftop party ekdum lit thi.,lit,POSITIVE,claude_gen2
+Kal subah exam hai aur syllabus abhi bhi baaki hai.,"Kal subah exam hai aur syllabus baaki hai, dimaag ki dahi ho gayi hai.",dimaag ki dahi,STRESSED,claude_gen2
+Goa ka woh trip humesha yaad rahega.,"Goa ka woh trip ekdum unforgettable tha, humesha yaad rahega.",unforgettable,POSITIVE,claude_gen2
+"Chai jaldi bana do, meeting shuru hone wali hai.","Chai fatafat bana do, meeting shuru hone wali hai.",fatafat,URGENT,claude_gen2
+Uske birthday surprise ne sabko bahut khush kar diya.,Uske birthday surprise ne toh sabka dil jeet liya.,dil jeet liya,POSITIVE,claude_gen2
+"Mummy ne aaj jo biryani banayi, woh kaafi acchi thi.","Mummy ne aaj jo biryani banayi, ekdum dhaasu thi.",dhaasu,POSITIVE,claude_gen2
+Is cafe ki coffee aur service dono bahut acchi hain.,Is cafe ki coffee aur service dono top class hain.,top class,POSITIVE,claude_gen2
+Barish ke baad chai aur pakode ka combination mast hota hai.,Barish ke baad chai aur pakode ka combination ekdum badiya hota hai.,badiya,POSITIVE,claude_gen2
+"Kal college ka fest hai, hum sab bahut excited hain.","Kal college ka fest hai, sabki mauj hone wali hai.",mauj,EXCITED,claude_gen2
+Raat bhar assignment likhne ke baad ab kuch samajh nahi aa raha.,Raat bhar assignment likhne ke baad ab dimaag fry ho gaya hai.,dimaag fry,STRESSED,claude_gen2
+Is naye phone ka interface bahut smooth chalta hai.,Is naye phone ka interface ekdum butter smooth chalta hai.,butter smooth,POSITIVE,claude_gen2
+Hamare office ka canteen sabse acchi jagah hai khane ke liye.,Hamare office ka canteen khane ke liye number one jagah hai.,number one,POSITIVE,claude_gen2
+Rooftop pe baithkar baarish dekhna bahut acchha laga.,Rooftop pe baithkar baarish dekhna ekdum zabardast laga.,zabardast,POSITIVE,claude_gen2
+"Tune itni jaldi presentation bana li, ye acchi baat hai.","Tune itni jaldi presentation bana li, kamaal kar diya yaar.",kamaal,CASUAL,claude_gen2
+Cricket match mein last over ne sabko hairaan kar diya.,Cricket match mein last over ne toh dhamaal macha diya.,dhamaal,EXCITED,claude_gen2
+"Delivery wala ek ghanta late aaya, bahut pareshan kiya.",Delivery wale ne ek ghanta late aake pakaa diya.,pakaa diya,FRUSTRATED,claude_gen2
+Kal raat ka concert bahut acchha tha.,Kal raat ka concert ekdum jhakaas tha.,jhakaas,POSITIVE,claude_gen2
+"Bhai, tune toh poora project akele sambhal liya.","Boss, tune toh poora project akele sambhal liya.",boss,CASUAL,claude_gen2
+Hamari team ne inter-college competition mein pehla inaam jeeta.,Hamari team ne inter-college competition mein jhanda gaad diya.,jhanda gaad diya,EXCITED,claude_gen2
+Uski nayi startup ki growth bahut tezi se ho rahi hai.,Uski nayi startup ki growth ekdum rocket ki tarah ho rahi hai.,rocket,POSITIVE,claude_gen2
+"Wifi band ho gaya aur kaam bhi atka hua hai, bahut pareshani hai.","Wifi band ho gaya aur kaam atka hua hai, ab toh lag gaye yaar.",lag gaye,FRUSTRATED,claude_gen2
+Chutti ke din bina kisi tension ke ghoomna acchha lagta hai.,Chutti ke din bindaas bina kisi tension ke ghoomna acchha lagta hai.,bindaas,POSITIVE,claude_gen2
+"Yeh report abhi bhejna zaroori hai, client wait kar raha hai.","Yeh report abhi bhejna urgent hai, client wait kar raha hai.",urgent,URGENT,claude_gen2
+"Kal sunday hai, chalo koi movie dekhte hain.","Kal sunday hai, chalo yaar koi movie dekhte hain.",yaar,CASUAL,claude_gen2
+Metro mein itna shor tha ki sar dard hone laga.,Metro mein itna shor tha ki sar phat raha hai.,sar phat raha hai,FRUSTRATED,claude_gen2
+Is hotel ka room aur view dono bahut acche the.,Is hotel ka room aur view dono superb the.,superb,POSITIVE,claude_gen2
+Shaadi mein sabne bahut khana khaya.,"Shaadi mein sabne jamkar pet puja ki, bahut khana khaya.",pet puja,CASUAL,claude_gen2
+Hum Goa mein aaram se ghoom rahe the.,Hum Goa mein bina tension aaram se ghoom rahe the.,bina tension,CASUAL,claude_gen2
+"Phone ki battery khatam ho rahi hai, jaldi charger do.","Phone ki battery khatam ho rahi hai, charger nahi mila to gaya kaam se, jaldi de.",gaya kaam se,URGENT,claude_gen2
+Interview mein question sunke mujhe kuch yaad nahi aaya.,"Interview mein question sunke dimaag block ho gaya, kuch yaad hi nahi aaya.",dimaag block,ANXIOUS,claude_gen2
+Is cafe ki filter coffee bahut achhi hai.,Is cafe ki filter coffee ekdum lajawaab hai.,lajawaab,POSITIVE,claude_gen2
+Mahine ke end mein office ka kaam bahut badh jata hai.,Mahine ke end mein office mein kaam ka pahaad ban jata hai.,kaam ka pahaad,STRESSED,claude_gen2
+Baarish ke baad hawa kitni taazi lag rahi hai.,Baarish ke baad hawa kitni refreshing lag rahi hai.,refreshing,POSITIVE,claude_gen2
+Aaj ka train ka safar bilkul theek raha.,Aaj ka train ka safar ekdum smooth raha.,smooth,CASUAL,claude_gen2
+Kal raat ki party ka music bahut badhiya tha.,Kal raat ki party ka music ekdum faadu tha.,faadu,POSITIVE,claude_gen2
+Uski nayi film ka action scene bahut shaandaar hai.,Uski nayi film ka action scene ekdum next level hai.,next level,POSITIVE,claude_gen2
+Itna paisa kharch karke bhi wo movie bekaar nikli.,Itna paisa kharch karke bhi wo movie ekdum faaltu nikli.,faaltu,NEGATIVE,claude_gen2
+"Kal result aane wala hai, mujhe bahut darr lag raha hai.","Kal result aane wala hai, full tension chal rahi hai yaar.",full tension,ANXIOUS,claude_gen2
+Salary aane mein abhi hafta baaki hai aur paise khatam hain.,Salary aane mein abhi hafta baaki hai aur jeb khaali hai.,jeb khaali,STRESSED,claude_gen2
+"Usne apne bhai ke liye jo surprise rakha, wo bahut achha tha.","Usne apne bhai ke liye jo surprise rakha, wo ekdum gazab tha.",gazab,POSITIVE,claude_gen2
+Mushkil waqt mein sirf Rohan mere saath khada raha.,Mushkil waqt mein sirf Rohan sachcha dost ban ke mere saath khada raha.,sachcha dost,POSITIVE,claude_gen2
+Bijli chali gayi aur garmi mein hum bahut pareshan hue.,Bijli chali gayi aur garmi mein to jaan nikal gayi yaar.,jaan nikal gayi,FRUSTRATED,claude_gen2
+Wo har cheez ko bahut aaram se aur khush hokar leta hai.,Wo har cheez ko ekdum bindaas hokar leta hai.,bindaas,POSITIVE,claude_gen2
+"Yaar, tune apna wallet phir ghar par bhula diya.","Arre yaar, tune apna wallet phir ghar par bhula diya.",arre,CASUAL,claude_gen2
+Cricket match mein Virat aur Rahul ne bahut achha khela.,"Cricket match mein Virat aur Rahul to chha gaye, bahut achha khela.",chha gaye,POSITIVE,claude_gen2
+"Main sach bol raha hoon, maine kal tumhe call kiya tha.","Kasam se bol raha hoon, maine kal tumhe call kiya tha.",kasam se,CASUAL,claude_gen2
+"Purana dost bina bataye shehar chhod ke chala gaya, mujhe bura laga.","Purana dost bina bataye shehar chhod ke chala gaya, dil toot gaya yaar.",dil toot gaya,SAD,claude_gen2
+"Kal hum sab dost trip par ja rahe hain, bahut maza aayega.","Kal hum sab dost trip par ja rahe hain, full masti hone wali hai.",full masti,EXCITED,claude_gen2
+Is hotel ka biryani ka swaad bahut badhiya hai.,Is hotel ka biryani ekdum jhakaas hai.,jhakaas,POSITIVE,claude_gen2
+Tumne itne kam time mein ye project khatam kar diya.,"Tumne itne kam time mein ye project khatam kar diya, kamaal hai yaar.",kamaal,CASUAL,claude_gen2
+Is auto wale ka behaviour bahut kharab tha.,Is auto wale ka behaviour ekdum ghatiya tha.,ghatiya,NEGATIVE,claude_gen2
+Kal raat bijli chali gayi aur poora kaam ruk gaya.,Kal raat bijli chali gayi aur poore kaam ki waat lagi.,waat lagi,STRESSED,claude_gen2
+Coffee shop mein aaj ki playlist bahut sahi thi.,Coffee shop mein aaj ki playlist ekdum on point thi.,on point,POSITIVE,claude_gen2
+Subah ki baarish ke baad hawa bahut taazi lag rahi hai.,Subah ki baarish ke baad hawa kaafi refreshing lag rahi hai.,refreshing,POSITIVE,claude_gen2
+Is Saturday ka goa trip ka plan pakka ho gaya.,"Is Saturday ka goa trip ka scene set hai, bas bags pack karne hain!",scene set hai,EXCITED,claude_gen2
+Maa ke haath ki bani kheer bahut acchi thi.,Maa ke haath ki bani kheer ekdum badiya thi.,badiya,POSITIVE,claude_gen2
+Aaj office ka commute bina kisi dikkat ke nikal gaya.,Aaj office ka commute ekdum smooth nikal gaya.,smooth,CASUAL,claude_gen2
+Exam se pehle raat ko padhte padhte bahut tension ho gayi.,Exam se pehle raat ko padhte padhte meri haalat kharab ho gayi.,haalat kharab,STRESSED,claude_gen2
+Jab mera phone kho gaya tab usne bahut madad ki.,"Jab mera phone kho gaya tab usne bahut madad ki, wo mera sachcha dost hai.",sachcha dost,POSITIVE,claude_gen2
+Main to us nayi biryani wali dukaan ka fan ho gaya hoon.,Main to us nayi biryani wali dukaan par fida ho gaya hoon.,fida,EXCITED,claude_gen2
+Food delivery wale ne thanda aur ganda khana pahunchaya.,"Food delivery wale ne ekdum ghatiya, thanda khana pahunchaya.",ghatiya,NEGATIVE/DISAPPOINTED,claude_gen2
+Kal raat birthday party mein bahut maza aaya.,Kal raat birthday party mein ekdum bawaal ho gaya!,bawaal,EXCITED,claude_gen2
+Is movie ki kahani mujhe bilkul pasand nahi aayi.,"Is movie ki kahani poori bakwaas thi, bilkul pasand nahi aayi.",bakwaas,NEGATIVE/DISAPPOINTED,claude_gen2
+Match ke beech mein net chala gaya aur hamari game kharab ho gayi.,Match ke beech mein net chala gaya aur hamari game ka band baj gaya.,band baj gaya,NEGATIVE/DISAPPOINTED,claude_gen2
+Subah se wahi code theek karte karte bahut pareshaan ho gaya hoon.,Subah se wahi code theek karte karte mera sar phat raha hai.,sar phat raha hai,FRUSTRATED,claude_gen2
+Hamari team ne college fest mein bahut acchi performance di.,"Hamari team ne college fest mein ekdum chha gaye, sabne taliyan bajayi.",chha gaye,POSITIVE,claude_gen2
+Kal hostel mein hum sab ne ek bada plan banaya hai.,"Kal hostel mein hum sab ne ek bomb plan banaya hai, maza aayega!",bomb,EXCITED,claude_gen2
+Aaj chai break mein hum bas baithe aur baatein karte rahe.,Aaj chai break mein hum bas chill karte rahe aur baatein karte rahe.,chill,CASUAL,claude_gen2
+Chhoti si train miss hui to poore din ka plan bigad gaya.,"Chhoti si train miss hui to jaan nikal gayi, poore din ka plan bigad gaya.",jaan nikal gayi,FRUSTRATED,claude_gen2
+Monsoon mein bheed wali local mein safar karna bahut mushkil tha.,Monsoon mein bheed wali local mein safar karke poori waat lag gayi.,waat lag gayi,STRESSED,claude_gen2
+"Aaj mera mood theek nahi hai, kuch bhi accha nahi lag raha.","Aaj mera mood off hai, kuch bhi accha nahi lag raha.",off,NEGATIVE/DISAPPOINTED,claude_gen2
+Is gaming tournament mein uska khel bahut acchha raha.,Is gaming tournament mein uska khel ekdum tagda raha.,tagda,POSITIVE,claude_gen2
+Naye gym ka setup aur equipment bahut acche hain.,Naye gym ka setup aur equipment ekdum superb hain.,superb,POSITIVE,claude_gen2
+Is hafte ka online lecture bilkul kaam ka nahi tha.,"Is hafte ka online lecture ekdum bekaar tha, kuch samajh nahi aaya.",bekaar,NEGATIVE/DISAPPOINTED,claude_gen2
+Raat ko wahi purani bahes dobara shuru karne ka koi fayda nahi.,Raat ko wahi purani bahes dobara shuru karna ekdum faaltu hai.,faaltu,NEGATIVE/DISAPPOINTED,claude_gen2
+Maa ne aaj khane mein paneer banaya hai.,Maa ne aaj khane mein gajab paneer banaya hai.,gajab,POSITIVE,claude_gen2
+Kal hum sab dost beach trip par ja rahe hain.,"Kal hum sab dost beach trip par ja rahe hain, full masti hone wali hai.",full masti,EXCITED,claude_gen2
+Maine tumhe pehle bhi bataya tha ki woh nahi aayega.,"Maine tumhe pehle bhi bataya tha, kasam se, ki woh nahi aayega.",kasam se,CASUAL,claude_gen2
+"Yaar mujhe apna charger de do, phone band hone wala hai.","Bro mujhe apna charger de do, phone band hone wala hai.",bro,CASUAL,claude_gen2
+Birthday party mein DJ ne bahut accha music bajaya.,Birthday party mein DJ ne ekdum lit music bajaya.,lit,POSITIVE,claude_gen2
+"Salary aa gayi hai, ab shopping karne ka mann hai.","Salary aa gayi hai, ab toh mauj hi mauj, shopping karne ka mann hai.",mauj,EXCITED,claude_gen2
+Usne woh pura math ka sawaal ek minute mein hal kar diya.,Usne woh pura math ka sawaal chutki mein hal kar diya.,chutki mein,POSITIVE,claude_gen2
+Kal submission hai aur abhi tak aadha kaam baaki hai.,"Kal submission hai aur aadha kaam baaki hai, tension high hai.",tension high,STRESSED,claude_gen2
+Barish ki wajah se humara picnic ka plan cancel ho gaya.,"Barish ki wajah se humara picnic ka plan cancel ho gaya, scene off ho gaya yaar.",scene off,NEGATIVE,claude_gen2
+Padosi ki construction ka shor subah se chal raha hai.,"Padosi ki construction ka shor subah se chal raha hai, sar phat raha hai mera.",sar phat raha hai,FRUSTRATED,claude_gen2
+Uska presentation bilkul sahi aur time par khatam hua.,Uska presentation ekdum on point aur time par khatam hua.,on point,POSITIVE,claude_gen2
+Uska dance video kal raat se sab jagah dekha ja raha hai.,Uska dance video kal raat se ekdum viral ho gaya hai.,viral,POSITIVE,claude_gen2
+Weekend ka trekking plan sab dosto ke saath pakka ho gaya.,"Weekend ka trekking plan pakka ho gaya, scene set hai bhai!",scene set hai,EXCITED,claude_gen2
+Woh bina kisi chinta ke apni zindagi jeeta hai.,"Woh ekdum bindaas apni zindagi jeeta hai, kisi chinta ke bina.",bindaas,POSITIVE,claude_gen2
+"Ek ghante se traffic mein phase hain, ab bahut thak gaya hoon.","Ek ghante se traffic mein phase hain, bhai pak gaya hoon ab.",pak gaya,FRUSTRATED,claude_gen2
+Exam hall mein jaate hi mujhe kuch yaad nahi aa raha tha.,"Exam hall mein jaate hi dimaag block ho gaya, kuch yaad nahi aa raha tha.",dimaag block,ANXIOUS,claude_gen2
+Tumne jo plan banaya hai woh mujhe theek lag raha hai.,Tumne jo plan banaya hai woh sahi hai yaar.,sahi hai,POSITIVE,claude_gen2
+Bank ke chakkar kaatne mein poora din nikal gaya.,"Bank ke chakkar kaatne mein poora din lag gaye, kuch hua nahi.",lag gaye,FRUSTRATED,claude_gen2
+Woh meeting mein ek hi baat baar baar dohrata raha.,"Woh meeting mein ek hi baat baar baar dohrata raha, pura pakaa diya.",pakaa diya,FRUSTRATED,claude_gen2
+Is gym ke naye trainer ka workout bahut accha hai.,Is gym ke naye trainer ka workout ekdum jhakaas hai.,jhakaas,POSITIVE,claude_gen2
+Group project ke liye raat bhar kaam karke thak gaya hoon.,Group project ke liye raat bhar kaam karke dimaag fry ho gaya hai.,dimaag fry,STRESSED,claude_gen2
+Dosto ke saath Goa ka trip bahut mazedaar hone wala hai.,"Dosto ke saath Goa ka trip hai, maze hi maze honge!",maze hi maze,EXCITED,claude_gen2
+Shaadi mein usne bahut accha dance kiya aur sabko impress kar diya.,"Shaadi mein usne jalwa bikher diya, sabko impress kar diya.",jalwa,POSITIVE,claude_gen2
+"Tumne itni jaldi yeh assignment poora kar diya, accha kiya.","Kya baat, tumne itni jaldi yeh assignment poora kar diya!",kya baat,POSITIVE,claude_gen2
+Shaadi ka khaana bahut achha tha.,Shaadi ka khaana ekdum zabardast tha.,zabardast,POSITIVE,claude_gen2
+Hostel mein aaj sab log bahut khush hain.,"Hostel mein aaj apna raaj hai, sab log bahut khush hain.",apna raaj,EXCITED,claude_gen2
+"Match shuru hone wala hai, hum taiyaar hain.","Match shuru hone wala hai, game on, hum taiyaar hain.",game on,EXCITED,claude_gen2
+"Concert ke tickets khatam ho gaye, bahut dukh hua.","Concert ke tickets khatam ho gaye, dil toot gaya yaar.",dil toot gaya,SAD,claude_gen2
+Coffee shop ki cold coffee bahut badhiya thi.,Coffee shop ki cold coffee ekdum kadak thi.,kadak,POSITIVE,claude_gen2
+Boss ne aaj achanak sab kaam badal diya.,"Boss ne aaj achanak sab kaam badal diya, meri toh waat lag gayi.",waat lag gayi,STRESSED,claude_gen2
+Exam ki taiyaari mein meri halat kaafi buri ho gayi hai.,Exam ki taiyaari mein meri haalat kharab ho gayi hai yaar.,haalat kharab,STRESSED,claude_gen2
+Naye phone ke launch ko lekar sab bahut utsahit hain.,"Naye phone ke launch ko lekar kaafi hype hai, sab excited hain.",hype,EXCITED,claude_gen2
+Uski kahani sunkar sabko bahut achha laga.,Uski kahani ne sabka dil jeet liya.,dil jeet liya,POSITIVE,claude_gen2
+Is baar ki road trip ke liye gaadi ekdum sahi hai.,Is baar ki road trip ke liye gaadi ekdum fit hai.,fit hai,POSITIVE,claude_gen2
+Aaj office ka sab kaam aaram se ho gaya.,Aaj office ka sab kaam smoothly ho gaya.,smoothly,CASUAL,claude_gen2
+Festival ki shopping mein humne bahut achhe deals pakde.,Festival ki shopping mein humne ekdum paani deals pakde.,paani,POSITIVE,claude_gen2
+Monsoon aa gaya aur assignments ki deadline paas hai.,Monsoon aa gaya aur assignments ki deadline sir pe hai.,sir pe,STRESSED,claude_gen2
+Agar abhi report nahi bheji toh bahut badi dikkat ho jayegi.,Agar abhi report nahi bheji toh gaya kaam se.,gaya kaam se,URGENT,claude_gen2
+Hamari team ne college fest mein pehla inaam jeet liya.,"Hamari team ne college fest mein jhanda gaad diya, pehla inaam jeet liya.",jhanda gaad diya,EXCITED,claude_gen2
+Flight miss ho gayi toh poora plan kharab ho jayega.,Flight miss ho gayi toh poora scene bigad jayega.,scene bigad jayega,URGENT,claude_gen2
+Uska naya gaana sunne mein bahut mast hai.,Uska naya gaana ekdum faadu hai.,faadu,POSITIVE,claude_gen2
+Movie ka end dekhkar mera mood theek nahi raha.,Movie ka end dekhkar mera mood off ho gaya.,off,NEGATIVE,claude_gen2
+Is restaurant ki service bahut kharab thi.,Is restaurant ki service ekdum ghatiya thi.,ghatiya,NEGATIVE,claude_gen2
+Ghar shift karne ke baad bahut saara kaam bacha hai.,Ghar shift karne ke baad kaam ka pahaad bacha hai.,kaam ka pahaad,STRESSED,claude_gen2
+Diwali pe ghar mein sab ek saath hain aur sab khush hain.,"Diwali pe ghar mein sab ek saath hain, khushi ka mahaul hai.",khushi ka mahaul,EXCITED,claude_gen2
+Beach trip pe humne poora din khoob maze kiye.,Beach trip pe humne poora din full masti kari.,full masti,EXCITED,claude_gen2
+Wo har baar late aane ke liye naye bahane banata hai.,Wo har baar late aane ke liye naya natak karta hai.,natak,NEGATIVE,claude_gen2
+Din bhar ki meetings ke baad mera sar bahut thak gaya hai.,Din bhar ki meetings ke baad mera dimaag fry ho gaya hai.,dimaag fry,STRESSED,claude_gen2
+"Aaj Sunday hai, bas ghar pe aaram karna hai.","Aaj Sunday hai, bas ghar pe chill karna hai.",chill,CASUAL,claude_gen2
+Office mein bahut der se meeting chal rahi hai.,"Office mein itni der se meeting chal rahi hai, ab toh pak gaya yaar.",pak gaya,FRUSTRATED,claude_gen2
+Gym mein aaj bahut mushkil workout karna pada.,Gym mein aaj aisa workout kiya ki jaan nikal gayi.,jaan nikal gayi,FRUSTRATED,claude_gen2
+Ghar ki bahut yaad aa rahi hai aaj.,"Ghar ki bahut yaad aa rahi hai, poora mood off hai aaj.",mood off,SAD,claude_gen2
+Chhoti behen ne apne gaane se sabko khush kar diya.,Chhoti behen ne apne gaane se sabka dil jeet liya.,dil jeet liya,POSITIVE,claude_gen2
+Itne kam daam mein itna bada thali mil gaya.,"Itne kam daam mein itni badi thali mil gayi, ekdum paisa vasool.",paisa vasool,POSITIVE,claude_gen2
+"Train chhootne wali hai, jaldi station pahunchna padega.","Train chhootne wali hai, jaldi nahi pahunche toh gaya scene.",gaya scene,URGENT,claude_gen2
+Exam hall mein pehla sawaal dekh ke kuch yaad nahi aaya.,"Exam hall mein pehla sawaal dekh ke dimaag block ho gaya, kuch yaad hi nahi aaya.",dimaag block,ANXIOUS,claude_gen2
+Tumne jo plan banaya hai woh accha hai.,Tumne jo plan banaya hai woh toh bilkul sahi hai.,sahi hai,POSITIVE,claude_gen2
+Kal raat dekhi hui web series bahut hit hai.,Kal raat dekhi hui web series toh superhit hai bhai.,superhit,POSITIVE,claude_gen2
+"Wo bina rukke ek hi kahani sunata raha, bahut bore kiya.","Wo bina rukke ek hi kahani sunata raha, pakaa diya yaar usne.",pakaa diya,FRUSTRATED,claude_gen2
+Mera naya roommate bahut acha aur bharosemand insaan hai.,"Mera naya roommate ekdum solid banda hai, bharosemand bhi.",solid banda,POSITIVE,claude_gen2
+Internship presentation mein sabne bahut accha kaam kiya.,"Internship presentation mein sab log chha gaye, kya kaam kiya.",chha gaye,POSITIVE,claude_gen2
+Bike pe highway par akele ghoomna mujhe bahut pasand hai.,Bike pe highway par bindaas akele ghoomna mujhe bahut pasand hai.,bindaas,POSITIVE,claude_gen2
+Uska naya laptop bahut acchi performance deta hai.,"Uska naya laptop solid performance deta hai, speed dekh ke maza aa gaya.",solid,POSITIVE,claude_gen2
+Shaadi mein sab log bahut mazedaar naache.,"Shaadi mein sabne aisa dhamaal macha diya, kya naache sab.",dhamaal,EXCITED,claude_gen2
+"Concert ka ticket mil gaya, ab bahut khushi hai.","Concert ka ticket mil gaya, ab toh bomb hone wala hai weekend!",bomb,EXCITED,claude_gen2
+Mummy ne ek minute mein poora khana taiyaar kar diya.,Mummy ne chutki mein poora khana taiyaar kar diya.,chutki mein,POSITIVE,claude_gen2
+Is cafe ki coffee ka swaad bahut acha hai.,"Is cafe ki coffee ka swaad ekdum paani hai, ek baar try karo.",paani,POSITIVE,claude_gen2
+Picnic ka sara plan baarish ki wajah se kharab ho gaya.,"Picnic ka sara plan baarish ki wajah se band baj gaya, bahut bura laga.",band baj gaya,DISAPPOINTED,claude_gen2
+"Kal result aane wala hai, mujhe bahut chinta ho rahi hai.","Kal result aane wala hai, bahut tension ho rahi hai mujhe.",tension,STRESSED,claude_gen2
+Diwali par poore ghar mein bahut khushi thi.,"Diwali par poore ghar mein khushi ka mahaul tha, sab hans rahe the.",khushi ka mahaul,EXCITED,claude_gen2
+Project ki deadline bilkul paas aa gayi hai aur kaam bacha hai.,Project ki deadline sir pe aa gayi hai aur kaam abhi bacha hai.,sir pe,STRESSED,claude_gen2
+"Cricket match shuru hone wala hai, sab tayyar hain.","Cricket match shuru hone wala hai, chalo game on!",game on,EXCITED,claude_gen2
+"Naya gaana sunke maza aa gaya, bahut accha hai.","Naya gaana sunke maza aa gaya, ekdum jhakaas hai.",jhakaas,POSITIVE,claude_gen2
+Is mahine bonus mil gaya aur kaafi paisa aaya.,"Is mahine bonus mil gaya, ekdum chaandi ho gayi yaar.",chaandi,POSITIVE,claude_gen2
+Kal ka movie ka climax bahut kharab tha.,"Kal ke movie ka climax ekdum ghatiya tha, paisa barbaad.",ghatiya,NEGATIVE,claude_gen2
+Mummy ke haath ki biryani bahut achhi thi.,"Mummy ke haath ki biryani lajawaab thi, ungliyan chaat gaye.",lajawaab,POSITIVE,claude_gen2
+"Tumne yeh jugaad kaise nikaala, yeh toh alag hi hai.","Tumne yeh jugaad kaise nikaala, kamaal hai bhai.",kamaal,CASUAL,claude_gen2
+Is cafe ki cold coffee kaafi achhi hai.,Is cafe ki cold coffee ekdum badiya hai yaar.,badiya,POSITIVE,claude_gen2
+Itne hype ke baad film bilkul nahi chali.,"Itne hype ke baad film poori flop ho gayi, dil toot gaya.",flop,DISAPPOINTED,claude_gen2
+"Is weekend ka trip ab bilkul pakka ho gaya, bahut maza aayega.","Is weekend ka trip pakka ho gaya, full on maza aayega.",full on,EXCITED,claude_gen2
+Bhaiya ki shaadi ka venue mahal jaisa shaandar tha.,"Bhaiya ki shaadi ka venue ekdum royal tha, mahal jaisa.",royal,POSITIVE,claude_gen2
+Bijli wale ke baar baar tikhe jawab sunke main tang aa gaya.,Bijli wale ke baar baar bahane sunke main pak gaya yaar.,pak gaya,FRUSTRATED,claude_gen2
+Kal presentation hai aur abhi tak slides bani hi nahi.,"Kal presentation hai aur slides bani nahi, waat lag gayi meri.",waat lag gayi,STRESSED,claude_gen2
+Agar abhi form nahi bhara toh deadline nikal jayegi.,"Agar abhi form nahi bhara toh gaya kaam se, deadline nikal jayegi.",gaya kaam se,URGENT,claude_gen2
+"Tumne ek hi shot mein poora cheez bana diya, bahut achha.","Tumne ek hi shot mein poora cheez bana diya, kya baat hai!",kya baat,POSITIVE,claude_gen2
+Woh ladka coding mein bahut tez hai aur sab uski izzat karte hain.,"Woh ladka coding mein ekdum dhasu hai, sab uski izzat karte hain.",dhasu,POSITIVE,claude_gen2
+Sunday ko hum dost log chai pe baithkar timepass karenge.,Sunday ko hum dost log chai pe baithkar masti karenge.,masti,CASUAL,claude_gen2
+Gym mein uska deadlift dekhke sab hairan reh gaye.,"Gym mein uska deadlift dekhke sab bole, bhai beast hai tu.",beast,POSITIVE,claude_gen2
+Kal college fest hai aur humne dance ka poora plan banaya hai.,"Kal college fest hai, full masti hogi, dance ka poora plan ready hai.",full masti,EXCITED,claude_gen2
+Uska naya laptop bahut tez chalta hai aur kaafi majboot bhi hai.,"Uska naya laptop ekdum solid hai, tez bhi aur majboot bhi.",solid,POSITIVE,claude_gen2
+Barish ki wajah se humara picnic ka plan kharab ho gaya.,Barish ki wajah se humare picnic ka band baj gaya yaar.,band baj gaya,DISAPPOINTED,claude_gen2
+Exam sar par aa gaye hain aur maine abhi padhna shuru bhi nahi kiya.,Exam sir pe aa gaye hain aur maine abhi padhna shuru bhi nahi kiya.,sir pe,STRESSED,claude_gen2
+Yahan ke gol gappe bahut swadisht hain.,"Yahan ke gol gappe ekdum mast hain, ruk hi nahi paate.",mast,POSITIVE,claude_gen2
+"Train chhoot gayi, ab ghar pahunchne ka koi tareeka nahi bacha.","Train chhoot gayi, gaya scene, ab ghar pahunchna mushkil hai.",gaya scene,URGENT,claude_gen2
+Is baar Diwali pe poore ghar mein bahut halla hone wala hai.,"Is baar Diwali pe poore ghar mein bawaal hone wala hai, ekdum dhamaka.",bawaal,EXCITED,claude_gen2
+Naya software bina kisi rukawat ke aaram se chal gaya.,Naya software bina kisi rukawat ke smoothly chal gaya.,smoothly,CASUAL,claude_gen2
+Hostel mein aaj raat ki party cancel ho gayi.,"Hostel mein aaj raat ki party ka scene off ho gaya, sab mood kharab.",scene off,NEGATIVE,claude_gen2
+Meri interview ki taiyari bina kisi dikkat ke ho gayi.,"Meri interview ki taiyari smoothly ho gayi, koi dikkat nahi aayi.",smoothly,CASUAL,claude_gen2
+Mera cricket wala video bahut logon ne dekha.,"Mera cricket wala video toh viral ho gaya, sab share kar rahe hain!",viral,POSITIVE,claude_gen2
+Coffee shop ki cold coffee bahut acchi thi.,"Coffee shop ki cold coffee ekdum tagda thi, dobara jaana padega.",tagda,POSITIVE,claude_gen2
+Gaming mein meri ranking achanak bahut upar chali gayi.,Gaming mein meri ranking achanak rocket ki tarah upar chali gayi!,rocket,POSITIVE,claude_gen2
+Power cut ke time Rohan ne mujhe apni torch di.,"Power cut ke time Rohan ne torch de di, yaar woh sachcha dost hai.",sachcha dost,POSITIVE,claude_gen2
+Food delivery pe aaj mujhe free dessert mil gaya.,"Food delivery pe aaj free dessert mil gaya, ekdum jackpot lag gaya!",jackpot,EXCITED,claude_gen2
+"Gym mein aaj mera pehla din tha, bahut thak gaya.","Gym mein aaj mera pehla din tha, kasam se bahut thak gaya.",kasam se,CASUAL,claude_gen2

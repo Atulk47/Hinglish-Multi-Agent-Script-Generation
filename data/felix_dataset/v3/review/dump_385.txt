@@ -1,0 +1,388 @@
+#385
+ O: Accha hai ki hum is samasya ko milkar hal kar rahe hain, aur iske liye hume apni saamuhik taiyari par garv hona chahiye.
+ E: Kadak hai ki hum is samasya ko milkar hal kar rahe hain, aur iske liye hume apni saamuhik taiyari par garv hona chahiye.   [kadak]
+#386
+ O: Accha hai ki hum is samasya ko milkar hal kar rahe hain, aur iske liye hume apni saamuhik taiyari par garv hona chahiye.
+ E: Kamaal hai ki hum is samasya ko milkar hal kar rahe hain, aur iske liye hume apni saamuhik taiyari par garv hona chahiye.   [kamaal]
+#387
+ O: Accha hai ki hum is samasya ko milkar hal kar rahe hain, aur iske liye hume apni saamuhik taiyari par garv hona chahiye.
+ E: Ek number hai ki hum is samasya ko milkar hal kar rahe hain, aur iske liye hume apni saamuhik taiyari par garv hona chahiye.   [ek number]
+#388
+ O: Haan, Meera, maine bhi uttam taiyari ki thi, par sthiti hamare pakshmein nahi rahi.
+ E: Haan, Meera, maine bhi badhiya taiyari ki thi, par sab ulta pad gaya, sthiti hamare pakshmein nahi rahi.   [ulta pad gaya]
+#389
+ O: Accha, subah ka samay theek lag raha hai, parantu hume pehle ek trial session lekar dekhna chahiye, phir hum koi antim faisla karenge.
+ E: Accha, subah ka samay theek lag raha hai, parantu yaar hume pehle ek trial session lekar dekhna chahiye, phir hum koi antim faisla karenge.   [yaar]
+#390
+ O: Accha, subah ka samay theek lag raha hai, parantu hume pehle ek trial session lekar dekhna chahiye, phir hum koi antim faisla karenge.
+ E: Accha, subah ka samay theek lag raha hai, parantu boss hume pehle ek trial session lekar dekhna chahiye, phir hum koi antim faisla karenge.   [boss]
+#391
+ O: Dhanyavaad, Rahul, tumhari sahayata se mujhe apne parichay ko behtar dhang se prastut karne ka uttam avsar mil gaya hai.
+ E: Dhanyavaad, Rahul, tumhari help se mujhe apne parichay ko behtar dhang se prastut karne ka makkhan avsar mil gaya hai.   [makkhan]
+#392
+ O: Dhanyavaad, Rahul, tumhari sahayata se mujhe apne parichay ko behtar dhang se prastut karne ka uttam avsar mil gaya hai.
+ E: Dhanyavaad, Rahul, tumhari help se mujhe apne parichay ko behtar dhang se prastut karne ka kadak avsar mil gaya hai.   [kadak]
+#393
+ O: Dhanyavaad, Rahul, tumhari sahayata se mujhe apne parichay ko behtar dhang se prastut karne ka uttam avsar mil gaya hai.
+ E: Dhanyavaad, Rahul, tumhari help se mujhe apne parichay ko behtar dhang se prastut karne ka kamaal avsar mil gaya hai.   [kamaal]
+#394
+ O: Chinta mat karo, Payal, abhi bhi shaam tak kuch log zaroor aayenge aur hamari baat sunenge.
+ E: Chinta mat karo yaar, Payal, abhi bhi shaam tak kuch log zaroor aayenge aur hamari baat sunenge.   [yaar]
+#395
+ O: Accha hua ki humne pehle se spasht yojana bana li thi, warna kaam itna sahaj nahi hota aur hum pareshan ho jaate.
+ E: Accha hua bro ki humne pehle se spasht yojana bana li thi, warna kaam itna sahaj nahi hota aur hum pareshan ho jaate.   [bro]
+#396
+ O: Accha hua ki humne pehle se spasht yojana bana li thi, warna kaam itna sahaj nahi hota aur hum pareshan ho jaate.
+ E: Kasam se accha hua ki humne pehle se spasht yojana bana li thi, warna kaam itna sahaj nahi hota aur hum pareshan ho jaate.   [kasam se]
+#397
+ O: Main tumpe ilzaam nahi laga raha, main sirf yeh kehna chahta hoon ki samay kam hai aur plan theek se nahi bana.
+ E: Main tumpe ilzaam nahi laga raha bhai, main sirf yeh kehna chahta hoon ki samay kam hai aur plan theek se nahi bana.   [bhai]
+#398
+ O: Main tumpe ilzaam nahi laga raha, main sirf yeh kehna chahta hoon ki samay kam hai aur plan theek se nahi bana.
+ E: Chill, main tumpe ilzaam nahi laga raha, main sirf yeh kehna chahta hoon ki samay kam hai aur plan theek se nahi bana.   [chill]
+#399
+ O: Yeh sthiti mujhe bhi chinta mein daal rahi hai, lekin hum milkar ek nirnay le sakte hain jo sabko sweekaarya ho.
+ E: Yeh sthiti mujhe bhi full tension mein daal rahi hai, lekin hum milkar ek nirnay le sakte hain jo sabko sweekaarya ho.   [full tension]
+#400
+ O: Lekin music system ki vyavastha par koi nirnay nahi hua hai, jisse hamari sabhi yojanayein kamzor pad rahi hain.
+ E: Lekin music system par koi nirnay nahi hua hai, ghapla hai, jisse hamari sabhi yojanayein kamzor pad rahi hain.   [ghapla]
+#401
+ O: Lekin music system ki vyavastha par koi nirnay nahi hua hai, jisse hamari sabhi yojanayein kamzor pad rahi hain.
+ E: Lekin music system ki vyavastha par koi nirnay nahi hua hai, locha yeh hai ki hamari sabhi yojanayein kamzor pad rahi hain.   [locha]
+#402
+ O: Diya, humne subah se har jagah dhoondh liya hai, lekin mera wallet abhi tak nahi mila, isse mujhe kaafi chinta ho rahi hai.
+ E: Diya, humne subah se har jagah dhoondh liya hai, lekin mera wallet abhi tak nahi mila, isse mujhe kaafi full tension ho rahi hai.   [full tension]
+#403
+ O: Ananya, aaj ki rehearsal mein hum scene ko poori tarah se nahi kar paye, jiski wajah se mujhe kafi nirasha hui.
+ E: Ananya, aaj ki rehearsal mein hum scene ko poori tarah se nahi kar paye, sab jhand ho gaya, jiski wajah se mujhe kafi nirasha hui.   [jhand]
+#404
+ O: Ananya, aaj ki rehearsal mein hum scene ko poori tarah se nahi kar paye, jiski wajah se mujhe kafi nirasha hui.
+ E: Ananya, aaj ki rehearsal mein hum scene ko poori tarah se nahi kar paye, rehearsal flop gayi, jiski wajah se mujhe kafi tension hui.   [flop]
+#405
+ O: Mujhe lagta hai ki samay kam hai aur kai log abhi bhi apna bayodata update nahi kar paaye hain, jo ek badi samasya hai.
+ E: Mujhe lagta hai ki samay kam hai aur kai log abhi bhi apna bayodata update nahi kar paaye hain, jo ek bada lafda hai.   [lafda]
+#406
+ O: Mujhe lagta hai ki samay kam hai aur kai log abhi bhi apna bayodata update nahi kar paaye hain, jo ek badi samasya hai.
+ E: Mujhe lagta hai ki samay kam hai aur kai log abhi bhi apna bayodata update nahi kar paaye hain, jo ek bada panga hai.   [panga]
+#407
+ O: Mujhe lagta hai ki samay kam hai aur kai log abhi bhi apna bayodata update nahi kar paaye hain, jo ek badi samasya hai.
+ E: Mujhe lagta hai ki samay kam hai aur kai log abhi bhi apna bayodata update nahi kar paaye hain, jo ek bada locha hai.   [locha]
+#408
+ O: Yeh uttam nirnay hai, Diya, aur iske baad hum sab milkar agle hafte tak ek vistrit yojana taiyar karenge, jisme sabhi zimmedariyan spasht hongi.
+ E: Yeh top class nirnay hai, Diya, aur iske baad hum sab milkar agle hafte tak ek vistrit yojana taiyar karenge, jisme sabhi zimmedariyan spasht hongi.   [top class]
+#409
+ O: Yeh uttam nirnay hai, Diya, aur iske baad hum sab milkar agle hafte tak ek vistrit yojana taiyar karenge, jisme sabhi zimmedariyan spasht hongi.
+ E: Yeh kamaal nirnay hai, Diya, aur iske baad hum sab milkar agle hafte tak ek vistrit yojana taiyar karenge, jisme sabhi zimmedariyan spasht hongi.   [kamaal]
+#410
+ O: Yeh uttam nirnay hai, Diya, aur iske baad hum sab milkar agle hafte tak ek vistrit yojana taiyar karenge, jisme sabhi zimmedariyan spasht hongi.
+ E: Yeh on point nirnay hai, Diya, aur iske baad hum sab milkar agle hafte tak ek vistrit yojana taiyar karenge, jisme sabhi zimmedariyan spasht hongi.   [on point]
+#411
+ O: Hamara plan accha tha, Vikram, aur hum ne is project par bahut parishram kiya tha.
+ E: Hamara plan on point tha, Vikram, aur hum ne is project par bahut koshish kiya tha.   [on point]
+#412
+ O: Hamara plan accha tha, Vikram, aur hum ne is project par bahut parishram kiya tha.
+ E: Hamara plan ek number tha, Vikram, aur hum ne is project par bahut koshish kiya tha.   [ek number]
+#413
+ O: Hamara plan accha tha, Vikram, aur hum ne is project par bahut parishram kiya tha.
+ E: Hamara plan top class tha, Vikram, aur hum ne is project par bahut koshish kiya tha.   [top class]
+#414
+ O: Mujhe chinta ho rahi hai ki kahin mess wale is shikayat ko gambhirta se na lein, aur sthiti aur bigad jaaye.
+ E: Mujhe tension ho rahi hai ki kahin mess wale is shikayat ko gambhirta se na lein, aur lafda aur bigad jaaye.   [lafda]
+#415
+ O: Mujhe chinta ho rahi hai ki kahin mess wale is shikayat ko gambhirta se na lein, aur sthiti aur bigad jaaye.
+ E: Mujhe tension ho rahi hai bhai, ki kahin mess wale is shikayat ko gambhirta se na lein, aur sthiti aur bigad jaaye.   [bhai]
+#416
+ O: Mujhe chinta ho rahi hai ki kahin mess wale is shikayat ko gambhirta se na lein, aur sthiti aur bigad jaaye.
+ E: Mujhe tension ho rahi hai ki kahin mess wale is shikayat ko gambhirta se na lein, aur panga aur bigad jaaye.   [panga]
+#417
+ O: Chinta mat karo, Aarav, hum shooting ka schedule banakar har kaam ko ek ek karke aasaani se poora kar sakte hain.
+ E: Chinta mat karo, Aarav bro, hum shooting ka schedule banakar har kaam ko ek ek karke aasaani se poora kar sakte hain.   [bro]
+#418
+ O: Chinta mat karo, Aarav, hum shooting ka schedule banakar har kaam ko ek ek karke aasaani se poora kar sakte hain.
+ E: Chinta mat karo, Aarav bhai, hum shooting ka schedule banakar har kaam ko ek ek karke aasaani se poora kar sakte hain.   [bhai]
+#419
+ O: Yeh bahut accha hai ki humne raaste mein apna kaam aage badha liya, aur ab hamare paas kaafi samay bacha hai.
+ E: Yeh kamaal hai ki humne raaste mein apna kaam aage badha liya, aur ab hamare paas kaafi samay bacha hai.   [kamaal]
+#420
+ O: Yeh bahut accha hai ki humne raaste mein apna kaam aage badha liya, aur ab hamare paas kaafi samay bacha hai.
+ E: Yeh gazab hai ki humne raaste mein apna kaam aage badha liya, aur ab hamare paas kaafi samay bacha hai.   [gazab]
+#421
+ O: Yeh bahut accha hai ki humne raaste mein apna kaam aage badha liya, aur ab hamare paas kaafi samay bacha hai.
+ E: Yeh bahut badiya hai ki humne raaste mein apna kaam aage badha liya, aur ab hamare paas kaafi samay bacha hai.   [badiya]
+#422
+ O: Chinta mat karo, Aditya, yeh sirf ek chhoti samasya hai, aur hum milkar ise aasaani se hal kar lenge.
+ E: Chinta mat karo, Aditya yaar, yeh sirf ek chhoti samasya hai, aur hum milkar ise aasaani se hal kar lenge.   [yaar]
+#423
+ O: Chinta mat karo, Aditya, yeh sirf ek chhoti samasya hai, aur hum milkar ise aasaani se hal kar lenge.
+ E: Chinta mat karo, Aditya bro, yeh sirf ek chhoti samasya hai, aur hum milkar ise aasaani se hal kar lenge.   [bro]
+#424
+ O: Maine chain par thoda oil daal diya hai, aur ab pedal ghumane par awaaz kam aa rahi hai, jo ek achha sanket hai.
+ E: Maine chain par thoda oil daal diya hai, aur ab pedal makkhan ki tarah ghoom raha hai, awaaz kam aa rahi hai, jo ek achha sanket hai.   [makkhan]
+#425
+ O: Aditya, patang ki dor ab bahut uljh gayi hai, lekin main isse theek karne ki koshish kar raha hoon.
+ E: Aditya, patang ki dor ab bahut jhol ho gayi hai, lekin main isse theek karne ki koshish kar raha hoon.   [jhol]
+#426
+ O: Aditya, patang ki dor ab bahut uljh gayi hai, lekin main isse theek karne ki koshish kar raha hoon.
+ E: Aditya, patang ki dor mein ab bahut ghapla ho gaya hai, lekin main isse theek karne ki koshish kar raha hoon.   [ghapla]
+#427
+ O: Aditya, patang ki dor ab bahut uljh gayi hai, lekin main isse theek karne ki koshish kar raha hoon.
+ E: Aditya yaar, patang ki dor ab bahut uljh gayi hai, lekin main isse theek karne ki koshish kar raha hoon.   [yaar]
+#428
+ O: Mujhe chinta ho rahi hai ki agar hum der se pahunche to sir hamare saath uchit vyavahaar nahin karenge.
+ E: Mujhe dil baith raha hai ki agar hum der se pahunche to sir hamare saath uchit vyavahaar nahin karenge.   [dil baith raha hai]
+#429
+ O: Ab chinta karne se kuch nahi hoga, humein agle kadam ke baare mein sochna hoga.
+ E: Ab chinta karne se kuch nahi hoga yaar, humein agle kadam ke baare mein sochna hoga.   [yaar]
+#430
+ O: Ab chinta karne se kuch nahi hoga, humein agle kadam ke baare mein sochna hoga.
+ E: Abey, ab chinta karne se kuch nahi hoga, humein agle kadam ke baare mein sochna hoga.   [abey]
+#431
+ O: Ab chinta karne se kuch nahi hoga, humein agle kadam ke baare mein sochna hoga.
+ E: Ab chinta karne se kuch nahi hoga bro, humein agle kadam ke baare mein sochna hoga.   [bro]
+#432
+ O: Yeh achha hua ki tumne pehle se taiyari kar li, warna beech raaste mein bahut samasya ho sakti thi.
+ E: Kasam se, yeh achha hua ki tumne pehle se taiyari kar li, warna beech raaste mein bahut samasya ho sakti thi.   [kasam se]
+#433
+ O: Yeh samasya hai ki hamare paas abhi tak koi spasht strategy nahin hai, isliye har match mein hum andaaz se khel rahe hain.
+ E: Yeh locha hai ki hamare paas abhi tak koi spasht strategy nahin hai, isliye har match mein hum andaaz se khel rahe hain.   [locha]
+#434
+ O: Yeh samasya hai ki hamare paas abhi tak koi spasht strategy nahin hai, isliye har match mein hum andaaz se khel rahe hain.
+ E: Yeh lafda hai ki hamare paas abhi tak koi spasht strategy nahin hai, isliye har match mein hum andaaz se khel rahe hain.   [lafda]
+#435
+ O: Yeh samasya hai ki hamare paas abhi tak koi spasht strategy nahin hai, isliye har match mein hum andaaz se khel rahe hain.
+ E: Yeh panga hai ki hamare paas abhi tak koi spasht strategy nahin hai, isliye har match mein hum andaaz se khel rahe hain.   [panga]
+#436
+ O: Haan, aur yeh spasht hai ki unki ranneeti uttam thi, jabki humne kewal anumaan par kaam kiya tha.
+ E: Haan, aur yeh spasht hai ki unki ranneeti faadu thi, jabki humne kewal anumaan par kaam kiya tha.   [faadu]
+#437
+ O: Haan, aur yeh spasht hai ki unki ranneeti uttam thi, jabki humne kewal anumaan par kaam kiya tha.
+ E: Haan, aur yeh spasht hai ki unki ranneeti ek number thi, jabki humne kewal anumaan par kaam kiya tha.   [ek number]
+#438
+ O: Haan, aur yeh spasht hai ki unki ranneeti uttam thi, jabki humne kewal anumaan par kaam kiya tha.
+ E: Haan, aur yeh spasht hai ki unki ranneeti gazab thi, jabki humne kewal anumaan par kaam kiya tha.   [gazab]
+#439
+ O: Haan, Kavya, yeh sach hai, humne samay ka dhyan nahi rakha aur ab hum bahut der se ghoom rahe hain.
+ E: Arre haan, Kavya, yeh sach hai, humne samay ka dhyan nahi rakha aur ab hum bahut der se ghoom rahe hain.   [arre]
+#440
+ O: Haan, Kavya, yeh sach hai, humne samay ka dhyan nahi rakha aur ab hum bahut der se ghoom rahe hain.
+ E: Haan, Kavya, kasam se yeh sach hai, humne samay ka dhyan nahi rakha aur ab hum bahut der se ghoom rahe hain.   [kasam se]
+#441
+ O: Chinta mat karo, Isha, humare paas ek uttam plan hai jisse hum andhere mein bhi kaam chala sakte hain.
+ E: Chinta mat karo, Isha, humare paas ek faadu plan hai jisse hum andhere mein bhi kaam chala sakte hain.   [faadu]
+#442
+ O: Chinta mat karo, Isha, humare paas ek uttam plan hai jisse hum andhere mein bhi kaam chala sakte hain.
+ E: Chinta mat karo, Isha, humare paas ek kadak plan hai jisse hum andhere mein bhi kaam chala sakte hain.   [kadak]
+#443
+ O: Chinta mat karo, Isha, humare paas ek uttam plan hai jisse hum andhere mein bhi kaam chala sakte hain.
+ E: Chinta mat karo, Isha, humare paas ek number plan hai jisse hum andhere mein bhi kaam chala sakte hain.   [ek number]
+#444
+ O: Chinta mat karo Pooja, hamara resume bahut accha bana hai aur hum apni baat spasht roop se rakh sakte hain.
+ E: Chinta mat karo Pooja, hamara resume bahut kadak bana hai aur hum apni baat spasht roop se rakh sakte hain.   [kadak]
+#445
+ O: Chinta mat karo Pooja, hamara resume bahut accha bana hai aur hum apni baat spasht roop se rakh sakte hain.
+ E: Chinta mat karo Pooja, hamara resume ekdum faadu bana hai aur hum apni baat spasht roop se rakh sakte hain.   [faadu]
+#446
+ O: Chinta mat karo Ishaan, hum sabhi milkar is dor ko naya bandh denge aur phir se udane ka prayaas karenge.
+ E: Chinta mat karo Ishaan bhai, hum sabhi milkar is dor ko naya bandh denge aur phir se udane ki koshish karenge.   [bhai]
+#447
+ O: Yeh plan uttam hai, par mujhe vishwas hai ki agar hum kisi ek jagah par atak gaye, toh poora kaam bigad sakta hai.
+ E: Yeh plan badiya hai, par mujhe bharosa hai ki agar hum kisi ek jagah par atak gaye, toh poora kaam bigad sakta hai.   [badiya]
+#448
+ O: Yeh plan uttam hai, par mujhe vishwas hai ki agar hum kisi ek jagah par atak gaye, toh poora kaam bigad sakta hai.
+ E: Yeh plan sahi hai, par mujhe bharosa hai ki agar hum kisi ek jagah par atak gaye, toh poora kaam bigad sakta hai.   [sahi hai]
+#449
+ O: Yeh plan uttam hai, par mujhe vishwas hai ki agar hum kisi ek jagah par atak gaye, toh poora kaam bigad sakta hai.
+ E: Yeh plan top class hai, par mujhe bharosa hai ki agar hum kisi ek jagah par atak gaye, toh poora kaam bigad sakta hai.   [top class]
+#450
+ O: Yeh ek chhoti si samasya hai, jo mujhe pichle hafte se pareshan kar rahi thi, par abhi ise hal karna avashyak hai.
+ E: Yeh ek chhoti si panga hai, jo mujhe pichle hafte se pareshan kar rahi thi, par abhi ise hal karna zaroori hai.   [panga]
+#451
+ O: Sahi kaha, aur agar hum samay par taiyari poori kar len to nirasha ka koi kaaran nahi rahega.
+ E: Sahi kaha, aur agar hum samay par taiyari poori kar len to full tension ka koi kaaran nahi rahega.   [full tension]
+#452
+ O: Sahi kaha, aur agar hum samay par taiyari poori kar len to nirasha ka koi kaaran nahi rahega.
+ E: Sahi kaha, aur agar hum samay par taiyari poori kar len to chill, nirasha ka koi kaaran nahi rahega.   [chill]
+#453
+ O: Main ne subah hi unhe yaad dilaya tha, parantu unhone mera sandesh uttar hi nahi diya, isliye mujhe bhi chinta ho rahi hai.
+ E: Main ne subah hi unhe yaad dilaya tha, parantu unhone mera sandesh uttar hi nahi diya, isliye mujhe bhi full tension ho rahi hai.   [full tension]
+#454
+ O: Main tumhari baat se sahmat hoon, Sakshi, aur mujhe vishwas hai ki hum apni sthiti ko abhi bhi sudhaar sakte hain.
+ E: Main tumhari baat se sahmat hoon, Sakshi bro, aur mujhe bharosa hai ki hum apni sthiti ko abhi bhi sudhaar sakte hain.   [bro]
+#455
+ O: Main tumhari baat se sahmat hoon, Sakshi, aur mujhe vishwas hai ki hum apni sthiti ko abhi bhi sudhaar sakte hain.
+ E: Main tumhari baat se sahmat hoon, Sakshi, aur mujhe kasam se bharosa hai ki hum apni sthiti ko abhi bhi sudhaar sakte hain.   [kasam se]
+#456
+ O: Mujhe is baat ki chinta nahi hai, kyunki gym mein fitness ke liye mehnat karna mere liye bahut uttam prayaas hai.
+ E: Chill, mujhe is baat ki chinta nahi hai, kyunki gym mein fitness ke liye mehnat karna mere liye bahut badhiya koshish hai.   [chill]
+#457
+ O: Mujhe is baat ki chinta nahi hai, kyunki gym mein fitness ke liye mehnat karna mere liye bahut uttam prayaas hai.
+ E: Bro, mujhe is baat ki chinta nahi hai, kyunki gym mein fitness ke liye mehnat karna mere liye bahut badhiya koshish hai.   [bro]
+#458
+ O: Varun, mujhe lagta hai ki notebook ke baare mein ek chhota sa misunderstanding ho gaya hai.
+ E: Varun, mujhe lagta hai ki notebook ke baare mein ek chhota sa gadbad ho gaya hai.   [gadbad]
+#459
+ O: Varun, mujhe lagta hai ki notebook ke baare mein ek chhota sa misunderstanding ho gaya hai.
+ E: Varun bro, mujhe lagta hai ki notebook ke baare mein ek chhota sa misunderstanding ho gaya hai.   [bro]
+#460
+ O: Varun, mujhe lagta hai ki notebook ke baare mein ek chhota sa misunderstanding ho gaya hai.
+ E: Varun, mujhe lagta hai ki notebook ke baare mein ek chhota sa ghapla ho gaya hai.   [ghapla]
+#461
+ O: Dhanyavaad, lekin ek samasya yeh hai ki tumhari vigyan ki kitaabon ke paath abhi tak adhure hain, jo chintajanak hai.
+ E: Dhanyavaad, lekin ek locha yeh hai ki tumhari vigyan ki kitaabon ke paath abhi tak adhure hain, jo chintajanak hai.   [locha]
+#462
+ O: Dhanyavaad, lekin ek samasya yeh hai ki tumhari vigyan ki kitaabon ke paath abhi tak adhure hain, jo chintajanak hai.
+ E: Dhanyavaad, lekin ek panga yeh hai ki tumhari vigyan ki kitaabon ke paath abhi tak adhure hain, jo chintajanak hai.   [panga]
+#463
+ O: Dhanyavaad, lekin ek samasya yeh hai ki tumhari vigyan ki kitaabon ke paath abhi tak adhure hain, jo chintajanak hai.
+ E: Dhanyavaad, lekin ek lafda yeh hai ki tumhari vigyan ki kitaabon ke paath abhi tak adhure hain, jo chintajanak hai.   [lafda]
+#464
+ O: Yeh bahut afsos ki baat hai, Karan, kyunki hum sabhi ne is karya ke liye bahut mehnat ki thi.
+ E: Yeh bahut afsos ki baat hai, Karan bhai, kyunki hum sabhi ne is karya ke liye bahut mehnat ki thi.   [bhai]
+#465
+ O: Yeh bahut afsos ki baat hai, Karan, kyunki hum sabhi ne is karya ke liye bahut mehnat ki thi.
+ E: Yeh bahut afsos ki baat hai, Karan bro, kyunki hum sabhi ne is karya ke liye bahut mehnat ki thi.   [bro]
+#466
+ O: Chinta mat karo, hum saath mein mehnat karenge aur poora kaam samay par kar lenge.
+ E: Chill karo, hum saath mein mehnat karenge aur poora kaam samay par kar lenge.   [chill]
+#467
+ O: Chinta mat karo, hum saath mein mehnat karenge aur poora kaam samay par kar lenge.
+ E: Chinta mat karo bro, hum saath mein mehnat karenge aur poora kaam samay par kar lenge.   [bro]
+#468
+ O: Dhanyavaad, Riya, lekin hamari team ne race ke beech mein galat nirnay liye, jiski wajah se parinaam bigad gaya.
+ E: Dhanyavaad, Riya, lekin hamari team ne race ke beech mein galat nirnay liye, jiski wajah se sab ulta pad gaya.   [ulta pad gaya]
+#469
+ O: Dhanyavaad, Riya, lekin hamari team ne race ke beech mein galat nirnay liye, jiski wajah se parinaam bigad gaya.
+ E: Dhanyavaad, Riya, lekin hamari team ne race ke beech mein galat nirnay liye, jiski wajah se parinaam mein jhol ho gaya.   [jhol]
+#470
+ O: Dhanyavaad, Riya, lekin hamari team ne race ke beech mein galat nirnay liye, jiski wajah se parinaam bigad gaya.
+ E: Dhanyavaad, Riya, lekin hamari team ne race ke beech mein galat nirnay liye, jiski wajah se parinaam mein ghapla ho gaya.   [ghapla]
+#471
+ O: Hamari patang ka santulan bigad gaya hai, isliye aaj ka prayaas safal hone mein kathinai aa rahi hai.
+ E: Hamari patang ka santulan gadbad ho gaya hai, isliye aaj ka koshish safal hone mein kathinai aa rahi hai.   [gadbad]
+#472
+ O: Hamari patang ka santulan bigad gaya hai, isliye aaj ka prayaas safal hone mein kathinai aa rahi hai.
+ E: Hamari patang ka santulan ghapla ho gaya hai, isliye aaj ka koshish safal hone mein kathinai aa rahi hai.   [ghapla]
+#473
+ O: Hamari patang ka santulan bigad gaya hai, isliye aaj ka prayaas safal hone mein kathinai aa rahi hai.
+ E: Hamari patang ke santulan mein jhol ho gaya hai, isliye aaj ka koshish safal hone mein kathinai aa rahi hai.   [jhol]
+#474
+ O: Yeh bahut uttam vichar hai, Payal, kyunki mukhya gate ke paas bheed zyada hogi aur hamari bikri achhi hogi.
+ E: Yeh bahut jhakaas vichar hai, Payal, kyunki mukhya gate ke paas bheed zyada hogi aur hamari bikri achhi hogi.   [jhakaas]
+#475
+ O: Yeh bahut uttam vichar hai, Payal, kyunki mukhya gate ke paas bheed zyada hogi aur hamari bikri achhi hogi.
+ E: Yeh bahut ek number vichar hai, Payal, kyunki mukhya gate ke paas bheed zyada hogi aur hamari bikri achhi hogi.   [ek number]
+#476
+ O: Yeh bahut uttam vichar hai, Payal, kyunki mukhya gate ke paas bheed zyada hogi aur hamari bikri achhi hogi.
+ E: Yeh bahut top class vichar hai, Payal, kyunki mukhya gate ke paas bheed zyada hogi aur hamari bikri achhi hogi.   [top class]
+#477
+ O: Manav, kya tumhare paas bijli ka extension board hai, kyunki hume freezer aur kettle dono chalane honge.
+ E: Manav bro, kya tumhare paas bijli ka extension board hai, kyunki hume freezer aur kettle dono chalane honge.   [bro]
+#478
+ O: Manav, kya tumhare paas bijli ka extension board hai, kyunki hume freezer aur kettle dono chalane honge.
+ E: Manav boss, kya tumhare paas bijli ka extension board hai, kyunki hume freezer aur kettle dono chalane honge.   [boss]
+#479
+ O: Manav, kya tumhare paas bijli ka extension board hai, kyunki hume freezer aur kettle dono chalane honge.
+ E: Abey Manav, kya tumhare paas bijli ka extension board hai, kyunki hume freezer aur kettle dono chalane honge.   [abey]
+#480
+ O: Rahul, is samasya ka hal hum milkar nikal sakte hain, kyunki humne apna budget pehle se hi spasht roop se banaya hua hai.
+ E: Chill Rahul, is samasya ka hal hum milkar nikal sakte hain, kyunki humne apna budget pehle se hi spasht roop se banaya hua hai.   [chill]
+#481
+ O: Rahul, is samasya ka hal hum milkar nikal sakte hain, kyunki humne apna budget pehle se hi spasht roop se banaya hua hai.
+ E: Rahul, is samasya ka hal hum milkar nikal sakte hain, kyunki humne apna budget pehle se hi banaya hua hai, sab set hai.   [sab set hai]
+#482
+ O: Rahul, is samasya ka hal hum milkar nikal sakte hain, kyunki humne apna budget pehle se hi spasht roop se banaya hua hai.
+ E: Rahul bro, is samasya ka hal hum milkar nikal sakte hain, kyunki humne apna budget pehle se hi spasht roop se banaya hua hai.   [bro]
+#483
+ O: Main tumhari baat se sehmat hoon, kyunki ek achha koch sabhi khiladiyon ko ek saath rakhne ki kshamta rakhta hai.
+ E: Kasam se, main tumhari baat se sehmat hoon, kyunki ek achha koch sabhi khiladiyon ko ek saath rakhne ki kshamta rakhta hai.   [kasam se]
+#484
+ O: Main tumhari baat se sehmat hoon, kyunki ek achha koch sabhi khiladiyon ko ek saath rakhne ki kshamta rakhta hai.
+ E: Bro, main tumhari baat se sehmat hoon, kyunki ek achha koch sabhi khiladiyon ko ek saath rakhne ki kshamta rakhta hai.   [bro]
+#485
+ O: Mujhe lagta hai ki hamari practice poori nahi hui thi, isliye mann mein thodi chinta hai.
+ E: Mujhe lagta hai ki hamari practice poori nahi hui thi, isliye mann mein thoda dimaag fry hai.   [dimaag fry]
+#486
+ O: Haan Mehak, mujhe bhi yahi lagta hai, kyunki dhol wale ne abhi tak apna pura plan hume nahi bataya hai.
+ E: Haan Mehak, kasam se mujhe bhi yahi lagta hai, kyunki dhol wale ne abhi tak apna pura plan hume nahi bataya hai.   [kasam se]
+#487
+ O: Haan Mehak, mujhe bhi yahi lagta hai, kyunki dhol wale ne abhi tak apna pura plan hume nahi bataya hai.
+ E: Haan Mehak bro, mujhe bhi yahi lagta hai, kyunki dhol wale ne abhi tak apna pura plan hume nahi bataya hai.   [bro]
+#488
+ O: Payal, main tumhari baat se sahmat hoon, aur humein apni galtiyon ko dhyan se samajhkar agli baar zyada taiyari karni chahiye.
+ E: Payal bro, main tumhari baat se sahmat hoon, aur humein apni galtiyon ko dhyan se samajhkar agli baar zyada taiyari karni chahiye.   [bro]
+#489
+ O: Payal, main tumhari baat se sahmat hoon, aur humein apni galtiyon ko dhyan se samajhkar agli baar zyada taiyari karni chahiye.
+ E: Kasam se Payal, main tumhari baat se sahmat hoon, aur humein apni galtiyon ko dhyan se samajhkar agli baar zyada taiyari karni chahiye.   [kasam se]
+#490
+ O: Chinta mat karo, Isha, yeh sirf ek chhoti samasya hai aur hum milkar ise aasaani se hal kar lenge.
+ E: Chill karo, Isha, yeh sirf ek chhoti samasya hai aur hum milkar ise aasaani se hal kar lenge.   [chill]
+#491
+ O: Chinta mat karo, Isha, yeh sirf ek chhoti samasya hai aur hum milkar ise aasaani se hal kar lenge.
+ E: Chinta mat karo boss, yeh sirf ek chhoti samasya hai aur hum milkar ise aasaani se hal kar lenge.   [boss]
+#492
+ O: Chinta mat karo, Isha, yeh sirf ek chhoti samasya hai aur hum milkar ise aasaani se hal kar lenge.
+ E: Chinta mat karo, Isha bro, yeh sirf ek chhoti samasya hai aur hum milkar ise aasaani se hal kar lenge.   [bro]
+#493
+ O: Meera, aaj ka exam bahut kathin tha, aur mujhe lagta hai ki hum dono ne apni taiyari ke anusaar pradarshan nahi kiya.
+ E: Meera, aaj ka exam bahut bakwaas tha, aur mujhe lagta hai ki hum dono ne apni taiyari ke anusaar pradarshan nahi kiya.   [bakwaas]
+#494
+ O: Meera, aaj ka exam bahut kathin tha, aur mujhe lagta hai ki hum dono ne apni taiyari ke anusaar pradarshan nahi kiya.
+ E: Meera, aaj ka exam bahut ghatiya tha, aur mujhe lagta hai ki hum dono ne apni taiyari ke anusaar pradarshan nahi kiya.   [ghatiya]
+#495
+ O: Meera, aaj ka exam bahut kathin tha, aur mujhe lagta hai ki hum dono ne apni taiyari ke anusaar pradarshan nahi kiya.
+ E: Meera, aaj ka exam bahut jhand tha, aur mujhe lagta hai ki hum dono ne apni taiyari ke anusaar pradarshan nahi kiya.   [jhand]
+#496
+ O: Aapki baat sahi hai, parantu mujhe nirasha hai ki hum is trip mein lagatar chhoti chhoti samasyaon ka saamna karte rahenge.
+ E: Aapki baat sahi hai, parantu mujhe dimaag fry hai ki hum is trip mein lagatar chhoti chhoti samasyaon ka saamna karte rahenge.   [dimaag fry]
+#497
+ O: Yeh vichar uttam hai, aur mujhe vishwas hai ki hum apni yojana ke anusaar sab kuch aasaani se kar paayenge.
+ E: Yeh vichar top class hai, aur mujhe bharosa hai ki hum apni yojana ke anusaar sab kuch aasaani se kar paayenge.   [top class]
+#498
+ O: Yeh vichar uttam hai, aur mujhe vishwas hai ki hum apni yojana ke anusaar sab kuch aasaani se kar paayenge.
+ E: Yeh vichar ek number hai, aur mujhe bharosa hai ki hum apni yojana ke anusaar sab kuch aasaani se kar paayenge.   [ek number]
+#499
+ O: Yeh vichar uttam hai, aur mujhe vishwas hai ki hum apni yojana ke anusaar sab kuch aasaani se kar paayenge.
+ E: Yeh vichar gazab hai, aur mujhe bharosa hai ki hum apni yojana ke anusaar sab kuch aasaani se kar paayenge.   [gazab]
+#500
+ O: Sakshi, aaj ke cleaning drive ke liye humein sabhi log samay par pahunch gaye hain, jo ek accha sanket hai.
+ E: Sakshi, aaj ke cleaning drive ke liye humein sabhi log samay par pahunch gaye hain, sab set hai, jo ek accha sanket hai.   [sab set hai]
+#501
+ O: Sakshi, aaj ke cleaning drive ke liye humein sabhi log samay par pahunch gaye hain, jo ek accha sanket hai.
+ E: Sakshi, aaj ke cleaning drive ke liye humein sabhi log samay par pahunch gaye hain, jo ek badiya sanket hai.   [badiya]
+#502
+ O: Uska hulia dekh kar mujhe nirasha ho rahi hai, lekin hum phir bhi apni koshish jaari rakhenge aur haar nahi maanenge.
+ E: Uska hulia dekh kar mujhe full tension ho rahi hai, lekin hum phir bhi apni koshish jaari rakhenge aur haar nahi maanenge.   [full tension]
+#503
+ O: Lekin mujhe ek chinta hai ki pateke ki dukaan par bheed kaafi hai, aur hamare paas ab kaafi kam samay bacha hai.
+ E: Lekin mujhe full tension hai ki pateke ki dukaan par bheed kaafi hai, aur hamare paas ab kaafi kam samay bacha hai.   [full tension]
+#504
+ O: Lekin mujhe ek chinta hai ki pateke ki dukaan par bheed kaafi hai, aur hamare paas ab kaafi kam samay bacha hai.
+ E: Lekin mera dil baith raha hai ki pateke ki dukaan par bheed kaafi hai, aur hamare paas ab kaafi kam samay bacha hai.   [dil baith raha hai]
+#505
+ O: Mujhe darr hai ki agar hamne galat screw khol diya, toh pahiye ko dobara sahi tareeke se jodna bahut mushkil hoga.
+ E: Mujhe full tension hai ki agar hamne galat screw khol diya, toh pahiye ko dobara sahi tareeke se jodna bahut mushkil hoga.   [full tension]
+#506
+ O: Mujhe darr hai ki agar hamne galat screw khol diya, toh pahiye ko dobara sahi tareeke se jodna bahut mushkil hoga.
+ E: Mera dil baith raha hai ki agar hamne galat screw khol diya, toh pahiye ko dobara sahi tareeke se jodna bahut mushkil hoga.   [dil baith raha hai]
+#507
+ O: Yeh bahut achha kadam hai, Vikram, aur main tumhari mehnat ki prashansa karti hoon, kyonki isse sabko disha milegi.
+ E: Yeh bahut top class kadam hai, Vikram, aur main tumhari mehnat ki tareef karti hoon, kyonki isse sabko disha milegi.   [top class]
+#508
+ O: Yeh bahut uttam vichar hai, Simran, aur maine kal subah sabhi captains se baat kar li hai, unhe bhi yeh yojana pasand aayi hai.
+ E: Yeh ek number vichar hai, Simran, aur maine kal subah sabhi captains se baat kar li hai, unhe bhi yeh yojana pasand aayi hai.   [ek number]
+#509
+ O: Yeh bahut uttam vichar hai, Simran, aur maine kal subah sabhi captains se baat kar li hai, unhe bhi yeh yojana pasand aayi hai.
+ E: Yeh top class vichar hai, Simran, aur maine kal subah sabhi captains se baat kar li hai, unhe bhi yeh yojana pasand aayi hai.   [top class]
+#510
+ O: Yeh bahut uttam vichar hai, Simran, aur maine kal subah sabhi captains se baat kar li hai, unhe bhi yeh yojana pasand aayi hai.
+ E: Yeh gazab vichar hai, Simran, aur maine kal subah sabhi captains se baat kar li hai, unhe bhi yeh yojana pasand aayi hai.   [gazab]
+#511
+ O: Aaj ka kabaddi match bahut accha tha, aur hamari team ne shuruat se hi apni taakat dikhayi.
+ E: Aaj ka kabaddi match bahut dhamaal tha, aur hamari team ne shuruat se hi apni taakat dikhayi.   [dhamaal]
+#512
+ O: Aaj ka kabaddi match bahut accha tha, aur hamari team ne shuruat se hi apni taakat dikhayi.
+ E: Aaj ka kabaddi match ek number tha, aur hamari team ne shuruat se hi apni taakat dikhayi.   [ek number]
+#513
+ O: Aaj ka kabaddi match bahut accha tha, aur hamari team ne shuruat se hi apni taakat dikhayi.
+ E: Aaj ka kabaddi match gazab tha, aur hamari team ne shuruat se hi apni taakat dikhayi.   [gazab]
+-- 514/514

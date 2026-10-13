@@ -1,0 +1,88 @@
+﻿control,function,slangs
+ASSERT_POSITIVE,slang_eval,mast
+ASSERT_POSITIVE,slang_eval,kadak
+ASSERT_POSITIVE,slang_eval,solid
+ASSERT_POSITIVE,slang_eval,lajawaab
+ASSERT_POSITIVE,slang_eval,jhakaas
+ASSERT_EXCITED,slang_eval,jhakaas
+ASSERT_POSITIVE,slang_eval,badiya
+ASSERT_POSITIVE,slang_eval,zabardast
+ASSERT_POSITIVE,slang_eval,gazab
+ASSERT_EXCITED,slang_eval,gazab
+ASSERT_POSITIVE,slang_eval,faadu
+ASSERT_EXCITED,slang_eval,faadu
+ASSERT_POSITIVE,slang_eval,dhamaal
+ASSERT_EXCITED,slang_eval,dhamaal
+ASSERT_POSITIVE,slang_eval,top class
+ASSERT_POSITIVE,slang_eval,fire
+ASSERT_EXCITED,slang_eval,fire
+ASSERT_POSITIVE,slang_eval,on point
+ASSERT_POSITIVE,idiom,paisa vasool
+ASSERT_HAPPY,idiom,paisa vasool
+ASSERT_POSITIVE,idiom,kya baat
+ASSERT_EXCITED,idiom,kya baat
+ASSERT_POSITIVE,idiom,sahi hai
+ASSERT_POSITIVE,slang_eval,dhasu
+ASSERT_EXCITED,slang_eval,dhasu
+ASSERT_POSITIVE,slang_eval,ek number
+ASSERT_POSITIVE,idiom,jalwa
+ASSERT_EXCITED,idiom,jalwa
+ASSERT_POSITIVE,idiom,dil jeet liya
+ASSERT_HAPPY,idiom,dil jeet liya
+ASSERT_POSITIVE,idiom,full masti
+ASSERT_HAPPY,idiom,full masti
+ASSERT_POSITIVE,slang_eval,chaka-chak
+ASSERT_POSITIVE,idiom,phaad diya
+ASSERT_EXCITED,idiom,phaad diya
+ASSERT_POSITIVE,slang_eval,banger
+ASSERT_EXCITED,slang_eval,banger
+ASSERT_POSITIVE,slang_eval,lit
+ASSERT_EXCITED,slang_eval,lit
+ASSERT_POSITIVE,slang_eval,makkhan
+ASSERT_POSITIVE,slang_eval,kamaal
+ASSERT_POSITIVE,slang_eval,sorted
+ASSERT_POSITIVE,idiom,chutki mein
+ASSERT_POSITIVE,slang_eval,number one
+ASSERT_POSITIVE,idiom,sab set hai
+ASSERT_FRUSTRATION,slang_eval,bakwaas
+ASSERT_NEGATIVE,slang_eval,bakwaas
+ASSERT_FRUSTRATION,slang_eval,bekaar
+ASSERT_NEGATIVE,slang_eval,bekaar
+ASSERT_FRUSTRATION,slang_eval,ghatiya
+ASSERT_NEGATIVE,slang_eval,ghatiya
+ASSERT_FRUSTRATION,slang_eval,flop
+ASSERT_NEGATIVE,slang_eval,flop
+ASSERT_FRUSTRATION,slang_eval,jhand
+ASSERT_NEGATIVE,slang_eval,jhand
+ASSERT_FRUSTRATION,idiom,kya bakwaas hai
+ASSERT_NEGATIVE,idiom,kya bakwaas hai
+ASSERT_FRUSTRATION,slang_eval,kachra
+ASSERT_NEGATIVE,slang_eval,kachra
+ASSERT_FRUSTRATION,slang_eval,panga
+ASSERT_NEGATIVE,slang_eval,panga
+ASSERT_STRESS,idiom,dimaag fry
+ASSERT_ANXIETY,idiom,dimaag fry
+ASSERT_STRESS,intensifier,full tension
+ASSERT_ANXIETY,intensifier,full tension
+ASSERT_STRESS,idiom,jaan nikal gayi
+ASSERT_ANXIETY,idiom,jaan nikal gayi
+ASSERT_STRESS,idiom,dil baith raha hai
+ASSERT_ANXIETY,idiom,dil baith raha hai
+ASSERT_STRESS,idiom,fatti padi hai
+ASSERT_ANXIETY,idiom,fatti padi hai
+ASSERT_NEGATIVE,idiom,waat lag gayi
+ASSERT_FRUSTRATION,slang_eval,lafda
+ASSERT_NEGATIVE,slang_eval,lafda
+ASSERT_NEGATIVE,slang_eval,gadbad
+ASSERT_NEGATIVE,slang_eval,ghapla
+ASSERT_NEGATIVE,idiom,ulta pad gaya
+ASSERT_NEGATIVE,slang_eval,locha
+ASSERT_NEGATIVE,slang_eval,jhol
+CASUAL_ASSERTION,filler,yaar
+CASUAL_ASSERTION,filler,bhai
+CASUAL_ASSERTION,filler,arre
+CASUAL_ASSERTION,filler,abey
+CASUAL_ASSERTION,filler,boss
+CASUAL_ASSERTION,filler,chill
+CASUAL_ASSERTION,filler,kasam se
+CASUAL_ASSERTION,filler,bro

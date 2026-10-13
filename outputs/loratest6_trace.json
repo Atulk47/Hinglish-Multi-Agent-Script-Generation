@@ -1,0 +1,422 @@
+{
+  "romanized_text": "arav aur riy ek hi skul men padhate the aur pakke dost the. ek din skul men vijnana mele ki ghoshan hui. arav bahut utsahit hokar riy ke pas daudaa aur bol, riya, hamen is bar kuch jabaradasta banan hai. agar ham jit gae to pure skul men hamar nam hog. riy ne hansate hue kaha, bilkula, chal aj se hi shuru karate hain.\n\ndonon ne milakar ek chot robot banane k phaisal kiya. lekin kuch hi dinon men mushkilen ane lagin. ek sham robot k sarkit bara-bara jal jata tha. arav jhunjhal kara bol, yaha kam hi nahin kara rah. mainne itani mehanat ki aur sab bekar j rah hai. riy ne use shant karate hue kaha, itana pareshan mat ho, ham phir se koshish karenge.\n\nusi rat arav apani dadi ke pas gaya aur sari bat batai. dadi ghar ki sabase bujaurg sadasy thin. arav ne kaha, dadi, mujhe lagat hai main har jaung. dadi ne pyar se usak sir sahalay aur bolin, beta, dhairy rakho. mehanat kabhi bekar nahin jati. har asaphalat kuch sikhati hai. arav ko unaki bat se nai himmat mili.\n\nagale din vijnana mele men adhyapak sharm sabhi pariyojanaon ki janch kara rahe the. ve apani sakhati ke lie jane jate the. unhonne arav se puch, tumane yaha robot kaise banay aur isak asali upayog kya hai? arav ne shanti se har saval k uttar diya. adhyapak sharm ne sir hilakar kaha, tumhari mehanat sapha dikhai deti hai.\n\nparinam ki ghoshan hui aur arav tath riy ki tim pratham ai. riy khushi se chillai, hama jit gae! mujhe yakin hi nahin ho rah. arav ne hansate hue kaha, mainne kaha tha n, ham kamal kara denge. us sham donon doston ne apani jit k jashn manay aur dadi ko dhanyavad kaha jinaki baton ne unhen kabhi har nahin manane di.",
+  "event_chain": [
+    {
+      "scene_id": "scene_01",
+      "key_events": [
+        "Announcement of a science fair at the school",
+        "Arav excitedly runs to Riy and proposes to create an amazing project for the fair",
+        "Riy laughs and agrees to start the project immediately"
+      ],
+      "characters": [
+        "Arav",
+        "Riy"
+      ],
+      "scene_goal": "Arav and Riy decide to collaborate on a project for the upcoming science fair",
+      "location": "school",
+      "narrative_link": "Following the first scene, Arav now proposes a project to Riy",
+      "pronoun_map": {}
+    },
+    {
+      "scene_id": "scene_02",
+      "key_events": [
+        "Arav and Riy decide to build a small robot together",
+        "The robot repeatedly catches fire and malfunctions",
+        "Riy calms Arav and promises to try again"
+      ],
+      "characters": [
+        "Arav",
+        "Riy"
+      ],
+      "scene_goal": "Show the initial failure of their project and Riy’s encouragement to keep trying",
+      "location": "Their workshop",
+      "narrative_link": "Following their decision to collaborate, Arav now faces setbacks and Riy offers support",
+      "pronoun_map": {}
+    },
+    {
+      "scene_id": "scene_03",
+      "key_events": [
+        "Arav visits his grandmother and shares his feelings about his project",
+        "Grandmother gives him encouraging advice to stay patient and learn from failures",
+        "Arav gains new courage from his grandmother’s words"
+      ],
+      "characters": [
+        "Arav",
+        "Dadi"
+      ],
+      "scene_goal": "Reinforces Arav’s motivation and resilience after initial failure",
+      "location": "Arav’s grandmother’s home",
+      "narrative_link": "Following the initial failure of their project and Riy’s encouragement to keep trying, Arav now seeks guidance from his grandmother",
+      "pronoun_map": {}
+    },
+    {
+      "scene_id": "scene_04",
+      "key_events": [],
+      "characters": [],
+      "scene_goal": "Unknown",
+      "location": "Unknown",
+      "narrative_link": "",
+      "pronoun_map": {}
+    },
+    {
+      "scene_id": "scene_05",
+      "key_events": [],
+      "characters": [],
+      "scene_goal": "Unknown",
+      "location": "Unknown",
+      "narrative_link": "",
+      "pronoun_map": {}
+    }
+  ],
+  "character_profiles": {
+    "Arav": {
+      "name": "Arav",
+      "age": null,
+      "social_role": "peer",
+      "slang_level": 5,
+      "relationship": {},
+      "current_emotion": "neutral",
+      "turn_count": 3,
+      "stress_index": 0.0
+    },
+    "Riy": {
+      "name": "Riy",
+      "age": null,
+      "social_role": "peer",
+      "slang_level": 5,
+      "relationship": {},
+      "current_emotion": "neutral",
+      "turn_count": 2,
+      "stress_index": 0.0
+    },
+    "Dadi": {
+      "name": "Dadi",
+      "age": null,
+      "social_role": "elder",
+      "slang_level": 0,
+      "relationship": {},
+      "current_emotion": "neutral",
+      "turn_count": 1,
+      "stress_index": 0.0
+    }
+  },
+  "neutral_script": [
+    {
+      "scene_id": "scene_01",
+      "dialogue": "Arav: [generation failed after 3 attempts]",
+      "events": {
+        "scene_id": "scene_01",
+        "key_events": [
+          "Announcement of a science fair at the school",
+          "Arav excitedly runs to Riy and proposes to create an amazing project for the fair",
+          "Riy laughs and agrees to start the project immediately"
+        ],
+        "characters": [
+          "Arav",
+          "Riy"
+        ],
+        "scene_goal": "Arav and Riy decide to collaborate on a project for the upcoming science fair",
+        "location": "school",
+        "narrative_link": "Following the first scene, Arav now proposes a project to Riy",
+        "pronoun_map": {}
+      }
+    },
+    {
+      "scene_id": "scene_02",
+      "dialogue": "Arav: [generation failed after 3 attempts]",
+      "events": {
+        "scene_id": "scene_02",
+        "key_events": [
+          "Arav and Riy decide to build a small robot together",
+          "The robot repeatedly catches fire and malfunctions",
+          "Riy calms Arav and promises to try again"
+        ],
+        "characters": [
+          "Arav",
+          "Riy"
+        ],
+        "scene_goal": "Show the initial failure of their project and Riy’s encouragement to keep trying",
+        "location": "Their workshop",
+        "narrative_link": "Following their decision to collaborate, Arav now faces setbacks and Riy offers support",
+        "pronoun_map": {}
+      }
+    },
+    {
+      "scene_id": "scene_03",
+      "dialogue": "Arav: [generation failed after 3 attempts]",
+      "events": {
+        "scene_id": "scene_03",
+        "key_events": [
+          "Arav visits his grandmother and shares his feelings about his project",
+          "Grandmother gives him encouraging advice to stay patient and learn from failures",
+          "Arav gains new courage from his grandmother’s words"
+        ],
+        "characters": [
+          "Arav",
+          "Dadi"
+        ],
+        "scene_goal": "Reinforces Arav’s motivation and resilience after initial failure",
+        "location": "Arav’s grandmother’s home",
+        "narrative_link": "Following the initial failure of their project and Riy’s encouragement to keep trying, Arav now seeks guidance from his grandmother",
+        "pronoun_map": {}
+      }
+    },
+    {
+      "scene_id": "scene_04",
+      "dialogue": "SPEAKER: [generation failed after 3 attempts]",
+      "events": {
+        "scene_id": "scene_04",
+        "key_events": [],
+        "characters": [],
+        "scene_goal": "Unknown",
+        "location": "Unknown",
+        "narrative_link": "",
+        "pronoun_map": {}
+      }
+    },
+    {
+      "scene_id": "scene_05",
+      "dialogue": "SPEAKER: [generation failed after 3 attempts]",
+      "events": {
+        "scene_id": "scene_05",
+        "key_events": [],
+        "characters": [],
+        "scene_goal": "Unknown",
+        "location": "Unknown",
+        "narrative_link": "",
+        "pronoun_map": {}
+      }
+    }
+  ],
+  "slang_script": [
+    {
+      "scene_id": "scene_01",
+      "dialogue": "Arav: Generation failed after 3 attempts, ekdum solid!",
+      "decisions": [
+        {
+          "speaker": "Arav",
+          "applied": true,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "CASUAL_ASSERTION",
+          "reason": "All gates passed",
+          "slang": "Solid",
+          "slang_tokens_added": 2
+        }
+      ],
+      "events": {
+        "scene_id": "scene_01",
+        "key_events": [
+          "Announcement of a science fair at the school",
+          "Arav excitedly runs to Riy and proposes to create an amazing project for the fair",
+          "Riy laughs and agrees to start the project immediately"
+        ],
+        "characters": [
+          "Arav",
+          "Riy"
+        ],
+        "scene_goal": "Arav and Riy decide to collaborate on a project for the upcoming science fair",
+        "location": "school",
+        "narrative_link": "Following the first scene, Arav now proposes a project to Riy",
+        "pronoun_map": {}
+      }
+    },
+    {
+      "scene_id": "scene_02",
+      "dialogue": "Arav: Generation failed after 3 attempts, ab toh loot lo!",
+      "decisions": [
+        {
+          "speaker": "Arav",
+          "applied": true,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "CASUAL_ASSERTION",
+          "reason": "All gates passed",
+          "slang": "loot lo",
+          "slang_tokens_added": 4
+        }
+      ],
+      "events": {
+        "scene_id": "scene_02",
+        "key_events": [
+          "Arav and Riy decide to build a small robot together",
+          "The robot repeatedly catches fire and malfunctions",
+          "Riy calms Arav and promises to try again"
+        ],
+        "characters": [
+          "Arav",
+          "Riy"
+        ],
+        "scene_goal": "Show the initial failure of their project and Riy’s encouragement to keep trying",
+        "location": "Their workshop",
+        "narrative_link": "Following their decision to collaborate, Arav now faces setbacks and Riy offers support",
+        "pronoun_map": {}
+      }
+    },
+    {
+      "scene_id": "scene_03",
+      "dialogue": "Arav: Generation failed after 3 attempts, ab toh dho diya!",
+      "decisions": [
+        {
+          "speaker": "Arav",
+          "applied": true,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "CASUAL_ASSERTION",
+          "reason": "All gates passed",
+          "slang": "Dho diya",
+          "slang_tokens_added": 4
+        }
+      ],
+      "events": {
+        "scene_id": "scene_03",
+        "key_events": [
+          "Arav visits his grandmother and shares his feelings about his project",
+          "Grandmother gives him encouraging advice to stay patient and learn from failures",
+          "Arav gains new courage from his grandmother’s words"
+        ],
+        "characters": [
+          "Arav",
+          "Dadi"
+        ],
+        "scene_goal": "Reinforces Arav’s motivation and resilience after initial failure",
+        "location": "Arav’s grandmother’s home",
+        "narrative_link": "Following the initial failure of their project and Riy’s encouragement to keep trying, Arav now seeks guidance from his grandmother",
+        "pronoun_map": {}
+      }
+    },
+    {
+      "scene_id": "scene_04",
+      "dialogue": "SPEAKER: Generation failed after 3 attempts, loot!",
+      "decisions": [
+        {
+          "speaker": "SPEAKER",
+          "applied": true,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "CASUAL_ASSERTION",
+          "reason": "All gates passed",
+          "slang": "Loot",
+          "slang_tokens_added": 1
+        }
+      ],
+      "events": {
+        "scene_id": "scene_04",
+        "key_events": [],
+        "characters": [],
+        "scene_goal": "Unknown",
+        "location": "Unknown",
+        "narrative_link": "",
+        "pronoun_map": {}
+      }
+    },
+    {
+      "scene_id": "scene_05",
+      "dialogue": "SPEAKER: Generation failed after 3 attempts, ekdum paisa uda!",
+      "decisions": [
+        {
+          "speaker": "SPEAKER",
+          "applied": true,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "CASUAL_ASSERTION",
+          "reason": "All gates passed",
+          "slang": "paisa uda",
+          "slang_tokens_added": 3
+        }
+      ],
+      "events": {
+        "scene_id": "scene_05",
+        "key_events": [],
+        "characters": [],
+        "scene_goal": "Unknown",
+        "location": "Unknown",
+        "narrative_link": "",
+        "pronoun_map": {}
+      }
+    }
+  ],
+  "comparison": [
+    {
+      "scene_id": "scene_01",
+      "location": "school",
+      "lines": [
+        {
+          "speaker": "ARAV",
+          "neutral": "[generation failed after 3 attempts]",
+          "slang": "Generation failed after 3 attempts, ekdum solid!",
+          "slang_added": "Solid",
+          "slang_applied": true,
+          "intent": "CASUAL_ASSERTION",
+          "gate_stopped": null,
+          "changed": true
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_02",
+      "location": "Their workshop",
+      "lines": [
+        {
+          "speaker": "ARAV",
+          "neutral": "[generation failed after 3 attempts]",
+          "slang": "Generation failed after 3 attempts, ab toh loot lo!",
+          "slang_added": "loot lo",
+          "slang_applied": true,
+          "intent": "CASUAL_ASSERTION",
+          "gate_stopped": null,
+          "changed": true
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_03",
+      "location": "Arav’s grandmother’s home",
+      "lines": [
+        {
+          "speaker": "ARAV",
+          "neutral": "[generation failed after 3 attempts]",
+          "slang": "Generation failed after 3 attempts, ab toh dho diya!",
+          "slang_added": "Dho diya",
+          "slang_applied": true,
+          "intent": "CASUAL_ASSERTION",
+          "gate_stopped": null,
+          "changed": true
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_04",
+      "location": "Unknown",
+      "lines": [
+        {
+          "speaker": "SPEAKER",
+          "neutral": "[generation failed after 3 attempts]",
+          "slang": "Generation failed after 3 attempts, loot!",
+          "slang_added": "Loot",
+          "slang_applied": true,
+          "intent": "CASUAL_ASSERTION",
+          "gate_stopped": null,
+          "changed": true
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_05",
+      "location": "Unknown",
+      "lines": [
+        {
+          "speaker": "SPEAKER",
+          "neutral": "[generation failed after 3 attempts]",
+          "slang": "Generation failed after 3 attempts, ekdum paisa uda!",
+          "slang_added": "paisa uda",
+          "slang_applied": true,
+          "intent": "CASUAL_ASSERTION",
+          "gate_stopped": null,
+          "changed": true
+        }
+      ]
+    }
+  ],
+  "final_script": "# HINGLISH SCREENPLAY\n\n## SCENE_01\n*Location: school*\n\nArav: Generation failed after 3 attempts, ekdum solid!\n\n---\n\n## SCENE_02\n*Location: Their workshop*\n\nArav: Generation failed after 3 attempts, ab toh loot lo!\n\n---\n\n## SCENE_03\n*Location: Arav’s grandmother’s home*\n\nArav: Generation failed after 3 attempts, ab toh dho diya!\n\n---\n\n## SCENE_04\n*Location: Unknown*\n\nSPEAKER: Generation failed after 3 attempts, loot!\n\n---\n\n## SCENE_05\n*Location: Unknown*\n\nSPEAKER: Generation failed after 3 attempts, ekdum paisa uda!\n\n---\n"
+}

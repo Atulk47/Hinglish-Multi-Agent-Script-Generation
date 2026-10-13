@@ -1,0 +1,404 @@
+{
+  "romanized_text": "himalay ki talahati men ek chota-sa ganv tha. vahan ke log kheti aur pashupalan para nirbhar the. kai mahinon se varsh nahin hui thi, isalie sabhi kisan chintit the.\n\nganv ki sabase bujaurg mahil, kamal dadi, roja subah mandir ke pas baithakar bachchon ko prakriti ke mahatv ke bare men kahaniyan sunati thin. unak manan tha ki manushy ko paryavaran ke sath santulan banakar rahan chahie.\n\nek din bachchon ne milakar ganv ke asapas ke sukhe kshetron men paudhe lagane k nirnay liya. unhonne skul ke shikshakon aur graminon ki madad se saikadaon paudhe lagae. kam kathin tha, lekin sabhi ne utsah ke sath bhag liya.\n\nkuch saptah bad mausam badalane lag. badal ghir ae aur dhire-dhire varsh shuru hui. kheton men hariyali laut ai aur logon ke chehare khil uthe. kisanon ne rahat ki sans li.\n\nkamal dadi ne bachchon se kaha ki varsh keval bhagy k parinam nahin hai; prakriti ki dekhabhal karan bhi utan hi avashyak hai. bachchon ne us din ek mahatvapurn sabak sikh.",
+  "event_chain": [
+    {
+      "scene_id": "scene_01",
+      "key_events": [
+        "A small village exists below the Himalayas",
+        "The villagers depend on farming and livestock",
+        "The village has not seen rain for months, causing farmers to worry"
+      ],
+      "characters": [],
+      "scene_goal": "Establish the setting and the villagers’ plight due to drought",
+      "location": "Below the Himalayas in a small village",
+      "narrative_link": "Following the first scene, the villagers now face a prolonged dry spell",
+      "pronoun_map": {}
+    },
+    {
+      "scene_id": "scene_02",
+      "key_events": [
+        "Kamal Dadi sits near the temple and tells children stories about the importance of nature",
+        "She emphasizes that humans should maintain balance with the environment"
+      ],
+      "characters": [
+        "Kamal Dadi"
+      ],
+      "scene_goal": "Educate the children about the importance of environmental balance",
+      "location": "Near the temple",
+      "narrative_link": "Following the villagers’ plight due to drought, Kamal Dadi now teaches the children about nature",
+      "pronoun_map": {}
+    },
+    {
+      "scene_id": "scene_03",
+      "key_events": [
+        "Children decide to plant trees in the dry fields around the village",
+        "They plant the trees with the help of school teachers and villagers, facing difficulty but with enthusiasm"
+      ],
+      "characters": [],
+      "scene_goal": "Show the children taking action to restore environmental balance",
+      "location": "Dry fields around the village",
+      "narrative_link": "Following the previous event of educating the children about the importance of environmental balance, the children now decide to plant trees",
+      "pronoun_map": {}
+    },
+    {
+      "scene_id": "scene_04",
+      "key_events": [
+        "Weather changes after several weeks, clouds gather and rain begins",
+        "Greenery returns to the fields and people's faces brighten",
+        "Farmers feel relief"
+      ],
+      "characters": [],
+      "scene_goal": "Show the environmental recovery following the children’s actions to restore balance",
+      "location": "Fields and surrounding countryside",
+      "narrative_link": "Following the children’s action to restore environmental balance, the environment now restores",
+      "pronoun_map": {}
+    },
+    {
+      "scene_id": "scene_05",
+      "key_events": [
+        "Kamal Dadi tells the children that years are not just luck but also require caring for nature",
+        "The children learn an important lesson that day"
+      ],
+      "characters": [
+        "Kamal Dadi"
+      ],
+      "scene_goal": "To convey the moral that environmental stewardship is essential, reinforcing the children’s earlier actions",
+      "location": "Kamal Dadi's home",
+      "narrative_link": "Following the environmental recovery, Kamal Dadi now imparts a lesson to the children about the importance of caring for nature",
+      "pronoun_map": {}
+    }
+  ],
+  "character_profiles": {
+    "Kamal Dadi": {
+      "name": "Kamal Dadi",
+      "age": null,
+      "social_role": "elder",
+      "slang_level": 0,
+      "relationship": {},
+      "current_emotion": "neutral",
+      "turn_count": 2,
+      "stress_index": 0.0
+    }
+  },
+  "neutral_script": [
+    {
+      "scene_id": "scene_01",
+      "dialogue": "SPEAKER: Humara gaon Himalaya ke neeche hai, jahan sab log kheti aur pashu palan par nirbhar hain.  \nSPEAKER: Pichle kuch mahino se koi baarish nahi hui, isse khet khushk ho gaye hain aur kisan bahut chintit hain.  \nSPEAKER: Aaj hum sab milkar soch rahe hain ki kaise is sukhad sthiti ko badal sakte hain.",
+      "events": {
+        "scene_id": "scene_01",
+        "key_events": [
+          "A small village exists below the Himalayas",
+          "The villagers depend on farming and livestock",
+          "The village has not seen rain for months, causing farmers to worry"
+        ],
+        "characters": [],
+        "scene_goal": "Establish the setting and the villagers’ plight due to drought",
+        "location": "Below the Himalayas in a small village",
+        "narrative_link": "Following the first scene, the villagers now face a prolonged dry spell",
+        "pronoun_map": {}
+      }
+    },
+    {
+      "scene_id": "scene_02",
+      "dialogue": "Kamal Dadi: \"Bachcho, jab hum mandir ke paas baithte hain, toh humein prakriti ki shanti mehsoos hoti hai. Yeh mandir bhi ek prakritik samvedna ka pratik hai.\"\n\nKamal Dadi: \"Yahaan ki har patta, har paani ka boond, aur har panchhi ki chidiya, sab ek saath milkar ek samvedansheel paristithik tantra banate hain. Agar hum is balance ko todte hain, toh sab kuch khatre mein pad sakta hai.\"\n\nKamal Dadi: \"Isliye, humein apne jeevan mein prakriti ka samman karna chahiye. Paudhe lagana, paani bachana, aur har chhoti cheez ko samajhna, yeh sab hamare liye aur hamare aane wale peedhiyon ke liye zaroori hai.\"",
+      "events": {
+        "scene_id": "scene_02",
+        "key_events": [
+          "Kamal Dadi sits near the temple and tells children stories about the importance of nature",
+          "She emphasizes that humans should maintain balance with the environment"
+        ],
+        "characters": [
+          "Kamal Dadi"
+        ],
+        "scene_goal": "Educate the children about the importance of environmental balance",
+        "location": "Near the temple",
+        "narrative_link": "Following the villagers’ plight due to drought, Kamal Dadi now teaches the children about nature",
+        "pronoun_map": {}
+      }
+    },
+    {
+      "scene_id": "scene_03",
+      "dialogue": "SPEAKER: \"Chalo, hum sab milkar is sukhhe khet mein ped lagate hain, taaki mitti ko phir se zindagi mil sake.\"  \nSPEAKER: \"Teacher ji, aap aur gaon wale hamari madad karein, thoda paani aur mehnat se hum yeh ped lagayenge.\"  \nSPEAKER: \"Haan, thoda mushkil hoga, lekin hamari utsah se har baadh ko paar kar lenge.\"",
+      "events": {
+        "scene_id": "scene_03",
+        "key_events": [
+          "Children decide to plant trees in the dry fields around the village",
+          "They plant the trees with the help of school teachers and villagers, facing difficulty but with enthusiasm"
+        ],
+        "characters": [],
+        "scene_goal": "Show the children taking action to restore environmental balance",
+        "location": "Dry fields around the village",
+        "narrative_link": "Following the previous event of educating the children about the importance of environmental balance, the children now decide to plant trees",
+        "pronoun_map": {}
+      }
+    },
+    {
+      "scene_id": "scene_04",
+      "dialogue": "SPEAKER: Aaj ke din, badal dhundh se bhar gaye hain, aur baarish shuru ho rahi hai.  \nSPEAKER: Khil khilata hua har khet phir se hara bhara ho gaya hai, aur logon ke chehre pe muskaan chamak uthi hai.  \nSPEAKER: Kisan logon ko bhi aisa lag raha hai jaise unke upar se koi bojh utar gaya ho.",
+      "events": {
+        "scene_id": "scene_04",
+        "key_events": [
+          "Weather changes after several weeks, clouds gather and rain begins",
+          "Greenery returns to the fields and people's faces brighten",
+          "Farmers feel relief"
+        ],
+        "characters": [],
+        "scene_goal": "Show the environmental recovery following the children’s actions to restore balance",
+        "location": "Fields and surrounding countryside",
+        "narrative_link": "Following the children’s action to restore environmental balance, the environment now restores",
+        "pronoun_map": {}
+      }
+    },
+    {
+      "scene_id": "scene_05",
+      "dialogue": "Kamal Dadi: \"Bachcho, yeh safai aur phir se jeevan aane ke liye sirf kismat ka kaam nahi, balki humare roz ke chhote-chhote kadmon ka fal hai.\"  \nKamal Dadi: \"Jab hum paudhe lagate hain, paani bachate hain, aur kachra alag karte hain, tabhi hum apne aane wale kal ko surakshit karte hain.\"  \nKamal Dadi: \"Isliye aaj se har din ek chhota sa prayas karo, taki hamara paryavaran hamesha humein khush rakh sake.\"",
+      "events": {
+        "scene_id": "scene_05",
+        "key_events": [
+          "Kamal Dadi tells the children that years are not just luck but also require caring for nature",
+          "The children learn an important lesson that day"
+        ],
+        "characters": [
+          "Kamal Dadi"
+        ],
+        "scene_goal": "To convey the moral that environmental stewardship is essential, reinforcing the children’s earlier actions",
+        "location": "Kamal Dadi's home",
+        "narrative_link": "Following the environmental recovery, Kamal Dadi now imparts a lesson to the children about the importance of caring for nature",
+        "pronoun_map": {}
+      }
+    }
+  ],
+  "slang_script": [
+    {
+      "scene_id": "scene_01",
+      "dialogue": "SPEAKER: Humara gaon Himalaya ke neeche hai, jahan sab log kheti aur pashu palan par nirbhar hain.\nSPEAKER: Pichle kuch mahino se koi baarish nahi hui, isse khet khushk ho gaye hain aur kisan bahut chintit hain, bohot hard.\nSPEAKER: Aaj hum sab milkar soch rahe hain ki kaise is sukhad sthiti ko badal sakte hain, scene.",
+      "decisions": [
+        {
+          "speaker": "SPEAKER",
+          "applied": false,
+          "go": false,
+          "gate_stopped": 2,
+          "intent": "INFORM_NEUTRAL",
+          "reason": "Intent 'INFORM_NEUTRAL' does not permit slang"
+        },
+        {
+          "speaker": "SPEAKER",
+          "applied": true,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "CASUAL_ASSERTION",
+          "reason": "All gates passed",
+          "slang": "Bohot hard",
+          "slang_tokens_added": 2
+        },
+        {
+          "speaker": "SPEAKER",
+          "applied": true,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "CASUAL_ASSERTION",
+          "reason": "All gates passed",
+          "slang": "scene",
+          "slang_tokens_added": 1
+        }
+      ],
+      "events": {
+        "scene_id": "scene_01",
+        "key_events": [
+          "A small village exists below the Himalayas",
+          "The villagers depend on farming and livestock",
+          "The village has not seen rain for months, causing farmers to worry"
+        ],
+        "characters": [],
+        "scene_goal": "Establish the setting and the villagers’ plight due to drought",
+        "location": "Below the Himalayas in a small village",
+        "narrative_link": "Following the first scene, the villagers now face a prolonged dry spell",
+        "pronoun_map": {}
+      }
+    },
+    {
+      "scene_id": "scene_02",
+      "dialogue": "Kamal Dadi: \"Bachcho, jab hum mandir ke paas baithte hain, toh humein prakriti ki shanti mehsoos hoti hai. Yeh mandir bhi ek prakritik samvedna ka pratik hai.\"\nKamal Dadi: \"Yahaan ki har patta, har paani ka boond, aur har panchhi ki chidiya, sab ek saath milkar ek samvedansheel paristithik tantra banate hain. Agar hum is balance ko todte hain, toh sab kuch khatre mein pad sakta hai.\"\nKamal Dadi: \"Isliye, humein apne jeevan mein prakriti ka samman karna chahiye. Paudhe lagana, paani bachana, aur har chhoti cheez ko samajhna, yeh sab hamare liye aur hamare aane wale peedhiyon ke liye zaroori hai.\"",
+      "decisions": [
+        {
+          "speaker": "Kamal Dadi",
+          "applied": false,
+          "go": false,
+          "gate_stopped": 1,
+          "intent": null,
+          "reason": "Speaker 'Kamal Dadi' is elder/authority or slang_level=0"
+        },
+        {
+          "speaker": "Kamal Dadi",
+          "applied": false,
+          "go": false,
+          "gate_stopped": 1,
+          "intent": null,
+          "reason": "Speaker 'Kamal Dadi' is elder/authority or slang_level=0"
+        },
+        {
+          "speaker": "Kamal Dadi",
+          "applied": false,
+          "go": false,
+          "gate_stopped": 1,
+          "intent": null,
+          "reason": "Speaker 'Kamal Dadi' is elder/authority or slang_level=0"
+        }
+      ],
+      "events": {
+        "scene_id": "scene_02",
+        "key_events": [
+          "Kamal Dadi sits near the temple and tells children stories about the importance of nature",
+          "She emphasizes that humans should maintain balance with the environment"
+        ],
+        "characters": [
+          "Kamal Dadi"
+        ],
+        "scene_goal": "Educate the children about the importance of environmental balance",
+        "location": "Near the temple",
+        "narrative_link": "Following the villagers’ plight due to drought, Kamal Dadi now teaches the children about nature",
+        "pronoun_map": {}
+      }
+    },
+    {
+      "scene_id": "scene_03",
+      "dialogue": "SPEAKER: Chalo, hum sab milkar is sukhhe khet mein ped lagate hain, body bol gayi, taaki mitti ko phir se zindagi mil sake.\nSPEAKER: Teacher ji, aap aur gaon wale bhadiya hamari madad karein, thoda paani aur mehnat se hum yeh ped lagayenge.\nSPEAKER: Haan, thoda mushkil hoga, lekin hamari utsah se har baadh ko paar kar lenge, scene set.",
+      "decisions": [
+        {
+          "speaker": "SPEAKER",
+          "applied": true,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "CASUAL_ASSERTION",
+          "reason": "All gates passed",
+          "slang": "Body bol gayi",
+          "slang_tokens_added": 3
+        },
+        {
+          "speaker": "SPEAKER",
+          "applied": true,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "CASUAL_ASSERTION",
+          "reason": "All gates passed",
+          "slang": "bhadiya",
+          "slang_tokens_added": 1
+        },
+        {
+          "speaker": "SPEAKER",
+          "applied": true,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "CASUAL_ASSERTION",
+          "reason": "All gates passed",
+          "slang": "scene set",
+          "slang_tokens_added": 2
+        }
+      ],
+      "events": {
+        "scene_id": "scene_03",
+        "key_events": [
+          "Children decide to plant trees in the dry fields around the village",
+          "They plant the trees with the help of school teachers and villagers, facing difficulty but with enthusiasm"
+        ],
+        "characters": [],
+        "scene_goal": "Show the children taking action to restore environmental balance",
+        "location": "Dry fields around the village",
+        "narrative_link": "Following the previous event of educating the children about the importance of environmental balance, the children now decide to plant trees",
+        "pronoun_map": {}
+      }
+    },
+    {
+      "scene_id": "scene_04",
+      "dialogue": "SPEAKER: Aaj ke din, badal dhundh se bhar gaye hain, aur baarish shuru ho rahi hai.\nSPEAKER: Khil khilata hua har khet phir se hara bhara ho gaya hai, aur logon ke chehre pe muskaan chamak uthi hai, no drama.\nSPEAKER: Kisan logon ko bhi aisa lag raha hai jaise unke upar se koi bojh utar gaya ho, fattii hai.",
+      "decisions": [
+        {
+          "speaker": "SPEAKER",
+          "applied": false,
+          "go": false,
+          "gate_stopped": 2,
+          "intent": "INFORM_NEUTRAL",
+          "reason": "Intent 'INFORM_NEUTRAL' does not permit slang"
+        },
+        {
+          "speaker": "SPEAKER",
+          "applied": true,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "ASSERT_POSITIVE",
+          "reason": "All gates passed",
+          "slang": "no drama",
+          "slang_tokens_added": 2
+        },
+        {
+          "speaker": "SPEAKER",
+          "applied": true,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "CASUAL_ASSERTION",
+          "reason": "All gates passed",
+          "slang": null,
+          "slang_tokens_added": 2
+        }
+      ],
+      "events": {
+        "scene_id": "scene_04",
+        "key_events": [
+          "Weather changes after several weeks, clouds gather and rain begins",
+          "Greenery returns to the fields and people's faces brighten",
+          "Farmers feel relief"
+        ],
+        "characters": [],
+        "scene_goal": "Show the environmental recovery following the children’s actions to restore balance",
+        "location": "Fields and surrounding countryside",
+        "narrative_link": "Following the children’s action to restore environmental balance, the environment now restores",
+        "pronoun_map": {}
+      }
+    },
+    {
+      "scene_id": "scene_05",
+      "dialogue": "Kamal Dadi: \"Bachcho, yeh safai aur phir se jeevan aane ke liye sirf kismat ka kaam nahi, balki humare roz ke chhote-chhote kadmon ka fal hai.\"\nKamal Dadi: \"Jab hum paudhe lagate hain, paani bachate hain, aur kachra alag karte hain, tabhi hum apne aane wale kal ko surakshit karte hain.\"\nKamal Dadi: \"Isliye aaj se har din ek chhota sa prayas karo, taki hamara paryavaran hamesha humein khush rakh sake.\"",
+      "decisions": [
+        {
+          "speaker": "Kamal Dadi",
+          "applied": false,
+          "go": false,
+          "gate_stopped": 1,
+          "intent": null,
+          "reason": "Speaker 'Kamal Dadi' is elder/authority or slang_level=0"
+        },
+        {
+          "speaker": "Kamal Dadi",
+          "applied": false,
+          "go": false,
+          "gate_stopped": 1,
+          "intent": null,
+          "reason": "Speaker 'Kamal Dadi' is elder/authority or slang_level=0"
+        },
+        {
+          "speaker": "Kamal Dadi",
+          "applied": false,
+          "go": false,
+          "gate_stopped": 1,
+          "intent": null,
+          "reason": "Speaker 'Kamal Dadi' is elder/authority or slang_level=0"
+        }
+      ],
+      "events": {
+        "scene_id": "scene_05",
+        "key_events": [
+          "Kamal Dadi tells the children that years are not just luck but also require caring for nature",
+          "The children learn an important lesson that day"
+        ],
+        "characters": [
+          "Kamal Dadi"
+        ],
+        "scene_goal": "To convey the moral that environmental stewardship is essential, reinforcing the children’s earlier actions",
+        "location": "Kamal Dadi's home",
+        "narrative_link": "Following the environmental recovery, Kamal Dadi now imparts a lesson to the children about the importance of caring for nature",
+        "pronoun_map": {}
+      }
+    }
+  ],
+  "final_script": "# HINGLISH SCREENPLAY\n\n## SCENE_01\n*Location: Below the Himalayas in a small village*\n\nSPEAKER: Humara gaon Himalaya ke neeche hai, jahan sab log kheti aur pashu palan par nirbhar hain.\nSPEAKER: Pichle kuch mahino se koi baarish nahi hui, isse khet khushk ho gaye hain aur kisan bahut chintit hain, bohot hard.\nSPEAKER: Aaj hum sab milkar soch rahe hain ki kaise is sukhad sthiti ko badal sakte hain, scene.\n\n---\n\n## SCENE_02\n*Location: Near the temple*\n\nKamal Dadi: \"Bachcho, jab hum mandir ke paas baithte hain, toh humein prakriti ki shanti mehsoos hoti hai. Yeh mandir bhi ek prakritik samvedna ka pratik hai.\"\nKamal Dadi: \"Yahaan ki har patta, har paani ka boond, aur har panchhi ki chidiya, sab ek saath milkar ek samvedansheel paristithik tantra banate hain. Agar hum is balance ko todte hain, toh sab kuch khatre mein pad sakta hai.\"\nKamal Dadi: \"Isliye, humein apne jeevan mein prakriti ka samman karna chahiye. Paudhe lagana, paani bachana, aur har chhoti cheez ko samajhna, yeh sab hamare liye aur hamare aane wale peedhiyon ke liye zaroori hai.\"\n\n---\n\n## SCENE_03\n*Location: Dry fields around the village*\n\nSPEAKER: Chalo, hum sab milkar is sukhhe khet mein ped lagate hain, body bol gayi, taaki mitti ko phir se zindagi mil sake.\nSPEAKER: Teacher ji, aap aur gaon wale bhadiya hamari madad karein, thoda paani aur mehnat se hum yeh ped lagayenge.\nSPEAKER: Haan, thoda mushkil hoga, lekin hamari utsah se har baadh ko paar kar lenge, scene set.\n\n---\n\n## SCENE_04\n*Location: Fields and surrounding countryside*\n\nSPEAKER: Aaj ke din, badal dhundh se bhar gaye hain, aur baarish shuru ho rahi hai.\nSPEAKER: Khil khilata hua har khet phir se hara bhara ho gaya hai, aur logon ke chehre pe muskaan chamak uthi hai, no drama.\nSPEAKER: Kisan logon ko bhi aisa lag raha hai jaise unke upar se koi bojh utar gaya ho, fattii hai.\n\n---\n\n## SCENE_05\n*Location: Kamal Dadi's home*\n\nKamal Dadi: \"Bachcho, yeh safai aur phir se jeevan aane ke liye sirf kismat ka kaam nahi, balki humare roz ke chhote-chhote kadmon ka fal hai.\"\nKamal Dadi: \"Jab hum paudhe lagate hain, paani bachate hain, aur kachra alag karte hain, tabhi hum apne aane wale kal ko surakshit karte hain.\"\nKamal Dadi: \"Isliye aaj se har din ek chhota sa prayas karo, taki hamara paryavaran hamesha humein khush rakh sake.\"\n\n---\n"
+}

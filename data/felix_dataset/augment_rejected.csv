@@ -1,0 +1,3 @@
+_reason,context,control,function,neutral,output,position,slang
+semantic_drift,cricket match,ASSERT_ANGER,negative_eval,"Bhai, tumne match mein sirf ek ball miss kiya.","Bhai, tune kaun sa ball miss kiya, bas ek hi?!",MIDDLE,tune kaun sa
+semantic_drift,cricket loss,ASSERT_SURPRISE,intensifier,Team lost the match yesterday.,"Kya bhoot hai, team ne match lost kar diya.",START,kya bhoot hai

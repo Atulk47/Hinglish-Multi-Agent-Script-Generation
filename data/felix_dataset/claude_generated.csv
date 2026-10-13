@@ -1,0 +1,229 @@
+﻿neutral,output,slangs,control,source
+Aaj ka cricket match dekhne mein bahut maza aaya.,"Aaj ka cricket match ekdum jhakaas tha, dekhne mein bahut maza aaya.",jhakaas,ASSERT_POSITIVE,claude_gen
+Yeh restaurant ka khana sach mein accha hai.,Yeh restaurant ka khana sach mein ekdum mast hai.,mast,ASSERT_POSITIVE,claude_gen
+Mujhe yeh movie bahut pasand aayi.,Mujhe yeh movie ekdum bindaas lagi.,bindaas,ASSERT_POSITIVE,claude_gen
+Paise ke hisaab se yeh phone kaafi accha hai.,Paise ke hisaab se yeh phone ekdum paisa vasool hai.,paisa vasool,ASSERT_POSITIVE,claude_gen
+Uska naya gaana kaafi accha nikla.,Uska naya gaana ekdum badiya nikla.,badiya,ASSERT_POSITIVE,claude_gen
+Uski acting is film mein kamaal ki thi.,Uski acting is film mein ekdum gajab thi.,gajab,ASSERT_POSITIVE,claude_gen
+Trip ka plan achhe se ban gaya.,Trip ka plan ekdum solid ban gaya.,solid,ASSERT_POSITIVE,claude_gen
+"Naya cafe kaafi accha hai, zaroor try karna.","Naya cafe ekdum kadak hai, zaroor try karna.",kadak,ASSERT_POSITIVE,claude_gen
+Weekend ka plan bahut badhiya tha.,Weekend ka plan ekdum zabardast tha.,zabardast,ASSERT_POSITIVE,claude_gen
+Uski nayi bike dekhne mein sundar hai.,Uski nayi bike ekdum dhasu hai.,dhasu,ASSERT_POSITIVE,claude_gen
+"Mujhe naukri mil gayi, main bahut khush hoon.","Mujhe naukri mil gayi yaar, ekdum scene set hai!",scene set hai,ASSERT_EXCITED,claude_gen
+Hum concert ke liye bahut excited hain.,Concert ke liye toh full on ready hain yaar.,full on,ASSERT_EXCITED,claude_gen
+Result aaya aur main pass ho gaya.,"Result aaya, bhai main pass ho gaya, bawaal!",bawaal,ASSERT_EXCITED,claude_gen
+Humari team final mein pahunch gayi.,"Bhai humari team final mein pahunch gayi, bomb!",bomb,ASSERT_EXCITED,claude_gen
+Kal hum trip pe ja rahe hain.,"Kal hum trip pe ja rahe hain, yeh toh next level hai!",next level,ASSERT_EXCITED,claude_gen
+"Chal yaar, chai peene chalte hain.","Chal bro, chai peene chalte hain.",bro,CASUAL_ASSERTION,claude_gen
+Tu bina soche bas directly point pe baat kar.,Tu ekdum chill hoke directly point pe baat kar.,chill,CASUAL_ASSERTION,claude_gen
+Usne poori coding khud hi ki.,Usne poori coding khud hi ki re.,re,CASUAL_ASSERTION,claude_gen
+Chalo aaj bahar ghoomne chalte hain.,Chalo yaar aaj bahar ghoomne chalte hain.,yaar,CASUAL_ASSERTION,claude_gen
+Weekend pe kya plan hai tera?,"Bro, weekend pe kya plan hai tera?",bro,CASUAL_ASSERTION,claude_gen
+"Maine sach bola, isme koi jhooth nahi hai.","Kasam se maine sach bola, isme koi jhooth nahi hai.",kasam se,CASUAL_ASSERTION,claude_gen
+"Yeh kaam baar baar bigad raha hai, gussa aa raha hai.","Yaar yeh kaam baar baar bigad raha hai, dimaag kharab ho gaya.",dimaag kharab,ASSERT_FRUSTRATION,claude_gen
+"Mujhe yeh traffic bilkul pasand nahi, der ho rahi hai.","Yeh traffic ne toh pakaa diya yaar, der ho rahi hai.",pakaa diya,ASSERT_FRUSTRATION,claude_gen
+Baar baar wahi galti ho rahi hai.,"Baar baar wahi galti ho rahi hai, sar phat raha hai.",sar phat raha hai,ASSERT_FRUSTRATION,claude_gen
+Yeh movie bilkul acchi nahi thi.,"Yeh movie ekdum bakwaas thi, time waste ho gaya.",bakwaas,ASSERT_NEGATIVE,claude_gen
+Naya update bilkul kaam ka nahi hai.,"Naya update ekdum bekaar hai, kuch bhi theek nahi.",bekaar,ASSERT_NEGATIVE,claude_gen
+Service yahan bahut kharab hai.,Yahan ki service ekdum ghatiya hai.,ghatiya,ASSERT_NEGATIVE,claude_gen
+Office mein aaj bahut zyada kaam hai.,"Office mein aaj kaam ka pahaad hai, tension ho rahi hai.",tension,ASSERT_STRESS,claude_gen
+Exam kal hai aur meri taiyari adhoori hai.,"Exam kal hai aur taiyari adhoori, dimaag ki dahi ho gayi.",dimaag ki dahi,ASSERT_STRESS,claude_gen
+Mujhe is interview ko lekar ghabrahat ho rahi hai.,Is interview ko lekar full tension ho rahi hai yaar.,full tension,ASSERT_ANXIETY,claude_gen
+"Jaldi karo, hamare paas time nahi hai.","Jaldi chalo yaar, scene bigad jayega warna.",scene bigad jayega,REQUEST_URGENCY,claude_gen
+Abhi ke abhi yeh kaam poora karna hai.,"Abhi ke abhi yeh kaam niptaana hai, warna gaya kaam se.",gaya kaam se,REQUEST_URGENCY,claude_gen
+Uska presentation sabse achha tha.,"Uska presentation ekdum faadu tha, sabse aage.",faadu,ASSERT_POSITIVE,claude_gen
+Yeh deal kaafi faydemand hai.,"Yeh deal ekdum sahi hai, faydemand bhi.",sahi hai,ASSERT_POSITIVE,claude_gen
+Uski mehnat ne rang laaya.,"Uski mehnat rang laayi, ekdum lit performance thi.",lit,ASSERT_POSITIVE,claude_gen
+Naye joote pehanne mein aaram daayak hain.,Naye joote ekdum tagda feel dete hain.,tagda,ASSERT_POSITIVE,claude_gen
+Humne mil kar poora project khatam kar diya.,Humne mil kar project ekdum chaka-chak khatam kar diya.,chaka-chak,ASSERT_POSITIVE,claude_gen
+Uski baat sunke bahut accha laga.,Uski baat sunke dil khush ho gaya.,dil khush,ASSERT_POSITIVE,claude_gen
+Humari jeet pakki ho gayi.,"Humari jeet pakki, ab toh apna raaj hai.",apna raaj,ASSERT_EXCITED,claude_gen
+Match ka result shaandaar raha.,Match ka result ekdum jhakaas raha.,jhakaas,ASSERT_POSITIVE,claude_gen
+Nayi series dekhne layak hai.,"Nayi series ekdum mast hai, zaroor dekhna.",mast,ASSERT_POSITIVE,claude_gen
+Yaar mujhe aaj thoda aaram karna hai.,Yaar aaj thoda bindaas aaram karna hai.,bindaas,CASUAL_ASSERTION,claude_gen
+Chalo khana order kar lete hain.,Chalo bhai khana order kar lete hain.,bhai,CASUAL_ASSERTION,claude_gen
+Usne bina tension ke exam de diya.,Usne ekdum bindaas exam de diya.,bindaas,CASUAL_ASSERTION,claude_gen
+Yeh jagah ghoomne ke liye acchi hai.,Yeh jagah ghoomne ke liye ekdum badiya hai.,badiya,CASUAL_ASSERTION,claude_gen
+Hum log aaj late tak jage rahe.,"Hum log aaj late tak jage, mast time pass hua.",mast,CASUAL_ASSERTION,claude_gen
+Mera phone achanak band ho gaya.,"Yaar mera phone achanak band ho gaya, waat lag gayi.",waat lag gayi,ASSERT_FRUSTRATION,claude_gen
+Plan last minute pe cancel ho gaya.,"Plan last minute pe cancel, pura scene off ho gaya.",scene off,ASSERT_NEGATIVE,claude_gen
+Aaj kuch bhi theek nahi chal raha.,"Aaj kuch bhi theek nahi, pura din bekaar gaya.",bekaar,ASSERT_NEGATIVE,claude_gen
+Uska naya startup kaafi aage badh raha hai.,Uska naya startup ekdum rocket ban gaya hai.,rocket,ASSERT_EXCITED,claude_gen
+Humne competition jeet liya.,"Humne competition jeet liya, ekdum bomb feeling hai!",bomb,ASSERT_EXCITED,claude_gen
+Naya gaana sabko pasand aa raha hai.,"Naya gaana ekdum viral ho gaya, sabko pasand.",viral,ASSERT_POSITIVE,claude_gen
+Uska jawab bilkul sahi tha.,Uska jawab ekdum on point tha.,on point,ASSERT_POSITIVE,claude_gen
+Yeh idea kaafi naya aur accha hai.,Yeh idea ekdum fresh aur dhasu hai.,dhasu,ASSERT_POSITIVE,claude_gen
+Tu kal college aa raha hai kya?,"Bro, tu kal college aa raha hai kya?",bro,CASUAL_ASSERTION,claude_gen
+"Yeh kaam ho jayega, chinta mat kar.","Yeh kaam ho jayega yaar, tu chill kar.",chill,CASUAL_ASSERTION,claude_gen
+Maine sab kuch handle kar liya.,Maine sab kuch ekdum smoothly handle kar liya.,smoothly,CASUAL_ASSERTION,claude_gen
+Hum time pe pahunch gaye.,"Hum time pe pahunch gaye, ekdum sahi hua.",sahi,CASUAL_ASSERTION,claude_gen
+Uska naya ghar dekhne mein shaandaar hai.,Uska naya ghar ekdum royal hai.,royal,ASSERT_POSITIVE,claude_gen
+Khana itna accha tha ki maza aa gaya.,"Khana itna mast tha ki maza aa gaya, ekdum lajawaab.",lajawaab,ASSERT_POSITIVE,claude_gen
+Team ne milke kaam achhe se kiya.,Team ne milke kaam ekdum solid kiya.,solid,ASSERT_POSITIVE,claude_gen
+Uski taareef sabne ki.,"Uski taareef sabne ki, ekdum chha gaya.",chha gaya,ASSERT_POSITIVE,claude_gen
+Deadline aa rahi hai aur kaam adhoora hai.,"Deadline sir pe hai aur kaam adhoora, tension high hai.",sir pe,ASSERT_STRESS,claude_gen
+Mujhe samajh nahi aa raha kya karoon.,"Yaar mujhe kuch samajh nahi aa raha, dimaag block ho gaya.",dimaag block,ASSERT_ANXIETY,claude_gen
+Bahut der se wait kar raha hoon.,"Bahut der se wait kar raha hoon, ab toh pak gaya.",pak gaya,ASSERT_FRUSTRATION,claude_gen
+Aaj ka din kaafi accha raha.,Aaj ka din ekdum sahi raha yaar.,sahi,CASUAL_ASSERTION,claude_gen
+Uska sense of humour kamaal ka hai.,Uska sense of humour ekdum next level hai.,next level,ASSERT_POSITIVE,claude_gen
+Hum dono ne milke jeet haasil ki.,"Hum dono ne milke jeet haasil ki, ekdum paisa vasool mehnat thi.",paisa vasool,ASSERT_POSITIVE,claude_gen
+"Naya season aane wala hai, intezaar hai.","Naya season aane wala hai, full excited hoon yaar.",full excited,ASSERT_EXCITED,claude_gen
+Uska naya design sabko pasand aa raha hai.,"Uska naya design ekdum kamaal ka hai, sabko pasand.",kamaal,ASSERT_POSITIVE,claude_gen
+Shaadi mein bahut dhoom dhaam thi.,"Shaadi mein ekdum dhamaal tha, poora mahaul jama.",dhamaal,ASSERT_POSITIVE,claude_gen
+Uski performance stage pe shaandaar rahi.,Uski performance stage pe ekdum jalwa thi.,jalwa,ASSERT_POSITIVE,claude_gen
+Yeh laptop kaam ke liye bilkul theek hai.,Yeh laptop kaam ke liye ekdum fit hai.,fit hai,ASSERT_POSITIVE,claude_gen
+Humari team is saal sabse aage rahi.,Humari team is saal ekdum number one rahi.,number one,ASSERT_POSITIVE,claude_gen
+Khana banane mein uska haath achha hai.,Khana banane mein uska haath ekdum superb hai.,superb,ASSERT_POSITIVE,claude_gen
+Match ke aakhri over mein kaafi excitement thi.,Match ke aakhri over mein ekdum tod-phod ho gayi.,tod-phod,ASSERT_EXCITED,claude_gen
+Uska jawab sunke sab khush ho gaye.,"Uska jawab sunke sabne kaha, waah kya baat hai!",kya baat,ASSERT_POSITIVE,claude_gen
+Uski photo bahut acchi aayi hai.,"Uski photo ekdum mast aayi hai, dil jeet liya.",dil jeet liya,ASSERT_POSITIVE,claude_gen
+Yeh gaadi chalane mein smooth hai.,Yeh gaadi chalane mein ekdum butter smooth hai.,butter smooth,ASSERT_POSITIVE,claude_gen
+Mujhe scholarship mil gayi!,"Mujhe scholarship mil gayi, ekdum jackpot lag gaya!",jackpot,ASSERT_EXCITED,claude_gen
+Humara gaana release hone wala hai.,"Humara gaana release hone wala hai, full on hype hai!",hype,ASSERT_EXCITED,claude_gen
+Kal match dekhne stadium ja rahe hain.,"Kal stadium ja rahe hain match dekhne, kya scene hai!",kya scene hai,ASSERT_EXCITED,claude_gen
+Bonus mila aur sab plan ho gaya.,"Bonus mila, ab toh ekdum mauj hai!",mauj,ASSERT_EXCITED,claude_gen
+"Finally chutti mil gayi, ab aaram.","Finally chutti mil gayi, ekdum maze karenge!",maze,ASSERT_EXCITED,claude_gen
+"Sun, aaj shaam ko free hai kya?","Arre sun, aaj shaam ko free hai kya?",arre,CASUAL_ASSERTION,claude_gen
+"Bas thoda ruk ja, main aa raha hoon.","Abey ruk ja, main aa raha hoon.",abey,CASUAL_ASSERTION,claude_gen
+"Yeh kaam ho jayega, fikar mat karo.","Yeh kaam ho jayega boss, fikar mat karo.",boss,CASUAL_ASSERTION,claude_gen
+Matlab tune khud hi sab kuch kiya?,"Matlab tune khud hi sab kuch kiya, kamaal hai!",kamaal,CASUAL_ASSERTION,claude_gen
+Jo tu keh raha hai woh bilkul theek hai.,"Haan bhai, tu ekdum sahi pakde hai.",sahi pakde,CASUAL_ASSERTION,claude_gen
+Chalo phatafat ready ho jao.,"Chalo fatafat ready ho jao, late ho rahe hain.",fatafat,REQUEST_URGENCY,claude_gen
+Tu jaldi bata kya karna hai.,"Tu jaldi bata na yaar, kya karna hai.",yaar,CASUAL_ASSERTION,claude_gen
+Saara plan achanak kharab ho gaya.,Saara plan achanak jhand ho gaya yaar.,jhand,ASSERT_FRUSTRATION,claude_gen
+Uski laparwaahi se sab bigad gaya.,Uski laparwaahi se poora band baj gaya.,band baj gaya,ASSERT_NEGATIVE,claude_gen
+Aaj to har jagah bas problem hi aa rahi hai.,"Aaj to har jagah lag gaye, bas problem hi problem.",lag gaye,ASSERT_FRUSTRATION,claude_gen
+Yeh naya rule bilkul faaltu hai.,"Yeh naya rule ekdum faaltu hai, koi matlab nahi.",faaltu,ASSERT_NEGATIVE,claude_gen
+Mera mood aaj bahut kharab hai.,Mera mood aaj ekdum off hai yaar.,off,ASSERT_NEGATIVE,claude_gen
+Woh har baar bahana banata hai.,"Woh har baar bahana banata hai, bada natak karta hai.",natak,ASSERT_NEGATIVE,claude_gen
+Itne saare kaam ek saath kaise karoon.,"Itne saare kaam ek saath, dimaag fry ho gaya.",dimaag fry,ASSERT_STRESS,claude_gen
+Paise khatam ho gaye aur mahina baaki hai.,"Paise khatam, jeb ekdum khaali, ab kya karein.",jeb khaali,ASSERT_STRESS,claude_gen
+Result ka wait karte karte ghabrahat ho rahi hai.,Result ka wait karte karte dil baith raha hai.,dil baith raha hai,ASSERT_ANXIETY,claude_gen
+Humne poori raat mehnat ki aur project time pe submit kiya.,"Humne poori raat mehnat ki aur project time pe submit kiya, ekdum paisa vasool.",paisa vasool,ASSERT_POSITIVE,claude_gen
+Uski nayi film box office pe achha kama rahi hai.,Uski nayi film box office pe dhamaal macha rahi hai.,dhamaal,ASSERT_POSITIVE,claude_gen
+Woh har mushkil ko aaram se sambhaal leta hai.,Woh har mushkil ko ekdum bindaas sambhaal leta hai.,bindaas,ASSERT_POSITIVE,claude_gen
+Uski baaton mein hamesha dum hota hai.,"Uski baaton mein hamesha dum hota hai, ekdum solid logic.",solid,ASSERT_POSITIVE,claude_gen
+Naye office ka setup kaafi accha hai.,Naye office ka setup ekdum jhakaas hai.,jhakaas,ASSERT_POSITIVE,claude_gen
+Aaj ka lunch kaafi accha tha.,Aaj ka lunch ekdum lajawaab tha.,lajawaab,CASUAL_ASSERTION,claude_gen
+Hum log aaram se ghar pahunch gaye.,"Hum log ekdum aaram se, bina tension ghar pahunch gaye.",bina tension,CASUAL_ASSERTION,claude_gen
+"Picture achhi thi, time accha gaya.","Picture mast thi, ekdum paisa vasool time gaya.",paisa vasool,CASUAL_ASSERTION,claude_gen
+Uska naya haircut accha lag raha hai.,Uska naya haircut ekdum kadak lag raha hai.,kadak,CASUAL_ASSERTION,claude_gen
+Game kal raat ko kaafi maze ka tha.,"Game kal raat ko ekdum lit tha, maza aa gaya.",lit,ASSERT_POSITIVE,claude_gen
+Uska naya song chaaron taraf baj raha hai.,"Uska naya song chaaron taraf baj raha hai, ekdum superhit.",superhit,ASSERT_POSITIVE,claude_gen
+Yeh pizza bahut hi tasty hai.,"Yeh pizza ekdum lajawaab, muh mein paani aa gaya.",lajawaab,ASSERT_POSITIVE,claude_gen
+Uska confidence dekhne layak tha.,Uska confidence ekdum next level tha.,next level,ASSERT_POSITIVE,claude_gen
+Humne milke problem solve kar li.,Humne milke problem ekdum chutki mein solve kar li.,chutki mein,ASSERT_POSITIVE,claude_gen
+Nayi jersey dekhne mein kaafi acchi hai.,Nayi jersey ekdum dhaasu dikh rahi hai.,dhaasu,ASSERT_POSITIVE,claude_gen
+Hum kal se holiday pe ja rahe hain.,"Hum kal se holiday pe ja rahe hain, ekdum full masti!",full masti,ASSERT_EXCITED,claude_gen
+Mera favourite band aa raha hai sheher mein.,"Mera favourite band aa raha hai, main toh fida ho gaya!",fida,ASSERT_EXCITED,claude_gen
+"Humari jeet hone wali hai, bas thoda aur.","Humari jeet hone wali hai, ekdum game on!",game on,ASSERT_EXCITED,claude_gen
+"Train chhoot jayegi, jaldi bhago.","Train chhoot jayegi, jaldi bhago warna gaya scene.",gaya scene,REQUEST_URGENCY,claude_gen
+"Abhi reply karo, zaroori hai.","Abhi reply kar na yaar, ekdum urgent hai.",urgent,REQUEST_URGENCY,claude_gen
+"Match haar gaye, bahut bura laga.","Match haar gaye yaar, ekdum dil toot gaya.",dil toot gaya,ASSERT_SADNESS,claude_gen
+Woh plan bilkul kaam nahi aaya.,"Woh plan ekdum flop ho gaya, kuch faayda nahi.",flop,ASSERT_NEGATIVE,claude_gen
+Uska behaviour aaj kaafi ajeeb tha.,Uska behaviour aaj ekdum weird tha yaar.,weird,ASSERT_NEGATIVE,claude_gen
+"Chalo ab ghar chalte hain, kaafi der ho gayi.","Chalo bhai ab nikalte hain, kaafi der ho gayi.",bhai,CASUAL_ASSERTION,claude_gen
+"Tu bas apna kaam kar, baaki main dekh loonga.","Tu bas apna kaam kar bro, baaki main dekh loonga.",bro,CASUAL_ASSERTION,claude_gen
+Haan woh baat toh bilkul sahi hai.,Haan yaar woh baat ekdum sahi hai.,sahi,CASUAL_ASSERTION,claude_gen
+Sab kuch acche se chal raha hai.,Sab kuch ekdum smooth chal raha hai.,smooth,CASUAL_ASSERTION,claude_gen
+Usne apni mehnat se mukaam haasil kiya.,Usne apni mehnat se ekdum jhanda gaad diya.,jhanda gaad diya,ASSERT_POSITIVE,claude_gen
+Humne target time se pehle poora kiya.,"Humne target time se pehle poora kiya, ekdum bomb kaam.",bomb,ASSERT_POSITIVE,claude_gen
+Uska startup ab profit mein aa gaya.,"Uska startup ab profit mein, ekdum chaandi ho gayi.",chaandi,ASSERT_POSITIVE,claude_gen
+Aaj masti karne ka mood hai.,Aaj ekdum masti karne ka mood hai yaar.,masti,CASUAL_ASSERTION,claude_gen
+Chal koi acchi jagah khaana khane chalte hain.,"Chal yaar koi acchi jagah, pet puja karte hain.",pet puja,CASUAL_ASSERTION,claude_gen
+Pura din ghar pe aaram kiya.,Pura din ghar pe ekdum chill kiya.,chill,CASUAL_ASSERTION,claude_gen
+Woh bahut mehnati aur samajhdaar ladka hai.,"Woh ekdum solid banda hai, mehnati aur samajhdaar.",solid banda,ASSERT_POSITIVE,claude_gen
+Uski madad se kaam asaan ho gaya.,Uski madad se kaam ekdum paani ho gaya.,paani,ASSERT_POSITIVE,claude_gen
+Teacher ne aaj bahut acchi class li.,Teacher ne aaj ekdum mast class li.,mast,ASSERT_POSITIVE,claude_gen
+"Signal bar baar jaa raha hai, call nahi lag rahi.","Signal bar baar jaa raha hai, ekdum pak gaya isse.",pak gaya,ASSERT_FRUSTRATION,claude_gen
+Itni garmi mein bahar jaana mushkil hai.,Itni garmi mein toh haalat kharab ho gayi.,haalat kharab,ASSERT_STRESS,claude_gen
+Concert ka experience zindagi bhar yaad rahega.,"Concert ka experience ekdum unforgettable tha, mast!",unforgettable,ASSERT_POSITIVE,claude_gen
+Uska naya video sabko bahut pasand aaya.,Uska naya video ekdum viral ho gaya.,viral,ASSERT_POSITIVE,claude_gen
+Humari planning ekdum sahi rahi.,Humari planning ekdum top class rahi.,top class,ASSERT_POSITIVE,claude_gen
+Yeh phone camera ke liye best hai.,Yeh phone camera ke liye ekdum beast hai.,beast,ASSERT_POSITIVE,claude_gen
+Aaj ka mausam ghoomne ke liye perfect hai.,Aaj ka mausam ghoomne ke liye ekdum zabardast hai.,zabardast,ASSERT_POSITIVE,claude_gen
+"Placement season chal raha hai, sab pareshan hain.","Placement season chal raha hai, sabki waat lagi hui hai.",waat lagi,ASSERT_STRESS,claude_gen
+Aaj ka lecture kaafi boring tha.,"Aaj ka lecture ekdum bakwaas tha, neend aa gayi.",bakwaas,ASSERT_NEGATIVE,claude_gen
+"Exam acche se ho gaya, raahat mili.","Exam ekdum sahi gaya, ab thoda chill.",chill,ASSERT_POSITIVE,claude_gen
+Maine assignment time pe jama kar diya.,Maine assignment ekdum fatafat nipta diya.,fatafat,ASSERT_POSITIVE,claude_gen
+Mujhe is semester acche marks mile.,Mujhe is semester ekdum jhakaas marks mile.,jhakaas,ASSERT_POSITIVE,claude_gen
+"Internship ka offer aa gaya, bahut khush hoon.","Internship ka offer aa gaya, ekdum bawaal feeling hai!",bawaal,ASSERT_EXCITED,claude_gen
+Aaj India ne match jeet liya.,"Aaj India ne match jeet liya, ekdum dhamaal!",dhamaal,ASSERT_EXCITED,claude_gen
+Uski batting aaj kamaal ki thi.,Uski batting aaj ekdum faadu thi.,faadu,ASSERT_POSITIVE,claude_gen
+Humari team last over mein haar gayi.,"Humari team last over mein haari, dil toot gaya yaar.",dil toot gaya,ASSERT_SADNESS,claude_gen
+Stadium ka mahaul zabardast tha.,"Stadium ka mahaul ekdum electric tha, mast!",electric,ASSERT_EXCITED,claude_gen
+Yeh chaat bahut tasty thi.,"Yeh chaat ekdum lajawaab thi, maza aa gaya.",lajawaab,ASSERT_POSITIVE,claude_gen
+"Khana order kiya tha, bahut late aaya.","Khana order kiya tha, itna late aaya ki pak gaya.",pak gaya,ASSERT_FRUSTRATION,claude_gen
+Naya burger joint kaafi accha hai.,"Naya burger joint ekdum kadak hai, zaroor try karna.",kadak,ASSERT_POSITIVE,claude_gen
+Biryani aaj bilkul theek nahi bani.,"Biryani aaj ekdum bekaar bani, swaad hi nahi.",bekaar,ASSERT_NEGATIVE,claude_gen
+"Train time pe aa gayi, achha hua.","Train time pe aa gayi, ekdum sahi hua.",sahi,ASSERT_POSITIVE,claude_gen
+Road trip ka plan final ho gaya.,"Road trip ka plan final ho gaya, full masti hogi!",full masti,ASSERT_EXCITED,claude_gen
+"Flight cancel ho gayi, saara plan kharab.","Flight cancel ho gayi, poora plan jhand ho gaya.",jhand,ASSERT_FRUSTRATION,claude_gen
+Hum pahaadon pe ghoomne gaye the.,"Hum pahaadon pe ghoome, nazaare ekdum gazab the.",gazab,ASSERT_POSITIVE,claude_gen
+Naya game bahut maze ka hai.,"Naya game ekdum lit hai, chhoota hi nahi.",lit,ASSERT_POSITIVE,claude_gen
+Internet slow hone se game ruk gaya.,"Internet slow hone se game atak gaya, dimaag kharab.",dimaag kharab,ASSERT_FRUSTRATION,claude_gen
+Naya phone camera ke liye best hai.,Naya phone camera ke liye ekdum beast hai.,beast,ASSERT_POSITIVE,claude_gen
+Laptop baar baar hang ho raha hai.,"Laptop baar baar hang ho raha hai, pak gaya isse.",pak gaya,ASSERT_FRUSTRATION,claude_gen
+Aaj office mein bahut kaam tha.,"Aaj office mein kaam ka pahaad tha, thak gaya.",kaam ka pahaad,ASSERT_STRESS,claude_gen
+"Salary aa gayi, ab kuch shopping karenge.","Salary aa gayi, ab toh ekdum mauj hai!",mauj,ASSERT_EXCITED,claude_gen
+Boss ne meri report ki taareef ki.,"Boss ne meri report ki taareef ki, ekdum chha gaya.",chha gaya,ASSERT_POSITIVE,claude_gen
+Meeting bahut lambi aur boring thi.,Meeting itni lambi aur boring thi ki jaan nikal gayi.,jaan nikal gayi,ASSERT_FRUSTRATION,claude_gen
+Maine deadline time se pehle poori ki.,"Maine deadline time se pehle poori ki, ekdum paisa vasool.",paisa vasool,ASSERT_POSITIVE,claude_gen
+Shaadi mein khoob masti ki.,Shaadi mein ekdum dhamaal masti ki.,dhamaal,ASSERT_EXCITED,claude_gen
+Diwali ki shopping complete ho gayi.,Diwali ki shopping ekdum chaka-chak complete ho gayi.,chaka-chak,ASSERT_POSITIVE,claude_gen
+Ghar ka khana hamesha accha lagta hai.,Ghar ka khana hamesha ekdum lajawaab lagta hai.,lajawaab,ASSERT_POSITIVE,claude_gen
+Pure ghar ne milke festival manaya.,"Pure ghar ne milke festival manaya, ekdum mast mahaul tha.",mast,ASSERT_POSITIVE,claude_gen
+Maine aaj se gym jaana shuru kiya.,Maine aaj se bindaas gym jaana shuru kiya.,bindaas,CASUAL_ASSERTION,claude_gen
+Aaj workout ke baad body dukh rahi hai.,Aaj workout ke baad poori body ki waat lag gayi.,waat lag gayi,ASSERT_STRESS,claude_gen
+Trainer ne aaj acchi guidance di.,Trainer ne aaj ekdum solid guidance di.,solid,ASSERT_POSITIVE,claude_gen
+"Traffic mein phas gaya, der ho gayi.",Traffic mein aisa phasa ki pak gaya.,pak gaya,ASSERT_FRUSTRATION,claude_gen
+"Baarish mein bheeg gaye, par maza aaya.","Baarish mein bheeg gaye, par ekdum mast feel aaya.",mast,ASSERT_POSITIVE,claude_gen
+"Power cut ho gaya, garmi mein haalat kharab.","Power cut ho gaya, garmi mein haalat kharab ho gayi.",haalat kharab,ASSERT_STRESS,claude_gen
+Bahut dino baad dost se mila.,"Bahut dino baad dost se mila, dil khush ho gaya.",dil khush,ASSERT_POSITIVE,claude_gen
+Usne meri help ki jab zaroorat thi.,"Usne meri help ki jab zaroorat thi, ekdum sachcha dost hai.",sachcha dost,ASSERT_POSITIVE,claude_gen
+"Humari ladai ho gayi, mood off hai.","Humari ladai ho gayi, poora mood off hai yaar.",mood off,ASSERT_SADNESS,claude_gen
+Purane doston se milke accha laga.,Purane doston se milke ekdum bindaas feel aaya.,bindaas,ASSERT_POSITIVE,claude_gen
+Naya phone kharidne ka plan hai.,"Naya phone kharidne ka plan hai, kya scene hai!",kya scene hai,ASSERT_EXCITED,claude_gen
+Sale mein acchi deal mil gayi.,Sale mein ekdum paisa vasool deal mil gayi.,paisa vasool,ASSERT_POSITIVE,claude_gen
+Uska startup achha chal raha hai.,Uska startup ekdum rocket chal raha hai.,rocket,ASSERT_POSITIVE,claude_gen
+Startup pitch sab ko pasand aayi.,"Startup pitch sabko pasand aayi, ekdum chha gaye.",chha gaye,ASSERT_POSITIVE,claude_gen
+"Sun na, aaj kahin bahar chalte hain.","Arre sun na, aaj kahin bahar chalte hain.",arre,CASUAL_ASSERTION,claude_gen
+"Jaldi aa ja, sab wait kar rahe hain.","Abey jaldi aa ja, sab wait kar rahe hain.",abey,CASUAL_ASSERTION,claude_gen
+"Tu kar lega yeh kaam, mujhe bharosa hai.","Tu kar lega yeh kaam bro, mujhe pura bharosa hai.",bro,CASUAL_ASSERTION,claude_gen
+"Bas thoda ruk, main abhi aaya.","Bas thoda ruk yaar, main abhi aaya.",yaar,CASUAL_ASSERTION,claude_gen
+"Chalo ab chalte hain, kaafi der ho gayi.","Chalo bhai ab chalte hain, kaafi der ho gayi.",bhai,CASUAL_ASSERTION,claude_gen
+"Tension mat le, sab theek ho jayega.","Tension mat le boss, sab theek ho jayega.",boss,CASUAL_ASSERTION,claude_gen
+Concert ekdum zabardast tha.,"Concert ekdum fire tha, aag laga di!",fire,ASSERT_EXCITED,claude_gen
+Uska naya song chaaron taraf baj raha hai.,Uska naya song ekdum superhit ho gaya.,superhit,ASSERT_POSITIVE,claude_gen
+Movie ka climax bahut accha tha.,Movie ka climax ekdum solid tha.,solid,ASSERT_POSITIVE,claude_gen
+Trip ki photos bahut acchi aayi.,Trip ki photos ekdum jhakaas aayi.,jhakaas,ASSERT_POSITIVE,claude_gen
+Nayi series kaafi interesting hai.,"Nayi series ekdum mast hai, binge kar raha hoon.",mast,ASSERT_POSITIVE,claude_gen
+Uska naya look kaafi accha hai.,Uska naya look ekdum dhasu hai.,dhasu,ASSERT_POSITIVE,claude_gen
+Humari planning acche se kaam kar gayi.,Humari planning ekdum top class kaam kar gayi.,top class,ASSERT_POSITIVE,claude_gen
+Uska presentation sabse accha raha.,Uska presentation ekdum number one raha.,number one,ASSERT_POSITIVE,claude_gen
+"Jaldi karo, bus nikalne wali hai.","Jaldi karo yaar, bus nikal jayegi warna gaya scene.",gaya scene,REQUEST_URGENCY,claude_gen
+"Abhi submit karna hai, time kam hai.","Abhi submit karna hai fatafat, time bilkul kam hai.",fatafat,REQUEST_URGENCY,claude_gen
+Kal presentation hai aur taiyari baaki.,"Kal presentation hai aur taiyari baaki, tension high hai.",tension high,ASSERT_STRESS,claude_gen
+Itna kaam dekh ke samajh nahi aa raha.,Itna kaam dekh ke dimaag ki dahi ho gayi.,dimaag ki dahi,ASSERT_STRESS,claude_gen
+Service yahan bahut slow hai.,"Yahan ki service ekdum ghatiya hai, ghanton wait karaya.",ghatiya,ASSERT_NEGATIVE,claude_gen
+Yeh product paise barbaad hai.,"Yeh product ekdum bekaar hai, paise barbaad.",bekaar,ASSERT_NEGATIVE,claude_gen
+Movie bilkul achhi nahi thi.,"Movie ekdum flop thi, time waste ho gaya.",flop,ASSERT_NEGATIVE,claude_gen
+Uska plan bilkul kaam nahi aaya.,"Uska plan ekdum faaltu nikla, kuch faayda nahi.",faaltu,ASSERT_NEGATIVE,claude_gen
+"Finally ghar shift ho gaye, bahut khush.","Finally ghar shift ho gaye, ekdum khushi ka mahaul!",khushi ka mahaul,ASSERT_EXCITED,claude_gen
+Mujhe surprise gift mila aaj.,"Mujhe surprise gift mila, dil khush ho gaya.",dil khush,ASSERT_HAPPY,claude_gen
+Bahut dino baad chutti mili.,"Bahut dino baad chutti mili, ab toh maze hi maze.",maze hi maze,ASSERT_EXCITED,claude_gen
+Humne competition jeet liya finally.,"Humne competition jeet liya, ekdum jhanda gaad diya!",jhanda gaad diya,ASSERT_EXCITED,claude_gen
+Aaj ka din kaafi accha guzra.,Aaj ka din ekdum sahi guzra yaar.,sahi,CASUAL_ASSERTION,claude_gen
+Sab kuch time pe ho gaya.,Sab kuch ekdum smooth time pe ho gaya.,smooth,CASUAL_ASSERTION,claude_gen
+Uski baat mein dum tha.,Uski baat ekdum on point thi.,on point,ASSERT_POSITIVE,claude_gen
+Humne kaam aaram se khatam kiya.,Humne kaam ekdum chill hoke khatam kiya.,chill,CASUAL_ASSERTION,claude_gen
+"Naya cafe try kiya, accha laga.","Naya cafe try kiya, ekdum badiya laga.",badiya,ASSERT_POSITIVE,claude_gen
+Uski acting dekhne layak thi.,Uski acting ekdum gajab thi.,gajab,ASSERT_POSITIVE,claude_gen
+Humari jeet ne sabko khush kar diya.,"Humari jeet ne sabko khush kar diya, ekdum bomb feeling.",bomb,ASSERT_EXCITED,claude_gen
+Aaj ka match dekhne layak tha.,Aaj ka match ekdum zabardast tha.,zabardast,ASSERT_POSITIVE,claude_gen
+Naye joote kaafi comfortable hain.,Naye joote ekdum tagda feel dete hain.,tagda,ASSERT_POSITIVE,claude_gen
+Kaam asaani se ho gaya.,"Kaam ekdum paani ho gaya, koi dikkat nahi.",paani,ASSERT_POSITIVE,claude_gen
+Uska sense of humour accha hai.,Uska sense of humour ekdum next level hai.,next level,ASSERT_POSITIVE,claude_gen
+Trip ne saari thakaan door kar di.,"Trip ne saari thakaan door kar di, ekdum refreshing tha.",refreshing,ASSERT_POSITIVE,claude_gen
+Nayi bike chalane mein mazaa aaya.,Nayi bike chalane mein ekdum jhakaas feel aaya.,jhakaas,ASSERT_POSITIVE,claude_gen
+Uski mehnat rang laayi.,"Uski mehnat rang laayi, ekdum chha gaya.",chha gaya,ASSERT_POSITIVE,claude_gen

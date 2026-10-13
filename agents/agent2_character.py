@@ -22,6 +22,8 @@ SOCIAL_ROLE_KEYWORDS = {
         # English kinship terms the LLM sometimes uses instead of the Hindi name
         "grandfather", "grandpa", "grandmother", "grandma", "granny",
         "father", "dad", "daddy", "mother", "mom", "mummy", "aunt",
+        # common address forms
+        "amma", "amman", "dadima", "naanima", "papa", "maa", "baba",
     ],
     "authority": [
         "sir", "madam", "doctor", "inspector", "principal", "sahib",
@@ -191,12 +193,21 @@ class CharacterAnalyst:
         # text. The name (e.g. "Professor Sharma") often carries the honorific
         # cleanly, whereas transliteration can mangle it in the body text
         # (प्रोफ़ेसर -> "prophaesar"), so the name is the more reliable signal.
+        #
+        # IMPORTANT: match keywords as WHOLE WORDS, not substrings. Short kinship
+        # terms like "nana"/"bade"/"dad" otherwise match inside ordinary Hindi
+        # verbs ("banana" = to make, "sunana" = to tell), which would wrongly flag
+        # every character in such a scene as an elder.
         text_lower = (name + " " + context_text).lower()
         role = "peer"   # default
 
+        def _has(role_type: str) -> bool:
+            return any(re.search(rf"\b{re.escape(kw)}\b", text_lower)
+                       for kw in SOCIAL_ROLE_KEYWORDS[role_type])
+
         # Check authority/elder before peer; honorifics win over the default.
         for role_type in ("elder", "authority"):
-            if any(kw in text_lower for kw in SOCIAL_ROLE_KEYWORDS[role_type]):
+            if _has(role_type):
                 role = role_type
                 break
 

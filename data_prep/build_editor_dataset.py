@@ -28,7 +28,7 @@ def read_clean(path):
     out = []
     if not os.path.exists(path):
         return out
-    with open(path, encoding="utf-8") as f:
+    with open(path, encoding="utf-8-sig") as f:   # utf-8-sig: tolerate a BOM
         for r in csv.DictReader(f):
             neutral = (r.get("neutral") or "").strip()
             output = (r.get("output") or "").strip()

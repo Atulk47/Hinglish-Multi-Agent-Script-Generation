@@ -1,0 +1,200 @@
+{
+ "slang_script": [
+  {
+   "scene_id": "scene_01",
+   "dialogue": "ARAV: Riy bhai, school mein science fair announce hua hai. Mujhe lagta hai hum milke koi aisa project bana sakte hain jo sabko hairaan kar de aur jeet dilaye.\nRIY: Yeh badiya idea hai, Arav. Main turant hi shuru karne ke liye taiyar hoon.\nARAV: Toh chalo, abhi se planning shuru karte hain aur sabko dikhate hain ki hum kitne capable hain.",
+   "decisions": [
+    {
+     "speaker": "ARAV",
+     "applied": true,
+     "go": true,
+     "gate_stopped": null,
+     "intent": "CASUAL_ASSERTION",
+     "reason": "All gates passed",
+     "edited_clause": "Riy, school mein science fair announce hua hai.",
+     "engine": "qwen-lora",
+     "slang": "bhai",
+     "slang_tokens_added": 1
+    },
+    {
+     "speaker": "RIY",
+     "applied": true,
+     "go": true,
+     "gate_stopped": null,
+     "intent": "ASSERT_POSITIVE",
+     "reason": "All gates passed",
+     "edited_clause": "Yeh bahut accha idea hai, Arav.",
+     "engine": "qwen-lora",
+     "slang": "badiya",
+     "slang_tokens_added": 1
+    },
+    {
+     "speaker": "ARAV",
+     "applied": false,
+     "go": true,
+     "gate_stopped": null,
+     "intent": "CASUAL_ASSERTION",
+     "reason": "All gates passed",
+     "editor_note": "kept neutral (abstained)",
+     "editor_rejects": [
+      {
+       "why": "abstained",
+       "text": "Toh chalo, abhi se planning shuru karte hain aur sabko dikhate hain ki hum kitne capable hain."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "scene_id": "scene_02",
+   "dialogue": "ARAV: Hum dono ne chhota robot banane ka plan banaya tha, lekin aaj raat circuit mein aag lag gayi, aur mujhe lagta hai ki humara sab mehnat bekaar ho gayi.\nRIY: Chinta mat karo, yeh sirf ek choti si galti hai; hum isse seekhenge aur phir se try karenge, zaroor safal honge.",
+   "decisions": [
+    {
+     "speaker": "ARAV",
+     "applied": false,
+     "go": true,
+     "gate_stopped": null,
+     "intent": "CASUAL_ASSERTION",
+     "reason": "All gates passed",
+     "editor_note": "kept neutral (no-editable-clause)",
+     "editor_rejects": []
+    },
+    {
+     "speaker": "RIY",
+     "applied": false,
+     "go": true,
+     "gate_stopped": null,
+     "intent": "CASUAL_ASSERTION",
+     "reason": "All gates passed",
+     "editor_note": "kept neutral (abstained)",
+     "editor_rejects": [
+      {
+       "why": "abstained",
+       "text": "Chinta mat karo, yeh sirf ek choti si galti hai; hum isse seekhenge aur phir se try karenge, zaroor safal honge."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "scene_id": "scene_03",
+   "dialogue": "ARAV: Dadi, aaj raat ko aapko sab kuch batana chahta tha, lekin mujhe darr hai ki main phir se nakam ho jaunga.\nDADI: Beta, dhairya rakho. Mehnat kabhi bekaar nahi jaati, bas thoda samay aur vishwas ki zaroorat hoti hai.\nARAV: Aapki baat sunke mujhe nayi himmat mil gayi hai, ab main phir se koshish karunga.",
+   "decisions": [
+    {
+     "speaker": "ARAV",
+     "applied": false,
+     "go": true,
+     "gate_stopped": null,
+     "intent": "CASUAL_ASSERTION",
+     "reason": "All gates passed",
+     "editor_note": "kept neutral (gate:rewrote-other-words)",
+     "editor_rejects": [
+      {
+       "why": "gate:rewrote-other-words",
+       "text": "Dadi, aaj raat ko aapko sab kuch batana chahta tha, lekin mera dimaag fry ho gaya, mujhe darr hai ki main phir se nakam ho jaunga."
+      }
+     ]
+    },
+    {
+     "speaker": "DADI",
+     "applied": false,
+     "go": false,
+     "gate_stopped": null,
+     "intent": null,
+     "reason": "skipped: unattributed, formal or elder speaker"
+    },
+    {
+     "speaker": "ARAV",
+     "applied": false,
+     "go": true,
+     "gate_stopped": null,
+     "intent": "ASSERT_POSITIVE",
+     "reason": "All gates passed",
+     "editor_note": "kept neutral (abstained)",
+     "editor_rejects": [
+      {
+       "why": "abstained",
+       "text": "Aapki baat sunke mujhe nayi himmat mil gayi hai, ab main phir se koshish karunga."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "scene_id": "scene_04",
+   "dialogue": "SHARM: Arav, aapne yeh robot kaise banaya aur iska asli upyog kya hai?\nARAV: Maine microcontroller, sensors aur recycled parts ka upyog karke isse design kiya hai; iska mukhya kaam daily chores ko automate karna hai, jaise ki kapde fold karna aur chhote items ko sort karna.\nSHARM: Aapki mehnat yahan spasht dikh rahi hai, aur aapka prayas sarahniya hai.",
+   "decisions": [
+    {
+     "speaker": "SHARM",
+     "applied": false,
+     "go": false,
+     "gate_stopped": 1,
+     "intent": null,
+     "reason": "Speaker 'SHARM' is elder/authority or slang_level=0"
+    },
+    {
+     "speaker": "ARAV",
+     "applied": false,
+     "go": true,
+     "gate_stopped": null,
+     "intent": "CASUAL_ASSERTION",
+     "reason": "All gates passed",
+     "editor_note": "kept neutral (no-fit)",
+     "editor_rejects": []
+    },
+    {
+     "speaker": "SHARM",
+     "applied": false,
+     "go": false,
+     "gate_stopped": 1,
+     "intent": null,
+     "reason": "Speaker 'SHARM' is elder/authority or slang_level=0"
+    }
+   ]
+  },
+  {
+   "scene_id": "scene_05",
+   "dialogue": "ARAV: Yeh sach mein hamara jeet hai, maine pehle hi socha tha ki hum karenge, ab aage aur bhi bade sapne poore karenge.\nRIY: (khushi se) Yeh kaise ho sakta hai? Main vishwas hi nahi kar pa rahi, hamari jeet!\nARAV: Dadi ko dhanyavaad, unki prerna ke bina yeh mumkin nahi hota. Ab hum milkar celebrate karte hain.",
+   "decisions": [
+    {
+     "speaker": "ARAV",
+     "applied": false,
+     "go": true,
+     "gate_stopped": null,
+     "intent": "ASSERT_POSITIVE",
+     "reason": "All gates passed",
+     "editor_note": "kept neutral (abstained)",
+     "editor_rejects": [
+      {
+       "why": "abstained",
+       "text": "Yeh sach mein hamara jeet hai, maine pehle hi socha tha ki hum karenge, ab aage aur bhi bade sapne poore karenge."
+      }
+     ]
+    },
+    {
+     "speaker": "RIY",
+     "applied": false,
+     "go": true,
+     "gate_stopped": null,
+     "intent": "CASUAL_ASSERTION",
+     "reason": "All gates passed",
+     "editor_note": "kept neutral (off-list)",
+     "editor_rejects": [
+      {
+       "why": "off-list",
+       "text": "Main bharosa hi nahi kar pa raha, hamari jeet!"
+      }
+     ]
+    },
+    {
+     "speaker": "ARAV",
+     "applied": false,
+     "go": true,
+     "gate_stopped": null,
+     "intent": "ASSERT_POSITIVE",
+     "reason": "respectful/grateful line — slang skipped"
+    }
+   ]
+  }
+ ]
+}

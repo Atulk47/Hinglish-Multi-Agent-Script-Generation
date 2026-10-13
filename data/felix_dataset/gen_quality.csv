@@ -1,0 +1,91 @@
+﻿neutral,output,slangs,control,source
+College ke purane dost abhi bhi har weekend milte hain.,"Abey, college ke purane dost abhi bhi har weekend milte hain.",abey,CASUAL_ASSERTION,gen_q
+Purane dost milke bahut yaadein taza ho gayi.,"Arre, purane dost milke bahut yaadein taza ho gayi.",arre,CASUAL_ASSERTION,gen_q
+Meri pehli naukri mein maine sab kuch seekha.,"Meri pehli naukri mein bhai, maine sab kuch seekha.",bhai,CASUAL_ASSERTION,gen_q
+"Maine kal raat ko pizza order kiya, wo bahut tasty tha.","Maine kal raat ko pizza order kiya, wo bomb tasty tha.",bomb,ASSERT_POSITIVE,gen_q
+Kal raat ko maine new battle royale game khela.,"Kal raat ko maine new battle royale game khela, bro.",bro,CASUAL_ASSERTION,gen_q
+Mujhe group project ka timeline samajh nahi aa raha.,"Yaar group project ka timeline samajh nahi aa raha, dimaag block ho gaya.",dimaag block,ASSERT_ANXIETY,gen_q
+"Placement ke interviews kal se start ho rahe hain, tension zyada hai.","Placement ke interviews kal se start ho rahe hain, dimaag fry ho gaya.",dimaag fry,ASSERT_STRESS,gen_q
+"Exam results aane wale hain, dekhte hain kaise aate hain.","Exam results fatafat aane wale hain, dekhte hain kaise aate hain.",fatafat,REQUEST_URGENCY,gen_q
+Mere dost ne kal ek naya phone kharida hai.,"Mere dost ne kal ek naya phone kharida hai, gajab ka camera hai.",gajab,ASSERT_POSITIVE,gen_q
+"Mere exam results aaj aaye, sab pass ho gaye.","Mere exam results aaj aaye, sab jhakaas pass ho gaye.",jhakaas,ASSERT_POSITIVE,gen_q
+Purane dost milke bahut maza aaya.,"Abey, purane dost milke bahut maza aaya.",abey,CASUAL_ASSERTION,gen_q
+Kal ki shaadi ka invitation mil gaya hai.,"Arre, kal ki shaadi ka invitation mil gaya hai.",arre,CASUAL_ASSERTION,gen_q
+"Group project ka deadline kal hai, sabko kaam finish karna hai.","Group project ka deadline kal hai bhai, sabko kaam finish karna hai.",bhai,CASUAL_ASSERTION,gen_q
+Maine Diwali ke liye market mein kaafi shopping ki.,Maine Diwali ke liye market mein bindaas shopping ki.,bindaas,ASSERT_POSITIVE,gen_q
+"Meri nayi phone aayi, camera bahut badhiya hai.","Meri nayi phone aayi, camera bomb lag raha hai.",bomb,ASSERT_EXCITED,gen_q
+"Maine aaj naya pasta banaya, taste bahut achha tha.","Maine aaj naya pasta banaya, boss, taste bahut achha tha.",boss,CASUAL_ASSERTION,gen_q
+"Kal office ka deadline tight tha, sab ko late karna pada.","Kal office ka deadline tight tha, bro, sab ko late karna pada.",bro,CASUAL_ASSERTION,gen_q
+"Aaj salary aayi, kaam ka stress kam ho gaya.","Aaj salary aayi, chaka-chak ka maza, kaam ka stress kam ho gaya.",chaka-chak,ASSERT_POSITIVE,gen_q
+"Kal subah ki train miss ho gayi, ab kya karen?","Kal subah ki train miss ho gayi, koi baat nahi, chill kar lete hain.",chill,CASUAL_ASSERTION,gen_q
+"Road trip ka itinerary final ho gaya, sab excited hain.","Road trip ka itinerary final ho gaya, full dhamaal, sab excited hain.",dhamaal,ASSERT_EXCITED,gen_q
+Mujhe aaj pehli job ka offer mila hai.,"Mujhe aaj pehli job ka offer mila, dil khush ho gaya.",dil khush,ASSERT_HAPPY,gen_q
+Shehar ki traffic itni jam ho gayi ki office late pohonch gaya.,"Shehar ki traffic itni jam ho gayi, dimaag fry ho gaya, office late pohonch gaya.",dimaag fry,ASSERT_STRESS,gen_q
+"Kal raat ko family dinner tha, sab bahut khush the.","Kal raat ko family dinner tha, vibe electric tha, sab bahut khush the.",electric,ASSERT_EXCITED,gen_q
+"Hamari date bahut achhi thi, sabko maza aaya.","Hamari date ekdum faadu thi, sabko maza aaya.",faadu,ASSERT_POSITIVE,gen_q
+Festival shopping mein itna time waste mat kar.,Festival shopping mein itna faaltu time waste mat kar.,faaltu,ASSERT_NEGATIVE,gen_q
+Mujhe aaj raat ka khana turant ready karna hai.,Mujhe aaj raat ka khana fatafat ready karna hai.,fatafat,REQUEST_URGENCY,gen_q
+College ke placements ka process bahut smooth tha.,"College ke placements ka process fire tha, sabne top offers grab kiye.",fire,ASSERT_EXCITED,gen_q
+Hamari dating bahut achi chal rahi hai.,"Hamari dating bahut achi chal rahi hai, fit hai.",fit hai,ASSERT_POSITIVE,gen_q
+College ka exam itna tough tha ki sab fail ho gaye.,College ka exam itna flop tha ki sab fail ho gaye.,flop,ASSERT_NEGATIVE,gen_q
+"Kal coffee shop mein milte hain, chai bhi lenge.","Kal coffee shop mein milte hain, full excited ho ke chai bhi lenge!",full excited,ASSERT_EXCITED,gen_q
+Birthday party ka music aur vibe bahut hi achha tha.,"Birthday party ka music aur vibe gazab tha, bilkul mast.",gazab,ASSERT_POSITIVE,gen_q
+Hamare group project ka kaam sabne time pe finish kar diya.,"Hamare group project ka kaam sabne time pe finish kar diya, full jalwa.",jalwa,ASSERT_POSITIVE,gen_q
+Kal gym mein cardio ki aur thak gaya.,"Kal gym mein cardio ki, ekdum jhakaas feel aaya.",jhakaas,ASSERT_POSITIVE,gen_q
+"Mere teammate baar baar lag raha hai, game jeet nahi pa raha.","Mere teammate baar baar lag raha hai, poora game jhand ho gaya.",jhand,ASSERT_FRUSTRATION,gen_q
+Raat ko traffic jam bahut bhari tha.,Raat ko kadak traffic jam bahut bhari tha.,kadak,ASSERT_POSITIVE,gen_q
+Kal raat ko bike ride pe bahut maza aaya.,Kal raat ko bike ride pe kamaal maza aaya.,kamaal,CASUAL_ASSERTION,gen_q
+"Kal raat ko movie night thi, sab ready the.","Kal raat ko movie night thi, sab kasam se ready the.",kasam se,CASUAL_ASSERTION,gen_q
+"Startup ki pitch bahut hi impressive thi, sab ko impress kar gayi.","Startup ki pitch ekdum solid thi, kya scene hai, sab ko impress kar gayi.",kya scene hai,ASSERT_EXCITED,gen_q
+Meri pehli naukri ka experience kaafi accha tha.,Meri pehli naukri ka experience ekdum lajawaab tha.,lajawaab,ASSERT_POSITIVE,gen_q
+Kal ki meeting bahut productive thi aur sabko fayda hua.,"Kal ki meeting ekdum lit thi, sabko bahut fayda hua.",lit,ASSERT_POSITIVE,gen_q
+"Kal hum road trip pe jaa rahe hain, bahut maza aayega.","Kal hum road trip pe jaa rahe hain, sab kuch ekdum mast hai.",mast,ASSERT_POSITIVE,gen_q
+Purane doston ke saath coffee pe milna bahut achha laga.,Purane doston ke saath coffee pe milna masti se bhara tha.,masti,CASUAL_ASSERTION,gen_q
+Kal ka cricket match dekh ke maza aaya.,Kal ka cricket match dekh ke full mauj aayi.,mauj,ASSERT_EXCITED,gen_q
+Family dinner bahut mazedar tha.,"Family dinner bahut mazedar tha, maze hi maze!",maze,ASSERT_EXCITED,gen_q
+Kal ka cricket match bahut hi dull lag raha tha.,Kal ka cricket match bilkul off lag raha tha.,off,ASSERT_NEGATIVE,gen_q
+Mere office ki chai break bahut refreshing thi.,Mere office ki chai break ekdum paisa vasool thi.,paisa vasool,ASSERT_POSITIVE,gen_q
+"Maine internship ke liye interview diya, selection mil gayi.","Maine internship ke liye interview diya, selection mil gayi, pakaa diya.",pakaa diya,ASSERT_FRUSTRATION,gen_q
+Kal gym jaane ka plan bana liya hai.,Kal gym jaane ka plan bana liya re.,re,CASUAL_ASSERTION,gen_q
+Mere naye phone ki camera quality bahut badiya hai.,Mere naye phone ki camera quality rocket jaisi badiya hai.,rocket,ASSERT_POSITIVE,gen_q
+Shaadi ka venue bahut hi khubsurat tha.,Shaadi ka venue ekdum royal tha.,royal,ASSERT_POSITIVE,gen_q
+Kal hum log road trip pe nikal rahe hain.,"Kal hum log road trip pe nikal rahe hain, sahi plan hai!",sahi,CASUAL_ASSERTION,gen_q
+Monsoon ke din mein chai ki chuski best lagti hai.,"Monsoon ke din mein chai ki chuski best lagti hai, sahi hai.",sahi hai,ASSERT_POSITIVE,gen_q
+"Naya phone aaj hi le lena, kaam aayega.","Naya phone aaj hi le lena, warna scene bigad jayega.",scene bigad jayega,REQUEST_URGENCY,gen_q
+Kal ki meeting bina kisi dikkat ke khatam hui.,"Kal ki meeting smooth thi, bina kisi dikkat ke khatam hui.",smooth,CASUAL_ASSERTION,gen_q
+Aaj ki dinner ki recipe bahut tasty lag rahi hai.,Aaj ki dinner ki recipe ekdum superhit lag rahi hai.,superhit,ASSERT_POSITIVE,gen_q
+"College ki exams aane wali hain, thoda revise karna padega.","College ki exams aane wali hain, thoda tagda revise karna padega.",tagda,ASSERT_POSITIVE,gen_q
+Mere internship ka experience bahut hi rewarding tha.,Mere internship ka experience ekdum viral tha.,viral,ASSERT_POSITIVE,gen_q
+"Kal raat ko maine pasta banaya, sabko bahut pasand aaya.","Kal raat ko maine pasta banaya, sabko bahut pasand aaya yaar.",yaar,CASUAL_ASSERTION,gen_q
+Shaadi ka reception sabko bahut pasand aaya.,Shaadi ka reception sabko zabardast pasand aaya.,zabardast,ASSERT_POSITIVE,gen_q
+Mere aur uske beech ki baat abhi clear nahi hui.,"Abey, mere aur uske beech ki baat abhi clear nahi hui.",abey,CASUAL_ASSERTION,gen_q
+Maine placement ke liye resume ready kiya.,"Arre, maine placement ke liye resume ready kiya.",arre,CASUAL_ASSERTION,gen_q
+"Kal gym mein naya workout try kiya, bahut achha laga.","Kal gym mein naya workout try kiya, badiya lag gaya.",badiya,ASSERT_POSITIVE,gen_q
+"Kal ka cricket match bahut bore tha, koi excitement nahi.","Kal ka cricket match bakwaas tha, koi excitement nahi.",bakwaas,ASSERT_NEGATIVE,gen_q
+Yeh rush hour ki traffic bilkul ruk gayi.,"Yeh rush hour ki traffic band baj gaya, bilkul ruk gayi.",band baj gaya,ASSERT_NEGATIVE,gen_q
+"Subah ki traffic bahut jam thi, time pe pahunchna mushkil tha.","Subah ki traffic bawaal thi, time pe pahunchna mushkil tha.",bawaal,ASSERT_EXCITED,gen_q
+Gym ka cardio session aaj bahut tiring tha.,"Gym ka cardio session aaj bilkul bekaar tha, bahut tiring.",bekaar,ASSERT_NEGATIVE,gen_q
+Kal ka cricket match bahut hi romanchak tha.,"Kal ka cricket match bhai, bahut hi romanchak tha.",bhai,CASUAL_ASSERTION,gen_q
+"Shaadi ka venue bahut achha tha, sab khush the","Shaadi ka venue bomb tha, sabko maza aaya",bomb,ASSERT_EXCITED,gen_q
+Kal raat ko maine pizza order kiya tha.,"Bro, kal raat ko maine pizza order kiya tha.",bro,CASUAL_ASSERTION,gen_q
+Pav bhaji ka taste aaj bahut hi tasty tha.,Pav bhaji ka taste aaj chaka-chak tha.,chaka-chak,ASSERT_POSITIVE,gen_q
+Mere ghar ka wifi aaj bahut slow chal raha tha,"Mere ghar ka wifi aaj bahut slow chal raha tha, ab chha gaya",chha gaya,ASSERT_POSITIVE,gen_q
+Mera naya phone kaafi sasta aur achha hai.,"Mera naya phone ekdum chha gaye, sasta aur badiya hai.",chha gaye,ASSERT_POSITIVE,gen_q
+"Maine interview clear kar liya, ab promotion ka chance hai.","Maine interview clear kar liya, dhamaal hai, ab promotion ka chance hai.",dhamaal,ASSERT_EXCITED,gen_q
+"Diwali ki shopping list bahut lambi hai, samajh nahi aa raha.","Diwali ki shopping list itni lambi hai, dimaag fry ho raha hai.",dimaag fry,ASSERT_STRESS,gen_q
+"Kal subah bike ride pe chalna hai, time kam hai.","Kal subah bike ride pe fatafat chalna hai, time kam hai.",fatafat,REQUEST_URGENCY,gen_q
+Hostel ki mess ki khana bahut tasty hai.,Hostel ki mess ka khana ekdum gajab tasty hai.,gajab,ASSERT_POSITIVE,gen_q
+Kal ki bike ride bahut mazedar thi,Kal ki bike ride gazab mazedar thi,gazab,ASSERT_POSITIVE,gen_q
+Coffee shop ka ambience bilkul boring tha.,"Coffee shop ka ambience ghatiya tha, bilkul boring.",ghatiya,ASSERT_NEGATIVE,gen_q
+"Maine interview clear kar liya, ab kaafi excited hoon.","Maine interview clear kar liya, ab pura hype mein hoon!",hype,ASSERT_EXCITED,gen_q
+Kal raat ko family dinner bahut mazedar tha.,Kal raat ka family dinner ekdum jalwa tha.,jalwa,ASSERT_POSITIVE,gen_q
+Mujhe aaj raat ka dinner order karna hai.,"Mujhe aaj raat ka dinner order karna hai, jeb khaali hai.",jeb khaali,ASSERT_STRESS,gen_q
+Hamare group project ka presentation bahut achha tha.,Hamare group project ka presentation ekdum jhakaas tha.,jhakaas,ASSERT_POSITIVE,gen_q
+Main office tak pahunchne mein bahut der ho gayi.,"Main office tak pahunchne mein jhand ho gayi, yaar.",jhand,ASSERT_FRUSTRATION,gen_q
+Maine aaj shaadi ka invitation receive kiya.,Maine aaj shaadi ka invitation kasam se receive kiya.,kasam se,CASUAL_ASSERTION,gen_q
+Purane dost milke coffee pe baatein kar rahe hain.,"Purane dost milke coffee pe baatein kar rahe hain, khushi ka mahaul hai!",khushi ka mahaul,ASSERT_EXCITED,gen_q
+Mere order ki pizza aaj tak nahi aayi.,"Mere order ki pizza aaj tak nahi aayi, lag gaye yaar.",lag gaye,ASSERT_FRUSTRATION,gen_q
+Meri girlfriend ka sense of humor bahut achha hai,Meri girlfriend ka sense of humor lajawaab hai,lajawaab,ASSERT_POSITIVE,gen_q
+"Maine naya phone kharida kal, camera bahut achha hai.","Maine naya phone kharida kal, camera mast achha hai.",mast,ASSERT_POSITIVE,gen_q
+Hum dono ne weekend pe dinner plan kiya.,Hum dono ne weekend pe ekdum masti bhara dinner plan kiya.,masti,CASUAL_ASSERTION,gen_q
+Maine kal naya phone kharida.,"Maine kal naya phone kharida, ekdum mauj aa gayi!",mauj,ASSERT_EXCITED,gen_q

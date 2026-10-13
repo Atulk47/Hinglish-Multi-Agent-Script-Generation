@@ -1,0 +1,706 @@
+{
+  "romanized_text": "arav aur riy ek hi skul men padhate the aur pakke dost the. ek din skul men vijnana mele ki ghoshan hui. arav bahut utsahit hokar riy ke pas daudaa aur bol, riya, hamen is bar kuch jabaradasta banan hai. agar ham jit gae to pure skul men hamar nam hog. riy ne hansate hue kaha, bilkula, chal aj se hi shuru karate hain.\n\ndonon ne milakar ek chot robot banane k phaisal kiya. lekin kuch hi dinon men mushkilen ane lagin. ek sham robot k sarkit bara-bara jal jata tha. arav jhunjhal kara bol, yaha kam hi nahin kara rah. mainne itani mehanat ki aur sab bekar j rah hai. riy ne use shant karate hue kaha, itana pareshan mat ho, ham phir se koshish karenge.\n\nusi rat arav apani dadi ke pas gaya aur sari bat batai. dadi ghar ki sabase bujaurg sadasy thin. arav ne kaha, dadi, mujhe lagat hai main har jaung. dadi ne pyar se usak sir sahalay aur bolin, beta, dhairy rakho. mehanat kabhi bekar nahin jati. har asaphalat kuch sikhati hai. arav ko unaki bat se nai himmat mili.\n\nagale din vijnana mele men adhyapak sharm sabhi pariyojanaon ki janch kara rahe the. ve apani sakhati ke lie jane jate the. unhonne arav se puch, tumane yaha robot kaise banay aur isak asali upayog kya hai? arav ne shanti se har saval k uttar diya. adhyapak sharm ne sir hilakar kaha, tumhari mehanat sapha dikhai deti hai.\n\nparinam ki ghoshan hui aur arav tath riy ki tim pratham ai. riy khushi se chillai, hama jit gae! mujhe yakin hi nahin ho rah. arav ne hansate hue kaha, mainne kaha tha n, ham kamal kara denge. us sham donon doston ne apani jit k jashn manay aur dadi ko dhanyavad kaha jinaki baton ne unhen kabhi har nahin manane di.",
+  "event_chain": [
+    {
+      "scene_id": "scene_01",
+      "key_events": [
+        "The school announces a science fair.",
+        "Arav, excited, runs to Riy and proposes they create something spectacular to win and gain fame.",
+        "Riy laughs and agrees, saying they will start right away."
+      ],
+      "characters": [
+        "Arav",
+        "Riy"
+      ],
+      "scene_goal": "Establish the close friendship and set up their joint ambition to compete in the science fair.",
+      "location": "school",
+      "narrative_link": "Following the opening of the story, Arav now rallies Riy to begin their science fair project.",
+      "pronoun_map": {}
+    },
+    {
+      "scene_id": "scene_02",
+      "key_events": [
+        "Arav and Riy decide to build a small robot together.",
+        "Technical difficulties arise when the robot's circuit catches fire one evening.",
+        "Arav expresses frustration about the failed effort.",
+        "Riy comforts Arav, urging him not to worry and promising another attempt."
+      ],
+      "characters": [
+        "Arav",
+        "Riy"
+      ],
+      "scene_goal": "Introduce a setback that tests the protagonists' resolve and reinforces their determination to succeed.",
+      "location": "workshop",
+      "narrative_link": "Following the establishment of their close friendship and joint ambition to compete in the science fair, Arav and Riy now face a technical setback while building their robot.",
+      "pronoun_map": {
+        "mainne": "Arav",
+        "use": "Arav"
+      }
+    },
+    {
+      "scene_id": "scene_03",
+      "key_events": [
+        "Arav goes to his grandmother's house at night and confides everything to her.",
+        "The grandmother, the eldest family member, gently comforts Arav and advises him to be patient and keep working hard.",
+        "Arav gains new courage from his grandmother's words."
+      ],
+      "characters": [
+        "Arav"
+      ],
+      "scene_goal": "Arav receives emotional support and renewed determination to overcome his setback.",
+      "location": "Grandmother's house",
+      "narrative_link": "Following the setback that tested the protagonists' resolve, Arav now seeks counsel from his grandmother.",
+      "pronoun_map": {}
+    },
+    {
+      "scene_id": "scene_04",
+      "key_events": [
+        "Teacher Sharm is checking all projects at the upcoming science fair.",
+        "Sharm goes to meet his friend Arav.",
+        "Sharm asks Arav how he built the robot and what its real use is.",
+        "Arav calmly answers every question.",
+        "Sharm nods and says Arav's hard work is clearly visible."
+      ],
+      "characters": [
+        "Sharm",
+        "Arav"
+      ],
+      "scene_goal": "Sharm evaluates Arav's robot, confirming its value and showcasing Arav's competence after his renewed determination.",
+      "location": "Science fair venue / meeting place where Sharm visits Arav",
+      "narrative_link": "Following Arav receiving emotional support and renewed determination, Arav now demonstrates his robot to Teacher Sharm who evaluates his work.",
+      "pronoun_map": {
+        "unhone": "Sharm",
+        "tumane": "Arav"
+      }
+    },
+    {
+      "scene_id": "scene_05",
+      "key_events": [
+        "The competition results are announced and Arav and Riy learn they have won.",
+        "Riy exclaims with joy, expressing disbelief at the victory.",
+        "Arav smiles and recalls having predicted their success.",
+        "Both friends celebrate their win that evening and thank their grandmother for her encouragement."
+      ],
+      "characters": [
+        "Arav",
+        "Riy"
+      ],
+      "scene_goal": "To depict the protagonists' triumph and reinforce their bond while acknowledging the supportive role of their grandmother.",
+      "location": "unspecified",
+      "narrative_link": "Following Sharm's evaluation of Arav's robot, Arav now celebrates the competition win with Riy.",
+      "pronoun_map": {}
+    }
+  ],
+  "character_profiles": {
+    "Arav": {
+      "name": "Arav",
+      "age": null,
+      "social_role": "peer",
+      "slang_level": 5,
+      "relationship": {},
+      "current_emotion": "happy",
+      "turn_count": 5,
+      "stress_index": 0.0
+    },
+    "Riy": {
+      "name": "Riy",
+      "age": null,
+      "social_role": "peer",
+      "slang_level": 5,
+      "relationship": {},
+      "current_emotion": "happy",
+      "turn_count": 3,
+      "stress_index": 0.0
+    },
+    "Sharm": {
+      "name": "Sharm",
+      "age": null,
+      "social_role": "authority",
+      "slang_level": 0,
+      "relationship": {},
+      "current_emotion": "neutral",
+      "turn_count": 1,
+      "stress_index": 0.0
+    }
+  },
+  "neutral_script": [
+    {
+      "scene_id": "scene_01",
+      "dialogue": "ARAV: School ne science fair announce kiya hai, chalo hum kuch aisa banate hain jo sabko hairaan kar de aur jeet le.  \nRIY: Yeh bahut accha idea hai, main turant shuru karne ko tayyar hoon.",
+      "events": {
+        "scene_id": "scene_01",
+        "key_events": [
+          "The school announces a science fair.",
+          "Arav, excited, runs to Riy and proposes they create something spectacular to win and gain fame.",
+          "Riy laughs and agrees, saying they will start right away."
+        ],
+        "characters": [
+          "Arav",
+          "Riy"
+        ],
+        "scene_goal": "Establish the close friendship and set up their joint ambition to compete in the science fair.",
+        "location": "school",
+        "narrative_link": "Following the opening of the story, Arav now rallies Riy to begin their science fair project.",
+        "pronoun_map": {}
+      }
+    },
+    {
+      "scene_id": "scene_02",
+      "dialogue": "ARAV: Hum dono ne decide kiya tha ki ek chhota robot banayenge, lekin aaj raat circuit mein aag lag gayi, mujhe bahut niraashaa ho rahi hai.  \nRIY: Chinta mat karo, Arav. Yeh sirf ek choti si galti thi, hum isse seekh kar phir se try karenge.  \nARAV: Theek hai, main phir se mehnat karne ke liye taiyaar hoon; hum zaroor safal honge.",
+      "events": {
+        "scene_id": "scene_02",
+        "key_events": [
+          "Arav and Riy decide to build a small robot together.",
+          "Technical difficulties arise when the robot's circuit catches fire one evening.",
+          "Arav expresses frustration about the failed effort.",
+          "Riy comforts Arav, urging him not to worry and promising another attempt."
+        ],
+        "characters": [
+          "Arav",
+          "Riy"
+        ],
+        "scene_goal": "Introduce a setback that tests the protagonists' resolve and reinforces their determination to succeed.",
+        "location": "workshop",
+        "narrative_link": "Following the establishment of their close friendship and joint ambition to compete in the science fair, Arav and Riy now face a technical setback while building their robot.",
+        "pronoun_map": {
+          "mainne": "Arav",
+          "use": "Arav"
+        }
+      }
+    },
+    {
+      "scene_id": "scene_03",
+      "dialogue": "ARAV: Dadi, aaj raat ko aapke paas aane ka maksad yeh tha ki main aapko sab kuch bataun, jo abhi tak mere dil mein tha.  \nDAADI: Beta, har mushkil ka samna dhairya se karo, aur mehnat kabhi na chhodo; waqt ke saath sab theek ho jayega.  \nARAV: Aapki baaton se mujhe nayi himmat mil gayi hai, ab main phir se aage badhne ki taiyari karunga.",
+      "events": {
+        "scene_id": "scene_03",
+        "key_events": [
+          "Arav goes to his grandmother's house at night and confides everything to her.",
+          "The grandmother, the eldest family member, gently comforts Arav and advises him to be patient and keep working hard.",
+          "Arav gains new courage from his grandmother's words."
+        ],
+        "characters": [
+          "Arav"
+        ],
+        "scene_goal": "Arav receives emotional support and renewed determination to overcome his setback.",
+        "location": "Grandmother's house",
+        "narrative_link": "Following the setback that tested the protagonists' resolve, Arav now seeks counsel from his grandmother.",
+        "pronoun_map": {}
+      }
+    },
+    {
+      "scene_id": "scene_04",
+      "dialogue": "SHARM: Arav, main sab projects dekh raha hoon; yeh robot kaise bana aur iska asli prayog kya hai?  \nARAV: Maine microcontroller, sensors aur recycled parts ka upyog karke isse banaya hai; iska mukhya kaam environment monitoring aur data collection hai.  \nSHARM: Tumhari mehnat yahan spasht dikh rahi hai, aur iska design bhi prashansaniya hai.",
+      "events": {
+        "scene_id": "scene_04",
+        "key_events": [
+          "Teacher Sharm is checking all projects at the upcoming science fair.",
+          "Sharm goes to meet his friend Arav.",
+          "Sharm asks Arav how he built the robot and what its real use is.",
+          "Arav calmly answers every question.",
+          "Sharm nods and says Arav's hard work is clearly visible."
+        ],
+        "characters": [
+          "Sharm",
+          "Arav"
+        ],
+        "scene_goal": "Sharm evaluates Arav's robot, confirming its value and showcasing Arav's competence after his renewed determination.",
+        "location": "Science fair venue / meeting place where Sharm visits Arav",
+        "narrative_link": "Following Arav receiving emotional support and renewed determination, Arav now demonstrates his robot to Teacher Sharm who evaluates his work.",
+        "pronoun_map": {
+          "unhone": "Sharm",
+          "tumane": "Arav"
+        }
+      }
+    },
+    {
+      "scene_id": "scene_05",
+      "dialogue": "ARAV: Result aaya hai, hum jeet gaye hain!  \nRIY: Sach mein? Yeh to bahut achha hai, Dadi ko dhanyavaad, unke bina yeh mumkin nahi tha.",
+      "events": {
+        "scene_id": "scene_05",
+        "key_events": [
+          "The competition results are announced and Arav and Riy learn they have won.",
+          "Riy exclaims with joy, expressing disbelief at the victory.",
+          "Arav smiles and recalls having predicted their success.",
+          "Both friends celebrate their win that evening and thank their grandmother for her encouragement."
+        ],
+        "characters": [
+          "Arav",
+          "Riy"
+        ],
+        "scene_goal": "To depict the protagonists' triumph and reinforce their bond while acknowledging the supportive role of their grandmother.",
+        "location": "unspecified",
+        "narrative_link": "Following Sharm's evaluation of Arav's robot, Arav now celebrates the competition win with Riy.",
+        "pronoun_map": {}
+      }
+    }
+  ],
+  "slang_script": [
+    {
+      "scene_id": "scene_01",
+      "dialogue": "ARAV: School ne science fair announce kiya hai, chalo hum kuch aisa banate hain jo sabko hairaan kar de aur jeet le, Vibe hai.\nRIY: Yeh kya mast accha idea hai, main turant shuru karne ko tayyar hoon.",
+      "decisions": [
+        {
+          "speaker": "ARAV",
+          "applied": true,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "CASUAL_ASSERTION",
+          "reason": "All gates passed",
+          "edited_clause": "chalo hum kuch aisa banate hain jo sabko hairaan kar de aur jeet le.",
+          "engine": "groq-fallback",
+          "slang": "Vibe hai",
+          "slang_tokens_added": 2
+        },
+        {
+          "speaker": "RIY",
+          "applied": true,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "CASUAL_ASSERTION",
+          "reason": "All gates passed",
+          "edited_clause": "Yeh bahut accha idea hai, main turant shuru karne ko tayyar hoon.",
+          "engine": "groq-fallback",
+          "slang": "kya mast",
+          "slang_tokens_added": 1
+        }
+      ],
+      "events": {
+        "scene_id": "scene_01",
+        "key_events": [
+          "The school announces a science fair.",
+          "Arav, excited, runs to Riy and proposes they create something spectacular to win and gain fame.",
+          "Riy laughs and agrees, saying they will start right away."
+        ],
+        "characters": [
+          "Arav",
+          "Riy"
+        ],
+        "scene_goal": "Establish the close friendship and set up their joint ambition to compete in the science fair.",
+        "location": "school",
+        "narrative_link": "Following the opening of the story, Arav now rallies Riy to begin their science fair project.",
+        "pronoun_map": {}
+      }
+    },
+    {
+      "scene_id": "scene_02",
+      "dialogue": "ARAV: Hum dono ne decide kiya tha ki ek chhota robot banayenge, lekin aaj raat circuit mein aag lag gayi, mujhe bahut niraashaa ho rahi hai, Kya yaar.\nRIY: Chinta mat karo, Arav. Yeh sirf ek choti si galti thi, hum isse seekh kar phir se try karenge.\nARAV: Theek hai, main phir se mehnat karne ke liye taiyaar hoon; hum zaroor safal honge, yaar.",
+      "decisions": [
+        {
+          "speaker": "ARAV",
+          "applied": true,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "ASSERT_FRUSTRATION",
+          "reason": "All gates passed",
+          "edited_clause": "lekin aaj raat circuit mein aag lag gayi, mujhe bahut niraashaa ho rahi hai.",
+          "engine": "groq-fallback",
+          "slang": "Kya yaar",
+          "slang_tokens_added": 2
+        },
+        {
+          "speaker": "RIY",
+          "applied": false,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "ASSERT_POSITIVE",
+          "reason": "All gates passed",
+          "editor_note": "kept neutral (abstained, groq:judge:3, groq:judge:3,meaning, groq:judge:3)",
+          "editor_rejects": [
+            {
+              "why": "abstained",
+              "text": "Chinta mat karo, Arav."
+            },
+            {
+              "why": "groq:judge:3",
+              "text": "Chinta mat karo, Arav, sahi hai"
+            },
+            {
+              "why": "groq:judge:3,meaning",
+              "text": "Chinta mat karo, Arav, sahi hai"
+            },
+            {
+              "why": "groq:judge:3",
+              "text": "Chinta mat karo, Arav, sahi hai"
+            }
+          ]
+        },
+        {
+          "speaker": "ARAV",
+          "applied": true,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "CASUAL_ASSERTION",
+          "reason": "All gates passed",
+          "edited_clause": "hum zaroor safal honge.",
+          "engine": "groq-fallback",
+          "slang": "yaar",
+          "slang_tokens_added": 1
+        }
+      ],
+      "events": {
+        "scene_id": "scene_02",
+        "key_events": [
+          "Arav and Riy decide to build a small robot together.",
+          "Technical difficulties arise when the robot's circuit catches fire one evening.",
+          "Arav expresses frustration about the failed effort.",
+          "Riy comforts Arav, urging him not to worry and promising another attempt."
+        ],
+        "characters": [
+          "Arav",
+          "Riy"
+        ],
+        "scene_goal": "Introduce a setback that tests the protagonists' resolve and reinforces their determination to succeed.",
+        "location": "workshop",
+        "narrative_link": "Following the establishment of their close friendship and joint ambition to compete in the science fair, Arav and Riy now face a technical setback while building their robot.",
+        "pronoun_map": {
+          "mainne": "Arav",
+          "use": "Arav"
+        }
+      }
+    },
+    {
+      "scene_id": "scene_03",
+      "dialogue": "ARAV: Dadi, aaj raat ko aapke paas aane ka maksad yeh tha ki main aapko sab kuch bataun, jo abhi tak mere dil mein tha.\nDAADI: Beta, har mushkil ka samna dhairya se karo, aur mehnat kabhi na chhodo; waqt ke saath sab theek ho jayega, Solid.\nARAV: Aapki baaton se mujhe nayi himmat mil gayi hai, ab main phir se aage badhne ki taiyari karunga.",
+      "decisions": [
+        {
+          "speaker": "ARAV",
+          "applied": false,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "ASSERT_POSITIVE",
+          "reason": "All gates passed",
+          "editor_note": "kept neutral (off-list, groq:judge:2,meaning, groq:judge:2,meaning, groq:judge:2,meaning)",
+          "editor_rejects": [
+            {
+              "why": "off-list",
+              "text": "re, jo abhi tak mere dil mein tha."
+            },
+            {
+              "why": "groq:judge:2,meaning",
+              "text": "jo abhi tak mere dil mein tha, full aag"
+            },
+            {
+              "why": "groq:judge:2,meaning",
+              "text": "jo abhi tak mere dil mein tha, full aag"
+            },
+            {
+              "why": "groq:judge:2,meaning",
+              "text": "jo abhi tak mere dil mein tha, vibe hai"
+            }
+          ]
+        },
+        {
+          "speaker": "DAADI",
+          "applied": true,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "ASSERT_POSITIVE",
+          "reason": "All gates passed",
+          "edited_clause": "waqt ke saath sab theek ho jayega.",
+          "engine": "groq-fallback",
+          "slang": "Solid",
+          "slang_tokens_added": 1
+        },
+        {
+          "speaker": "ARAV",
+          "applied": false,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "CASUAL_ASSERTION",
+          "reason": "All gates passed",
+          "editor_note": "kept neutral (judge:3, groq:judge:3, groq:judge:3, groq:judge:3)",
+          "editor_rejects": [
+            {
+              "why": "judge:3",
+              "text": "ab main toh phir se aage badhne ka game on hai."
+            },
+            {
+              "why": "groq:judge:3",
+              "text": "ab main phir se aage badhne ki taiyari karunga, bomb"
+            },
+            {
+              "why": "groq:judge:3",
+              "text": "ab main phir se aage badhne ki taiyari karunga, bomb"
+            },
+            {
+              "why": "groq:judge:3",
+              "text": "ab main phir se aage badhne ki taiyari karunga, bomb"
+            }
+          ]
+        }
+      ],
+      "events": {
+        "scene_id": "scene_03",
+        "key_events": [
+          "Arav goes to his grandmother's house at night and confides everything to her.",
+          "The grandmother, the eldest family member, gently comforts Arav and advises him to be patient and keep working hard.",
+          "Arav gains new courage from his grandmother's words."
+        ],
+        "characters": [
+          "Arav"
+        ],
+        "scene_goal": "Arav receives emotional support and renewed determination to overcome his setback.",
+        "location": "Grandmother's house",
+        "narrative_link": "Following the setback that tested the protagonists' resolve, Arav now seeks counsel from his grandmother.",
+        "pronoun_map": {}
+      }
+    },
+    {
+      "scene_id": "scene_04",
+      "dialogue": "SHARM: Arav, main sab projects dekh raha hoon; yeh robot kaise bana aur iska asli prayog kya hai?\nARAV: Maine microcontroller, sensors aur recycled parts ka upyog karke isse banaya hai; iska mukhya kaam environment monitoring aur data collection hai.\nSHARM: Tumhari mehnat yahan spasht dikh rahi hai, aur iska design bhi prashansaniya hai.",
+      "decisions": [
+        {
+          "speaker": "SHARM",
+          "applied": false,
+          "go": false,
+          "gate_stopped": 1,
+          "intent": null,
+          "reason": "Speaker 'SHARM' is elder/authority or slang_level=0"
+        },
+        {
+          "speaker": "ARAV",
+          "applied": false,
+          "go": false,
+          "gate_stopped": 2,
+          "intent": "INFORM_NEUTRAL",
+          "reason": "Intent 'INFORM_NEUTRAL' does not permit slang"
+        },
+        {
+          "speaker": "SHARM",
+          "applied": false,
+          "go": false,
+          "gate_stopped": 1,
+          "intent": null,
+          "reason": "Speaker 'SHARM' is elder/authority or slang_level=0"
+        }
+      ],
+      "events": {
+        "scene_id": "scene_04",
+        "key_events": [
+          "Teacher Sharm is checking all projects at the upcoming science fair.",
+          "Sharm goes to meet his friend Arav.",
+          "Sharm asks Arav how he built the robot and what its real use is.",
+          "Arav calmly answers every question.",
+          "Sharm nods and says Arav's hard work is clearly visible."
+        ],
+        "characters": [
+          "Sharm",
+          "Arav"
+        ],
+        "scene_goal": "Sharm evaluates Arav's robot, confirming its value and showcasing Arav's competence after his renewed determination.",
+        "location": "Science fair venue / meeting place where Sharm visits Arav",
+        "narrative_link": "Following Arav receiving emotional support and renewed determination, Arav now demonstrates his robot to Teacher Sharm who evaluates his work.",
+        "pronoun_map": {
+          "unhone": "Sharm",
+          "tumane": "Arav"
+        }
+      }
+    },
+    {
+      "scene_id": "scene_05",
+      "dialogue": "ARAV: Result aaya hai, hum toh sab solid jeet gaye hain!\nRIY: Sach mein? Yeh to bahut achha hai, Dadi ko dhanyavaad, unke bina yeh mumkin nahi tha.",
+      "decisions": [
+        {
+          "speaker": "ARAV",
+          "applied": true,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "ASSERT_POSITIVE",
+          "reason": "All gates passed",
+          "edited_clause": "Result aaya hai, hum jeet gaye hain!",
+          "engine": "qwen-lora",
+          "slang": "solid",
+          "slang_tokens_added": 3
+        },
+        {
+          "speaker": "RIY",
+          "applied": false,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "ASSERT_POSITIVE",
+          "reason": "respectful/grateful line — slang skipped"
+        }
+      ],
+      "events": {
+        "scene_id": "scene_05",
+        "key_events": [
+          "The competition results are announced and Arav and Riy learn they have won.",
+          "Riy exclaims with joy, expressing disbelief at the victory.",
+          "Arav smiles and recalls having predicted their success.",
+          "Both friends celebrate their win that evening and thank their grandmother for her encouragement."
+        ],
+        "characters": [
+          "Arav",
+          "Riy"
+        ],
+        "scene_goal": "To depict the protagonists' triumph and reinforce their bond while acknowledging the supportive role of their grandmother.",
+        "location": "unspecified",
+        "narrative_link": "Following Sharm's evaluation of Arav's robot, Arav now celebrates the competition win with Riy.",
+        "pronoun_map": {}
+      }
+    }
+  ],
+  "comparison": [
+    {
+      "scene_id": "scene_01",
+      "location": "school",
+      "lines": [
+        {
+          "speaker": "ARAV",
+          "neutral": "School ne science fair announce kiya hai, chalo hum kuch aisa banate hain jo sabko hairaan kar de aur jeet le.",
+          "slang": "School ne science fair announce kiya hai, chalo hum kuch aisa banate hain jo sabko hairaan kar de aur jeet le, Vibe hai.",
+          "slang_added": "Vibe hai",
+          "slang_applied": true,
+          "intent": "CASUAL_ASSERTION",
+          "gate_stopped": null,
+          "changed": true
+        },
+        {
+          "speaker": "RIY",
+          "neutral": "Yeh bahut accha idea hai, main turant shuru karne ko tayyar hoon.",
+          "slang": "Yeh kya mast accha idea hai, main turant shuru karne ko tayyar hoon.",
+          "slang_added": "kya mast",
+          "slang_applied": true,
+          "intent": "CASUAL_ASSERTION",
+          "gate_stopped": null,
+          "changed": true
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_02",
+      "location": "workshop",
+      "lines": [
+        {
+          "speaker": "ARAV",
+          "neutral": "Hum dono ne decide kiya tha ki ek chhota robot banayenge, lekin aaj raat circuit mein aag lag gayi, mujhe bahut niraashaa ho rahi hai.",
+          "slang": "Hum dono ne decide kiya tha ki ek chhota robot banayenge, lekin aaj raat circuit mein aag lag gayi, mujhe bahut niraashaa ho rahi hai, Kya yaar.",
+          "slang_added": "Kya yaar",
+          "slang_applied": true,
+          "intent": "ASSERT_FRUSTRATION",
+          "gate_stopped": null,
+          "changed": true
+        },
+        {
+          "speaker": "RIY",
+          "neutral": "Chinta mat karo, Arav. Yeh sirf ek choti si galti thi, hum isse seekh kar phir se try karenge.",
+          "slang": "Chinta mat karo, Arav. Yeh sirf ek choti si galti thi, hum isse seekh kar phir se try karenge.",
+          "slang_added": null,
+          "slang_applied": false,
+          "intent": "ASSERT_POSITIVE",
+          "gate_stopped": null,
+          "changed": false
+        },
+        {
+          "speaker": "ARAV",
+          "neutral": "Theek hai, main phir se mehnat karne ke liye taiyaar hoon; hum zaroor safal honge.",
+          "slang": "Theek hai, main phir se mehnat karne ke liye taiyaar hoon; hum zaroor safal honge, yaar.",
+          "slang_added": "yaar",
+          "slang_applied": true,
+          "intent": "CASUAL_ASSERTION",
+          "gate_stopped": null,
+          "changed": true
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_03",
+      "location": "Grandmother's house",
+      "lines": [
+        {
+          "speaker": "ARAV",
+          "neutral": "Dadi, aaj raat ko aapke paas aane ka maksad yeh tha ki main aapko sab kuch bataun, jo abhi tak mere dil mein tha.",
+          "slang": "Dadi, aaj raat ko aapke paas aane ka maksad yeh tha ki main aapko sab kuch bataun, jo abhi tak mere dil mein tha.",
+          "slang_added": null,
+          "slang_applied": false,
+          "intent": "ASSERT_POSITIVE",
+          "gate_stopped": null,
+          "changed": false
+        },
+        {
+          "speaker": "DAADI",
+          "neutral": "Beta, har mushkil ka samna dhairya se karo, aur mehnat kabhi na chhodo; waqt ke saath sab theek ho jayega.",
+          "slang": "Beta, har mushkil ka samna dhairya se karo, aur mehnat kabhi na chhodo; waqt ke saath sab theek ho jayega, Solid.",
+          "slang_added": "Solid",
+          "slang_applied": true,
+          "intent": "ASSERT_POSITIVE",
+          "gate_stopped": null,
+          "changed": true
+        },
+        {
+          "speaker": "ARAV",
+          "neutral": "Aapki baaton se mujhe nayi himmat mil gayi hai, ab main phir se aage badhne ki taiyari karunga.",
+          "slang": "Aapki baaton se mujhe nayi himmat mil gayi hai, ab main phir se aage badhne ki taiyari karunga.",
+          "slang_added": null,
+          "slang_applied": false,
+          "intent": "CASUAL_ASSERTION",
+          "gate_stopped": null,
+          "changed": false
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_04",
+      "location": "Science fair venue / meeting place where Sharm visits Arav",
+      "lines": [
+        {
+          "speaker": "SHARM",
+          "neutral": "Arav, main sab projects dekh raha hoon; yeh robot kaise bana aur iska asli prayog kya hai?",
+          "slang": "Arav, main sab projects dekh raha hoon; yeh robot kaise bana aur iska asli prayog kya hai?",
+          "slang_added": null,
+          "slang_applied": false,
+          "intent": null,
+          "gate_stopped": 1,
+          "changed": false
+        },
+        {
+          "speaker": "ARAV",
+          "neutral": "Maine microcontroller, sensors aur recycled parts ka upyog karke isse banaya hai; iska mukhya kaam environment monitoring aur data collection hai.",
+          "slang": "Maine microcontroller, sensors aur recycled parts ka upyog karke isse banaya hai; iska mukhya kaam environment monitoring aur data collection hai.",
+          "slang_added": null,
+          "slang_applied": false,
+          "intent": "INFORM_NEUTRAL",
+          "gate_stopped": 2,
+          "changed": false
+        },
+        {
+          "speaker": "SHARM",
+          "neutral": "Tumhari mehnat yahan spasht dikh rahi hai, aur iska design bhi prashansaniya hai.",
+          "slang": "Tumhari mehnat yahan spasht dikh rahi hai, aur iska design bhi prashansaniya hai.",
+          "slang_added": null,
+          "slang_applied": false,
+          "intent": null,
+          "gate_stopped": 1,
+          "changed": false
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_05",
+      "location": "unspecified",
+      "lines": [
+        {
+          "speaker": "ARAV",
+          "neutral": "Result aaya hai, hum jeet gaye hain!",
+          "slang": "Result aaya hai, hum toh sab solid jeet gaye hain!",
+          "slang_added": "solid",
+          "slang_applied": true,
+          "intent": "ASSERT_POSITIVE",
+          "gate_stopped": null,
+          "changed": true
+        },
+        {
+          "speaker": "RIY",
+          "neutral": "Sach mein? Yeh to bahut achha hai, Dadi ko dhanyavaad, unke bina yeh mumkin nahi tha.",
+          "slang": "Sach mein? Yeh to bahut achha hai, Dadi ko dhanyavaad, unke bina yeh mumkin nahi tha.",
+          "slang_added": null,
+          "slang_applied": false,
+          "intent": "ASSERT_POSITIVE",
+          "gate_stopped": null,
+          "changed": false
+        }
+      ]
+    }
+  ],
+  "final_script": "# HINGLISH SCREENPLAY\n\n## SCENE_01\n*Location: school*\n\nARAV: School ne science fair announce kiya hai, chalo hum kuch aisa banate hain jo sabko hairaan kar de aur jeet le, Vibe hai.\nRIY: Yeh kya mast accha idea hai, main turant shuru karne ko tayyar hoon.\n\n---\n\n## SCENE_02\n*Location: workshop*\n\nARAV: Hum dono ne decide kiya tha ki ek chhota robot banayenge, lekin aaj raat circuit mein aag lag gayi, mujhe bahut niraashaa ho rahi hai, Kya yaar.\nRIY: Chinta mat karo, Arav. Yeh sirf ek choti si galti thi, hum isse seekh kar phir se try karenge.\nARAV: Theek hai, main phir se mehnat karne ke liye taiyaar hoon; hum zaroor safal honge, yaar.\n\n---\n\n## SCENE_03\n*Location: Grandmother's house*\n\nARAV: Dadi, aaj raat ko aapke paas aane ka maksad yeh tha ki main aapko sab kuch bataun, jo abhi tak mere dil mein tha.\nDAADI: Beta, har mushkil ka samna dhairya se karo, aur mehnat kabhi na chhodo; waqt ke saath sab theek ho jayega, Solid.\nARAV: Aapki baaton se mujhe nayi himmat mil gayi hai, ab main phir se aage badhne ki taiyari karunga.\n\n---\n\n## SCENE_04\n*Location: Science fair venue / meeting place where Sharm visits Arav*\n\nSHARM: Arav, main sab projects dekh raha hoon; yeh robot kaise bana aur iska asli prayog kya hai?\nARAV: Maine microcontroller, sensors aur recycled parts ka upyog karke isse banaya hai; iska mukhya kaam environment monitoring aur data collection hai.\nSHARM: Tumhari mehnat yahan spasht dikh rahi hai, aur iska design bhi prashansaniya hai.\n\n---\n\n## SCENE_05\n*Location: unspecified*\n\nARAV: Result aaya hai, hum toh sab solid jeet gaye hain!\nRIY: Sach mein? Yeh to bahut achha hai, Dadi ko dhanyavaad, unke bina yeh mumkin nahi tha.\n\n---\n"
+}

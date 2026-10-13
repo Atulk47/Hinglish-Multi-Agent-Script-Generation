@@ -1,0 +1,35 @@
+{
+  "train": 1167,
+  "val": 58,
+  "abstain_rows": 105,
+  "abstain_share": 0.09,
+  "content_aware_none": 58,
+  "old_gold_rows": 383,
+  "mean_words": 15.1,
+  "share_ge14_words": 0.59,
+  "distinct_slangs_used": 59,
+  "top5_slangs": [
+    [
+      "badiya",
+      43
+    ],
+    [
+      "top class",
+      41
+    ],
+    [
+      "zabardast",
+      38
+    ],
+    [
+      "mast",
+      37
+    ],
+    [
+      "kamaal",
+      36
+    ]
+  ],
+  "eval_synth": 82,
+  "eval_real": 142
+}

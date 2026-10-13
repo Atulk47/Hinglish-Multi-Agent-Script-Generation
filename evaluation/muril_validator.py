@@ -107,9 +107,24 @@ class MuRILValidator:
             words = {w for w in re.findall(r"[a-z]+", ev.lower()) if w not in _STOPWORDS}
             if words and any(w in dl for w in words):
                 covered += 1
-        total = max(len(events or []), 1)
-        return {"recall": covered / total, "covered": covered,
-                "total": len(events or [])}
+        if not events:
+            # Nothing to check against (e.g. Agent 1 was rate-limited and returned no events
+            # for this scene). Recall is undefined, not 0 - reporting 0 made the redo loop
+            # fire EVENT_LOSS and re-run the slang editor for nothing (retrying can't fix it).
+            return {"recall": 1.0, "covered": 0, "total": 0}
+        total = len(events)
+        return {"recall": covered / total, "covered": covered, "total": total}
+
+    @staticmethod
+    def _count_eligible(decisions: list) -> int:
+        """Lines that passed ALL gates and were not deliberately skipped (grateful line,
+        failed upstream generation). Falls back to the old rule (everything except Gate-1
+        blocks) for traces written before decisions carried a "go" flag."""
+        if not any("go" in d for d in decisions):
+            return max(len(decisions) - sum(1 for d in decisions
+                                            if d.get("gate_stopped") == 1), 0)
+        return sum(1 for d in decisions
+                   if d.get("go") and "skipped" not in (d.get("reason") or "").lower())
 
     # ── Backward-compatible scalar check ───────────────────────────────
     def validate_scene(self, pass1_dialogue: str, pass2_dialogue: str,
@@ -178,10 +193,12 @@ class MuRILValidator:
         # Slang-coverage statistics from Agent 4's decisions.
         total_lines = len(decisions)
         applied = [d for d in decisions if d.get("applied")]
-        # Lines that were rejected at gate 1 (elder/authority/slang_level=0)
-        # can't ever get slang, so treat them as "not eligible".
-        gate1_blocked = sum(1 for d in decisions if d.get("gate_stopped") == 1)
-        eligible = max(total_lines - gate1_blocked, 0)
+        # "Eligible" = lines that genuinely COULD take slang. Previously only Gate-1 blocks
+        # were excluded, so a scene whose only peer line was blocked at Gate 2 (formal /
+        # informational intent) or deliberately skipped (grateful line) still counted as
+        # "eligible", got flagged NO_SLANG, and the redo loop then FORCED slang into a line
+        # the gates had correctly protected - at ~30 s per line with the local editor.
+        eligible = self._count_eligible(decisions)
         slang_lines = len(applied)
         slang_coverage = (slang_lines / eligible) if eligible > 0 else 0.0
 

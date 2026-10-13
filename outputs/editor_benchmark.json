@@ -1,0 +1,83 @@
+{
+  "stories": {
+    "library (story 1)": {
+      "eligible": 5,
+      "edited": 2,
+      "gate_blocked": 8,
+      "coverage": 0.4,
+      "engines": {
+        "groq-fallback": 2
+      },
+      "left_neutral_because": {
+        "judge": 2,
+        "meaning": 5,
+        "groq:judge:": 9,
+        "drift": 1
+      }
+    },
+    "himalaya (story 2)": {
+      "eligible": 0,
+      "edited": 0,
+      "gate_blocked": 15,
+      "coverage": null,
+      "engines": {},
+      "left_neutral_because": {}
+    },
+    "exhibition (story 3)": {
+      "eligible": 5,
+      "edited": 1,
+      "gate_blocked": 9,
+      "coverage": 0.2,
+      "engines": {
+        "groq-fallback": 1
+      },
+      "left_neutral_because": {
+        "judge": 1,
+        "meaning": 2,
+        "groq:judge:": 12,
+        "abstained": 2,
+        "off-list": 1
+      }
+    },
+    "hackathon (long story)": {
+      "eligible": 5,
+      "edited": 4,
+      "gate_blocked": 0,
+      "coverage": 0.8,
+      "engines": {
+        "groq-fallback": 4
+      },
+      "left_neutral_because": {
+        "already-casual": 1
+      }
+    },
+    "science fair (demo)": {
+      "eligible": 5,
+      "edited": 3,
+      "gate_blocked": 0,
+      "coverage": 0.6,
+      "engines": {
+        "qwen-lora": 3
+      },
+      "left_neutral_because": {
+        "judge": 1,
+        "meaning": 6,
+        "groq:judge:": 5,
+        "abstained": 1,
+        "groq:abstained": 1
+      }
+    }
+  },
+  "overall": {
+    "eligible": 20,
+    "edited": 10,
+    "coverage": 0.5,
+    "engines": {
+      "groq-fallback": 7,
+      "qwen-lora": 3
+    },
+    "groq_errors": 0,
+    "seconds": 873
+  },
+  "valid": true
+}
