@@ -35,6 +35,10 @@ SOCIAL_ROLE_KEYWORDS = {
     "peer": []   # default — no keywords needed
 }
 
+# Titles that make a NAME an authority figure ("Coach Varma"). Matched on the NAME only - never on the scene text, or one
+# mention of "koch" in a scene would turn every character in that scene into an authority.
+TITLE_WORDS = {"coach", "koch", "trainer"}
+
 NON_CHARACTER_WORDS = {
     # objects / places / groups
     "dayari", "diary", "kitab", "kitaben", "alamari", "nakshe", "nakshay",
@@ -101,7 +105,7 @@ class CharacterAnalyst:
                 return False
             # Kinship/role terms (e.g. an LLM writing "Grandfather" for दादाजी) are
             # valid characters even if the English word isn't in the Hindi text.
-            kinship = set(SOCIAL_ROLE_KEYWORDS["elder"]) | set(SOCIAL_ROLE_KEYWORDS["authority"])
+            kinship = set(SOCIAL_ROLE_KEYWORDS["elder"]) | set(SOCIAL_ROLE_KEYWORDS["authority"]) | TITLE_WORDS
             if token in kinship or core in kinship:
                 return True
             # Hallucination guard: otherwise the honorific-stripped name must appear
@@ -198,18 +202,27 @@ class CharacterAnalyst:
         # terms like "nana"/"bade"/"dad" otherwise match inside ordinary Hindi
         # verbs ("banana" = to make, "sunana" = to tell), which would wrongly flag
         # every character in such a scene as an elder.
-        text_lower = (name + " " + context_text).lower()
+        # BUG FIXED: the keywords used to be searched in the WHOLE scene text, so one mention of "Nani" in a scene turned every character of that
+        # scene into an elder (all slang blocked). A role now comes from the character's OWN name, or - for titles only (teacher, sir, coach, ji) -
+        # from the single word right before / after the name in the text ("adhyapak sharma", "sharma sir"). Kinship words (nani, dadi) count only
+        # when they ARE the name.
         role = "peer"   # default
+        name_toks = re.findall(r"[a-z]+", name.lower())
+        ctx = re.findall(r"[a-z]+", (context_text or "").lower())
+        adjacent = set()
+        for i, t in enumerate(ctx):
+            if len(t) >= 3 and t in name_toks:
+                adjacent.update(ctx[max(0, i - 1):i] + ctx[i + 1:i + 2])
 
-        def _has(role_type: str) -> bool:
-            return any(re.search(rf"\b{re.escape(kw)}\b", text_lower)
-                       for kw in SOCIAL_ROLE_KEYWORDS[role_type])
+        def _kw(role_type: str):
+            return {k.strip(".").lower() for k in SOCIAL_ROLE_KEYWORDS[role_type]}
 
-        # Check authority/elder before peer; honorifics win over the default.
-        for role_type in ("elder", "authority"):
-            if _has(role_type):
-                role = role_type
-                break
+        if _kw("elder") & set(name_toks):
+            role = "elder"
+        elif _kw("authority") & (set(name_toks) | adjacent):
+            role = "authority"
+        if role == "peer" and any(w in TITLE_WORDS for w in re.findall(r"[a-z]+", name.lower())):
+            role = "authority"
 
         # Slang level: elders/authority → 0, peers → 5 (tunable later)
         slang_level = 0 if role in ["elder", "authority"] else 5

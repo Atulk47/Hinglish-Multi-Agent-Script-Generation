@@ -50,7 +50,7 @@ SLANG_LEXICON_PATH  = "data/felix_dataset/slang_lexicon.json"
 QWEN_BASE_MODEL     = "Qwen/Qwen2.5-1.5B-Instruct"       # must match what was trained
 # the downloaded LoRA adapter; override per-run to A/B two adapters without editing code:
 #   QWEN_LORA_PATH=./models/slang-editor-lora-v1 python run_pipeline.py ...
-QWEN_LORA_PATH      = os.getenv("QWEN_LORA_PATH", "./models/slang-editor-lora-v4")
+QWEN_LORA_PATH      = os.getenv("QWEN_LORA_PATH", "./models/slang-editor-lora-v5")
 # Precision the Qwen base is loaded in on CPU: "auto" (default), "float32" or "bfloat16".
 #   float32  ~6 GB, fast.   bfloat16 ~3 GB but ~25 s/line on a CPU without native bf16.
 # "auto" = float32 if >=7.5 GB RAM is free when the editor loads, else bfloat16 (so it fits
@@ -153,3 +153,42 @@ QWEN_GATE = os.getenv("QWEN_GATE", "rules")
 QWEN_MERGE = os.getenv("QWEN_MERGE", "1") not in ("0", "false", "False")      # merge LoRA into the weights
 QWEN_LOOKUP = int(os.getenv("QWEN_LOOKUP", "10"))   # prompt-lookup decoding draft length (0 = off)
 QWEN_SLOT_PRECHECK = os.getenv("QWEN_SLOT_PRECHECK", "1") not in ("0", "false", "False")   # skip generations the gate would reject anyway
+
+# ── variety / coverage (no retraining) ────────────────────────────────────────────────────────────────────────
+SLANG_FILLER_ROUTE = os.getenv("SLANG_FILLER_ROUTE", "1") not in ("0", "false", "False")   # fillers on lines with no word to replace
+QWEN_SENTENCES_PER_LINE = int(os.getenv("QWEN_SENTENCES_PER_LINE", "2"))                  # try the 2 best sentences of a line
+QWEN_SAMPLES = int(os.getenv("QWEN_SAMPLES", "0"))   # sampled second chance for mood lines (0 = off; see rerun results)
+
+# Agent 3 Pass-1 style: "default" (stiff neutral) or "slotrich" (everyday spoken, plain feeling words, still NO slang).
+AGENT3_STYLE = os.getenv("AGENT3_STYLE", "slotrich")
+
+# ── Cloud LLM routing (llm_client.py) ──────────────────────────────────────────────────────────────────────
+# "auto" = OpenRouter first (needs OPENROUTER_API_KEY), Groq as the automatic fallback; "groq" = Groq first.
+LLM_BACKEND = os.getenv("LLM_BACKEND", "auto")
+OPENROUTER_MODELS = {                                    # one model per task
+    "extract":  os.getenv("OR_MODEL_EXTRACT",  "openai/gpt-oss-120b"),        # Agent 1: structured event JSON
+    "dialogue": os.getenv("OR_MODEL_DIALOGUE", "anthropic/claude-haiku-5.5"),  # Agent 3: natural Hinglish dialogue
+    "small":    os.getenv("OR_MODEL_SMALL",    "openai/gpt-oss-20b"),         # intent / tone / shortlist (tiny calls)
+}
+LLM_COST_CAP_USD = float(os.getenv("LLM_COST_CAP_USD", "0.50"))   # per process; beyond it OpenRouter is skipped (-> Groq)
+OPENROUTER_PROVIDER_SORT = os.getenv("OPENROUTER_PROVIDER_SORT", "throughput")   # "" = OpenRouter default routing (cheaper, ~10x slower)
+SLANG_SLOT_SHORTLIST = os.getenv("SLANG_SLOT_SHORTLIST", "1") not in ("0", "false", "False")   # mood shortlist built from the sentence's own slot
+QWEN_MOOD_RETRY = os.getenv("QWEN_MOOD_RETRY", "1") not in ("0", "false", "False")              # one retry with 3 slot slangs after an abstention
+AGENT3_RICH = os.getenv("AGENT3_RICH", "1") not in ("0", "false", "False")   # Agent 3 sees the full cast + the original scene text
+AGENT3_MAX_LINES = int(os.getenv("AGENT3_MAX_LINES", "6"))
+PERSONA_USE_LLM = os.getenv("PERSONA_USE_LLM", "1") not in ("0", "false", "False")   # Persona Agent: LLM + rules (off = rules only)
+# --- 4-bit/5-bit GGUF editor (llama.cpp): same trained model, ~8x faster on CPU. Made by tools/export_gguf.py. -------------------
+# Measured on held-out rows vs the full-precision model: Q8_0 97.8% / Q5_K_M 96.7% / Q4_K_M 94.4% identical edit-vs-abstain decisions;
+# gate-valid edits equal for all three. Q5_K_M is the default (best balance); set QWEN_BACKEND=hf to use the PyTorch model.
+QWEN_BACKEND = os.getenv("QWEN_BACKEND", "auto")                 # auto | gguf | hf
+QWEN_GGUF_PATH = os.getenv("QWEN_GGUF_PATH", "./models/gguf/slang-editor-v5-Q5_K_M.gguf")
+AGENT3_CRITIC = os.getenv("AGENT3_CRITIC", "1") not in ("0", "false", "False")      # Fidelity Critic after Agent 3 (regenerate on clear problems)
+AGENT3_FIX_ATTEMPTS = int(os.getenv("AGENT3_FIX_ATTEMPTS", "2"))
+AGENT3_PARALLEL = int(os.getenv("AGENT3_PARALLEL", "4"))                           # scenes written / checked concurrently
+AUDIO_TTS = os.getenv("AUDIO_TTS", "edge")                              # edge (free, default) | gpt (Studio, opt-in, costs) | auto (= gpt when a key exists)
+AUDIO_GPT_MODEL = os.getenv("AUDIO_GPT_MODEL", "openai/gpt-audio")  # "Studio" voices: blind listener preferred the FULL model (mini was worse than the free voices); ~$0.1 per minute of speech
+# Maya 2 Native voices (needs a GPU: pre-rendered clips in outputs/_tts_cache/maya, or a live server such as notebooks/serve_maya_kaggle.py)
+AUDIO_MAYA_URL = os.getenv("MAYA_URL", "")                         # e.g. https://xxxx.trycloudflare.com ; empty = pre-rendered clips only
+AUDIO_MAYA_TAGS = os.getenv("AUDIO_MAYA_TAGS", "0") in ("1", "true", "True")      # inline [excited]/[sad]... tags: documented as best effort, off by default
+AGENT1_PARALLEL = int(os.getenv("AGENT1_PARALLEL", "4"))                          # scenes extracted concurrently (links filled in afterwards)
+PIPELINE_OVERLAP = os.getenv("PIPELINE_OVERLAP", "1") not in ("0", "false", "False")  # slang editor starts on scene 1 while later scenes are still being written

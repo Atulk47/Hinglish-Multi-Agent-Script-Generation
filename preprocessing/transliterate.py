@@ -16,6 +16,8 @@ class HindiTransliterator:
     ITRANS_TO_CASUAL = [
         (r'\.m', 'n'),      # anusvara ं  -> n   (mai.m -> main)
         (r'ँ', 'n'),         # chandrabindu (raw Devanagari leak) -> n
+        (r'aa(?![A-Za-z.])', '\u00a7'),   # word-FINAL long aa is protected (marker) so schwa deletion cannot eat it:
+                                          # riyaa -> riya, sharmaa -> sharma, meeraa -> mira, raadhaa -> radha
         (r'aa', 'a'),       # long aa -> a       (kyaa -> kya)
         (r'ii', 'i'),       # long ii -> i       (Thiika -> Thika)
         (r'uu', 'u'),       # long uu -> u       (huu -> hu)
@@ -37,6 +39,8 @@ class HindiTransliterator:
     }
 
     def transliterate_sentence(self, devanagari_text: str) -> str:
+        devanagari_text = re.sub(r'(?<![\u0900-\u097F])\u0938\u0930(?![\u0900-\u097F])', '\u0938\u0930\u094d', devanagari_text)  # "सर" -> sar
+        devanagari_text = re.sub(r'(?<![ऀ-ॿ])मा(?:ँ|ं)(?![ऀ-ॿ])', 'mummy', devanagari_text)  # "माँ" -> mummy (not "man"); also matches KINSHIP_NAMES
         sentences = sentence_tokenize.sentence_split(devanagari_text, lang='hi')
 
         romanized = []
@@ -52,6 +56,7 @@ class HindiTransliterator:
 
             # Step 4: terminal schwa deletion (drop trailing 'a' after consonants)
             roman = self._apply_schwa_deletion(roman)
+            roman = roman.replace('\u00a7', 'a')          # restore the protected word-final long aa
 
             # Step 5: phonetic smoothing (specific word fixes)
             roman = self._phonetic_smooth(roman)
@@ -95,15 +100,15 @@ class HindiTransliterator:
         result = []
         for word in words:
             # Separate trailing punctuation so the check/regex works on the word itself
-            m = re.match(r'^(.*?)([\.\,\!\?\;\:]*)$', word)
-            core, punct = m.group(1), m.group(2)
+            m = re.match(r'^(["\'“‘(]*)(.*?)([\.\,\!\?\;\:"\'”’)]*)$', word, re.DOTALL)
+            lead, core, punct = m.group(1), m.group(2), m.group(3)   # a leading quote must not hide the word
 
             if core.lower() in self.SCHWA_EXCEPTIONS:
-                result.append(core + punct)
+                result.append(lead + core + punct)
                 continue
 
             new_core = re.sub(r'^([a-zA-Z]*[bcdfghjklmnpqrstvwxyz])a$', r'\1', core)
-            result.append(new_core + punct)
+            result.append(lead + new_core + punct)
         return ' '.join(result)
 
     def _phonetic_smooth(self, text: str) -> str:

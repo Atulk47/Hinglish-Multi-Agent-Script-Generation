@@ -85,6 +85,13 @@ class MuRILValidator:
     def _embed(self, text: str) -> np.ndarray:
         if not text or not text.strip():
             text = "."
+        cache = self.__dict__.setdefault("_embed_cache", {})
+        if text in cache:                                     # unchanged lines are identical in Pass 1 and Pass 2: embed once
+            return cache[text]
+        cache[text] = v = self._embed_uncached(text)
+        return v
+
+    def _embed_uncached(self, text: str) -> np.ndarray:
         inputs = self.tokenizer(text, return_tensors="pt", truncation=True,
                                 max_length=256, padding=True)
         with torch.no_grad():

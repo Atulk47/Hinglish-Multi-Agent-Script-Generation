@@ -33,7 +33,11 @@ def main():
                 print(f"\n[{sc_s['scene_id']}] {dec['speaker']}  (+{dec.get('slang')}, {dec.get('engine')})")
                 print("  neutral:", ln_n.split(":", 1)[-1].strip())
                 print("  slang  :", ln_s.split(":", 1)[-1].strip())
-    print(f"\n{n_changed} line(s) changed | stats: {sr.stats}")
+    from collections import Counter
+    used = Counter(d.get("slang") for sc in slang for d in sc["decisions"] if d.get("applied"))
+    fill = {"yaar", "bhai", "bro", "boss", "abey", "arre", "chill", "kasam se"}
+    nf = sum(v for k, v in used.items() if k in fill)
+    print(f"\n{n_changed} line(s) changed | distinct slangs {len(used)} | filler share {nf}/{max(n_changed, 1)} | {dict(used)}")
     if args.out:
         json.dump({"slang_script": slang}, open(args.out, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
         print("saved", args.out)

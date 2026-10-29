@@ -40,3 +40,9 @@ models/slang-editor-lora-v*/*
 !models/slang-editor-lora-v*/prompt_version.txt
 kaggle_v*/old_adapter/
 claude_project_context.txt
+
+# generated audio, TTS cache and quantized models (large; rebuild with tools/export_gguf.py)
+models/gguf/
+outputs/_tts_cache/
+outputs/_audio_try/
+outputs/*_audio/*.wav

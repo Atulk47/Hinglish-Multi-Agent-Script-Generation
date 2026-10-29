@@ -30,14 +30,14 @@ Line: {text}
 Label:"""
 
     def __init__(self):
-        from groq import Groq
         from dotenv import load_dotenv
         load_dotenv()
         import config
+        from llm_client import make_client                # OpenRouter first, Groq fallback
         self._config = config
-        self.client = Groq(api_key=os.environ["GROQ_API_KEY"])
+        self.client = make_client("small")
         self._cache = {}
-        print(f"Intent classifier: Groq ({config.GROQ_MODEL}) backend.")
+        print("Intent classifier: OpenRouter-first LLM client.")
 
     def classify(self, text: str) -> str:
         if not text or not text.strip():

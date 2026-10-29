@@ -67,6 +67,9 @@ def test_whole_pipeline_runs_offline():
     pl.intent_clf = _StubClf()
     pl.agent4.intent_clf = pl.intent_clf
     pl.agent4.groq_client = FakeGroq()
+    pl.persona_agent.client = None            # offline: the Persona Agent falls back to its rule-based mode
+    pl.segmenter.use_llm = False              # offline: signal-based scene segmentation only
+    pl.critic = None                          # offline: no fidelity-critic LLM call
 
     story = open(STORY, encoding="utf-8").read()
     final = pl.run(story)

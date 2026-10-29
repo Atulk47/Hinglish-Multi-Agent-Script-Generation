@@ -142,13 +142,26 @@ def candidate_units(utt: str, lo: int = 4, hi: int = 24):
 # ── the runtime drift guard (identical logic to SlangRewriter._keeps_meaning) ───────────────────
 def keeps_meaning(neutral: str, output: str) -> bool:
     nlist = re.findall(r"[a-z]+", neutral.lower())
-    nwords = {w for w in nlist if len(w) >= 3}
+    nwords = {w for w in nlist if len(w) >= 3}              # content words
     if not nwords:
         return True
-    owords = set(re.findall(r"[a-z]+", output.lower()))
+    blist = re.findall(r"[a-z]+", output.lower())
+    owords = set(blist)
     dropped = len(nwords - owords)
     added = len(owords - set(nlist))
     allowed_drop = 2 if len(nwords) >= 10 else (len(nwords) + 1) // 2
+    # PHRASE SWAP: when every difference sits inside ONE contiguous span of <= 5 words ("bahut dar lag raha hai" ->
+    # "fatti padi hai") the whole span may be replaced, however long the sentence is. The rule gate decides WHAT may be
+    # swapped; this guard only stops edits that scatter changes over the sentence.
+    p = 0
+    while p < min(len(nlist), len(blist)) and nlist[p] == blist[p]:
+        p += 1
+    s = 0
+    while s < min(len(nlist), len(blist)) - p and nlist[-1 - s] == blist[-1 - s]:
+        s += 1
+    span = nlist[p:len(nlist) - s]
+    if 0 < len(span) <= 5:
+        allowed_drop = max(allowed_drop, len({w for w in span if len(w) >= 3}))
     return dropped <= allowed_drop and added <= 7
 
 

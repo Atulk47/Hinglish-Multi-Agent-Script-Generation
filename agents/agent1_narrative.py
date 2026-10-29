@@ -56,10 +56,10 @@ class NarrativeAnalyst:
                                temperature=0.1)
 
         elif self.backend == "groq":
-            from groq import Groq
             from dotenv import load_dotenv
             load_dotenv()
-            self.groq_client = Groq(api_key=os.environ["GROQ_API_KEY"])
+            from llm_client import make_client          # OpenRouter first, Groq fallback
+            self.groq_client = make_client("extract")
 
         elif self.backend == "hf":
             from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
@@ -75,7 +75,109 @@ class NarrativeAnalyst:
         else:
             raise ValueError(f"Unknown LLM backend: {self.backend}")
 
+    # Kinship words / titles that are used AS A NAME ("Dadi", "Coach"). The LLM sometimes drops them as "generic roles"
+    # (scene 3 of the science-fair story lost Dadi), which then makes Agent 3 invent a "Narrator" speaker.
+    KINSHIP_NAMES = {"dadi": "Dadi", "dadaji": "Dadaji", "dada": "Dada", "dadiji": "Dadiji", "nani": "Nani",
+                     "naniji": "Naniji", "nana": "Nana", "nanaji": "Nanaji", "mummy": "Mummy", "papa": "Papa",
+                     "pitaji": "Pitaji", "maa": "Maa", "amma": "Amma", "babuji": "Babuji", "chacha": "Chacha",
+                     "chachi": "Chachi", "mausi": "Mausi", "bua": "Bua", "coach": "Coach", "koch": "Coach", "principal": "Principal"}
+
+    @classmethod
+    def _add_kinship(cls, characters: list, text: str) -> list:
+        """Add kinship/title names that occur in the scene text but are missing from the LLM's character list."""
+        chars = list(characters or [])
+        have = " ".join(c.lower() for c in chars)
+        for term, canon in cls.KINSHIP_NAMES.items():
+            if re.search(r"\b" + term + r"\b", text.lower()) and term not in have and canon.lower() not in have:
+                chars.append(canon)
+        return chars
+
+    @staticmethod
+    def _canonicalize(events: List[dict]) -> None:
+        """Unify name variants across scenes ("Riy"/"Riya", "Sharm"/"Sharma"): a name that is a prefix of a longer
+        name (<=2 extra letters, shorter >=3 letters) is replaced by the longer one everywhere (characters + pronoun_map)."""
+        from collections import Counter
+        # pass 0: transliteration artefacts and non-people. "Koch Varma" -> "Coach Varma"; "Tim"/"Kap" (team, cup) are objects
+        NON_PEOPLE = {"tim", "team", "kap", "cup", "skul", "school", "maich", "match", "stadium", "maidan", "robot"}
+        for e in events:
+            fixed = []
+            for n in (e.get("characters") or []):
+                if not isinstance(n, str) or n.lower() in NON_PEOPLE:
+                    continue
+                fixed.append(re.sub(r"^Koch\b", "Coach", n))
+            e["characters"] = fixed
+            pm = e.get("pronoun_map")
+            if isinstance(pm, dict):
+                e["pronoun_map"] = {k: (re.sub(r"^Koch\b", "Coach", v) if isinstance(v, str) else v) for k, v in pm.items()}
+        # pass 0b: a bare word that is part of exactly one multi-word name ("Varma", "Coach" in "Coach Varma") is that person
+        multi = {n for e in events for n in e["characters"] if " " in n}
+        alias = {}
+        for e in events:
+            for n in e["characters"]:
+                if " " not in n:
+                    hits = [m for m in multi if n.lower() in m.lower().split()]
+                    if len(hits) == 1:
+                        alias[n] = hits[0]
+        for e in events:
+            e["characters"] = [alias.get(n, n) for n in e["characters"]]
+            pm = e.get("pronoun_map")
+            if isinstance(pm, dict):
+                e["pronoun_map"] = {k: alias.get(v, v) if isinstance(v, str) else v for k, v in pm.items()}
+        count = Counter(n for e in events for n in (e.get("characters") or []) if isinstance(n, str))
+        reps, canon = [], {}
+        # the MORE FREQUENT spelling wins (Rohan x9 beats a stray Rohana); ties go to the longer one (Riya beats Riy)
+        for n in sorted(count, key=lambda x: (-count[x], -len(x), x)):
+            low = n.lower()
+
+            def _variant(r, low=low):
+                a, b = sorted((low, r.lower()), key=len)
+                return a == b or (len(a) >= 3 and b.startswith(a) and len(b) - len(a) <= 2)
+            hit = next((r for r in reps if _variant(r)), None)
+            if hit is None:
+                reps.append(n)
+                canon[n] = n
+            else:
+                canon[n] = hit
+        for e in events:
+            seen, out = set(), []
+            for n in (e.get("characters") or []):
+                c = canon.get(n, n)
+                if c.lower() not in seen:
+                    seen.add(c.lower())
+                    out.append(c)
+            e["characters"] = out
+            pm = e.get("pronoun_map")
+            if isinstance(pm, dict):
+                e["pronoun_map"] = {k: canon.get(v, v) if isinstance(v, str) else v for k, v in pm.items()}
+
+    def _extract_parallel(self, scene_chunks: List[dict], workers: int) -> List[dict]:
+        """Scenes are independent except for the 'previous scene' hint, so they are extracted concurrently and the narrative links are
+        filled in afterwards from the previous scene's goal (5-10x less waiting than one call after another)."""
+        from concurrent.futures import ThreadPoolExecutor
+
+        def one(chunk):
+            prompt = NARRATIVE_ANALYST_PROMPT.format(scene_id=chunk["scene_id"], story_text=chunk["text"],
+                                                     previous_scene_summary="(see the story text; the previous scene is not needed here)")
+            events = self._parse_json_output(self._call_llm(prompt), chunk["scene_id"])
+            ev = (events or [{"scene_id": chunk["scene_id"], "key_events": [], "characters": [], "scene_goal": "Unknown",
+                              "location": "Unknown", "narrative_link": "", "pronoun_map": {}}])[0]
+            ev["scene_id"] = chunk["scene_id"]
+            ev["characters"] = self._add_kinship(ev.get("characters") or [], chunk["text"])
+            return ev
+        with ThreadPoolExecutor(max_workers=workers) as ex:
+            all_events = list(ex.map(one, scene_chunks))
+        prev = "This is the first scene."
+        for ev in all_events:
+            ev["narrative_link"] = (f"Following the previous scene ({prev}), " + str(ev.get("narrative_link") or "").split(",", 1)[-1].strip()
+                                    if prev != "This is the first scene." else str(ev.get("narrative_link") or "This is the first scene."))
+            prev = ev.get("scene_goal") or prev
+        self._canonicalize(all_events)
+        return all_events
+
     def extract_event_chain(self, scene_chunks: List[dict],previous_summary: str = "This is the first scene.") -> List[dict]:
+        workers = int(getattr(config, "AGENT1_PARALLEL", 4))
+        if workers > 1 and len(scene_chunks) > 2:
+            return self._extract_parallel(scene_chunks, workers)
         all_events = []
 
         for chunk in scene_chunks:
@@ -105,10 +207,12 @@ class NarrativeAnalyst:
             # if multiple were returned despite instructions
             first_event = events[0]
             first_event["scene_id"] = chunk["scene_id"]
+            first_event["characters"] = self._add_kinship(first_event.get("characters") or [], chunk["text"])
             all_events.append(first_event)
 
             previous_summary = first_event.get("scene_goal", previous_summary)
 
+        self._canonicalize(all_events)
         return all_events
 
     def _call_llm(self, prompt: str) -> str:

@@ -27,9 +27,12 @@ import config
 from memory.scratchpad import PipelineState, Scratchpad
 from preprocessing.transliterate import HindiTransliterator
 from preprocessing.chunker import ProseChunker
+from preprocessing.segmenter import SceneSegmenter
 from agents.agent1_narrative import NarrativeAnalyst
 from agents.agent2_character import CharacterAnalyst
+from agents.agent2b_persona import PersonaAgent, apply_persona
 from agents.agent3_synthesizer import DialogueSynthesizer
+from agents.agent3b_critic import FidelityCritic
 from agents.agent4_slang_rewriter import SlangRewriter
 from agents.intent_classifier import GroqIntentClassifier
 from evaluation.muril_validator import MuRILValidator
@@ -47,9 +50,13 @@ class HinglishPipeline:
         print("Initializing pipeline components...")
         self.transliterator = HindiTransliterator()
         self.chunker = ProseChunker()
+        self.segmenter = SceneSegmenter()                         # signals + pauses (voice input) + LLM referee
+        self._pauses = None                                       # per sentence gap, set by run(...) for voice input
         self.agent1 = NarrativeAnalyst(llm_backend="groq")
         self.agent2 = CharacterAnalyst(self.scratchpad)          # loads NER + MuRIL
+        self.persona_agent = PersonaAgent()                       # gender, relationships, per-scene emotion
         self.agent3 = DialogueSynthesizer(llm_backend="groq")
+        self.critic = FidelityCritic()                            # checks Agent 3 against the author's scene + story bible
         self.intent_clf = GroqIntentClassifier()                  # Groq-first (no BART-MNLI)
         self.agent4 = SlangRewriter(self.scratchpad, self.intent_clf)
         # Reuse Agent 2's MuRIL weights for the validator (saves ~900MB RAM)
@@ -92,8 +99,20 @@ class HinglishPipeline:
 
     # ── Nodes ──────────────────────────────────────────────────────────
     def _preprocess(self, state: PipelineState) -> PipelineState:
-        self._log("── [1/6] Preprocess: transliterate + chunk ──")
-        paragraphs = [p.strip() for p in state["raw_hindi_text"].split("\n\n") if p.strip()]
+        self._log("── [1/6] Preprocess: segment scenes + transliterate ──")
+        try:
+            seg = self.segmenter.segment(state["raw_hindi_text"], pauses=self._pauses)
+            paragraphs = [s for s in seg.scenes if s.strip()]
+            self.scratchpad.write("segmentation", {"method": seg.method, "starts": seg.starts, "sentences": len(seg.sentences),
+                                                   "notes": seg.notes})
+            self._log(f"   scene segmenter: {seg.method} -> {len(paragraphs)} scene(s) from {len(seg.sentences)} sentences"
+                      + (f" ({seg.notes})" if seg.notes else ""))
+            if not paragraphs:
+                raise ValueError("segmenter returned no scenes")
+        except Exception as e:                                    # never lose the run over segmentation: use the paragraphs
+            self._log(f"   scene segmenter failed ({str(e)[:80]}); falling back to blank-line paragraphs")
+            paragraphs = [p.strip() for p in state["raw_hindi_text"].split("\n\n") if p.strip()] or [state["raw_hindi_text"]]
+        self.scratchpad.write("deva_scenes", paragraphs)
         romanized = "\n\n".join(
             self.transliterator.transliterate_sentence(p) for p in paragraphs)
         chunks = self.chunker.chunk(romanized)
@@ -116,32 +135,131 @@ class HinglishPipeline:
 
     def _build_characters(self, state: PipelineState) -> PipelineState:
         self._log("── [3/6] Agent 2: character profiles (NER + MuRIL) ──")
-        profiles = self.agent2.build_profiles(state["scene_chunks"], state["event_chain"])
-        # advance emotion/stress state scene by scene
-        for events in state["event_chain"]:
-            for char in events.get("characters", []):
-                self.agent2.update_state(char, events.get("key_events", []),
-                                         events.get("scene_goal", ""))
-        profiles = self.scratchpad.read("character_profiles") or profiles
+        # Persona Agent: gender, age group, relationships, per-scene emotions, story bible. Its LLM call and Agent 2's NER are independent, so they run
+        # at the same time.
+        paragraphs = self.scratchpad.read("deva_scenes") or [p.strip() for p in state["raw_hindi_text"].split("\n\n") if p.strip()]
+        from concurrent.futures import ThreadPoolExecutor
+        with ThreadPoolExecutor(max_workers=1) as ex:
+            fut = ex.submit(self.persona_agent.analyze, state["scene_chunks"], state["event_chain"], [], paragraphs)
+            profiles = self.agent2.build_profiles(state["scene_chunks"], state["event_chain"])
+            persona = fut.result()
+        # drop ghost names the LLM saw in Agent 1's list but Agent 2's name checks rejected (e.g. a misread word)
+        from agents.name_utils import same_person
+        keep = lambda names: [n for n in names if any(same_person(n, p) for p in profiles)]
+        for sc in (persona.get("scene_cast") or {}).values():
+            sc["present"], sc["mentioned_only"] = keep(sc.get("present", [])), keep(sc.get("mentioned_only", []))
+        scene_ids = [c["scene_id"] for c in state["scene_chunks"]]
+        profiles = apply_persona(profiles, persona, scene_ids)
+        self.scratchpad.write("character_profiles", profiles)
+        self.scratchpad.write("persona", persona)
+        self._log(f"   persona source: {persona.get('source')} | checks: {persona.get('checks')}")
+        for n, p in profiles.items():
+            arc = " > ".join(f"{e['emotion']}{e['intensity']}" for e in p.get("emotion_arc", []))
+            self._log(f"   {n:12s} {p.get('gender','?'):7s} {p.get('social_role','?'):9s} arc: {arc}")
         self._log(f"   profiles: {list(profiles.keys())}")
         state["character_profiles"] = profiles
         return state
 
-    def _generate_pass1(self, state: PipelineState) -> PipelineState:
-        self._log("── [4/6] Agent 3: Pass 1 neutral dialogue (Groq) ──")
-        neutral = []
-        for chunk, events in zip(state["scene_chunks"], state["event_chain"]):
-            dialogue = self.agent3.generate_pass1(chunk, state["character_profiles"], events)
+    def _prefetch_intents(self, dialogue: str):
+        """Classify every line's intent NOW (concurrently) so the slang editor, which needs it for each line, finds it already cached."""
+        clf = getattr(self.agent4, "intent_clf", None)
+        utts = [ln.split(":", 1)[1].strip() for ln in dialogue.split("\n") if ":" in ln and ln.split(":", 1)[1].strip()]
+        if clf is None or not utts:
+            return
+        from concurrent.futures import ThreadPoolExecutor
+        with ThreadPoolExecutor(max_workers=min(8, len(utts))) as ex:
+            list(ex.map(lambda u: clf.classify(u), utts))
+
+    def _edit_scene(self, scene):
+        out = self.agent4.rewrite_script([{"scene_id": scene["scene_id"], "dialogue": scene["dialogue"]}])[0]
+        out["events"] = scene["events"]
+        return out
+
+    def _scene_pass1(self, chunk, events, profiles, persona, deva_text):
+        """One scene: write the dialogue from the story bible, have the Fidelity Critic check it against the author's scene, and regenerate
+        with the reviewer's feedback while there are clear problems. Keeps the attempt with the fewest problems."""
+        sid = events["scene_id"]
+        ev = dict(events)
+        cast = (persona or {}).get("scene_cast", {}).get(sid) or {}
+        ev["scene_cast"] = cast
+        ev["secrets"] = [s for s in (persona or {}).get("secrets", []) if sid in s.get("scenes", [sid])]
+        ch = dict(chunk)
+        ch["deva_text"] = deva_text
+        present = list(cast.get("present") or events.get("characters") or [])
+        absent, extras = list(cast.get("mentioned_only") or []), list(cast.get("extra_speakers") or [])
+        use_critic = bool(getattr(config, "AGENT3_CRITIC", True)) and self.critic is not None
+        tries = 1 + (int(getattr(config, "AGENT3_FIX_ATTEMPTS", 2)) if use_critic else 0)
+        best, history, feedback = None, [], None
+        for attempt in range(tries):
+            ev["feedback"] = feedback
+            dialogue = self.agent3.generate_pass1(ch, profiles, ev)
             # Agent 3 sometimes slips a Devanagari word into the dialogue (seen: "धन्यवाद, दादी!").
             # Everything downstream (register guard, editor, validator) expects Roman script, so
             # romanize any leak with the same rule-based transliterator used on the input.
             if re.search(r"[ऀ-ॿ]", dialogue):
                 dialogue = re.sub(r"[ऀ-ॿ]+(?:[\sऀ-ॿ]*[ऀ-ॿ])?",
-                                  lambda m: self.transliterator.transliterate_sentence(m.group(0)).strip(),
-                                  dialogue)
-            neutral.append({"scene_id": events["scene_id"], "dialogue": dialogue,
-                            "events": events})
-            time.sleep(0.3)
+                                  lambda m: self.transliterator.transliterate_sentence(m.group(0)).strip(), dialogue)
+            if not use_critic or "[generation failed" in dialogue:
+                best = (dialogue, {"ok": True, "issues": [], "llm_used": False})
+                history.append(0)
+                break
+            rep = self.critic.check(deva_text or chunk.get("text", ""), dialogue, present, absent, ev["secrets"],
+                                    events.get("key_events"), extras)
+            history.append(len(rep["issues"]))
+            if best is None or len(rep["issues"]) < len(best[1]["issues"]):
+                best = (dialogue, rep)
+            if rep["ok"]:
+                break
+            feedback = "; ".join(f"line {i['line']}: {i['type']} - {i['detail']}" for i in rep["issues"][:6])
+        dialogue, rep = best
+        dialogue = re.sub(r"\n\s*\n", "\n", dialogue).strip()          # the model sometimes double-spaces the turns
+        dialogue = "\n".join(re.sub(r"\s*\([^)]*\)\s*", " ", ln).replace(" :", ":").strip() if ":" in ln else ln for ln in dialogue.split("\n"))   # no (stage directions)
+        removed = 0
+        if use_critic and any(i["type"] == "absent_speaker" for i in rep["issues"]):
+            cleaned = self.critic.drop_absent_lines(dialogue, present, extras)
+            removed = len(dialogue.split("\n")) - len(cleaned.split("\n"))
+            dialogue = cleaned
+        fid = {"attempts": len(history), "issues_per_attempt": history, "final_issues": rep["issues"], "lines_removed": removed}
+        try:
+            self._prefetch_intents(dialogue)
+        except Exception:
+            pass
+        return {"scene_id": sid, "dialogue": dialogue, "events": events, "fidelity": fid}
+
+    def _generate_pass1(self, state: PipelineState) -> PipelineState:
+        self._log("── [4/6] Agent 3: Pass 1 neutral dialogue + fidelity check ──")
+        persona = self.scratchpad.read("persona") or {}
+        deva = self.scratchpad.read("deva_scenes") or []
+        jobs = list(enumerate(zip(state["scene_chunks"], state["event_chain"])))
+        workers = max(1, int(getattr(config, "AGENT3_PARALLEL", 4)))
+        results = {}
+        if workers == 1:
+            for i, (chunk, events) in jobs:
+                results[i] = self._scene_pass1(chunk, events, state["character_profiles"], persona, deva[i] if i < len(deva) else "")
+        else:
+            from concurrent.futures import ThreadPoolExecutor
+            overlap = bool(getattr(config, "PIPELINE_OVERLAP", True))
+            self._prefetched = {}
+            if overlap:
+                self.agent4.reset()                       # fresh density budget; the first editing attempt happens while Pass 1 is still being written
+            with ThreadPoolExecutor(max_workers=workers) as ex:
+                futs = {i: ex.submit(self._scene_pass1, chunk, events, state["character_profiles"], persona, deva[i] if i < len(deva) else "")
+                        for i, (chunk, events) in jobs}
+                for i, _ in jobs:                         # in story order: as soon as scene i is written, the editor starts on it
+                    results[i] = futs[i].result()
+                    if overlap:
+                        try:
+                            self._prefetched[results[i]["scene_id"]] = self._edit_scene(results[i])
+                        except Exception as e:            # never lose the run: the normal editing stage will redo this scene
+                            self._log(f"   (overlapped editing of {results[i]['scene_id']} failed: {str(e)[:60]})")
+                            self._prefetched = {}
+                            overlap = False
+        neutral = [results[i] for i, _ in jobs]
+        for n in neutral:
+            f = n["fidelity"]
+            self._log(f"   {n['scene_id']}: attempts {f['attempts']} issues {f['issues_per_attempt']}"
+                      + (f" | removed {f['lines_removed']} absent-speaker line(s)" if f["lines_removed"] else "")
+                      + (f" | remaining: {[i['type'] for i in f['final_issues']]}" if f["final_issues"] else ""))
         self.scratchpad.write("neutral_script", neutral)
         state["neutral_script"] = neutral
         # Fail LOUDLY if upstream LLM calls failed (almost always a Groq rate/daily-token cap).
@@ -163,6 +281,14 @@ class HinglishPipeline:
     def _inject_slang(self, state: PipelineState) -> PipelineState:
         attempt = state.get("rewrite_count", 0) + 1
         self._log(f"── [5/6] Agent 4: Pass 2 slang injection (attempt {attempt}) ──")
+        pre = getattr(self, "_prefetched", None)
+        if attempt == 1 and pre and all(s["scene_id"] in pre for s in state["neutral_script"]):
+            slang_script = [pre[s["scene_id"]] for s in state["neutral_script"]]
+            self._prefetched = None
+            self._log("   (editing was overlapped with Pass 1 - done)")
+            self.scratchpad.write("slang_script", slang_script)
+            state["slang_script"] = slang_script
+            return state
         failed = set(state.get("failed_scenes", []))
         prev = {s["scene_id"]: s for s in (state.get("slang_script") or [])}
 
@@ -295,7 +421,10 @@ class HinglishPipeline:
         return state
 
     # ── Public entry ───────────────────────────────────────────────────
-    def run(self, hindi_story: str) -> str:
+    def run(self, hindi_story: str, pauses=None) -> str:
+        """hindi_story: Devanagari text (typed, or the transcript of a spoken story). pauses: seconds of silence after each sentence,
+        from audio.asr.transcribe(...)['pauses'] when the input was a recording - the scene segmenter uses them as evidence."""
+        self._pauses = pauses
         self._t_start = time.time()
         init: PipelineState = {
             "raw_hindi_text": hindi_story, "romanized_text": "", "scene_chunks": [],
@@ -305,4 +434,9 @@ class HinglishPipeline:
         }
         init["scene_diagnoses"] = {}
         final_state = self.graph.invoke(init, {"recursion_limit": 25})
+        try:
+            import llm_client
+            self._log("\n" + llm_client.cost_summary())
+        except Exception:
+            pass
         return final_state["final_script"]

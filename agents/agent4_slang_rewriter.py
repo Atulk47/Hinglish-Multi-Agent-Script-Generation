@@ -208,6 +208,9 @@ def _squash(w: str) -> str:
 
 
 _FORMAL_OR_ELDER_TAGS = {_squash(w) for w in (FORMAL_SPEAKER_WORDS | ELDER_TAG_WORDS)}
+# unnamed people who speak in a scene (the Persona Agent's "extra speakers"): strangers / service roles are not slanged
+_FORMAL_OR_ELDER_TAGS |= {_squash(w) for w in ("dukaandaar", "dukandar", "dukaandar", "shopkeeper", "vendor", "driver", "guard", "waiter",
+                                               "nurse", "policeman", "clerk", "stranger", "passerby", "conductor", "doctor", "pandit")}
 PLAIN_FILLER_WORDS = {"yaar", "bhai", "bro", "boss", "abe", "abey", "arre", "re", "bhaiya", "yr"}
 
 
@@ -228,6 +231,25 @@ Line: {utterance}
 Result:"""
 
 
+class _SlotAwareClf:
+    """Gate 2 wrapper: a peer line that states an opinion or feeling ("shuruaat bahut kharab rahi", "mujhe bahut chinta hai")
+    is not 'plain information', even when the LLM labels it INFORM_NEUTRAL - it contains a word a slang can replace."""
+
+    def __init__(self, base):
+        self.base = base
+
+    def classify(self, text):
+        label = self.base.classify(text)
+        if label == "INFORM_NEUTRAL":
+            try:
+                from agents.edit_gate import has_slot
+                if has_slot(text):
+                    return "CASUAL_ASSERTION"
+            except Exception:
+                pass
+        return label
+
+
 class SlangRewriter:
     def __init__(self, scratchpad, intent_classifier,
                  backend: str = "auto",
@@ -245,6 +267,9 @@ class SlangRewriter:
         self._neg_slang = self._compute_negative_slang()   # harsh/teasing slang to keep off positive lines
         self._pos_slang = self._compute_positive_slang()   # positive-only slang (polarity-flip guard)
         self._used = defaultdict(int)   # slang -> times used in this story
+        self._filler_n = 0              # filler edits so far in this script
+        self._edit_n = 0                # all edits so far in this script
+        self._scene_n = 0               # scenes processed so far in this script
         self._last = None               # last slang used (avoid back-to-back repeats)
 
         self.backend = self._resolve_backend(backend)
@@ -253,12 +278,18 @@ class SlangRewriter:
                 self._init_qwen()         # Qwen base + LoRA adapter
                 self._smoke_test_qwen()   # verify it generates a real insertion
             except Exception as e:
-                print(f"SlangRewriter: Qwen LoRA editor unusable ({e}); falling back to Groq.")
+                print("!" * 78)
+                print(f"SlangRewriter: the trained slang editor could NOT be loaded ({str(e)[:150]}).")
+                print("   Falling back to the weak cloud stopgap: expect fillers (yaar / bhai / abey ...) and no mood slang.")
+                print("   Usually low memory: close other programs (Chrome, VS Code) and run again.")
+                print("!" * 78)
+                self.editor_fallback = True
                 self.backend = "groq"
         if self.backend == "qwen" and (getattr(config, "QWEN_GROQ_FALLBACK", True)
                                        or getattr(config, "QWEN_JUDGE", True)):
             try:
-                self.groq_client = Groq(api_key=os.environ["GROQ_API_KEY"])
+                from llm_client import make_client             # OpenRouter first, Groq fallback
+                self.groq_client = make_client("small")
                 _j = ("ON (min %s/5)" % config.QWEN_JUDGE_MIN) if config.QWEN_JUDGE else "off"
                 print("SlangRewriter: Groq fallback %s, per-line naturalness judge %s."
                       % ("ON" if config.QWEN_GROQ_FALLBACK else "off", _j))
@@ -276,7 +307,8 @@ class SlangRewriter:
                       f"falling back to Groq.")
                 self.backend = "groq"
         if self.backend == "groq":        # not `else`: also the fallback path
-            self.groq_client = Groq(api_key=os.environ["GROQ_API_KEY"])
+            from llm_client import make_client
+            self.groq_client = make_client("small")
             print(f"SlangRewriter: Groq stopgap (select-in-code). "
                   f"Lexicon: {sum(len(v) for v in self.by_control.values())} entries, "
                   f"{len(self.filler_pool)} fillers.")
@@ -301,7 +333,40 @@ class SlangRewriter:
         return "groq"
 
     # ── Qwen LoRA editor ───────────────────────────────────────────────
+    def _gguf_path(self):
+        """Path of the 4-bit GGUF editor if it should be used (QWEN_BACKEND = gguf, or auto and the file + llama.cpp exist)."""
+        mode = str(getattr(config, "QWEN_BACKEND", "auto")).lower()
+        if mode == "hf":
+            return None
+        path = getattr(config, "QWEN_GGUF_PATH", "")
+        if not (path and os.path.exists(path)):
+            if mode == "gguf":
+                raise FileNotFoundError(f"QWEN_BACKEND=gguf but {path!r} does not exist (run tools/export_gguf.py)")
+            return None
+        try:
+            import llama_cpp  # noqa: F401
+        except Exception as e:
+            if mode == "gguf":
+                raise
+            print(f"SlangRewriter: llama-cpp-python unavailable ({str(e)[:60]}); using the PyTorch editor.")
+            return None
+        return path
+
     def _init_qwen(self):
+        self._gguf = None
+        gp = self._gguf_path()
+        if gp:
+            from agents.gguf_editor import GGUFEditor
+            self._gguf = GGUFEditor(gp)
+            try:
+                with open(os.path.join(config.QWEN_LORA_PATH, "prompt_version.txt")) as f:
+                    self._qwen_ver = int(f.read().strip())
+            except Exception:
+                self._qwen_ver = 2
+            self._qwen_k = getattr(config, "QWEN_SHORTLIST_K", {1: 5, 2: 8}).get(self._qwen_ver, 5)
+            print(f"SlangRewriter: 4-bit GGUF editor on llama.cpp ({os.path.basename(gp)}) | prompt v{self._qwen_ver}, "
+                  f"shortlist k={self._qwen_k}.")
+            return
         import torch
         from transformers import AutoTokenizer, AutoModelForCausalLM
         from peft import PeftModel
@@ -361,6 +426,10 @@ class SlangRewriter:
     def _smoke_test_qwen(self):
         # verify the model loads and generates; 2 tokens is enough (a full sentence cost ~25 s here)
         user = QWEN_USER_V2.replace("{slangs}", "mast, solid").replace("{line}", "Aaj ka match accha tha.")
+        if getattr(self, "_gguf", None) is not None:
+            if not self._gguf.generate(QWEN_SYSTEM_V2, user, 4):
+                raise RuntimeError("GGUF editor returned no tokens on smoke test")
+            return
         enc = self.qwen_tok.apply_chat_template(
             [{"role": "system", "content": QWEN_SYSTEM_V2}, {"role": "user", "content": user}],
             add_generation_prompt=True, return_tensors="pt", return_dict=True)
@@ -377,6 +446,10 @@ class SlangRewriter:
         sys_p, user_t = ((QWEN_SYSTEM_V2, QWEN_USER_V2) if self._qwen_ver >= 2
                          else (QWEN_SYSTEM_V1, QWEN_USER_V1))
         user = user_t.replace("{slangs}", ", ".join(shortlist)).replace("{line}", utterance)
+        if getattr(self, "_gguf", None) is not None:
+            n_line = self._gguf.n_tokens(utterance)
+            text = self._gguf.generate(sys_p, user, max(24, min(110, int(n_line * 1.4) + 12)))
+            return text.split("\n")[0].strip().strip('"')
         enc = self.qwen_tok.apply_chat_template(
             [{"role": "system", "content": sys_p}, {"role": "user", "content": user}],
             add_generation_prompt=True, return_tensors="pt", return_dict=True)
@@ -405,20 +478,18 @@ class SlangRewriter:
 
     _SENT_RE = re.compile(r"[^.!?]+(?:[.!?]+|$)\s*")
 
-    def _pick_sentence(self, utt: str):
-        """v3: edit ONE complete sentence (4-28 words; the v3 adapter is trained on 4-24). The v3 adapter is trained on whole
-        Agent-3-style sentences, and a complete sentence keeps its own context; comma fragments
-        ("kyunki ...", "aur ...") start mid-thought and read badly with slang tacked on.
+    def _pick_sentences(self, utt: str, limit: int = 2):
+        """v3/v4: editable COMPLETE sentences (4-32 words), best first. A line often has two sentences and only
+        one of them has a natural opening, so the editor tries them in turn. Over-long sentences are split at ';'.
         Prefers a sentence with a clear sentiment word, then '!' over '.', and avoids questions."""
-        best = None
         units = []
         for m in self._SENT_RE.finditer(utt):
             a, b = m.start(), m.end()
             if len(utt[a:b].split()) > 32:
-                # over-long sentence: use its ';'-separated parts (each a complete thought)
                 units += [(a + q.start(), a + q.end()) for q in re.finditer(r"[^;]+;?", utt[a:b])]
             else:
                 units.append((a, b))
+        scored = []
         for a, b in units:
             core = utt[a:b].strip()
             n = len(core.split())
@@ -427,9 +498,13 @@ class SlangRewriter:
             score = ((2.0 if self._line_polarity(core) != 0 else 0.0)
                      + (1.0 if core.endswith("!") else 0.0)
                      - (1.5 if core.endswith("?") else 0.0) - n / 60)
-            if best is None or score > best[0]:
-                best = (score, a, b)
-        return (best[1], best[2]) if best else None
+            scored.append((score, a, b))
+        scored.sort(key=lambda t: -t[0])
+        return [(a, b) for _, a, b in scored[:max(1, limit)]]
+
+    def _pick_sentence(self, utt: str):
+        r = self._pick_sentences(utt, 1)
+        return r[0] if r else None
 
     def _pick_segment(self, utt: str):
         """Choose ONE short clause of the line to edit -> (start, end) or None.
@@ -561,12 +636,12 @@ class SlangRewriter:
                 out.append(p)
         return out[:6]
 
-    def _fit_shortlist(self, core: str, intent: str, emotion: str, pol: int):
+    def _fit_shortlist(self, core: str, intent: str, emotion: str, pol: int, tone_pol=None):
         """Retrieve-then-rerank. [] = nothing fits this clause (leave it neutral);
         None = reranker unavailable/off (use the plain random shortlist)."""
         if not getattr(config, "QWEN_RERANK", True) or getattr(self, "groq_client", None) is None:
             return None
-        tone = {1: "positive", -1: "negative", 0: "neutral"}[pol]
+        tone = {1: "positive", -1: "negative", 0: "neutral"}[pol if tone_pol is None else tone_pol]
         for _ in range(max(1, int(getattr(config, "QWEN_RERANK_ROUNDS", 2)))):
             pool = self._select_candidates(intent, emotion,
                                            k=int(getattr(config, "QWEN_RERANK_POOL", 30)), polarity=pol)
@@ -628,10 +703,23 @@ class SlangRewriter:
         nwords = {w for w in nlist if len(w) >= 3}              # content words
         if not nwords:
             return True
-        owords = set(re.findall(r"[a-z]+", output.lower()))
+        blist = re.findall(r"[a-z]+", output.lower())
+        owords = set(blist)
         dropped = len(nwords - owords)
         added = len(owords - set(nlist))
         allowed_drop = 2 if len(nwords) >= 10 else (len(nwords) + 1) // 2
+        # PHRASE SWAP: when every difference sits inside ONE contiguous span of <= 5 words ("bahut dar lag raha hai" ->
+        # "fatti padi hai") the whole span may be replaced, however long the sentence is. The rule gate decides WHAT may be
+        # swapped; this guard only stops edits that scatter changes over the sentence.
+        p = 0
+        while p < min(len(nlist), len(blist)) and nlist[p] == blist[p]:
+            p += 1
+        s = 0
+        while s < min(len(nlist), len(blist)) - p and nlist[-1 - s] == blist[-1 - s]:
+            s += 1
+        span = nlist[p:len(nlist) - s]
+        if 0 < len(span) <= 5:
+            allowed_drop = max(allowed_drop, len({w for w in span if len(w) >= 3}))
         return dropped <= allowed_drop and added <= 7
 
     # ── Trained mT5 editor ─────────────────────────────────────────────
@@ -776,7 +864,7 @@ class SlangRewriter:
             # Tone unknown / neutral -> only mood-neutral fillers (yaar, arre, chill ...). Offering
             # mood-loaded slang here is how "fire" ended up on a fearful line. The Agent-2 emotion
             # label is deliberately NOT used (it is "happy" for everyone - known no-op).
-            return sorted(self.filler_pool)
+            return self._rotated_fillers()
         else:
             controls = set(GATE_INTENT_TO_CONTROLS.get(intent, set()))
             controls |= EMOTION_TO_CONTROLS.get((emotion or "neutral").lower(), set())
@@ -818,6 +906,209 @@ class SlangRewriter:
             chosen.append(pick)
         return chosen
 
+    # ── variety bookkeeping (per script; cleared by reset()) ───────────────
+    def _rotated_fillers(self):
+        """Mood-neutral fillers, unused ones first, so a script shows bhai / bro / arre / boss instead of 'yaar' x5."""
+        pool = sorted(self.filler_pool)
+        fresh = [f for f in pool if self._used[f] == 0]
+        if len(fresh) >= 3:
+            return fresh
+        return sorted(pool, key=lambda f: (self._used[f], f))[:max(3, len(fresh))]
+
+    # ── fillers: ONLY where a person would actually say them ────────────────────────────────────────────
+    _NOT_NAMES = {"haan", "nahi", "theek", "arre", "accha", "achha", "chalo", "suno", "dekho", "bilkul", "sach", "kya",
+                  "ok", "okay", "wah", "wow", "oh", "hey", "thik", "sahi", "shukriya", "dhanyavaad", "sorry", "please",
+                  "dhairya", "chinta", "tension", "ghabrao", "main", "hum", "mujhe", "yeh", "woh", "aaj", "kal", "ab", "toh"}
+
+    def _filler_kind(self, core: str):
+        """vocative / opener / reassure / urge / exclaim - or None = a filler here would be random, so add none."""
+        low = core.lower().strip()
+        from agents.edit_gate import RESPECT_ADDR
+        if set(re.findall(r"[a-z]+", low)) & RESPECT_ADDR:       # talking to an elder / coach: no filler
+            return None
+        if re.match(r"^(chinta mat|tension mat|ghabrao mat|dhairya rakho|fikar mat|koi baat nahi)", low):
+            return "reassure"
+        m = re.match(r"^([A-Z][a-z]+),\s", core) or re.match(r"^(?:haan|theek hai|sahi kaha|bilkul)\s+([A-Z][a-z]+),", core, re.I)
+        if m and m.group(1).lower() not in self._NOT_NAMES:
+            return "vocative"
+        if re.match(r"^(haan|theek hai|sahi kaha|bilkul|accha|achha)\b", low):
+            return "opener"
+        if re.match(r"^(chalo|jaldi|suno|dekho)\b", low):
+            return "urge"
+        if "!" in core:
+            return "exclaim"
+        return None
+
+    def _filler_shortlist(self, core: str, pol: int):
+        kind = self._filler_kind(core)
+        if kind is None:
+            return []
+        base = {"vocative": ["yaar", "bro", "bhai"], "opener": ["arre", "yaar"], "reassure": ["yaar", "chill", "arre"],
+                "urge": ["abey", "yaar"], "exclaim": ["arre", "yaar"]}[kind]
+        return sorted(base, key=lambda f: (self._used[f], base.index(f)))
+
+    def _slot_shortlist(self, core: str):
+        """MOOD route shortlist built from the sentence's own slot(s): only slangs that fit the KIND of word being replaced
+        (praise / criticism / worry / trouble / ease), least-used first. -> (shortlist, sign or 0)"""
+        from agents.edit_gate import slot_candidates
+        slots = slot_candidates(core)
+        if getattr(self, "_serious", False):            # hospital / injury scene: no celebratory slang on any line of it
+            slots = [sl for sl in slots if sl["sign"] < 0]
+        if not slots:
+            return [], 0
+        low = (core + " " + getattr(self, "_line_low", "")).lower()      # also avoid a slang the rest of the line already has
+        cands, seen = [], set()
+        for cap in (1, 2):                      # first only slangs not yet used in this script (variety); reuse once if too few
+            for sl in slots:
+                for x in sl["slangs"]:
+                    k = x.lower()
+                    if k in seen or k in low or self._used[k] >= cap:
+                        continue
+                    seen.add(k)
+                    cands.append(x)
+            if len(cands) >= 3:
+                break
+        self._rng.shuffle(cands)
+        from agents.edit_gate import INTENSITY
+        tgt = getattr(self, "_target_intensity", None)
+        # least-used first (variety), then closest to the speaker's emotional intensity in this scene (mild feeling -> mild slang)
+        cands.sort(key=lambda x: (self._used[x.lower()], abs(INTENSITY.get(x, 2) - tgt) if tgt else 0))
+        signs = {sl["sign"] for sl in slots}
+        return cands[:6], (signs.pop() if len(signs) == 1 else 0)
+
+    def _filler_allowed(self) -> bool:
+        """Fillers are the WEAK option: at most 2 per script, growing by 0.4 per extra scene (a 15-scene story: ~6)."""
+        return self._filler_n < max(2, int(0.4 * self._scene_n + 0.5))
+
+    def _repeat_blocked(self, used) -> bool:
+        return bool(used) and self._used[used.lower()] >= 2 and used.lower() not in {f.lower() for f in self.filler_pool}
+
+    def _mark(self, used, route):
+        if used:
+            self._used[used.lower()] += 1
+            self._last = used
+        self._edit_n += 1
+        if route == "filler":
+            self._filler_n += 1
+
+    def _qwen_sample(self, utterance: str, shortlist, n: int):
+        """n SAMPLED alternatives in one batched call (a second chance for lines where the greedy output was an
+        abstention / rejected). Every one is still vetted + rule-gated by the caller."""
+        sys_p, user_t = ((QWEN_SYSTEM_V2, QWEN_USER_V2) if self._qwen_ver >= 2 else (QWEN_SYSTEM_V1, QWEN_USER_V1))
+        user = user_t.replace("{slangs}", ", ".join(shortlist)).replace("{line}", utterance)
+        enc = self.qwen_tok.apply_chat_template(
+            [{"role": "system", "content": sys_p}, {"role": "user", "content": user}],
+            add_generation_prompt=True, return_tensors="pt", return_dict=True)
+        self._torch.manual_seed(int(getattr(config, "SLANG_SEED", 7)) + len(utterance))
+        with self._torch.no_grad():
+            n_line = len(self.qwen_tok(utterance, add_special_tokens=False)["input_ids"])
+            max_new = max(24, min(110, int(n_line * 1.4) + 12))
+            out = self.qwen.generate(**enc, max_new_tokens=max_new, do_sample=True, temperature=0.7, top_p=0.9,
+                                     num_return_sequences=n, pad_token_id=self.qwen_tok.eos_token_id)
+        res = []
+        for row in out:
+            t = self.qwen_tok.decode(row[enc["input_ids"].shape[1]:], skip_special_tokens=True).strip()
+            res.append(t.split("\n")[0].strip().strip('"'))
+        return res
+
+    def _accept(self, core, cand, shortlist, pol):
+        """vet + rule gate + repeat limit -> (ok, used, why)"""
+        ok, used, why = self._vet_edit(core, cand, shortlist, pol)
+        if ok:
+            ok, why = self._judge_ok(core, cand, used)
+        if ok and self._repeat_blocked(used):
+            ok, why = False, "repeat"
+        return ok, used, why
+
+    def _edit_sentence(self, core: str, intent: str, emotion: str):
+        """Try to edit ONE sentence with the trained model alone.
+        Routes: 'mood'   - the sentence contains a word a slang can naturally replace (bahut accha, kharab, chinta, problem,
+                           aasaani se ...): the shortlist is built FROM THAT SLOT (only slangs of the right kind);
+                'filler' - a filler only where a person would say it (after a name, after 'Haan', on reassurance, on '!').
+        -> (edited_or_None, slang_used, engine, notes, rejects, route)"""
+        notes, rejects = [], []
+        if self._has_filler(core):
+            return None, None, None, ["already-casual"], [], None
+        pol = self._clause_polarity(core)
+        rules = getattr(config, "QWEN_GATE", "rules") == "rules"
+        use_slots = rules and getattr(config, "SLANG_SLOT_SHORTLIST", True)
+        mood_short, slot_sign = ([], 0)
+        if use_slots:
+            mood_short, slot_sign = self._slot_shortlist(core)
+            routes = (["mood"] if mood_short else []) + ["filler"]
+        else:                                   # legacy behaviour (LLM-reranked tone pool)
+            slot = True
+            if rules:
+                from agents.edit_gate import has_slot
+                slot = has_slot(core)
+            routes = ["mood", "filler"] if (pol != 0 and slot) else ["filler"]
+        for route in routes:
+            hint = pol
+            if route == "filler":
+                if not getattr(config, "SLANG_FILLER_ROUTE", True):
+                    continue
+                if not self._filler_allowed():
+                    notes.append("filler-cap")
+                    continue
+                shortlist = self._filler_shortlist(core, pol)
+                if not shortlist:
+                    notes.append("no-natural-filler")
+                    continue
+            elif use_slots:
+                shortlist, hint = list(mood_short), (slot_sign or pol)
+            else:
+                shortlist = self._fit_shortlist(core, intent, emotion, pol, tone_pol=pol)
+                if shortlist is not None and not shortlist:
+                    notes.append("no-fit:mood")
+                    continue
+                if shortlist is None:           # reranker switched off by config -> plain random shortlist
+                    shortlist = self._select_candidates(intent, emotion, k=self._qwen_k, polarity=pol)
+            if shortlist:
+                from agents.edit_gate import FEMALE_NAMES
+                if {w.lower() for w in re.findall(r"[A-Za-z]+", core)} & FEMALE_NAMES:
+                    shortlist = [x for x in shortlist if x.lower() != "bhai"]
+            if not shortlist:
+                continue
+            cand = self._qwen_edit(core, shortlist)
+            ok, used, why = self._accept(core, cand, shortlist, hint)
+            if ok:
+                return cand, used, "qwen-lora", notes, rejects, route
+            notes.append(why)
+            rejects.append((why, cand or ""))
+            # mood route, model abstained: ask once more with the 3 least-used slot slangs (a shorter list is easier to pick from)
+            if route == "mood" and use_slots and len(shortlist) > 3 and getattr(config, "QWEN_MOOD_RETRY", True):
+                small = shortlist[:3]
+                cand = self._qwen_edit(core, small)
+                ok, used, why = self._accept(core, cand, small, hint)
+                if ok:
+                    return cand, used, "qwen-lora", notes, rejects, route
+                notes.append("retry:" + why)
+                rejects.append(("retry:" + why, cand or ""))
+            # optional second chance: a few SAMPLED outputs from the same trained model (off by default; added 0 edits in a test)
+            n = int(getattr(config, "QWEN_SAMPLES", 0))
+            if route == "mood" and n > 0:
+                best = None
+                for c in self._qwen_sample(core, shortlist, n):
+                    ok, used, why = self._accept(core, c, shortlist, hint)
+                    if ok:
+                        key = (used.lower() not in {f.lower() for f in self.filler_pool}, -self._used[used.lower()])
+                        if best is None or key > best[0]:
+                            best = (key, c, used)
+                    else:
+                        rejects.append(("sample:" + why, c or ""))
+                if best:
+                    return best[1], best[2], "qwen-lora(sampled)", notes, rejects, "mood"
+                notes.append("samples-rejected")
+            # optional cloud fallback (OFF by default)
+            if getattr(self, "groq_client", None) is not None and getattr(config, "QWEN_GROQ_FALLBACK", False):
+                for _ in range(max(1, int(getattr(config, "QWEN_FALLBACK_TRIES", 3)))):
+                    c = self._place_with_groq(core, shortlist, strict=True)
+                    ok, used, why = self._accept(core, c, shortlist, hint)
+                    if ok:
+                        return c, used, "groq-fallback", notes, rejects, route
+                    notes.append("groq:" + why)
+        return None, None, None, notes, rejects, None
+
     def _note_used(self, output: str, candidates: List[str]):
         low = output.lower()
         used = next((c for c in candidates if c.lower() in low), None)
@@ -831,6 +1122,9 @@ class SlangRewriter:
         self.gate._scene_slang_counts = {}
         self._used = defaultdict(int)
         self._last = None
+        self._filler_n = 0
+        self._edit_n = 0
+        self._scene_n = 0
 
     def _emotion_of(self, speaker: str) -> str:
         from agents.name_utils import match_profile
@@ -854,7 +1148,14 @@ class SlangRewriter:
             # the line alone
             return utterance, {"applied": False, "go": False, "gate_stopped": None, "intent": None,
                                "reason": "skipped: unattributed, formal or elder speaker"}
-        decision = self.gate.run_all_gates(speaker, utterance, scene_id, self.intent_clf)
+        try:                                              # emotion intensity of THIS speaker in THIS scene -> slang strength
+            from agents.agent2b_persona import emotion_at
+            from agents.name_utils import match_profile
+            _prof = match_profile(self.scratchpad.read("character_profiles") or {}, speaker)
+            self._target_intensity = emotion_at(_prof, scene_id)["intensity"] if _prof and _prof.get("emotion_arc") else None
+        except Exception:
+            self._target_intensity = None
+        decision = self.gate.run_all_gates(speaker, utterance, scene_id, _SlotAwareClf(self.intent_clf))
         meta = {"applied": False, **decision}
         if not decision["go"]:
             return utterance, meta
@@ -866,77 +1167,37 @@ class SlangRewriter:
             return utterance, meta
 
         intent = decision["intent"]
+        self._line_low = utterance.lower()
         if self.backend == "qwen":
             new_line, slang, notes, rejects, engine = None, None, [], [], None
-            span = self._pick_segment(utterance)
-            if span is None:
+            spans = self._pick_sentences(utterance, int(getattr(config, "QWEN_SENTENCES_PER_LINE", 2)))
+            if not spans:
                 notes.append("no-editable-clause")
-            else:
-                a, b = span
+            emotion = self._emotion_of(speaker)
+            for (a, b) in spans:
                 seg = utterance[a:b]
                 lead = seg[:len(seg) - len(seg.lstrip())]
                 trail = seg[len(seg.rstrip()):]
                 core = seg.strip()
-                emotion = self._emotion_of(speaker)
-                if self._has_filler(core):
-                    notes.append("already-casual")
-                else:
-                    pol = self._clause_polarity(core)
-                    if (pol != 0 and getattr(config, "QWEN_GATE", "rules") == "rules"
-                            and getattr(config, "QWEN_SLOT_PRECHECK", True)):
-                        from agents.edit_gate import has_slot
-                        if not has_slot(core):
-                            # a mood-slang edit needs an evaluative / emotion word to replace; without one the
-                            # rule gate would reject every output, so skip the shortlist call + ~20 s generation
-                            shortlist = []
-                            notes.append("no-slot")
-                        else:
-                            shortlist = self._fit_shortlist(core, intent, emotion, pol)
-                    else:
-                        shortlist = self._fit_shortlist(core, intent, emotion, pol)
-                    if shortlist is not None and not shortlist:
-                        notes.append("no-fit")      # content-aware abstain: nothing suits this clause
-                    else:
-                        if shortlist is None:       # reranker off/unavailable -> plain random shortlist
-                            shortlist = self._select_candidates(intent, emotion, k=self._qwen_k, polarity=pol)
-                        edited = None
-                        for attempt in range(max(1, int(getattr(config, "QWEN_MAX_TRIES", 1)))):
-                            if not shortlist:
-                                break
-                            cand = self._qwen_edit(core, shortlist)
-                            ok, used, why = self._vet_edit(core, cand, shortlist, pol)
-                            if ok:
-                                ok, why = self._judge_ok(core, cand, used)
-                            if ok:
-                                edited, slang, engine = cand, self._note_used(cand, shortlist), "qwen-lora"
-                                break
-                            notes.append(why)
-                            rejects.append((why, cand or ""))
-                        # local edit rejected -> Groq places one of the SAME fit-checked slangs
-                        if (edited is None and shortlist and getattr(self, "groq_client", None) is not None
-                                and getattr(config, "QWEN_GROQ_FALLBACK", True)):
-                            for _ in range(max(1, int(getattr(config, "QWEN_FALLBACK_TRIES", 3)))):
-                                cand = self._place_with_groq(core, shortlist, strict=True)
-                                ok, used, why = self._vet_edit(core, cand, shortlist, pol)
-                                if ok:
-                                    ok, why = self._judge_ok(core, cand, used)
-                                if ok:
-                                    edited, slang, engine = cand, self._note_used(cand, shortlist), "groq-fallback"
-                                    break
-                                notes.append("groq:" + why)
-                                rejects.append(("groq:" + why, cand or ""))
-                        if edited:
-                            edited = edited.strip()
-                            tail = core[-1:] if core[-1:] in ",;.!?" else ""
-                            if tail in (",", ";"):
-                                # the clause was a FRAGMENT of a longer sentence: it must stay one
-                                # (a model-added "." or "!" would split the sentence mid-thought)
-                                edited = edited.rstrip(".!?;,") + tail
-                            elif tail and edited[-1:] not in ",;.!?":
-                                edited += tail              # keep the clause's closing punctuation
-                            edited = re.sub(r"([!?])\s*,\s*", r"\1 ", edited)       # "jeet!, jhakaas!" -> "jeet! jhakaas!"
-                            new_line = utterance[:a] + lead + edited + trail + utterance[b:]
-                            meta["edited_clause"] = core
+                edited, used, eng, n2, r2, route = self._edit_sentence(core, intent, emotion)
+                notes += n2
+                rejects += r2
+                if not edited:
+                    continue
+                edited = edited.strip()
+                tail = core[-1:] if core[-1:] in ",;.!?" else ""
+                if tail in (",", ";"):
+                    # the clause was a FRAGMENT of a longer sentence: it must stay one
+                    edited = edited.rstrip(".!?;,") + tail
+                elif tail and edited[-1:] not in ",;.!?":
+                    edited += tail              # keep the clause's closing punctuation
+                edited = re.sub(r"([!?])\s*,\s*", r"\1 ", edited)       # "jeet!, jhakaas!" -> "jeet! jhakaas!"
+                new_line = utterance[:a] + lead + edited + trail + utterance[b:]
+                meta["edited_clause"] = core
+                meta["edit_route"] = route
+                slang, engine = used, eng
+                self._mark(used, route)
+                break
             if engine:
                 meta["engine"] = engine
             if new_line is None and notes:
@@ -994,10 +1255,28 @@ class SlangRewriter:
         return ""
 
     # ── Whole-script pass ──────────────────────────────────────────────
+    def _sync_profiles(self):
+        """Per-story knowledge from the Persona Agent: who is female (-> never 'bhai'), who must be addressed respectfully."""
+        try:
+            profiles = self.scratchpad.read("character_profiles") or {}
+        except Exception:
+            profiles = {}
+        from agents import edit_gate
+        for name, p in profiles.items():
+            toks = {t for t in re.findall(r"[a-z]+", name.lower()) if len(t) >= 3}
+            if p.get("gender") == "female":
+                edit_gate.FEMALE_NAMES |= toks
+            elif p.get("social_role") in ("elder", "authority"):
+                edit_gate.RESPECT_ADDR |= toks
+
     def rewrite_script(self, neutral_script: List[dict]) -> List[dict]:
+        self._sync_profiles()
         slang_script = []
         for scene in neutral_script:
             sid = scene["scene_id"]
+            self._scene_n += 1
+            from agents.edit_gate import SERIOUS_SCENE
+            self._serious = bool({w for w in re.findall(r"[a-z]+", scene["dialogue"].lower())} & SERIOUS_SCENE)
             out_lines, decisions = [], []
             for line in scene["dialogue"].split("\n"):
                 if ":" in line:

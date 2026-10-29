@@ -25,11 +25,24 @@ from evaluation.compare import build_comparison, print_comparison
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--story", default="data/raw/test_story_1.txt")
+    ap.add_argument("--voice", default=None, help="a recording of the story told aloud in Hindi (wav/mp3/ogg/m4a...) instead of --story")
     ap.add_argument("--session", default="demo_001")
+    ap.add_argument("--audio", action="store_true", help="also render the screenplay as a multi-voice audio drama (needs internet)")
     args = ap.parse_args()
 
-    with open(args.story, encoding="utf-8") as f:
-        story = f.read()
+    pauses = None
+    if args.voice:
+        from audio.asr import transcribe
+        print(f"Voice input: {args.voice}")
+        tr = transcribe(args.voice)
+        story, pauses = tr["text"], tr["pauses"]
+        os.makedirs("outputs", exist_ok=True)
+        open(f"outputs/{args.session}_transcript.txt", "w", encoding="utf-8").write(story)
+        print(f"Transcribed with {tr['backend']} in {tr['seconds']}s: {len(tr['sentences'])} sentences, "
+              f"{sum(1 for p in pauses if p >= 1.1)} long pauses | {tr['notes']}")
+    else:
+        with open(args.story, encoding="utf-8") as f:
+            story = f.read()
 
     print("=" * 64)
     print("  HINGLISH MULTI-AGENT SCRIPT GENERATOR  (Groq-first)")
@@ -39,7 +52,7 @@ def main():
 
     t0 = time.time()
     pipe = HinglishPipeline(session_id=args.session)
-    final = pipe.run(story)
+    final = pipe.run(story, pauses=pauses)
     elapsed = time.time() - t0
 
     # Pull intermediate artifacts from the scratchpad for a full trace
@@ -82,6 +95,7 @@ def main():
             "romanized_text": sp.read("romanized_text"),
             "event_chain": sp.read("event_chain"),
             "character_profiles": sp.read("character_profiles"),
+            "persona": sp.read("persona"),
             "neutral_script": sp.read("neutral_script"),
             "slang_script": sp.read("slang_script"),
             "comparison": comparison,
@@ -91,6 +105,16 @@ def main():
     print(f"\nDone in {elapsed:.1f}s.")
     print(f"Saved: {txt_path}")
     print(f"Saved: {json_path}")
+
+    if args.audio:
+        try:
+            from audio.synthesize import synthesize_trace
+            audio_dir = f"outputs/{args.session}_audio"
+            print("\nRendering audio ...")
+            res = synthesize_trace(json_path, audio_dir, "both")
+            print(f"Audio: {audio_dir}  (open {res.get('player')})")
+        except Exception as e:                                  # audio is an extra: never lose the text result
+            print(f"Audio step failed ({e}); the text screenplay above is unaffected.")
 
 
 if __name__ == "__main__":

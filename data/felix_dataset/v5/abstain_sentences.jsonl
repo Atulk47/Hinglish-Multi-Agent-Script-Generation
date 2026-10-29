@@ -1,0 +1,1322 @@
+{"text": "Mujhe is baar ki barish se koi shikayat nahi hai, paani time par aaya.", "kind": "abstain", "sub": "negation", "domain": "village and farming"}
+{"text": "Chinta mat karo Ramu, hum kal tak kheton ki nali theek kar lenge.", "kind": "abstain", "sub": "negation", "domain": "village and farming"}
+{"text": "Yeh bail gaadi itni buri bhi nahi chalti, bas thoda tel dalna hai.", "kind": "abstain", "sub": "negation", "domain": "village and farming"}
+{"text": "Sarpanch ji ka faisla galat nahi tha, gaon ke liye woh hi behtar tha.", "kind": "abstain", "sub": "negation", "domain": "village and farming"}
+{"text": "Mere dadi ko ab bhi bijli ka bill dekh kar koi dar nahi lagta.", "kind": "abstain", "sub": "negation", "domain": "village and farming"}
+{"text": "Is saal ka gehun pichle saal jitna pasand nahi aaya mujhe.", "kind": "abstain", "sub": "negation", "domain": "village and farming"}
+{"text": "Hum ne socha tha mandi mein daam girenge, par woh utne bhi nahi gire.", "kind": "abstain", "sub": "negation", "domain": "village and farming"}
+{"text": "Bachon ka school gaon mein band nahi hua, yeh badi achhi baat hai.", "kind": "abstain", "sub": "negation", "domain": "village and farming"}
+{"text": "Tractor ka engine abhi tak theek nahi hua, mechanic ne kal bhi nahi aana.", "kind": "abstain", "sub": "negation", "domain": "village and farming"}
+{"text": "Woh ladka padhai mein itna kamzor nahi hai, bas mehnat ki kami hai.", "kind": "abstain", "sub": "negation", "domain": "village and farming"}
+{"text": "Kuan ka paani ab itna gandaa nahi raha, gaon wale khush hain.", "kind": "abstain", "sub": "negation", "domain": "village and farming"}
+{"text": "Mujhe lagta hai ki sukhe ke baad bhi zameen mein jaan baaki hai.", "kind": "abstain", "sub": "negation", "domain": "village and farming"}
+{"text": "Naya beej itna mehenga bhi nahi tha, phir bhi kisan ne nahi kharida.", "kind": "abstain", "sub": "negation", "domain": "village and farming"}
+{"text": "Sir, aapka feedback bahut accha tha, main ise agle project mein zaroor use karungi.", "kind": "abstain", "sub": "respect", "domain": "office / internship"}
+{"text": "Madam, mujhe lagta hai ki yeh deadline thodi mushkil hai, kya hum ise badha sakte hain?", "kind": "abstain", "sub": "respect", "domain": "office / internship"}
+{"text": "Sir, aapne jo sujhaav diya, woh kaafi useful tha aur mujhe bahut kuch sikha gaya.", "kind": "abstain", "sub": "respect", "domain": "office / internship"}
+{"text": "Madam, aapki presentation kal bahut achhi lagi, sab ne uski tareef ki.", "kind": "abstain", "sub": "respect", "domain": "office / internship"}
+{"text": "Sir, mujhe is kaam ko samajhne mein thodi problem ho rahi hai, kya aap madad kar sakte hain?", "kind": "abstain", "sub": "respect", "domain": "office / internship"}
+{"text": "Madam, aapka subah ka email dekh kar mujhe kaafi chinta ho gayi thi.", "kind": "abstain", "sub": "respect", "domain": "office / internship"}
+{"text": "Sir, aapke saath kaam karna mere liye ek achha anubhav raha hai, shukriya.", "kind": "abstain", "sub": "respect", "domain": "office / internship"}
+{"text": "Ji sir, main maanti hoon ki yeh report abhi kharab dikh rahi hai, main ise theek karungi.", "kind": "abstain", "sub": "respect", "domain": "office / internship"}
+{"text": "Madam, aapka lunch wala suggestion sach mein kaafi accha tha, sab ko pasand aaya.", "kind": "abstain", "sub": "respect", "domain": "office / internship"}
+{"text": "Sir, mujhe lagta hai ki meeting ka time thoda kharab chun gaya tha, sorry.", "kind": "abstain", "sub": "respect", "domain": "office / internship"}
+{"text": "Madam, aapne jis tarah se client ko sambhala, woh kaafi prabhavshali aur accha tha.", "kind": "abstain", "sub": "respect", "domain": "office / internship"}
+{"text": "Sir, is data mein kuch galat entry hai, mujhe iski chinta ho rahi hai, kya main check karoon?", "kind": "abstain", "sub": "respect", "domain": "office / internship"}
+{"text": "Ji madam, aapki salah ke baad mera kaam kaafi behtar aur accha ho gaya hai.", "kind": "abstain", "sub": "respect", "domain": "office / internship"}
+{"text": "Sir, aapka aaj ka lecture bahut interesting tha, mujhe iska har hissa pasand aaya.", "kind": "abstain", "sub": "respect", "domain": "office / internship"}
+{"text": "Tum kal kitne baje shaadi wale ghar pahunchoge?", "kind": "abstain", "sub": "question", "domain": "festival and shaadi"}
+{"text": "Diwali ki mithai kahan se mangwayi hai tumne?", "kind": "abstain", "sub": "question", "domain": "festival and shaadi"}
+{"text": "Kya tum Rakhi ke liye Priya ko gift le aaogi?", "kind": "abstain", "sub": "question", "domain": "festival and shaadi"}
+{"text": "Mehndi function ka time kya rakha hai Sonal ne?", "kind": "abstain", "sub": "question", "domain": "festival and shaadi"}
+{"text": "Baraat mein kitne log aa rahe hain, pata hai?", "kind": "abstain", "sub": "question", "domain": "festival and shaadi"}
+{"text": "Holi ke rang tumne kis dukaan se khareede the?", "kind": "abstain", "sub": "question", "domain": "festival and shaadi"}
+{"text": "Kya tum sangeet ke liye apna lehenga pehnogi?", "kind": "abstain", "sub": "question", "domain": "festival and shaadi"}
+{"text": "Ganesh chaturthi ke modak kaun banayega is saal?", "kind": "abstain", "sub": "question", "domain": "festival and shaadi"}
+{"text": "Shaadi ka card kisne design karwaya tha, Aman?", "kind": "abstain", "sub": "question", "domain": "festival and shaadi"}
+{"text": "Tum phere ke waqt mere saath khade rahoge na?", "kind": "abstain", "sub": "question", "domain": "festival and shaadi"}
+{"text": "Navratri ke garba ke liye pass kahan se milenge?", "kind": "abstain", "sub": "question", "domain": "festival and shaadi"}
+{"text": "Haldi ki rasam ke liye pili saree tumne le li?", "kind": "abstain", "sub": "question", "domain": "festival and shaadi"}
+{"text": "Kal sham ko Dussehra ka mela chalein kya, Riya?", "kind": "abstain", "sub": "question", "domain": "festival and shaadi"}
+{"text": "Tum kal kitne baje college aaoge?", "kind": "abstain", "sub": "question", "domain": "college friends"}
+{"text": "Kya tumne Priya ka notes wala message dekha?", "kind": "abstain", "sub": "question", "domain": "college friends"}
+{"text": "Mujhe ek favour chahiye, kya tum library se book le aaoge?", "kind": "abstain", "sub": "question", "domain": "college friends"}
+{"text": "Canteen mein chai peene chalein kya abhi?", "kind": "abstain", "sub": "question", "domain": "college friends"}
+{"text": "Arjun, kya tumhare paas assignment ki last date ka pata hai?", "kind": "abstain", "sub": "question", "domain": "college friends"}
+{"text": "Kya tum is weekend ghar jaane wale ho?", "kind": "abstain", "sub": "question", "domain": "college friends"}
+{"text": "Tum project ka presentation kab tak ready karoge?", "kind": "abstain", "sub": "question", "domain": "college friends"}
+{"text": "Kya Neha ne tumhe bhi group chat mein add kiya?", "kind": "abstain", "sub": "question", "domain": "college friends"}
+{"text": "Kya tumne exam ke liye syllabus dobara check kiya?", "kind": "abstain", "sub": "question", "domain": "college friends"}
+{"text": "Ritika, kya tum mujhe apne handwritten notes ki photo bhej sakti ho?", "kind": "abstain", "sub": "question", "domain": "college friends"}
+{"text": "Hostel ki mess mein aaj kya bana hai, tumhe pata hai?", "kind": "abstain", "sub": "question", "domain": "college friends"}
+{"text": "Kya tum kal subah jaldi uthkar gym jaoge?", "kind": "abstain", "sub": "question", "domain": "college friends"}
+{"text": "Mujhe sirf ek minute chahiye, kya tum mera bag dekh loge?", "kind": "abstain", "sub": "question", "domain": "college friends"}
+{"text": "Tum kal subah kitne baje market jaogi?", "kind": "abstain", "sub": "question", "domain": "neighbourhood and market"}
+{"text": "Kya tumne Ramesh uncle ki dukaan se sabzi li?", "kind": "abstain", "sub": "question", "domain": "neighbourhood and market"}
+{"text": "Mujhe bata do, sabzi wala aaj kab aayega?", "kind": "abstain", "sub": "question", "domain": "neighbourhood and market"}
+{"text": "Kya tum mere saath chai peene chalogi?", "kind": "abstain", "sub": "question", "domain": "neighbourhood and market"}
+{"text": "Kal ka mausam kaisa rahega, tumhe pata hai?", "kind": "abstain", "sub": "question", "domain": "neighbourhood and market"}
+{"text": "Kya tumne naya bakery wala dekha hai gali ke kone par?", "kind": "abstain", "sub": "question", "domain": "neighbourhood and market"}
+{"text": "Tum mujhe thodi cheeni udhaar de sakte ho?", "kind": "abstain", "sub": "question", "domain": "neighbourhood and market"}
+{"text": "Aaj market mein bheed kitni thi, tumne dekha?", "kind": "abstain", "sub": "question", "domain": "neighbourhood and market"}
+{"text": "Kya neighbour Sharma aunty ghar par hain abhi?", "kind": "abstain", "sub": "question", "domain": "neighbourhood and market"}
+{"text": "Dhoodh wala humesha itni der se kyun aata hai?", "kind": "abstain", "sub": "question", "domain": "neighbourhood and market"}
+{"text": "Kya tum mere liye bhi naya sabun le aaoge?", "kind": "abstain", "sub": "question", "domain": "neighbourhood and market"}
+{"text": "Kab tak tum apni scooter theek karwa paogi?", "kind": "abstain", "sub": "question", "domain": "neighbourhood and market"}
+{"text": "Kya tumne Priya ko bataya ki kal society meeting hai?", "kind": "abstain", "sub": "question", "domain": "neighbourhood and market"}
+{"text": "Chalo, pehle sabzi lete hain, phir Suresh ki dukaan jayenge?", "kind": "abstain", "sub": "question", "domain": "neighbourhood and market"}
+{"text": "Sir, aapka lecture kal bahut accha tha, lekin mujhe kuch concepts samajh nahi aaye.", "kind": "abstain", "sub": "respect", "domain": "exam preparation"}
+{"text": "Madam, mujhe exam ki tayari mein bahut chinta ho rahi hai, kya aap kuch salah denge?", "kind": "abstain", "sub": "respect", "domain": "exam preparation"}
+{"text": "Sir, aapka diya hua practice paper bahut mushkil tha, par usse mera confidence badh gaya.", "kind": "abstain", "sub": "respect", "domain": "exam preparation"}
+{"text": "Madam, aapki class mein revision karna mujhe hamesha accha laga hai.", "kind": "abstain", "sub": "respect", "domain": "exam preparation"}
+{"text": "Sir, mujhe lagta hai ki mock test ka time kam hai aur yeh ek bada problem hai.", "kind": "abstain", "sub": "respect", "domain": "exam preparation"}
+{"text": "Ji sir, aapne jo tips diye the wo kaafi kaam ki thi, dhanyavaad.", "kind": "abstain", "sub": "respect", "domain": "exam preparation"}
+{"text": "Madam, aapka feedback mere answer sheet par bahut helpful raha aur mujhe sudhar ka mauka mila.", "kind": "abstain", "sub": "respect", "domain": "exam preparation"}
+{"text": "Sir, mujhe maths ke sawal kharab lagte hain, kya aap extra practice karwa sakte hain?", "kind": "abstain", "sub": "respect", "domain": "exam preparation"}
+{"text": "Madam, mere ghar mein padhai ka mahaul thoda disturb hota hai, isliye main chinta mein hoon.", "kind": "abstain", "sub": "respect", "domain": "exam preparation"}
+{"text": "Sir, aapka notes wala tareeka mujhe bahut pasand aaya aur bahut accha samjhaya.", "kind": "abstain", "sub": "respect", "domain": "exam preparation"}
+{"text": "Ji madam, mujhe aaj ka paper kaafi lamba laga aur time pe khatam karna mushkil tha.", "kind": "abstain", "sub": "respect", "domain": "exam preparation"}
+{"text": "Sir, aapki mehnat dekh kar mujhe bhi achhe marks laane ki prerna milti hai.", "kind": "abstain", "sub": "respect", "domain": "exam preparation"}
+{"text": "Madam, mera preparation abhi adhoora hai aur mujhe iske liye aapki madad chahiye.", "kind": "abstain", "sub": "respect", "domain": "exam preparation"}
+{"text": "Sir, mujhe lagta hai ki revision ka schedule thoda kharab tha, isliye main behtar plan banana chahta hoon.", "kind": "abstain", "sub": "respect", "domain": "exam preparation"}
+{"text": "Mere dost Rohan ki tabiyat aaj school mein bahut kharab thi.", "kind": "abstain", "sub": "serious", "domain": "school life"}
+{"text": "Priya ko bukhar tha, isliye woh do din se school nahi aayi.", "kind": "abstain", "sub": "serious", "domain": "school life"}
+{"text": "Mujhe dar lag raha hai ki Dadaji ka operation kal ho jayega.", "kind": "abstain", "sub": "serious", "domain": "school life"}
+{"text": "Doctor ne kaha ki Ananya ka haath toota hai, par chinta ki baat nahi.", "kind": "abstain", "sub": "serious", "domain": "school life"}
+{"text": "Hospital ki smell mujhe bilkul accha nahi lagti, woh bahut ajeeb hai.", "kind": "abstain", "sub": "serious", "domain": "school life"}
+{"text": "Sneha ke papa ka accident hua tha, isliye woh ro rahi thi.", "kind": "abstain", "sub": "serious", "domain": "school life"}
+{"text": "Teacher ne bataya ki Arjun ki dadi ka intekal ho gaya hai.", "kind": "abstain", "sub": "serious", "domain": "school life"}
+{"text": "Mujhe ab bhi yaad hai jab meri nani hospital mein admit thi.", "kind": "abstain", "sub": "serious", "domain": "school life"}
+{"text": "Vikram ko pet mein dard tha, toh usne class mein kuch khaya nahi.", "kind": "abstain", "sub": "serious", "domain": "school life"}
+{"text": "Doctor ne Meera ko pani peene aur aaram karne ki salah di.", "kind": "abstain", "sub": "serious", "domain": "school life"}
+{"text": "Aaj ki emergency mein ek bachche ko chot lagi thi, bahut problem hui.", "kind": "abstain", "sub": "serious", "domain": "school life"}
+{"text": "Mere chacha ki surgery ke baad ghar mein sab log bahut pareshan the.", "kind": "abstain", "sub": "serious", "domain": "school life"}
+{"text": "Kya tum jaanti ho ki Kabir ki maa ki tabiyat ab kaisi hai?", "kind": "abstain", "sub": "serious", "domain": "school life"}
+{"text": "Mujhe lagta hai ki school nurse ne Aditi ki injury ka accha dhyan rakha.", "kind": "abstain", "sub": "serious", "domain": "school life"}
+{"text": "Sir, aapka tabla lesson aaj bahut accha tha, mujhe kaafi kuch samajh aaya.", "kind": "abstain", "sub": "respect", "domain": "music and dance practice"}
+{"text": "Madam, mujhe lagta hai mera riyaaz abhi bhi thoda kamzor hai.", "kind": "abstain", "sub": "respect", "domain": "music and dance practice"}
+{"text": "Ji sir, aapki baat sahi hai, main agle hafte se dhyaan rakhungi.", "kind": "abstain", "sub": "respect", "domain": "music and dance practice"}
+{"text": "Madam, aapka gaana sunkar mujhe bahut prerna mili aur accha laga.", "kind": "abstain", "sub": "respect", "domain": "music and dance practice"}
+{"text": "Sir, mujhe chinta hai ki taal ki timing mujhse baar baar galat ho rahi hai.", "kind": "abstain", "sub": "respect", "domain": "music and dance practice"}
+{"text": "Ji madam, aapne jo bhav dikhaaye woh mujhe bahut pasand aaye.", "kind": "abstain", "sub": "respect", "domain": "music and dance practice"}
+{"text": "Sir, aaj ka kathak practice thoda kharab raha, main mehnat aur karungi.", "kind": "abstain", "sub": "respect", "domain": "music and dance practice"}
+{"text": "Madam, aapka sujhav mujhe kaafi upyogi laga aur main use zaroor apnaungi.", "kind": "abstain", "sub": "respect", "domain": "music and dance practice"}
+{"text": "Sir, kya aap bata sakte hain ki yeh mudra sahi hai ya nahi?", "kind": "abstain", "sub": "respect", "domain": "music and dance practice"}
+{"text": "Ji sir, mujhe lagta hai kal ka performance accha hoga, main taiyaar hoon.", "kind": "abstain", "sub": "respect", "domain": "music and dance practice"}
+{"text": "Madam, mujhe thodi problem ho rahi hai is tukde ko yaad rakhne mein.", "kind": "abstain", "sub": "respect", "domain": "music and dance practice"}
+{"text": "Sir, aapki sikhai hui taan ne mera sur sudhaar diya, bahut shukriya.", "kind": "abstain", "sub": "respect", "domain": "music and dance practice"}
+{"text": "Madam, mujhe afsos hai ki main aaj time par nahi pahunch saki.", "kind": "abstain", "sub": "respect", "domain": "music and dance practice"}
+{"text": "Ji sir, aapka feedback bahut sahi tha, mujhe apni galti ab samajh aayi.", "kind": "abstain", "sub": "respect", "domain": "music and dance practice"}
+{"text": "Mujhe lagta hai Karan ne gaadi ka tel poora nahi bharwaya, aur yeh bahut buri baat hai.", "kind": "abstain", "sub": "negation", "domain": "road trip with friends"}
+{"text": "Chinta mat karo, Neha, hum time pe pahunch jayenge, bas thoda aaram se chalo.", "kind": "abstain", "sub": "negation", "domain": "road trip with friends"}
+{"text": "Yeh pizza itna bhi kharab nahi tha, Aman, tum kyon shikayat kar rahe ho?", "kind": "abstain", "sub": "negation", "domain": "road trip with friends"}
+{"text": "Mujhe koi problem nahi hai agar hum raat ko dhaba pe ruk jaayein.", "kind": "abstain", "sub": "negation", "domain": "road trip with friends"}
+{"text": "Sunil ki yeh playlist sunne layak nahi hai, isme ek bhi gaana achha nahi hai.", "kind": "abstain", "sub": "negation", "domain": "road trip with friends"}
+{"text": "Hum ghanton se chal rahe hain, aur ab Pooja ka mood bilkul accha nahi lag raha.", "kind": "abstain", "sub": "negation", "domain": "road trip with friends"}
+{"text": "Yeh pahadi sadak itni tedhi nahi thi jitna Rohit ne bataya tha.", "kind": "abstain", "sub": "negation", "domain": "road trip with friends"}
+{"text": "Tum itna ghabraana mat, Ananya, gaadi ka tyre abhi bhi theek chal raha hai.", "kind": "abstain", "sub": "negation", "domain": "road trip with friends"}
+{"text": "Mujhe pata nahi tha ki yeh highway itna sunsaan hoga, aur yeh accha nahi laga.", "kind": "abstain", "sub": "negation", "domain": "road trip with friends"}
+{"text": "Woh chai wala bahut mehenga nahi tha, humein bekaar mein shikayat nahi karni chahiye.", "kind": "abstain", "sub": "negation", "domain": "road trip with friends"}
+{"text": "Abhi hum kisi bhi mall mein nahi ruk rahe, kyunki kisi ko shopping ka mann nahi hai.", "kind": "abstain", "sub": "negation", "domain": "road trip with friends"}
+{"text": "Yeh photo itni buri nahi aayi hai, Dev, tum bina baat ke hans rahe ho.", "kind": "abstain", "sub": "negation", "domain": "road trip with friends"}
+{"text": "Sahi kaha tumne, is trip ka plan itna bura bhi nahi tha, hum sab enjoy kar rahe hain.", "kind": "abstain", "sub": "negation", "domain": "road trip with friends"}
+{"text": "Sir, aapka robotics lecture bahut accha tha, mujhe kaafi kuch samajh aaya.", "kind": "abstain", "sub": "respect", "domain": "tech / robotics project"}
+{"text": "Madam, mere robot ka sensor kaam nahi kar raha, mujhe thodi chinta ho rahi hai.", "kind": "abstain", "sub": "respect", "domain": "tech / robotics project"}
+{"text": "Sir, kya aap bata sakte hain ki motor ka problem kahan se shuru hota hai?", "kind": "abstain", "sub": "respect", "domain": "tech / robotics project"}
+{"text": "Ji sir, aapka suggestion sach mein useful tha, main usse project mein zaroor use karunga.", "kind": "abstain", "sub": "respect", "domain": "tech / robotics project"}
+{"text": "Madam, mujhe lagta hai hamara code abhi bhi kaafi kharab likha hua hai.", "kind": "abstain", "sub": "respect", "domain": "tech / robotics project"}
+{"text": "Sir, Rohan aur main ne project ka design badal diya, aapki raay chahiye.", "kind": "abstain", "sub": "respect", "domain": "tech / robotics project"}
+{"text": "Madam, aapne jo circuit diagram diya tha, wo mere liye bahut helpful raha.", "kind": "abstain", "sub": "respect", "domain": "tech / robotics project"}
+{"text": "Sir, battery jaldi khatam ho jaati hai, ye mera sabse bada problem hai abhi.", "kind": "abstain", "sub": "respect", "domain": "tech / robotics project"}
+{"text": "Ji madam, Priya ka arduino code bahut accha hai, usne kaafi mehnat ki hai.", "kind": "abstain", "sub": "respect", "domain": "tech / robotics project"}
+{"text": "Sir, mujhe chinta hai ki presentation ke din robot time par nahi chalega.", "kind": "abstain", "sub": "respect", "domain": "tech / robotics project"}
+{"text": "Madam, aapki feedback ke baad mujhe apna project kaafi behtar lag raha hai.", "kind": "abstain", "sub": "respect", "domain": "tech / robotics project"}
+{"text": "Sir, meri team ko lagta hai ki ye sensor kharab hai, hum isse change karna chahte hain.", "kind": "abstain", "sub": "respect", "domain": "tech / robotics project"}
+{"text": "Ji sir, aapne jo safety rules bataye the, wo hum sab ko bahut zaroori lagte hain.", "kind": "abstain", "sub": "respect", "domain": "tech / robotics project"}
+{"text": "Madam, Aditya ne robot ka arm design kiya hai, wo sach mein bahut accha bana hai.", "kind": "abstain", "sub": "respect", "domain": "tech / robotics project"}
+{"text": "Mummy, mujhe abhi khana nahi khaana, plz mat zabardasti karo.", "kind": "abstain", "sub": "negation", "domain": "family at home"}
+{"text": "Papa, yeh cricket match itna boring bhi nahi tha, sach mein.", "kind": "abstain", "sub": "negation", "domain": "family at home"}
+{"text": "Didi ne mera phone uthaya lekin usne koi galti nahi ki thi.", "kind": "abstain", "sub": "negation", "domain": "family at home"}
+{"text": "Dadi ki kahani sunna mujhe bilkul bura nahi lagta hai.", "kind": "abstain", "sub": "negation", "domain": "family at home"}
+{"text": "Itni der se ghar aana koi achhi baat nahi hai, Rohan.", "kind": "abstain", "sub": "negation", "domain": "family at home"}
+{"text": "Mujhe is naye sofa ka rang pasand nahi aaya, honestly.", "kind": "abstain", "sub": "negation", "domain": "family at home"}
+{"text": "Chinta mat karo Nani, mera exam itna mushkil bhi nahi tha.", "kind": "abstain", "sub": "negation", "domain": "family at home"}
+{"text": "Papa ne kaha ki aaj chhutti lena koi bada gunah nahi hai.", "kind": "abstain", "sub": "negation", "domain": "family at home"}
+{"text": "Ye biryani itni bhi kam mirchi wali nahi thi, mujhe pata hai.", "kind": "abstain", "sub": "negation", "domain": "family at home"}
+{"text": "Bhaiya, tumhara gaana sunna itna bhi bura nahi lagta.", "kind": "abstain", "sub": "negation", "domain": "family at home"}
+{"text": "Mummy, mujhe school ki uniform se koi shikayat nahi hai.", "kind": "abstain", "sub": "negation", "domain": "family at home"}
+{"text": "Woh movie dekhne ke baad mujhe bilkul khushi nahi hui.", "kind": "abstain", "sub": "negation", "domain": "family at home"}
+{"text": "Tum mera room saaf nahi karoge toh koi baat nahi, main kar lunga.", "kind": "abstain", "sub": "negation", "domain": "family at home"}
+{"text": "Is saal ki Diwali bhi kuch zyada alag nahi lagegi, sach kahun.", "kind": "abstain", "sub": "negation", "domain": "family at home"}
+{"text": "Kal subah hum station par milenge, phir saath mein mandir jaayenge.", "kind": "abstain", "sub": "facts", "domain": "festival and shaadi"}
+{"text": "Shaadi ka mandap shaam chhe baje tak poori tarah se taiyaar ho jayega.", "kind": "abstain", "sub": "facts", "domain": "festival and shaadi"}
+{"text": "Diwali ki pooja ke liye Ravi ne dukaan se diye aur mithai laa di hai.", "kind": "abstain", "sub": "facts", "domain": "festival and shaadi"}
+{"text": "Mehndi ki raat sabhi mehmaan aangan mein ikattha honge.", "kind": "abstain", "sub": "facts", "domain": "festival and shaadi"}
+{"text": "Nisha ne bataaya ki baraat ka route bazaar wali sadak se hoke jaayega.", "kind": "abstain", "sub": "facts", "domain": "festival and shaadi"}
+{"text": "Holi ke din hum subah nau baje rang khelne chhat par pahunchenge.", "kind": "abstain", "sub": "facts", "domain": "festival and shaadi"}
+{"text": "Dulhan ki vidaai ke baad sabhi log bhojan ke liye hall mein baithenge.", "kind": "abstain", "sub": "facts", "domain": "festival and shaadi"}
+{"text": "Pooja ke liye prasad ka thaal Meera didi ghar se taiyaar karke laayengi.", "kind": "abstain", "sub": "facts", "domain": "festival and shaadi"}
+{"text": "Ganesh chaturthi par visarjan julus shaam paanch baje nadi ki taraf nikalega.", "kind": "abstain", "sub": "facts", "domain": "festival and shaadi"}
+{"text": "Sangeet ka programme ek ghante mein shuru hoga, sab taiyaar rahein.", "kind": "abstain", "sub": "facts", "domain": "festival and shaadi"}
+{"text": "Amit ne kaha ki woh do din pehle aakar shaadi ke intezaam dekhega.", "kind": "abstain", "sub": "facts", "domain": "festival and shaadi"}
+{"text": "Navratri ki garba raat ke baarah baje tak chalegi, is liye jaldi nahi hoga.", "kind": "abstain", "sub": "facts", "domain": "festival and shaadi"}
+{"text": "Shaadi ke card par pata aur samay dono saaf likhe hue hain.", "kind": "abstain", "sub": "facts", "domain": "festival and shaadi"}
+{"text": "Kal subah hum station par milenge.", "kind": "abstain", "sub": "facts", "domain": "neighbourhood and market"}
+{"text": "Sabzi wale ki dukan ek number gali mein hai.", "kind": "abstain", "sub": "facts", "domain": "neighbourhood and market"}
+{"text": "Match shaam chhe baje shuru hoga.", "kind": "abstain", "sub": "facts", "domain": "neighbourhood and market"}
+{"text": "Mummy ne bola ki mandir wale rasta se chalna.", "kind": "abstain", "sub": "facts", "domain": "neighbourhood and market"}
+{"text": "Rohit ka ghar teesri manzil par hai.", "kind": "abstain", "sub": "facts", "domain": "neighbourhood and market"}
+{"text": "Mandi aaj ek ghante baad band ho jayegi.", "kind": "abstain", "sub": "facts", "domain": "neighbourhood and market"}
+{"text": "Hum Sunday ko Sharma uncle ke ghar khana khayenge.", "kind": "abstain", "sub": "facts", "domain": "neighbourhood and market"}
+{"text": "Dhobi kal subah kapde lene aayega.", "kind": "abstain", "sub": "facts", "domain": "neighbourhood and market"}
+{"text": "Dukandar ne bola ki paise UPI se bhi de sakte hain.", "kind": "abstain", "sub": "facts", "domain": "neighbourhood and market"}
+{"text": "Pinki didi ka school nukkad ke paas wale mod par hai.", "kind": "abstain", "sub": "facts", "domain": "neighbourhood and market"}
+{"text": "Kal se colony mein paani teen baje aayega.", "kind": "abstain", "sub": "facts", "domain": "neighbourhood and market"}
+{"text": "Raju bhaiya ki chai wali dukan nau baje khulti hai.", "kind": "abstain", "sub": "facts", "domain": "neighbourhood and market"}
+{"text": "Hum agle mahine Nainital ghoomne jaayenge.", "kind": "abstain", "sub": "facts", "domain": "neighbourhood and market"}
+{"text": "Gaadi ki parking gali ke end mein karni hai.", "kind": "abstain", "sub": "facts", "domain": "neighbourhood and market"}
+{"text": "Kal subah hum lab mein robot ka demo karenge.", "kind": "abstain", "sub": "facts", "domain": "tech / robotics project"}
+{"text": "Naveen ne sensor ka wiring diagram Google Drive par upload kiya hai.", "kind": "abstain", "sub": "facts", "domain": "tech / robotics project"}
+{"text": "Robot ka battery charge hone mein lagbhag do ghante lagte hain.", "kind": "abstain", "sub": "facts", "domain": "tech / robotics project"}
+{"text": "Priya aaj shaam chaar baje motor calibration ki meeting rakhegi.", "kind": "abstain", "sub": "facts", "domain": "tech / robotics project"}
+{"text": "Team ke sab log Rohan ke desk ke paas ikattha honge.", "kind": "abstain", "sub": "facts", "domain": "tech / robotics project"}
+{"text": "Firmware ka naya version kal raat tak test ke liye taiyar hoga.", "kind": "abstain", "sub": "facts", "domain": "tech / robotics project"}
+{"text": "Arjun ne servo motor ka model number notebook mein likh diya hai.", "kind": "abstain", "sub": "facts", "domain": "tech / robotics project"}
+{"text": "Competition ki registration form ka deadline agle Friday hai.", "kind": "abstain", "sub": "facts", "domain": "tech / robotics project"}
+{"text": "Hum robot ki arm ko ek sau aur bees degree tak ghuma sakte hain.", "kind": "abstain", "sub": "facts", "domain": "tech / robotics project"}
+{"text": "Sneha ne Arduino board ko laptop se USB cable ke zariye jodd diya.", "kind": "abstain", "sub": "facts", "domain": "tech / robotics project"}
+{"text": "Project report ka pehla draft Meera ko somvaar tak bhejna hai.", "kind": "abstain", "sub": "facts", "domain": "tech / robotics project"}
+{"text": "Ultrasonic sensor doosre floor ke corridor mein rakha jayega.", "kind": "abstain", "sub": "facts", "domain": "tech / robotics project"}
+{"text": "Kal ke test ke liye humein do extra jumper wires chahiye honge.", "kind": "abstain", "sub": "facts", "domain": "tech / robotics project"}
+{"text": "Vikram ka group robot ka chassis aluminium se banayega.", "kind": "abstain", "sub": "facts", "domain": "tech / robotics project"}
+{"text": "Dadaji ki tabiyat bahut kharab hai aur mujhe bahut chinta ho rahi hai.", "kind": "abstain", "sub": "serious", "domain": "hospital and recovery"}
+{"text": "Doctor ne kaha ki ab sab accha hai, lekin main abhi bhi dar mehsoos kar raha hoon.", "kind": "abstain", "sub": "serious", "domain": "hospital and recovery"}
+{"text": "Meri behen ka operation kal hai aur usse bahut dar lag raha hai.", "kind": "abstain", "sub": "serious", "domain": "hospital and recovery"}
+{"text": "Hospital ka khana itna bekar tha ki mujhe kuch khaane ka mann nahi hua.", "kind": "abstain", "sub": "serious", "domain": "hospital and recovery"}
+{"text": "Papa ki injury zyada gambhir nahi thi, par unhe ab bhi bahut dard ho raha hai.", "kind": "abstain", "sub": "serious", "domain": "hospital and recovery"}
+{"text": "Maa ko ICU mein dekhkar mera dil bahut bhaari ho gaya tha.", "kind": "abstain", "sub": "serious", "domain": "hospital and recovery"}
+{"text": "Doctor saahab ne bataya ki reports mein koi badi problem nahi nikli.", "kind": "abstain", "sub": "serious", "domain": "hospital and recovery"}
+{"text": "Chachi ka dengue ab kaafi kam ho gaya hai aur woh thodi better feel kar rahi hain.", "kind": "abstain", "sub": "serious", "domain": "hospital and recovery"}
+{"text": "Hospital ki bill dekhkar Rohan ko bahut tension aur pareshani hui.", "kind": "abstain", "sub": "serious", "domain": "hospital and recovery"}
+{"text": "Aaj Dadi ki haalat thodi sudhri hai, isliye ghar mein sab khush hain.", "kind": "abstain", "sub": "serious", "domain": "hospital and recovery"}
+{"text": "Mujhe lagta hai ki doctor ne sahi ilaaj nahi kiya aur ab hum dukhi hain.", "kind": "abstain", "sub": "serious", "domain": "hospital and recovery"}
+{"text": "Anjali ki surgery ke baad woh ab bilkul theek dikh rahi hai, jo bahut accha hai.", "kind": "abstain", "sub": "serious", "domain": "hospital and recovery"}
+{"text": "Nani ke jaane ka dukh hai, par hum sabne unki seva mein koi kami nahi chhodi.", "kind": "abstain", "sub": "serious", "domain": "hospital and recovery"}
+{"text": "Papa, mujhe aaj ka dinner bahut accha laga, thank you.", "kind": "abstain", "sub": "elder", "domain": "family at home"}
+{"text": "Mummy, mujhe is baat ki bahut chinta ho rahi hai ki exam kaisa hoga.", "kind": "abstain", "sub": "elder", "domain": "family at home"}
+{"text": "Dadaji, aapki purani kahaniyan sunna mujhe hamesha accha lagta hai.", "kind": "abstain", "sub": "elder", "domain": "family at home"}
+{"text": "Dadi, mujhe raat mein akela sone se bahut dar lagta hai.", "kind": "abstain", "sub": "elder", "domain": "family at home"}
+{"text": "Nani, aapka banaya hua halwa sabse accha hota hai, sach mein.", "kind": "abstain", "sub": "elder", "domain": "family at home"}
+{"text": "Coach, mujhe aaj ki practice mein apni galti dekh kar bura laga.", "kind": "abstain", "sub": "elder", "domain": "family at home"}
+{"text": "Sir, mujhe lagta hai ki yeh homework thoda zyada mushkil tha.", "kind": "abstain", "sub": "elder", "domain": "family at home"}
+{"text": "Papa, mujhe school ka naya rule bilkul accha nahi laga, sach kahun toh.", "kind": "abstain", "sub": "elder", "domain": "family at home"}
+{"text": "Mummy, aapne jo kal kaha tha, uski wajah se mujhe bahut accha feel hua.", "kind": "abstain", "sub": "elder", "domain": "family at home"}
+{"text": "Dadaji, mujhe aapke saath cricket khelna hamesha se pasand raha hai.", "kind": "abstain", "sub": "elder", "domain": "family at home"}
+{"text": "Nani, mujhe aaj ki subah ki thandi hawa bahut achhi lagi.", "kind": "abstain", "sub": "elder", "domain": "family at home"}
+{"text": "Coach, mujhe lagta hai ki hum is match mein bahut acha khel sakte hain.", "kind": "abstain", "sub": "elder", "domain": "family at home"}
+{"text": "Papa, mujhe kal ke trip ki bahut excitement hai, par thoda dar bhi hai.", "kind": "abstain", "sub": "elder", "domain": "family at home"}
+{"text": "Sir, mujhe is project ka topic bahut interesting laga, main ise accha karunga.", "kind": "abstain", "sub": "elder", "domain": "family at home"}
+{"text": "Tum bhi cricket nets join karoge kya?", "kind": "abstain", "sub": "question", "domain": "cricket and sports"}
+{"text": "Aaj kaunsa team jeet raha hai, Priya?", "kind": "abstain", "sub": "question", "domain": "cricket and sports"}
+{"text": "Kitne overs bachaye the Bumrah ne?", "kind": "abstain", "sub": "question", "domain": "cricket and sports"}
+{"text": "Kya tumne IPL ka aaj ka match dekha?", "kind": "abstain", "sub": "question", "domain": "cricket and sports"}
+{"text": "Ye batsman itni der tak kyon khel raha hai?", "kind": "abstain", "sub": "question", "domain": "cricket and sports"}
+{"text": "Tum football ya cricket, kya zyada pasand karti ho?", "kind": "abstain", "sub": "question", "domain": "cricket and sports"}
+{"text": "Kal ka fixture kab shuru hoga, Aman?", "kind": "abstain", "sub": "question", "domain": "cricket and sports"}
+{"text": "Kya tumhe pata hai Kohli ne century mari thi?", "kind": "abstain", "sub": "question", "domain": "cricket and sports"}
+{"text": "Kaun sa bowler last over daal raha hai?", "kind": "abstain", "sub": "question", "domain": "cricket and sports"}
+{"text": "Chalo, aaj shaam ko badminton khelne chalein?", "kind": "abstain", "sub": "question", "domain": "cricket and sports"}
+{"text": "Tumhara favourite Indian cricketer kaun hai, Sneha?", "kind": "abstain", "sub": "question", "domain": "cricket and sports"}
+{"text": "Kab tak ye score board update hoga, dost?", "kind": "abstain", "sub": "question", "domain": "cricket and sports"}
+{"text": "Kya tum bhi stadium mein match dekhne aaogi, Kabir?", "kind": "abstain", "sub": "question", "domain": "cricket and sports"}
+{"text": "Robot ka arm abhi bhi thoda ajeeb hil raha hai, par ye itna bura bhi nahi hai.", "kind": "abstain", "sub": "negation", "domain": "tech / robotics project"}
+{"text": "Priya ne sensor wiring dobara check ki, aur koi galti nahi nikli.", "kind": "abstain", "sub": "negation", "domain": "tech / robotics project"}
+{"text": "Mujhe lagta tha ye motor kaam nahi karega, lekin wo toh chal raha hai.", "kind": "abstain", "sub": "negation", "domain": "tech / robotics project"}
+{"text": "Abhi ka code dekh ke lag raha hai ki isme koi bhi bug nahi hai.", "kind": "abstain", "sub": "negation", "domain": "tech / robotics project"}
+{"text": "Rohan bola, 'Itni jaldi demo ready karna mushkil nahi hai, hum kar lenge.'.", "kind": "abstain", "sub": "negation", "domain": "tech / robotics project"}
+{"text": "Battery jaldi khatam nahi hoti, humne kal raat ise poora charge kiya tha.", "kind": "abstain", "sub": "negation", "domain": "tech / robotics project"}
+{"text": "Sensor ka reading galat aa raha hai, par isse hum ignore nahi kar sakte.", "kind": "abstain", "sub": "negation", "domain": "tech / robotics project"}
+{"text": "Chinta mat karo, robot ka balance abhi itna bhi unstable nahi hai.", "kind": "abstain", "sub": "negation", "domain": "tech / robotics project"}
+{"text": "Mujhe is project ki deadline se koi dikkat nahi hai, hum time pe pahunch jayenge.", "kind": "abstain", "sub": "negation", "domain": "tech / robotics project"}
+{"text": "Yeh design pehle jaisa achha nahi tha, lekin naya version bhi bura nahi hai.", "kind": "abstain", "sub": "negation", "domain": "tech / robotics project"}
+{"text": "Aman ne kaha, 'Camera module ka connection loose nahi tha, maine check kiya.'.", "kind": "abstain", "sub": "negation", "domain": "tech / robotics project"}
+{"text": "Humne soch tha ki algorithm slow hoga, par wo itna slow bhi nahi chala.", "kind": "abstain", "sub": "negation", "domain": "tech / robotics project"}
+{"text": "Robot ne abhi tak galti nahi ki, aur ye baat hume pareshan bhi nahi kar rahi.", "kind": "abstain", "sub": "negation", "domain": "tech / robotics project"}
+{"text": "Team ka koi bhi member is plan se unhappy nahi hai, sab kaafi khush hain.", "kind": "abstain", "sub": "negation", "domain": "tech / robotics project"}
+{"text": "Papa, mujhe aaj subah ki market mein sabzi bahut accha lagi.", "kind": "abstain", "sub": "elder", "domain": "neighbourhood and market"}
+{"text": "Mummy, mujhe chinta ho rahi hai ki kal ka kaam time par khatam hoga ya nahi.", "kind": "abstain", "sub": "elder", "domain": "neighbourhood and market"}
+{"text": "Dadaji, aapka wo purana mohalla ka kissa sunkar mujhe bahut accha laga.", "kind": "abstain", "sub": "elder", "domain": "neighbourhood and market"}
+{"text": "Dadi, bazaar mein itni bheed dekh kar mujhe thoda dar lag raha tha.", "kind": "abstain", "sub": "elder", "domain": "neighbourhood and market"}
+{"text": "Nani, aapne jo sabzi wale ki baat batayi, wo sunkar mujhe bura laga.", "kind": "abstain", "sub": "elder", "domain": "neighbourhood and market"}
+{"text": "Coach, aaj ki practice mein mera pass wala shot bahut accha nahi tha.", "kind": "abstain", "sub": "elder", "domain": "neighbourhood and market"}
+{"text": "Sir, mujhe lagta hai ki neighbourhood ka park ab pehle se kaafi saaf hai.", "kind": "abstain", "sub": "elder", "domain": "neighbourhood and market"}
+{"text": "Papa, mujhe is baar ki dukandar ki baatein bilkul accha nahi lagi.", "kind": "abstain", "sub": "elder", "domain": "neighbourhood and market"}
+{"text": "Mummy, mujhe samajh nahi aa raha ki itni mehengi sabzi kaun khareedega.", "kind": "abstain", "sub": "elder", "domain": "neighbourhood and market"}
+{"text": "Dadaji, aap ne bataya tha ki mohalla pehle kitna shaant hua karta tha.", "kind": "abstain", "sub": "elder", "domain": "neighbourhood and market"}
+{"text": "Dadi, mujhe chinta hai ki gali mein itni gaadi kyun khadi rehti hai.", "kind": "abstain", "sub": "elder", "domain": "neighbourhood and market"}
+{"text": "Nani, mujhe lagta hai ki market ka naya rule humaare liye accha hai.", "kind": "abstain", "sub": "elder", "domain": "neighbourhood and market"}
+{"text": "Coach, mujhe is haar ka bahut bura laga, par main aage mehnat karunga.", "kind": "abstain", "sub": "elder", "domain": "neighbourhood and market"}
+{"text": "Sir, mujhe dar hai ki agle hafte ka match humaari team ke liye mushkil hoga.", "kind": "abstain", "sub": "elder", "domain": "neighbourhood and market"}
+{"text": "Robot ka sensor kharab ho gaya, isliye Rohan ka dhyan bhi hospital wale dadaji par hai.", "kind": "abstain", "sub": "serious", "domain": "tech / robotics project"}
+{"text": "Priya ki maa ko kal surgery hai, aur usse project ki chinta bhi ho rahi hai.", "kind": "abstain", "sub": "serious", "domain": "tech / robotics project"}
+{"text": "Mere chacha ki haalat abhi bhi kharab hai, doctor ne kal tak kuch nahi kaha.", "kind": "abstain", "sub": "serious", "domain": "tech / robotics project"}
+{"text": "Doctor ne kaha ki Ananya ke pitaji ki reports theek hain, ab dar ki baat nahi.", "kind": "abstain", "sub": "serious", "domain": "tech / robotics project"}
+{"text": "Hospital mein itni bheed thi ki hum robot ka demo bhi nahi dikha paaye.", "kind": "abstain", "sub": "serious", "domain": "tech / robotics project"}
+{"text": "Mujhe bahut bura laga jab Arjun ke dadaji ki death ki khabar mili.", "kind": "abstain", "sub": "serious", "domain": "tech / robotics project"}
+{"text": "Nani ko dengue hua tha, isliye hum teen din ghar par hi rahe.", "kind": "abstain", "sub": "serious", "domain": "tech / robotics project"}
+{"text": "Aaj subah Kabir ke papa ka accident hua, unhe emergency mein le gaye.", "kind": "abstain", "sub": "serious", "domain": "tech / robotics project"}
+{"text": "Meri behen ka haath toot gaya hai, toh ab wo hamare robot team mein nahi aayegi.", "kind": "abstain", "sub": "serious", "domain": "tech / robotics project"}
+{"text": "Doctor ne bataya ki Sneha ki tabiyat ab kaafi accha ho rahi hai.", "kind": "abstain", "sub": "serious", "domain": "tech / robotics project"}
+{"text": "Dadi ki dawai khatam ho gayi hai, aur hospital ka chakkar phir se lagane wala hai.", "kind": "abstain", "sub": "serious", "domain": "tech / robotics project"}
+{"text": "Vikram ko fever ke wajah se teen din school nahi aana padega, bahut problem hai.", "kind": "abstain", "sub": "serious", "domain": "tech / robotics project"}
+{"text": "Mera dost Aditya kal se hospital mein hai, uski haalat dekh kar mujhe dar lagta hai.", "kind": "abstain", "sub": "serious", "domain": "tech / robotics project"}
+{"text": "Mere boss ki tabiyat aaj bahut kharab lag rahi thi, isliye woh office nahi aaye.", "kind": "abstain", "sub": "serious", "domain": "office / internship"}
+{"text": "Internship ke pehle hafte mein hi Rohan ko dengue ho gaya aur woh do hafte chhutti par the.", "kind": "abstain", "sub": "serious", "domain": "office / internship"}
+{"text": "Mujhe chinta hai ki Priya ki maa ka operation kal hai aur woh bahut dar gayi hai.", "kind": "abstain", "sub": "serious", "domain": "office / internship"}
+{"text": "Office ke doctor ne kaha ki Ankit ko aaram ki zaroorat hai, isliye usne ghar jaane ka faisla kiya.", "kind": "abstain", "sub": "serious", "domain": "office / internship"}
+{"text": "Meri team lead ke pitaji hospital mein admit hain aur sabko unki sehat ki fikar hai.", "kind": "abstain", "sub": "serious", "domain": "office / internship"}
+{"text": "Intern Sneha ka haath toot gaya tha, par usne kaha ki ye koi bada problem nahi hai.", "kind": "abstain", "sub": "serious", "domain": "office / internship"}
+{"text": "Mujhe lagta hai ki office mein kaam ka dabaav itna zyada hai ki log bimar pad rahe hain.", "kind": "abstain", "sub": "serious", "domain": "office / internship"}
+{"text": "Kal subah humein pata chala ki hamare senior Vikram ke daadi ka guzar gaya hai aur sab udaas hain.", "kind": "abstain", "sub": "serious", "domain": "office / internship"}
+{"text": "Hospital mein mere cousin ka haal abhi bhi theek nahi hai, doctors bhi kuch keh nahi paa rahe.", "kind": "abstain", "sub": "serious", "domain": "office / internship"}
+{"text": "Accha hua ki office mein first aid kit thi, warna Aman ka cut bahut gehra ho jaata.", "kind": "abstain", "sub": "serious", "domain": "office / internship"}
+{"text": "Mera ek dost bike accident mein chot khaane ke baad ab tak ICU mein hai, aur main bahut pareshan hoon.", "kind": "abstain", "sub": "serious", "domain": "office / internship"}
+{"text": "Doctor ne bataya ki Meenal ki report mein kuch problem hai, isliye usne do hafte ki chhutti li.", "kind": "abstain", "sub": "serious", "domain": "office / internship"}
+{"text": "Manager ne kaha ki jo bhi bimar ho, woh turant ghar jaaye, kaam ki chinta na kare.", "kind": "abstain", "sub": "serious", "domain": "office / internship"}
+{"text": "Humare intern Karan ka pitaji ka dil ka daura pada tha, aur woh abhi bhi bahut dar mein hai.", "kind": "abstain", "sub": "serious", "domain": "office / internship"}
+{"text": "Doctor ne kaha ki Ravi ko kal subah discharge milega.", "kind": "abstain", "sub": "facts", "domain": "hospital and recovery"}
+{"text": "Nurse ne dawai ka time subah aath baje likha hai.", "kind": "abstain", "sub": "facts", "domain": "hospital and recovery"}
+{"text": "Priya ki report shaam tak lab se aa jaayegi.", "kind": "abstain", "sub": "facts", "domain": "hospital and recovery"}
+{"text": "Papa ko physiotherapy ke liye agle Monday ka appointment mila hai.", "kind": "abstain", "sub": "facts", "domain": "hospital and recovery"}
+{"text": "Meera ne aaj dopahar teen baje ward mein khana pahunchaya.", "kind": "abstain", "sub": "facts", "domain": "hospital and recovery"}
+{"text": "Operation theatre number chaar mein kal ka schedule fix ho gaya hai.", "kind": "abstain", "sub": "facts", "domain": "hospital and recovery"}
+{"text": "Dadi ka blood test Wednesday ko hoga, reception par slip mil jaayegi.", "kind": "abstain", "sub": "facts", "domain": "hospital and recovery"}
+{"text": "Anil ne apni insurance card counter par jama kar di hai.", "kind": "abstain", "sub": "facts", "domain": "hospital and recovery"}
+{"text": "Hospital ki canteen raat das baje tak khuli rehti hai.", "kind": "abstain", "sub": "facts", "domain": "hospital and recovery"}
+{"text": "Sunita aunty ko do hafte tak roz ek ghanta walking karni hai.", "kind": "abstain", "sub": "facts", "domain": "hospital and recovery"}
+{"text": "Vikram ke room mein ek extra bed lagane ki request bhej di gayi hai.", "kind": "abstain", "sub": "facts", "domain": "hospital and recovery"}
+{"text": "Doctor round par subah saat baje aate hain, family ko pehle se pata hai.", "kind": "abstain", "sub": "facts", "domain": "hospital and recovery"}
+{"text": "Kiran ne discharge ke baad ki medicines ki list apne phone mein save ki hai.", "kind": "abstain", "sub": "facts", "domain": "hospital and recovery"}
+{"text": "Mohan ji ko agle hafte X-ray ke liye dobara bulaya jaayega.", "kind": "abstain", "sub": "facts", "domain": "hospital and recovery"}
+{"text": "Rahul, tumhara riyaaz aaj bilkul bhi achha nahi tha, thoda dhyan do.", "kind": "abstain", "sub": "negation", "domain": "music and dance practice"}
+{"text": "Mujhe lagta hai ki yeh gaane ka tempo itna bhi galat nahi hai.", "kind": "abstain", "sub": "negation", "domain": "music and dance practice"}
+{"text": "Priya ne kaha ki woh kal class mein time pe aayegi, koi dikkat nahi hai.", "kind": "abstain", "sub": "negation", "domain": "music and dance practice"}
+{"text": "Sir ne bola, abhi tumhari taal thodi kachchi hai, par chinta mat karo.", "kind": "abstain", "sub": "negation", "domain": "music and dance practice"}
+{"text": "Mere liye yeh naya step seekhna itna mushkil bhi nahi laga.", "kind": "abstain", "sub": "negation", "domain": "music and dance practice"}
+{"text": "Aman, tumhara sur aaj itna bura nahi lag raha tha, sach mein.", "kind": "abstain", "sub": "negation", "domain": "music and dance practice"}
+{"text": "Humein is performance ke liye mehnat karni hogi, warna sab bigad jayega.", "kind": "abstain", "sub": "negation", "domain": "music and dance practice"}
+{"text": "Neha ne kaha ki woh is group mein dance karne se khush nahi hai.", "kind": "abstain", "sub": "negation", "domain": "music and dance practice"}
+{"text": "Kal ki practice mein koi galti nahi hui, sab kuch sahi chal raha tha.", "kind": "abstain", "sub": "negation", "domain": "music and dance practice"}
+{"text": "Rohan ko yeh dhun samajh mein nahi aayi, par usne koshish toh ki.", "kind": "abstain", "sub": "negation", "domain": "music and dance practice"}
+{"text": "Tanvi, tum itna ghabrao mat, tumhara footwork bilkul kharab nahi hai.", "kind": "abstain", "sub": "negation", "domain": "music and dance practice"}
+{"text": "Maa ne kaha ki riyaaz ke baad ghar ka kaam karna zaroori nahi hai.", "kind": "abstain", "sub": "negation", "domain": "music and dance practice"}
+{"text": "Is baar ka concert utna bada bhi nahi hoga jitna hum soch rahe hain.", "kind": "abstain", "sub": "negation", "domain": "music and dance practice"}
+{"text": "Vikram ka harmonium aaj theek nahi baj raha, usme koi khaas kharabi nahi hai.", "kind": "abstain", "sub": "negation", "domain": "music and dance practice"}
+{"text": "Sir, aapka startup pitch kal bahut accha laga, sab ko pasand aaya.", "kind": "abstain", "sub": "respect", "domain": "startup and money"}
+{"text": "Madam, mujhe funding ke baare mein thodi chinta ho rahi hai.", "kind": "abstain", "sub": "respect", "domain": "startup and money"}
+{"text": "Sir, aapne jo budget plan diya tha, woh kaafi realistic lagta hai.", "kind": "abstain", "sub": "respect", "domain": "startup and money"}
+{"text": "Madam, aapki baat sahi hai, humein cash flow pe zyada dhyan dena chahiye.", "kind": "abstain", "sub": "respect", "domain": "startup and money"}
+{"text": "Sir, mere hisaab se hamari marketing ka kharch thoda zyada ho gaya hai.", "kind": "abstain", "sub": "respect", "domain": "startup and money"}
+{"text": "Madam, investor ka jawab abhi tak nahi aaya, isliye main thoda pareshan hoon.", "kind": "abstain", "sub": "respect", "domain": "startup and money"}
+{"text": "Sir, aapki salah se hamari pricing strategy kaafi behtar ho gayi hai.", "kind": "abstain", "sub": "respect", "domain": "startup and money"}
+{"text": "Madam, mujhe lagta hai ki yeh problem hum mil kar aaram se solve kar sakte hain.", "kind": "abstain", "sub": "respect", "domain": "startup and money"}
+{"text": "Sir, aapne jo financial report bheji, usme kuch numbers galat lag rahe the.", "kind": "abstain", "sub": "respect", "domain": "startup and money"}
+{"text": "Madam, aapka feedback hamari team ke liye bahut useful aur accha tha.", "kind": "abstain", "sub": "respect", "domain": "startup and money"}
+{"text": "Sir, mujhe afsos hai ki pichhle quarter mein revenue ummeed se kam raha.", "kind": "abstain", "sub": "respect", "domain": "startup and money"}
+{"text": "Madam, aapki guidance se hum apna business plan kaafi achhe se samajh paaye.", "kind": "abstain", "sub": "respect", "domain": "startup and money"}
+{"text": "Sir, mere khayal se hamare startup ka sabse bada risk abhi bhi funding hai.", "kind": "abstain", "sub": "respect", "domain": "startup and money"}
+{"text": "Madam, aap bata sakti hain ki emergency fund ka hisaab kaise rakhna sahi rahega?", "kind": "abstain", "sub": "respect", "domain": "startup and money"}
+{"text": "Sir, aapne jo movie ki suggestion di thi, woh sach mein bahut accha tha.", "kind": "abstain", "sub": "respect", "domain": "movies and OTT shows"}
+{"text": "Madam, is OTT show ka second season mujhe kharab laga, kahani bahut khinchi hui thi.", "kind": "abstain", "sub": "respect", "domain": "movies and OTT shows"}
+{"text": "Sir, aapki pasandida film dekhkar mujhe bhi kaafi maza aaya.", "kind": "abstain", "sub": "respect", "domain": "movies and OTT shows"}
+{"text": "Madam, mujhe chinta hai ki is web series ka ending bahut jaldi aur adhoora laga.", "kind": "abstain", "sub": "respect", "domain": "movies and OTT shows"}
+{"text": "Ji sir, aapka review padhkar maine woh thriller dekhi aur sach mein problem nahi hui.", "kind": "abstain", "sub": "respect", "domain": "movies and OTT shows"}
+{"text": "Madam, aapki wali movie ka background score kaafi achha tha, dil ko chhu gaya.", "kind": "abstain", "sub": "respect", "domain": "movies and OTT shows"}
+{"text": "Sir, mujhe lagta hai is documentary ki editing thodi kharab hai, kaafi slow hai.", "kind": "abstain", "sub": "respect", "domain": "movies and OTT shows"}
+{"text": "Madam, aapne jo series recommend ki thi, woh mujhe bahut pasand aayi, dhanyavaad.", "kind": "abstain", "sub": "respect", "domain": "movies and OTT shows"}
+{"text": "Ji sir, mujhe is film ki kahani thodi predictable lagi, par acting kaafi accha tha.", "kind": "abstain", "sub": "respect", "domain": "movies and OTT shows"}
+{"text": "Sir, kal raat aapki suggested show dekhte waqt mujhe bahut sukoon mila.", "kind": "abstain", "sub": "respect", "domain": "movies and OTT shows"}
+{"text": "Madam, mujhe chinta hai ki OTT par is movie ka subtitle quality kharab hai.", "kind": "abstain", "sub": "respect", "domain": "movies and OTT shows"}
+{"text": "Sir, aapki pasand ki film mujhe itni achhi lagi ki main dobara dekhna chahta hoon.", "kind": "abstain", "sub": "respect", "domain": "movies and OTT shows"}
+{"text": "Ji madam, is serial ka pehla episode thoda bore karne wala tha, par aage accha hua.", "kind": "abstain", "sub": "respect", "domain": "movies and OTT shows"}
+{"text": "Sir, aapka opinion sahi tha, is movie ka climax sach mein kamzor aur kharab tha.", "kind": "abstain", "sub": "respect", "domain": "movies and OTT shows"}
+{"text": "Mujhe lagta hai ki yeh test itna mushkil bhi nahi tha.", "kind": "abstain", "sub": "negation", "domain": "school life"}
+{"text": "Priya ne homework nahi kiya, lekin usne koi bahana nahi banaya.", "kind": "abstain", "sub": "negation", "domain": "school life"}
+{"text": "Yeh idea accha nahi hai, hum pehle teacher se baat karte hain.", "kind": "abstain", "sub": "negation", "domain": "school life"}
+{"text": "Chinta mat karo, Rohan, sab theek ho jayega.", "kind": "abstain", "sub": "negation", "domain": "school life"}
+{"text": "Mujhe school ki canteen ka khana bilkul pasand nahi hai.", "kind": "abstain", "sub": "negation", "domain": "school life"}
+{"text": "Kal ka match itna bura bhi nahi raha, hum sirf thode se haar gaye.", "kind": "abstain", "sub": "negation", "domain": "school life"}
+{"text": "Aman ne kaha ki woh science project mein koi madad nahi karega.", "kind": "abstain", "sub": "negation", "domain": "school life"}
+{"text": "Assembly mein Ananya ka speech kharab nahi tha, bas thoda lamba tha.", "kind": "abstain", "sub": "negation", "domain": "school life"}
+{"text": "Hum sab ne mehnat ki thi, par result utna achha nahi aaya.", "kind": "abstain", "sub": "negation", "domain": "school life"}
+{"text": "Is saal ka annual function pichle saal jitna bada nahi hoga.", "kind": "abstain", "sub": "negation", "domain": "school life"}
+{"text": "Mere dost ko yeh naya teacher bilkul bura nahi lagta.", "kind": "abstain", "sub": "negation", "domain": "school life"}
+{"text": "Sirf ek galti se koi bura student nahi ban jata, Kavya.", "kind": "abstain", "sub": "negation", "domain": "school life"}
+{"text": "Kya tumhe lagta hai ki library mein shor karna theek nahi hai?", "kind": "abstain", "sub": "negation", "domain": "school life"}
+{"text": "Mujhe is bench par baithna pasand nahi, yeh bahut uncomfortable hai.", "kind": "abstain", "sub": "negation", "domain": "school life"}
+{"text": "Startup ke pehle mahine mein hi Rohan ke papa ko heart attack aa gaya, aur sab kuch ruk gaya.", "kind": "abstain", "sub": "serious", "domain": "startup and money"}
+{"text": "Investor ki meeting ke beech mein Priya ki maa ka phone aaya, hospital mein admit hain.", "kind": "abstain", "sub": "serious", "domain": "startup and money"}
+{"text": "Mujhe dar lag raha hai ki agar main beemar pad gaya toh funding ka kaam kaun sambhalega.", "kind": "abstain", "sub": "serious", "domain": "startup and money"}
+{"text": "Doctor ne bola ki Arjun ke pair ki haddi toot gayi hai, chhe hafte aaram karna padega.", "kind": "abstain", "sub": "serious", "domain": "startup and money"}
+{"text": "Team ke sab log thak gaye hain, kyunki Kavya ka dengue ka bukhar abhi tak utra nahi hai.", "kind": "abstain", "sub": "serious", "domain": "startup and money"}
+{"text": "Dadaji ki tabiyat bahut kharab hai, isliye Neha ne office se chhutti le li hai.", "kind": "abstain", "sub": "serious", "domain": "startup and money"}
+{"text": "Mere chachaji ka surgery ka kharcha itna zyada hai ki savings lagbhag khatam ho gayi hai.", "kind": "abstain", "sub": "serious", "domain": "startup and money"}
+{"text": "Hospital ka bill dekh kar Vikram ko laga ki startup ka saara paisa usi mein chala jayega.", "kind": "abstain", "sub": "serious", "domain": "startup and money"}
+{"text": "Doctor ne kaha ki ab sab accha hai, lekin Meera abhi bhi bahut kamzor mehsoos kar rahi hai.", "kind": "abstain", "sub": "serious", "domain": "startup and money"}
+{"text": "Mujhe problem yeh hai ki Sameer ki nani ki death ke baad family ka business ruk gaya hai.", "kind": "abstain", "sub": "serious", "domain": "startup and money"}
+{"text": "Accident ke baad Anjali ka haath plaster mein hai, aur woh laptop pe kaam nahi kar paa rahi.", "kind": "abstain", "sub": "serious", "domain": "startup and money"}
+{"text": "Kal raat papa ko emergency mein le gaye, aur ab hum bas unki report ka intezaar kar rahe hain.", "kind": "abstain", "sub": "serious", "domain": "startup and money"}
+{"text": "Ghar mein sab ko chinta hai ki Tanmay ki beemari ki wajah se unka pitch deck adhura reh jayega.", "kind": "abstain", "sub": "serious", "domain": "startup and money"}
+{"text": "Kya tum kal subah ki investor meeting ke liye slides tayyar kar paoge?", "kind": "abstain", "sub": "question", "domain": "startup and money"}
+{"text": "Tumne startup ka pitch deck Priya ko dikhaya kya?", "kind": "abstain", "sub": "question", "domain": "startup and money"}
+{"text": "Rohan, kya tum is mahine ka burn rate ka hisaab nikal sakte ho?", "kind": "abstain", "sub": "question", "domain": "startup and money"}
+{"text": "Kitne log abhi tak beta test mein shamil hue hain?", "kind": "abstain", "sub": "question", "domain": "startup and money"}
+{"text": "Kya humein seed round ke liye ek aur angel investor se baat karni chahiye?", "kind": "abstain", "sub": "question", "domain": "startup and money"}
+{"text": "Aman, tum salary payroll ka sheet kab tak bhej doge?", "kind": "abstain", "sub": "question", "domain": "startup and money"}
+{"text": "Kya hamare paas agle chhe mahine ka cash runway kaafi hai?", "kind": "abstain", "sub": "question", "domain": "startup and money"}
+{"text": "Tumne Zoya ke saath co-founder equity split ke baare mein baat ki kya?", "kind": "abstain", "sub": "question", "domain": "startup and money"}
+{"text": "Kya humein Bangalore ka office band karke remote mein shift karna chahiye?", "kind": "abstain", "sub": "question", "domain": "startup and money"}
+{"text": "Neha, kya tum product ki pricing ka naya plan client ko bhej sakti ho?", "kind": "abstain", "sub": "question", "domain": "startup and money"}
+{"text": "Kab tak hum apna pehla paying customer le aayenge?", "kind": "abstain", "sub": "question", "domain": "startup and money"}
+{"text": "Kya Vikram ne vendor ka invoice clear kar diya hai?", "kind": "abstain", "sub": "question", "domain": "startup and money"}
+{"text": "Kya humare liye Series A ke terms samajhna mushkil hai?", "kind": "abstain", "sub": "question", "domain": "startup and money"}
+{"text": "Tum mujhe batao, kya hamara CAC aur LTV ka ratio theek hai?", "kind": "abstain", "sub": "question", "domain": "startup and money"}
+{"text": "Sir, aapka Diwali ka message bahut accha laga, dhanyavaad.", "kind": "abstain", "sub": "respect", "domain": "festival and shaadi"}
+{"text": "Madam, shaadi ki tareekh ke baare mein mujhe thodi chinta hai.", "kind": "abstain", "sub": "respect", "domain": "festival and shaadi"}
+{"text": "Sir, aapne jo festival ki speech di, woh sach mein bahut prerna dene wali thi.", "kind": "abstain", "sub": "respect", "domain": "festival and shaadi"}
+{"text": "Ji Sharma uncle, aapki Holi ki mithai sabse achhi lagti hai.", "kind": "abstain", "sub": "respect", "domain": "festival and shaadi"}
+{"text": "Madam, office mein Navratri ke din kaam ka load kaafi zyada tha.", "kind": "abstain", "sub": "respect", "domain": "festival and shaadi"}
+{"text": "Sir, mujhe lagta hai ki Eid ki chhutti ka plan kharab nahi hona chahiye.", "kind": "abstain", "sub": "respect", "domain": "festival and shaadi"}
+{"text": "Sir, shaadi ke karan kal ki class mein aana mushkil ho raha hai.", "kind": "abstain", "sub": "respect", "domain": "festival and shaadi"}
+{"text": "Madam, Pongal ke baare mein aapki jaankari bahut gehri aur accha thi.", "kind": "abstain", "sub": "respect", "domain": "festival and shaadi"}
+{"text": "Ji Mehta sir, aapki Ganpati puja ki vyavastha dekh kar mujhe khushi hui.", "kind": "abstain", "sub": "respect", "domain": "festival and shaadi"}
+{"text": "Sir, mere chachaji ki shaadi ki taiyari mein kaafi problem aa rahi hai.", "kind": "abstain", "sub": "respect", "domain": "festival and shaadi"}
+{"text": "Madam, aapka Durga Puja par diya gaya chhutti ka faisla sahi aur samajhdaar tha.", "kind": "abstain", "sub": "respect", "domain": "festival and shaadi"}
+{"text": "Ji nana ji, aapki Raksha Bandhan ki kahaani sunkar mujhe bahut accha laga.", "kind": "abstain", "sub": "respect", "domain": "festival and shaadi"}
+{"text": "Sir, is saal ke Onam ke program mein kuch gadbad hone ki mujhe chinta hai.", "kind": "abstain", "sub": "respect", "domain": "festival and shaadi"}
+{"text": "Aaj raat hum dal chawal banayenge.", "kind": "abstain", "sub": "facts", "domain": "cooking and food"}
+{"text": "Pyaaz ko halka brown hone tak bhoono.", "kind": "abstain", "sub": "facts", "domain": "cooking and food"}
+{"text": "Meera ne kal subah paratha banaya tha.", "kind": "abstain", "sub": "facts", "domain": "cooking and food"}
+{"text": "Dahi ko ek ghante ke liye fridge mein rakho.", "kind": "abstain", "sub": "facts", "domain": "cooking and food"}
+{"text": "Rohan har Sunday ghar par biryani pakata hai.", "kind": "abstain", "sub": "facts", "domain": "cooking and food"}
+{"text": "Ghee ko garam karke jeera daalna.", "kind": "abstain", "sub": "facts", "domain": "cooking and food"}
+{"text": "Hum shaam ko Anjali ke ghar khaana khayenge.", "kind": "abstain", "sub": "facts", "domain": "cooking and food"}
+{"text": "Atta ko paani ke saath naram gundho.", "kind": "abstain", "sub": "facts", "domain": "cooking and food"}
+{"text": "Dadi ne aaj kheer mein elaichi daali thi.", "kind": "abstain", "sub": "facts", "domain": "cooking and food"}
+{"text": "Tamatar aur adrak ko mixer mein peeso.", "kind": "abstain", "sub": "facts", "domain": "cooking and food"}
+{"text": "Chicken ko das minute tak marinate karna hai.", "kind": "abstain", "sub": "facts", "domain": "cooking and food"}
+{"text": "Sunita aunty jaldi se chutney bana degi.", "kind": "abstain", "sub": "facts", "domain": "cooking and food"}
+{"text": "Hum sabzi mein thoda namak kal daalenge.", "kind": "abstain", "sub": "facts", "domain": "cooking and food"}
+{"text": "Chawal ko dhokar aadhe ghante bhigo do.", "kind": "abstain", "sub": "facts", "domain": "cooking and food"}
+{"text": "Doctor sahab, aapka ilaaj bahut accha laga aur mujhe bharosa hai.", "kind": "abstain", "sub": "respect", "domain": "hospital and recovery"}
+{"text": "Madam, mujhe dawai ke baare mein thodi chinta hai, kya aap samjha sakti hain?", "kind": "abstain", "sub": "respect", "domain": "hospital and recovery"}
+{"text": "Sir, aapki dekhbhaal se mere pitaji ki haalat kaafi behtar ho gayi hai.", "kind": "abstain", "sub": "respect", "domain": "hospital and recovery"}
+{"text": "Nurse ji, kal raat ka dard bahut tez tha aur main so nahi paya.", "kind": "abstain", "sub": "respect", "domain": "hospital and recovery"}
+{"text": "Doctor sahab, aap ka pichla advice sahi tha, is liye main aaj theek mehsoos kar raha hoon.", "kind": "abstain", "sub": "respect", "domain": "hospital and recovery"}
+{"text": "Madam, hospital ka khana kharab tha, kya kuch aur vikalp mil sakta hai?", "kind": "abstain", "sub": "respect", "domain": "hospital and recovery"}
+{"text": "Sir, aapne jo test karwaya woh bahut zaroori tha aur problem ka pata chala.", "kind": "abstain", "sub": "respect", "domain": "hospital and recovery"}
+{"text": "Dadi ji, aapki himmat dekh kar mujhe bahut hausla mil raha hai.", "kind": "abstain", "sub": "respect", "domain": "hospital and recovery"}
+{"text": "Doctor sahab, mere bete ki surgery ke baad mujhe thodi ghabrahat ho rahi hai.", "kind": "abstain", "sub": "respect", "domain": "hospital and recovery"}
+{"text": "Madam, aapki sewa se hum sab ko bahut sukoon mila, shukriya ji.", "kind": "abstain", "sub": "respect", "domain": "hospital and recovery"}
+{"text": "Sir, aapka sujhav kharab nahi tha, par main abhi thoda dar mehsoos kar raha hoon.", "kind": "abstain", "sub": "respect", "domain": "hospital and recovery"}
+{"text": "Nurse ji, kya aap bata sakti hain ki dawai kab khaani hai, mujhe confusion hai?", "kind": "abstain", "sub": "respect", "domain": "hospital and recovery"}
+{"text": "Doctor sahab, aapki baat sun kar meri chinta kuch kam hui hai, dhanyavaad.", "kind": "abstain", "sub": "respect", "domain": "hospital and recovery"}
+{"text": "Madam, rehab ka schedule thoda mushkil lag raha hai, par main koshish karunga ji.", "kind": "abstain", "sub": "respect", "domain": "hospital and recovery"}
+{"text": "Rohit ne aaj ka match bilkul bhi acha nahi khela, sab ko dukh hua.", "kind": "abstain", "sub": "negation", "domain": "cricket and sports"}
+{"text": "Kohli ne jo century maari wo itni buri bhi nahi thi, bas thoda slow thi.", "kind": "abstain", "sub": "negation", "domain": "cricket and sports"}
+{"text": "Priya ko cricket ka rules samajh nahi aate, isliye wo match mein bore ho jaati hai.", "kind": "abstain", "sub": "negation", "domain": "cricket and sports"}
+{"text": "Humein is haar se ghabrana nahi chahiye, agli baar hum zaroor jeetenge.", "kind": "abstain", "sub": "negation", "domain": "cricket and sports"}
+{"text": "Ravi ne aaj catch nahi pakdi, lekin uska attempt bura bhi nahi tha.", "kind": "abstain", "sub": "negation", "domain": "cricket and sports"}
+{"text": "Mujhe lagta hai ki team selection mein koi galti nahi hui thi.", "kind": "abstain", "sub": "negation", "domain": "cricket and sports"}
+{"text": "Pichle saal ka World Cup itna boring bhi nahi tha, sach mein.", "kind": "abstain", "sub": "negation", "domain": "cricket and sports"}
+{"text": "Neha ne kaha ki football ka match dekhna use pasand nahi hai.", "kind": "abstain", "sub": "negation", "domain": "cricket and sports"}
+{"text": "Bumrah ki bowling aaj bahut dhili nahi thi, bas thodi unlucky thi.", "kind": "abstain", "sub": "negation", "domain": "cricket and sports"}
+{"text": "Coach ne kaha ki wo abhi is player se khush nahi hain.", "kind": "abstain", "sub": "negation", "domain": "cricket and sports"}
+{"text": "Mere dost ko stadium ka khana pasand nahi aaya, par mujhe theek laga.", "kind": "abstain", "sub": "negation", "domain": "cricket and sports"}
+{"text": "Tum fikar mat karo, match ka result abhi bhi khatam nahi hua hai.", "kind": "abstain", "sub": "negation", "domain": "cricket and sports"}
+{"text": "Yeh pitch batting ke liye itni mushkil bhi nahi thi, socho zara.", "kind": "abstain", "sub": "negation", "domain": "cricket and sports"}
+{"text": "Ma, aapki dal aaj bahut accha bani hai.", "kind": "abstain", "sub": "respect", "domain": "family at home"}
+{"text": "Papa, aapka office ka kaam kaisa chal raha hai?", "kind": "abstain", "sub": "respect", "domain": "family at home"}
+{"text": "Dadi, aapki tabiyat mein sudhar dekh kar mujhe bahut khushi hui.", "kind": "abstain", "sub": "respect", "domain": "family at home"}
+{"text": "Sir, aapka lecture aaj bahut accha tha, dhanyavaad.", "kind": "abstain", "sub": "respect", "domain": "family at home"}
+{"text": "Madam, mujhe aapke coaching class ki timing ki chinta ho rahi hai.", "kind": "abstain", "sub": "respect", "domain": "family at home"}
+{"text": "Ji Chacha, aapki salah mere liye bahut kaam ki thi.", "kind": "abstain", "sub": "respect", "domain": "family at home"}
+{"text": "Papa, mujhe lagta hai ki ghar ka kharcha thoda kam karna chahiye.", "kind": "abstain", "sub": "respect", "domain": "family at home"}
+{"text": "Ma, aapne mere liye jo kiya hai, uska mujhe bahut afsos hai.", "kind": "abstain", "sub": "respect", "domain": "family at home"}
+{"text": "Sir, mujhe is project ki deadline ka problem lag raha hai.", "kind": "abstain", "sub": "respect", "domain": "family at home"}
+{"text": "Dadi, aapki kahani sunkar mujhe bahut accha laga tha kal raat.", "kind": "abstain", "sub": "respect", "domain": "family at home"}
+{"text": "Madam, aapka feedback mere liye bahut zaroori aur helpful raha hai.", "kind": "abstain", "sub": "respect", "domain": "family at home"}
+{"text": "Papa, aapki naukri ki badli se ghar mein thodi chinta hai.", "kind": "abstain", "sub": "respect", "domain": "family at home"}
+{"text": "Ji Nani, aapka khana hamesha mujhe bahut pasand aata hai.", "kind": "abstain", "sub": "respect", "domain": "family at home"}
+{"text": "Sir, aapne jo kharab rasta chuna, usse kaafi nuksaan hua tha.", "kind": "abstain", "sub": "respect", "domain": "family at home"}
+{"text": "Tum is weekend wali nayi movie dekhne chaloge?", "kind": "abstain", "sub": "question", "domain": "movies and OTT shows"}
+{"text": "Kya tumne woh naya web series Netflix pe dekhi hai?", "kind": "abstain", "sub": "question", "domain": "movies and OTT shows"}
+{"text": "Ritu, agle Friday ko theatre mein kaunsi film release ho rahi hai?", "kind": "abstain", "sub": "question", "domain": "movies and OTT shows"}
+{"text": "Tum subtitles ke saath dekhna pasand karoge ya dubbed version?", "kind": "abstain", "sub": "question", "domain": "movies and OTT shows"}
+{"text": "Arjun, kya tum ye show ka second season dekh chuke ho?", "kind": "abstain", "sub": "question", "domain": "movies and OTT shows"}
+{"text": "Kal raat mein Prime Video pe koi acchi thriller dikhegi kya?", "kind": "abstain", "sub": "question", "domain": "movies and OTT shows"}
+{"text": "Tumne woh Korean drama ka last episode dekha kya?", "kind": "abstain", "sub": "question", "domain": "movies and OTT shows"}
+{"text": "Meera, hum popcorn lekar ghar pe movie night rakhein?", "kind": "abstain", "sub": "question", "domain": "movies and OTT shows"}
+{"text": "Kya tum mujhe bata sakte ho ye film kitne ghante ki hai?", "kind": "abstain", "sub": "question", "domain": "movies and OTT shows"}
+{"text": "Vikram, tumne Hotstar pe nayi Bollywood film dekhi kya?", "kind": "abstain", "sub": "question", "domain": "movies and OTT shows"}
+{"text": "Kal hum sab milkar kaunsi web series shuru karenge?", "kind": "abstain", "sub": "question", "domain": "movies and OTT shows"}
+{"text": "Tum trailer dekh kar hi ticket book karoge ya review padhoge?", "kind": "abstain", "sub": "question", "domain": "movies and OTT shows"}
+{"text": "Sneha, kya tumhare paas is serial ki pehli season ka link hai?", "kind": "abstain", "sub": "question", "domain": "movies and OTT shows"}
+{"text": "Abhishek, kya hum multiplex ka afternoon show book kar sakte hain?", "kind": "abstain", "sub": "question", "domain": "movies and OTT shows"}
+{"text": "Kal subah saat baje hum library mein milenge.", "kind": "abstain", "sub": "facts", "domain": "exam preparation"}
+{"text": "Mock test ka schedule group chat mein bhej diya gaya hai.", "kind": "abstain", "sub": "facts", "domain": "exam preparation"}
+{"text": "Physics ke chapters ka revision Sunday ko hoga.", "kind": "abstain", "sub": "facts", "domain": "exam preparation"}
+{"text": "Priya ne is hafte do full-length papers solve kiye hain.", "kind": "abstain", "sub": "facts", "domain": "exam preparation"}
+{"text": "Coaching centre ka timing ab subah aath baje se shuru hota hai.", "kind": "abstain", "sub": "facts", "domain": "exam preparation"}
+{"text": "Rahul har roz raat ko nau baje tak padhta hai.", "kind": "abstain", "sub": "facts", "domain": "exam preparation"}
+{"text": "Admit card download karne ke liye portal par login karna hoga.", "kind": "abstain", "sub": "facts", "domain": "exam preparation"}
+{"text": "Exam hall mein sirf pen, pencil aur admit card le jaana allowed hai.", "kind": "abstain", "sub": "facts", "domain": "exam preparation"}
+{"text": "Maths ki practice book ke pehle paanch sawaal pehle hi solve ho chuke hain.", "kind": "abstain", "sub": "facts", "domain": "exam preparation"}
+{"text": "Meena apne notes ko har hafte colour-code karti hai.", "kind": "abstain", "sub": "facts", "domain": "exam preparation"}
+{"text": "Results ke baad counselling ki date notice board par lagayi jayegi.", "kind": "abstain", "sub": "facts", "domain": "exam preparation"}
+{"text": "Hum Sunday ko ek saath ghar par previous year papers solve karenge.", "kind": "abstain", "sub": "facts", "domain": "exam preparation"}
+{"text": "Aman ne timetable ke hisaab se hafte mein teen subjects cover kiye.", "kind": "abstain", "sub": "facts", "domain": "exam preparation"}
+{"text": "Exam se ek din pehle sirf revision karna aur jaldi sona hai.", "kind": "abstain", "sub": "facts", "domain": "exam preparation"}
+{"text": "Raj ki tabiyat raat se bahut kharab lag rahi hai, mujhe chinta ho rahi hai.", "kind": "abstain", "sub": "serious", "domain": "road trip with friends"}
+{"text": "Gaadi rok do, Priya ko chakkar aa rahe hain aur woh bahut kamzor lag rahi hai.", "kind": "abstain", "sub": "serious", "domain": "road trip with friends"}
+{"text": "Nearest hospital kahan hai, mujhe lagta hai Amit ka haath toot gaya hai.", "kind": "abstain", "sub": "serious", "domain": "road trip with friends"}
+{"text": "Doctor ne kaha ki ab sab accha hai, bas do din aaram karna hoga.", "kind": "abstain", "sub": "serious", "domain": "road trip with friends"}
+{"text": "Dadaji ki tabiyat achanak bigad gayi thi, hum sab bahut dar gaye the.", "kind": "abstain", "sub": "serious", "domain": "road trip with friends"}
+{"text": "Mere chacha ko highway par chot lagi thi, unka problem abhi bhi bahut serious hai.", "kind": "abstain", "sub": "serious", "domain": "road trip with friends"}
+{"text": "Sunita ki reports aayi hain aur unme kuch accha nahi nikla, main bahut pareshan hoon.", "kind": "abstain", "sub": "serious", "domain": "road trip with friends"}
+{"text": "Hospital ki line bahut lambi thi, humne do ghante wait kiya aur sab thak gaye.", "kind": "abstain", "sub": "serious", "domain": "road trip with friends"}
+{"text": "Mujhe yakeen nahi hota ki nani ka swargwas ho gaya, sab kuch bahut ajeeb lag raha hai.", "kind": "abstain", "sub": "serious", "domain": "road trip with friends"}
+{"text": "Vikram ka accident ho gaya tha, woh abhi ICU mein hai aur family bahut dukhi hai.", "kind": "abstain", "sub": "serious", "domain": "road trip with friends"}
+{"text": "Pichhle hafte hi Ravi ke papa ki heart surgery hui thi, ab unki halat thodi behtar hai.", "kind": "abstain", "sub": "serious", "domain": "road trip with friends"}
+{"text": "Mujhe bukhar ho raha hai aur sir mein bahut dard hai, ye accha nahi lag raha.", "kind": "abstain", "sub": "serious", "domain": "road trip with friends"}
+{"text": "Hum ne ambulance bulayi kyunki Neha ka pair mudkar bahut ajeeb ho gaya tha.", "kind": "abstain", "sub": "serious", "domain": "road trip with friends"}
+{"text": "Mere mummy ko dengue hua hai, doctors ne kaha ki unhe aaram ki zaroorat hai.", "kind": "abstain", "sub": "serious", "domain": "road trip with friends"}
+{"text": "Sir, aapka samjhaya hua tareeka bahut accha tha, dhanyavaad.", "kind": "abstain", "sub": "respect", "domain": "village and farming"}
+{"text": "Madam, is saal fasal ki haalat dekh kar mujhe bahut chinta ho rahi hai.", "kind": "abstain", "sub": "respect", "domain": "village and farming"}
+{"text": "Dadaji, aapki baat sach hai, baarish ka intezaar karna ab kharab lag raha hai.", "kind": "abstain", "sub": "respect", "domain": "village and farming"}
+{"text": "Sir, mujhe lagta hai ki yeh problem khet ki mitti mein hi hai.", "kind": "abstain", "sub": "respect", "domain": "village and farming"}
+{"text": "Madam, aapne jo kaha woh bilkul theek tha, main aage se dhyan rakhunga.", "kind": "abstain", "sub": "respect", "domain": "village and farming"}
+{"text": "Chachaji, aapka tractor kal raat se kharab pada hai, kaafi pareshani hui.", "kind": "abstain", "sub": "respect", "domain": "village and farming"}
+{"text": "Sir, aapke bataye tarike se beej bone par fasal kaafi achhi aayi thi.", "kind": "abstain", "sub": "respect", "domain": "village and farming"}
+{"text": "Madam, school ka raasta barish mein bahut kharab ho jata hai, yeh chinta ki baat hai.", "kind": "abstain", "sub": "respect", "domain": "village and farming"}
+{"text": "Dadi, aapka banaya achar sabse accha hai, mujhe aaj bhi yaad aata hai.", "kind": "abstain", "sub": "respect", "domain": "village and farming"}
+{"text": "Sir, mujhe samajh nahi aaya ki sinchai ka paani kahan se laana chahiye.", "kind": "abstain", "sub": "respect", "domain": "village and farming"}
+{"text": "Kakaji, aapki salah par chalkar hamari kheti ka nuksan kaafi kam hua.", "kind": "abstain", "sub": "respect", "domain": "village and farming"}
+{"text": "Madam, aapka kal ka class bahut mazedaar tha, sab bachche khush the.", "kind": "abstain", "sub": "respect", "domain": "village and farming"}
+{"text": "Sir, mujhe lagta hai mandi mein daam ki problem aane wali hai, isliye sochna zaroori hai.", "kind": "abstain", "sub": "respect", "domain": "village and farming"}
+{"text": "Dadaji, aapka anubhav humare liye bahut keemti hai, main sun kar seekhna chahta hoon.", "kind": "abstain", "sub": "respect", "domain": "village and farming"}
+{"text": "Cricket match ke baad Rohit ka ghutna bahut sooj gaya, doctor ne kaha ki do hafte aaram karna hoga.", "kind": "abstain", "sub": "serious", "domain": "cricket and sports"}
+{"text": "Mujhe bahut chinta ho rahi hai ki Virat ki chot kahin aur kharab na ho jaye.", "kind": "abstain", "sub": "serious", "domain": "cricket and sports"}
+{"text": "Hospital mein Ananya ke papa ka operation hua, ab sab kuch accha lag raha hai.", "kind": "abstain", "sub": "serious", "domain": "cricket and sports"}
+{"text": "Coach Sunil ne bataya ki unke dadaji ka dehant ho gaya, isliye woh ghar chale gaye.", "kind": "abstain", "sub": "serious", "domain": "cricket and sports"}
+{"text": "Ankit ka haath toot gaya tha, doctor ne plaster laga diya aur teen mahine ka aaram bola.", "kind": "abstain", "sub": "serious", "domain": "cricket and sports"}
+{"text": "Cricket ground par fielding karte waqt Priya ko sir mein chot lag gayi thi, woh dar gayi.", "kind": "abstain", "sub": "serious", "domain": "cricket and sports"}
+{"text": "Mere chacha ki tabiyat cricket dekhte dekhte achanak kharab ho gayi aur hum hospital bhaage.", "kind": "abstain", "sub": "serious", "domain": "cricket and sports"}
+{"text": "Doctor saheb ne kaha ki bukhar utar gaya hai, Rahul ab kal se practice kar sakta hai.", "kind": "abstain", "sub": "serious", "domain": "cricket and sports"}
+{"text": "Team ke captain ki ungli ka X-ray hua, problem badi nahin thi, par dard bahut tha.", "kind": "abstain", "sub": "serious", "domain": "cricket and sports"}
+{"text": "Meri dadi ki bimari ki khabar sunkar mujhe match mein dhyan lagana bahut mushkil lag raha tha.", "kind": "abstain", "sub": "serious", "domain": "cricket and sports"}
+{"text": "Hospital ke bed par letey hue Mohit ne kaha ki wo jaldi wapas cricket khelna chahta hai.", "kind": "abstain", "sub": "serious", "domain": "cricket and sports"}
+{"text": "Sanjay uncle ka heart attack hua tha, ab doctor ne unhe pura aaram aur dawai ki salah di hai.", "kind": "abstain", "sub": "serious", "domain": "cricket and sports"}
+{"text": "Pichhle saal ki chot ki wajah se Neha ka bowling action ab bhi thoda kharab lag raha hai.", "kind": "abstain", "sub": "serious", "domain": "cricket and sports"}
+{"text": "Ghar mein sabko dar tha jab Arjun ke papa ko emergency mein hospital le jana pada tha.", "kind": "abstain", "sub": "serious", "domain": "cricket and sports"}
+{"text": "Robot ka motor kab tak theek ho jayega, Rohan?", "kind": "abstain", "sub": "question", "domain": "tech / robotics project"}
+{"text": "Kya tum sensor wala code abhi bhej sakti ho, Ananya?", "kind": "abstain", "sub": "question", "domain": "tech / robotics project"}
+{"text": "Hum demo ke liye battery kahan se laayenge, Vikram?", "kind": "abstain", "sub": "question", "domain": "tech / robotics project"}
+{"text": "Tumne arduino board ka wiring diagram dekha hai kya?", "kind": "abstain", "sub": "question", "domain": "tech / robotics project"}
+{"text": "Kal lab mein robot ko test karne ka time milega kya?", "kind": "abstain", "sub": "question", "domain": "tech / robotics project"}
+{"text": "Priya, tumne camera module ka driver install kar liya?", "kind": "abstain", "sub": "question", "domain": "tech / robotics project"}
+{"text": "Kaun sa motor driver hum is project ke liye use karenge?", "kind": "abstain", "sub": "question", "domain": "tech / robotics project"}
+{"text": "Tum log presentation ki slides kab tak final karoge?", "kind": "abstain", "sub": "question", "domain": "tech / robotics project"}
+{"text": "Sahil, robot ka arm itna dheere kyun chal raha hai?", "kind": "abstain", "sub": "question", "domain": "tech / robotics project"}
+{"text": "Kya tumne GPS module ka connection ek baar check kiya?", "kind": "abstain", "sub": "question", "domain": "tech / robotics project"}
+{"text": "Robot ka software update humne backup lekar kiya tha na?", "kind": "abstain", "sub": "question", "domain": "tech / robotics project"}
+{"text": "Meera, bluetooth ka range itna kam kyun aa raha hai?", "kind": "abstain", "sub": "question", "domain": "tech / robotics project"}
+{"text": "Hum project ka report kis format mein submit karenge, Arjun?", "kind": "abstain", "sub": "question", "domain": "tech / robotics project"}
+{"text": "Tum agle sprint ke liye kaunsa feature sabse pehle lena chahoge?", "kind": "abstain", "sub": "question", "domain": "tech / robotics project"}
+{"text": "Kya tum aaj shaam ko dal chawal banaogi?", "kind": "abstain", "sub": "question", "domain": "cooking and food"}
+{"text": "Mummy ne paneer ki sabzi ke liye tomatoes kahan rakhe hain?", "kind": "abstain", "sub": "question", "domain": "cooking and food"}
+{"text": "Tum chai mein adrak daaloge ya elaichi?", "kind": "abstain", "sub": "question", "domain": "cooking and food"}
+{"text": "Priya, kya tu mere liye ek roti bana sakti hai?", "kind": "abstain", "sub": "question", "domain": "cooking and food"}
+{"text": "Kal biryani ka recipe mujhe message kar doge?", "kind": "abstain", "sub": "question", "domain": "cooking and food"}
+{"text": "Rohan, pasta mein cheese kitna daalna chahiye?", "kind": "abstain", "sub": "question", "domain": "cooking and food"}
+{"text": "Kya oven mein cake bake karne se pehle preheat karna zaroori hai?", "kind": "abstain", "sub": "question", "domain": "cooking and food"}
+{"text": "Aaj lunch mein kya bana rahe ho, Kavya?", "kind": "abstain", "sub": "question", "domain": "cooking and food"}
+{"text": "Kitne minute tak maggi ko pakana hota hai?", "kind": "abstain", "sub": "question", "domain": "cooking and food"}
+{"text": "Tum samosa ke liye aloo pehle ubaloge ya seedha bhunoge?", "kind": "abstain", "sub": "question", "domain": "cooking and food"}
+{"text": "Anjali, kya tumhare paas koi extra chopping board hai?", "kind": "abstain", "sub": "question", "domain": "cooking and food"}
+{"text": "Kya hum weekend pe pizza khud banayen ya order karein?", "kind": "abstain", "sub": "question", "domain": "cooking and food"}
+{"text": "Dadi ka achar kis jar mein rakha hai, tumhe pata hai?", "kind": "abstain", "sub": "question", "domain": "cooking and food"}
+{"text": "Vikram, kya tum ice cream ke liye dudh aur cream le aaoge?", "kind": "abstain", "sub": "question", "domain": "cooking and food"}
+{"text": "Papa, mujhe hospital ka khana bilkul accha nahi laga, sach mein.", "kind": "abstain", "sub": "elder", "domain": "hospital and recovery"}
+{"text": "Mummy, doctor ne kaha ki ab main ghar ja sakta hoon, main bahut khush hoon.", "kind": "abstain", "sub": "elder", "domain": "hospital and recovery"}
+{"text": "Dadaji, aapki chinta mat karo, main ab pehle se kaafi behtar feel kar raha hoon.", "kind": "abstain", "sub": "elder", "domain": "hospital and recovery"}
+{"text": "Dadi, injection dekhkar mujhe bahut dar lagta hai, lekin ab thoda aadat ho gayi hai.", "kind": "abstain", "sub": "elder", "domain": "hospital and recovery"}
+{"text": "Nani, aap roz subah aakar mere liye chai laati hain, woh mujhe bahut accha lagta hai.", "kind": "abstain", "sub": "elder", "domain": "hospital and recovery"}
+{"text": "Coach, mujhe abhi practice par wapas jaana hai, par doctor mana kar rahe hain.", "kind": "abstain", "sub": "elder", "domain": "hospital and recovery"}
+{"text": "Sir, mera pair abhi bhi dard karta hai, isliye main training mein thoda ruk sakta hoon?", "kind": "abstain", "sub": "elder", "domain": "hospital and recovery"}
+{"text": "Papa, raat ko neend nahi aayi kyunki bed bahut sakht tha aur pair bhi dukh raha tha.", "kind": "abstain", "sub": "elder", "domain": "hospital and recovery"}
+{"text": "Mummy, aap itni der se yahan baithi ho, aap bhi thodi der aaram kar lo.", "kind": "abstain", "sub": "elder", "domain": "hospital and recovery"}
+{"text": "Dadaji, mujhe pata hai ki aap mere liye pareshan hain, lekin main theek ho jaunga.", "kind": "abstain", "sub": "elder", "domain": "hospital and recovery"}
+{"text": "Dadi, ye dawai kadwi hai aur mujhe iska swad bilkul pasand nahi aata.", "kind": "abstain", "sub": "elder", "domain": "hospital and recovery"}
+{"text": "Coach, mujhe match miss karne ka bahut afsos hai, par meri health pehle hai.", "kind": "abstain", "sub": "elder", "domain": "hospital and recovery"}
+{"text": "Nani, aapne jo kahani sunayi thi, usne hospital mein mera mann bahut behlaaya.", "kind": "abstain", "sub": "elder", "domain": "hospital and recovery"}
+{"text": "Sir, mujhe lagta hai ki recovery ka ye samay bahut bura tha, par ab sab accha ho raha hai.", "kind": "abstain", "sub": "elder", "domain": "hospital and recovery"}
+{"text": "Yeh idea itna bhi accha nahi hai, Rohan.", "kind": "abstain", "sub": "negation", "domain": "college friends"}
+{"text": "Mujhe exam ki koi tension nahi hai, sach mein.", "kind": "abstain", "sub": "negation", "domain": "college friends"}
+{"text": "Canteen ka samosa aaj kuch khas nahi tha.", "kind": "abstain", "sub": "negation", "domain": "college friends"}
+{"text": "Priya, tu chinta mat kar, project time pe ho jayega.", "kind": "abstain", "sub": "negation", "domain": "college friends"}
+{"text": "Woh professor itna bhi bura nahi padhata, samjhe?", "kind": "abstain", "sub": "negation", "domain": "college friends"}
+{"text": "Kal ki party mein mujhe jaana hi nahi tha.", "kind": "abstain", "sub": "negation", "domain": "college friends"}
+{"text": "Is library ka wifi itna slow bhi nahi hota normally.", "kind": "abstain", "sub": "negation", "domain": "college friends"}
+{"text": "Meri mummy ko abhi yeh baat batani nahi hai.", "kind": "abstain", "sub": "negation", "domain": "college friends"}
+{"text": "Hostel ka khana pehle jitna bekaar nahi lagta ab.", "kind": "abstain", "sub": "negation", "domain": "college friends"}
+{"text": "Tujhe lagta hai woh sach bol raha tha, kya?", "kind": "abstain", "sub": "negation", "domain": "college friends"}
+{"text": "Itni raat ko chai peena koi buri baat nahi hai.", "kind": "abstain", "sub": "negation", "domain": "college friends"}
+{"text": "Hum dono ka plan kabhi bhi galat nahi tha, Ananya.", "kind": "abstain", "sub": "negation", "domain": "college friends"}
+{"text": "Usne jo kaha, woh utna gussa wala bhi nahi tha.", "kind": "abstain", "sub": "negation", "domain": "college friends"}
+{"text": "Mujhe bas itna pata hai ki yeh sahi nahi hoga.", "kind": "abstain", "sub": "negation", "domain": "college friends"}
+{"text": "Papa, mujhe aaj ka cricket match bahut accha laga, hum jeet gaye.", "kind": "abstain", "sub": "elder", "domain": "cricket and sports"}
+{"text": "Coach, mujhe aaj ki practice mein bahut dar lag raha tha bowling se.", "kind": "abstain", "sub": "elder", "domain": "cricket and sports"}
+{"text": "Mummy, mera bat dekhkar mujhe chinta ho rahi hai ki fielding achhi nahi hai.", "kind": "abstain", "sub": "elder", "domain": "cricket and sports"}
+{"text": "Dadaji, aapki baat sunkar mujhe bahut accha laga, aap sach keh rahe the.", "kind": "abstain", "sub": "elder", "domain": "cricket and sports"}
+{"text": "Sir, mujhe apni batting ka style bura lag raha hai, aap bataiye kya sudhaarun.", "kind": "abstain", "sub": "elder", "domain": "cricket and sports"}
+{"text": "Nani, mujhe is saal ka cricket league dekhkar bahut excitement ho raha hai.", "kind": "abstain", "sub": "elder", "domain": "cricket and sports"}
+{"text": "Papa, mujhe ye bat bahut buri lagi ki coach ne mujhe bench par bitha diya.", "kind": "abstain", "sub": "elder", "domain": "cricket and sports"}
+{"text": "Coach, mujhe aaj ka dhoop mein practice karna bahut thaka dene wala laga.", "kind": "abstain", "sub": "elder", "domain": "cricket and sports"}
+{"text": "Mummy, mujhe chinta hai ki kal ke match mein main achha bowling nahi kar paunga.", "kind": "abstain", "sub": "elder", "domain": "cricket and sports"}
+{"text": "Dadi, aapki pooja ke baad mujhe bahut accha laga, aaj match mein sab achha hoga.", "kind": "abstain", "sub": "elder", "domain": "cricket and sports"}
+{"text": "Sir, mujhe lagta hai ki mera running between the wickets abhi bahut kamzor hai.", "kind": "abstain", "sub": "elder", "domain": "cricket and sports"}
+{"text": "Papa, mujhe aaj ki haar se bahut dukh hua, par main aage achha khelna chahta hoon.", "kind": "abstain", "sub": "elder", "domain": "cricket and sports"}
+{"text": "Coach, mujhe ye tournament mein khelne ka mauka milna bahut accha lag raha hai.", "kind": "abstain", "sub": "elder", "domain": "cricket and sports"}
+{"text": "Dadaji, mujhe dar lagta hai ki bade stadium mein main nervous ho jaaunga.", "kind": "abstain", "sub": "elder", "domain": "cricket and sports"}
+{"text": "Diwali se pehle Dadi ki tabiyat achanak bahut kharab ho gayi thi.", "kind": "abstain", "sub": "serious", "domain": "festival and shaadi"}
+{"text": "Shaadi ke din Priya ka haath toot gaya aur hum sab bahut pareshan the.", "kind": "abstain", "sub": "serious", "domain": "festival and shaadi"}
+{"text": "Doctor ne kaha ki Papa ko ab aaram ki sakht zaroorat hai.", "kind": "abstain", "sub": "serious", "domain": "festival and shaadi"}
+{"text": "Mujhe chinta hai ki Nani itni badi surgery kaise sahengi.", "kind": "abstain", "sub": "serious", "domain": "festival and shaadi"}
+{"text": "Hospital mein itni bheed thi ki Ravi ko ghanton intezaar karna pada.", "kind": "abstain", "sub": "serious", "domain": "festival and shaadi"}
+{"text": "Navratri ke pandal mein ek bachche ko chot lagi aur khoon bahut beh raha tha.", "kind": "abstain", "sub": "serious", "domain": "festival and shaadi"}
+{"text": "Shaadi ke baad Meena ko bukhar aaya aur usne kuch bhi khana band kar diya.", "kind": "abstain", "sub": "serious", "domain": "festival and shaadi"}
+{"text": "Chacha ji ke dil ka operation hua aur ab sab accha lag raha hai.", "kind": "abstain", "sub": "serious", "domain": "festival and shaadi"}
+{"text": "Holi ke rang se Aman ki aankhein laal ho gayi aur usko bahut dard hai.", "kind": "abstain", "sub": "serious", "domain": "festival and shaadi"}
+{"text": "Mamaji ke guzar jaane ki khabar sunkar poora parivar gham mein doob gaya.", "kind": "abstain", "sub": "serious", "domain": "festival and shaadi"}
+{"text": "Doctor ne bataya ki dengue ke kaaran Sneha ki platelets bahut kam ho gayi hain.", "kind": "abstain", "sub": "serious", "domain": "festival and shaadi"}
+{"text": "Mujhe dar lag raha hai ki Dadaji ki yeh khansi kahin problem na bana de.", "kind": "abstain", "sub": "serious", "domain": "festival and shaadi"}
+{"text": "Eid ki dawat mein Farhan ke pet mein itna dard hua ki use ambulance bulani padi.", "kind": "abstain", "sub": "serious", "domain": "festival and shaadi"}
+{"text": "Ganesh Chaturthi ke baad Kiran ki haalat theek nahi thi aur doctor ne dekha.", "kind": "abstain", "sub": "serious", "domain": "festival and shaadi"}
+{"text": "Mujhe woh web series itni boring nahi lagi, pehle 2 episode ke baad bhi dekhi.", "kind": "abstain", "sub": "negation", "domain": "movies and OTT shows"}
+{"text": "Yeh film itni bhi bekar nahi thi, bas thodi lambi chal gayi.", "kind": "abstain", "sub": "negation", "domain": "movies and OTT shows"}
+{"text": "Netflix pe naya show aaya hai, lekin abhi tak koi khaas baat nahi dikhi.", "kind": "abstain", "sub": "negation", "domain": "movies and OTT shows"}
+{"text": "Trailer dekh ke lag raha tha ki movie achhi hogi, par woh waisi nikli nahi.", "kind": "abstain", "sub": "negation", "domain": "movies and OTT shows"}
+{"text": "Mujhe us actor ki acting pasand nahi aayi, uski expressions bahut flat thi.", "kind": "abstain", "sub": "negation", "domain": "movies and OTT shows"}
+{"text": "Chinta mat karo, is series ka pehla season sirf slow hai, achha nahi hai toh bhi dekhna.", "kind": "abstain", "sub": "negation", "domain": "movies and OTT shows"}
+{"text": "Hum dono ko us horror movie se koi dar nahi laga, bas hasi aa rahi thi.", "kind": "abstain", "sub": "negation", "domain": "movies and OTT shows"}
+{"text": "Woh OTT platform ka subscription lena zaroori nahi tha, kuch bhi naya nahi hai.", "kind": "abstain", "sub": "negation", "domain": "movies and OTT shows"}
+{"text": "Mujhe lagta hai ki director ne kahani ko theek se samjhaya nahi, isliye confusion hua.", "kind": "abstain", "sub": "negation", "domain": "movies and OTT shows"}
+{"text": "Woh comedy show dekh ke ek bhi baar nahi hasi, jokes bilkul impress nahi kar paaye.", "kind": "abstain", "sub": "negation", "domain": "movies and OTT shows"}
+{"text": "Dost ne kaha tha movie dekhne layak hai, par mujhe toh bilkul maza nahi aaya.", "kind": "abstain", "sub": "negation", "domain": "movies and OTT shows"}
+{"text": "Yeh anime series itni complicated bhi nahi hai, bas thoda dhyan dena padta hai.", "kind": "abstain", "sub": "negation", "domain": "movies and OTT shows"}
+{"text": "Sir, aapka suggestion sach mein bahut accha tha, main ise zaroor try karungi.", "kind": "abstain", "sub": "respect", "domain": "road trip with friends"}
+{"text": "Madam, mujhe chinta ho rahi hai ki road trip ka plan aapki class ke time se takra raha hai.", "kind": "abstain", "sub": "respect", "domain": "road trip with friends"}
+{"text": "Ji sir, mujhe lagta hai ki hum sab ka gaadi mein sochna kharab tha, humein pehle rest karna chahiye tha.", "kind": "abstain", "sub": "respect", "domain": "road trip with friends"}
+{"text": "Madam, aapka yeh project plan bahut accha lag raha hai, lekin budget thoda problem hai.", "kind": "abstain", "sub": "respect", "domain": "road trip with friends"}
+{"text": "Sir, kya aap bata sakte hain ki Shubham ki tabiyat kaisi hai, use kal bahut dard tha?", "kind": "abstain", "sub": "respect", "domain": "road trip with friends"}
+{"text": "Ji Ramesh uncle, aapki gaadi ka tyre change karna sach mein bahut mushkil tha, shukriya.", "kind": "abstain", "sub": "respect", "domain": "road trip with friends"}
+{"text": "Madam, aapne jo bataya woh kafi accha tha, mujhe samajh aa gaya ki kya karna hai.", "kind": "abstain", "sub": "respect", "domain": "road trip with friends"}
+{"text": "Sir, mujhe afsos hai ki main kal ki presentation ke liye poori taiyari nahi kar payi.", "kind": "abstain", "sub": "respect", "domain": "road trip with friends"}
+{"text": "Ji Dadi, aapka khana aaj bahut accha bana tha, sab ne bahut enjoy kiya.", "kind": "abstain", "sub": "respect", "domain": "road trip with friends"}
+{"text": "Madam, mujhe samajh nahi aa raha ki yeh rasta kharab kyun ho gaya, kya aap guide kar sakti hain?", "kind": "abstain", "sub": "respect", "domain": "road trip with friends"}
+{"text": "Sir, aapki baat sunkar mujhe bahut sukoon mila, ab main thoda relax feel kar rahi hoon.", "kind": "abstain", "sub": "respect", "domain": "road trip with friends"}
+{"text": "Ji Mohan chacha, mujhe chinta hai ki raat ke time highway par drive karna thoda risky ho sakta hai.", "kind": "abstain", "sub": "respect", "domain": "road trip with friends"}
+{"text": "Madam, aapka bataya gaya rule mujhe thoda problem lag raha hai, kya hum baat kar sakte hain?", "kind": "abstain", "sub": "respect", "domain": "road trip with friends"}
+{"text": "Sir, mujhe lagta hai ki Priya ka camping plan bahut accha tha, hum sab ko yeh try karna chahiye.", "kind": "abstain", "sub": "respect", "domain": "road trip with friends"}
+{"text": "Diwali ki sajavat itni badi nahi thi, lekin mujhe bura bhi nahi laga.", "kind": "abstain", "sub": "negation", "domain": "festival and shaadi"}
+{"text": "Shaadi mein khana itna bhi bekaar nahi tha, Ravi ne sach mein mehnat ki thi.", "kind": "abstain", "sub": "negation", "domain": "festival and shaadi"}
+{"text": "Mehndi ka design dekh kar Priya ko pasand nahi aaya, woh chup ho gayi.", "kind": "abstain", "sub": "negation", "domain": "festival and shaadi"}
+{"text": "Itna sara shor sun kar kisi ko bhi achha nahi lagega, sach kahun to.", "kind": "abstain", "sub": "negation", "domain": "festival and shaadi"}
+{"text": "Chinta mat karo, Aarav, band baaja time par pahunch hi jayega.", "kind": "abstain", "sub": "negation", "domain": "festival and shaadi"}
+{"text": "Mujhe ye rang wali sari pehenni hi nahi thi, Kavya ne zabardasti pakdaai.", "kind": "abstain", "sub": "negation", "domain": "festival and shaadi"}
+{"text": "Dulhe ka sherwani itna tight tha ki woh theek se baith bhi nahi paya.", "kind": "abstain", "sub": "negation", "domain": "festival and shaadi"}
+{"text": "Ganesh chaturthi ka pandal ab utna sundar nahi raha, purani baat alag thi.", "kind": "abstain", "sub": "negation", "domain": "festival and shaadi"}
+{"text": "Humein is baar garba mein utna mazaa nahi aaya, shayad mausam ki wajah se.", "kind": "abstain", "sub": "negation", "domain": "festival and shaadi"}
+{"text": "Meri didi ki vidaai dekh kar mera dil bhar nahi raha tha, aankhein nam thi.", "kind": "abstain", "sub": "negation", "domain": "festival and shaadi"}
+{"text": "Pooja ka prasad itna bhi kam nahi tha, sab ne do-do baar liya.", "kind": "abstain", "sub": "negation", "domain": "festival and shaadi"}
+{"text": "Rohan ko shaadi ke gaane pasand nahi aate, woh bas kone mein baitha raha.", "kind": "abstain", "sub": "negation", "domain": "festival and shaadi"}
+{"text": "Holi ke rang itne pakke nahi the ki kapdon se ud jaayein, ye achhi baat thi.", "kind": "abstain", "sub": "negation", "domain": "festival and shaadi"}
+{"text": "Ummeed nahi thi ki Sunita aunty itni jaldi wapas aayengi, par woh aa gayi.", "kind": "abstain", "sub": "negation", "domain": "festival and shaadi"}
+{"text": "Match kal shaam chhe baje shuru hoga.", "kind": "abstain", "sub": "facts", "domain": "cricket and sports"}
+{"text": "Main aaj practice ke liye stadium jaaungi.", "kind": "abstain", "sub": "facts", "domain": "cricket and sports"}
+{"text": "Rohit ne pehle over mein do chauke maare.", "kind": "abstain", "sub": "facts", "domain": "cricket and sports"}
+{"text": "Humari team ki jersey neeli aur safed hai.", "kind": "abstain", "sub": "facts", "domain": "cricket and sports"}
+{"text": "Coach ne kal subah saat baje training rakhi hai.", "kind": "abstain", "sub": "facts", "domain": "cricket and sports"}
+{"text": "Sachin ne bataya ki woh ground par ek ghanta pehle pahunchega.", "kind": "abstain", "sub": "facts", "domain": "cricket and sports"}
+{"text": "Final match ka toss dopahar do baje hoga.", "kind": "abstain", "sub": "facts", "domain": "cricket and sports"}
+{"text": "Hum cricket ke bat aur gend Ravi ke ghar se lenge.", "kind": "abstain", "sub": "facts", "domain": "cricket and sports"}
+{"text": "Shreya ne tees runs banaye aur not out rahi.", "kind": "abstain", "sub": "facts", "domain": "cricket and sports"}
+{"text": "Stadium ka gate sham paanch baje khulega.", "kind": "abstain", "sub": "facts", "domain": "cricket and sports"}
+{"text": "Kal ki game ke liye humein sirf chaar players chahiye.", "kind": "abstain", "sub": "facts", "domain": "cricket and sports"}
+{"text": "Anjali ne basketball court ka time booking kar liya hai.", "kind": "abstain", "sub": "facts", "domain": "cricket and sports"}
+{"text": "Team meeting Thursday ko library mein hogi.", "kind": "abstain", "sub": "facts", "domain": "cricket and sports"}
+{"text": "Kal subah hum sab naani ke ghar jaayenge.", "kind": "abstain", "sub": "facts", "domain": "family at home"}
+{"text": "Papa ne kaha ki dinner saat baje tak ready ho jaayega.", "kind": "abstain", "sub": "facts", "domain": "family at home"}
+{"text": "Riya, tumhara tiffin fridge ke upar rakha hai.", "kind": "abstain", "sub": "facts", "domain": "family at home"}
+{"text": "Dadi har Sunday subah mandir jaati hain.", "kind": "abstain", "sub": "facts", "domain": "family at home"}
+{"text": "Humara ghar Pune ke Kothrud area mein hai.", "kind": "abstain", "sub": "facts", "domain": "family at home"}
+{"text": "Mummy ne aaj do kilo aalu aur ek dozen anday mangwaaye hain.", "kind": "abstain", "sub": "facts", "domain": "family at home"}
+{"text": "Arjun ka school bus subah saat bajkar bees minute par aayega.", "kind": "abstain", "sub": "facts", "domain": "family at home"}
+{"text": "Chhote chacha Bangalore se somvaar ko wapas aayenge.", "kind": "abstain", "sub": "facts", "domain": "family at home"}
+{"text": "Gas cylinder ka naya connection agle hafte lagega.", "kind": "abstain", "sub": "facts", "domain": "family at home"}
+{"text": "Hum Diwali ke baad ghar ki safai karenge.", "kind": "abstain", "sub": "facts", "domain": "family at home"}
+{"text": "Meera didi ki shaadi ka card sabko kal tak mil jaayega.", "kind": "abstain", "sub": "facts", "domain": "family at home"}
+{"text": "Papa ka phone recharge ek mahine ke liye hua hai.", "kind": "abstain", "sub": "facts", "domain": "family at home"}
+{"text": "Bijli ka bill har mahine ki pandrah tareekh tak jama karna hai.", "kind": "abstain", "sub": "facts", "domain": "family at home"}
+{"text": "Aaj raat ka khana Nisha ne banaya hai, sab ko yahin khaana hai.", "kind": "abstain", "sub": "facts", "domain": "family at home"}
+{"text": "Dadaji ki tabiyat bahut kharab hai, isliye aaj riyaaz mein mera mann nahi lag raha.", "kind": "abstain", "sub": "serious", "domain": "music and dance practice"}
+{"text": "Doctor ne kaha ki ab sab accha hai, lekin mujhe abhi bhi thoda dar lag raha hai.", "kind": "abstain", "sub": "serious", "domain": "music and dance practice"}
+{"text": "Meri ungli mein chot lagne ki wajah se guitar bajana mushkil ho gaya hai.", "kind": "abstain", "sub": "serious", "domain": "music and dance practice"}
+{"text": "Hospital mein Ravi ka operation hua tha, aur ab woh ghar par aaram kar raha hai.", "kind": "abstain", "sub": "serious", "domain": "music and dance practice"}
+{"text": "Mummy ko bukhar hai, isliye unhone aaj ka dance class ka programme cancel kar diya.", "kind": "abstain", "sub": "serious", "domain": "music and dance practice"}
+{"text": "Pichle hafte Nani ka dehant ho gaya, toh ghar mein sab log bahut udaas hain.", "kind": "abstain", "sub": "serious", "domain": "music and dance practice"}
+{"text": "Mere ghutne mein dard ki problem hai, aur dance practice karna bahut kathin lagta hai.", "kind": "abstain", "sub": "serious", "domain": "music and dance practice"}
+{"text": "Doctor ne mujhe teen hafte tak tabla bajane se mana kiya hai, yeh bahut chinta ki baat hai.", "kind": "abstain", "sub": "serious", "domain": "music and dance practice"}
+{"text": "Priya ka accident hua tha, aur ab woh hospital mein hai, humein uski bahut fikar ho rahi hai.", "kind": "abstain", "sub": "serious", "domain": "music and dance practice"}
+{"text": "Mera gala kharab hai, isliye aaj main sur mein gaana nahi gaa paungi.", "kind": "abstain", "sub": "serious", "domain": "music and dance practice"}
+{"text": "Papa ki sugar level bahut badh gayi thi, toh unhe aaj hospital le jaana pada.", "kind": "abstain", "sub": "serious", "domain": "music and dance practice"}
+{"text": "Mujhe lagta hai ki mere pair ki chot abhi bhi thik nahi hui hai, isliye main ruk jaungi.", "kind": "abstain", "sub": "serious", "domain": "music and dance practice"}
+{"text": "Dhruv ki dadi ki tabiyat achanak bigad gayi, aur family ne unhe ICU mein daakhil karwaya.", "kind": "abstain", "sub": "serious", "domain": "music and dance practice"}
+{"text": "Teacher ne kaha ki jab tak tumhara bukhar nahi utrta, tab tak tum riyaaz mat karna.", "kind": "abstain", "sub": "serious", "domain": "music and dance practice"}
+{"text": "Kal subah paanch baje hum khet par pani dene jayenge.", "kind": "abstain", "sub": "facts", "domain": "village and farming"}
+{"text": "Is saal gehun ki buwai November ke pehle hafte mein hogi.", "kind": "abstain", "sub": "facts", "domain": "village and farming"}
+{"text": "Ramesh chacha ne mandi se do quintal bajra becha hai.", "kind": "abstain", "sub": "facts", "domain": "village and farming"}
+{"text": "Gaon ki school mein aaj se naya register shuru hoga.", "kind": "abstain", "sub": "facts", "domain": "village and farming"}
+{"text": "Sarpanch ji ne kal panchayat ki baithak bulayi hai.", "kind": "abstain", "sub": "facts", "domain": "village and farming"}
+{"text": "Mitti ki jaanch ki report teen din mein block office se aayegi.", "kind": "abstain", "sub": "facts", "domain": "village and farming"}
+{"text": "Humara trактor ab Gopal ke paas hai, woh shaam tak wapas karega.", "kind": "abstain", "sub": "facts", "domain": "village and farming"}
+{"text": "Dhaan ki katai ke baad hum sabhi kisan mandi tak saath jayenge.", "kind": "abstain", "sub": "facts", "domain": "village and farming"}
+{"text": "Sunita ne aangan mein do bakriyan aur ek gaay paali hui hai.", "kind": "abstain", "sub": "facts", "domain": "village and farming"}
+{"text": "Bijli ka transformer agle mahine badal diya jayega, aisa bataya gaya hai.", "kind": "abstain", "sub": "facts", "domain": "village and farming"}
+{"text": "Nahar mein pani shaam chhe baje chhodha jayega, sabko yeh pata hona chahiye.", "kind": "abstain", "sub": "facts", "domain": "village and farming"}
+{"text": "Dadi har Sunday subah tulsi ke paudhe ko jal chadhati hain.", "kind": "abstain", "sub": "facts", "domain": "village and farming"}
+{"text": "Khet ke kinare wale neem ke ped ke neeche hum dopahar mein aaram karte hain.", "kind": "abstain", "sub": "facts", "domain": "village and farming"}
+{"text": "Gaon ke pass wala kuan ab naye pump se judega, kaam aglay hafte khatam hoga.", "kind": "abstain", "sub": "facts", "domain": "village and farming"}
+{"text": "Papa, mujhe aaj ka lecture bahut accha laga, sach mein.", "kind": "abstain", "sub": "elder", "domain": "college friends"}
+{"text": "Mummy, mujhe is semester ke result ki bahut chinta ho rahi hai.", "kind": "abstain", "sub": "elder", "domain": "college friends"}
+{"text": "Sir, mujhe lagta hai ye assignment thoda bura bana hai, sorry.", "kind": "abstain", "sub": "elder", "domain": "college friends"}
+{"text": "Dadaji, aapki kahani sun kar mujhe bahut accha feel hua aaj.", "kind": "abstain", "sub": "elder", "domain": "college friends"}
+{"text": "Nani, mujhe college hostel mein akela rehne se thoda dar lagta hai.", "kind": "abstain", "sub": "elder", "domain": "college friends"}
+{"text": "Coach, aaj ka practice mujhe kaafi bura laga, main ghabra gaya tha.", "kind": "abstain", "sub": "elder", "domain": "college friends"}
+{"text": "Papa, mujhe lagta hai engineering mein mera mann nahi lag raha.", "kind": "abstain", "sub": "elder", "domain": "college friends"}
+{"text": "Mummy, aap mere dost ke saath mera ye vyavhar dekh kar bura mat maniye.", "kind": "abstain", "sub": "elder", "domain": "college friends"}
+{"text": "Sir, mujhe is project ka topic bahut accha laga, par darr bhi lag raha hai.", "kind": "abstain", "sub": "elder", "domain": "college friends"}
+{"text": "Dadi, aapke haath ka khana kha kar mujhe aaj bahut accha laga.", "kind": "abstain", "sub": "elder", "domain": "college friends"}
+{"text": "Coach, mujhe lagta hai main aaj ka match jeet sakta tha, par dar gaya.", "kind": "abstain", "sub": "elder", "domain": "college friends"}
+{"text": "Papa, mujhe college ki fees ki chinta sataati hai, sach bolun toh.", "kind": "abstain", "sub": "elder", "domain": "college friends"}
+{"text": "Mummy, mujhe ghar ki yaad aati hai aur ye feeling bahut bura lagta hai.", "kind": "abstain", "sub": "elder", "domain": "college friends"}
+{"text": "Sir, mujhe apna viva accha nahi laga, shayad main thoda nervous tha.", "kind": "abstain", "sub": "elder", "domain": "college friends"}
+{"text": "Kal subah nau baje office ki meeting hogi, sab time par aana.", "kind": "abstain", "sub": "facts", "domain": "office / internship"}
+{"text": "Priya ne naya project file SharePoint par upload kar diya hai.", "kind": "abstain", "sub": "facts", "domain": "office / internship"}
+{"text": "Intern ka orientation Monday ko hall nambar teen mein hoga.", "kind": "abstain", "sub": "facts", "domain": "office / internship"}
+{"text": "Rohan sir ne bola hai ki report Friday tak submit karni hai.", "kind": "abstain", "sub": "facts", "domain": "office / internship"}
+{"text": "Hum log lunch ke baad client call par discuss karenge.", "kind": "abstain", "sub": "facts", "domain": "office / internship"}
+{"text": "Meeting room ka booking Aarti ke naam se ho gaya hai.", "kind": "abstain", "sub": "facts", "domain": "office / internship"}
+{"text": "Naye interns ko laptop aur ID card HR department se milega.", "kind": "abstain", "sub": "facts", "domain": "office / internship"}
+{"text": "Presentation ka draft kal shaam tak mail karna hoga.", "kind": "abstain", "sub": "facts", "domain": "office / internship"}
+{"text": "Office ka Wi-Fi password reception par likha hua hai.", "kind": "abstain", "sub": "facts", "domain": "office / internship"}
+{"text": "Sunita madam ne sabke timesheet approve karne ke liye bola hai.", "kind": "abstain", "sub": "facts", "domain": "office / internship"}
+{"text": "Dinner ke liye team bahar wale restaurant mein jayegi Saturday ko.", "kind": "abstain", "sub": "facts", "domain": "office / internship"}
+{"text": "Mera mentor Vikram hai, woh har Thursday shaam ko feedback dega.", "kind": "abstain", "sub": "facts", "domain": "office / internship"}
+{"text": "Sabhi documents ek folder mein rakh do, naam ke saath.", "kind": "abstain", "sub": "facts", "domain": "office / internship"}
+{"text": "Client ka data aaj hi backup mein save karna hai, yeh rule hai.", "kind": "abstain", "sub": "facts", "domain": "office / internship"}
+{"text": "Maa, aaj ka khana bahut acha bana hai, mujhe bahut pasand aaya.", "kind": "abstain", "sub": "question", "domain": "family at home"}
+{"text": "Papa, mujhe lagta hai aap Ravi chacha se zyada ghar ki fikr karte ho.", "kind": "abstain", "sub": "question", "domain": "family at home"}
+{"text": "Didi, tumhara naya kurta mujhe bilkul achha nahi laga, sach bolun toh.", "kind": "abstain", "sub": "question", "domain": "family at home"}
+{"text": "Dadi ki baatein sunkar mujhe hamesha bahut sukoon milta hai.", "kind": "abstain", "sub": "question", "domain": "family at home"}
+{"text": "Mummy, mujhe nahi lagta ki itna shor ghar mein karna theek hai.", "kind": "abstain", "sub": "question", "domain": "family at home"}
+{"text": "Papa ne kal jo kaha, woh mujhe bahut bura laga aur main dukhi hoon.", "kind": "abstain", "sub": "question", "domain": "family at home"}
+{"text": "Anjali, tum roz der tak phone chalati ho, aur mujhe yeh bahut khalta hai.", "kind": "abstain", "sub": "question", "domain": "family at home"}
+{"text": "Nani ka ghar mujhe sabse zyada pasand hai kyunki wahan sab kuch shaant hota hai.", "kind": "abstain", "sub": "question", "domain": "family at home"}
+{"text": "Bhaiya, tumne meri cycle bina pooche le li, yeh mujhe bilkul sahi nahi laga.", "kind": "abstain", "sub": "question", "domain": "family at home"}
+{"text": "Maa ki sehat ki chinta mujhe raat ko sone nahi deti, yeh sach hai.", "kind": "abstain", "sub": "question", "domain": "family at home"}
+{"text": "Papa, aapka gusse mein bolna mujhe bahut bura lagta hai aur dar bhi lagta hai.", "kind": "abstain", "sub": "question", "domain": "family at home"}
+{"text": "Chhoti behen ki hansi se poora ghar roshan lagta hai, mujhe woh bahut achhi lagti hai.", "kind": "abstain", "sub": "question", "domain": "family at home"}
+{"text": "Dadaji, aapki purani kahaniyan sunna mujhe aaj bhi bahut pasand hai.", "kind": "abstain", "sub": "question", "domain": "family at home"}
+{"text": "Mummy, tumne mere kamre ki safai ki, yeh dekh kar mujhe bahut khushi hui.", "kind": "abstain", "sub": "question", "domain": "family at home"}
+{"text": "Papa, mujhe is film ka climax bahut accha laga, sach mein.", "kind": "abstain", "sub": "elder", "domain": "movies and OTT shows"}
+{"text": "Mummy, woh web series itni bori thi ki main beech mein so gaya.", "kind": "abstain", "sub": "elder", "domain": "movies and OTT shows"}
+{"text": "Dadaji, aaj ka movie dekh ke mujhe bahut dar laga tha.", "kind": "abstain", "sub": "elder", "domain": "movies and OTT shows"}
+{"text": "Nani, mujhe lagta hai ye show ka ending bilkul bura tha.", "kind": "abstain", "sub": "elder", "domain": "movies and OTT shows"}
+{"text": "Sir, mujhe apni acting ke baare mein thodi chinta ho rahi hai.", "kind": "abstain", "sub": "elder", "domain": "movies and OTT shows"}
+{"text": "Dadi, kal jo film humne dekhi woh mujhe kaafi accha lagi thi.", "kind": "abstain", "sub": "elder", "domain": "movies and OTT shows"}
+{"text": "Coach, mujhe toh pichle season ka last episode bahut bura laga.", "kind": "abstain", "sub": "elder", "domain": "movies and OTT shows"}
+{"text": "Papa, mere dost ne mujhe jo thriller suggest ki, woh dar wali thi.", "kind": "abstain", "sub": "elder", "domain": "movies and OTT shows"}
+{"text": "Mummy, mujhe lagta hai aaj ke trailer mein kuch accha nahi tha.", "kind": "abstain", "sub": "elder", "domain": "movies and OTT shows"}
+{"text": "Dadaji, main sochta hoon ki purani films ka music aaj bhi accha hai.", "kind": "abstain", "sub": "elder", "domain": "movies and OTT shows"}
+{"text": "Nani, mujhe is cartoon ki kahani thodi chinta waali lagi thi.", "kind": "abstain", "sub": "elder", "domain": "movies and OTT shows"}
+{"text": "Sir, mujhe lagta hai aapne jo documentary dikhayi woh bahut accha tha.", "kind": "abstain", "sub": "elder", "domain": "movies and OTT shows"}
+{"text": "Coach, mujhe match ke baad ka interview dekh ke bahut bura laga.", "kind": "abstain", "sub": "elder", "domain": "movies and OTT shows"}
+{"text": "Papa, mujhe aaj ka OTT release dekh ke bilkul accha feel nahi hua.", "kind": "abstain", "sub": "elder", "domain": "movies and OTT shows"}
+{"text": "Doctor sahab, mujhe ab itna dard nahi ho raha hai.", "kind": "abstain", "sub": "negation", "domain": "hospital and recovery"}
+{"text": "Ammi, aap itni fikar mat karo, main theek hoon.", "kind": "abstain", "sub": "negation", "domain": "hospital and recovery"}
+{"text": "Hospital ka khana itna bura bhi nahi hai, sach mein.", "kind": "abstain", "sub": "negation", "domain": "hospital and recovery"}
+{"text": "Nurse ne injection lagaya, lekin usne zyada takleef nahi di.", "kind": "abstain", "sub": "negation", "domain": "hospital and recovery"}
+{"text": "Papa ka operation accha nahi raha, par woh ab stable hain.", "kind": "abstain", "sub": "negation", "domain": "hospital and recovery"}
+{"text": "Mujhe is bed par sona pasand nahi aata, kaafi sakht hai.", "kind": "abstain", "sub": "negation", "domain": "hospital and recovery"}
+{"text": "Reports dekh kar Rohan ne kaha ki koi serious baat nahi hai.", "kind": "abstain", "sub": "negation", "domain": "hospital and recovery"}
+{"text": "Priya, tum mere liye itna ruko mat, ghar chali jao.", "kind": "abstain", "sub": "negation", "domain": "hospital and recovery"}
+{"text": "Yeh dawai kadwi zaroor hai, par kaam bilkul bekaar nahi karti.", "kind": "abstain", "sub": "negation", "domain": "hospital and recovery"}
+{"text": "Physiotherapy ka pehla din mushkil tha, lekin itna mushkil bhi nahi.", "kind": "abstain", "sub": "negation", "domain": "hospital and recovery"}
+{"text": "Ward mein shor zyada hai, lekin Sunita didi ne kuch kaha nahi.", "kind": "abstain", "sub": "negation", "domain": "hospital and recovery"}
+{"text": "Aaj ka scan achha nahi tha, phir bhi Dr. Mehta ne umeed nahi chhodi.", "kind": "abstain", "sub": "negation", "domain": "hospital and recovery"}
+{"text": "Kal se main chal pa raha hoon, yeh koi chhoti baat nahi hai.", "kind": "abstain", "sub": "negation", "domain": "hospital and recovery"}
+{"text": "Hum kal subah nau baje office mein milenge.", "kind": "abstain", "sub": "facts", "domain": "startup and money"}
+{"text": "Founder ne bataya ki seed round teen mahine mein band hoga.", "kind": "abstain", "sub": "facts", "domain": "startup and money"}
+{"text": "Pitch deck ka version teen abhi Riya ke paas bheja gaya hai.", "kind": "abstain", "sub": "facts", "domain": "startup and money"}
+{"text": "Investor meeting Thursday ko dopahar do baje rakhi gayi hai.", "kind": "abstain", "sub": "facts", "domain": "startup and money"}
+{"text": "Hamari company ka headquarters Bengaluru mein Koramangala ke paas hai.", "kind": "abstain", "sub": "facts", "domain": "startup and money"}
+{"text": "Accounts team har mahine ki pehli taareekh ko report banati hai.", "kind": "abstain", "sub": "facts", "domain": "startup and money"}
+{"text": "Aman ne Series A ke liye term sheet ka draft aaj hi bheja.", "kind": "abstain", "sub": "facts", "domain": "startup and money"}
+{"text": "Office ki rent agle saal se pandrah pratishat badh jayegi.", "kind": "abstain", "sub": "facts", "domain": "startup and money"}
+{"text": "Sneha is hafte ke end tak sabhi vendors ke contracts check karegi.", "kind": "abstain", "sub": "facts", "domain": "startup and money"}
+{"text": "Humne pichle quarter mein kul chaar naye clients jodne ka plan banaya tha.", "kind": "abstain", "sub": "facts", "domain": "startup and money"}
+{"text": "Board meeting ka agenda Monday subah tak sab ko share kiya jayega.", "kind": "abstain", "sub": "facts", "domain": "startup and money"}
+{"text": "Rohan product launch ke liye marketing budget ka breakdown tayyar kar raha hai.", "kind": "abstain", "sub": "facts", "domain": "startup and money"}
+{"text": "Company ne Pune office mein das nayi desks lagane ka faisla kiya hai.", "kind": "abstain", "sub": "facts", "domain": "startup and money"}
+{"text": "Payroll har mahine ki akhri working din ko process hota hai.", "kind": "abstain", "sub": "facts", "domain": "startup and money"}
+{"text": "Rashmi ne dal mein itna namak daal diya, par yeh itna bura bhi nahi tha.", "kind": "abstain", "sub": "negation", "domain": "cooking and food"}
+{"text": "Arjun, tum roti ko itni der tak tawe par mat rakho, woh sookh jayegi.", "kind": "abstain", "sub": "negation", "domain": "cooking and food"}
+{"text": "Mujhe paneer ki sabzi pasand nahi hai, par aaj ka khana kharab nahi lag raha.", "kind": "abstain", "sub": "negation", "domain": "cooking and food"}
+{"text": "Priya ne biryani mein zyada mirch daali, lekin woh khane layak bhi nahi tha.", "kind": "abstain", "sub": "negation", "domain": "cooking and food"}
+{"text": "Amit, tumhara chai ka tareeka accha nahi hai, isme doodh kam hona chahiye.", "kind": "abstain", "sub": "negation", "domain": "cooking and food"}
+{"text": "Sunita aunty ka achar itna tikha hai, par woh koi bekaar cheez nahi hai.", "kind": "abstain", "sub": "negation", "domain": "cooking and food"}
+{"text": "Kal ka chole ka swaad bura nahi tha, bas thoda thanda ho gaya tha.", "kind": "abstain", "sub": "negation", "domain": "cooking and food"}
+{"text": "Mere ghar mein koi bhi samosa ban nahi pa raha, aur yeh mujhe thik nahi lag raha.", "kind": "abstain", "sub": "negation", "domain": "cooking and food"}
+{"text": "Chinta mat karo, halwa thoda jal gaya hai par khane mein dikkat nahi hogi.", "kind": "abstain", "sub": "negation", "domain": "cooking and food"}
+{"text": "Ravi ne pizza mein paneer daal diya, par yeh combination itna ajeeb bhi nahi hai.", "kind": "abstain", "sub": "negation", "domain": "cooking and food"}
+{"text": "Meri nani ka khana kabhi bhi bekaar nahi hota, aur aaj bhi woh vaisa hi tha.", "kind": "abstain", "sub": "negation", "domain": "cooking and food"}
+{"text": "Neha, tum is recipe ko itni jaldi mat badlo, pehle poora dekh lo.", "kind": "abstain", "sub": "negation", "domain": "cooking and food"}
+{"text": "Yeh coffee mujhe pasand nahi aayi, kyunki isme cheeni bilkul sahi nahi hai.", "kind": "abstain", "sub": "negation", "domain": "cooking and food"}
+{"text": "Dadi ne kaha ki maggi ko itni der tak pakana sahi nahi, woh chipchipi ho jaati hai.", "kind": "abstain", "sub": "negation", "domain": "cooking and food"}
+{"text": "Tum kal subah kitne baje khet pe aaoge?", "kind": "abstain", "sub": "question", "domain": "village and farming"}
+{"text": "Kya tumne Ramu kaka ka tractor dekha hai?", "kind": "abstain", "sub": "question", "domain": "village and farming"}
+{"text": "Kya is baar barish time pe aayegi ya nahi?", "kind": "abstain", "sub": "question", "domain": "village and farming"}
+{"text": "Sunita, tumhari gai ne aaj doodh diya kya?", "kind": "abstain", "sub": "question", "domain": "village and farming"}
+{"text": "Mere saath bazaar chaloge, mujhe bheel ke beej lene hain?", "kind": "abstain", "sub": "question", "domain": "village and farming"}
+{"text": "Tumne kuan se paani kheenchne wali motor theek karwayi kya?", "kind": "abstain", "sub": "question", "domain": "village and farming"}
+{"text": "Kal sarpanch ki meeting mein tum jaogi kya Meena?", "kind": "abstain", "sub": "question", "domain": "village and farming"}
+{"text": "Kya tumhare chacha ne is saal sarso ki fasal boyi hai?", "kind": "abstain", "sub": "question", "domain": "village and farming"}
+{"text": "Hum dono mil kar bhains ke liye chara kaat lein kya?", "kind": "abstain", "sub": "question", "domain": "village and farming"}
+{"text": "Pichle hafte jo urea khaad aayi thi, woh kahan rakhi hai?", "kind": "abstain", "sub": "question", "domain": "village and farming"}
+{"text": "Tum mujhe kal thodi der ke liye bail gaadi udhaar doge kya?", "kind": "abstain", "sub": "question", "domain": "village and farming"}
+{"text": "Kya tumne suna ki mandi mein pyaaz ka bhav badh gaya hai?", "kind": "abstain", "sub": "question", "domain": "village and farming"}
+{"text": "Gudiya, tum kab tak shehar se wapas gaon laut aaogi?", "kind": "abstain", "sub": "question", "domain": "village and farming"}
+{"text": "Tum kal school kitne baje aaoge?", "kind": "abstain", "sub": "question", "domain": "school life"}
+{"text": "Kya tumne Priya ka science homework kar liya hai?", "kind": "abstain", "sub": "question", "domain": "school life"}
+{"text": "Mujhe apni notebook ka ek page dogi?", "kind": "abstain", "sub": "question", "domain": "school life"}
+{"text": "Canteen mein samosa abhi bhi milta hai kya?", "kind": "abstain", "sub": "question", "domain": "school life"}
+{"text": "Kya Rohan sir ka test is hafte hone wala hai?", "kind": "abstain", "sub": "question", "domain": "school life"}
+{"text": "Tum bus se aate ho ya cycle chalate ho?", "kind": "abstain", "sub": "question", "domain": "school life"}
+{"text": "Kal ke assembly mein tum speech doge na?", "kind": "abstain", "sub": "question", "domain": "school life"}
+{"text": "Kya tumne maths ke sawaal ka answer check kiya?", "kind": "abstain", "sub": "question", "domain": "school life"}
+{"text": "Chalo library chalein, project ke liye kuch books dhoondhte hain?", "kind": "abstain", "sub": "question", "domain": "school life"}
+{"text": "Tumhara lunch box aaj kisne khaya tha?", "kind": "abstain", "sub": "question", "domain": "school life"}
+{"text": "Kya Ananya ne sports day ke liye naam likhwaya hai?", "kind": "abstain", "sub": "question", "domain": "school life"}
+{"text": "Mujhe ek pen udhaar doge, meri khatam ho gayi hai?", "kind": "abstain", "sub": "question", "domain": "school life"}
+{"text": "Tum exam ke liye kab se padhna shuru karoge?", "kind": "abstain", "sub": "question", "domain": "school life"}
+{"text": "Kya hum group project ke liye Sunday ko mil sakte hain?", "kind": "abstain", "sub": "question", "domain": "school life"}
+{"text": "Papa, mujhe ye exam ki tayari karke bahut accha laga.", "kind": "abstain", "sub": "elder", "domain": "exam preparation"}
+{"text": "Mummy, mujhe physics ke numericals dekhkar bahut dar lagta hai.", "kind": "abstain", "sub": "elder", "domain": "exam preparation"}
+{"text": "Sir, aapka ye explanation sach mein bahut accha tha.", "kind": "abstain", "sub": "elder", "domain": "exam preparation"}
+{"text": "Dadaji, mujhe aaj ki mock test ka result dekhkar bura laga.", "kind": "abstain", "sub": "elder", "domain": "exam preparation"}
+{"text": "Nani, mujhe lagta hai main is baar chemistry mein achha karunga.", "kind": "abstain", "sub": "elder", "domain": "exam preparation"}
+{"text": "Coach, mujhe apne revision ki speed ko lekar thodi chinta hai.", "kind": "abstain", "sub": "elder", "domain": "exam preparation"}
+{"text": "Mummy, aapne jo timetable banaya woh mujhe bahut accha laga.", "kind": "abstain", "sub": "elder", "domain": "exam preparation"}
+{"text": "Papa, mujhe lagta hai itni padhai se meri neend bahut kharab ho rahi hai.", "kind": "abstain", "sub": "elder", "domain": "exam preparation"}
+{"text": "Sir, mujhe ye chapter samajh nahi aaya aur main bahut pareshan hoon.", "kind": "abstain", "sub": "elder", "domain": "exam preparation"}
+{"text": "Dadi, aap mujhe roz dua dene aati hain, mujhe woh bahut accha lagta hai.", "kind": "abstain", "sub": "elder", "domain": "exam preparation"}
+{"text": "Coach, mujhe lagta hai mock test mein time kam pad jaata hai, isska dar hai.", "kind": "abstain", "sub": "elder", "domain": "exam preparation"}
+{"text": "Papa, mujhe lagta hai hamari society mein exam ka pressure bahut zyada hai.", "kind": "abstain", "sub": "elder", "domain": "exam preparation"}
+{"text": "Mummy, aaj maine apni galti sudhari aur mujhe khushi hui.", "kind": "abstain", "sub": "elder", "domain": "exam preparation"}
+{"text": "Sir, mujhe lagta hai aapki guidance se mera confidence bahut badh gaya hai.", "kind": "abstain", "sub": "elder", "domain": "exam preparation"}
+{"text": "Papa, mujhe is internship ke pehle hafte mein bahut accha laga.", "kind": "abstain", "sub": "elder", "domain": "office / internship"}
+{"text": "Sir, mujhe apna kaam samajhne mein thodi mushkil ho rahi hai.", "kind": "abstain", "sub": "elder", "domain": "office / internship"}
+{"text": "Mummy, office ka mahaul mujhe bahut accha aur dostana lagta hai.", "kind": "abstain", "sub": "elder", "domain": "office / internship"}
+{"text": "Coach, mujhe presentation se pehle bahut dar lag raha tha.", "kind": "abstain", "sub": "elder", "domain": "office / internship"}
+{"text": "Sir, aapka feedback sunkar mujhe apni galtiyan bahut saaf dikhi.", "kind": "abstain", "sub": "elder", "domain": "office / internship"}
+{"text": "Papa, mujhe chinta hai ki stipend kab milega aur kitna hoga.", "kind": "abstain", "sub": "elder", "domain": "office / internship"}
+{"text": "Dadaji, mujhe apne team lead ka gussa aaj bura laga tha.", "kind": "abstain", "sub": "elder", "domain": "office / internship"}
+{"text": "Nani, mujhe is kaam mein bahut maza aa raha hai aur main seekh raha hoon.", "kind": "abstain", "sub": "elder", "domain": "office / internship"}
+{"text": "Sir, mujhe lagta hai ki meri deadline thodi zyada tight hai.", "kind": "abstain", "sub": "elder", "domain": "office / internship"}
+{"text": "Mummy, aaj ki meeting mein mujhe apni baat rakhne mein dar laga.", "kind": "abstain", "sub": "elder", "domain": "office / internship"}
+{"text": "Coach, mujhe apne pehle project ka result dekh kar bahut khushi hui.", "kind": "abstain", "sub": "elder", "domain": "office / internship"}
+{"text": "Papa, mujhe office ka lunch break bahut chhota aur bura lagta hai.", "kind": "abstain", "sub": "elder", "domain": "office / internship"}
+{"text": "Dadi, mujhe is naye system ko samajhne mein kaafi time lag raha hai.", "kind": "abstain", "sub": "elder", "domain": "office / internship"}
+{"text": "Sir, mujhe yeh internship bahut pasand aayi aur main aage bhi seekhna chahta hoon.", "kind": "abstain", "sub": "elder", "domain": "office / internship"}
+{"text": "Mere exam ke pehle hi Papa ko bukhar aa gaya, mujhe bahut chinta ho rahi hai.", "kind": "abstain", "sub": "serious", "domain": "exam preparation"}
+{"text": "Dadaji ki tabiyat kharab hone ki wajah se main padhne mein dhyan nahi laga pa rahi.", "kind": "abstain", "sub": "serious", "domain": "exam preparation"}
+{"text": "Doctor ne kaha ki Riya ka haath toot gaya hai, isliye woh likh nahi paayegi.", "kind": "abstain", "sub": "serious", "domain": "exam preparation"}
+{"text": "Hospital mein bahut bheed thi, aur mujhe wahan ka mahaul bilkul accha nahi laga.", "kind": "abstain", "sub": "serious", "domain": "exam preparation"}
+{"text": "Meri behen ka accident ho gaya tha, par ab woh thodi behtar lag rahi hai.", "kind": "abstain", "sub": "serious", "domain": "exam preparation"}
+{"text": "Nani ki haalat achanak bigad gayi thi, isliye hum sab raat bhar jaage rahe.", "kind": "abstain", "sub": "serious", "domain": "exam preparation"}
+{"text": "Rohan ko dengue ho gaya hai, aur uske exam ki tareekh badalne ka dar hai.", "kind": "abstain", "sub": "serious", "domain": "exam preparation"}
+{"text": "Mummy ne kaha ki Dadi ka operation kal hai, toh main aaj ghar par rahungi.", "kind": "abstain", "sub": "serious", "domain": "exam preparation"}
+{"text": "Mere chacha ki maut ki khabar sunkar main bahut udaas aur dara hua mehsoos kar rahi thi.", "kind": "abstain", "sub": "serious", "domain": "exam preparation"}
+{"text": "Doctor ne bataya ki Aman ko kaafi problem hai, lekin ab woh khatre se bahar hai.", "kind": "abstain", "sub": "serious", "domain": "exam preparation"}
+{"text": "Papa ki pair mein chot lagi hai, isliye unhe kuch din aaram karna padega.", "kind": "abstain", "sub": "serious", "domain": "exam preparation"}
+{"text": "Ghar mein sab ki tabiyat kharab hai, is wajah se padhai ka mood bilkul nahi hai.", "kind": "abstain", "sub": "serious", "domain": "exam preparation"}
+{"text": "Mujhe sardi aur khansi bahut zyada hai, aur main subah se dawai le rahi hoon.", "kind": "abstain", "sub": "serious", "domain": "exam preparation"}
+{"text": "Dadaji ke jaane ke baad ghar bahut khali lagta hai, aur mera mann kuch padhne ka nahi karta.", "kind": "abstain", "sub": "serious", "domain": "exam preparation"}
+{"text": "Papa, mujhe apna robot banane mein bahut accha laga aaj.", "kind": "abstain", "sub": "elder", "domain": "tech / robotics project"}
+{"text": "Mummy, mujhe chinta ho rahi hai ki mera sensor kaam karega ya nahi.", "kind": "abstain", "sub": "elder", "domain": "tech / robotics project"}
+{"text": "Sir, mujhe lagta hai hamara motor code mein kuch bura hai.", "kind": "abstain", "sub": "elder", "domain": "tech / robotics project"}
+{"text": "Dadaji, aapne jo circuit banaya tha, woh mujhe aaj bhi bahut accha lagta hai.", "kind": "abstain", "sub": "elder", "domain": "tech / robotics project"}
+{"text": "Nani, mujhe dar lag raha tha ki robot competition mein gir jayega.", "kind": "abstain", "sub": "elder", "domain": "tech / robotics project"}
+{"text": "Coach, mujhe yeh project banane mein kaafi mazaa aaya tha pichle hafte.", "kind": "abstain", "sub": "elder", "domain": "tech / robotics project"}
+{"text": "Papa, mera battery wala part kharab nikla aur mujhe bahut bura laga.", "kind": "abstain", "sub": "elder", "domain": "tech / robotics project"}
+{"text": "Mummy, aaj mere robot ne pehli baar line follow ki, mujhe bahut khushi hui.", "kind": "abstain", "sub": "elder", "domain": "tech / robotics project"}
+{"text": "Sir, mujhe chinta hai ki hamari team time par presentation nahi bana paayegi.", "kind": "abstain", "sub": "elder", "domain": "tech / robotics project"}
+{"text": "Dadi, mujhe robotics ki kitaabein padhna bahut accha lagta hai aajkal.", "kind": "abstain", "sub": "elder", "domain": "tech / robotics project"}
+{"text": "Papa, mujhe dar hai ki agar robot fail hua toh sab hasenge mujhpar.", "kind": "abstain", "sub": "elder", "domain": "tech / robotics project"}
+{"text": "Coach, mujhe lagta tha ki yeh design kaam karega, par woh bura nikla.", "kind": "abstain", "sub": "elder", "domain": "tech / robotics project"}
+{"text": "Mummy, mujhe apne robot ki aawaz sun ke bahut accha feel hua aaj.", "kind": "abstain", "sub": "elder", "domain": "tech / robotics project"}
+{"text": "Sir, mujhe chinta hai ki sensors ki wiring abhi bhi theek nahi hai.", "kind": "abstain", "sub": "elder", "domain": "tech / robotics project"}
+{"text": "Yeh idea itna bhi bura nahi hai, Rohan, bas thoda aur test karna padega.", "kind": "abstain", "sub": "negation", "domain": "startup and money"}
+{"text": "Mujhe lagta hai ki hum funding ke liye abhi ready nahi hain.", "kind": "abstain", "sub": "negation", "domain": "startup and money"}
+{"text": "Chinta mat karo, Priya, quarter ke numbers itne kharab bhi nahi aaye.", "kind": "abstain", "sub": "negation", "domain": "startup and money"}
+{"text": "Investor ne jo kaha, woh sunkar mujhe koi hairani nahi hui.", "kind": "abstain", "sub": "negation", "domain": "startup and money"}
+{"text": "Ismein koi shak nahi hai ki product ka demand achha hai.", "kind": "abstain", "sub": "negation", "domain": "startup and money"}
+{"text": "Hum itne paise bachakar bhi zyada der tak nahi chal sakte.", "kind": "abstain", "sub": "negation", "domain": "startup and money"}
+{"text": "Sahi kahun toh mujhe pricing strategy pasand nahi aayi, Aditya.", "kind": "abstain", "sub": "negation", "domain": "startup and money"}
+{"text": "Kal ki meeting mein kisi ne bhi budget ka sahi hisaab nahi diya.", "kind": "abstain", "sub": "negation", "domain": "startup and money"}
+{"text": "Mera manna hai ki burn rate abhi itna high rakhna samajhdari nahi hai.", "kind": "abstain", "sub": "negation", "domain": "startup and money"}
+{"text": "Sunita ne jo naya plan diya, woh utna galat bhi nahi tha.", "kind": "abstain", "sub": "negation", "domain": "startup and money"}
+{"text": "Hum apne first customer ko abhi tak nahi khoj paye, yeh sach hai.", "kind": "abstain", "sub": "negation", "domain": "startup and money"}
+{"text": "Tumhare pitch deck mein kuch cheezein achhi nahi lagi, Karan.", "kind": "abstain", "sub": "negation", "domain": "startup and money"}
+{"text": "Mujhe bilkul yeh feel nahi hota ki hum loan ke bina chal payenge.", "kind": "abstain", "sub": "negation", "domain": "startup and money"}
+{"text": "Paise ki kami wali baat itni bhi serious nahi thi, sab sambhal lenge.", "kind": "abstain", "sub": "negation", "domain": "startup and money"}
+{"text": "Dadaji ki tabiyat aaj bahut kharab lag rahi hai, mujhe bahut chinta ho rahi hai.", "kind": "abstain", "sub": "serious", "domain": "family at home"}
+{"text": "Doctor ne kaha ki ab sab accha hai, lekin Mummy abhi bhi dar rahi hai.", "kind": "abstain", "sub": "serious", "domain": "family at home"}
+{"text": "Hospital mein itni bheed thi ki hum do ghante tak line mein khade rahe.", "kind": "abstain", "sub": "serious", "domain": "family at home"}
+{"text": "Nani ki operation ke baad unhe ab kaafi dard ho raha hai, yeh problem hai.", "kind": "abstain", "sub": "serious", "domain": "family at home"}
+{"text": "Papa ne doctor se poocha ki dawai kab tak leni hai, aur doctor ne teen hafte kaha.", "kind": "abstain", "sub": "serious", "domain": "family at home"}
+{"text": "Mujhe lagta hai ki hospital ka khana bilkul accha nahi hota, bahut bekaar hai.", "kind": "abstain", "sub": "serious", "domain": "family at home"}
+{"text": "Dadi ka bukhar teen din se nahi utra, isliye hum unhe aaj phir doctor ke paas le ja rahe hain.", "kind": "abstain", "sub": "serious", "domain": "family at home"}
+{"text": "Ghar mein sab log bahut udaas hain kyunki Chacha ji ki haalat abhi bhi kharab hai.", "kind": "abstain", "sub": "serious", "domain": "family at home"}
+{"text": "Mere dost ki maa ko cancer ka pata chala tha, aur uska pura parivaar bahut dara hua hai.", "kind": "abstain", "sub": "serious", "domain": "family at home"}
+{"text": "Doctor sahab ne kaha ki X-ray mein kuch problem nahi dikhi, yeh sunkar accha laga.", "kind": "abstain", "sub": "serious", "domain": "family at home"}
+{"text": "Pichle hafte Dadaji ka swargwas ho gaya, aur ghar mein abhi bhi sannata hai.", "kind": "abstain", "sub": "serious", "domain": "family at home"}
+{"text": "Meri behen ko dengue hua hai, aur uski platelets bahut kam ho gayi hain.", "kind": "abstain", "sub": "serious", "domain": "family at home"}
+{"text": "Hum sab ne mil kar Dadi ki dekhbhaal ki, par unki tabiyat ab bhi theek nahi hai.", "kind": "abstain", "sub": "serious", "domain": "family at home"}
+{"text": "Us movie mein hero ki maa hospital mein thi aur mujhe bahut dar lag raha tha.", "kind": "abstain", "sub": "serious", "domain": "movies and OTT shows"}
+{"text": "Mujhe yeh OTT show accha laga kyunki doctor ka character bahut real lag raha tha.", "kind": "abstain", "sub": "serious", "domain": "movies and OTT shows"}
+{"text": "Dadaji ki tabiyat wali scene dekh kar meri aankhein bhar aayi.", "kind": "abstain", "sub": "serious", "domain": "movies and OTT shows"}
+{"text": "Is web series mein accident wala scene bahut kharab tarah se shoot kiya gaya hai.", "kind": "abstain", "sub": "serious", "domain": "movies and OTT shows"}
+{"text": "Heroine ka papa film ke end mein hospital mein tha aur sab bahut udaas the.", "kind": "abstain", "sub": "serious", "domain": "movies and OTT shows"}
+{"text": "Mujhe lagta hai ki movie mein cancer ka problem dikhaya gaya hai bahut emotional tareeke se.", "kind": "abstain", "sub": "serious", "domain": "movies and OTT shows"}
+{"text": "Woh show dekhne ke baad mujhe hospital jaane ki chinta hone lagi thi.", "kind": "abstain", "sub": "serious", "domain": "movies and OTT shows"}
+{"text": "Film ka villain injured ho jata hai aur doctor usse thik karne ki koshish karta hai.", "kind": "abstain", "sub": "serious", "domain": "movies and OTT shows"}
+{"text": "Is serial ki kahani mein ek ladka coma mein chala jata hai aur ghar wale rote rehte hain.", "kind": "abstain", "sub": "serious", "domain": "movies and OTT shows"}
+{"text": "Mujhe woh death wala scene pasand nahi aaya kyunki bahut zyada drama tha.", "kind": "abstain", "sub": "serious", "domain": "movies and OTT shows"}
+{"text": "Heroine ki dadi ka sudden death dikhaya gaya tha aur sabka dil toot gaya.", "kind": "abstain", "sub": "serious", "domain": "movies and OTT shows"}
+{"text": "Us OTT drama mein ek doctor ki galti se patient ki haalat kharab ho jaati hai.", "kind": "abstain", "sub": "serious", "domain": "movies and OTT shows"}
+{"text": "Film dekhte waqt mujhe lagaa ki hospital ka set bahut asli lag raha tha.", "kind": "abstain", "sub": "serious", "domain": "movies and OTT shows"}
+{"text": "Serial ka yeh episode bahut accha tha jismein papa ka heart attack dikhaya gaya.", "kind": "abstain", "sub": "serious", "domain": "movies and OTT shows"}
+{"text": "Kal tum office kitne baje pahunchoge?", "kind": "abstain", "sub": "question", "domain": "office / internship"}
+{"text": "Kya tumne wo intern wala report dekha hai?", "kind": "abstain", "sub": "question", "domain": "office / internship"}
+{"text": "Meeting ka time change hua hai kya?", "kind": "abstain", "sub": "question", "domain": "office / internship"}
+{"text": "Tum laptop lekar aaoge ya main de doon?", "kind": "abstain", "sub": "question", "domain": "office / internship"}
+{"text": "Mera badge kahan rakha hai, tumne dekha?", "kind": "abstain", "sub": "question", "domain": "office / internship"}
+{"text": "Kya hum lunch saath mein karenge aaj?", "kind": "abstain", "sub": "question", "domain": "office / internship"}
+{"text": "Manager ne tumhe bulaya tha, kya baat thi?", "kind": "abstain", "sub": "question", "domain": "office / internship"}
+{"text": "Kal ki presentation ke slides tum banaogi?", "kind": "abstain", "sub": "question", "domain": "office / internship"}
+{"text": "Tum us client ka email reply kar chuke ho?", "kind": "abstain", "sub": "question", "domain": "office / internship"}
+{"text": "Kya tumhara internship letter aa gaya Rohan?", "kind": "abstain", "sub": "question", "domain": "office / internship"}
+{"text": "Pantry mein chai khatam ho gayi, lene chalogi?", "kind": "abstain", "sub": "question", "domain": "office / internship"}
+{"text": "Priya, tum ye file print karke de sakti ho?", "kind": "abstain", "sub": "question", "domain": "office / internship"}
+{"text": "Kya tumne HR ko leave application bhej di?", "kind": "abstain", "sub": "question", "domain": "office / internship"}
+{"text": "Papa, mujhe aaj kheton mein kaam karna bahut accha lagta hai.", "kind": "abstain", "sub": "elder", "domain": "village and farming"}
+{"text": "Dadaji, is saal ki barish ne sab kuch bigaad diya, mujhe bahut chinta ho rahi hai.", "kind": "abstain", "sub": "elder", "domain": "village and farming"}
+{"text": "Mummy, mujhe gaon ke school mein akela jaana thoda dar lagta hai.", "kind": "abstain", "sub": "elder", "domain": "village and farming"}
+{"text": "Coach, aaj ki practice mein mera shot bahut bura tha, sorry.", "kind": "abstain", "sub": "elder", "domain": "village and farming"}
+{"text": "Nani, aapka banaya hua gur wala halwa sabse accha hota hai.", "kind": "abstain", "sub": "elder", "domain": "village and farming"}
+{"text": "Sir, mujhe lagta hai ki hamare gaon mein naya tractor lena zaroori hai.", "kind": "abstain", "sub": "elder", "domain": "village and farming"}
+{"text": "Dadi, mujhe kal ki fasal ke baare mein kuch bura khayal aa raha hai.", "kind": "abstain", "sub": "elder", "domain": "village and farming"}
+{"text": "Papa, mujhe aapke saath mandi jaana bahut pasand hai kyunki sab kuch accha dikhta hai.", "kind": "abstain", "sub": "elder", "domain": "village and farming"}
+{"text": "Mummy, mujhe doodh ki dukaan wale bhaiya ka rawaiya bilkul accha nahi laga.", "kind": "abstain", "sub": "elder", "domain": "village and farming"}
+{"text": "Coach, mujhe kal ki race se pehle bahut zyada ghabrahat ho rahi hai.", "kind": "abstain", "sub": "elder", "domain": "village and farming"}
+{"text": "Dadaji, aapki kahaniyan sunkar mujhe gaon ki zindagi se pyaar ho gaya hai.", "kind": "abstain", "sub": "elder", "domain": "village and farming"}
+{"text": "Papa, mujhe lagta hai ki pani ki kami se hamari fasal ko bahut nuksaan hoga.", "kind": "abstain", "sub": "elder", "domain": "village and farming"}
+{"text": "Nani, mujhe aapke haath ki bani roti ka swaad sabse zyada pasand hai.", "kind": "abstain", "sub": "elder", "domain": "village and farming"}
+{"text": "Sir, mujhe chinta hai ki is saal gaon ke bachche school chhod kar kaam karne lag rahe hain.", "kind": "abstain", "sub": "elder", "domain": "village and farming"}
+{"text": "Papa, mujhe aaj ka dance practice bahut accha laga, main aur mehnat karna chahti hoon.", "kind": "abstain", "sub": "elder", "domain": "music and dance practice"}
+{"text": "Coach, mujhe lagta hai mera tabla wala rhythm abhi bhi thoda bura hai.", "kind": "abstain", "sub": "elder", "domain": "music and dance practice"}
+{"text": "Mummy, mujhe chinta ho rahi hai ki kal ka music competition mein main gaana bhool na jaun.", "kind": "abstain", "sub": "elder", "domain": "music and dance practice"}
+{"text": "Dadaji, aapka sikhaya hua bhajan mujhe aaj bhi bahut accha lagta hai.", "kind": "abstain", "sub": "elder", "domain": "music and dance practice"}
+{"text": "Sir, mujhe dar lag raha hai ki mera group ka step sabse alag nahi dikhega.", "kind": "abstain", "sub": "elder", "domain": "music and dance practice"}
+{"text": "Nani, aapki gaayi hui thumri sunkar mujhe kuch naya seekhne ka mann karta hai.", "kind": "abstain", "sub": "elder", "domain": "music and dance practice"}
+{"text": "Papa, violin ki practice mein meri ungliyan dard karti hain, par mujhe bura nahi lagta.", "kind": "abstain", "sub": "elder", "domain": "music and dance practice"}
+{"text": "Coach, aaj ka warm-up mujhe kaafi accha laga, lekin stretching thodi aur chahiye thi.", "kind": "abstain", "sub": "elder", "domain": "music and dance practice"}
+{"text": "Mummy, mujhe pata hai ki harmonium seekhna mushkil hai, par mujhe ye bahut pasand hai.", "kind": "abstain", "sub": "elder", "domain": "music and dance practice"}
+{"text": "Dadi, aapki bataayi hui kathak ki mudra mujhe abhi bhi thodi uljhan wali lagti hai.", "kind": "abstain", "sub": "elder", "domain": "music and dance practice"}
+{"text": "Sir, mujhe chinta hai ki stage par mera taal kahin galat na ho jaye.", "kind": "abstain", "sub": "elder", "domain": "music and dance practice"}
+{"text": "Papa, aaj teacher ne meri tareef ki, aur ye sunkar mujhe bahut accha laga.", "kind": "abstain", "sub": "elder", "domain": "music and dance practice"}
+{"text": "Coach, mujhe dar hai ki agar main jaldi nahi seekhi toh group mein peeche reh jaungi.", "kind": "abstain", "sub": "elder", "domain": "music and dance practice"}
+{"text": "Nani, mujhe ye geet abhi bhi yaad nahi hota aur ye baat mujhe bahut bura lagti hai.", "kind": "abstain", "sub": "elder", "domain": "music and dance practice"}
+{"text": "Tum kal kitne baje dance practice ke liye aaoge?", "kind": "abstain", "sub": "question", "domain": "music and dance practice"}
+{"text": "Kya tumne woh naya gaana already yaad kar liya, Riya?", "kind": "abstain", "sub": "question", "domain": "music and dance practice"}
+{"text": "Mujhe ek baar tabla ka taal dikha sakti ho?", "kind": "abstain", "sub": "question", "domain": "music and dance practice"}
+{"text": "Aaj hum studio mein guitar wali practice karenge ya nahi?", "kind": "abstain", "sub": "question", "domain": "music and dance practice"}
+{"text": "Kya Arjun ne bataya ki woh harmonium lekar aayega?", "kind": "abstain", "sub": "question", "domain": "music and dance practice"}
+{"text": "Tum mirror ke saamne step kaise karti ho, Meera?", "kind": "abstain", "sub": "question", "domain": "music and dance practice"}
+{"text": "Kya hum chorus wala hissa pehle repeat kar sakte hain?", "kind": "abstain", "sub": "question", "domain": "music and dance practice"}
+{"text": "Tumhare paas extra ghungroo ka jodi hai kya?", "kind": "abstain", "sub": "question", "domain": "music and dance practice"}
+{"text": "Kal ka recital ka time sahi hai ya badal gaya hai?", "kind": "abstain", "sub": "question", "domain": "music and dance practice"}
+{"text": "Kya tum mujhe ye tihai wala part slow karke samjha sakte ho?", "kind": "abstain", "sub": "question", "domain": "music and dance practice"}
+{"text": "Sachin, tum metronome ki speed kitni rakhte ho?", "kind": "abstain", "sub": "question", "domain": "music and dance practice"}
+{"text": "Kya hum practice ke baad chai peene chal sakte hain?", "kind": "abstain", "sub": "question", "domain": "music and dance practice"}
+{"text": "Kya tumne Pooja ko bhi group practice ke baare mein message kiya?", "kind": "abstain", "sub": "question", "domain": "music and dance practice"}
+{"text": "Tum ye nayi choreography kab tak poori seekh loge, Vikram?", "kind": "abstain", "sub": "question", "domain": "music and dance practice"}
+{"text": "Gaon ke Ramlal kaka ki tabiyat kal raat se bahut kharab hai.", "kind": "abstain", "sub": "serious", "domain": "village and farming"}
+{"text": "Mujhe bahut chinta hai ki Sunita ki bukhar abhi tak nahi utri.", "kind": "abstain", "sub": "serious", "domain": "village and farming"}
+{"text": "Doctor ne kaha ki haath ka fracture theek hone mein char hafte lagenge.", "kind": "abstain", "sub": "serious", "domain": "village and farming"}
+{"text": "Pichle hafte Shyam ke pitaji ki maut ho gayi, ghar mein sab ro rahe the.", "kind": "abstain", "sub": "serious", "domain": "village and farming"}
+{"text": "Hospital ka bill itna zyada tha ki Kishan bechara bahut pareshan ho gaya.", "kind": "abstain", "sub": "serious", "domain": "village and farming"}
+{"text": "Dawai ki dukaan wale ne kaha ki woh medicine ab gaon mein nahi milti.", "kind": "abstain", "sub": "serious", "domain": "village and farming"}
+{"text": "Meri nani ko kamar mein dard hai aur woh theek se chal bhi nahi paati.", "kind": "abstain", "sub": "serious", "domain": "village and farming"}
+{"text": "Accha hua ki Rohan ko samay par sadak durghatna ke baad hospital le gaye.", "kind": "abstain", "sub": "serious", "domain": "village and farming"}
+{"text": "Gaon mein koi achha doctor nahi hai, isliye humein sheher jaana padta hai.", "kind": "abstain", "sub": "serious", "domain": "village and farming"}
+{"text": "Mere chacha ka operation kal hua aur ab woh khatre se bahar hain.", "kind": "abstain", "sub": "serious", "domain": "village and farming"}
+{"text": "Sardi se Meena ki sehat itni kharab hui ki usse khet mein kaam karna mushkil hai.", "kind": "abstain", "sub": "serious", "domain": "village and farming"}
+{"text": "Mujhe dar lag raha hai ki agar baarish na hui toh fasal ki bimari bhi badh jayegi.", "kind": "abstain", "sub": "serious", "domain": "village and farming"}
+{"text": "Doctor saab ne bataya ki Gopal ko sugar ki problem hai aur usse parhez karna hoga.", "kind": "abstain", "sub": "serious", "domain": "village and farming"}
+{"text": "Hamare gaon ki Kamla dadi ka dehant pichle mahine ho gaya aur sab bahut udaas hain.", "kind": "abstain", "sub": "serious", "domain": "village and farming"}
+{"text": "Papa, mujhe is startup ka plan bahut accha laga, par paisa kahan se aayega?", "kind": "abstain", "sub": "elder", "domain": "startup and money"}
+{"text": "Mummy, mujhe chinta ho rahi hai ki agar funding nahi mili toh kya hoga.", "kind": "abstain", "sub": "elder", "domain": "startup and money"}
+{"text": "Sir, aapka feedback sun kar mujhe pehle thoda bura laga, par ab samajh aaya.", "kind": "abstain", "sub": "elder", "domain": "startup and money"}
+{"text": "Dadaji, mujhe dar lagta hai ki ek bhi bill miss hua toh company band ho jayegi.", "kind": "abstain", "sub": "elder", "domain": "startup and money"}
+{"text": "Nani, mere co-founder ka idea accha hai, lekin budget ka plan kamzor lag raha hai.", "kind": "abstain", "sub": "elder", "domain": "startup and money"}
+{"text": "Papa, maine apni saving ka paanch lakh startup mein lagaya, aur ab mujhe bahut tension ho rahi hai.", "kind": "abstain", "sub": "elder", "domain": "startup and money"}
+{"text": "Coach, aaj ki pitching mujhe accha lagi, par investors ke sawal se main ghabra gaya.", "kind": "abstain", "sub": "elder", "domain": "startup and money"}
+{"text": "Mummy, mujhe lagta hai ki EMI aur salary dono ek saath chalana mushkil hoga.", "kind": "abstain", "sub": "elder", "domain": "startup and money"}
+{"text": "Dadi, mujhe accha laga ki aapne kaha ki pehle customers dhoondo, phir paisa dhoondo.", "kind": "abstain", "sub": "elder", "domain": "startup and money"}
+{"text": "Sir, mujhe bura laga jab bank ne mera loan application reject kar diya.", "kind": "abstain", "sub": "elder", "domain": "startup and money"}
+{"text": "Papa, mujhe chinta hai ki hamare product ki price market ke hisaab se zyada toh nahi hai?", "kind": "abstain", "sub": "elder", "domain": "startup and money"}
+{"text": "Nani, aapki baat sach hai, bina profit ke business zyada der nahi chal sakta.", "kind": "abstain", "sub": "elder", "domain": "startup and money"}
+{"text": "Coach, mujhe dar lagta hai ki hum marketing par itna kharch kar rahe hain jo wapas nahi aayega.", "kind": "abstain", "sub": "elder", "domain": "startup and money"}
+{"text": "Mummy, aaj ka monthly report dekh kar mujhe kaafi accha laga, humne bachat ki hai.", "kind": "abstain", "sub": "elder", "domain": "startup and money"}
+{"text": "Yeh idea itna bhi accha nahi hai, Priya ji, kuch aur sochna padega.", "kind": "abstain", "sub": "negation", "domain": "office / internship"}
+{"text": "Mujhe Rohan ka presentation bilkul bhi bura nahi laga aaj.", "kind": "abstain", "sub": "negation", "domain": "office / internship"}
+{"text": "Intern hone ka matlab yeh nahi ki sab kaam mujhe hi karna padega.", "kind": "abstain", "sub": "negation", "domain": "office / internship"}
+{"text": "Office ki canteen ka khana itna bhi kharab nahi hai, sach mein.", "kind": "abstain", "sub": "negation", "domain": "office / internship"}
+{"text": "Kal ki meeting mein kuch bhi galat nahi hua, tum fikar mat karo.", "kind": "abstain", "sub": "negation", "domain": "office / internship"}
+{"text": "Manager ne mera report dekha aur kaha ki woh bahut behtar nahi tha.", "kind": "abstain", "sub": "negation", "domain": "office / internship"}
+{"text": "Mujhe lagta hai ki yeh kaam itna mushkil bhi nahi hai, Aditya.", "kind": "abstain", "sub": "negation", "domain": "office / internship"}
+{"text": "Pichle hafte ka target poora nahi hua, lekin itna bura bhi nahi tha.", "kind": "abstain", "sub": "negation", "domain": "office / internship"}
+{"text": "Neha, tumhara sujhav sunkar mujhe bilkul bhi hairani nahi hui.", "kind": "abstain", "sub": "negation", "domain": "office / internship"}
+{"text": "Client ko yeh design pasand nahi aaya, par woh sab kuch galat bhi nahi tha.", "kind": "abstain", "sub": "negation", "domain": "office / internship"}
+{"text": "Mujhe internship mein koi shikayat nahi hai, sab kuch kaafi achha chal raha hai.", "kind": "abstain", "sub": "negation", "domain": "office / internship"}
+{"text": "Subah ki chai ke baad bhi kaam mein mann nahi lag raha tha.", "kind": "abstain", "sub": "negation", "domain": "office / internship"}
+{"text": "Yeh email itni buri bhi nahi likhi gayi thi, Ananya ko samajh aayega.", "kind": "abstain", "sub": "negation", "domain": "office / internship"}
+{"text": "Office mein naya system aaya hai, lekin abhi tak itna confusing nahi laga.", "kind": "abstain", "sub": "negation", "domain": "office / internship"}
+{"text": "Kal subah hum riyaaz ke liye studio par milenge.", "kind": "abstain", "sub": "facts", "domain": "music and dance practice"}
+{"text": "Tabla class ka schedule har Mangalvaar ko badal gaya hai.", "kind": "abstain", "sub": "facts", "domain": "music and dance practice"}
+{"text": "Meera ne aaj do ghante sitar ka abhyaas kiya.", "kind": "abstain", "sub": "facts", "domain": "music and dance practice"}
+{"text": "Sangeet sammelan ki tickets online bhi mil rahi hain.", "kind": "abstain", "sub": "facts", "domain": "music and dance practice"}
+{"text": "Rohan har Ravivaar ko apne chachaa se harmonium seekhta hai.", "kind": "abstain", "sub": "facts", "domain": "music and dance practice"}
+{"text": "Dance rehearsal ka pehla round subah nau baje shuru hoga.", "kind": "abstain", "sub": "facts", "domain": "music and dance practice"}
+{"text": "Priya ne Bharatanatyam ki nayi chaal teen baar dohraayi.", "kind": "abstain", "sub": "facts", "domain": "music and dance practice"}
+{"text": "Hum sabhi ko ghunghroo aur bol ki list saath laani hai.", "kind": "abstain", "sub": "facts", "domain": "music and dance practice"}
+{"text": "Guru ji ne agle mahine ki taareekh aaj hi finalize ki.", "kind": "abstain", "sub": "facts", "domain": "music and dance practice"}
+{"text": "Aanand ne pichhle saal se kathak ki classes shuru ki hain.", "kind": "abstain", "sub": "facts", "domain": "music and dance practice"}
+{"text": "Studio ka ek kamra gaane ki recording ke liye reserved hai.", "kind": "abstain", "sub": "facts", "domain": "music and dance practice"}
+{"text": "Sharma ji ki beti kal shaam violin ka performance dengi.", "kind": "abstain", "sub": "facts", "domain": "music and dance practice"}
+{"text": "Humne aaj shaam ki practice mein naye geet ka antara seekha.", "kind": "abstain", "sub": "facts", "domain": "music and dance practice"}
+{"text": "Har student ko apna riyaaz record karke group mein bhejna hai.", "kind": "abstain", "sub": "facts", "domain": "music and dance practice"}
+{"text": "Main library mein Priya ka notes le raha hoon.", "kind": "abstain", "sub": "facts", "domain": "college friends"}
+{"text": "Hostel ka mess aaj raat nau baje band hoga.", "kind": "abstain", "sub": "facts", "domain": "college friends"}
+{"text": "Rohan ne project file email par bhej di hai.", "kind": "abstain", "sub": "facts", "domain": "college friends"}
+{"text": "Hum sab Saturday ko Lonavala ja rahe hain.", "kind": "abstain", "sub": "facts", "domain": "college friends"}
+{"text": "Canteen mein aaj samosa aur chai mil rahi hai.", "kind": "abstain", "sub": "facts", "domain": "college friends"}
+{"text": "Exam ka timetable notice board par laga diya gaya hai.", "kind": "abstain", "sub": "facts", "domain": "college friends"}
+{"text": "Meera apni cousin ke saath flat dekhne jaayegi.", "kind": "abstain", "sub": "facts", "domain": "college friends"}
+{"text": "Hum group study ke liye seminar hall book karenge.", "kind": "abstain", "sub": "facts", "domain": "college friends"}
+{"text": "Vikram ne fees ki receipt accounts office mein jama ki.", "kind": "abstain", "sub": "facts", "domain": "college friends"}
+{"text": "Sab log bus ke liye gate number teen par intezaar karenge.", "kind": "abstain", "sub": "facts", "domain": "college friends"}
+{"text": "Professor ne lab report ki deadline Friday tak badha di hai.", "kind": "abstain", "sub": "facts", "domain": "college friends"}
+{"text": "Madam, aapki dal aaj bahut accha bani hai.", "kind": "abstain", "sub": "respect", "domain": "cooking and food"}
+{"text": "Sir, mujhe lagta hai ye recipe thoda kharab ho gaya.", "kind": "abstain", "sub": "respect", "domain": "cooking and food"}
+{"text": "Ma'am, aapne jo masala dala woh bahut swaad laga.", "kind": "abstain", "sub": "respect", "domain": "cooking and food"}
+{"text": "Sir, main chinta mein hoon ki kal ka khana time par ban payega.", "kind": "abstain", "sub": "respect", "domain": "cooking and food"}
+{"text": "Madam, aapka paneer wala dish mujhe bahut pasand aaya.", "kind": "abstain", "sub": "respect", "domain": "cooking and food"}
+{"text": "Sir, aapka banaya hua halwa sach mein bahut accha tha.", "kind": "abstain", "sub": "respect", "domain": "cooking and food"}
+{"text": "Ma'am, kya aap bata sakti hain ki ye sabzi kitni der mein banti hai?", "kind": "abstain", "sub": "respect", "domain": "cooking and food"}
+{"text": "Sir, mujhe afsos hai ki maine aapki chai ko thanda kar diya.", "kind": "abstain", "sub": "respect", "domain": "cooking and food"}
+{"text": "Madam, aapki biryani ki khushboo poore ghar mein phail gayi thi.", "kind": "abstain", "sub": "respect", "domain": "cooking and food"}
+{"text": "Sir, aaj ki canteen wali roti mujhe bilkul accha nahi laga.", "kind": "abstain", "sub": "respect", "domain": "cooking and food"}
+{"text": "Ma'am, kya aapko lagta hai ki namak thoda zyada ho gaya hai?", "kind": "abstain", "sub": "respect", "domain": "cooking and food"}
+{"text": "Sir, aapne jo kheer banayi thi woh sach mein lajawaab thi.", "kind": "abstain", "sub": "respect", "domain": "cooking and food"}
+{"text": "Madam, mujhe chinta hai ki stove ka gas kal tak khatam ho jayega.", "kind": "abstain", "sub": "respect", "domain": "cooking and food"}
+{"text": "Sir, aapka tiffin aaj ka sabse accha khana tha, dhanyavaad.", "kind": "abstain", "sub": "respect", "domain": "cooking and food"}
+{"text": "Sir, aapka lecture aaj bahut accha tha, sabko kaafi samajh aaya.", "kind": "abstain", "sub": "respect", "domain": "school life"}
+{"text": "Madam, mujhe Physics ke homework mein thodi problem ho rahi hai, kya aap help kar sakti hain?", "kind": "abstain", "sub": "respect", "domain": "school life"}
+{"text": "Sir, mujhe chinta hai ki exam se pehle syllabus poora nahi ho paayega.", "kind": "abstain", "sub": "respect", "domain": "school life"}
+{"text": "Madam, aapki class mein hamesha ek naya tareeka dekhne ko milta hai, jo bahut accha lagta hai.", "kind": "abstain", "sub": "respect", "domain": "school life"}
+{"text": "Sir, kal ka test thoda mushkil tha, lekin maine poori koshish ki thi.", "kind": "abstain", "sub": "respect", "domain": "school life"}
+{"text": "Madam, kya aap bata sakti hain ki project ki last date badhai ja sakti hai?", "kind": "abstain", "sub": "respect", "domain": "school life"}
+{"text": "Sir, aapne jo example diya tha, woh mujhe bahut kaam ka laga.", "kind": "abstain", "sub": "respect", "domain": "school life"}
+{"text": "Madam, meri library wali book kho gayi hai, main iske liye maafi chahti hoon.", "kind": "abstain", "sub": "respect", "domain": "school life"}
+{"text": "Sir, mujhe lagta hai ki history ka pichhla chapter kaafi kharab tarike se padhaya gaya.", "kind": "abstain", "sub": "respect", "domain": "school life"}
+{"text": "Madam, aapki diya hua feedback mere liye bahut madadgar raha hai.", "kind": "abstain", "sub": "respect", "domain": "school life"}
+{"text": "Sir, mere dost ki tabiyat kharab hone ki wajah se woh aaj school nahi aa paya.", "kind": "abstain", "sub": "respect", "domain": "school life"}
+{"text": "Madam, English ki speaking practice mein mujhe apni galtiyon ka ehsaas ho raha hai.", "kind": "abstain", "sub": "respect", "domain": "school life"}
+{"text": "Sir, kya aap bata sakte hain ki science fair ke liye aapka sujhav kya hai?", "kind": "abstain", "sub": "respect", "domain": "school life"}
+{"text": "Madam, aapka samjhane ka tarika itna accha hai ki mushkil topic bhi aasaan lagta hai.", "kind": "abstain", "sub": "respect", "domain": "school life"}
+{"text": "Sir, aapka lecture aaj bahut accha tha, mujhe kaafi kuch samajh aaya.", "kind": "abstain", "sub": "respect", "domain": "college friends"}
+{"text": "Madam, mujhe is assignment ko lekar thodi chinta ho rahi hai.", "kind": "abstain", "sub": "respect", "domain": "college friends"}
+{"text": "Sir, aapki class mein hamesha ek alag hi energy rehti hai.", "kind": "abstain", "sub": "respect", "domain": "college friends"}
+{"text": "Ji sir, mujhe lagta hai ki yeh problem mere code mein hai.", "kind": "abstain", "sub": "respect", "domain": "college friends"}
+{"text": "Madam, aapka feedback mere liye kaafi helpful raha, shukriya.", "kind": "abstain", "sub": "respect", "domain": "college friends"}
+{"text": "Sir, kal ki exam ka syllabus thoda mushkil lag raha hai mujhe.", "kind": "abstain", "sub": "respect", "domain": "college friends"}
+{"text": "Ji madam, main aapki baat se poori tarah sehmat hoon.", "kind": "abstain", "sub": "respect", "domain": "college friends"}
+{"text": "Sir, aapne jo example diya tha woh kaafi accha tha.", "kind": "abstain", "sub": "respect", "domain": "college friends"}
+{"text": "Madam, meri presentation mein kuch kharab hissa tha, kya aap batayengi?", "kind": "abstain", "sub": "respect", "domain": "college friends"}
+{"text": "Sir, mujhe pichhle hafte se ek project ki problem ho rahi hai.", "kind": "abstain", "sub": "respect", "domain": "college friends"}
+{"text": "Ji sir, aapka suggestion sun kar mujhe kaafi himmat mili.", "kind": "abstain", "sub": "respect", "domain": "college friends"}
+{"text": "Madam, aapki lecture notes bahut saaf thi aur padhne mein aasaan thi.", "kind": "abstain", "sub": "respect", "domain": "college friends"}
+{"text": "Sir, mujhe lagta hai main aapke expectations ke hisaab se nahi kar paaya.", "kind": "abstain", "sub": "respect", "domain": "college friends"}
+{"text": "Ji madam, aapki salah se mera confusion kaafi had tak kam ho gaya.", "kind": "abstain", "sub": "respect", "domain": "college friends"}
+{"text": "Sir, aapka cricket ka lecture bahut accha tha, mujhe kaafi kuch samajh aaya.", "kind": "abstain", "sub": "respect", "domain": "cricket and sports"}
+{"text": "Madam, mujhe chinta hai ki aapki team ka batting order thoda kharab lag raha hai.", "kind": "abstain", "sub": "respect", "domain": "cricket and sports"}
+{"text": "Sir, kya aap bata sakte hain ki aaj ka match kab shuru hoga?", "kind": "abstain", "sub": "respect", "domain": "cricket and sports"}
+{"text": "Ji sir, mujhe lagta hai ki aapka captain ka faisla galat tha.", "kind": "abstain", "sub": "respect", "domain": "cricket and sports"}
+{"text": "Madam, aapne jo fielding drill karwayi, woh bahut useful aur accha tha.", "kind": "abstain", "sub": "respect", "domain": "cricket and sports"}
+{"text": "Sir, mujhe maaf kijiye, main aaj practice mein time pe nahi aa paya.", "kind": "abstain", "sub": "respect", "domain": "cricket and sports"}
+{"text": "Ji dadi, aapki sunayi hui cricket kahani mujhe hamesha pasand aati hai.", "kind": "abstain", "sub": "respect", "domain": "cricket and sports"}
+{"text": "Sir, aapki coaching se mera bowling action kaafi behtar ho gaya hai.", "kind": "abstain", "sub": "respect", "domain": "cricket and sports"}
+{"text": "Madam, mujhe problem ho rahi hai kyunki scoreboard ka data sahi nahi dikh raha.", "kind": "abstain", "sub": "respect", "domain": "cricket and sports"}
+{"text": "Ji sir, aapka sujhaav sahi tha, main agle match mein usi tarah khelunga.", "kind": "abstain", "sub": "respect", "domain": "cricket and sports"}
+{"text": "Dadaji, aapke zamane ke cricket ke kisse sunna mujhe bahut accha lagta hai.", "kind": "abstain", "sub": "respect", "domain": "cricket and sports"}
+{"text": "Sir, mujhe chinta hai ki kal ki barish se hamara match cancel ho sakta hai.", "kind": "abstain", "sub": "respect", "domain": "cricket and sports"}
+{"text": "Madam, aapne bataya tha ki sports mein discipline bahut zaroori hai, yeh sach hai.", "kind": "abstain", "sub": "respect", "domain": "cricket and sports"}
+{"text": "Ji sir, aapka sports day ka plan bahut achha tha, sab ne pasand kiya.", "kind": "abstain", "sub": "respect", "domain": "cricket and sports"}
+{"text": "Sharma aunty ki tabiyat aaj bahut kharab lag rahi thi, main subah se chinta mein hoon.", "kind": "abstain", "sub": "serious", "domain": "neighbourhood and market"}
+{"text": "Doctor ne kaha ki Ravi ka bukhar ab kam ho gaya hai, accha hua.", "kind": "abstain", "sub": "serious", "domain": "neighbourhood and market"}
+{"text": "Mohalle ke Gupta ji ka dil ka operation hua hai aur ab wo hospital mein hain.", "kind": "abstain", "sub": "serious", "domain": "neighbourhood and market"}
+{"text": "Pinki ka haath market mein gir gaya tha, usko plaster lagaya gaya hai.", "kind": "abstain", "sub": "serious", "domain": "neighbourhood and market"}
+{"text": "Dadaji ki sugar bahut badh gayi thi, isliye unhe kal raat emergency mein le gaye.", "kind": "abstain", "sub": "serious", "domain": "neighbourhood and market"}
+{"text": "Kaka ki maut ki khabar sunkar sabka dil bahut bhari ho gaya tha.", "kind": "abstain", "sub": "serious", "domain": "neighbourhood and market"}
+{"text": "Mujhe dar lag raha hai ki Shyam ka zakhm kahin infection na ban jaye.", "kind": "abstain", "sub": "serious", "domain": "neighbourhood and market"}
+{"text": "Pados wali Meena ko dengue hua hai, aur uska platelet count bahut kam hai.", "kind": "abstain", "sub": "serious", "domain": "neighbourhood and market"}
+{"text": "Hospital mein bed mil gaya hai, lekin doctor abhi bhi problem ka asli karan dhoond rahe hain.", "kind": "abstain", "sub": "serious", "domain": "neighbourhood and market"}
+{"text": "Chacha ji ka accident market ke bahar hua, unki kamar mein chot aayi hai.", "kind": "abstain", "sub": "serious", "domain": "neighbourhood and market"}
+{"text": "Mere pados mein ek bachche ko chickenpox hua hai, toh mummy bahut pareshan hain.", "kind": "abstain", "sub": "serious", "domain": "neighbourhood and market"}
+{"text": "Doctor sahab ne kaha ki ab koi problem nahi hai, aap ghar le ja sakte hain.", "kind": "abstain", "sub": "serious", "domain": "neighbourhood and market"}
+{"text": "Sunita didi ki dawai khatam ho gayi hai aur unki tabiyat phir se kharab ho rahi hai.", "kind": "abstain", "sub": "serious", "domain": "neighbourhood and market"}
+{"text": "Mohalle mein sab ko pata tha ki Raju ki kidney kharab hai, par koi kuch nahi kar paya.", "kind": "abstain", "sub": "serious", "domain": "neighbourhood and market"}
+{"text": "Papa, mujhe aaj ka school ka match bahut accha laga, hum jeet gaye.", "kind": "abstain", "sub": "elder", "domain": "school life"}
+{"text": "Mummy, mujhe maths ke test ki bahut chinta ho rahi hai, kal kya hoga?", "kind": "abstain", "sub": "elder", "domain": "school life"}
+{"text": "Sir, mujhe science project ka topic bahut accha laga, main ispe kaam karna chahta hoon.", "kind": "abstain", "sub": "elder", "domain": "school life"}
+{"text": "Dadaji, mujhe aaj school mein kisi ne bura bola aur mujhe bahut dukh hua.", "kind": "abstain", "sub": "elder", "domain": "school life"}
+{"text": "Coach, mujhe aaj practice mein thaka hua mehsoos ho raha tha, par main ruka nahi.", "kind": "abstain", "sub": "elder", "domain": "school life"}
+{"text": "Nani, mujhe school ki assembly mein bolne se bahut dar lagta hai, kya karoon?", "kind": "abstain", "sub": "elder", "domain": "school life"}
+{"text": "Mummy, mera tiffin aaj bahut accha tha, didi ne sabzi bahut tasty banayi thi.", "kind": "abstain", "sub": "elder", "domain": "school life"}
+{"text": "Sir, mujhe history ka chapter bahut bora laga, isliye mera dhyan nahi lag raha tha.", "kind": "abstain", "sub": "elder", "domain": "school life"}
+{"text": "Papa, mujhe apne dost Rohan ki baat bura lagi jab usne mera mazaak udaya.", "kind": "abstain", "sub": "elder", "domain": "school life"}
+{"text": "Dadi, mujhe school ka annual function bahut pasand hai, main dance karna chahti hoon.", "kind": "abstain", "sub": "elder", "domain": "school life"}
+{"text": "Coach, mujhe lagta hai ki mera batting ka style accha improve ho raha hai.", "kind": "abstain", "sub": "elder", "domain": "school life"}
+{"text": "Mummy, mujhe kal ke exam ki tayari karni hai, lekin neend bahut aa rahi hai.", "kind": "abstain", "sub": "elder", "domain": "school life"}
+{"text": "Sir, mujhe Priya ka behaviour aaj bahut bura laga, usne class mein sabko pareshan kiya.", "kind": "abstain", "sub": "elder", "domain": "school life"}
+{"text": "Papa, mujhe school bus ke driver ki chinta hai, woh roz bahut tez chalata hai.", "kind": "abstain", "sub": "elder", "domain": "school life"}
+{"text": "Kal subah saat baje hum station par milenge.", "kind": "abstain", "sub": "facts", "domain": "road trip with friends"}
+{"text": "Gaadi ki tank full karwa lo, pump Highway par hai.", "kind": "abstain", "sub": "facts", "domain": "road trip with friends"}
+{"text": "Hum Jaipur ke raaste se Udaipur jaayenge.", "kind": "abstain", "sub": "facts", "domain": "road trip with friends"}
+{"text": "Maine chai aur biscuit ka packet bag mein rakh diya hai.", "kind": "abstain", "sub": "facts", "domain": "road trip with friends"}
+{"text": "Shaam tak hum Lonavala pahunch jaayenge, aisa plan hai.", "kind": "abstain", "sub": "facts", "domain": "road trip with friends"}
+{"text": "Gaadi ka driver Ravi hoga, Sneha aage baithegi.", "kind": "abstain", "sub": "facts", "domain": "road trip with friends"}
+{"text": "Hotel ki booking Mumbai mein do raat ke liye hui hai.", "kind": "abstain", "sub": "facts", "domain": "road trip with friends"}
+{"text": "Map ke hisaab se yeh route chaar sau kilometer ka hai.", "kind": "abstain", "sub": "facts", "domain": "road trip with friends"}
+{"text": "Sab log apna phone charger saath le aaye hain.", "kind": "abstain", "sub": "facts", "domain": "road trip with friends"}
+{"text": "Pehla break Kolhapur ke paas ek dhaba par lenge.", "kind": "abstain", "sub": "facts", "domain": "road trip with friends"}
+{"text": "Raat ke khaane ke liye hum Nashik mein rukenge.", "kind": "abstain", "sub": "facts", "domain": "road trip with friends"}
+{"text": "Raat ko gaadi ki headlights on rakhni hain.", "kind": "abstain", "sub": "facts", "domain": "road trip with friends"}
+{"text": "Teen din ke trip ke liye kul chaar log jaa rahe hain.", "kind": "abstain", "sub": "facts", "domain": "road trip with friends"}
+{"text": "Maa ne kaha ki Dadi ka sugar level phir se bahut kharab ho gaya hai.", "kind": "abstain", "sub": "serious", "domain": "cooking and food"}
+{"text": "Mujhe bahut chinta ho rahi hai kyunki Papa ko teen din se bukhaar hai.", "kind": "abstain", "sub": "serious", "domain": "cooking and food"}
+{"text": "Rahul ka haath chulhe ke paas jal gaya aur woh abhi tak ro raha hai.", "kind": "abstain", "sub": "serious", "domain": "cooking and food"}
+{"text": "Doctor ne kaha ki surgery ke baad ab Nani ki haalat kaafi accha hai.", "kind": "abstain", "sub": "serious", "domain": "cooking and food"}
+{"text": "Hospital ka khana itna bekar tha ki Meera ne ghar se tiffin mangwaya.", "kind": "abstain", "sub": "serious", "domain": "cooking and food"}
+{"text": "Mere Chacha ko pet mein dard hai aur unhe kuch bhi khana achha nahi lagta.", "kind": "abstain", "sub": "serious", "domain": "cooking and food"}
+{"text": "Pata nahi kyun, lekin Shreya ko aaj bhi jaldi bukhaar utar nahi raha.", "kind": "abstain", "sub": "serious", "domain": "cooking and food"}
+{"text": "Dadaji ke dil ki dhadkan thodi tez hai, isliye doctor ne dawai badli.", "kind": "abstain", "sub": "serious", "domain": "cooking and food"}
+{"text": "Mujhe dar lag raha hai ki Ananya ki chot ki wajah se woh chal nahi payegi.", "kind": "abstain", "sub": "serious", "domain": "cooking and food"}
+{"text": "Kal raat Dada ji ko saans lene mein problem hui toh hum sab hospital bhaage.", "kind": "abstain", "sub": "serious", "domain": "cooking and food"}
+{"text": "Ramesh Uncle ki angeethi wali ungli mein infection ho gaya aur dard bahut hai.", "kind": "abstain", "sub": "serious", "domain": "cooking and food"}
+{"text": "Ghar ke sab log Naveen ki tabiyat ke baare mein itni chinta kar rahe hain.", "kind": "abstain", "sub": "serious", "domain": "cooking and food"}
+{"text": "Pichle hafte Dadi ka dehant ho gaya aur ghar mein sannata chha gaya hai.", "kind": "abstain", "sub": "serious", "domain": "cooking and food"}
+{"text": "Doctor ne bataya ki Priya ko typhoid hai, isliye usko sirf dal-chawal khana hai.", "kind": "abstain", "sub": "serious", "domain": "cooking and food"}
+{"text": "Sabzi wala aaj bhi dhoka nahi deta, bahut imaandaar hai.", "kind": "abstain", "sub": "negation", "domain": "neighbourhood and market"}
+{"text": "Mujhe is mohalle ki sadkein itni buri bhi nahi lagti.", "kind": "abstain", "sub": "negation", "domain": "neighbourhood and market"}
+{"text": "Ramesh uncle ne kaha tha ki kal baarish nahi hogi, aur sach mein nahi hui.", "kind": "abstain", "sub": "negation", "domain": "neighbourhood and market"}
+{"text": "Yeh dukaan utni mehenga bhi nahi hai jitna log batate hain.", "kind": "abstain", "sub": "negation", "domain": "neighbourhood and market"}
+{"text": "Chinta mat karo, Sunita aunty ka beta jaldi theek ho jayega.", "kind": "abstain", "sub": "negation", "domain": "neighbourhood and market"}
+{"text": "Mujhe lagta hai bazaar mein bheed itni bhi kam nahi thi.", "kind": "abstain", "sub": "negation", "domain": "neighbourhood and market"}
+{"text": "Kal ka mela pichle saal jitna bura nahi tha, bilkul bhi nahi.", "kind": "abstain", "sub": "negation", "domain": "neighbourhood and market"}
+{"text": "Is naali ki badboo ab utni tez nahi lagti, shayad aadat ho gayi.", "kind": "abstain", "sub": "negation", "domain": "neighbourhood and market"}
+{"text": "Mere paas paise kam hain, lekin abhi koi pareshani nahi hai.", "kind": "abstain", "sub": "negation", "domain": "neighbourhood and market"}
+{"text": "Woh ladka cricket khelne mein itna bhi bura nahi hai, sirf thoda shor karta hai.", "kind": "abstain", "sub": "negation", "domain": "neighbourhood and market"}
+{"text": "Hum sabne mil kar safai ki thi, phir bhi koi khaas farak nahi dikha.", "kind": "abstain", "sub": "negation", "domain": "neighbourhood and market"}
+{"text": "Bijli wale ne kaha tha kal aayega, par woh abhi tak nahi aaya.", "kind": "abstain", "sub": "negation", "domain": "neighbourhood and market"}
+{"text": "Is baar ka tamatar itna bhi saste mein nahi mila, sach bolun toh.", "kind": "abstain", "sub": "negation", "domain": "neighbourhood and market"}
+{"text": "Pados wali Meena didi ki baatein sunkar koi bura nahi lagta.", "kind": "abstain", "sub": "negation", "domain": "neighbourhood and market"}
+{"text": "Kya tum sach mein gaadi chalaoge aaj raat tak?", "kind": "abstain", "sub": "question", "domain": "road trip with friends"}
+{"text": "Humein kab rukna chahiye, Rohan, petrol bhi kam hai?", "kind": "abstain", "sub": "question", "domain": "road trip with friends"}
+{"text": "Priya, tumne snacks ka bag kahan rakha hai?", "kind": "abstain", "sub": "question", "domain": "road trip with friends"}
+{"text": "Kya hum seedha highway pe jaayenge ya chhota rasta lenge?", "kind": "abstain", "sub": "question", "domain": "road trip with friends"}
+{"text": "Aman, tum map pe check karoge hotel kitni door hai?", "kind": "abstain", "sub": "question", "domain": "road trip with friends"}
+{"text": "Kab tak pahunchenge, Simran, kya tumhe pata hai?", "kind": "abstain", "sub": "question", "domain": "road trip with friends"}
+{"text": "Kya tumne mobile charger gaadi mein rakha tha?", "kind": "abstain", "sub": "question", "domain": "road trip with friends"}
+{"text": "Neha, kya hum raat ko dhaba pe khana khayenge?", "kind": "abstain", "sub": "question", "domain": "road trip with friends"}
+{"text": "Tum window thodi khol doge, bahut garmi lag rahi hai?", "kind": "abstain", "sub": "question", "domain": "road trip with friends"}
+{"text": "Kya Vikram ne bola tha ki woh hamare saath aayega?", "kind": "abstain", "sub": "question", "domain": "road trip with friends"}
+{"text": "Chalo, pehle chai peete hain, kya tum bhi ruk sakte ho?", "kind": "abstain", "sub": "question", "domain": "road trip with friends"}
+{"text": "Kaun gaadi mein aage baithega, Ankit ya Sameer?", "kind": "abstain", "sub": "question", "domain": "road trip with friends"}
+{"text": "Kya tumhe lagta hai ki barish phir se shuru hogi aaj?", "kind": "abstain", "sub": "question", "domain": "road trip with friends"}
+{"text": "Kal raat ko hum dono ek nayi film dekhne jayenge.", "kind": "abstain", "sub": "facts", "domain": "movies and OTT shows"}
+{"text": "Is OTT platform par naya season next Friday ko release hoga.", "kind": "abstain", "sub": "facts", "domain": "movies and OTT shows"}
+{"text": "Priya ne bataya ki woh shaam ko cinema hall mein tickets book karegi.", "kind": "abstain", "sub": "facts", "domain": "movies and OTT shows"}
+{"text": "Ravi ka plan hai ki wo weekend par ek documentary series dekhega.", "kind": "abstain", "sub": "facts", "domain": "movies and OTT shows"}
+{"text": "Yeh movie teen ghante lambi hai, toh interval ka time dhyan rakhna.", "kind": "abstain", "sub": "facts", "domain": "movies and OTT shows"}
+{"text": "Humne Netflix ka subscription is mahine ke end tak renew kar diya hai.", "kind": "abstain", "sub": "facts", "domain": "movies and OTT shows"}
+{"text": "Shubham aur Kavya kal dopahar ko us naye thriller ki screening dekhenge.", "kind": "abstain", "sub": "facts", "domain": "movies and OTT shows"}
+{"text": "Trailer ke baad film ki release date poster par saaf likhi hogi.", "kind": "abstain", "sub": "facts", "domain": "movies and OTT shows"}
+{"text": "Meri behen Anjali har Sunday ko apni pasandida web series ka naya episode dekhti hai.", "kind": "abstain", "sub": "facts", "domain": "movies and OTT shows"}
+{"text": "Ye show hindi aur english dono subtitles ke saath available hai.", "kind": "abstain", "sub": "facts", "domain": "movies and OTT shows"}
+{"text": "Agle hafte se theater mein yeh film ke daily do shows chalenge.", "kind": "abstain", "sub": "facts", "domain": "movies and OTT shows"}
+{"text": "Rohan ne kaha ki wo ghar par Amazon Prime ki nayi series shuru karega.", "kind": "abstain", "sub": "facts", "domain": "movies and OTT shows"}
+{"text": "Film ki shooting Jaipur aur Udaipur ke kuch locations par hui thi.", "kind": "abstain", "sub": "facts", "domain": "movies and OTT shows"}
+{"text": "Hum sabhi dosto ka movie night Saturday raat nau baje tay hai.", "kind": "abstain", "sub": "facts", "domain": "movies and OTT shows"}
+{"text": "Sir, aapka sabzi wala stall aaj bahut accha laga, market mein sab kuch taaza tha.", "kind": "abstain", "sub": "respect", "domain": "neighbourhood and market"}
+{"text": "Madam, aapki dukaan ke bahar ki line kaafi lambi thi, mujhe thodi chinta hui.", "kind": "abstain", "sub": "respect", "domain": "neighbourhood and market"}
+{"text": "Ji uncle, aapka naya ghar is mohalle mein bahut accha lagta hai.", "kind": "abstain", "sub": "respect", "domain": "neighbourhood and market"}
+{"text": "Sir, aapne jo bataya tha, woh kal ki market mein sach nikla, main bahut khush hoon.", "kind": "abstain", "sub": "respect", "domain": "neighbourhood and market"}
+{"text": "Madam, aapki society ke paas wali sadak par kachra dekhna mujhe kharab laga.", "kind": "abstain", "sub": "respect", "domain": "neighbourhood and market"}
+{"text": "Ji dadi, aap ne jo achaar banaya hai woh mohalle mein sabse accha hai.", "kind": "abstain", "sub": "respect", "domain": "neighbourhood and market"}
+{"text": "Sir, aapki gali mein paani bharne ka problem kab tak theek hoga, mujhe chinta hai.", "kind": "abstain", "sub": "respect", "domain": "neighbourhood and market"}
+{"text": "Madam, aapka bill ka hisaab thoda galat lag raha hai, kya aap ek baar dekh sakti hain?", "kind": "abstain", "sub": "respect", "domain": "neighbourhood and market"}
+{"text": "Ji bhaiya, aapki chai ki dukaan ka swad itna accha hai ki main roz aata hoon.", "kind": "abstain", "sub": "respect", "domain": "neighbourhood and market"}
+{"text": "Sir, aapka kal ka bazaar wala suggestion bahut kaam ka tha, dhanyavaad.", "kind": "abstain", "sub": "respect", "domain": "neighbourhood and market"}
+{"text": "Ji chachi, aapke ghar ke saamne wala park ab bahut saaf aur sundar dikhta hai.", "kind": "abstain", "sub": "respect", "domain": "neighbourhood and market"}
+{"text": "Madam, aapki sabzi ki kimat is hafte kaafi zyada hai, mujhe iska dukh hai.", "kind": "abstain", "sub": "respect", "domain": "neighbourhood and market"}
+{"text": "Sir, aap ne mohalle ke liye jo kaam kiya hai, woh sach mein sarahniya hai.", "kind": "abstain", "sub": "respect", "domain": "neighbourhood and market"}
+{"text": "Ji aunty, aapki beti ki shadi mein gaane sunkar dil khush ho gaya tha.", "kind": "abstain", "sub": "respect", "domain": "neighbourhood and market"}
+{"text": "Mujhe lagta hai ki yeh chapter itna mushkil bhi nahi hai, bas dhyan se padhna hoga.", "kind": "abstain", "sub": "negation", "domain": "exam preparation"}
+{"text": "Priya ne kaha, mock test ka result utna bura bhi nahi aaya jitna main soch rahi thi.", "kind": "abstain", "sub": "negation", "domain": "exam preparation"}
+{"text": "Rohan, tum itni der tak padhte ho, lekin tumhara time table koi bekar bhi nahi hai.", "kind": "abstain", "sub": "negation", "domain": "exam preparation"}
+{"text": "Papa ne kaha, board exam ko lekar itna ghabrana sahi nahi hai, tum tayaar ho.", "kind": "abstain", "sub": "negation", "domain": "exam preparation"}
+{"text": "Mujhe yeh formula yaad karne mein koi dikkat nahi ho rahi, bas thoda practice chahiye.", "kind": "abstain", "sub": "negation", "domain": "exam preparation"}
+{"text": "Ananya ne mana nahi kiya ki woh kal raat tak jaagkar revision karegi.", "kind": "abstain", "sub": "negation", "domain": "exam preparation"}
+{"text": "Coaching ke teacher ka tareeka galat nahi hai, bas mujhe samajh nahi aaya.", "kind": "abstain", "sub": "negation", "domain": "exam preparation"}
+{"text": "Kal ka paper bahut tough tha, lekin itna bhi hard nahi tha ki pass na ho sakein.", "kind": "abstain", "sub": "negation", "domain": "exam preparation"}
+{"text": "Aryan bolta hai ki physics ke numericals se woh bilkul darta nahi hai ab.", "kind": "abstain", "sub": "negation", "domain": "exam preparation"}
+{"text": "Maa ne kaha, raat ko der tak phone chalana achha nahi hai, neend poori karo.", "kind": "abstain", "sub": "negation", "domain": "exam preparation"}
+{"text": "Mere dost ka plan galat nahi tha, humne shayad time ka sahi hisaab nahi lagaya.", "kind": "abstain", "sub": "negation", "domain": "exam preparation"}
+{"text": "Neha ko chemistry ki notes samajh aayi, woh itni buri bhi nahi lagti ab.", "kind": "abstain", "sub": "negation", "domain": "exam preparation"}
+{"text": "Chinta mat karo, tumhari taiyari adhoori nahi hai, bas thoda aur waqt do.", "kind": "abstain", "sub": "negation", "domain": "exam preparation"}
+{"text": "Mujhe lagta hai ki online test series se mera koi nuksan nahi hua hai.", "kind": "abstain", "sub": "negation", "domain": "exam preparation"}
+{"text": "Mummy, mujhe Diwali ki safai ka kaam bilkul accha nahi lagta.", "kind": "abstain", "sub": "elder", "domain": "festival and shaadi"}
+{"text": "Dadaji, aapki sunayi hui Holi wali kahani mujhe bahut pasand aayi.", "kind": "abstain", "sub": "elder", "domain": "festival and shaadi"}
+{"text": "Papa, shaadi mein itni bheed dekhkar mujhe thoda dar lag raha hai.", "kind": "abstain", "sub": "elder", "domain": "festival and shaadi"}
+{"text": "Nani, aapka banaya hua kheer aaj bhi duniya mein sabse accha hai.", "kind": "abstain", "sub": "elder", "domain": "festival and shaadi"}
+{"text": "Dadi, mujhe chinta hai ki Raksha Bandhan par Bhaiya ghar nahi aa payenge.", "kind": "abstain", "sub": "elder", "domain": "festival and shaadi"}
+{"text": "Coach, aaj ka practice itna lamba tha ki mujhe bahut bura laga.", "kind": "abstain", "sub": "elder", "domain": "festival and shaadi"}
+{"text": "Sir, Navratri ke garba ki taiyari mein mujhe kaafi mazaa aa raha hai.", "kind": "abstain", "sub": "elder", "domain": "festival and shaadi"}
+{"text": "Mummy, aapne jo lehenga chuna woh mujhe bilkul accha nahi laga.", "kind": "abstain", "sub": "elder", "domain": "festival and shaadi"}
+{"text": "Papa, mere cousin ki shaadi mein naachna mujhe bahut pasand hai.", "kind": "abstain", "sub": "elder", "domain": "festival and shaadi"}
+{"text": "Dadaji, aap itne saal se Diwali par diye jala rahe ho, yeh mujhe bahut accha lagta hai.", "kind": "abstain", "sub": "elder", "domain": "festival and shaadi"}
+{"text": "Nani, mujhe is baar Eid par sab ke saath baithkar khana bahut yaad aayega.", "kind": "abstain", "sub": "elder", "domain": "festival and shaadi"}
+{"text": "Coach, mujhe dar hai ki Dussehra ke tournament mein main theek se khel nahi paunga.", "kind": "abstain", "sub": "elder", "domain": "festival and shaadi"}
+{"text": "Sir, aapka Ganesh Chaturthi wala speech sunkar mujhe bahut achha feel hua.", "kind": "abstain", "sub": "elder", "domain": "festival and shaadi"}
+{"text": "Mummy, shaadi ki shopping mein itna time lagana mujhe bilkul pasand nahi aaya.", "kind": "abstain", "sub": "elder", "domain": "festival and shaadi"}
+{"text": "Kal subah saat baje assembly hogi, sab time par aana.", "kind": "abstain", "sub": "facts", "domain": "school life"}
+{"text": "Mera naam Ananya hai aur main class 9-B mein padhti hoon.", "kind": "abstain", "sub": "facts", "domain": "school life"}
+{"text": "Science practical ki list board par likhi hui hai.", "kind": "abstain", "sub": "facts", "domain": "school life"}
+{"text": "Priya ne aaj tiffin mein parathe laaye the.", "kind": "abstain", "sub": "facts", "domain": "school life"}
+{"text": "Sports day ke liye registration Monday tak khula rahega.", "kind": "abstain", "sub": "facts", "domain": "school life"}
+{"text": "Hum sab library mein project ke liye ek ghante baad milenge.", "kind": "abstain", "sub": "facts", "domain": "school life"}
+{"text": "Principal sir ne kaha ki naya timetable kal se lagu hoga.", "kind": "abstain", "sub": "facts", "domain": "school life"}
+{"text": "Rohan aur Aman ne chemistry lab ki chaabi le li hai.", "kind": "abstain", "sub": "facts", "domain": "school life"}
+{"text": "Hindi ka chapter teen paanch pages tak revise karna hai.", "kind": "abstain", "sub": "facts", "domain": "school life"}
+{"text": "School bus ka route is saal Sector 14 se hokar jayega.", "kind": "abstain", "sub": "facts", "domain": "school life"}
+{"text": "Exam ke paper ka result teen hafte mein notice board par lagega.", "kind": "abstain", "sub": "facts", "domain": "school life"}
+{"text": "Meri didi bhi isi school mein pehle padhti thi.", "kind": "abstain", "sub": "facts", "domain": "school life"}
+{"text": "Computer room ka password sirf IT teacher ke paas hai.", "kind": "abstain", "sub": "facts", "domain": "school life"}
+{"text": "Kal ki history test ka syllabus chapter pachees se chaubis tak hai.", "kind": "abstain", "sub": "facts", "domain": "school life"}
+{"text": "Vidya ne apni notebook canteen mein bhool di thi.", "kind": "abstain", "sub": "facts", "domain": "school life"}
+{"text": "Mummy, aaj ki dal bahut accha bani, namak bhi bilkul sahi tha.", "kind": "abstain", "sub": "elder", "domain": "cooking and food"}
+{"text": "Nani, mujhe aapke haath ka aloo paratha hamesha bahut pasand hai.", "kind": "abstain", "sub": "elder", "domain": "cooking and food"}
+{"text": "Papa, mujhe chinta ho rahi hai ki gas khatam ho jayegi pehle chai banne se.", "kind": "abstain", "sub": "elder", "domain": "cooking and food"}
+{"text": "Dadi, aapne kal jo kheer banayi thi, woh sach mein bahut meethi thi.", "kind": "abstain", "sub": "elder", "domain": "cooking and food"}
+{"text": "Coach, mujhe lagta hai ki hostel ka khana kaafi bura hai aajkal.", "kind": "abstain", "sub": "elder", "domain": "cooking and food"}
+{"text": "Mummy, mujhe dar lag raha hai ki pressure cooker phir se seeti maar dega.", "kind": "abstain", "sub": "elder", "domain": "cooking and food"}
+{"text": "Sir, aapne jo recipe samjhayi thi, usme namak zyada daalna galat tha.", "kind": "abstain", "sub": "elder", "domain": "cooking and food"}
+{"text": "Dadaji, aapki bani chai ki khushboo mujhe ab bhi yaad aati hai.", "kind": "abstain", "sub": "elder", "domain": "cooking and food"}
+{"text": "Papa, mujhe lagta hai aaj ka biryani thoda bura jala hua tha.", "kind": "abstain", "sub": "elder", "domain": "cooking and food"}
+{"text": "Nani, mujhe aaj ki poori sabzi bahut acchi lagi, bilkul ghar jaisi thi.", "kind": "abstain", "sub": "elder", "domain": "cooking and food"}
+{"text": "Mummy, mujhe dar hai ki paneer kal tak kharab ho jayega fridge mein.", "kind": "abstain", "sub": "elder", "domain": "cooking and food"}
+{"text": "Coach, mujhe laga tha ki diet plan mein sirf salad hi milega, par accha tha.", "kind": "abstain", "sub": "elder", "domain": "cooking and food"}
+{"text": "Dadi, aapka banaya achar mujhe har baar naya aur bahut swaad lagta hai.", "kind": "abstain", "sub": "elder", "domain": "cooking and food"}
+{"text": "Papa, mujhe chinta hai ki ghar mein doodh kal tak kam pad jayega.", "kind": "abstain", "sub": "elder", "domain": "cooking and food"}
+{"text": "Tum kal exam ke liye kitne baje tak padhoge?", "kind": "abstain", "sub": "question", "domain": "exam preparation"}
+{"text": "Kya tumne physics ka woh chapter khatam kiya Riya?", "kind": "abstain", "sub": "question", "domain": "exam preparation"}
+{"text": "Mujhe revision notes bhej doge jo tumne banaye the?", "kind": "abstain", "sub": "question", "domain": "exam preparation"}
+{"text": "Aaj raat mock test saath mein de sakte hain kya?", "kind": "abstain", "sub": "question", "domain": "exam preparation"}
+{"text": "Arjun, tumhare hisaab se maths ka paper kaisa aayega?", "kind": "abstain", "sub": "question", "domain": "exam preparation"}
+{"text": "Kya tum mujhe organic chemistry ke reactions samjha sakti ho?", "kind": "abstain", "sub": "question", "domain": "exam preparation"}
+{"text": "Library mein seat rakhoge kal subah aate hi?", "kind": "abstain", "sub": "question", "domain": "exam preparation"}
+{"text": "Tumne previous year ke question papers solve kiye hain kya?", "kind": "abstain", "sub": "question", "domain": "exam preparation"}
+{"text": "Pooja, kya tumhare paas woh formula sheet abhi bhi hai?", "kind": "abstain", "sub": "question", "domain": "exam preparation"}
+{"text": "Hum group study kal ghar par karein ya college mein?", "kind": "abstain", "sub": "question", "domain": "exam preparation"}
+{"text": "Kitne marks ka target rakha hai tumne is baar Vikram?", "kind": "abstain", "sub": "question", "domain": "exam preparation"}
+{"text": "Kya tumne timetable ke hisaab se history revise kar liya?", "kind": "abstain", "sub": "question", "domain": "exam preparation"}
+{"text": "Mujhe ek chhoti si quiz le loge English grammar par?", "kind": "abstain", "sub": "question", "domain": "exam preparation"}
+{"text": "Exam hall mein pen aur admit card le jaana yaad hai na?", "kind": "abstain", "sub": "question", "domain": "exam preparation"}
+{"text": "Tum kal kitne baje hospital aaoge?", "kind": "abstain", "sub": "question", "domain": "hospital and recovery"}
+{"text": "Kya doctor ne bola ki tumhe ghar kab jaane denge?", "kind": "abstain", "sub": "question", "domain": "hospital and recovery"}
+{"text": "Mujhe bata do, dawai khane ka time kya hai?", "kind": "abstain", "sub": "question", "domain": "hospital and recovery"}
+{"text": "Tumne khana kha liya ya abhi bhi bhookhe ho?", "kind": "abstain", "sub": "question", "domain": "hospital and recovery"}
+{"text": "Kya nurse ne tumhari drip thik se lagayi hai?", "kind": "abstain", "sub": "question", "domain": "hospital and recovery"}
+{"text": "Please ek glass paani pakdaoge mere liye?", "kind": "abstain", "sub": "question", "domain": "hospital and recovery"}
+{"text": "Tum itni der se kyun chup baithi ho?", "kind": "abstain", "sub": "question", "domain": "hospital and recovery"}
+{"text": "Kya ward mein koi aur bhi mareez hai abhi?", "kind": "abstain", "sub": "question", "domain": "hospital and recovery"}
+{"text": "Kab tak tumhe bed par aaram karna padega?", "kind": "abstain", "sub": "question", "domain": "hospital and recovery"}
+{"text": "Kya tumhe dard abhi bhi ho raha hai Rohan?", "kind": "abstain", "sub": "question", "domain": "hospital and recovery"}
+{"text": "Mummy ne khana bhej diya ya main canteen se mangwa loon?", "kind": "abstain", "sub": "question", "domain": "hospital and recovery"}
+{"text": "Kya tum mere liye ek chhoti si file la sakti ho?", "kind": "abstain", "sub": "question", "domain": "hospital and recovery"}
+{"text": "Tumhari report kab tak aayegi, Priya?", "kind": "abstain", "sub": "question", "domain": "hospital and recovery"}
+{"text": "Kya physiotherapy ke liye tum mere saath chaloge kal?", "kind": "abstain", "sub": "question", "domain": "hospital and recovery"}
+{"text": "Papa, mujhe is road trip mein sab kuch bahut accha laga.", "kind": "abstain", "sub": "elder", "domain": "road trip with friends"}
+{"text": "Mummy, mujhe chinta ho rahi hai ki gaadi kal tak pahunch paayegi ya nahi.", "kind": "abstain", "sub": "elder", "domain": "road trip with friends"}
+{"text": "Dadaji, aaj ka raasta bahut lamba tha aur mujhe thoda bura laga.", "kind": "abstain", "sub": "elder", "domain": "road trip with friends"}
+{"text": "Coach, mujhe Rohan ka driving dekh kar thoda dar lag raha tha.", "kind": "abstain", "sub": "elder", "domain": "road trip with friends"}
+{"text": "Nani, aapka banaya hua paratha hum sab ko bahut pasand aaya tha.", "kind": "abstain", "sub": "elder", "domain": "road trip with friends"}
+{"text": "Sir, mujhe lagta hai hum ne raste mein bahut zyada samay barbaad kar diya.", "kind": "abstain", "sub": "elder", "domain": "road trip with friends"}
+{"text": "Papa, Priya ne jo gaane lagaye the woh mujhe bilkul accha nahi laga.", "kind": "abstain", "sub": "elder", "domain": "road trip with friends"}
+{"text": "Mummy, mujhe pehli baar pahadon ko itne paas se dekh kar bahut khushi hui.", "kind": "abstain", "sub": "elder", "domain": "road trip with friends"}
+{"text": "Dadi, Amit ki tabiyat kharab hone se mujhe kaafi chinta ho gayi thi.", "kind": "abstain", "sub": "elder", "domain": "road trip with friends"}
+{"text": "Coach, aaj ki barish mein safar karna mujhe bahut mushkil lag raha tha.", "kind": "abstain", "sub": "elder", "domain": "road trip with friends"}
+{"text": "Sir, mujhe andar se dar tha ki hum Shimla time par nahi pahunch paayenge.", "kind": "abstain", "sub": "elder", "domain": "road trip with friends"}
+{"text": "Papa, Neha ki baatein sun kar mujhe thoda bura laga tha kal raat.", "kind": "abstain", "sub": "elder", "domain": "road trip with friends"}
+{"text": "Nani, is dhaba ka khana sach mein bahut accha tha aur mujhe yaad rahega.", "kind": "abstain", "sub": "elder", "domain": "road trip with friends"}
+{"text": "Dadaji, mujhe lagta hai ki agli baar hum aur bhi acche raaste chunenge.", "kind": "abstain", "sub": "elder", "domain": "road trip with friends"}
+{"text": "Mere chacha ki tabiyat ek hafte se bahut kharab chal rahi hai.", "kind": "abstain", "sub": "serious", "domain": "college friends"}
+{"text": "Kal raat Riya ko emergency mein hospital le jaana pada, main bahut dar gaya tha.", "kind": "abstain", "sub": "serious", "domain": "college friends"}
+{"text": "Doctor ne kaha ki Arjun ka haath toota hai, par operation ki zaroorat nahi hai.", "kind": "abstain", "sub": "serious", "domain": "college friends"}
+{"text": "Meri dadi ki death ki khabar sunkar mera poora din bekaar ho gaya.", "kind": "abstain", "sub": "serious", "domain": "college friends"}
+{"text": "Mujhe lagta hai ki hospital ka khana bahut bura hota hai, kuch bhi accha nahi.", "kind": "abstain", "sub": "serious", "domain": "college friends"}
+{"text": "Ankit ko bukhar aaya tha, lekin ab woh thoda accha lag raha hai.", "kind": "abstain", "sub": "serious", "domain": "college friends"}
+{"text": "Pichle mahine Simran ke papa ka heart ka operation hua tha, bahut chinta thi.", "kind": "abstain", "sub": "serious", "domain": "college friends"}
+{"text": "Doctor ki fees itni zyada thi ki mere ghar walon ko problem ho gayi.", "kind": "abstain", "sub": "serious", "domain": "college friends"}
+{"text": "Meri nani ka cancer ka ilaaj chal raha hai aur woh bahut kamzor ho gayi hain.", "kind": "abstain", "sub": "serious", "domain": "college friends"}
+{"text": "Subah se mera sar dard kar raha hai, lagta hai koi bada problem hai.", "kind": "abstain", "sub": "serious", "domain": "college friends"}
+{"text": "Vikram ne bike accident mein apna ghutna chot khaya aur ab wo chal nahi pa raha.", "kind": "abstain", "sub": "serious", "domain": "college friends"}
+{"text": "Mujhe chinta ho rahi hai ki Neha ka test report kya aayega, woh bahut dara hui hai.", "kind": "abstain", "sub": "serious", "domain": "college friends"}
+{"text": "Hostel mein sab ko flu hua hai, aur mera bhi naak band hai, bahut irritating hai.", "kind": "abstain", "sub": "serious", "domain": "college friends"}
+{"text": "Hum sab ne mil kar Rohit ke dadaji ke final rites mein madad ki, bahut dukhi the sab.", "kind": "abstain", "sub": "serious", "domain": "college friends"}

@@ -21,3 +21,12 @@ python-dotenv
 accelerate>=1.0
 psutil
 anthropic   # only for data_prep/ (building training data); not needed to run the pipeline
+
+# --- audio output (audio/) and the 4/5-bit editor (tools/, agents/gguf_editor.py) ---
+edge-tts>=7.0          # neural Hindi / Indian-English voices, no key needed (internet)
+soundfile>=0.12        # decode mp3 / write wav+mp3 without ffmpeg
+llama-cpp-python>=0.3  # CPU wheel:  pip install llama-cpp-python --only-binary=:all: --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cpu
+gguf>=0.10             # only needed to export a new adapter (tools/export_gguf.py)
+gradio>=6.0            # the demo UI (python -m ui.app)
+faster-whisper>=1.0    # optional local speech recognition (cloud ASR is the default when a key is set); also decodes any audio format via PyAV
+pandas
