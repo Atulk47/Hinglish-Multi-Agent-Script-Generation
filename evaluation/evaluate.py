@@ -43,7 +43,7 @@ Answer ONLY JSON: {{"emotion_fit": <1-5 int>, "placement": <1-5 int>, "reason": 
 
 
 def load_pairs(trace_path):
-    """Return list of (scene_id, neutral_dialogue, slang_dialogue, key_events, intent)."""
+    """Return neutral/slang scene pairs, preserving decisions for line-level checks."""
     t = json.load(open(trace_path, encoding="utf-8"))
     neutral = {s["scene_id"]: s for s in t.get("neutral_script", [])}
     pairs = []
@@ -51,8 +51,9 @@ def load_pairs(trace_path):
         sid = s["scene_id"]
         n = neutral.get(sid, {})
         ev = s.get("events") or n.get("events") or {}
-        pairs.append((sid, n.get("dialogue", ""), s.get("dialogue", ""),
-                      ev.get("key_events", []), ev.get("scene_goal", "")))
+        neutral_scene = {**n, "scene_id": sid, "events": ev}
+        slang_scene = {**s, "scene_id": sid, "events": ev}
+        pairs.append((sid, neutral_scene, slang_scene, ev.get("scene_goal", "")))
     return pairs
 
 
@@ -83,6 +84,8 @@ def main():
     ap.add_argument("traces", nargs="+", help="trace .json file(s)")
     ap.add_argument("--judge", action="store_true",
                     help="add Groq LLM-judge context-appropriateness (uses API)")
+    ap.add_argument("--lexicon", default=None,
+                    help="slang CSV to score against (defaults to FELIX_DATASET_CLEAN)")
     ap.add_argument("--out", default=None, help="write report JSON here")
     args = ap.parse_args()
 
@@ -93,7 +96,7 @@ def main():
         print("no trace files matched:", args.traces)
         return
 
-    phrases, single = load_slang_lexicon()
+    phrases, single = load_slang_lexicon(args.lexicon)
     print(f"slang lexicon: {len(phrases)} phrases / {len(single)} words\n")
 
     from evaluation.muril_validator import MuRILValidator
@@ -110,18 +113,35 @@ def main():
             scenes.append(tup)
 
     all_scene_metrics, sims, recalls = [], [], []
+    changed_line_sims = []
+    changed_line_count = 0
     fits, places = [], []
-    print(f"{'scene':<12}{'sim':>7}{'recall':>8}{'cover':>7}{'dens':>6}{'valid':>7}{'cmi':>6}  slang")
-    print("-" * 78)
+    print(f"{'scene':<12}{'sim':>7}{'editSim':>8}{'changed':>8}{'recall':>8}"
+          f"{'cover':>7}{'dens':>6}{'valid':>7}{'cmi':>6}  slang")
+    print("-" * 93)
 
-    for sid, neutral, slang, key_events, intent in scenes:
+    for sid, neutral_scene, slang_scene, intent in scenes:
+        neutral = neutral_scene.get("dialogue", "")
+        slang = slang_scene.get("dialogue", "")
         sm = scene_slang_metrics(neutral, slang, phrases, single)
-        val = validator.validate_scene(neutral, slang, key_events)
+        val = validator.diagnose_scene(neutral_scene, slang_scene)
         sims.append(val["similarity"])
         recalls.append(val["event_recall"])
+        scene_changed_sims = [
+            line["similarity"] for line in val["per_line"]
+            if (line.get("neutral") or "").strip().casefold()
+            != (line.get("slang") or "").strip().casefold()
+        ]
+        changed_line_sims.extend(scene_changed_sims)
+        changed_line_count += len(scene_changed_sims)
         all_scene_metrics.append(sm)
-        print(f"{sid:<12}{val['similarity']:>7.3f}{val['event_recall']:>8.2f}"
-              f"{sm['coverage']:>7.2f}{sm['density']:>6.2f}{sm['validity']:>7.2f}"
+        validity = f"{sm['validity']:>7.2f}" if sm["validity"] is not None else f"{'N/A':>7}"
+        edit_sim = (sum(scene_changed_sims) / len(scene_changed_sims)
+                    if scene_changed_sims else None)
+        edit_sim_text = f"{edit_sim:>8.3f}" if edit_sim is not None else f"{'N/A':>8}"
+        print(f"{sid:<12}{val['similarity']:>7.3f}{edit_sim_text}{len(scene_changed_sims):>8d}"
+              f"{val['event_recall']:>8.2f}"
+              f"{sm['coverage']:>7.2f}{sm['density']:>6.2f}{validity}"
               f"{sm['cmi']:>6.1f}  {', '.join(sm['detected']) or '-'}")
         if client is not None:
             j = judge_scene(client, neutral, slang, intent)
@@ -138,6 +158,18 @@ def main():
         "n_scenes": len(sims),
         "semantic_sim_mean": round(sum(sims) / n, 4),
         "semantic_sim_min": round(min(sims), 4) if sims else 0.0,
+        "changed_line_count": changed_line_count,
+        "changed_line_semantic_sim_mean": (
+            round(sum(changed_line_sims) / len(changed_line_sims), 4)
+            if changed_line_sims else None
+        ),
+        "changed_line_semantic_sim_min": (
+            round(min(changed_line_sims), 4) if changed_line_sims else None
+        ),
+        "changed_line_similarity_definition": (
+            "MuRIL cosine similarity over dialogue turns whose neutral and edited text differ; "
+            "this is a supporting proxy, not a factual entailment guarantee."
+        ),
         "event_recall_mean": round(sum(recalls) / n, 4),
         **agg,
     }

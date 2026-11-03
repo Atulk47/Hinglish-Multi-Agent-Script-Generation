@@ -1,0 +1,757 @@
+{
+  "session": "ui_20261031_140117",
+  "romanized_text": "shahar ke bichon-bicha ek bahut purani pustakalay thi. log kahate the ki vahan ki kuch kitaben sau sal se bhi adhik purani hain. din men vahan chatron aur shodhakartaon ki bhida lagi rahati thi, lekin sham hote hi pura bhavan shant ho jata tha.\n\nek din arav nam ka chatr itihas ki pariyojana ke lie samagri khojane vahan gaya. use ek dhul se dhaki hui alamari mili, jo samanyatah band rahati thi. alamari ke bhitar use chamadae ke kavar vali ek dayari dikhai di. dayari ke pahale panne para likha tha, jo bhi ise padhae, vaha saty ki khoj puri kare.\n\narav utsuk ho gaya. usane dayari padhana shuru kiya. usamen shahar ke ek bhule-bisare vyapari ka ullekh tha, jisane varshon pahale kai garib parivaron ki madad ki thi, lekin usaka nam itihas men kahin darj nahin tha. dayari men kuch sanket aur purane nakshe bhi bane hue the.\n\nagale kai dinon tak arav un sanketon ka picha karata rah. antatah use nagar abhilekhagar men aise dastaveja mile jinhonne vyapari ki kahani ko saty siddh kara diya. usaki khoj ke bad nagar parishad ne us vyakti ke samman men ek smarak sthapit kiya.\n\narav ne sikha ki itihas keval badai ghatanaon ka nahin, balki un logon ka bhi hota hai jinake achche kary samay ke sath bhula die jate hain.",
+  "deva_scenes": [
+    "शहर के बीचों-बीच एक बहुत पुरानी पुस्तकालय थी। लोग कहते थे कि वहाँ की कुछ किताबें सौ साल से भी अधिक पुरानी हैं। दिन में वहाँ छात्रों और शोधकर्ताओं की भीड़ लगी रहती थी, लेकिन शाम होते ही पूरा भवन शांत हो जाता था।",
+    "एक दिन आरव नाम का छात्र इतिहास की परियोजना के लिए सामग्री खोजने वहाँ गया। उसे एक धूल से ढकी हुई अलमारी मिली, जो सामान्यतः बंद रहती थी। अलमारी के भीतर उसे चमड़े के कवर वाली एक डायरी दिखाई दी। डायरी के पहले पन्ने पर लिखा था, \"जो भी इसे पढ़े, वह सत्य की खोज पूरी करे।\"",
+    "आरव उत्सुक हो गया। उसने डायरी पढ़ना शुरू किया। उसमें शहर के एक भूले-बिसरे व्यापारी का उल्लेख था, जिसने वर्षों पहले कई गरीब परिवारों की मदद की थी, लेकिन उसका नाम इतिहास में कहीं दर्ज नहीं था। डायरी में कुछ संकेत और पुराने नक्शे भी बने हुए थे।",
+    "अगले कई दिनों तक आरव उन संकेतों का पीछा करता रहा। अंततः उसे नगर अभिलेखागार में ऐसे दस्तावेज़ मिले जिन्होंने व्यापारी की कहानी को सत्य सिद्ध कर दिया। उसकी खोज के बाद नगर परिषद ने उस व्यक्ति के सम्मान में एक स्मारक स्थापित किया।",
+    "आरव ने सीखा कि इतिहास केवल बड़ी घटनाओं का नहीं, बल्कि उन लोगों का भी होता है जिनके अच्छे कार्य समय के साथ भुला दिए जाते हैं।"
+  ],
+  "segmentation": {
+    "method": "author-paragraphs",
+    "starts": [
+      0,
+      3,
+      7,
+      11,
+      14
+    ],
+    "sentences": 15,
+    "notes": ""
+  },
+  "scene_chunks": [
+    {
+      "scene_id": "scene_01",
+      "text": "shahar ke bichon-bicha ek bahut purani pustakalay thi. log kahate the ki vahan ki kuch kitaben sau sal se bhi adhik purani hain. din men vahan chatron aur shodhakartaon ki bhida lagi rahati thi, lekin sham hote hi pura bhavan shant ho jata tha.",
+      "has_location_cue": false,
+      "has_temporal_cue": true
+    },
+    {
+      "scene_id": "scene_02",
+      "text": "ek din arav nam ka chatr itihas ki pariyojana ke lie samagri khojane vahan gaya. use ek dhul se dhaki hui alamari mili, jo samanyatah band rahati thi. alamari ke bhitar use chamadae ke kavar vali ek dayari dikhai di. dayari ke pahale panne para likha tha, jo bhi ise padhae, vaha saty ki khoj puri kare.",
+      "has_location_cue": false,
+      "has_temporal_cue": false
+    },
+    {
+      "scene_id": "scene_03",
+      "text": "arav utsuk ho gaya. usane dayari padhana shuru kiya. usamen shahar ke ek bhule-bisare vyapari ka ullekh tha, jisane varshon pahale kai garib parivaron ki madad ki thi, lekin usaka nam itihas men kahin darj nahin tha. dayari men kuch sanket aur purane nakshe bhi bane hue the.",
+      "has_location_cue": false,
+      "has_temporal_cue": false
+    },
+    {
+      "scene_id": "scene_04",
+      "text": "agale kai dinon tak arav un sanketon ka picha karata rah. antatah use nagar abhilekhagar men aise dastaveja mile jinhonne vyapari ki kahani ko saty siddh kara diya. usaki khoj ke bad nagar parishad ne us vyakti ke samman men ek smarak sthapit kiya.",
+      "has_location_cue": false,
+      "has_temporal_cue": false
+    },
+    {
+      "scene_id": "scene_05",
+      "text": "arav ne sikha ki itihas keval badai ghatanaon ka nahin, balki un logon ka bhi hota hai jinake achche kary samay ke sath bhula die jate hain.",
+      "has_location_cue": false,
+      "has_temporal_cue": false
+    }
+  ],
+  "event_chain": [
+    {
+      "scene_id": "scene_01",
+      "key_events": [
+        "A very old library exists in the middle of the city",
+        "People say that some books there are older than a hundred years",
+        "During the day, students and researchers visit the library",
+        "In the evening, the entire building becomes quiet"
+      ],
+      "characters": [],
+      "scene_goal": "Establish the library as a historic, quiet place that attracts scholars during the day",
+      "location": "The old library in the middle of the city",
+      "narrative_link": "Following the previous scene, the library remains a quiet place after dusk",
+      "pronoun_map": {}
+    },
+    {
+      "scene_id": "scene_02",
+      "key_events": [
+        "Arav goes to search for materials for his history project",
+        "He finds a dusty chest that is usually locked",
+        "Inside the chest he sees a diary with a note on the first page that says whoever reads it will complete the search for truth"
+      ],
+      "characters": [
+        "Arav"
+      ],
+      "scene_goal": "Arav discovers a clue that promises to guide him toward uncovering truth in his research",
+      "location": "Inside a dusty chest",
+      "narrative_link": "Following the previous scene (Establish the library as a historic, quiet place that attracts scholars during the day), Arav now finds a diary that promises to guide him toward uncovering truth",
+      "pronoun_map": {}
+    },
+    {
+      "scene_id": "scene_03",
+      "key_events": [
+        "Arav becomes curious",
+        "Arav starts reading the diary",
+        "Diary contains mention of a forgotten merchant who helped poor families years ago but is not recorded in history",
+        "Diary includes clues and old maps"
+      ],
+      "characters": [
+        "Arav"
+      ],
+      "scene_goal": "Arav uncovers historical clues about a forgotten merchant and gains new information from the diary",
+      "location": "Arav's study/home",
+      "narrative_link": "Following the previous scene (Arav discovers a clue that promises to guide him toward uncovering truth in his research), Arav now reads the diary",
+      "pronoun_map": {}
+    },
+    {
+      "scene_id": "scene_04",
+      "key_events": [
+        "Arav continues to chase the footprints for days",
+        "Arav finds documents in the city archives that prove the merchant's story",
+        "After his discovery, the city council establishes a monument in honor of the merchant"
+      ],
+      "characters": [
+        "Arav"
+      ],
+      "scene_goal": "Confirm the merchant's story and honor him with a monument",
+      "location": "City archives and city council",
+      "narrative_link": "Following the previous scene (Arav uncovers historical clues about a forgotten merchant and gains new information from the diary), Arav now discovers documents proving the merchant's story",
+      "pronoun_map": {}
+    },
+    {
+      "scene_id": "scene_05",
+      "key_events": [
+        "Arav teaches that history is not only about major events but also about people whose good deeds are forgotten over time"
+      ],
+      "characters": [
+        "Arav"
+      ],
+      "scene_goal": "Convey the lesson that history includes forgotten individuals",
+      "location": "Unknown",
+      "narrative_link": "Following the previous scene (Confirm the merchant's story and honor him with a monument), Arav now teaches this lesson",
+      "pronoun_map": {}
+    }
+  ],
+  "character_profiles": {
+    "Arav": {
+      "name": "Arav",
+      "age": null,
+      "social_role": "peer",
+      "slang_level": 5,
+      "relationship": {},
+      "current_emotion": "proud",
+      "turn_count": 4,
+      "stress_index": 0.0,
+      "gender": "male",
+      "age_group": "young_adult",
+      "speech_style": "casual",
+      "traits": [
+        "curious",
+        "determined",
+        "thoughtful"
+      ],
+      "emotion_arc": [
+        {
+          "scene_id": "scene_02",
+          "emotion": "excited",
+          "intensity": 2,
+          "valence": 0.8,
+          "arousal": 0.9,
+          "stress": 0.0
+        },
+        {
+          "scene_id": "scene_03",
+          "emotion": "excited",
+          "intensity": 2,
+          "valence": 0.8,
+          "arousal": 0.9,
+          "stress": 0.0
+        },
+        {
+          "scene_id": "scene_04",
+          "emotion": "determined",
+          "intensity": 3,
+          "valence": 0.3,
+          "arousal": 0.7,
+          "stress": 0.0
+        },
+        {
+          "scene_id": "scene_05",
+          "emotion": "proud",
+          "intensity": 2,
+          "valence": 0.8,
+          "arousal": 0.5,
+          "stress": 0.0
+        }
+      ]
+    }
+  },
+  "persona": {
+    "characters": {
+      "Arav": {
+        "gender": "male",
+        "age_group": "young_adult",
+        "speech_style": "casual",
+        "traits": [
+          "curious",
+          "determined",
+          "thoughtful"
+        ],
+        "gender_votes": [
+          0,
+          1
+        ]
+      }
+    },
+    "relationships": [],
+    "emotions": {
+      "scene_01": {},
+      "scene_02": {
+        "Arav": {
+          "emotion": "excited",
+          "intensity": 2
+        }
+      },
+      "scene_03": {
+        "Arav": {
+          "emotion": "excited",
+          "intensity": 2
+        }
+      },
+      "scene_04": {
+        "Arav": {
+          "emotion": "determined",
+          "intensity": 3
+        }
+      },
+      "scene_05": {
+        "Arav": {
+          "emotion": "proud",
+          "intensity": 2
+        }
+      }
+    },
+    "scene_cast": {
+      "scene_01": {
+        "present": [],
+        "mentioned_only": [],
+        "extra_speakers": [],
+        "fallback": true
+      },
+      "scene_02": {
+        "present": [
+          "Arav"
+        ],
+        "mentioned_only": [],
+        "extra_speakers": [],
+        "fallback": false
+      },
+      "scene_03": {
+        "present": [
+          "Arav"
+        ],
+        "mentioned_only": [],
+        "extra_speakers": [],
+        "fallback": false
+      },
+      "scene_04": {
+        "present": [
+          "Arav"
+        ],
+        "mentioned_only": [],
+        "extra_speakers": [],
+        "fallback": false
+      },
+      "scene_05": {
+        "present": [
+          "Arav"
+        ],
+        "mentioned_only": [],
+        "extra_speakers": [],
+        "fallback": false
+      }
+    },
+    "secrets": [],
+    "checks": {
+      "llm_ok": true,
+      "unknown_names_dropped": 0,
+      "labels_normalised": 0,
+      "gender_overrides": [],
+      "emotion_filled_by_rules": 0,
+      "fallback_gender": 0,
+      "secrets": 0,
+      "scene_cast_fallback": 1
+    },
+    "source": "llm+rules"
+  },
+  "neutral_script": [
+    {
+      "scene_id": "scene_01",
+      "dialogue": "Student1: Yeh library bahut purani hai, suna hai kuch books 100 saal se bhi purani hain.\nStudent2: Haan, aur din mein students aur researchers ki bheed lagti rehti hai.\nStudent1: Mujhe lagta hai ki yeh jagah knowledge ka ek khoj hai, bahut accha lag raha hai.\nStudent2: Lekin raat ko jab sab chup ho jata hai, thoda sa dar lagta hai.\nStudent1: Haan, shanti mein sochne ka mauka milta hai, yeh badi problem nahi lagti.\nStudent2: Sahi hai, isliye hum din mein yahan aate hain, raat ko phir se khush rehte hain.",
+      "events": {
+        "scene_id": "scene_01",
+        "key_events": [
+          "A very old library exists in the middle of the city",
+          "People say that some books there are older than a hundred years",
+          "During the day, students and researchers visit the library",
+          "In the evening, the entire building becomes quiet"
+        ],
+        "characters": [],
+        "scene_goal": "Establish the library as a historic, quiet place that attracts scholars during the day",
+        "location": "The old library in the middle of the city",
+        "narrative_link": "Following the previous scene, the library remains a quiet place after dusk",
+        "pronoun_map": {}
+      },
+      "fidelity": {
+        "attempts": 1,
+        "issues_per_attempt": [
+          0
+        ],
+        "final_issues": [],
+        "lines_removed": 0
+      }
+    },
+    {
+      "scene_id": "scene_02",
+      "dialogue": "Arav: [generation failed after 3 attempts]",
+      "events": {
+        "scene_id": "scene_02",
+        "key_events": [
+          "Arav goes to search for materials for his history project",
+          "He finds a dusty chest that is usually locked",
+          "Inside the chest he sees a diary with a note on the first page that says whoever reads it will complete the search for truth"
+        ],
+        "characters": [
+          "Arav"
+        ],
+        "scene_goal": "Arav discovers a clue that promises to guide him toward uncovering truth in his research",
+        "location": "Inside a dusty chest",
+        "narrative_link": "Following the previous scene (Establish the library as a historic, quiet place that attracts scholars during the day), Arav now finds a diary that promises to guide him toward uncovering truth",
+        "pronoun_map": {}
+      },
+      "fidelity": {
+        "attempts": 1,
+        "issues_per_attempt": [
+          0
+        ],
+        "final_issues": [],
+        "lines_removed": 0
+      }
+    },
+    {
+      "scene_id": "scene_03",
+      "dialogue": "Arav: [generation failed after 3 attempts]",
+      "events": {
+        "scene_id": "scene_03",
+        "key_events": [
+          "Arav becomes curious",
+          "Arav starts reading the diary",
+          "Diary contains mention of a forgotten merchant who helped poor families years ago but is not recorded in history",
+          "Diary includes clues and old maps"
+        ],
+        "characters": [
+          "Arav"
+        ],
+        "scene_goal": "Arav uncovers historical clues about a forgotten merchant and gains new information from the diary",
+        "location": "Arav's study/home",
+        "narrative_link": "Following the previous scene (Arav discovers a clue that promises to guide him toward uncovering truth in his research), Arav now reads the diary",
+        "pronoun_map": {}
+      },
+      "fidelity": {
+        "attempts": 1,
+        "issues_per_attempt": [
+          0
+        ],
+        "final_issues": [],
+        "lines_removed": 0
+      }
+    },
+    {
+      "scene_id": "scene_04",
+      "dialogue": "Arav: \"Maine abhi abhi archives mein woh documents nikale, jo merchant ki kahani ko sach prove karte hain.\"\nArav: \"Yeh sab dekh kar mujhe bahut khushi ho rahi hai, kaafi dinon ki mehnat rang laayi.\"\nArav: \"Dhanyavaad, aapka yeh faisla hamare liye bahut mahatvapurn hai.\"\nArav: \"Ab hum sab milkar is monument ko sajayenge, aur uski kahani ko aage badhayenge.\"",
+      "events": {
+        "scene_id": "scene_04",
+        "key_events": [
+          "Arav continues to chase the footprints for days",
+          "Arav finds documents in the city archives that prove the merchant's story",
+          "After his discovery, the city council establishes a monument in honor of the merchant"
+        ],
+        "characters": [
+          "Arav"
+        ],
+        "scene_goal": "Confirm the merchant's story and honor him with a monument",
+        "location": "City archives and city council",
+        "narrative_link": "Following the previous scene (Arav uncovers historical clues about a forgotten merchant and gains new information from the diary), Arav now discovers documents proving the merchant's story",
+        "pronoun_map": {}
+      },
+      "fidelity": {
+        "attempts": 3,
+        "issues_per_attempt": [
+          2,
+          3,
+          3
+        ],
+        "final_issues": [
+          {
+            "line": 3,
+            "type": "absent_speaker",
+            "detail": "Council Chair is not one of the characters of this scene"
+          },
+          {
+            "line": 4,
+            "type": "absent_speaker",
+            "detail": "Council Chair is not one of the characters of this scene"
+          }
+        ],
+        "lines_removed": 2
+      }
+    },
+    {
+      "scene_id": "scene_05",
+      "dialogue": "Arav: History sirf bade events ka nahi, balki un logon ka bhi hota hai jinke achhe kaam samay ke saath bhul jaate hain.",
+      "events": {
+        "scene_id": "scene_05",
+        "key_events": [
+          "Arav teaches that history is not only about major events but also about people whose good deeds are forgotten over time"
+        ],
+        "characters": [
+          "Arav"
+        ],
+        "scene_goal": "Convey the lesson that history includes forgotten individuals",
+        "location": "Unknown",
+        "narrative_link": "Following the previous scene (Confirm the merchant's story and honor him with a monument), Arav now teaches this lesson",
+        "pronoun_map": {}
+      },
+      "fidelity": {
+        "attempts": 1,
+        "issues_per_attempt": [
+          0
+        ],
+        "final_issues": [],
+        "lines_removed": 0
+      }
+    }
+  ],
+  "slang_script": [
+    {
+      "scene_id": "scene_01",
+      "dialogue": "Student1: Yeh library bahut purani hai, suna hai kuch books 100 saal se bhi purani hain.\nStudent2: Haan, aur din mein students aur researchers ki bheed lagti rehti hai.\nStudent1: Mujhe lagta hai ki yeh jagah knowledge ka ek khoj hai, bahut accha lag raha hai, bro.\nStudent2: Lekin raat ko jab sab chup ho jata hai, thoda sa dar lagta hai bhai.\nStudent1: Haan, shanti mein sochne ka mauka milta hai, chill yeh badi problem nahi lagti.\nStudent2: Sahi hai yaar, isliye hum din mein yahan aate hain, raat ko phir se khush rehte hain.",
+      "decisions": [
+        {
+          "speaker": "Student1",
+          "applied": false,
+          "go": false,
+          "gate_stopped": 2,
+          "intent": "INFORM_NEUTRAL",
+          "reason": "Intent 'INFORM_NEUTRAL' does not permit slang"
+        },
+        {
+          "speaker": "Student2",
+          "applied": false,
+          "go": false,
+          "gate_stopped": 2,
+          "intent": "INFORM_NEUTRAL",
+          "reason": "Intent 'INFORM_NEUTRAL' does not permit slang"
+        },
+        {
+          "speaker": "Student1",
+          "applied": true,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "ASSERT_POSITIVE",
+          "reason": "All gates passed",
+          "slang": "bro",
+          "slang_tokens_added": 1
+        },
+        {
+          "speaker": "Student2",
+          "applied": true,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "EXPRESS_STRESS",
+          "reason": "All gates passed",
+          "slang": "bhai",
+          "slang_tokens_added": 1
+        },
+        {
+          "speaker": "Student1",
+          "applied": true,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "CASUAL_ASSERTION",
+          "reason": "All gates passed",
+          "slang": "chill",
+          "slang_tokens_added": 1
+        },
+        {
+          "speaker": "Student2",
+          "applied": true,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "CASUAL_ASSERTION",
+          "reason": "All gates passed",
+          "slang": "yaar",
+          "slang_tokens_added": 1
+        }
+      ],
+      "events": {
+        "scene_id": "scene_01",
+        "key_events": [
+          "A very old library exists in the middle of the city",
+          "People say that some books there are older than a hundred years",
+          "During the day, students and researchers visit the library",
+          "In the evening, the entire building becomes quiet"
+        ],
+        "characters": [],
+        "scene_goal": "Establish the library as a historic, quiet place that attracts scholars during the day",
+        "location": "The old library in the middle of the city",
+        "narrative_link": "Following the previous scene, the library remains a quiet place after dusk",
+        "pronoun_map": {}
+      }
+    },
+    {
+      "scene_id": "scene_02",
+      "dialogue": "Arav: [generation failed after 3 attempts]",
+      "decisions": [
+        {
+          "speaker": "Arav",
+          "applied": false,
+          "go": false,
+          "gate_stopped": null,
+          "intent": null,
+          "reason": "skipped: upstream Pass-1 generation failed"
+        }
+      ],
+      "events": {
+        "scene_id": "scene_02",
+        "key_events": [
+          "Arav goes to search for materials for his history project",
+          "He finds a dusty chest that is usually locked",
+          "Inside the chest he sees a diary with a note on the first page that says whoever reads it will complete the search for truth"
+        ],
+        "characters": [
+          "Arav"
+        ],
+        "scene_goal": "Arav discovers a clue that promises to guide him toward uncovering truth in his research",
+        "location": "Inside a dusty chest",
+        "narrative_link": "Following the previous scene (Establish the library as a historic, quiet place that attracts scholars during the day), Arav now finds a diary that promises to guide him toward uncovering truth",
+        "pronoun_map": {}
+      }
+    },
+    {
+      "scene_id": "scene_03",
+      "dialogue": "Arav: [generation failed after 3 attempts]",
+      "decisions": [
+        {
+          "speaker": "Arav",
+          "applied": false,
+          "go": false,
+          "gate_stopped": null,
+          "intent": null,
+          "reason": "skipped: upstream Pass-1 generation failed"
+        }
+      ],
+      "events": {
+        "scene_id": "scene_03",
+        "key_events": [
+          "Arav becomes curious",
+          "Arav starts reading the diary",
+          "Diary contains mention of a forgotten merchant who helped poor families years ago but is not recorded in history",
+          "Diary includes clues and old maps"
+        ],
+        "characters": [
+          "Arav"
+        ],
+        "scene_goal": "Arav uncovers historical clues about a forgotten merchant and gains new information from the diary",
+        "location": "Arav's study/home",
+        "narrative_link": "Following the previous scene (Arav discovers a clue that promises to guide him toward uncovering truth in his research), Arav now reads the diary",
+        "pronoun_map": {}
+      }
+    },
+    {
+      "scene_id": "scene_04",
+      "dialogue": "Arav: Maine abhi abhi archives mein woh documents nikale, jo merchant ki kahani ko sach prove karte hain, kasam se.\nArav: Abey, yeh sab dekh kar mujhe bahut khushi ho rahi hai, kaafi dinon ki mehnat rang laayi.\nArav: \"Dhanyavaad, aapka yeh faisla hamare liye bahut mahatvapurn hai.\"\nArav: Ab hum sab milkar is monument ko sajayenge, arre, aur uski kahani ko aage badhayenge.",
+      "decisions": [
+        {
+          "speaker": "Arav",
+          "applied": true,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "ASSERT_POSITIVE",
+          "reason": "All gates passed",
+          "slang": "kasam se",
+          "slang_tokens_added": 2
+        },
+        {
+          "speaker": "Arav",
+          "applied": true,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "ASSERT_POSITIVE",
+          "reason": "All gates passed",
+          "slang": "abey",
+          "slang_tokens_added": 1
+        },
+        {
+          "speaker": "Arav",
+          "applied": false,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "ASSERT_POSITIVE",
+          "reason": "respectful/grateful line — slang skipped"
+        },
+        {
+          "speaker": "Arav",
+          "applied": true,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "CASUAL_ASSERTION",
+          "reason": "All gates passed",
+          "slang": "arre",
+          "slang_tokens_added": 1
+        }
+      ],
+      "events": {
+        "scene_id": "scene_04",
+        "key_events": [
+          "Arav continues to chase the footprints for days",
+          "Arav finds documents in the city archives that prove the merchant's story",
+          "After his discovery, the city council establishes a monument in honor of the merchant"
+        ],
+        "characters": [
+          "Arav"
+        ],
+        "scene_goal": "Confirm the merchant's story and honor him with a monument",
+        "location": "City archives and city council",
+        "narrative_link": "Following the previous scene (Arav uncovers historical clues about a forgotten merchant and gains new information from the diary), Arav now discovers documents proving the merchant's story",
+        "pronoun_map": {}
+      }
+    },
+    {
+      "scene_id": "scene_05",
+      "dialogue": "Arav: History sirf bade events ka nahi, balki un logon ka bhi hota hai jinke achhe kaam samay ke saath bhul jaate hain, abey.",
+      "decisions": [
+        {
+          "speaker": "Arav",
+          "applied": true,
+          "go": true,
+          "gate_stopped": null,
+          "intent": "CASUAL_ASSERTION",
+          "reason": "All gates passed",
+          "slang": "abey",
+          "slang_tokens_added": 1
+        }
+      ],
+      "events": {
+        "scene_id": "scene_05",
+        "key_events": [
+          "Arav teaches that history is not only about major events but also about people whose good deeds are forgotten over time"
+        ],
+        "characters": [
+          "Arav"
+        ],
+        "scene_goal": "Convey the lesson that history includes forgotten individuals",
+        "location": "Unknown",
+        "narrative_link": "Following the previous scene (Confirm the merchant's story and honor him with a monument), Arav now teaches this lesson",
+        "pronoun_map": {}
+      }
+    }
+  ],
+  "comparison": [
+    {
+      "scene_id": "scene_01",
+      "location": "The old library in the middle of the city",
+      "lines": []
+    },
+    {
+      "scene_id": "scene_02",
+      "location": "Inside a dusty chest",
+      "lines": [
+        {
+          "speaker": "ARAV",
+          "neutral": "[generation failed after 3 attempts]",
+          "slang": "[generation failed after 3 attempts]",
+          "slang_added": null,
+          "slang_applied": false,
+          "intent": null,
+          "gate_stopped": null,
+          "changed": false
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_03",
+      "location": "Arav's study/home",
+      "lines": [
+        {
+          "speaker": "ARAV",
+          "neutral": "[generation failed after 3 attempts]",
+          "slang": "[generation failed after 3 attempts]",
+          "slang_added": null,
+          "slang_applied": false,
+          "intent": null,
+          "gate_stopped": null,
+          "changed": false
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_04",
+      "location": "City archives and city council",
+      "lines": [
+        {
+          "speaker": "ARAV",
+          "neutral": "\"Maine abhi abhi archives mein woh documents nikale, jo merchant ki kahani ko sach prove karte hain.\"",
+          "slang": "Maine abhi abhi archives mein woh documents nikale, jo merchant ki kahani ko sach prove karte hain, kasam se.",
+          "slang_added": "kasam se",
+          "slang_applied": true,
+          "intent": "ASSERT_POSITIVE",
+          "gate_stopped": null,
+          "changed": true
+        },
+        {
+          "speaker": "ARAV",
+          "neutral": "\"Yeh sab dekh kar mujhe bahut khushi ho rahi hai, kaafi dinon ki mehnat rang laayi.\"",
+          "slang": "Abey, yeh sab dekh kar mujhe bahut khushi ho rahi hai, kaafi dinon ki mehnat rang laayi.",
+          "slang_added": "abey",
+          "slang_applied": true,
+          "intent": "ASSERT_POSITIVE",
+          "gate_stopped": null,
+          "changed": true
+        },
+        {
+          "speaker": "ARAV",
+          "neutral": "\"Dhanyavaad, aapka yeh faisla hamare liye bahut mahatvapurn hai.\"",
+          "slang": "\"Dhanyavaad, aapka yeh faisla hamare liye bahut mahatvapurn hai.\"",
+          "slang_added": null,
+          "slang_applied": false,
+          "intent": "ASSERT_POSITIVE",
+          "gate_stopped": null,
+          "changed": false
+        },
+        {
+          "speaker": "ARAV",
+          "neutral": "\"Ab hum sab milkar is monument ko sajayenge, aur uski kahani ko aage badhayenge.\"",
+          "slang": "Ab hum sab milkar is monument ko sajayenge, arre, aur uski kahani ko aage badhayenge.",
+          "slang_added": "arre",
+          "slang_applied": true,
+          "intent": "CASUAL_ASSERTION",
+          "gate_stopped": null,
+          "changed": true
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_05",
+      "location": "Unknown",
+      "lines": [
+        {
+          "speaker": "ARAV",
+          "neutral": "History sirf bade events ka nahi, balki un logon ka bhi hota hai jinke achhe kaam samay ke saath bhul jaate hain.",
+          "slang": "History sirf bade events ka nahi, balki un logon ka bhi hota hai jinke achhe kaam samay ke saath bhul jaate hain, abey.",
+          "slang_added": "abey",
+          "slang_applied": true,
+          "intent": "CASUAL_ASSERTION",
+          "gate_stopped": null,
+          "changed": true
+        }
+      ]
+    }
+  ],
+  "final_script": "# HINGLISH SCREENPLAY\n\n## SCENE_01\n*Location: The old library in the middle of the city*\n\nStudent1: Yeh library bahut purani hai, suna hai kuch books 100 saal se bhi purani hain.\nStudent2: Haan, aur din mein students aur researchers ki bheed lagti rehti hai.\nStudent1: Mujhe lagta hai ki yeh jagah knowledge ka ek khoj hai, bahut accha lag raha hai, bro.\nStudent2: Lekin raat ko jab sab chup ho jata hai, thoda sa dar lagta hai bhai.\nStudent1: Haan, shanti mein sochne ka mauka milta hai, chill yeh badi problem nahi lagti.\nStudent2: Sahi hai yaar, isliye hum din mein yahan aate hain, raat ko phir se khush rehte hain.\n\n---\n\n## SCENE_02\n*Location: Inside a dusty chest*\n\nArav: [generation failed after 3 attempts]\n\n---\n\n## SCENE_03\n*Location: Arav's study/home*\n\nArav: [generation failed after 3 attempts]\n\n---\n\n## SCENE_04\n*Location: City archives and city council*\n\nArav: Maine abhi abhi archives mein woh documents nikale, jo merchant ki kahani ko sach prove karte hain, kasam se.\nArav: Abey, yeh sab dekh kar mujhe bahut khushi ho rahi hai, kaafi dinon ki mehnat rang laayi.\nArav: \"Dhanyavaad, aapka yeh faisla hamare liye bahut mahatvapurn hai.\"\nArav: Ab hum sab milkar is monument ko sajayenge, arre, aur uski kahani ko aage badhayenge.\n\n---\n\n## SCENE_05\n*Location: Unknown*\n\nArav: History sirf bade events ka nahi, balki un logon ka bhi hota hai jinke achhe kaam samay ke saath bhul jaate hain, abey.\n\n---\n"
+}

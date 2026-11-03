@@ -1,0 +1,48 @@
+{
+  "source_trace": "outputs\\orch_full_trace.json",
+  "source_sha256": "2dec0dc47f4d649c6fff452ca989a70dbf79454d16f6bdcba444e0ef23ffa9aa",
+  "n_scenes": 5,
+  "backend": "groq",
+  "adapter": "./models/slang-editor-lora-v5",
+  "runtime_slang_source": "data/felix_dataset/slang_bank_v3.csv",
+  "acceptance_gate": "rules",
+  "qwen_judge_enabled": true,
+  "groq_fallback_enabled": false,
+  "seed": 7,
+  "max_validation_attempts": 3,
+  "variants": {
+    "full": {
+      "trace": "outputs\\ablation\\groq_pilot\\orch_full_trace_full.json",
+      "applied_edits": 4,
+      "validated_scenes": 5,
+      "failed_scenes_after_retries": [],
+      "editor_groq_errors": 0,
+      "valid_for_analysis": true
+    },
+    "no_eligibility_gates": {
+      "trace": "outputs\\ablation\\groq_pilot\\orch_full_trace_no_eligibility_gates.json",
+      "applied_edits": 8,
+      "validated_scenes": 5,
+      "failed_scenes_after_retries": [],
+      "editor_groq_errors": 0,
+      "valid_for_analysis": true
+    },
+    "no_validation_redo": {
+      "trace": "outputs\\ablation\\groq_pilot\\orch_full_trace_no_validation_redo.json",
+      "applied_edits": 4,
+      "validated_scenes": 0,
+      "failed_scenes_after_retries": [],
+      "editor_groq_errors": 0,
+      "valid_for_analysis": true
+    },
+    "no_editor": {
+      "trace": "outputs\\ablation\\groq_pilot\\orch_full_trace_no_editor.json",
+      "applied_edits": 0,
+      "validated_scenes": 0,
+      "failed_scenes_after_retries": [],
+      "editor_groq_errors": 0,
+      "valid_for_analysis": true
+    }
+  },
+  "warning": "Run every arm on identical neutral input; inspect API/model errors before using results."
+}

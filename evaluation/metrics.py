@@ -134,7 +134,9 @@ def scene_slang_metrics(neutral: str, slang: str, phrases: set, single: set) -> 
         if any(t in low for t in detected_lc):
             lines_with += 1
 
-    validity = (d["n_valid_single"] / d["n_inserted"]) if d["n_inserted"] else 1.0
+    # Undefined when the system inserted no new words. Reporting 1.0 here would
+    # make a no-editor baseline appear perfectly valid by vacuous truth.
+    validity = (d["n_valid_single"] / d["n_inserted"]) if d["n_inserted"] else None
     cmi, en_ratio, hi_ratio = code_mixing_index(slang)
     return {
         "n_lines": len(lines),
@@ -159,7 +161,8 @@ def aggregate(scene_metrics: list) -> dict:
     unique = len(set(all_slang))
 
     def mean(key):
-        return round(sum(m[key] for m in scene_metrics) / n, 4)
+        values = [m[key] for m in scene_metrics if m[key] is not None]
+        return round(sum(values) / len(values), 4) if values else None
 
     return {
         "scenes": n,

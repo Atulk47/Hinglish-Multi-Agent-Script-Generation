@@ -1,0 +1,5 @@
+﻿variant,slang_coverage,event_recall_mean,changed_line_count,changed_line_semantic_sim_mean,changed_line_semantic_sim_min,slang_validity,slang_diversity,semantic_sim_mean,slang_total,n_scenes
+Full system,0.4,0.9,4,0.9995,0.9994,1.0,1.0,0.9999,4,5
+No Gate 1 (speaker),0.4,0.9,4,0.9995,0.9993,1.0,1.0,0.9999,4,5
+No Gate 2 (pragmatic),0.6667,0.9,8,0.9994,0.9991,1.0,0.875,0.9997,8,5
+No Gate 3 (density),0.4,0.9,4,0.9995,0.9993,1.0,1.0,0.9999,4,5

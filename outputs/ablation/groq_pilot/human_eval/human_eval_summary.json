@@ -1,0 +1,7 @@
+{
+  "n_raters": 3,
+  "n_dialogue_turns": 0,
+  "scale": "ordinal 1-5; higher is better",
+  "by_variant": {},
+  "ordinal_krippendorff_alpha": {}
+}

@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hinglish ablation results</title>
+<style>
+:root { color-scheme: light; font-family: Inter, Segoe UI, Arial, sans-serif; color: #172033; background: #f4f7fb; }
+body { max-width: 1120px; margin: 32px auto; padding: 0 22px 40px; }
+header, section { background: white; border: 1px solid #e3e8f0; border-radius: 14px; padding: 22px 26px; margin-bottom: 18px; box-shadow: 0 4px 18px #1720330b; }
+h1 { margin: 0 0 8px; font-size: 1.7rem; }
+p { line-height: 1.55; color: #526078; }
+.chart { display: block; width: 100%; height: auto; overflow: visible; }
+.grid { stroke: #e6ebf2; stroke-width: 1; } .tick, .axis-title, .legend { fill: #526078; font-size: 12px; }
+.value { fill: #263248; font-size: 10px; font-weight: 700; } .variant { fill: #263248; font-size: 12px; font-weight: 600; }
+table { width: 100%; border-collapse: collapse; font-size: .92rem; }
+th, td { text-align: left; padding: 11px 9px; border-bottom: 1px solid #e9edf3; }
+thead th { color: #526078; font-size: .82rem; } tbody th { white-space: nowrap; }
+.note { background: #fff7e6; border-left: 4px solid #f59e0b; padding: 12px 15px; border-radius: 5px; }
+@media (max-width: 720px) { body { padding: 0 10px; } section { padding: 16px; overflow-x: auto; } table { min-width: 780px; } }
+</style>
+</head>
+<body>
+<header>
+<h1>Hinglish editor ablation results</h1>
+<p>Descriptive comparison of the generated variants. The chart shows coverage, event recall, diversity, validity, and MuRIL similarity of changed dialogue lines on a 0–1 scale. Changed-line similarity excludes unchanged turns that can inflate whole-scene scores. Validity or changed-line similarity is omitted where undefined.</p>
+</header>
+<section><h2>Metric comparison</h2><svg class="chart" viewBox="0 0 960 430" role="img" aria-label="Grouped bar chart comparing ablation metrics from zero to one">
+<text x="76" y="24" class="axis-title">Score (0–1; higher is better)</text>
+<line x1="76" y1="334.0" x2="936" y2="334.0" class="grid"/>
+<text x="64" y="338.0" text-anchor="end" class="tick">0.00</text>
+<line x1="76" y1="262.5" x2="936" y2="262.5" class="grid"/>
+<text x="64" y="266.5" text-anchor="end" class="tick">0.25</text>
+<line x1="76" y1="191.0" x2="936" y2="191.0" class="grid"/>
+<text x="64" y="195.0" text-anchor="end" class="tick">0.50</text>
+<line x1="76" y1="119.5" x2="936" y2="119.5" class="grid"/>
+<text x="64" y="123.5" text-anchor="end" class="tick">0.75</text>
+<line x1="76" y1="48.0" x2="936" y2="48.0" class="grid"/>
+<text x="64" y="52.0" text-anchor="end" class="tick">1.00</text>
+<rect x="96.7" y="219.6" width="30.7" height="114.4" rx="4" fill="#2563eb"><title>Slang coverage: 0.400</title></rect>
+<text x="112.1" y="212.6" text-anchor="middle" class="value">0.40</text>
+<rect x="132.4" y="76.6" width="30.7" height="257.4" rx="4" fill="#16a34a"><title>Event recall: 0.900</title></rect>
+<text x="147.8" y="69.6" text-anchor="middle" class="value">0.90</text>
+<rect x="168.1" y="48.0" width="30.7" height="286.0" rx="4" fill="#9333ea"><title>Slang diversity: 1.000</title></rect>
+<text x="183.5" y="60.0" text-anchor="middle" class="value">1.00</text>
+<rect x="203.9" y="48.0" width="30.7" height="286.0" rx="4" fill="#ea580c"><title>Slang validity: 1.000</title></rect>
+<text x="219.2" y="60.0" text-anchor="middle" class="value">1.00</text>
+<rect x="239.6" y="48.2" width="30.7" height="285.8" rx="4" fill="#0891b2"><title>Changed-line MuRIL similarity: 0.999</title></rect>
+<text x="254.9" y="60.0" text-anchor="middle" class="value">1.00</text>
+<text x="183.5" y="359" text-anchor="middle" class="variant">Full system</text>
+<rect x="311.7" y="143.3" width="30.7" height="190.7" rx="4" fill="#2563eb"><title>Slang coverage: 0.667</title></rect>
+<text x="327.1" y="136.3" text-anchor="middle" class="value">0.67</text>
+<rect x="347.4" y="76.6" width="30.7" height="257.4" rx="4" fill="#16a34a"><title>Event recall: 0.900</title></rect>
+<text x="362.8" y="69.6" text-anchor="middle" class="value">0.90</text>
+<rect x="383.1" y="119.5" width="30.7" height="214.5" rx="4" fill="#9333ea"><title>Slang diversity: 0.750</title></rect>
+<text x="398.5" y="112.5" text-anchor="middle" class="value">0.75</text>
+<rect x="418.9" y="48.0" width="30.7" height="286.0" rx="4" fill="#ea580c"><title>Slang validity: 1.000</title></rect>
+<text x="434.2" y="60.0" text-anchor="middle" class="value">1.00</text>
+<rect x="454.6" y="48.2" width="30.7" height="285.8" rx="4" fill="#0891b2"><title>Changed-line MuRIL similarity: 0.999</title></rect>
+<text x="469.9" y="60.0" text-anchor="middle" class="value">1.00</text>
+<text x="398.5" y="359" text-anchor="middle" class="variant">No eligibility gates</text>
+<rect x="526.7" y="219.6" width="30.7" height="114.4" rx="4" fill="#2563eb"><title>Slang coverage: 0.400</title></rect>
+<text x="542.1" y="212.6" text-anchor="middle" class="value">0.40</text>
+<rect x="562.4" y="76.6" width="30.7" height="257.4" rx="4" fill="#16a34a"><title>Event recall: 0.900</title></rect>
+<text x="577.8" y="69.6" text-anchor="middle" class="value">0.90</text>
+<rect x="598.1" y="48.0" width="30.7" height="286.0" rx="4" fill="#9333ea"><title>Slang diversity: 1.000</title></rect>
+<text x="613.5" y="60.0" text-anchor="middle" class="value">1.00</text>
+<rect x="633.9" y="48.0" width="30.7" height="286.0" rx="4" fill="#ea580c"><title>Slang validity: 1.000</title></rect>
+<text x="649.2" y="60.0" text-anchor="middle" class="value">1.00</text>
+<rect x="669.6" y="48.2" width="30.7" height="285.8" rx="4" fill="#0891b2"><title>Changed-line MuRIL similarity: 0.999</title></rect>
+<text x="684.9" y="60.0" text-anchor="middle" class="value">1.00</text>
+<text x="613.5" y="359" text-anchor="middle" class="variant">No validation/redo</text>
+<rect x="741.7" y="334.0" width="30.7" height="0.0" rx="4" fill="#2563eb"><title>Slang coverage: 0.000</title></rect>
+<text x="757.1" y="327.0" text-anchor="middle" class="value">0.00</text>
+<rect x="777.4" y="76.6" width="30.7" height="257.4" rx="4" fill="#16a34a"><title>Event recall: 0.900</title></rect>
+<text x="792.8" y="69.6" text-anchor="middle" class="value">0.90</text>
+<rect x="813.1" y="334.0" width="30.7" height="0.0" rx="4" fill="#9333ea"><title>Slang diversity: 0.000</title></rect>
+<text x="828.5" y="327.0" text-anchor="middle" class="value">0.00</text>
+<text x="828.5" y="359" text-anchor="middle" class="variant">No editor</text>
+<rect x="76.0" y="399" width="12" height="12" rx="2" fill="#2563eb"/>
+<text x="94.0" y="409" class="legend">Slang coverage</text>
+<rect x="266.0" y="399" width="12" height="12" rx="2" fill="#16a34a"/>
+<text x="284.0" y="409" class="legend">Event recall</text>
+<rect x="456.0" y="399" width="12" height="12" rx="2" fill="#9333ea"/>
+<text x="474.0" y="409" class="legend">Slang diversity</text>
+<rect x="646.0" y="399" width="12" height="12" rx="2" fill="#ea580c"/>
+<text x="664.0" y="409" class="legend">Slang validity</text>
+<rect x="836.0" y="399" width="12" height="12" rx="2" fill="#0891b2"/>
+<text x="854.0" y="409" class="legend">Changed-line MuRIL similarity</text>
+</svg></section>
+<section><h2>Detailed results</h2><table><thead><tr><th>Variant</th><th>Slang coverage</th><th>Event recall</th><th>Changed lines scored</th><th>Changed-line MuRIL similarity</th><th>Lowest changed-line MuRIL similarity</th><th>Slang validity</th><th>Slang diversity</th><th>MuRIL similarity (coarse)</th><th>Detected slang total</th><th>Scenes</th></tr></thead><tbody><tr><th>Full system</th><td>0.400</td><td>0.900</td><td>4</td><td>0.999</td><td>0.999</td><td>1.000</td><td>1.000</td><td>1.000</td><td>4</td><td>5</td></tr><tr><th>No eligibility gates</th><td>0.667</td><td>0.900</td><td>8</td><td>0.999</td><td>0.999</td><td>1.000</td><td>0.750</td><td>1.000</td><td>8</td><td>5</td></tr><tr><th>No validation/redo</th><td>0.400</td><td>0.900</td><td>4</td><td>0.999</td><td>0.999</td><td>1.000</td><td>1.000</td><td>1.000</td><td>4</td><td>5</td></tr><tr><th>No editor</th><td>0.000</td><td>0.900</td><td>0</td><td>N/A</td><td>N/A</td><td>N/A</td><td>0.000</td><td>1.000</td><td>0</td><td>5</td></tr></tbody></table>
+<p class="note"><strong>Interpret carefully:</strong> these are descriptive metrics, not statistical significance tests. The no-editor validity is N/A, not zero or perfect. MuRIL similarity is listed for reference but is coarse; use blind human ratings and more held-out stories for paper claims.</p>
+</section>
+</body>
+</html>

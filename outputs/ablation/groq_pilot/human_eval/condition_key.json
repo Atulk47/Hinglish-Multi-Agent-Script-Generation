@@ -1,0 +1,210 @@
+{
+  "orch_full_trace_full:scene_01:turn1": {
+    "variant": "full",
+    "source_trace": "orch_full_trace_full.json"
+  },
+  "orch_full_trace_full:scene_01:turn2": {
+    "variant": "full",
+    "source_trace": "orch_full_trace_full.json"
+  },
+  "orch_full_trace_full:scene_01:turn3": {
+    "variant": "full",
+    "source_trace": "orch_full_trace_full.json"
+  },
+  "orch_full_trace_full:scene_02:turn1": {
+    "variant": "full",
+    "source_trace": "orch_full_trace_full.json"
+  },
+  "orch_full_trace_full:scene_02:turn2": {
+    "variant": "full",
+    "source_trace": "orch_full_trace_full.json"
+  },
+  "orch_full_trace_full:scene_02:turn3": {
+    "variant": "full",
+    "source_trace": "orch_full_trace_full.json"
+  },
+  "orch_full_trace_full:scene_03:turn1": {
+    "variant": "full",
+    "source_trace": "orch_full_trace_full.json"
+  },
+  "orch_full_trace_full:scene_03:turn2": {
+    "variant": "full",
+    "source_trace": "orch_full_trace_full.json"
+  },
+  "orch_full_trace_full:scene_03:turn3": {
+    "variant": "full",
+    "source_trace": "orch_full_trace_full.json"
+  },
+  "orch_full_trace_full:scene_04:turn1": {
+    "variant": "full",
+    "source_trace": "orch_full_trace_full.json"
+  },
+  "orch_full_trace_full:scene_04:turn2": {
+    "variant": "full",
+    "source_trace": "orch_full_trace_full.json"
+  },
+  "orch_full_trace_full:scene_04:turn3": {
+    "variant": "full",
+    "source_trace": "orch_full_trace_full.json"
+  },
+  "orch_full_trace_full:scene_05:turn1": {
+    "variant": "full",
+    "source_trace": "orch_full_trace_full.json"
+  },
+  "orch_full_trace_no_editor:scene_01:turn1": {
+    "variant": "no_editor",
+    "source_trace": "orch_full_trace_no_editor.json"
+  },
+  "orch_full_trace_no_editor:scene_01:turn2": {
+    "variant": "no_editor",
+    "source_trace": "orch_full_trace_no_editor.json"
+  },
+  "orch_full_trace_no_editor:scene_01:turn3": {
+    "variant": "no_editor",
+    "source_trace": "orch_full_trace_no_editor.json"
+  },
+  "orch_full_trace_no_editor:scene_02:turn1": {
+    "variant": "no_editor",
+    "source_trace": "orch_full_trace_no_editor.json"
+  },
+  "orch_full_trace_no_editor:scene_02:turn2": {
+    "variant": "no_editor",
+    "source_trace": "orch_full_trace_no_editor.json"
+  },
+  "orch_full_trace_no_editor:scene_02:turn3": {
+    "variant": "no_editor",
+    "source_trace": "orch_full_trace_no_editor.json"
+  },
+  "orch_full_trace_no_editor:scene_03:turn1": {
+    "variant": "no_editor",
+    "source_trace": "orch_full_trace_no_editor.json"
+  },
+  "orch_full_trace_no_editor:scene_03:turn2": {
+    "variant": "no_editor",
+    "source_trace": "orch_full_trace_no_editor.json"
+  },
+  "orch_full_trace_no_editor:scene_03:turn3": {
+    "variant": "no_editor",
+    "source_trace": "orch_full_trace_no_editor.json"
+  },
+  "orch_full_trace_no_editor:scene_04:turn1": {
+    "variant": "no_editor",
+    "source_trace": "orch_full_trace_no_editor.json"
+  },
+  "orch_full_trace_no_editor:scene_04:turn2": {
+    "variant": "no_editor",
+    "source_trace": "orch_full_trace_no_editor.json"
+  },
+  "orch_full_trace_no_editor:scene_04:turn3": {
+    "variant": "no_editor",
+    "source_trace": "orch_full_trace_no_editor.json"
+  },
+  "orch_full_trace_no_editor:scene_05:turn1": {
+    "variant": "no_editor",
+    "source_trace": "orch_full_trace_no_editor.json"
+  },
+  "orch_full_trace_no_eligibility_gates:scene_01:turn1": {
+    "variant": "no_eligibility_gates",
+    "source_trace": "orch_full_trace_no_eligibility_gates.json"
+  },
+  "orch_full_trace_no_eligibility_gates:scene_01:turn2": {
+    "variant": "no_eligibility_gates",
+    "source_trace": "orch_full_trace_no_eligibility_gates.json"
+  },
+  "orch_full_trace_no_eligibility_gates:scene_01:turn3": {
+    "variant": "no_eligibility_gates",
+    "source_trace": "orch_full_trace_no_eligibility_gates.json"
+  },
+  "orch_full_trace_no_eligibility_gates:scene_02:turn1": {
+    "variant": "no_eligibility_gates",
+    "source_trace": "orch_full_trace_no_eligibility_gates.json"
+  },
+  "orch_full_trace_no_eligibility_gates:scene_02:turn2": {
+    "variant": "no_eligibility_gates",
+    "source_trace": "orch_full_trace_no_eligibility_gates.json"
+  },
+  "orch_full_trace_no_eligibility_gates:scene_02:turn3": {
+    "variant": "no_eligibility_gates",
+    "source_trace": "orch_full_trace_no_eligibility_gates.json"
+  },
+  "orch_full_trace_no_eligibility_gates:scene_03:turn1": {
+    "variant": "no_eligibility_gates",
+    "source_trace": "orch_full_trace_no_eligibility_gates.json"
+  },
+  "orch_full_trace_no_eligibility_gates:scene_03:turn2": {
+    "variant": "no_eligibility_gates",
+    "source_trace": "orch_full_trace_no_eligibility_gates.json"
+  },
+  "orch_full_trace_no_eligibility_gates:scene_03:turn3": {
+    "variant": "no_eligibility_gates",
+    "source_trace": "orch_full_trace_no_eligibility_gates.json"
+  },
+  "orch_full_trace_no_eligibility_gates:scene_04:turn1": {
+    "variant": "no_eligibility_gates",
+    "source_trace": "orch_full_trace_no_eligibility_gates.json"
+  },
+  "orch_full_trace_no_eligibility_gates:scene_04:turn2": {
+    "variant": "no_eligibility_gates",
+    "source_trace": "orch_full_trace_no_eligibility_gates.json"
+  },
+  "orch_full_trace_no_eligibility_gates:scene_04:turn3": {
+    "variant": "no_eligibility_gates",
+    "source_trace": "orch_full_trace_no_eligibility_gates.json"
+  },
+  "orch_full_trace_no_eligibility_gates:scene_05:turn1": {
+    "variant": "no_eligibility_gates",
+    "source_trace": "orch_full_trace_no_eligibility_gates.json"
+  },
+  "orch_full_trace_no_validation_redo:scene_01:turn1": {
+    "variant": "no_validation_redo",
+    "source_trace": "orch_full_trace_no_validation_redo.json"
+  },
+  "orch_full_trace_no_validation_redo:scene_01:turn2": {
+    "variant": "no_validation_redo",
+    "source_trace": "orch_full_trace_no_validation_redo.json"
+  },
+  "orch_full_trace_no_validation_redo:scene_01:turn3": {
+    "variant": "no_validation_redo",
+    "source_trace": "orch_full_trace_no_validation_redo.json"
+  },
+  "orch_full_trace_no_validation_redo:scene_02:turn1": {
+    "variant": "no_validation_redo",
+    "source_trace": "orch_full_trace_no_validation_redo.json"
+  },
+  "orch_full_trace_no_validation_redo:scene_02:turn2": {
+    "variant": "no_validation_redo",
+    "source_trace": "orch_full_trace_no_validation_redo.json"
+  },
+  "orch_full_trace_no_validation_redo:scene_02:turn3": {
+    "variant": "no_validation_redo",
+    "source_trace": "orch_full_trace_no_validation_redo.json"
+  },
+  "orch_full_trace_no_validation_redo:scene_03:turn1": {
+    "variant": "no_validation_redo",
+    "source_trace": "orch_full_trace_no_validation_redo.json"
+  },
+  "orch_full_trace_no_validation_redo:scene_03:turn2": {
+    "variant": "no_validation_redo",
+    "source_trace": "orch_full_trace_no_validation_redo.json"
+  },
+  "orch_full_trace_no_validation_redo:scene_03:turn3": {
+    "variant": "no_validation_redo",
+    "source_trace": "orch_full_trace_no_validation_redo.json"
+  },
+  "orch_full_trace_no_validation_redo:scene_04:turn1": {
+    "variant": "no_validation_redo",
+    "source_trace": "orch_full_trace_no_validation_redo.json"
+  },
+  "orch_full_trace_no_validation_redo:scene_04:turn2": {
+    "variant": "no_validation_redo",
+    "source_trace": "orch_full_trace_no_validation_redo.json"
+  },
+  "orch_full_trace_no_validation_redo:scene_04:turn3": {
+    "variant": "no_validation_redo",
+    "source_trace": "orch_full_trace_no_validation_redo.json"
+  },
+  "orch_full_trace_no_validation_redo:scene_05:turn1": {
+    "variant": "no_validation_redo",
+    "source_trace": "orch_full_trace_no_validation_redo.json"
+  }
+}

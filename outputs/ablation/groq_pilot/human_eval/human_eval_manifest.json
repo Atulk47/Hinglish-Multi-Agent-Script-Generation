@@ -1,0 +1,11 @@
+{
+  "seed": 41,
+  "raters": 3,
+  "items": 52,
+  "rating_scale": "1-5; higher is better",
+  "files": [
+    "rater_01.csv",
+    "rater_02.csv",
+    "rater_03.csv"
+  ]
+}

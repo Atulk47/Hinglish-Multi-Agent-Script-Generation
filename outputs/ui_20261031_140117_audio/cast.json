@@ -1,0 +1,13 @@
+{
+ "Arav": {
+  "voice": "hi-IN-MadhurNeural",
+  "gpt_voice": "ash",
+  "maya_voice": "Satvik",
+  "gender": "male",
+  "age_group": "young_adult",
+  "rate_pct": 1,
+  "pitch_hz": 3,
+  "volume_pct": 0,
+  "why": "gender from persona; young_adult; peer"
+ }
+}

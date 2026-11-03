@@ -257,6 +257,9 @@ class SlangRewriter:
                  dataset_path: str = None):
         self.scratchpad = scratchpad
         self.intent_clf = intent_classifier
+        self.requested_backend = backend
+        self.editor_fallback = False
+        self.fallback_reason = None
         self._rng = random.Random(getattr(config, "SLANG_SEED", 7))   # reproducible shortlists
         self.stats = defaultdict(int)       # e.g. groq_errors: >0 means judge/rerank/tone degraded
         self._tone_cache = {}
@@ -284,6 +287,7 @@ class SlangRewriter:
                 print("   Usually low memory: close other programs (Chrome, VS Code) and run again.")
                 print("!" * 78)
                 self.editor_fallback = True
+                self.fallback_reason = f"qwen initialization/smoke test failed: {type(e).__name__}: {e}"
                 self.backend = "groq"
         if self.backend == "qwen" and (getattr(config, "QWEN_GROQ_FALLBACK", True)
                                        or getattr(config, "QWEN_JUDGE", True)):
@@ -305,6 +309,8 @@ class SlangRewriter:
                 # (see EDITOR_FULL_PATH); don't silently emit empty slang.
                 print(f"SlangRewriter: mT5 editor loaded but unusable ({e}); "
                       f"falling back to Groq.")
+                self.editor_fallback = True
+                self.fallback_reason = f"mt5 initialization/smoke test failed: {type(e).__name__}: {e}"
                 self.backend = "groq"
         if self.backend == "groq":        # not `else`: also the fallback path
             from llm_client import make_client

@@ -1,0 +1,41 @@
+{
+  "traces": [
+    "outputs/ablation/gate_study/orch_full_trace_no_gate3.json"
+  ],
+  "n_scenes": 5,
+  "semantic_sim_mean": 0.9999,
+  "semantic_sim_min": 0.9996,
+  "changed_line_count": 4,
+  "changed_line_semantic_sim_mean": 0.9995,
+  "changed_line_semantic_sim_min": 0.9993,
+  "changed_line_similarity_definition": "MuRIL cosine similarity over dialogue turns whose neutral and edited text differ; this is a supporting proxy, not a factual entailment guarantee.",
+  "event_recall_mean": 0.9,
+  "scenes": 5,
+  "slang_coverage": 0.4,
+  "slang_density": 0.4,
+  "slang_validity": 1.0,
+  "slang_total": 4,
+  "slang_unique": 4,
+  "slang_diversity": 1.0,
+  "cmi_mean": 6.624,
+  "en_ratio_mean": 0.066,
+  "hi_ratio_mean": 0.934,
+  "top_slang": [
+    [
+      "bhai",
+      1
+    ],
+    [
+      "boss",
+      1
+    ],
+    [
+      "bro",
+      1
+    ],
+    [
+      "yaar",
+      1
+    ]
+  ]
+}
