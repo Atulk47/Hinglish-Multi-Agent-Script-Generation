@@ -17,6 +17,7 @@ editor's tone / shortlist calls).
 from __future__ import annotations
 import json
 import os
+import re
 import threading
 import time
 import urllib.error
@@ -50,6 +51,10 @@ def _task_model(task: str) -> str:
 def _extras(model: str) -> dict:
     if model.startswith("openai/gpt-oss"):
         return {"reasoning": {"effort": "low"}}
+    if re.match(r"openai/gpt-5", model):                                  # GPT-5.x: reasoning on, bounded (billed as output)
+        return {"reasoning": {"effort": str(getattr(config, "OR_REASONING_EFFORT_REVIEW", "medium"))}}
+    if re.match(r"anthropic/claude-(sonnet|opus|fable)-5", model):   # Claude 5 Sonnet/Opus/Fable: reasoning is mandatory on this endpoint (it is billed as output)
+        return {"reasoning": {"effort": str(getattr(config, "OR_REASONING_EFFORT_STRONG", "medium"))}}
     if model.startswith("anthropic/"):
         return {"reasoning": {"enabled": False}}
     return {}
@@ -166,9 +171,12 @@ def _groq(task: str, messages, temperature: float, max_tokens: int):
     raise LLMError(last or "Groq failed")
 
 
-def complete(task: str, messages, temperature: float = 0.0, max_tokens: int = 500):
-    """-> (text, finish_reason). Tries the backends in order; raises LLMError (message includes the status text) if all fail."""
+def complete(task: str, messages, temperature: float = 0.0, max_tokens: int = 500, only: str = None):
+    """-> (text, finish_reason). Tries the backends in order; raises LLMError (message includes the status text) if all fail.
+    only="openrouter" restricts the call to that backend (for tasks where the weaker Groq fallback model would be worse than failing)."""
     order = _backend_order()
+    if only:
+        order = [b for b in order if b == only]
     if not order:
         raise LLMError("no LLM backend available (set OPENROUTER_API_KEY or GROQ_API_KEY)")
     if not _STATE["announced"]:

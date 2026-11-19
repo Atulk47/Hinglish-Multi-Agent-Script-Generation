@@ -57,7 +57,7 @@ class DemoRunner:
         return time.time() - t0
 
     # ------------------------------------------------------------------------------------------------------------------
-    def _work(self, text: str, pauses, make_audio: bool, out: dict, studio: bool = False):
+    def _work(self, text: str, pauses, make_audio: bool, out: dict, studio: bool = False, judge: bool = False, director: bool = False):
         import llm_client
         from evaluation.compare import build_comparison
         pipe = self.pipe
@@ -68,6 +68,12 @@ class DemoRunner:
         if make_audio and kind == "maya":
             from audio.synthesize import default_backend
             be = default_backend("maya")                      # created now: a sleeping serverless GPU boots while the agents write the screenplay
+        import config
+        config.VALIDATOR_JUDGE = bool(judge)                 # optional AI-judge second opinion on every edit (UI checkbox)
+        if director and pipe.agent4.director is None:        # scene-level Slang Director (UI checkbox); falls back to the line-by-line gates per scene
+            from agents.slang_director import SlangDirector
+            pipe.agent4.attach_director(SlangDirector(pipe.scratchpad))
+        pipe.agent4.use_director = bool(director) and pipe.agent4.director is not None
         final = pipe.run(text, pauses=pauses)
         sp = pipe.scratchpad
         session = time.strftime("ui_%Y%m%d_%H%M%S")
@@ -75,7 +81,11 @@ class DemoRunner:
         trace = {"session": session, "romanized_text": sp.read("romanized_text"), "deva_scenes": sp.read("deva_scenes"),
                  "segmentation": sp.read("segmentation"), "scene_chunks": sp.read("scene_chunks"), "event_chain": sp.read("event_chain"),
                  "character_profiles": sp.read("character_profiles"), "persona": sp.read("persona"),
-                 "neutral_script": neutral, "slang_script": slang, "comparison": build_comparison(neutral, slang), "final_script": final}
+                 "neutral_script": neutral, "slang_script": slang, "comparison": build_comparison(neutral, slang), "final_script": final,
+                 "validation": {**(sp.read("validation_report") or {"reverted": []}), "judge": bool(judge),
+                                "similarity_mode": "centred" if getattr(pipe.validator, "_center", None) else "raw",
+                                "scenes": {sid: {"failure_mode": d.get("failure_mode"), "slang_lines": d.get("slang_lines"), "eligible_lines": d.get("eligible_lines")}
+                                           for sid, d in (sp.read("scene_diagnoses") or {}).items()}}}
         os.makedirs("outputs", exist_ok=True)
         files = []
         for path, content in ((f"outputs/{session}_script.txt", final),):
@@ -114,7 +124,7 @@ class DemoRunner:
         out["trace"] = trace                                   # PHASE 2: with audio
         out["phase"] = 2
 
-    def run_stream(self, text: str, pauses=None, make_audio: bool = True, studio: bool = False) -> Iterator[tuple]:
+    def run_stream(self, text: str, pauses=None, make_audio: bool = True, studio: bool = False, judge: bool = False, director: bool = False) -> Iterator[tuple]:
         """Yields (log_text, trace_or_None, error_or_None) about twice a second until the run is finished."""
         if not self.ready:
             yield "", None, self.error or "The models are still loading - give it a minute."
@@ -129,7 +139,7 @@ class DemoRunner:
         def target():
             try:
                 with contextlib.redirect_stdout(tee):
-                    self._work(text, pauses, make_audio, out, studio)
+                    self._work(text, pauses, make_audio, out, studio, judge, director)
             except Exception as e:
                 import traceback
                 err["e"] = f"{type(e).__name__}: {e}\n{traceback.format_exc()[-900:]}"

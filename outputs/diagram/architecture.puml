@@ -1,0 +1,171 @@
+@startuml architecture
+' Hinglish Multi-Agent Screenplay Studio - system architecture
+' Render:  java -jar plantuml.jar -tpng docs/architecture.puml      (or the VS Code PlantUML extension: Alt+D, or https://www.plantuml.com/plantuml)
+' The next line lets PlantUML lay the diagram out WITHOUT Graphviz. With Graphviz installed you may delete it (lines then become strictly orthogonal).
+!pragma layout smetana
+
+title Hinglish Multi-Agent Screenplay Studio - system architecture
+
+top to bottom direction
+skinparam shadowing false
+skinparam linetype ortho
+skinparam nodesep 35
+skinparam ranksep 40
+skinparam defaultTextAlignment center
+skinparam defaultFontName Segoe UI
+skinparam defaultFontSize 12
+skinparam ArrowColor #3D3D3D
+skinparam ArrowFontSize 11
+skinparam RoundCorner 12
+skinparam rectangle {
+  BackgroundColor #FFFFFF
+  BorderColor #8A8A8A
+  BackgroundColor<<stage>> #EAF1FB
+  BorderColor<<stage>> #3F6EA8
+  BackgroundColor<<llm>> #FFF2CC
+  BorderColor<<llm>> #BF9000
+  BackgroundColor<<local>> #E2F3E6
+  BorderColor<<local>> #2E7D4F
+  BackgroundColor<<rule>> #F2F2F2
+  BorderColor<<rule>> #7F7F7F
+  BackgroundColor<<io>> #F1E7FA
+  BorderColor<<io>> #7A4CA0
+  BackgroundColor<<infra>> #FDECEA
+  BorderColor<<infra>> #B5483B
+}
+
+legend right
+  |= colour |= meaning |
+  |<#FFF2CC> | LLM-backed agent (OpenRouter first, Groq fallback) |
+  |<#E2F3E6> | local model (runs on this machine) |
+  |<#F2F2F2> | deterministic code / rules |
+  |<#F1E7FA> | user-facing input / output |
+  |<#FDECEA> | shared infrastructure, used by every stage |
+endlegend
+
+actor "User" as USER
+
+' ====================================== UI : INPUT ======================================
+rectangle "UI  -  input panel   (Gradio app: ui/app.py)" as UIIN <<io>> {
+  rectangle "Voice narration\n(microphone / audio file)" as VOICE <<io>>
+  rectangle "Story text / .txt\n(Devanagari Hindi)" as TXT <<io>>
+  rectangle "Options\nvoice engine, Slang Director,\nAI judge" as OPT <<io>>
+  rectangle "Speech recognition  (audio/asr.py)\ncloud: Gemini via OpenRouter  |  local: faster-whisper\npause detection gives scene hints" as ASR <<llm>>
+  VOICE -[hidden]right-> TXT
+  TXT -[hidden]right-> OPT
+  VOICE -down-> ASR
+}
+
+rectangle "DemoRunner   (ui/runner.py)\nloads the models once  |  streams the pipeline log  |  saves trace + files" as RUN <<rule>>
+
+' ====================================== ORCHESTRATOR ======================================
+rectangle "Orchestrator  -  LangGraph state machine   (orchestrator/pipeline.py)      shared state: Scratchpad (memory/)" as ORCH {
+
+  rectangle "1  preprocess" as S1 <<stage>> {
+    rectangle "HindiTransliterator\nDevanagari -> Roman\n(loanword + candra-vowel rules)" as TR <<rule>>
+    rectangle "SceneSegmenter\nauthor paragraphs, cues, cohesion,\nspeech continuity, LLM referee" as SEG <<llm>>
+    rectangle "ProseChunker.from_scenes\none chunk = one scene" as CHK <<rule>>
+    TR -[hidden]right-> SEG
+    SEG -[hidden]right-> CHK
+  }
+
+  rectangle "2  plan_narrative" as S2 <<stage>> {
+    rectangle "Agent 1  NarrativeAnalyst\nevents, location, cast per scene\n(reads the Devanagari, 3 attempts)" as A1 <<llm>>
+    rectangle "Grounding rule\nno event, place or character name\nwithout a quote from the story" as GR <<rule>>
+    rectangle "Canonicalise names\nspelling variants, kin words,\nnickname merge" as CAN <<rule>>
+    A1 -[hidden]right-> GR
+    GR -[hidden]right-> CAN
+  }
+
+  rectangle "3  build_characters" as S3 <<stage>> {
+    rectangle "Agent 2  Character profiler\nNER model + rules" as A2 <<local>>
+    rectangle "Persona Agent\ngender, age, relationships, emotion arc,\nscene cast, secrets, setting, aliases" as PER <<llm>>
+    rectangle "Character profiles\nslang level, speech style,\naddress terms, voices" as PRO <<rule>>
+    A2 -[hidden]right-> PER
+    PER -[hidden]right-> PRO
+  }
+
+  rectangle "4  generate_pass1   (neutral Hinglish dialogue, per scene)" as S4 <<stage>> {
+    rectangle "Agent 3  DialogueSynthesizer\nneutral Hinglish writer\n(story bible, spoken lines, line budget)" as A3 <<llm>>
+    rectangle "Sanitiser\nspeaker grounding, markup,\nslang-leak and diacritic clean-up" as SAN <<rule>>
+    rectangle "Fidelity Critic\ninvented / missing / contradicting\nlines: retry or drop" as CRI <<llm>>
+    A3 -[hidden]right-> SAN
+    SAN -[hidden]right-> CRI
+  }
+
+  rectangle "5  inject_slang" as S5 <<stage>> {
+    rectangle "Slang Director\nplans slang per scene: which lines,\nwhich mood, casual peers only" as DIR <<llm>>
+    rectangle "Gates  (agents/edit_gate.py)\nelder / authority, register, rule gate:\nframes, agreement, meaning checks" as GATE <<rule>>
+    rectangle "Agent 4  SlangRewriter\nQwen2.5-1.5B + LoRA (GGUF)\nedits ONE phrase from the slang pool" as A4 <<local>>
+    DIR -[hidden]right-> GATE
+    GATE -[hidden]right-> A4
+  }
+
+  rectangle "6  validate" as S6 <<stage>> {
+    rectangle "MuRIL validator\ncentred similarity,\nsemantic event coverage" as MUR <<local>>
+    rectangle "Edit audit + repair\nreverts unsafe edits" as AUD <<rule>>
+    rectangle "Scene diagnosis\nfailure mode per scene" as DIA <<rule>>
+    MUR -[hidden]right-> AUD
+    AUD -[hidden]right-> DIA
+  }
+
+  hexagon "all scenes OK?" as DEC
+
+  rectangle "7  assemble_output" as S7 <<stage>> {
+    rectangle "Final screenplay\n(text)" as OUT1 <<rule>>
+    rectangle "trace.json\nevery stage's result" as OUT2 <<rule>>
+    rectangle "Neutral vs slang\ncomparison" as OUT3 <<rule>>
+    OUT1 -[hidden]right-> OUT2
+    OUT2 -[hidden]right-> OUT3
+  }
+
+  S1 -down-> S2
+  S2 -down-> S3
+  S3 -down-> S4
+  S4 -down-> S5
+  S5 -down-> S6
+  S6 -down-> DEC
+  DEC -down-> S7 : yes, or attempts used up
+  DEC -[#C0392B,dashed]left-> S5 : no: redo the failed scenes\nwith targeted fixes
+}
+
+' ====================================== AUDIO STUDIO ======================================
+rectangle "Audio Studio   (audio/)" as AUDIO {
+  rectangle "Voice casting\nvoices.py\nby gender and age" as VOX <<rule>>
+  rectangle "Emotion prosody\nprosody.py\nrate, pitch, volume,\npauses per line" as PRS <<rule>>
+  rectangle "Script restore\nRoman -> Devanagari\nfor natural Hindi TTS" as RES <<rule>>
+  rectangle "TTS engines  (tts.py)\nStandard: Edge hi-IN (free)\nStudio: GPT audio (paid)\nMaya: GPU service or pre-render" as TTS <<llm>>
+  rectangle "Mixer\nmix.py, ambience.py\nturn-taking gaps, reverb,\nscene beds, narrator" as MIX <<rule>>
+  VOX -right-> PRS
+  PRS -right-> RES
+  RES -right-> TTS
+  TTS -right-> MIX
+}
+
+' ====================================== UI : OUTPUT ======================================
+rectangle "UI  -  results panel   (ui/render.py)\nscreenplay with highlighted slang  |  characters and emotion arcs  |  audio drama + player + subtitles\npipeline log  |  downloads: script.txt, trace.json, mp3, srt" as UIOUT <<io>>
+
+' ====================================== MAIN FLOW (one straight spine) ======================================
+USER -down-> UIIN
+UIIN -down-> RUN : story + options
+RUN -down-> S1 : story + pause hints
+S7 -down-> VOX : final screenplay + trace
+MIX -down-> UIOUT : mp3 + srt + player
+
+' ====================================== SIDE PANELS (placed beside the spine, no links) ======================================
+rectangle "Shared infrastructure   (used by every stage)" as INFRA <<infra>> {
+  rectangle "LLM gateway  (llm_client.py)\nOpenRouter first, Groq fallback, cost cap\nextract: gpt-oss-120b  |  dialogue: Claude Haiku\ndirector: Claude Sonnet  |  small: gpt-oss-20b" as GW <<infra>>
+  rectangle "Local models  (models/)\nNER token classifier\nMuRIL base (validator)\nQwen2.5-1.5B + LoRA v6 (GGUF, llama.cpp)" as LOC <<infra>>
+  rectangle "Data  (data/)\nslang pool: 177 phrases, register-tagged\nslot definitions, Hindi gloss, loanwords\nMuRIL centering, Director plan cache" as DATA <<infra>>
+  rectangle "config.py\nflags, thresholds, per-role models,\nwriter style, Director target" as CFG <<infra>>
+  GW -[hidden]down-> LOC
+  LOC -[hidden]down-> DATA
+  DATA -[hidden]down-> CFG
+}
+
+rectangle "Evaluation and QA   (offline, not part of a run)\ninvariants.py: checks that hold for any story\nstress_run.py: 32-story corpus, full pipeline\nablation.py, baseline_vs_pipeline.py\nhuman_eval_sheet.py: blind rating sheet\n525 unit tests" as EVAL <<rule>>
+
+S3 -[hidden]right-> INFRA
+S6 -[hidden]right-> EVAL
+
+@enduml

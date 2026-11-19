@@ -29,7 +29,7 @@ ORIGINAL SCENE (Hindi):
 
 Characters PRESENT in the scene: {present}
 Characters NOT present (only mentioned, or elsewhere): {absent}
-{secrets}Key events that must happen in the scene: {events}
+{secrets}{unspoken}Key events that must happen in the scene: {events}
 
 DIALOGUE TO CHECK:
 {dialogue}
@@ -39,14 +39,20 @@ Report ONLY clear problems, of exactly these types:
 - secret_leak    : the person a secret is hidden FROM is present and hears it, or a line has them learn / guess / be hinted at it.
                    Characters who already know the secret may talk about it freely when the hidden-from person is NOT present: that is NOT a leak.
 - invented_event : the dialogue adds a SIGNIFICANT plot fact that is not in the original scene: a new event, a new decision, a different outcome,
-                   a new person or a new important object
-- contradiction  : the dialogue contradicts the original scene (who did what, where, when)
-- missing_event  : an IMPORTANT key event of the scene is not covered by the dialogue at all
+                   a new person or a new important object, a place or destination the scene does not mention, an amount of money or the terms of a
+                   deal that differ from the scene, a family relationship the scene does not state
+- contradiction  : the dialogue contradicts the original scene (who did what, where, when) - INCLUDING a character who SAYS ALOUD what the original says
+                   they hid, suppressed, thought silently or did not answer (a feeling the author says was hidden must not be spoken), or who speaks
+                   where the original says they stayed silent
+- missing_event  : an IMPORTANT key event of the scene is not covered by the dialogue at all. Only events that PEOPLE SAY or DECIDE count: never report as
+                   missing a setting or position (who sits where, the place, the time of day, what something looks like), a gesture, an expression, or
+                   what a character silently thinks or feels
 Do NOT report harmless things: greetings, small reactions, feelings, wishes, small plans or promises ("let's start tomorrow", "we will always
 be together"), details of the weather or setting, rephrasing, polite filler - the writer may add small natural touches.
 Return ONLY JSON: {{"issues": [{{"line": <line number, 0 if the whole scene>, "type": "<one of the types>", "detail": "<short, concrete>"}}]}}
 Use an empty list if the dialogue is faithful."""
 
+NL = chr(10)
 TYPES = {"absent_speaker", "secret_leak", "invented_event", "contradiction", "missing_event"}
 
 
@@ -85,7 +91,10 @@ class FidelityCritic:
         allowed = list(present) + list(extras or [])
         if present:
             for i, (spk, _) in enumerate(lines, 1):
-                if spk.lower() in ("narrator", "bachche", "sab", "sabhi", "all", "everyone", "children", "kids") or _is(spk, allowed):
+                if spk.lower() in ("narrator", "narration", "voice", "author"):
+                    issues.append({"line": i, "type": "absent_speaker", "detail": "a narrator is not a character: narration must be the characters' own words or be left out"})
+                    continue
+                if spk.lower() in ("bachche", "sab", "sabhi", "all", "everyone", "children", "kids") or _is(spk, allowed):
                     continue
                 if _is(spk, absent):
                     issues.append({"line": i, "type": "absent_speaker", "detail": f"{spk} is not in this scene (only mentioned or elsewhere)"})
@@ -98,7 +107,10 @@ class FidelityCritic:
             sec = ""
             for s in (secrets or []):
                 sec += f"SECRET: {s['what']} - must stay hidden from {', '.join(s['hidden_from'])}.\n"
-            prompt = PROMPT.format(source=(source or "")[:2200], present=", ".join(present) or "(unknown)",
+            from agents.grounding import unspoken_cues
+            quiet = unspoken_cues(source or "")
+            unspoken = ("NOT SPOKEN ALOUD in the original (the dialogue must not have anyone say these): " + " | ".join(quiet) + chr(10)) if quiet else ""
+            prompt = PROMPT.format(source=(source or "")[:3400], present=", ".join(present) or "(unknown)", unspoken=unspoken,
                                    absent=", ".join(absent) or "(none)", secrets=sec, events="; ".join(key_events or [])[:700] or "(see the scene)",
                                    dialogue="\n".join(f"{i}. {s}: {u}" for i, (s, u) in enumerate(lines, 1)))
             try:
@@ -120,6 +132,30 @@ class FidelityCritic:
             except Exception:
                 used_llm = False
         return {"ok": not issues, "issues": issues, "llm_used": used_llm}
+
+    DROPPABLE = {"invented_event", "contradiction", "secret_leak", "absent_speaker"}
+
+    @staticmethod
+    def drop_flagged_lines(dialogue: str, issues: List[dict], allow_empty: bool = False) -> str:
+        """FAIL CLOSED: after the regeneration attempts, a line the critic still flags as an invented fact / contradiction / leak / absent speaker is
+        deleted instead of shipped. Issue line numbers count the spoken lines (same numbering as `check`). Never empties a scene: if every line is
+        flagged the dialogue is returned unchanged (the caller keeps the best attempt and reports the issues)."""
+        bad = {int(i["line"]) for i in issues if i.get("type") in FidelityCritic.DROPPABLE and int(i.get("line") or 0) > 0}
+        if not bad:
+            return dialogue
+        keep, n = [], 0
+        for ln in (dialogue or "").split(NL):
+            if ":" in ln:
+                spk, utt = ln.split(":", 1)
+                if spk.strip() and utt.strip() and len(spk.split()) <= 3:
+                    n += 1
+                    if n in bad:
+                        continue
+            keep.append(ln)
+        out = NL.join(keep)
+        if any(":" in x for x in keep):
+            return out
+        return "" if allow_empty else dialogue        # every line flagged: silence is faithful only when nobody speaks in the source (allow_empty)
 
     @staticmethod
     def drop_absent_lines(dialogue: str, present: List[str], extras: Optional[List[str]] = None) -> str:

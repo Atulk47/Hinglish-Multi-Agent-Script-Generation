@@ -35,6 +35,8 @@ VARIANT_LABELS = {
     "no_gate1": "No Gate 1 (speaker)",
     "no_gate2": "No Gate 2 (pragmatic)",
     "no_gate3": "No Gate 3 (density)",
+    "no_acceptance_rule_gate": "No acceptance rule gate",
+    "no_validator_repair": "No validator repair",
     "no_validation_redo": "No validation/redo",
     "no_editor": "No editor",
 }
@@ -101,12 +103,28 @@ def create_sheets(input_dir: Path, out_dir: Path, raters: int, seed: int) -> Non
     if not all_rows:
         raise ValueError("No dialogue turns found in the ablation trace files")
 
-    out_dir.mkdir(parents=True, exist_ok=True)
+    # One rating item per DISTINCT (scene, turn, neutral, edited) pair. Arms that produced the same edited line share one item, so raters
+    # never rate the same pair twice, and the item id is an opaque number: it carries no variant name (the old ids were
+    # "<trace>_<variant>:scene:turn", which unblinded every row).
+    groups: dict[tuple, dict] = {}
+    for row in all_rows:
+        k = (row["scene_id"], row["turn_index"], row["neutral_dialogue"], row["edited_dialogue"])
+        g = groups.setdefault(k, {**row, "variants": [], "source_traces": []})
+        g["variants"].append(row["variant_hidden"])
+        g["source_traces"].append(row["source_trace"])
+    items = list(groups.values())
     rng = random.Random(seed)
-    manifest = {"seed": seed, "raters": raters, "items": len(all_rows),
+    ids = rng.sample(range(1, 10 * len(items) + 1), len(items))
+    for item, n in zip(items, ids):
+        item["item_id"] = f"it{n:05d}"
+
+    out_dir.mkdir(parents=True, exist_ok=True)
+    manifest = {"seed": seed, "raters": raters, "items": len(items), "arm_turns": len(all_rows),
                 "rating_scale": "1-5; higher is better", "files": []}
+    fields = ["item_id", "rater_id", "scene_id", "turn_index", "speaker",
+              "neutral_dialogue", "edited_dialogue", *RATING_FIELDS, "comment"]
     for rater in range(1, raters + 1):
-        rows = [dict(row) for row in all_rows]
+        rows = [dict(row) for row in items]
         rng.shuffle(rows)
         for row in rows:
             row["rater_id"] = f"R{rater:02d}"
@@ -114,8 +132,6 @@ def create_sheets(input_dir: Path, out_dir: Path, raters: int, seed: int) -> Non
                 row[field] = ""
             row["comment"] = ""
         dest = out_dir / f"rater_{rater:02d}.csv"
-        fields = ["item_id", "rater_id", "scene_id", "turn_index", "speaker",
-                  "neutral_dialogue", "edited_dialogue", *RATING_FIELDS, "comment"]
         with dest.open("w", encoding="utf-8-sig", newline="") as stream:
             writer = csv.DictWriter(stream, fieldnames=fields)
             writer.writeheader()
@@ -123,14 +139,12 @@ def create_sheets(input_dir: Path, out_dir: Path, raters: int, seed: int) -> Non
         manifest["files"].append(dest.name)
 
     # Keep the condition key separate from files given to raters.
-    key_path = out_dir / "condition_key.json"
-    key = {row["item_id"]: {"variant": row["variant_hidden"],
-                             "source_trace": row["source_trace"]}
-           for row in all_rows}
-    key_path.write_text(json.dumps(key, ensure_ascii=False, indent=2), encoding="utf-8")
+    key = {item["item_id"]: {"variants": item["variants"], "source_traces": item["source_traces"]} for item in items}
+    (out_dir / "condition_key.json").write_text(json.dumps(key, ensure_ascii=False, indent=2), encoding="utf-8")
     (out_dir / "human_eval_manifest.json").write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"Created {raters} blinded rating sheets with {len(all_rows)} paired turns each in {out_dir}")
+    print(f"Created {raters} blinded rating sheets with {len(items)} distinct line pairs each "
+          f"({len(all_rows)} arm-turns de-duplicated) in {out_dir}")
     print("Do not give condition_key.json to raters. Share only their individual rater CSV.")
 
 
@@ -192,8 +206,8 @@ def summarize(in_dir: Path, out_path: Path | None = None) -> dict:
     for (item_id, field), per_rater in raw.items():
         if not per_rater:
             continue
-        variant = condition_key[item_id]["variant"]
-        grouped[variant][field].extend(per_rater.values())
+        for variant in condition_key[item_id]["variants"]:          # every arm that produced this exact line pair
+            grouped[variant][field].extend(per_rater.values())
         agreements[field].append(per_rater)
         item_scores[(item_id, field)] = list(per_rater.values())
 

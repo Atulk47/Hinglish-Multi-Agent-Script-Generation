@@ -27,12 +27,13 @@ def main():
     print("\n" + "=" * 78 + "\nCHANGED LINES  (neutral -> slang)\n" + "=" * 78)
     n_changed = 0
     for sc_n, sc_s in zip(neutral, slang):
-        for dec, ln_n, ln_s in zip(sc_s["decisions"], sc_n["dialogue"].split("\n"), sc_s["dialogue"].split("\n")):
+        from evaluation.compare import _parse_turns            # decisions are per non-empty turn: pair with the parsed turns, not raw lines
+        for dec, t_n, t_s in zip(sc_s["decisions"], _parse_turns(sc_n["dialogue"]), _parse_turns(sc_s["dialogue"])):
             if dec.get("applied"):
                 n_changed += 1
                 print(f"\n[{sc_s['scene_id']}] {dec['speaker']}  (+{dec.get('slang')}, {dec.get('engine')})")
-                print("  neutral:", ln_n.split(":", 1)[-1].strip())
-                print("  slang  :", ln_s.split(":", 1)[-1].strip())
+                print("  neutral:", t_n["text"])
+                print("  slang  :", t_s["text"])
     from collections import Counter
     used = Counter(d.get("slang") for sc in slang for d in sc["decisions"] if d.get("applied"))
     fill = {"yaar", "bhai", "bro", "boss", "abey", "arre", "chill", "kasam se"}

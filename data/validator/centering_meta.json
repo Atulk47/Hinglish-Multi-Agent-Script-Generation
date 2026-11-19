@@ -1,0 +1,17 @@
+{
+ "n_lines": 3000,
+ "k_removed": 5,
+ "top_singular_values": [
+  0.67,
+  0.62,
+  0.51,
+  0.47,
+  0.42,
+  0.42,
+  0.38,
+  0.35
+ ],
+ "variance_share_removed": 0.245,
+ "mean_cosine_random_pair_raw": 0.9949,
+ "mean_cosine_random_pair_centred": 0.0011
+}

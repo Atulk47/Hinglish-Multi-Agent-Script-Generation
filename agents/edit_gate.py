@@ -18,6 +18,8 @@ Everything else - appended idioms, mid-sentence insertions, replaced content wor
 is rejected, so the line stays neutral.
 """
 import difflib
+import json
+import os
 import re
 
 FILLERS = {"yaar", "bhai", "bro", "boss", "abey", "arre", "chill", "kasam se"}
@@ -63,7 +65,7 @@ def describe(line, out, slang):
             removed += a[i1:i2]
         if tag in ("insert", "replace"):
             added += b[j1:j2]
-    sl = slang.lower().split()
+    sl = [t for t in _toks(slang.lower()) if t.isalpha()]       # same tokenisation as the text, so hyphenated slang ("haath-pair phool gaye") matches
     return {"removed": [w for w in removed if w.isalpha()],
             "extra": [w for w in added if w.isalpha() and w not in sl]}
 
@@ -71,10 +73,24 @@ def describe(line, out, slang):
 GLUE = {"ekdum", "bada", "badi", "bilkul", "ek", "toh", "ho", "raha", "rahi", "rahe", "hai", "hain", "tha", "thi", "hua",
         "hui", "gaya", "gayi", "ka", "ki", "ke", "mein", "se", "kaafi", "bahut", "full", "lag", "lagta", "lagti"}
 REMOVABLE_NOUNS = {"situation", "halat", "condition", "baat", "cheez"}
+REMOVABLE_VERBS = {"aaya", "aayi", "aaye", "aata", "aati", "aate", "aa", "dilaya", "dilati", "dilata"}      # "bahut gussa aaya", "bahut maza aa raha hai"
+
+
+SPAN_MAX = 5            # words a swapped span may have
+EMOTION_SPAN_MAX = 7    # ... for an emotion idiom (feeling / joy / pride / anger / like slots): "mujhe bhi bahut khushi ho rahi hai" -> "mere mann mein laddu phoot rahe hain"
+
+
+def is_emotion_slang(slang):
+    sl = (slang or "").lower().strip()
+    return sl in {x.lower() for x in FEEL_SLANG} or any(sl in {y.lower() for y in x["slangs"]} for x in EXTRA_SLOTS.values())
+
+
+def span_limit(slang):
+    return EMOTION_SPAN_MAX if is_emotion_slang(slang) else SPAN_MAX
 
 
 def phrase_swap_ok(line, out, slang):
-    """Safe 'idiom for phrase' substitution: ONE contiguous span of <= 5 words that contains a slot word is replaced by a
+    """Safe 'idiom for phrase' substitution: ONE contiguous span of <= 5 words (<= 7 for an emotion idiom) that contains a slot word is replaced by a
     mood slang of the matching kind (bahut mushkil situation -> bada panga; bahut dar lag raha hai -> fatti padi hai).
     Everything outside the span must be identical; only simple glue words (ekdum / ho / raha / hai ...) may come with the
     slang; the span may not touch a negation. Slot detection already excludes formal, elder-addressed and health lines."""
@@ -88,7 +104,7 @@ def phrase_swap_ok(line, out, slang):
     s = 0
     while s < min(len(a), len(b)) - p and a[len(a) - 1 - s] == b[len(b) - 1 - s]:
         s += 1
-    st = sl.split()
+    st = [t for t in _toks(sl) if t.isalpha()]
     span_a = span_b = end_a = None
     for sp in range(s, -1, -1):                     # the slang may itself end in a word the sentence also has ("... padi hai")
         sb = b[p:len(b) - sp]
@@ -97,57 +113,232 @@ def phrase_swap_ok(line, out, slang):
             break
     if span_a is None or not span_a:
         return False
-    if len(span_a) > 5 or any(not t.isalpha() for t in span_a + span_b):
+    if len(span_a) > span_limit(sl) or any(not t.isalpha() for t in span_a + span_b):
         return False
     slots = [s for s in slot_candidates(line) if s["word"] in span_a and sl in [x.lower() for x in s["slangs"]]]
     if not slots:
         return False
-    if any(t in NEGATORS for t in a):               # any negation anywhere in the sentence: too risky for a phrase swap
+    lo = p
+    while lo > 0 and a[lo - 1] not in (".", "!", "?"):          # the sentence that holds the span (a line may have several sentences)
+        lo -= 1
+    hi = end_a
+    while hi < len(a) and a[hi] not in (".", "!", "?"):
+        hi += 1
+    if any(t in NEGATORS for t in a[lo:hi]):        # a negation in THAT sentence: too risky for a phrase swap (another sentence's "nahi" does not matter)
         return False
     k = next((x for x in range(len(span_b) - len(st) + 1) if span_b[x:x + len(st)] == st), -1)
     extras = span_b[:k] + span_b[k + len(st):]
     if len(extras) > 3 or any(t not in GLUE for t in extras):
         return False
     slot_words = {s["word"] for s in slots}
-    return all(t in slot_words or t in MINOR_EVAL or t in GLUE or t in REMOVABLE_NOUNS for t in span_a)
+    return all(t in slot_words or t in MINOR_EVAL or t in GLUE or t in REMOVABLE_NOUNS or t in REMOVABLE_VERBS for t in span_a)
 
 
 # grammatical gender of the noun-like mood slangs; a verb or adjective that disagrees ("thodi dimaag fry ho rahi hai") is rejected
 SLANG_GENDER = {"dimaag fry": "m", "full tension": "f", "kachra": "m", "flop": "m", "jhand": "m", "panga": "m", "locha": "m",
                 "lafda": "m", "ghapla": "m", "jhol": "m", "gadbad": "f", "chakkar": "m", "jhamela": "m"}
-_FEM_FORMS = {"rahi", "gayi", "hui", "thi", "badi", "thodi", "kaafi badi"}
-_MASC_FORMS = {"raha", "gaya", "hua", "tha", "bada", "thoda"}
+_FEM_FORMS = {"rahi", "gayi", "hui", "thi", "hogi", "jayegi", "badi", "thodi", "kaafi badi"}
+_MASC_FORMS = {"raha", "gaya", "hua", "tha", "hoga", "jayega", "bada", "thoda"}
+_VERB_CHAIN = {"ho", "hoga", "hogi", "raha", "rahi", "rahe", "tha", "thi", "the", "hua", "hui", "gaya", "gayi", "jayega", "jayegi"}
 
 
 def agreement_ok(out, slang):
     """Only where the slang noun IS the grammatical subject/adjective target: the adjective right before it (badi/bada,
-    thodi/thoda) and a 'ho <form>' verb right after it. A predicate noun ("film ekdum flop thi") agrees with the film, not the slang."""
+    thodi/thoda) and the verb chain right after it when it starts with 'ho' / 'hoga' / 'hogi' ("full tension ho rahi thi" is right,
+    "full tension ho rahi tha" and "yeh jhamela hogi" are not). A predicate noun ("film ekdum flop thi") agrees with the film, not the slang."""
     g = SLANG_GENDER.get(slang.lower())
     if not g:
         return True
     toks = re.findall(r"[a-z']+", out.lower())
-    st = slang.lower().split()
+    st = re.findall(r"[a-z']+", slang.lower())
     k = next((i for i in range(len(toks) - len(st) + 1) if toks[i:i + len(st)] == st), -1)
     if k < 0:
         return True
     bad = _FEM_FORMS if g == "m" else _MASC_FORMS
     before = toks[k - 1] if k > 0 else None
-    after = toks[k + len(st):k + len(st) + 2]
+    after = toks[k + len(st):k + len(st) + 4]
     if before in bad and before in ("badi", "bada", "thodi", "thoda"):
         return False
-    if after[:1] == ["ho"] and len(after) == 2 and after[1] in bad:
-        return False
+    if after[:1] and after[0] in ("ho", "hoga", "hogi"):
+        for t in after:                       # the whole chain: ho + rahi + tha ...
+            if t not in _VERB_CHAIN:
+                break
+            if t in bad:
+                return False
     return True
+
+
+_FILLER_COMMA = re.compile(r"(?:^|\s)(?:arre|are|yaar|bhai|bro|boss|abey|chill|oye)\s*,", re.I)
+
+
+def comma_glitch(line, out):
+    """An edit may add a comma ONLY directly after an inserted filler ("Arre, ..."). A new comma anywhere else ("Accha hai" -> "Arre accha, hai") is a glitch."""
+    extra = out.count(",") - line.count(",")
+    if extra <= 0:
+        return False
+    return len(_FILLER_COMMA.findall(out)) - len(_FILLER_COMMA.findall(line)) < extra
+
+
+_EXPERIENCER = {"mujhe", "mujhko", "humein", "hamein", "hume", "tumhe", "tujhe", "use", "unhe", "inhe", "ise", "usse"}
+_INTENS = {"bahut", "ekdum", "bilkul", "itna", "kitna", "kaafi", "behad", "zyada", "jyada", "full", "sach", "mein", "me", "to", "toh", "hi", "bhi", "abhi",
+           "ab", "kuch", "thoda", "thodi", "sabse", "ekdam", "kaise", "kitni"}
+
+
+def experiencer_frame_ok(out, slang):
+    """'Mujhe bahut lajawaab lag raha hai' is wrong: after an experiencer ("mujhe") plus intensifiers, "lag raha hai" (I FEEL ...) needs a FEELING word. A praise adjective that
+    describes THINGS (lajawaab, zabardast, kamaal ...) is fine when the thing is named in between ("mujhe yeh bahut lajawaab laga", "mujhe aapka idea
+    zabardast laga") and for the feel-good words (mast, bindaas, badiya, cool: "mujhe mast lag raha hai"). Decided per SENTENCE FRAME, not per word."""
+    if not slang or slang.lower() not in EXPERIENCER_BLOCK:
+        return True
+    toks = re.findall(r"[a-z']+", out.lower())
+    st = re.findall(r"[a-z']+", slang.lower())
+    for k in range(len(toks) - len(st) + 1):
+        if toks[k:k + len(st)] != st:
+            continue
+        after = toks[k + len(st):k + len(st) + 2]
+        if after[:1] != ["lag"] or after[1:2] not in (["raha"], ["rahi"], ["rahe"]):          # only "lag raha / rahi / rahe": "I FEEL ___" (past "laga" = "I found it ___" is fine)
+            continue
+        j = k - 1
+        while j >= 0 and toks[j] in _INTENS:
+            j -= 1
+        if j >= 0 and toks[j] in _EXPERIENCER:
+            return False
+    return True
+
+
+_BURA_OK = {"wahiyat"}          # the only slang that can honestly stand for "I felt bad / hurt" (bore = bored, cringe = embarrassed, flop = a verdict on a thing)
+_LAG = {"laga", "lagi", "lage", "lagta", "lagti", "lagte", "lag", "lagega", "lagegi"}
+
+
+def _hurt_frame(text):
+    """True when the text says "mujhe (bhi) (bahut) bura lag-": an experiencer directly before "bura lag...", i.e. I felt bad / hurt (not "yeh film bura lag raha hai" = I dislike this film)."""
+    toks = re.findall(r"[a-z']+", text.lower())
+    for k in range(len(toks) - 1):
+        if toks[k] == "bura" and toks[k + 1] in _LAG:
+            j = k - 1
+            while j >= 0 and toks[j] in _INTENS:
+                j -= 1
+            if j >= 0 and toks[j] in _EXPERIENCER:
+                return True
+    return False
+
+
+def bura_meaning_ok(line, out, slang):
+    """'Mujhe bahut bura laga' means I felt BAD / HURT. Replacing "bura" there with bore (bored), cringe (embarrassed) or a verdict word ("mujhe bahut bore laga") changes the
+    feeling. Fillers replace nothing, wahiyat ("awful") keeps the meaning, and "yeh film bura lag raha hai" (a verdict on a thing) may take a verdict word."""
+    if not slang or slang.lower() in FILLERS or slang.lower() in _BURA_OK or slang.lower() in HURT_SLANG:
+        return True
+    return not (_hurt_frame(line) and not _hurt_frame(out))
+
+
+def clause_frame_ok(out, slang):
+    """'Mujhe bahut accha laga ki Papa khush hain': before "laga ki <clause>" the word is the FEELING (glad that ...). A word that praises a THING there ("mujhe jhakkas laga ki
+    Papa khush hain", "awesome laga ki ...") reads as broken. Idioms of feeling ("dil garden-garden ho gaya") are not affected."""
+    if not slang or slang.lower() not in PRAISE_THING:
+        return True
+    toks = re.findall(r"[a-z']+", out.lower())
+    st = re.findall(r"[a-z']+", slang.lower())
+    for k in range(len(toks) - len(st) + 1):
+        if toks[k:k + len(st)] == st:
+            rest = toks[k + len(st):k + len(st) + 4]
+            if rest[:1] and rest[0] in _LAG and "ki" in rest[1:]:
+                return False
+    return True
+
+
+_COPULA = {"hai", "hain", "tha", "thi", "the", "hoga", "hogi", "honge", "ho", "hota", "hoti", "hote", "lagta", "lagti", "lagte", "lagega", "lagegi", "lagenge",
+           "laga", "lagi", "lage", "lag", "ban", "bana", "bani", "rahega", "rahegi", "nahi", "nahin", "na", "hi", "toh", "to", "bhi"}
+
+
+def copula_ok(out, slang):
+    """A predicate-noun idiom ("bacchon ka khel", "sone pe suhaga") must be followed by a linking verb / copula or the end of the clause: "yeh bacchon ka khel
+    hai" is right, "mujhe bacchon ka khel milega" (it replaced the adverb in "aasaani se milega") is not."""
+    if not slang or slang.lower() not in NEEDS_COPULA:
+        return True
+    toks = re.findall(r"[a-z']+|[,.!?;]", out.lower())
+    st = re.findall(r"[a-z']+", slang.lower())
+    for k in range(len(toks) - len(st) + 1):
+        if toks[k:k + len(st)] == st:
+            nxt = toks[k + len(st)] if k + len(st) < len(toks) else "."
+            return nxt in _COPULA or nxt in (",", ".", "!", "?", ";")
+    return True
+
+
+PERSON_SUBJECT = {"aag-babula", "bore"}          # idioms whose grammatical subject is the PERSON ("main aag-babula ho gayi"), so the verb agrees with the speaker
+_F_VERB = {"gayi": "gaya", "rahi": "raha", "jati": "jata", "hui": "hua"}
+_M_VERB = {v: k for k, v in _F_VERB.items()}
+_LINE_F = {"thi", "gayi", "rahi", "hui", "aayi", "chahti", "karti", "jati", "lagi"}
+_LINE_M = {"tha", "gaya", "raha", "hua", "aaya", "chahta", "karta", "jata", "laga"}
+
+
+def _speaker_gender_from(text, skip):
+    toks = [t for t in re.findall(r"[a-z']+", text.lower()) if t not in skip]
+    f, m = sum(t in _LINE_F for t in toks), sum(t in _LINE_M for t in toks)
+    return "f" if f and not m else "m" if m and not f else None
+
+
+def repair_person_agreement(text, shortlist, gender=None):
+    """'Main ... pareshan thi, isliye aag-babula ho gaya' -> 'ho gayi'. Only for idioms with a person subject; the gender comes from the speaker's profile, else
+    from the line's own first-person forms."""
+    out = text
+    for sl in shortlist or []:
+        if sl.lower() not in PERSON_SUBJECT:
+            continue
+        m = re.search(r"(?i)(" + re.escape(sl) + r"\s+ho\s+)(gaya|gayi|raha|rahi)\b", out)
+        if not m:
+            continue
+        g = gender or _speaker_gender_from(out, {m.group(2).lower()})
+        want = {"f": _M_VERB.get(m.group(2).lower()), "m": _F_VERB.get(m.group(2).lower())}.get(g)
+        if want:
+            out = out[:m.start(2)] + (want.capitalize() if m.group(2)[:1].isupper() else want) + out[m.end(2):]
+    return out
+
+
+def person_agreement_ok(out, slang, gender=None):
+    """Reject a person-subject idiom whose verb contradicts the speaker ("... pareshan thi, isliye aag-babula ho gaya")."""
+    if not slang or slang.lower() not in PERSON_SUBJECT:
+        return True
+    m = re.search(r"(?i)" + re.escape(slang) + r"\s+ho\s+(gaya|gayi|raha|rahi)\b", out)
+    if not m:
+        return True
+    g = gender or _speaker_gender_from(out, {m.group(1).lower()})
+    return not (g == "f" and m.group(1).lower() in _M_VERB) and not (g == "m" and m.group(1).lower() in _F_VERB)
+
+
+def drop_male_address_for_female_names(shortlist, core):
+    """A line that addresses a girl by name ("Siya, ...") never gets the male address words 'bhai' / 'bro'."""
+    if {w.lower() for w in re.findall(r"[A-Za-z]+", core)} & FEMALE_NAMES:
+        return [x for x in shortlist if x.lower() not in ("bhai", "bro")]
+    return shortlist
 
 
 def rule_gate(line, out, slang):
     """-> (ok, reason). Deterministic; no network. Strict single-word rules first, then the safe phrase swap."""
-    ok, why = _strict_gate(line, out, slang)
+    if comma_glitch(line, out):
+        return False, "punctuation-glitch"
+    out_g = _dative_form(line, out, slang) if slang else out        # "Mera dil baith raha hai" is checked as the swap "Mujhe ... -> dil baith raha hai"
+    ok, why = _strict_gate(line, out_g, slang)
     if not ok and why in ("rewrote-other-words", "only-minor-words-replaced", "replaced-content-word", "replaced-idiom-word",
-                          "emotion-word-needs-emotion-idiom") and phrase_swap_ok(line, out, slang):
+                          "emotion-word-needs-emotion-idiom") and phrase_swap_ok(line, out_g, slang):
         ok, why = True, "phrase-swap"
     if ok and slang and not agreement_ok(out, slang):
         return False, "gender-agreement"
+    if ok and slang and not frame_ok(out, slang):
+        return False, "idiom-frame"
+    if ok and slang and not usage_ok(out, slang):
+        return False, "slang-usage"
+    if ok and slang and not register_ok(slang):
+        return False, "register-mismatch"
+    if ok and slang and not experiencer_frame_ok(out, slang):
+        return False, "experiencer-frame"
+    if ok and slang and not bura_meaning_ok(line, out, slang):
+        return False, "bura-meaning"
+    if ok and slang and not clause_frame_ok(out, slang):
+        return False, "clause-frame"
+    if ok and slang and not copula_ok(out, slang):
+        return False, "needs-copula"
+    if ok and slang and not person_agreement_ok(out, slang):
+        return False, "person-agreement"
     return ok, why
 
 
@@ -170,19 +361,33 @@ def _strict_gate(line, out, slang):
         k = ot.index(first) if first in ot else -1
         prev = ot[k - 1] if k > 0 else None
         nxt = ot[k + len(sl.split())] if 0 <= k and k + len(sl.split()) < len(ot) else None
-        names = [w.lower() for w in re.findall(r"\b[A-Z][a-z]+\b", line)]
+        # names: capitalised words that are not merely the first word of a sentence ("Accha hai" must not make "accha" a name, which let
+        # "Accha yaar, hai, ..." through); a sentence-initial word counts only as a vocative, i.e. when a comma follows it ("Rohan, ...")
+        names = []
+        for m in re.finditer(r"\b[A-Z][a-z]+\b", line):
+            before = line[:m.start()].rstrip()
+            if before and before[-1] not in ".!?" or line[m.end():].lstrip().startswith(","):
+                names.append(m.group(0).lower())
         # natural spots: sentence start, after a comma, right after a name (vocative), or closing a
         # clause just before a comma ("Chinta mat karo yaar, ...")
         if first == "bhai" and prev in FEMALE_NAMES:
             return False, "bhai-after-female-name"
-        if k <= 1 or prev == "," or prev in names or nxt == ",":
+        if out.count(",") > line.count(","):
+            # a filler may bring a NEW comma only as an opener ("Arre, ..." at the start of the line or of a sentence) or right before a name
+            # ("Chinta mat karo yaar, Mira, ..."), never mid-phrase ("Accha yaar, hai, ...")
+            fl = re.escape(first)
+            opener = re.search(r"(?:^|[.!?]\s+)" + fl + r"\s*,", out, re.I)
+            before_name = re.search(r"\b" + fl + r"\s*,\s*[A-Z]", out)
+            if not (opener or before_name):
+                return False, "filler-comma-glitch"
+        if k == 0 or (k == 1 and prev in names) or prev == "," or prev in names or nxt == ",":
             return True, "filler"
         return False, "filler-mid-sentence"
     if not d["removed"]:
         return False, "appended-or-inserted-slang"          # tail / mid insertions were 0-10% good
     if any(w in EXISTING_SLANG for w in d["removed"]):
         return False, "replaced-existing-slang"
-    if not any(w in CORE_EVAL or w in CTX_WORDS or w in FEEL_WORDS or w in PROB_WORDS or w in EASE_WORDS
+    if not any(w in CORE_EVAL or w in CTX_WORDS or w in FEEL_WORDS or w in PROB_WORDS or w in EASE_WORDS or _extra_trigger(w)
                for w in d["removed"]):
         return False, "only-minor-words-replaced"
     for w in d["removed"]:
@@ -199,8 +404,12 @@ def _strict_gate(line, out, slang):
             continue
         if w in EASE_WORDS and sl in EASE_SLANG:
             continue
+        if any(w in x["triggers"] and sl in x["slangs"] for x in EXTRA_SLOTS.values()):      # joy / pride / anger / like ... slots defined in the pool file
+            continue
         return False, "replaced-content-word"
     if any(w in FEEL_WORDS for w in d["removed"]) and sl not in FEEL_SLANG:
+        return False, "emotion-word-needs-emotion-idiom"
+    if any(w in x["triggers"] and sl not in x["slangs"] for x in EXTRA_SLOTS.values() for w in d["removed"]):
         return False, "emotion-word-needs-emotion-idiom"
     return True, "substitution"
 
@@ -213,7 +422,7 @@ POS_ADJ = {"accha", "achha", "acchi", "achhi", "acha", "achi", "achcha", "achchi
            "badhiya", "shandar", "shaandaar", "behtareen"}          # formal praise (uttam, sarahniya ...) is NOT a slot
 RESPECT = {"aap", "aapki", "aapka", "aapke", "aapko", "aapne", "aapse", "aapaka", "aapaki", "aapake", "aapane", "ji"}
 NEG_ADJ = {"kharab", "bekaar", "bekar", "bura", "buri", "ghatiya", "boring"}
-WORRY = {"chinta", "nirasha", "niraasha", "ghabrahat", "pareshani", "dar"}      # "dar" only before lag/lagta (see slot_candidates)
+WORRY = {"chinta", "nirasha", "niraasha", "ghabrahat", "pareshani", "dar", "darr"}      # "dar"/"darr" only before lag/lagta (see slot_candidates); the writer model nearly always spells it "darr"
 TROUBLE_PHRASE = {"mushkil", "mushkilat", "musibat"}               # only replaceable as a PHRASE ("bahut mushkil situation" -> "bada panga")
 SLOT_TABLE = [                      # (name, sign, trigger words, slangs that fit this slot)
     ("praise", +1, POS_ADJ, POS_SLANG),
@@ -232,13 +441,32 @@ HEALTH = {"tabiyat", "tabeeyat", "sehat", "haalat", "halat", "bimar", "bimari", 
           "aspatal", "doctor", "marij"}              # "tabiyat kharab" is a fact about health, not an opinion: no slang
 
 
+_MENTION_MARKERS = {"ka", "ki", "ke", "ko", "ne", "se", "par", "mein", "tak", "wali", "wale", "waali", "waale", "jaisi", "jaise"}
+
+
+def addresses_elder(text: str) -> bool:
+    """True when the line is SPOKEN TO an elder / teacher / coach: 'aap' anywhere, or an elder term used as a form of address (first word, or directly
+    before , ! ? .). A mention ("Nani ka janamdin ...", "Sir ne bola tha", "Aryan Sir ki team") does not address anybody. The audit uses this same rule."""
+    toks = re.findall(r"[a-z']+|[,!?.]", (text or "").lower())
+    if any(t in RESPECT for t in toks):
+        return True
+    for i, t in enumerate(toks):
+        if t in RESPECT_ADDR:
+            nxt = toks[i + 1] if i + 1 < len(toks) else ""
+            if nxt in _MENTION_MARKERS:
+                continue
+            if i == 0 or nxt in (",", "!", "?", ".", ""):
+                return True
+    return False
+
+
 def slot_candidates(sentence: str):
     """The places in a sentence where a MOOD slang can replace a word, each with the slangs that fit THAT slot:
     [{'word','type','sign','slangs'}]. A word under negation ("accha nahi", "chinta mat karo", "koi problem nahi") is
     never a slot - replacing it would flip the meaning or sound absurd."""
     toks = re.findall(r"[a-z']+|,", sentence.lower())
     out = []
-    if any(t in RESPECT or t in RESPECT_ADDR for t in toks):   # 'aap' / addressing an elder or coach: no slang
+    if addresses_elder(sentence):               # 'aap' / addressing an elder or coach: no slang (mentioning one is fine)
         return out
     if any(t in HEALTH for t in toks):           # illness / injury / hospital lines are serious: no mood slang
         return out
@@ -250,15 +478,29 @@ def slot_candidates(sentence: str):
             if t in words:
                 if name == "praise" and toks[i + 1:i + 2] == [","]:
                     continue                                        # "Accha, chalo ..." is an interjection, not an opinion
-                if t == "dar" and toks[i + 1:i + 2] not in (["lag"], ["lagta"], ["lagti"], ["lagne"]):
+                if t in ("dar", "darr") and toks[i + 1:i + 2] not in (["lag"], ["lagta"], ["lagti"], ["lagne"]):
                     continue                                        # "dar" must be the fear noun, not a part of something else
                 if t in ("bura", "buri") and toks[i + 1:i + 2] in (["maan"], ["maane"], ["mat"]):
                     continue
-                out.append({"word": t, "type": name, "sign": sign, "slangs": list(slangs)})
+                if name == "sad" and not (toks[i + 1:i + 2] and toks[i + 1].startswith("lag")):
+                    continue                                        # the hurt slot only in "bura lag-" ("mujhe bahut bura laga"), not "bura idea"
+                sl_list = list(slangs)
+                if name == "praise" and toks[i + 1:i + 2] == ["lag"] and toks[i + 2:i + 3] in (["raha"], ["rahi"], ["rahe"]):          # "mujhe bahut accha lag raha hai": a FEELING frame
+                    j = i - 1
+                    while j >= 0 and toks[j] in _INTENS:
+                        j -= 1
+                    if j >= 0 and toks[j] in _EXPERIENCER:
+                        sl_list = [x for x in sl_list if x.lower() not in EXPERIENCER_BLOCK]       # thing-adjectives cannot fill it (experiencer_frame_ok)
+                out.append({"word": t, "type": name, "sign": sign, "slangs": sl_list})
         if t in CTX_WORDS:              # "idea sahi hai" -> "idea solid hai"; not the agreement "Theek hai, ..."
             if i >= 2 and toks[i - 1] != "," and toks[i + 1:i + 2] and toks[i + 1] in ("hai", "tha", "hoga", "hain", "lag"):
-                out.append({"word": t, "type": "predicate", "sign": +1, "slangs": POS_SLANG[:8] + ["sorted"]})
-    return out
+                out.append({"word": t, "type": "predicate", "sign": +1, "slangs": list(PREDICATE_SLANG)})
+    tokset = set(toks)
+    for c in out:                       # situational phrases ("paisa vasool") are offered only where their topic appears in the sentence
+        c["slangs"] = [s for s in c["slangs"] if s not in CONTEXT or tokset & CONTEXT[s]]
+    for c in out:                       # a traditional / village / period story never offers urban-youth slang
+        c["slangs"] = [s for s in c["slangs"] if register_ok(s)]
+    return [c for c in out if c["slangs"]]
 
 
 def has_slot(sentence: str) -> bool:
@@ -278,3 +520,225 @@ INTENSITY = {"badiya": 1, "sahi hai": 1, "mast": 1, "solid": 2, "on point": 2, "
              "chutki mein": 1, "bacchon ka khel": 2, "left hand ka khel": 2}
 NOUN_GENDER = {"panga": "m", "locha": "m", "lafda": "m", "ghapla": "m", "jhol": "m", "gadbad": "f", "chakkar": "m",
                "jhamela": "m"}
+
+
+# ═════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+# SLANG POOL (data/slang/slang_pool.json) and GRAMMATICAL FRAMES
+# The slot lists above are the legacy defaults; when the pool file exists it is the source of truth (same lists, plus metadata:
+# gender, intensity, grammatical frame, situational context). Entries with status "candidate" are NOT used until a native speaker
+# promotes them to "core".
+# ═════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+POOL_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "slang", "slang_pool.json")
+PREDICATE_SLANG = list(POS_SLANG[:8]) + ["sorted"]
+EXTRA_SLOTS = {}     # slot name -> {"sign", "triggers": set, "slangs": [..]}  for slots defined only in the pool file (joy, pride, anger, like ...)
+USAGE = {}           # phrase -> {"forbid_after": words that may not directly follow it, "forbid_before": words that may not appear in the 4 words before it (same clause)}  (e.g. "on point laga" is wrong, "on point hai" is right)
+SLOT_DEFS = {}
+FRAMES = {}          # phrase -> {"possessive_before": anchor noun, "gender": "m"/"f", "number": "sg"/"pl"}
+CONTEXT = {}         # phrase -> set of words, one of which must appear in the sentence
+POOL_ENTRIES = []
+
+
+def load_pool(path=None):
+    """-> list of CORE entries from the pool file, or None if it is missing / unreadable."""
+    path = path or POOL_PATH
+    try:
+        with open(path, encoding="utf-8") as f:
+            data = json.load(f)
+        return [e for e in data.get("entries", []) if e.get("status", "core") == "core"]
+    except Exception:
+        return None
+
+
+def load_slot_defs(path=None):
+    try:
+        with open(path or POOL_PATH, encoding="utf-8") as f:
+            return json.load(f).get("slot_defs", {}) or {}
+    except Exception:
+        return {}
+
+
+def _extra_trigger(w):
+    return any(w in x["triggers"] for x in EXTRA_SLOTS.values())
+
+
+def _apply_pool(entries=None, slot_defs=None):
+    global POS_SLANG, NEG_SLANG, FEEL_SLANG, PROB_SLANG, EASE_SLANG, PREDICATE_SLANG, SLANG_GENDER, NOUN_GENDER, INTENSITY
+    global SLOT_TABLE, FRAMES, CONTEXT, POOL_ENTRIES, EXTRA_SLOTS, USAGE, SLOT_DEFS, REGISTER, EXPERIENCER_BLOCK, NEEDS_COPULA, PRAISE_THING, HURT_SLANG
+    entries = load_pool() if entries is None else entries
+    SLOT_DEFS = load_slot_defs() if slot_defs is None else slot_defs
+    if not entries:
+        return False
+    by = lambda slot: [e["phrase"] for e in entries if slot in e.get("slots", [])]
+    POS_SLANG, NEG_SLANG, PREDICATE_SLANG = by("praise"), by("criticism"), by("predicate")
+    FEEL_SLANG, PROB_SLANG, EASE_SLANG = set(by("worry")), set(by("trouble")), set(by("ease"))
+    SLANG_GENDER = {e["phrase"]: e["gender"] for e in entries if e.get("gender")}
+    NOUN_GENDER = {e["phrase"]: e["gender"] for e in entries if e.get("gender") and "trouble" in e.get("slots", [])}
+    INTENSITY = {e["phrase"]: e["intensity"] for e in entries if e.get("intensity") is not None}
+    FRAMES = {e["phrase"].lower(): e["frame"] for e in entries if e.get("frame")}
+    CONTEXT = {e["phrase"]: {w.lower() for w in e["context"]} for e in entries if e.get("context")}
+    SLOT_TABLE = [("praise", +1, POS_ADJ, POS_SLANG), ("criticism", -1, NEG_ADJ, NEG_SLANG), ("worry", -1, WORRY, sorted(FEEL_SLANG)),
+                  ("trouble", -1, PROB_WORDS, sorted(PROB_SLANG)), ("trouble", -1, TROUBLE_PHRASE, sorted(PROB_SLANG)),
+                  ("ease", +1, EASE_WORDS, sorted(EASE_SLANG))]
+    EXTRA_SLOTS = {}
+    for name, d in (SLOT_DEFS or {}).items():
+        sl = by(name)
+        if not sl:
+            continue
+        EXTRA_SLOTS[name] = {"sign": d.get("sign", 0), "triggers": {t.lower() for t in d.get("triggers", [])}, "slangs": sl}
+        SLOT_TABLE.append((name, d.get("sign", 0), EXTRA_SLOTS[name]["triggers"], sl))
+    USAGE = {e["phrase"].lower(): {"forbid_after": {w.lower() for w in e.get("forbid_after") or []},
+                                   "forbid_before": {w.lower() for w in e.get("forbid_before") or []}}
+             for e in entries if e.get("forbid_after") or e.get("forbid_before")}
+    POOL_ENTRIES = entries
+    REGISTER = {e["phrase"].lower(): e.get("register", "general") for e in entries}
+    EXPERIENCER_BLOCK = {e["phrase"].lower() for e in entries if e.get("experiencer_ok") is False}
+    NEEDS_COPULA = {e["phrase"].lower() for e in entries if e.get("needs_copula")}
+    PRAISE_THING = {e["phrase"].lower() for e in entries if e.get("kind") == "slang_word" and "praise" in (e.get("slots") or [])}
+    HURT_SLANG = {e["phrase"].lower() for e in entries if "sad" in (e.get("slots") or [])}       # the hurt / low family: the only slang that may replace "bura laga"
+    return True
+
+
+# ═════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+# STORY SETTING and slang REGISTER. The pool tags every phrase `urban_youth` (English-origin / modern campus slang: "dope", "cringe", "full tension") or
+# `general` (Hindi idioms that fit any setting). A story set in a village, in the past or in a traditional milieu (decided once per story by the Persona
+# Agent) never gets urban_youth slang: "teri gaay dope lag rahi hai" is wrong for a 1930s farmer however well it passes the grammar rules.
+# ═════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+REGISTER = {}
+NEEDS_COPULA = set()           # predicate-noun idioms that must be followed by a linking verb (pool field needs_copula)
+HURT_SLANG = set()             # slang of the "sad" slot (mood off, dil toot gaya, low ...): allowed to replace "bura laga" (derived from the pool)
+PRAISE_THING = set()           # praise slang WORDS (awesome, jhakkas, ek number ...): they judge a thing; derived from the pool (kind slang_word + slot praise)
+EXPERIENCER_BLOCK = set()      # praise adjectives that cannot stand directly after 'mujhe' before lag-forms (pool field experiencer_ok: false)
+URBAN_FILLERS = {"bro", "boss", "chill", "abey", "abe"}
+_DEFAULT_SETTING = {"era": "contemporary", "milieu": "mixed", "formality": "neutral", "traditional": False}
+_SETTING = dict(_DEFAULT_SETTING)
+
+
+def set_setting(setting=None):
+    """Called once per story (the pipeline, after the Persona Agent). None resets to the modern, casual default the project was built for."""
+    global _SETTING
+    s = dict(_DEFAULT_SETTING)
+    if isinstance(setting, dict):
+        s.update({k: v for k, v in setting.items() if k in ("era", "milieu", "formality", "traditional")})
+        s["traditional"] = bool(setting.get("traditional", s.get("formality") == "traditional" or s.get("era") == "historical" or s.get("milieu") == "rural"))
+    _SETTING = s
+
+
+def get_setting():
+    return dict(_SETTING)
+
+
+def setting_is_traditional():
+    return bool(_SETTING.get("traditional"))
+
+
+def register_ok(slang):
+    """False for an urban_youth phrase (or filler) in a traditional setting."""
+    if not slang or not setting_is_traditional():
+        return True
+    k = slang.lower()
+    return k not in URBAN_FILLERS and REGISTER.get(k, "general") != "urban_youth"
+
+
+# possessive forms by person: (m sg, f, m pl / oblique). A subject-bound idiom needs one of these before its noun.
+_POSSESSIVE = {"mujhe": ("mera", "meri", "mere"), "humein": ("hamara", "hamari", "hamare"), "hume": ("hamara", "hamari", "hamare"),
+               "tujhe": ("tera", "teri", "tere"), "tumhe": ("tumhara", "tumhari", "tumhare"), "tumhein": ("tumhara", "tumhari", "tumhare"),
+               "use": ("uska", "uski", "uske"), "unhe": ("unka", "unki", "unke"), "unhein": ("unka", "unki", "unke"),
+               "ise": ("iska", "iski", "iske"), "inhe": ("inka", "inki", "inke")}
+_ALL_POSS = {f for forms in _POSSESSIVE.values() for f in forms} | {"apna", "apni", "apne"}
+_POSS_TO_DATIVE = {}
+for _d, _forms in _POSSESSIVE.items():
+    for _f in _forms:
+        _POSS_TO_DATIVE.setdefault(_f, _d)
+
+
+def _form_index(frame):
+    return 1 if frame.get("gender") == "f" else (2 if frame.get("number") == "pl" else 0)
+
+
+def _phrase_span(text, phrase):
+    m = re.search(r"(?<![A-Za-z'])" + re.escape(phrase) + r"(?![A-Za-z'])", text, re.I)
+    return m
+
+
+def _prev_token(text, start):
+    m = re.search(r"([A-Za-z']+)[\s,]*$", text[:start])
+    return m
+
+
+def repair_frame(text, slangs):
+    """Deterministic grammar repair for subject-bound idioms: the editor writes "Mujhe dil baith raha hai"; the idiom needs a possessive
+    subject, so the experiencer pronoun is converted ("Mera dil baith raha hai"). Anything else in front of the idiom is left alone: frame_ok()
+    then rejects it. Returns the (possibly) repaired text."""
+    for s in slangs or []:
+        fr = FRAMES.get((s or "").lower())
+        if not fr:
+            continue
+        m = _phrase_span(text, s)
+        if not m:
+            continue
+        pv = _prev_token(text, m.start())
+        if not pv:
+            continue
+        tok = pv.group(1)
+        forms = _POSSESSIVE.get(tok.lower())
+        if forms:                                   # a dative experiencer pronoun in front of the idiom: make it possessive
+            new = forms[_form_index(fr)]
+            new = new.capitalize() if tok[:1].isupper() else new
+            text = text[:pv.start(1)] + new + text[pv.end(1):]
+    return text
+
+
+def frame_ok(out, slang):
+    """A subject-bound idiom must directly follow a possessive ("mera dil baith raha hai", "meri jaan nikal gayi")."""
+    fr = FRAMES.get((slang or "").lower())
+    if not fr:
+        return True
+    m = _phrase_span(out, slang)
+    if not m:
+        return True
+    pv = _prev_token(out, m.start())
+    return bool(pv and pv.group(1).lower() in _ALL_POSS)
+
+
+def usage_ok(out, slang):
+    """Per-phrase usage rules from the pool: a phrase may be barred from directly preceding certain words ("on point laga" is wrong; "on point hai" is right)."""
+    u = USAGE.get((slang or "").lower())
+    if not u:
+        return True
+    m = _phrase_span(out, slang)
+    if not m:
+        return True
+    nxt = re.match(r"[\s,]*([A-Za-z']+)", out[m.end():])
+    if nxt and nxt.group(1).lower() in u["forbid_after"]:
+        return False
+    if u["forbid_before"]:                    # e.g. "Mujhe bahut aag-babula ho raha hai" is wrong: it needs a "main / woh ..." subject, not the dative "mujhe"
+        clause = re.split(r"[.!?;,]", out[:m.start()])[-1]
+        if {w.lower() for w in re.findall(r"[A-Za-z']+", clause)[-4:]} & u["forbid_before"]:
+            return False
+    return True
+
+
+def _dative_form(line, out, slang):
+    """For the swap check only: show a repaired possessive subject as the original dative ("Mera dil baith ..." -> "Mujhe dil baith ...")
+    when the line had that pronoun, so the substitution is judged as the span swap it is."""
+    fr = FRAMES.get((slang or "").lower())
+    if not fr:
+        return out
+    m = _phrase_span(out, slang)
+    pv = _prev_token(out, m.start()) if m else None
+    if not pv:
+        return out
+    tok = pv.group(1)
+    dat = _POSS_TO_DATIVE.get(tok.lower())
+    if not dat or not re.search(r"(?<![A-Za-z])" + dat + r"(?![A-Za-z])", line, re.I):
+        return out
+    new = dat.capitalize() if tok[:1].isupper() else dat
+    return out[:pv.start(1)] + new + out[pv.end(1):]
+
+
+_apply_pool()
+
+
+# baselines for the per-story name sets (SlangRewriter._sync_profiles resets to these at the start of every story, then adds that story's people)
+_BASE_FEMALE_NAMES = set(FEMALE_NAMES)
+_BASE_RESPECT_ADDR = set(RESPECT_ADDR)

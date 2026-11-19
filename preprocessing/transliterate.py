@@ -38,7 +38,48 @@ class HindiTransliterator:
         'kahaan': 'kahan',
     }
 
+    # Nukta letters (ज़ फ़ ख़ ग़ क़ ड़ ढ़) are written either as ONE precomposed code point (U+0958-095F) or as base + U+093C. The ITRANS converter
+    # drops the first form ("ज़ोया" -> "oya") and adds a stray vowel to the second ("फ़िर" -> "phair", "ज़ोया" -> "jaoya"), so both are rewritten
+    # to their usual casual spelling BEFORE conversion (z, f, kh, g, q, d, dh).
+    _NUKTA_PRECOMPOSED = {"क़": "क़", "ख़": "ख़", "ग़": "ग़", "ज़": "ज़",
+                          "ड़": "ड़", "ढ़": "ढ़", "फ़": "फ़", "य़": "य़"}
+    _NUKTA_LATIN = {"क": "q", "ख": "kh", "ग": "g", "ज": "z", "ड": "d", "ढ": "dh", "फ": "f", "य": "y"}
+
+    _MATRA_ITRANS = {"ा": "aa", "ि": "i", "ी": "ii", "ु": "u", "ू": "uu", "े": "e", "ै": "ai", "ो": "o", "ौ": "au"}
+
+    @classmethod
+    def _normalize_nukta(cls, text: str) -> str:
+        for k, v in cls._NUKTA_PRECOMPOSED.items():
+            text = text.replace(k, v)
+
+        def repl(m):
+            latin, tail = cls._NUKTA_LATIN[m.group(1)], m.group(2)
+            if tail == "्":                 # conjunct (ज़्यादा): the consonant without its inherent vowel
+                return latin
+            if tail in cls._MATRA_ITRANS:         # the converter loses an ASCII letter that is followed by a vowel sign: write the vowel in Latin too
+                return latin + cls._MATRA_ITRANS[tail]
+            return latin + "a" + tail             # inherent 'a'
+        return re.sub("([कखगजडढफय])़([ा-्ॢॣ]?)", repl, text)
+
+    # English words written in Devanagari whose spelling the generic converter cannot recover (they contain the candra-o vowel, see _normalize_candra). Whole words only.
+    _LOANWORDS = {"वॉर्डन": "warden", "वार्डन": "warden", "कॉलेज": "college", "हॉस्टल": "hostel", "डॉक्टर": "doctor", "ऑफिस": "office", "ऑफ़िस": "office",
+                  "लैपटॉप": "laptop", "ऑर्डर": "order", "बॉलर": "bowler", "रिकॉर्डिंग": "recording", "रिकॉर्ड": "record", "कॉल": "call", "फ़ॉर्म": "form",
+                  "ऑनलाइन": "online", "ऑटो": "auto", "बॉस": "boss", "शॉपिंग": "shopping", "मॉल": "mall", "कॉफ़ी": "coffee", "कॉफी": "coffee",
+                  "फ़ुटबॉल": "football", "फुटबॉल": "football", "बास्केटबॉल": "basketball", "वॉलीबॉल": "volleyball", "हॉल": "hall", "स्कॉलरशिप": "scholarship",
+                  "कॉमन": "common", "रूम": "room", "कॉम्पिटिशन": "competition", "शॉर्ट": "short", "शॉट": "shot", "ऑडिटोरियम": "auditorium", "ऑडिशन": "audition",
+                  "कॉन्फ़िडेंस": "confidence", "कॉन्फिडेंस": "confidence", "ऑफ़र": "offer", "ऑफर": "offer", "स्टॉप": "stop", "बॉक्स": "box", "कॉन्सर्ट": "concert"}
+
+    @classmethod
+    def _normalize_candra(cls, text: str) -> str:
+        """The candra vowels of English loanwords (ॉ ऑ ॅ ऍ: doctor, college, hostel, office, laptop) were DROPPED by the ITRANS converter ("डॉक्टर" -> "dktara", "कॉलेज" -> "kleja") or
+        leaked as raw Devanagari ("ऑफिस" -> "ऑphisa"). Whole known loanwords become their English spelling; any other candra vowel is read as the plain o / e."""
+        for w, en in cls._LOANWORDS.items():
+            text = re.sub(r"(?<![\u0900-\u097F])" + re.escape(w) + r"(?![\u0900-\u097F])", en, text)
+        return text.replace("\u0949", "\u094b").replace("\u0911", "\u0913").replace("\u0945", "\u0947").replace("\u090d", "\u090f")
+
     def transliterate_sentence(self, devanagari_text: str) -> str:
+        devanagari_text = self._normalize_candra(devanagari_text)
+        devanagari_text = self._normalize_nukta(devanagari_text)
         devanagari_text = re.sub(r'(?<![\u0900-\u097F])\u0938\u0930(?![\u0900-\u097F])', '\u0938\u0930\u094d', devanagari_text)  # "सर" -> sar
         devanagari_text = re.sub(r'(?<![ऀ-ॿ])मा(?:ँ|ं)(?![ऀ-ॿ])', 'mummy', devanagari_text)  # "माँ" -> mummy (not "man"); also matches KINSHIP_NAMES
         sentences = sentence_tokenize.sentence_split(devanagari_text, lang='hi')

@@ -1,0 +1,721 @@
+{
+ "version": 1,
+ "note": "Source of truth for the slot slang lists used by agents/edit_gate.py. status: core = used at runtime; candidate = awaiting native-speaker review (not used).",
+ "entries": [
+  {
+   "phrase": "bindaas",
+   "slots": [
+    "praise",
+    "predicate"
+   ],
+   "sign": 1,
+   "intensity": 2,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "paisa vasool",
+   "slots": [
+    "praise",
+    "predicate"
+   ],
+   "sign": 1,
+   "intensity": 2,
+   "kind": "idiom",
+   "gender": null,
+   "frame": null,
+   "context": [
+    "paisa",
+    "paise",
+    "keemat",
+    "price",
+    "ticket",
+    "film",
+    "movie",
+    "show",
+    "khana",
+    "meal",
+    "dam",
+    "daam",
+    "rupaye",
+    "rupee",
+    "kharcha"
+   ],
+   "controls": [],
+   "status": "core",
+   "note": "only where value-for-money is the topic (film, food, show, purchase)"
+  },
+  {
+   "phrase": "zabardast",
+   "slots": [
+    "praise",
+    "predicate"
+   ],
+   "sign": 1,
+   "intensity": 2,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "kamaal",
+   "slots": [
+    "praise",
+    "predicate"
+   ],
+   "sign": 1,
+   "intensity": 2,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "mast",
+   "slots": [
+    "praise",
+    "predicate"
+   ],
+   "sign": 1,
+   "intensity": 1,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "kadak",
+   "slots": [
+    "praise",
+    "predicate"
+   ],
+   "sign": 1,
+   "intensity": 2,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "solid",
+   "slots": [
+    "praise",
+    "predicate"
+   ],
+   "sign": 1,
+   "intensity": 2,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "lajawaab",
+   "slots": [
+    "praise",
+    "predicate"
+   ],
+   "sign": 1,
+   "intensity": 2,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "jhakaas",
+   "slots": [
+    "praise"
+   ],
+   "sign": 1,
+   "intensity": 3,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "gazab",
+   "slots": [
+    "praise"
+   ],
+   "sign": 1,
+   "intensity": 3,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "faadu",
+   "slots": [
+    "praise"
+   ],
+   "sign": 1,
+   "intensity": 3,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "top class",
+   "slots": [
+    "praise"
+   ],
+   "sign": 1,
+   "intensity": 2,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "on point",
+   "slots": [
+    "praise"
+   ],
+   "sign": 1,
+   "intensity": 2,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "ek number",
+   "slots": [
+    "praise"
+   ],
+   "sign": 1,
+   "intensity": 2,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "dhamaal",
+   "slots": [
+    "praise"
+   ],
+   "sign": 1,
+   "intensity": 3,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "ghatiya",
+   "slots": [
+    "criticism"
+   ],
+   "sign": -1,
+   "intensity": 2,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "bakwaas",
+   "slots": [
+    "criticism"
+   ],
+   "sign": -1,
+   "intensity": 2,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "kachra",
+   "slots": [
+    "criticism"
+   ],
+   "sign": -1,
+   "intensity": 3,
+   "kind": "slang_word",
+   "gender": "m",
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "flop",
+   "slots": [
+    "criticism"
+   ],
+   "sign": -1,
+   "intensity": 2,
+   "kind": "slang_word",
+   "gender": "m",
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "jhand",
+   "slots": [
+    "criticism"
+   ],
+   "sign": -1,
+   "intensity": 3,
+   "kind": "slang_word",
+   "gender": "m",
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "bekaar",
+   "slots": [
+    "criticism"
+   ],
+   "sign": -1,
+   "intensity": 1,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "faltu",
+   "slots": [
+    "criticism"
+   ],
+   "sign": -1,
+   "intensity": 1,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "wahiyat",
+   "slots": [
+    "criticism"
+   ],
+   "sign": -1,
+   "intensity": 2,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "third class",
+   "slots": [
+    "criticism"
+   ],
+   "sign": -1,
+   "intensity": 2,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "dil baith raha hai",
+   "slots": [
+    "worry"
+   ],
+   "sign": -1,
+   "intensity": 2,
+   "kind": "idiom",
+   "gender": null,
+   "frame": {
+    "possessive_before": "dil",
+    "gender": "m",
+    "number": "sg"
+   },
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "dimaag fry",
+   "slots": [
+    "worry"
+   ],
+   "sign": -1,
+   "intensity": 2,
+   "kind": "idiom",
+   "gender": "m",
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "fatti padi hai",
+   "slots": [
+    "worry"
+   ],
+   "sign": -1,
+   "intensity": 3,
+   "kind": "idiom",
+   "gender": null,
+   "frame": {
+    "possessive_before": "fatti",
+    "gender": "f",
+    "number": "sg"
+   },
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "full tension",
+   "slots": [
+    "worry"
+   ],
+   "sign": -1,
+   "intensity": 1,
+   "kind": "idiom",
+   "gender": "f",
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "haath-pair phool gaye",
+   "slots": [
+    "worry"
+   ],
+   "sign": -1,
+   "intensity": 3,
+   "kind": "idiom",
+   "gender": null,
+   "frame": {
+    "possessive_before": "haath-pair",
+    "gender": "m",
+    "number": "pl"
+   },
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "jaan nikal gayi",
+   "slots": [
+    "worry"
+   ],
+   "sign": -1,
+   "intensity": 3,
+   "kind": "idiom",
+   "gender": null,
+   "frame": {
+    "possessive_before": "jaan",
+    "gender": "f",
+    "number": "sg"
+   },
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "pasine chhoot gaye",
+   "slots": [
+    "worry"
+   ],
+   "sign": -1,
+   "intensity": 3,
+   "kind": "idiom",
+   "gender": null,
+   "frame": {
+    "possessive_before": "pasine",
+    "gender": "m",
+    "number": "pl"
+   },
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "chakkar",
+   "slots": [
+    "trouble"
+   ],
+   "sign": -1,
+   "intensity": 1,
+   "kind": "slang_word",
+   "gender": "m",
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "gadbad",
+   "slots": [
+    "trouble"
+   ],
+   "sign": -1,
+   "intensity": 1,
+   "kind": "slang_word",
+   "gender": "f",
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "ghapla",
+   "slots": [
+    "trouble"
+   ],
+   "sign": -1,
+   "intensity": 2,
+   "kind": "slang_word",
+   "gender": "m",
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "jhamela",
+   "slots": [
+    "trouble"
+   ],
+   "sign": -1,
+   "intensity": 1,
+   "kind": "slang_word",
+   "gender": "m",
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "jhol",
+   "slots": [
+    "trouble"
+   ],
+   "sign": -1,
+   "intensity": 2,
+   "kind": "slang_word",
+   "gender": "m",
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "lafda",
+   "slots": [
+    "trouble"
+   ],
+   "sign": -1,
+   "intensity": 2,
+   "kind": "slang_word",
+   "gender": "m",
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "locha",
+   "slots": [
+    "trouble"
+   ],
+   "sign": -1,
+   "intensity": 2,
+   "kind": "slang_word",
+   "gender": "m",
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "panga",
+   "slots": [
+    "trouble"
+   ],
+   "sign": -1,
+   "intensity": 2,
+   "kind": "slang_word",
+   "gender": "m",
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "bacchon ka khel",
+   "slots": [
+    "ease"
+   ],
+   "sign": 1,
+   "intensity": 2,
+   "kind": "idiom",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "chutki mein",
+   "slots": [
+    "ease"
+   ],
+   "sign": 1,
+   "intensity": 1,
+   "kind": "idiom",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "left hand ka khel",
+   "slots": [
+    "ease"
+   ],
+   "sign": 1,
+   "intensity": 2,
+   "kind": "idiom",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "sorted",
+   "slots": [
+    "predicate"
+   ],
+   "sign": 1,
+   "intensity": 1,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "badiya",
+   "slots": [],
+   "sign": 1,
+   "intensity": 1,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "sahi hai",
+   "slots": [],
+   "sign": 1,
+   "intensity": 1,
+   "kind": "idiom",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  }
+ ]
+}

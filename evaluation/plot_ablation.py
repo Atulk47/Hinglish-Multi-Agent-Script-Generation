@@ -22,6 +22,8 @@ VARIANT_LABELS = {
     "no_gate1": "No Gate 1 (speaker)",
     "no_gate2": "No Gate 2 (pragmatic)",
     "no_gate3": "No Gate 3 (density)",
+    "no_acceptance_rule_gate": "No acceptance rule gate",
+    "no_validator_repair": "No validator repair",
     "no_validation_redo": "No validation/redo",
     "no_editor": "No editor",
 }

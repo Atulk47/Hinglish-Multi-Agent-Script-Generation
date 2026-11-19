@@ -54,8 +54,10 @@ def test_pick_starts_respects_size_limits():
 
 def test_segmenter_trusts_author_paragraphs_and_splits_a_block():
     seg = SceneSegmenter(use_llm=False)
-    r = seg.segment("एक वाक्य यहाँ है। दूसरा भी है।\n\nतीसरा नया दृश्य है। चौथा भी।")
-    assert r.method == "author-paragraphs" and len(r.scenes) == 2
+    # author paragraphs are atoms, merged when the story does not change and kept apart at a clear time / place shift
+    r = seg.segment("राम घर में था। उसने पानी पिया।\n\nअगले दिन वह बाज़ार गया। वहाँ उसने फल देखे।")
+    assert r.method.startswith("paragraphs") and len(r.scenes) == 2
+    assert len(seg.segment("एक वाक्य यहाँ है। दूसरा भी है।\n\nतीसरा वाक्य है। चौथा भी।").scenes) == 1
     r = seg.segment(STORY)
     assert r.method.startswith("signals") and 2 <= len(r.scenes) <= 8 and "".join(r.scenes).count("।") >= 15
     assert any(r.sentences[i].startswith(("अगले दिन", "उसी रात", "कुछ दिनों")) for i in r.starts[1:])         # cut at the time shifts
@@ -142,3 +144,15 @@ def test_ui_diff_and_summary_rendering():
     assert list(render.profiles_df(trace)["Slang allowed"]) == ["yes", "no"]
     assert "excited" in render.arcs_html(trace) and "scene_01".replace("scene_", "S") in render.arcs_html(trace)
     assert "Arav" in render.scenes_html(trace)
+
+
+def test_validation_box_lists_every_reverted_edit_and_the_checks_that_ran():
+    from ui import render
+    trace = {"comparison": [{"scene_id": "scene_01", "lines": [{"speaker": "A", "neutral": "x", "slang": "y", "changed": True}]}],
+             "validation": {"reverted": [{"scene_id": "scene_02", "edited": "Papa yaar, chalo", "why": ["respect-context:line addresses an elder"]}],
+                            "judge": True, "similarity_mode": "centred", "scenes": {"scene_01": {"failure_mode": "OK"}, "scene_02": {"failure_mode": "NO_SLANG"}}}}
+    h = render.validation_html(trace)
+    assert "1</b> edits kept" in h and "1</b> reverted" in h and "Papa yaar, chalo" in h and "respect-context" in h
+    assert "AI judge second opinion" in h and "scene 02: no_slang" in h
+    assert render.validation_html({"comparison": []}) == ""                         # older traces without a validation block still render
+    assert "Edits reverted" in render.summary_html(trace)

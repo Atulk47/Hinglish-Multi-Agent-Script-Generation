@@ -25,7 +25,7 @@ import random
 import re
 import time
 from collections import defaultdict
-from typing import List, Tuple
+from typing import List, Optional, Tuple
 
 from groq import Groq
 from dotenv import load_dotenv
@@ -211,7 +211,7 @@ _FORMAL_OR_ELDER_TAGS = {_squash(w) for w in (FORMAL_SPEAKER_WORDS | ELDER_TAG_W
 # unnamed people who speak in a scene (the Persona Agent's "extra speakers"): strangers / service roles are not slanged
 _FORMAL_OR_ELDER_TAGS |= {_squash(w) for w in ("dukaandaar", "dukandar", "dukaandar", "shopkeeper", "vendor", "driver", "guard", "waiter",
                                                "nurse", "policeman", "clerk", "stranger", "passerby", "conductor", "doctor", "pandit")}
-PLAIN_FILLER_WORDS = {"yaar", "bhai", "bro", "boss", "abe", "abey", "arre", "re", "bhaiya", "yr"}
+PLAIN_FILLER_WORDS = {"yaar", "bhai", "bro", "boss", "abe", "abey", "arre", "re", "bhaiya", "yr", "sis", "didi", "behen"}      # sis / didi / behen: an address word, no second filler on top
 
 
 PLACE_PROMPT_STRICT = """You are a Hinglish dialogue editor. Use ONE slang from this shortlist so the line sounds like a real young person talking.
@@ -251,6 +251,13 @@ class _SlotAwareClf:
 
 
 class SlangRewriter:
+    director = None                     # class-level defaults (also keep lightweight test doubles working)
+    use_director = False
+    director_owns = False
+    review_on = False                   # runtime review loop (config.SLANG_REVIEW): a second agent may revert awkward edits after the editor
+    _agentic_line = False
+    _filler_only = False                # True while a line the Director nominated for a filler ONLY (no feeling word) is being edited
+
     def __init__(self, scratchpad, intent_classifier,
                  backend: str = "auto",
                  slang_density_threshold: float = None,
@@ -262,7 +269,7 @@ class SlangRewriter:
         self.fallback_reason = None
         self._rng = random.Random(getattr(config, "SLANG_SEED", 7))   # reproducible shortlists
         self.stats = defaultdict(int)       # e.g. groq_errors: >0 means judge/rerank/tone degraded
-        self._tone_cache = {}
+        self._tone_cache = self._load_tone_cache()
         threshold = (slang_density_threshold if slang_density_threshold is not None
                      else config.SLANG_DENSITY_THRESHOLD)
         self.gate = ThreeGateController(scratchpad, slang_density_threshold=threshold)
@@ -274,6 +281,10 @@ class SlangRewriter:
         self._edit_n = 0                # all edits so far in this script
         self._scene_n = 0               # scenes processed so far in this script
         self._last = None               # last slang used (avoid back-to-back repeats)
+        self.director = None            # agents.slang_director.SlangDirector: scene-level plan replacing Gate 2 + Gate 3 (see _decide)
+        self.use_director = False
+        self.director_owns = False      # agentic mode: the Director ALSO replaces Gate 1, the respectful-line regex, the serious-scene word list and the filler cap
+        self._agentic_line = False      # True while a line is being decided by the Director alone (set per line in rewrite_line)
 
         self.backend = self._resolve_backend(backend)
         if self.backend == "qwen":
@@ -446,6 +457,12 @@ class SlangRewriter:
             raise RuntimeError("Qwen editor returned no tokens on smoke test")
 
     def _qwen_edit(self, utterance: str, shortlist) -> str:
+        """The editor's output with subject-bound idioms put in their grammatical frame ("Mujhe dil baith raha hai" -> "Mera dil baith raha hai")."""
+        from agents.edit_gate import repair_frame
+        from agents.edit_gate import repair_person_agreement
+        return repair_person_agreement(repair_frame(self._qwen_edit_raw(utterance, shortlist), shortlist), shortlist, self._speaker_gender(utterance))
+
+    def _qwen_edit_raw(self, utterance: str, shortlist) -> str:
         # shortlist format: the model picks the best-fitting slang from the candidates
         # (code supplies colourful options) and inserts it naturally. On a v2 adapter it
         # may also return the line unchanged to signal "none of these fit".
@@ -502,11 +519,17 @@ class SlangRewriter:
             if n < 4 or n > 32:
                 continue
             score = ((2.0 if self._line_polarity(core) != 0 else 0.0)
+                     + (2.0 if self._has_emotion_slot(core) else 0.0)          # joy / pride / anger / like sentence first: the praise sentence is the fallback
                      + (1.0 if core.endswith("!") else 0.0)
                      - (1.5 if core.endswith("?") else 0.0) - n / 60)
             scored.append((score, a, b))
         scored.sort(key=lambda t: -t[0])
         return [(a, b) for _, a, b in scored[:max(1, limit)]]
+
+    @staticmethod
+    def _has_emotion_slot(core: str) -> bool:
+        from agents.edit_gate import slot_candidates, EXTRA_SLOTS
+        return any(sl["type"] in EXTRA_SLOTS for sl in slot_candidates(core))
 
     def _pick_sentence(self, utt: str):
         r = self._pick_sentences(utt, 1)
@@ -612,17 +635,43 @@ class SlangRewriter:
             return p
         if getattr(self, "groq_client", None) is None or not getattr(config, "QWEN_LLM_TONE", True):
             return 0
-        key = core.lower()
+        # REPEATABILITY: the answer is cached on disk by (model, prompt) like the Director's plans, so a re-run reads the same tone instead of asking the LLM
+        # again (an LLM at temperature 0 is still not bit-stable, and a rate-limit error used to silently become "neutral" for the rest of the run).
+        import hashlib
+        prompt = TONE_PROMPT.format(core=core)
+        key = hashlib.sha1((str(getattr(config, "GROQ_MODEL", "")) + "|" + prompt).encode("utf-8")).hexdigest()
         if key in self._tone_cache:
             return self._tone_cache[key]
         pol = 0
         try:
-            w = self._groq_text(TONE_PROMPT.format(core=core), 300).strip().lower()
+            w = self._groq_text(prompt, 300).strip().lower()
             pol = 1 if w.startswith("pos") else (-1 if w.startswith("neg") else 0)
         except Exception:
             self.stats["groq_errors"] += 1
+            return 0                                   # a failed call is NOT remembered (run.valid_for_analysis already counts groq_errors)
         self._tone_cache[key] = pol
+        self._save_tone_cache()
         return pol
+
+    def _load_tone_cache(self) -> dict:
+        try:
+            with open(getattr(config, "SLANG_TONE_CACHE", "outputs/_tone_cache.json"), encoding="utf-8") as f:
+                return {k: int(v) for k, v in json.load(f).items()}
+        except Exception:
+            return {}
+
+    def _save_tone_cache(self):
+        path = getattr(config, "SLANG_TONE_CACHE", "outputs/_tone_cache.json")
+        if not path:
+            return
+        try:
+            os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
+            tmp = path + ".tmp"
+            with open(tmp, "w", encoding="utf-8") as f:
+                json.dump(self._tone_cache, f, ensure_ascii=False)
+            os.replace(tmp, path)
+        except Exception:
+            pass
 
     def _rerank(self, core: str, pool, tone: str):
         """LLM keeps only the pool slangs that fit THIS clause. Returns a list (maybe empty) or
@@ -679,7 +728,8 @@ class SlangRewriter:
                      if c.lower() in cand.lower() and c.lower() not in low_orig), None)
         if used is None:
             return False, None, "off-list"
-        if not self._keeps_meaning(utterance, cand):
+        from agents.edit_gate import span_limit
+        if not self._keeps_meaning(utterance, cand, span_max=span_limit(used)):
             return False, used, "drift"
         # the word-list polarity is only a partial view ("darr hai ... nakam ho jaunga" has no listed
         # word); fall back to the clause tone the editor already worked out (LLM tone) so a positive
@@ -693,7 +743,7 @@ class SlangRewriter:
         return True, used, ""
 
     @staticmethod
-    def _keeps_meaning(neutral: str, output: str) -> bool:
+    def _keeps_meaning(neutral: str, output: str, span_max: int = 5) -> bool:
         """Lexical drift guard, calibrated on the gold pairs.
 
         Good edits often SWAP a short evaluative phrase for slang ("bahut accha" ->
@@ -724,7 +774,7 @@ class SlangRewriter:
         while s < min(len(nlist), len(blist)) - p and nlist[-1 - s] == blist[-1 - s]:
             s += 1
         span = nlist[p:len(nlist) - s]
-        if 0 < len(span) <= 5:
+        if 0 < len(span) <= span_max:
             allowed_drop = max(allowed_drop, len({w for w in span if len(w) >= 3}))
         return dropped <= allowed_drop and added <= 7
 
@@ -809,6 +859,15 @@ class SlangRewriter:
             print(f"  Lexicon load warning: {e} — minimal fallback pool.")
         if not filler_pool:
             filler_pool = {"yaar", "bhai", "bro", "boss"}
+        try:                                    # phrases promoted into the pool after native-speaker review carry control labels: they join the control pools
+            from agents import edit_gate                # (and therefore the polarity guards); legacy entries have no labels, so nothing changes for them
+            for e in edit_gate.POOL_ENTRIES:
+                for c in e.get("controls") or []:
+                    by_control[c].add(e["phrase"])
+                if e.get("controls"):
+                    by_function["idiom" if e.get("kind") == "idiom" else "slang_eval"].add(e["phrase"])
+        except Exception:
+            pass
         return ({k: sorted(v) for k, v in by_control.items()},
                 {k: sorted(v) for k, v in by_function.items()},
                 sorted(filler_pool))
@@ -951,13 +1010,43 @@ class SlangRewriter:
             return []
         base = {"vocative": ["yaar", "bro", "bhai"], "opener": ["arre", "yaar"], "reassure": ["yaar", "chill", "arre"],
                 "urge": ["abey", "yaar"], "exclaim": ["arre", "yaar"]}[kind]
+        from agents.edit_gate import register_ok, setting_is_traditional
+        base = [f for f in base if register_ok(f)]                      # no "bro" / "chill" in a village or period story
+        base = [f for f in base if self._used[f] < int(getattr(config, "SLANG_FILLER_REPEAT_MAX", 2))]       # the same filler at most twice in a story
+        if base and setting_is_traditional() and self._addressee_is_not_a_peer(core):
+            return []                                                  # no "yaar" between spouses, parent and child, master and servant ...
         return sorted(base, key=lambda f: (self._used[f], base.index(f)))
 
-    def _slot_shortlist(self, core: str):
+    def _speaker_gender(self, utterance: str):
+        """'m' / 'f' / None: from the Persona profile of the current speaker."""
+        from agents.name_utils import match_profile
+        g = (match_profile(getattr(self, "_all_profiles", None) or {}, getattr(self, "_cur_speaker", "") or "") or {}).get("gender")
+        return {"male": "m", "female": "f"}.get(g)
+
+    _NON_PEER = re.compile(r"husband|wife|spouse|married|father|mother|(?<![a-z])dad|papa|(?<![a-z])mom(?![a-z])|mummy|(?<![a-z])son(?![a-z])|daughter|in-law|uncle|aunt|grand|elder|"
+                           r"teacher|boss|employer|master|landlord|servant|senior|priest", re.I)
+
+    def _addressee_is_not_a_peer(self, core: str) -> bool:
+        """True when a named person in the line is related to the current speaker as spouse / parent / child / in-law / superior (relationships come
+        from the Persona Agent). Only consulted in traditional settings, where such pairs do not call each other "yaar"."""
+        from agents.name_utils import match_profile, same_person
+        profs = getattr(self, "_all_profiles", None) or {}
+        me = match_profile(profs, getattr(self, "_cur_speaker", "") or "")
+        rels = (me or {}).get("relationship") or {}
+        names = re.findall(r"(?<![A-Za-z])[A-Z][a-z]+(?![A-Za-z])", core)
+        for other, r in rels.items():
+            if any(same_person(other, n) for n in names) and self._NON_PEER.search(str(r.get("relation", ""))):
+                return True
+        return False
+
+    def _slot_shortlist(self, core: str, extra_only: bool = False):
         """MOOD route shortlist built from the sentence's own slot(s): only slangs that fit the KIND of word being replaced
         (praise / criticism / worry / trouble / ease), least-used first. -> (shortlist, sign or 0)"""
         from agents.edit_gate import slot_candidates
         slots = slot_candidates(core)
+        if extra_only:                                  # joy / pride / anger / like only: a praise word on the same line must not crowd them out
+            from agents.edit_gate import EXTRA_SLOTS
+            slots = [sl for sl in slots if sl["type"] in EXTRA_SLOTS]
         if getattr(self, "_serious", False):            # hospital / injury scene: no celebratory slang on any line of it
             slots = [sl for sl in slots if sl["sign"] < 0]
         if not slots:
@@ -984,6 +1073,10 @@ class SlangRewriter:
 
     def _filler_allowed(self) -> bool:
         """Fillers are the WEAK option: at most 2 per script, growing by 0.4 per extra scene (a 15-scene story: ~6)."""
+        if getattr(self, "_scene_fillers", 0) >= int(getattr(config, "SLANG_MAX_FILLERS_PER_SCENE", 1)):
+            return False                        # at most one filler per scene: "yaar" / "arre" must not be the only slang a demo shows
+        if self._agentic_line:                  # the Director owns density: its per-scene cap replaces the script-wide filler cap
+            return True
         return self._filler_n < max(2, int(0.4 * self._scene_n + 0.5))
 
     def _repeat_blocked(self, used) -> bool:
@@ -996,6 +1089,7 @@ class SlangRewriter:
         self._edit_n += 1
         if route == "filler":
             self._filler_n += 1
+            self._scene_fillers = getattr(self, "_scene_fillers", 0) + 1
 
     def _qwen_sample(self, utterance: str, shortlist, n: int):
         """n SAMPLED alternatives in one batched call (a second chance for lines where the greedy output was an
@@ -1014,7 +1108,8 @@ class SlangRewriter:
         res = []
         for row in out:
             t = self.qwen_tok.decode(row[enc["input_ids"].shape[1]:], skip_special_tokens=True).strip()
-            res.append(t.split("\n")[0].strip().strip('"'))
+            from agents.edit_gate import repair_frame
+            res.append(repair_frame(t.split("\n")[0].strip().strip('"'), shortlist))
         return res
 
     def _accept(self, core, cand, shortlist, pol):
@@ -1026,28 +1121,68 @@ class SlangRewriter:
             ok, why = False, "repeat"
         return ok, used, why
 
-    def _edit_sentence(self, core: str, intent: str, emotion: str):
+    _VOC = "|".join(sorted(PLAIN_FILLER_WORDS, key=len, reverse=True))
+    _VOC_PRE = re.compile(r"^((?:[A-Za-z']+\s+){0,2}(?:" + _VOC + r")\s*,\s*)(.+)$", re.I | re.S)
+    _VOC_SUF = re.compile(r"^(.+?)(\s*,\s*(?:" + _VOC + r")\s*([.!?]*))$", re.I | re.S)
+
+    @classmethod
+    def _split_vocative(cls, core: str):
+        """'Bhaiya, ... khushi ho rahi hai!' -> ('Bhaiya, ', '... khushi ho rahi hai!', '') ; '... plan hai, Bhaiya!' -> ('', '... plan hai!', ', Bhaiya!').
+        The trained editor abstains on any line that already carries an address word (it was taught 'already casual'), so a feeling word in such a line
+        never got edited. The address word is set aside, the rest is edited like any other sentence, and the address word is put back."""
+        m = cls._VOC_PRE.match(core.strip())
+        if m and len(m.group(2).split()) >= 3:
+            rest = m.group(2)
+            return m.group(1), (rest[0].upper() + rest[1:]) if rest[0].islower() else rest, ""
+        m = cls._VOC_SUF.match(core.strip())
+        if m and len(m.group(1).split()) >= 3:
+            return "", m.group(1) + (m.group(3) or "."), m.group(2)
+        return "", core, ""
+
+    def _edit_sentence(self, core: str, intent: str, emotion: str, _stripped: bool = False):
         """Try to edit ONE sentence with the trained model alone.
         Routes: 'mood'   - the sentence contains a word a slang can naturally replace (bahut accha, kharab, chinta, problem,
                            aasaani se ...): the shortlist is built FROM THAT SLOT (only slangs of the right kind);
                 'filler' - a filler only where a person would say it (after a name, after 'Haan', on reassurance, on '!').
         -> (edited_or_None, slang_used, engine, notes, rejects, route)"""
         notes, rejects = [], []
-        if self._has_filler(core):
-            return None, None, None, ["already-casual"], [], None
+        # A sentence that already carries a filler / address word ("Bhaiya, ...", "yaar") gets no SECOND filler, but a feeling word in it can still be
+        # swapped for slang ("Bhaiya, ... mujhe bahut khushi ho rahi hai"). The old rule skipped the whole sentence, which silenced most lines of stories
+        # where siblings say "Bhaiya" in every line.
+        has_filler = self._has_filler(core)
+        if has_filler and not _stripped and getattr(config, "SLANG_VOCATIVE_STRIP", True):
+            pre, rest, suf = self._split_vocative(core)
+            if (pre or suf) and not self._has_filler(rest):
+                cand, used, eng, nts, rej, route = self._edit_sentence(rest, intent, emotion, _stripped=True)
+                if cand is None:
+                    return cand, used, eng, nts, rej, route
+                cand = cand.strip()
+                if suf:
+                    cand = cand.rstrip(".!?")
+                if pre and rest[:1].isupper() and not core[len(pre):len(pre) + 1].isupper() and cand[:1].isupper():
+                    cand = cand[0].lower() + cand[1:]                      # we capitalised the rest for the model; put the original case back
+                return pre + cand + suf, used, eng, nts, rej, route
         pol = self._clause_polarity(core)
         rules = getattr(config, "QWEN_GATE", "rules") == "rules"
         use_slots = rules and getattr(config, "SLANG_SLOT_SHORTLIST", True)
         mood_short, slot_sign = ([], 0)
         if use_slots:
             mood_short, slot_sign = self._slot_shortlist(core)
-            routes = (["mood"] if mood_short else []) + ["filler"]
+            extra_short, extra_sign = self._slot_shortlist(core, extra_only=True)
+            # a line with BOTH a praise word and an emotion word (joy / pride / anger / like) first tries the emotion slot alone ("mood_x"), then the merged list
+            routes = (["mood_x"] if extra_short and sorted(extra_short) != sorted(mood_short) else []) + (["mood"] if mood_short else []) + ["filler"]
         else:                                   # legacy behaviour (LLM-reranked tone pool)
             slot = True
             if rules:
                 from agents.edit_gate import has_slot
                 slot = has_slot(core)
             routes = ["mood", "filler"] if (pol != 0 and slot) else ["filler"]
+        if self._filler_only:                   # nominated for a filler only: no feeling word to swap, so no mood route
+            routes = ["filler"]
+        if has_filler or _stripped:             # no second filler: the address word is still in the sentence (or is re-attached afterwards)
+            routes = [r for r in routes if r != "filler"]
+            if not routes:
+                return None, None, None, ["already-casual"], [], None
         for route in routes:
             hint = pol
             if route == "filler":
@@ -1060,6 +1195,8 @@ class SlangRewriter:
                 if not shortlist:
                     notes.append("no-natural-filler")
                     continue
+            elif use_slots and route == "mood_x":
+                shortlist, hint = list(extra_short), (extra_sign or pol)
             elif use_slots:
                 shortlist, hint = list(mood_short), (slot_sign or pol)
             else:
@@ -1070,29 +1207,28 @@ class SlangRewriter:
                 if shortlist is None:           # reranker switched off by config -> plain random shortlist
                     shortlist = self._select_candidates(intent, emotion, k=self._qwen_k, polarity=pol)
             if shortlist:
-                from agents.edit_gate import FEMALE_NAMES
-                if {w.lower() for w in re.findall(r"[A-Za-z]+", core)} & FEMALE_NAMES:
-                    shortlist = [x for x in shortlist if x.lower() != "bhai"]
+                from agents.edit_gate import drop_male_address_for_female_names
+                shortlist = drop_male_address_for_female_names(shortlist, core)
             if not shortlist:
                 continue
             cand = self._qwen_edit(core, shortlist)
             ok, used, why = self._accept(core, cand, shortlist, hint)
             if ok:
-                return cand, used, "qwen-lora", notes, rejects, route
+                return cand, used, "qwen-lora", notes, rejects, ("mood" if route == "mood_x" else route)
             notes.append(why)
             rejects.append((why, cand or ""))
             # mood route, model abstained: ask once more with the 3 least-used slot slangs (a shorter list is easier to pick from)
-            if route == "mood" and use_slots and len(shortlist) > 3 and getattr(config, "QWEN_MOOD_RETRY", True):
+            if route in ("mood", "mood_x") and use_slots and len(shortlist) > 3 and getattr(config, "QWEN_MOOD_RETRY", True):
                 small = shortlist[:3]
                 cand = self._qwen_edit(core, small)
                 ok, used, why = self._accept(core, cand, small, hint)
                 if ok:
-                    return cand, used, "qwen-lora", notes, rejects, route
+                    return cand, used, "qwen-lora", notes, rejects, ("mood" if route == "mood_x" else route)
                 notes.append("retry:" + why)
                 rejects.append(("retry:" + why, cand or ""))
             # optional second chance: a few SAMPLED outputs from the same trained model (off by default; added 0 edits in a test)
             n = int(getattr(config, "QWEN_SAMPLES", 0))
-            if route == "mood" and n > 0:
+            if route in ("mood", "mood_x") and n > 0:
                 best = None
                 for c in self._qwen_sample(core, shortlist, n):
                     ok, used, why = self._accept(core, c, shortlist, hint)
@@ -1111,7 +1247,7 @@ class SlangRewriter:
                     c = self._place_with_groq(core, shortlist, strict=True)
                     ok, used, why = self._accept(core, c, shortlist, hint)
                     if ok:
-                        return c, used, "groq-fallback", notes, rejects, route
+                        return c, used, "groq-fallback", notes, rejects, ("mood" if route == "mood_x" else route)
                     notes.append("groq:" + why)
         return None, None, None, notes, rejects, None
 
@@ -1131,16 +1267,72 @@ class SlangRewriter:
         self._filler_n = 0
         self._edit_n = 0
         self._scene_n = 0
+        if getattr(self, "director", None) is not None:
+            self.director.reset()
+
+    def _apply_review(self, sid: str, out_lines: List[str], decisions: List[dict], slots: List[int],
+                      neutral_utts: List[str], events: Optional[dict]) -> int:
+        '''Second agent re-reads the EDITED scene and may revert edits it finds wrong / garbled / out of place / forced. Reverted lines go back to the neutral text.
+        Fails open (every edit kept) if the reviewer is unreachable. Returns the number of reverted edits.'''
+        if not (self.review_on and self.director is not None and any(d.get("applied") for d in decisions)):
+            return 0
+        edited_items, neutral_items = [], []
+        for k, d in enumerate(decisions):
+            sp = d["speaker"]
+            edited_items.append((sp, out_lines[slots[k]].split(":", 1)[1].strip()))
+            neutral_items.append((sp, neutral_utts[k]))
+        verdicts = self.director.review_scene(sid, neutral_items, edited_items, events)
+        if not verdicts:
+            return 0
+        reverted = 0
+        for k, v in verdicts.items():
+            d = decisions[k]
+            d["reviewed"] = v
+            if not v["keep"] and d.get("applied"):
+                d["reverted_slang"], d["slang"] = d.get("slang"), None
+                d["applied"] = False
+                d["reason"] = f"director review: {v['why']}"
+                out_lines[slots[k]] = f"{d['speaker']}: {neutral_utts[k]}"
+                reverted += 1
+        return reverted
+
+    def attach_director(self, director, owns: Optional[bool] = None, review: Optional[bool] = None) -> None:
+        """Enable the scene-level Slang Director (agents/slang_director.py). Pass None to go back to the line-by-line gates.
+        owns=True (default: config.SLANG_AGENTIC) makes the Director the ONLY decision maker for the lines it plans; the validator still audits the result."""
+        self.director = director
+        self.use_director = director is not None
+        self.director_owns = bool(getattr(config, "SLANG_AGENTIC", True) if owns is None else owns)
+        self.review_on = bool(getattr(config, "SLANG_REVIEW", False) if review is None else review)
+
+    def _decide(self, speaker: str, utterance: str, scene_id: str, plan_line: Optional[dict]) -> dict:
+        """The eligibility decision for one line. Without a Director plan this is exactly the old three gates. With one:
+        Gate 1 (elder / authority / slang level 0) still vetoes, the Director's per-line verdict replaces Gate 2 (intent) and Gate 3 (density), and the
+        nominated mood becomes the intent label the editor already understands. Permissive retry mode (a scene that got no slang) uses the old gates."""
+        if plan_line is None or self.gate._permissive:
+            return self.gate.run_all_gates(speaker, utterance, scene_id, _SlotAwareClf(self.intent_clf))
+        if not self._agentic_line and not self.gate.gate1_speaker_eligible(speaker):    # agentic mode: the Director saw the same cast and relationships
+            return {"go": False, "gate_stopped": 1, "intent": None,
+                    "reason": f"Speaker '{speaker}' is elder/authority or slang_level=0"}
+        why = plan_line.get("why", "")
+        if not plan_line.get("slang"):
+            if plan_line.get("filler") and self._agentic_line:      # a casual peer line with no feeling word: the editor may add ONE gated filler, nothing else
+                return {"go": True, "gate_stopped": None, "intent": "CASUAL_ASSERTION", "reason": f"director: filler only - {why}",
+                        "director": plan_line, "filler_only": True}
+            return {"go": False, "gate_stopped": "director", "intent": None, "reason": f"director: {why}", "director": plan_line}
+        from agents.slang_director import REGISTER_TO_INTENT
+        return {"go": True, "gate_stopped": None, "intent": REGISTER_TO_INTENT.get(plan_line.get("register"), "CASUAL_ASSERTION"),
+                "reason": f"director: {plan_line.get('register')} - {why}", "director": plan_line}
 
     def _emotion_of(self, speaker: str) -> str:
         from agents.name_utils import match_profile
         profiles = self.scratchpad.read("character_profiles") or {}
         return (match_profile(profiles, speaker) or {}).get("current_emotion", "neutral")
 
-    def rewrite_line(self, speaker: str, utterance: str, scene_id: str) -> Tuple[str, dict]:
+    def rewrite_line(self, speaker: str, utterance: str, scene_id: str, plan_line: Optional[dict] = None) -> Tuple[str, dict]:
         # Upstream failure marker (Agent 3 writes "[generation failed after N attempts]" when
         # Groq is rate-limited). It is not dialogue - never "add slang" to it (a real run once
         # produced "Generation failed after 3 attempts, ekdum solid!").
+        self._cur_speaker = speaker
         if "[generation failed" in utterance.lower():
             return utterance, {"applied": False, "go": False, "gate_stopped": None,
                                "intent": None,
@@ -1148,8 +1340,9 @@ class SlangRewriter:
         _tag = speaker.strip().upper()
         _allow = (getattr(config, "SLANG_ALLOW_UNATTRIBUTED", False)
                   and _tag in {"SPEAKER", "UNKNOWN", "VOICE"})
-        if (_tag in UNATTRIBUTED_SPEAKERS and not _allow) or ({_squash(t) for t in re.findall(r"[A-Za-z]+", _tag)}
-                                                              & _FORMAL_OR_ELDER_TAGS):
+        self._agentic_line = bool(plan_line is not None and self.use_director and self.director_owns and not self.gate._permissive)
+        if not self._agentic_line and ((_tag in UNATTRIBUTED_SPEAKERS and not _allow) or ({_squash(t) for t in re.findall(r"[A-Za-z]+", _tag)}
+                                                                                          & _FORMAL_OR_ELDER_TAGS)):
             # unknown or formal speaker = register unknown/formal; the safe default is to leave
             # the line alone
             return utterance, {"applied": False, "go": False, "gate_stopped": None, "intent": None,
@@ -1161,14 +1354,17 @@ class SlangRewriter:
             self._target_intensity = emotion_at(_prof, scene_id)["intensity"] if _prof and _prof.get("emotion_arc") else None
         except Exception:
             self._target_intensity = None
-        decision = self.gate.run_all_gates(speaker, utterance, scene_id, _SlotAwareClf(self.intent_clf))
+        if plan_line and plan_line.get("slang") and plan_line.get("strength"):
+            self._target_intensity = plan_line["strength"]       # the Director read this line in context: its strength wins
+        decision = self._decide(speaker, utterance, scene_id, plan_line)
+        self._filler_only = bool(decision.get("filler_only"))
         meta = {"applied": False, **decision}
         if not decision["go"]:
             return utterance, meta
 
         # Register guard: a grateful / respectful / farewell line gets NO slang,
         # even from a peer (avoids e.g. "dhanyavaad ... muft-khor").
-        if self._is_respectful(utterance):
+        if not self._agentic_line and self._is_respectful(utterance):
             meta["reason"] = "respectful/grateful line — slang skipped"
             return utterance, meta
 
@@ -1268,6 +1464,12 @@ class SlangRewriter:
         except Exception:
             profiles = {}
         from agents import edit_gate
+        self._all_profiles = profiles
+        # per-STORY knowledge must not leak into the next story of a long-running session: back to the built-in baseline, then add this story's people
+        edit_gate.FEMALE_NAMES.clear()
+        edit_gate.FEMALE_NAMES.update(edit_gate._BASE_FEMALE_NAMES)
+        edit_gate.RESPECT_ADDR.clear()
+        edit_gate.RESPECT_ADDR.update(edit_gate._BASE_RESPECT_ADDR)
         for name, p in profiles.items():
             toks = {t for t in re.findall(r"[a-z]+", name.lower()) if len(t) >= 3}
             if p.get("gender") == "female":
@@ -1281,22 +1483,41 @@ class SlangRewriter:
         for scene in neutral_script:
             sid = scene["scene_id"]
             self._scene_n += 1
+            self._scene_fillers = 0                       # the one-filler-per-scene allowance starts again
             from agents.edit_gate import SERIOUS_SCENE
             self._serious = bool({w for w in re.findall(r"[a-z]+", scene["dialogue"].lower())} & SERIOUS_SCENE)
             out_lines, decisions = [], []
+            plan = None                                    # the Slang Director reads the whole scene once (None -> the classic line-by-line gates)
+            if self.use_director and self.director is not None and not self.gate._permissive:
+                plan = self.director.plan_scene(sid, scene["dialogue"], scene.get("events"))
+                if plan and self.director_owns:
+                    self._serious = False                  # the Director judged the mood of the whole scene itself
+            k = 0
+            slots, neutral_utts = [], []                  # where each spoken line sits in out_lines, and its neutral text (for the review loop)
             for line in scene["dialogue"].split("\n"):
                 if ":" in line:
                     speaker, utt = line.split(":", 1)
                     speaker, utt = speaker.strip(), utt.strip()
                     if not utt:
                         continue
-                    new_utt, meta = self.rewrite_line(speaker, utt, sid)
+                    new_utt, meta = self.rewrite_line(speaker, utt, sid, plan["lines"].get(k) if plan else None)
+                    k += 1
+                    slots.append(len(out_lines))
+                    neutral_utts.append(utt)
                     out_lines.append(f"{speaker}: {new_utt}")
                     decisions.append({"speaker": speaker, **meta})
                 elif line.strip():
                     out_lines.append(line)
-            slang_script.append({"scene_id": sid, "dialogue": "\n".join(out_lines),
-                                 "decisions": decisions})
+            n_rev = self._apply_review(sid, out_lines, decisions, slots, neutral_utts, scene.get("events")) if plan else 0
+            scene_out = {"scene_id": sid, "dialogue": "\n".join(out_lines), "decisions": decisions}
+            if plan and self.review_on:
+                scene_out["review"] = {"edits": sum(1 for d in decisions if d.get("applied")) + n_rev, "reverted": n_rev}
+            if plan:
+                scene_out["director"] = {"scene_read": plan.get("scene_read", ""),
+                                         "nominated": sum(1 for v in plan["lines"].values() if v["slang"]),
+                                         "filler_only": sum(1 for v in plan["lines"].values() if v.get("filler"))}
+                self.director.note_used([d.get("slang") for d in decisions if d.get("applied")])
+            slang_script.append(scene_out)
             used = [d.get("slang") for d in decisions if d.get("applied")]
             eng = {}
             for d in decisions:

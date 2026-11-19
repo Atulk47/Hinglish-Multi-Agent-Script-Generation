@@ -64,6 +64,7 @@ def summary_html(trace) -> str:
     seg = trace.get("segmentation") or {}
     k = [("Scenes", len(comp)), ("Characters", len(trace.get("character_profiles") or {})), ("Dialogue lines", len(lines)),
          ("Lines with slang", len(edited)), ("Distinct slangs", len(slangs)),
+         ("Edits reverted", len((trace.get("validation") or {}).get("reverted") or [])),
          ("Text pipeline", f"{trace.get('seconds_pipeline', 0):.0f}s"), ("Cloud cost", f"${trace.get('llm_cost_usd', 0):.3f}")]
     if "audio" in trace:
         k.insert(5, ("Audio", f"{trace['audio']['slang']['duration_s'] / 60:.1f} min"))
@@ -122,6 +123,27 @@ def arcs_html(trace) -> str:
                  '<div style="font-size:12px;opacity:.6;margin-top:6px">Each cell: the emotion the Persona Agent assigned to that character in that scene (! = stronger).</div>'
 
 
+def validation_html(trace) -> str:
+    """What the validator did: which checks ran, and every edit it reverted to the neutral line (with the reason)."""
+    v = trace.get("validation")
+    if not v:
+        return ""
+    comp = trace.get("comparison") or []
+    kept = sum(1 for sc in comp for l in sc["lines"] if l.get("changed"))
+    rev = v.get("reverted") or []
+    mode = ("edit audit + centred MuRIL" if v.get("similarity_mode") == "centred" else "edit audit + raw MuRIL (no calibration file)")         + (" + AI judge second opinion (Claude Haiku + Gemini Flash)" if v.get("judge") else "")
+    rows = "".join(f'<div class="row"><div class="who">{html.escape(str(r.get("scene_id", "")).replace("_", " "))}'
+                   f'<small>{html.escape(", ".join(r.get("why") or [])[:90])}</small></div>'
+                   f'<div class="neu">{html.escape(str(r.get("edited", "")))}</div></div>' for r in rev)
+    chips = "".join(f'<span class="chip">{html.escape(sid.replace("_", " "))}: {html.escape(str(d.get("failure_mode") or "ok").lower())}</span>'
+                    for sid, d in (v.get("scenes") or {}).items())
+    body = (f'<div style="font-size:13px;opacity:.8">Checks: {html.escape(mode)}.<br><b>{kept}</b> edits kept, <b>{len(rev)}</b> reverted to the neutral line.</div>'
+            + (f'<div style="margin-top:6px;font-size:12px;opacity:.6">Reverted (shown as originally edited):</div>{rows}' if rev else
+               '<div class="neu" style="margin-top:6px">No edit needed reverting.</div>')
+            + (f'<div style="margin-top:8px">{chips}</div>' if chips else ""))
+    return f'<div class="card"><h4>Validation</h4>{body}</div>'
+
+
 def comparison_html(trace) -> str:
     cols = _color_map(trace)
     cards = []
@@ -133,13 +155,14 @@ def comparison_html(trace) -> str:
             c = cols.get(l["speaker"].lower(), "#9ca3af")
             reason = ""
             if not l.get("changed"):
-                reason = f' <span style="opacity:.45;font-size:11px">(kept neutral{": " + str(l["gate_stopped"]) if l.get("gate_stopped") else ""})</span>'
+                why = f'review reverted: {l["review_why"]}' if l.get("review_why") else f'director: {l["director_why"]}' if l.get("director_why") else (str(l["gate_stopped"]) if l.get("gate_stopped") else "")
+                reason = f' <span style="opacity:.45;font-size:11px">(kept neutral{": " + html.escape(why) if why else ""})</span>'
             show_neutral = f'<div class="neu">{n_h}</div>' if l.get("changed") else ""
             rows.append(f'<div class="row"><div class="who" style="color:{c}">{html.escape(l["speaker"].title())}'
                         f'<small>{emo["emotion"]} &middot; {emo["intensity"]}</small></div>'
                         f'<div style="flex:1">{show_neutral}<div class="slg">{s_h}{reason}</div></div></div>')
         cards.append(f'<div class="card"><h4>{sc["scene_id"].replace("_", " ")} &middot; {html.escape(sc.get("location") or "")}</h4>{"".join(rows)}</div>')
-    return CSS + "".join(cards)
+    return CSS + "".join(cards) + validation_html(trace)
 
 
 def timeline_df(trace, variant="slang") -> pd.DataFrame:

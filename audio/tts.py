@@ -340,7 +340,8 @@ class FakeBackend:
             if not os.path.exists(path):
                 n = max(0.4, 0.06 * len(j["text"]))
                 t = np.linspace(0, n, int(24000 * n), endpoint=False)
-                f = 180 + (abs(hash(j["voice"])) % 120)
+                import zlib                                      # stable across processes (the built-in hash() of a str changes with PYTHONHASHSEED)
+                f = 180 + (zlib.crc32(str(j["voice"]).encode("utf-8")) % 120)
                 sig = (0.3 * np.sin(2 * np.pi * f * t) * np.hanning(len(t))).astype(np.float32)
                 sig = np.concatenate([np.zeros(2400, np.float32), sig, np.zeros(2400, np.float32)])
                 sf.write(path, sig, 24000)

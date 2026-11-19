@@ -70,6 +70,10 @@ def build_plan(trace: dict, variant: str, narrator: bool = True) -> List[dict]:
         sid = sc["scene_id"]
         if narrator:
             loc = (events.get(sid) or {}).get("location") or ""
+            from agents.grounding import is_unknown_location
+            if is_unknown_location(loc):                          # a scene whose place the story never names: the narrator must not announce "Unknown"
+                loc = ""
+            loc = (loc[:1].upper() + loc[1:]) if loc else loc
             line = f"Scene {_scene_number(sid)}." + (f" {loc.strip().rstrip('.')}." if loc else "")
             n = voices.NARRATOR
             plan.append({"kind": "narration", "scene_id": sid, "speaker": "Narrator", "text": line, "tts_text": line,

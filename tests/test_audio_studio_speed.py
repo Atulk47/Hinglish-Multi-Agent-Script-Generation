@@ -101,7 +101,7 @@ def test_agent1_extracts_scenes_concurrently_and_links_them():
     from agents.agent1_narrative import NarrativeAnalyst
     a = NarrativeAnalyst.__new__(NarrativeAnalyst)
 
-    def fake_llm(prompt):
+    def fake_llm(prompt, max_tokens=1500, client=None):
         sid = [w for w in prompt.split('"') if w.startswith("scene_")][0]
         return json.dumps([{"scene_id": sid, "key_events": ["e"], "characters": ["Ananya"], "scene_goal": f"goal of {sid}",
                             "location": "home", "narrative_link": "Following x, Ananya now does y", "pronoun_map": {}}])

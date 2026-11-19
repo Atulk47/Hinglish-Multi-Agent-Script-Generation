@@ -93,9 +93,14 @@ Return ONLY one JSON object (no markdown fences, no commentary) with exactly thi
   "emotions": {{ "<scene_id>": {{ "<Name>": {{"emotion": "one of: {emotions}", "intensity": 1}} }} }},
   "scene_cast": {{ "<scene_id>": {{"present": ["names physically IN the scene: they act or could speak there"],
                                   "mentioned_only": ["names that are only talked ABOUT, or are elsewhere in this scene"],
-                                  "extra_speakers": ["Roman-letter role of an UNNAMED person who speaks in the scene, e.g. Dukaandaar"]}} }},
+                                  "extra_speakers": ["Roman-letter role of an UNNAMED person who speaks in the scene, e.g. Dukaandaar"],
+                                  "extra_evidence": {{"<that role>": "a quotation copied exactly from the story where that person SPEAKS (a speech verb or quoted words)"}}}} }},
+  "aliases": [ {{"alias": "<Name>", "same_as": "<Name>", "evidence": "a quotation copied exactly from the story that says these two names are the SAME person (a nickname: 'known as', 'called')"}} ],
   "secrets": [ {{"what": "a secret / surprise / hidden plan stated in the story", "hidden_from": ["Names who must NOT know it"],
-                "scenes": ["scene ids in which it is still a secret"]}} ]
+                "scenes": ["scene ids in which it is still a secret"],
+                "evidence": "a quotation copied exactly from the story text that SETS UP this secret"}} ],
+  "setting": {{"era": "contemporary|historical", "milieu": "urban|rural|campus|workplace|mixed",
+              "formality": "casual|neutral|traditional", "evidence": "a short quotation or cue from the story that shows this"}}
 }}
 Rules:
 - gender: infer from Hindi verb forms / pronouns / kinship (e.g. 'boli', 'gayi', 'rahi' = female; 'bola', 'gaya' = male).
@@ -105,11 +110,18 @@ Rules:
 - emotions: for EVERY scene list EVERY character present in that scene with the emotion they mainly feel there and an intensity
   1 (mild), 2 (clear), 3 (very strong). Use "neutral" only when the character is truly emotionless in that scene.
 - Never invent characters that are not in the known list.
+- aliases: ONLY when the story itself says two of the known names are ONE person (a nickname, "known to friends as ..."). Two different people who appear
+  together are NOT aliases. Use [] when there are none; an entry without an exact quotation from the story that states it is discarded.
 - scene_cast: a character is "present" ONLY if the text shows them in that scene's place. Someone who is merely talked about (the person a
   surprise is being planned for), or who is away (gone to the temple, at work), is "mentioned_only" and must not appear in "present".
-  Unnamed people who speak (a shopkeeper, a doctor) go in "extra_speakers".
+  Unnamed people who speak (a shopkeeper, a doctor) go in "extra_speakers" - only a PERSON who really speaks in the text (never an activity, an
+  object or a group), and only with the quotation in "extra_evidence"; without it the entry is discarded.
 - secrets: only genuine secrets or surprises that the story itself sets up (e.g. a birthday surprise kept from the birthday person). Use []
-  when there are none. Never invent one.
+  when there are none. Never invent one, never infer a hidden motive, a debt or a wrongdoing the text does not state: a secret without an exact
+  quotation from the story in "evidence" is discarded.
+- setting: era = "historical" when the story is set in the past (old-fashioned work, money, social order, period speech), else "contemporary".
+  milieu = where ordinary life in the story happens (a village / farm = rural, a city flat or cafe = urban, school / college = campus ...).
+  formality = how these people normally talk: "casual" (young friends, modern urban), "neutral", or "traditional" (village, elders, period language).
 """
 
 
@@ -160,14 +172,68 @@ class PersonaAgent:
                 devanagari_paragraphs: Optional[List[str]] = None) -> dict:
         """-> persona dict {characters, relationships, emotions, source, checks}. Never raises."""
         names = self._known_names(profile_names, event_chain)
+        self._src = [" ".join(devanagari_paragraphs or []), " ".join(c.get("text", "") for c in scene_chunks)]     # what a quotation must be found in
         scene_ids = [c["scene_id"] for c in scene_chunks]
         present = {e["scene_id"]: [n for n in (e.get("characters") or [])] for e in event_chain}
         llm = None
-        if self.client is not None and names:
+        if self.client is not None:                      # also when nobody is named: the setting and the unnamed speakers (roles) still need to be found
             llm = self._ask(names, scene_chunks, devanagari_paragraphs)
+        amap = self._aliases(llm, names, event_chain)
+        if amap:                                           # one person known by two names -> one character (the quotation proving it was checked)
+            names, present = self._apply_aliases(llm, names, event_chain, amap)
         persona = self._merge(llm, names, scene_chunks, event_chain, scene_ids, present)
+        persona["aliases"] = [{"alias": k, "canonical": v} for k, v in amap.items()]
         persona["source"] = self.last_source
         return persona
+
+    # ─────────────────────────────────────────────────────────────────────────────────────── aliases
+    def _aliases(self, llm, names, event_chain) -> Dict[str, str]:
+        """{alias: canonical} for the LLM's alias claims that are quoted from the story AND whose quotation holds both names with an alias cue."""
+        from agents import grounding as g
+        out: Dict[str, str] = {}
+        for row in (llm or {}).get("aliases") or []:
+            if not isinstance(row, dict):
+                continue
+            a, b = self._match(row.get("alias"), names), self._match(row.get("same_as"), names)
+            q = str(row.get("evidence", ""))
+            if not a or not b or a == b or not g.span_supported(q, *getattr(self, "_src", [])) or not g.names_one_person(q, a, b):
+                continue
+            count = lambda n: sum(1 for e in event_chain if n in (e.get("characters") or []))
+            canon, alias = (a, b) if count(a) > count(b) else (b, a)      # the name used in more scenes wins; a tie goes to the one the model named as the real one
+            out[alias] = canon
+        return {k: out.get(v, v) for k, v in out.items() if out.get(v, v) != k}
+
+    @staticmethod
+    def _apply_aliases(llm, names, event_chain, amap):
+        def rn(x):
+            if isinstance(x, str):
+                return amap.get(x, x)
+            if isinstance(x, list):
+                out = []
+                for i in x:
+                    j = rn(i)
+                    if not (isinstance(j, str) and j in out):
+                        out.append(j)
+                return out
+            if isinstance(x, dict):
+                out = {}
+                for k, v in x.items():
+                    if isinstance(k, str) and k in amap and amap[k] in x:
+                        continue                                           # the canonical person already has this record
+                    out[amap.get(k, k) if isinstance(k, str) else k] = rn(v)
+                return out
+            return x
+        for e in event_chain:
+            e["characters"] = rn(e.get("characters") or [])
+            if isinstance(e.get("pronoun_map"), dict):
+                e["pronoun_map"] = {k: rn(v) for k, v in e["pronoun_map"].items()}
+        if isinstance(llm, dict):
+            for key in ("characters", "relationships", "emotions", "scene_cast", "secrets"):
+                if key in llm:
+                    llm[key] = rn(llm[key])
+            llm["relationships"] = [r for r in (llm.get("relationships") or []) if not (isinstance(r, dict) and r.get("a") == r.get("b"))]
+        names = rn(list(names))
+        return names, {e["scene_id"]: list(e.get("characters") or []) for e in event_chain}
 
     # ─────────────────────────────────────────────────────────────────────────────────────── LLM call
     def _known_names(self, profile_names, event_chain):
@@ -184,15 +250,16 @@ class PersonaAgent:
         for i, ch in enumerate(scene_chunks):
             part = f"[{ch['scene_id']}]\n"
             if use_deva:
-                part += "Hindi: " + deva[i].strip()[:900] + "\n"
-            part += "Romanized: " + ch["text"].strip()[:900]
+                part += "Hindi: " + deva[i].strip()[:1500] + "\n"
+            part += "Romanized: " + ch["text"].strip()[:1500]
             blocks.append(part)
-        prompt = PROMPT.format(names=", ".join(names), scenes="\n\n".join(blocks), emotions=", ".join(EMOTIONS))
+        shown = ", ".join(names) if names else "(NONE: the story gives nobody a personal name - describe every speaking person by role in extra_speakers, with extra_evidence)"
+        prompt = PROMPT.format(names=shown, scenes="\n\n".join(blocks), emotions=", ".join(EMOTIONS))
         for attempt in range(2):
             try:
                 resp = self.client.chat.completions.create(
                     model=config.GROQ_MODEL, messages=[{"role": "user", "content": prompt}],
-                    temperature=0.0 if attempt == 0 else 0.3, max_tokens=4500)
+                    temperature=0.0 if attempt == 0 else 0.3, max_tokens=max(4500, min(12000, 600 + 260 * len(scene_chunks))))
                 d = extract_json(resp.choices[0].message.content or "")
                 if d and isinstance(d.get("characters"), dict):
                     self.last_source = "llm+rules"
@@ -343,6 +410,15 @@ class PersonaAgent:
             ment = [m for m in (self._match(x, names) for x in (rec.get("mentioned_only") or [])) if m and m not in pres]
             extras = [re.sub(r"[^A-Za-z .'-]", "", str(x)).strip()[:24] for x in (rec.get("extra_speakers") or []) if isinstance(x, str)]
             extras = [x for x in extras if len(x) >= 3][:3]
+            from agents import grounding as _g
+            evid = rec.get("extra_evidence") if isinstance(rec.get("extra_evidence"), dict) else {}
+            def _speaks(role):
+                q = next((v for k, v in evid.items() if isinstance(k, str) and re.sub(r"[^a-z]", "", k.lower()) == re.sub(r"[^a-z]", "", role.lower())), "")
+                by_quote = _g.span_supported(str(q), *getattr(self, "_src", [])) and bool(_g.spoken_lines(str(q)) or _g.speaks(str(q)))
+                return by_quote or _g.role_speaks_in(role, *getattr(self, "_src", []))        # or the role word itself precedes a speech verb in the story
+            kept_extras = [x for x in extras if _speaks(x)]
+            checks["extra_speakers_ungrounded"] = checks.get("extra_speakers_ungrounded", 0) + (len(extras) - len(kept_extras))
+            extras = kept_extras
             fallback = False
             if not pres:                                                   # LLM silent / failed: Agent 1's list, as before
                 pres = [self._match(c, names) or c for c in (ev.get("characters") or [])]
@@ -354,13 +430,44 @@ class PersonaAgent:
                 continue
             hidden = [m for m in (self._match(x, names) for x in (sc.get("hidden_from") or [])) if m]
             what = str(sc.get("what", "")).strip()[:180]
+            from agents import grounding
+            ev_q = str(sc.get("evidence", ""))
+            if what and hidden and not (grounding.span_supported(ev_q, *getattr(self, "_src", [])) and grounding.shows_concealment(ev_q)):
+                checks["secrets_ungrounded"] = checks.get("secrets_ungrounded", 0) + 1          # not quoted from the story -> not accepted into the scratchpad
+                continue
             if what and hidden:
                 scs = [s for s in (sc.get("scenes") or []) if s in scene_ids] or list(scene_ids)
                 secrets.append({"what": what, "hidden_from": hidden, "scenes": scs})
         checks["secrets"] = len(secrets)
         checks["scene_cast_fallback"] = sum(1 for v in scene_cast.values() if v["fallback"])
+        setting = normalise_setting((llm or {}).get("setting"), " ".join(getattr(self, "_src", [])[-1:]))
         return {"characters": characters, "relationships": relationships, "emotions": emotions, "scene_cast": scene_cast,
-                "secrets": secrets, "checks": checks}
+                "secrets": secrets, "setting": setting, "checks": checks}
+
+
+
+# ── story setting (era / milieu / formality): decides which slang REGISTER is believable ─────────────────────────────────────
+_RURAL_CUES = {"gaon", "gaanv", "khet", "kheti", "khalihan", "bail", "bailon", "bailo", "zamindar", "zameendar", "kisan", "panchayat", "fasal",
+               "kuan", "kuen", "lathi", "karz", "mahajan", "biradari", "chaupal", "haveli", "bhains", "gaay", "gai", "hal", "ooph", "malik"}
+_PERIOD_CUES = {"maharaj", "maharani", "raja", "rani", "darbar", "angrez", "sahukar", "rupaiya", "anna", "paisa", "ghulam"}
+
+
+def normalise_setting(raw, roman_text: str = "") -> dict:
+    """-> {'era','milieu','formality','source'} with only the allowed values. A model answer is trusted; without one, a lexical second opinion
+    (village / period cues in the romanised story) decides; the default is the modern, casual Hinglish the project was built for."""
+    eras, milieus, forms = {"contemporary", "historical"}, {"urban", "rural", "campus", "workplace", "mixed"}, {"casual", "neutral", "traditional"}
+    r = raw if isinstance(raw, dict) else {}
+    era, mil, frm = (str(r.get(k, "")).strip().lower() for k in ("era", "milieu", "formality"))
+    toks = set(re.findall(r"[a-z]+", (roman_text or "").lower()))
+    rural, period = len(toks & _RURAL_CUES), len(toks & _PERIOD_CUES)
+    if era in eras and mil in milieus and frm in forms:
+        out = {"era": era, "milieu": mil, "formality": frm, "source": "llm"}
+    else:
+        trad = rural >= 3 or period >= 2
+        out = {"era": "historical" if period >= 2 else "contemporary", "milieu": "rural" if rural >= 3 else "mixed",
+               "formality": "traditional" if trad else "neutral", "source": "rules"}
+    out["traditional"] = out["formality"] == "traditional" or out["era"] == "historical" or out["milieu"] == "rural"
+    return out
 
 
 # ── applying the persona to Agent-2 profiles ───────────────────────────────────────────────────────────────────────

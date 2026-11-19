@@ -36,9 +36,16 @@ mujhe humein aap kuch sab kya nahi kaha bola boli lekin magar kyunki isliye""".s
 STRONG_CUES = ["अगले दिन", "अगली सुबह", "अगली शाम", "अगली रात", "उसी रात", "उस रात", "उसी दिन", "उस दिन", "एक दिन", "एक सुबह", "एक शाम",
                "कुछ दिन", "कुछ ही दिनों", "कई दिन", "कुछ हफ्ते", "कुछ महीने", "अगले हफ्ते", "अगले महीने", "कुछ साल", "सेमीफ़ाइनल से", "फ़ाइनल",
                "फाइनल", "पहले मैच", "अगले मैच", "उसी शाम", "उस शाम", "उसी सुबह", "कुछ देर बाद", "थोड़ी देर बाद", "कुछ समय बाद",
-               "agle din", "agli subah", "agli shaam", "usi raat", "us raat", "ek din", "kuch din", "kuch hafte", "kuch mahine"]
-WEAK_CUES = ["सुबह", "शाम", "रात", "दोपहर", "तभी", "उसके बाद", "इसके बाद", "आखिरकार", "आख़िरकार", "अंत में", "आखिर", "फिर", "लेकिन",
-             "subah", "shaam", "raat", "dopahar", "tabhi", "uske baad", "iske baad", "akhirkar"]
+               "agle din", "agli subah", "agli shaam", "usi raat", "us raat", "ek din", "kuch din", "kuch hafte", "kuch mahine",
+               # a change of PLACE: arriving, returning, being on the way
+               "रास्ते में", "वापसी के रास्ते", "वापसी में", "घर पहुँचते", "घर पहुंचते", "घर पहुँचकर", "घर पहुंचकर", "वापस पहुँचा", "वापस पहुँची",
+               "वापस पहुंचा", "वापस पहुंची", "उसी समय", "इतने में", "लौटकर", "लौटते समय", "पहुँचकर", "पहुंचकर", "पहुँचते ही", "पहुंचते ही",
+               "raste mein", "vapsi ke raste", "ghar pahunchte", "ghar pahunchkar", "usi samay", "itne mein", "pahunchkar", "pahunchte hi"]
+WEAK_CUES = ["सुबह", "शाम", "रात", "दोपहर", "तभी", "आखिरकार", "आख़िरकार", "अंत में", "जब वह", "जब वे", "वापस",
+             "subah", "shaam", "raat", "dopahar", "tabhi", "akhirkar"]
+# sequencing words inside a conversation ("फिर कबीर ने ...", "लेकिन ...", "उसके बाद ..."): barely evidence of a new scene
+TIME_OF_DAY = {"सुबह", "शाम", "रात", "दोपहर", "सवेरे", "भोर", "तड़के", "subah", "shaam", "raat", "dopahar", "savere"}
+CONNECTIVE_CUES = ["फिर", "लेकिन", "उसके बाद", "इसके बाद", "आखिर", "phir", "lekin", "uske baad", "iske baad"]
 # the time cue only means "new scene" when it OPENS the sentence
 CUE_POS = 3
 
@@ -86,6 +93,9 @@ def _cue_score(sentence: str) -> float:
     for c in WEAK_CUES:
         if head.startswith(c.lower()):
             return 0.45
+    for c in CONNECTIVE_CUES:
+        if head.startswith(c.lower()):
+            return 0.15
     return 0.0
 
 
@@ -203,8 +213,153 @@ def llm_starts(sents: List[str], proposal: List[int], pauses: Optional[List[floa
     return None
 
 
+# ======================================================================================================================
+# AUTHOR PARAGRAPHS AS ATOMIC UNITS.  Literary prose often puts every spoken line in its own paragraph; one paragraph per scene then gives 30+
+# one-sentence "scenes" that have no context (no named person, no place). A scene is a stretch of the story with one place, one time and one group of
+# people, so paragraphs are MERGED when the story does not change between them and kept apart when it does. There is NO target scene count:
+# a short story gets few scenes, a long one more, and `max_scenes` (config.SEGMENT_MAX_SCENES, default 15) is only an upper limit.
+# ======================================================================================================================
+def _speech(text: str) -> bool:
+    from agents.grounding import spoken_lines
+    t = (text or "").lstrip()
+    return bool(spoken_lines(text)) or _has_quote(text) or t.startswith(("—", "―", "-"))
+
+
+def scene_size_ceiling(total_sentences: int, max_scenes: int) -> int:
+    """How many sentences one scene may hold. It follows the story: about 16 (a normal scene is 3-8 sentences; only a clearly oversized one is cut), and larger only when the cap on the number of
+    scenes forces it (a 300-sentence story cannot be cut into scenes of 8 without breaking the cap)."""
+    return max(16, int(math.ceil(1.5 * total_sentences / max(1, max_scenes))))
+
+
+def cue_cuts(sents: List[str], min_sents: int = 3) -> List[int]:
+    """Indices inside a group of sentences where a sentence OPENS with a strong time / place cue ("घर पहुँचकर ...", "अगले दिन ...") and both sides keep at least
+    `min_sents` sentences. A paragraph can change place in the middle; paragraph-level grouping cannot see that."""
+    cuts, last = [], 0
+    for i in range(min_sents, len(sents) - min_sents + 1):
+        if _cue_score(sents[i]) >= 1.0 and i - last >= min_sents and len(sents) - i >= min_sents:
+            cuts.append(i)
+            last = i
+    return cuts
+
+
+def unit_gap_scores(units: List[List[str]]) -> List[float]:
+    """score[i] = how likely the story CHANGES between paragraph i and i+1 (a new scene starts at i+1). Signals: a time / place cue opening the next
+    paragraph, lexical cohesion of the surrounding paragraphs (topic and people), and spoken lines continuing across the break (an exchange stays one scene)."""
+    toks = [Counter(_tokens(" ".join(u))) for u in units]
+    out = []
+    for i in range(len(units) - 1):
+        left, right = Counter(), Counter()
+        for j in range(max(0, i - 1), i + 1):
+            left.update(toks[j])
+        for j in range(i + 1, min(len(units), i + 3)):
+            right.update(toks[j])
+        coh = _cosine(left, right)
+        first = units[i + 1][0]
+        cue = _cue_score(first)
+        opener = re.findall(r"[ऀ-ॿ]+|[A-Za-z]+", first.lower())[:1]
+        if opener and opener[0] in TIME_OF_DAY:
+            cue = 1.0                                           # a paragraph that OPENS with 'शाम होने तक', 'सुबह जब ...', 'रात को ...' is a time jump
+        talk = 1.0 if (_speech(" ".join(units[i])) and _speech(" ".join(units[i + 1]))) else 0.0
+        small = 1.0 if (len(units[i]) <= 2 or len(units[i + 1]) <= 2) else 0.0
+        out.append(0.55 * cue + 0.45 * (1 - coh) - 0.40 * talk * (0.0 if cue >= 1.0 else 1.0) - 0.15 * small)      # a clear time / place shift outweighs 'speech continues'
+    return out
+
+
+def pick_unit_starts(units: List[List[str]], scores: List[float], max_scenes: int = 15, min_sents: int = 3, threshold: float = 0.33,
+                     max_sents: Optional[int] = None, strong: float = 0.55) -> List[int]:
+    """Scene starts as PARAGRAPH indices: boundary wherever the score reaches the threshold; scenes shorter than `min_sents` sentences are merged into a
+    neighbour (the weaker of its two boundaries goes); never more than `max_scenes` scenes (the weakest boundaries go first)."""
+    n = len(units)
+    starts = [0] + [i + 1 for i, sc in enumerate(scores) if sc >= threshold]
+    sizes = lambda ss: [sum(len(u) for u in units[a:b]) for a, b in zip(ss, ss[1:] + [n])]
+    score_of = lambda b: scores[b - 1]
+    while len(starts) > 1:
+        sz = sizes(starts)
+        mergeable = []                                 # a short scene is merged into a neighbour only across a WEAK boundary: a clear time / place
+        for k, z in enumerate(sz):                     # shift ("the next day", "on reaching home") keeps even a two-sentence scene on its own
+            if z < min_sents:
+                cands = [b for b in (starts[k] if k > 0 else None, starts[k + 1] if k + 1 < len(starts) else None) if b and score_of(b) < strong]
+                if cands:
+                    mergeable.append((z, k, cands))
+        if mergeable:
+            _, _, cands = min(mergeable)
+            starts.remove(min(cands, key=score_of))
+            continue
+        if len(starts) > max_scenes:                   # only the cap is violated: drop the weakest boundary
+            starts.remove(min(starts[1:], key=score_of))
+            continue
+        break
+    # SIZE CEILING: a scene is a bounded stretch of the story. It may only exceed `max_sents` sentences when the cap on the number of scenes forces it
+    # (the ceiling is max(14, 2 * sentences / max_scenes)), so a long story gets longer scenes but never one scene swallowing several places.
+    total = sum(len(u) for u in units)
+    limit = max_sents or scene_size_ceiling(total, max_scenes)
+    while len(starts) < max_scenes:
+        sz = sizes(starts)
+        best = None
+        for k, (a, b) in enumerate(zip(starts, starts[1:] + [n])):
+            if sz[k] <= limit or b - a < 2:
+                continue
+            for cut in range(a + 1, b):                 # candidate boundary between paragraphs inside this scene
+                left, right = sum(len(u) for u in units[a:cut]), sum(len(u) for u in units[cut:b])
+                if left >= min_sents and right >= min_sents:
+                    key = (left <= limit and right <= limit, score_of(cut))      # one cut that leaves both halves within the ceiling beats a greedy fragment
+                    if best is None or key > best[0]:
+                        best = (key, cut)
+        if best is None:
+            break
+        starts = sorted(starts + [best[1]])
+    return starts
+
+
+UNIT_LLM_PROMPT = """You group the paragraphs of a Hindi story into SCENES for a screenplay. A scene is ONE CONTINUOUS BEAT of the story: the same place, the same
+moment and the same people doing one thing. Start a NEW scene when
+  - the place changes (arriving somewhere, going home, being on the road),
+  - time jumps (the next morning, some days later),
+  - the activity changes materially (preparing to leave vs. walking there, buying something vs. being laughed at about it, the argument vs. its aftermath),
+  - or people enter / leave so that a different group is talking.
+Keep ONE conversation together even when each spoken line is its own paragraph. A scene usually covers 3 to 12 sentences and never more than {max_s}.
+There is NO required number of scenes: a short story may be one scene or a few, a long story more; use at most {cap}.
+
+Signal-based proposal (may be imperfect): scenes start at paragraphs {proposal}.
+
+{paras}
+
+Return ONLY a JSON object: {{"scene_starts": [1, ...]}} - the numbers of the paragraphs that BEGIN a scene, increasing, starting with 1."""
+
+
+def llm_unit_starts(units: List[List[str]], proposal: List[int], client, cap: int, why: Optional[list] = None,
+                    max_sents: int = 14) -> Optional[List[int]]:
+    paras = "\n".join(f"{i + 1}. " + " ".join(u)[:230] for i, u in enumerate(units))
+    prompt = UNIT_LLM_PROMPT.format(cap=cap, max_s=max_sents, proposal=[i + 1 for i in proposal], paras=paras)
+    n = len(units)
+    for attempt in range(2):
+        try:
+            r = client.chat.completions.create(model="x", messages=[{"role": "user", "content": prompt}],
+                                               temperature=0.0 if attempt == 0 else 0.4, max_tokens=700)
+            txt = r.choices[0].message.content or ""
+            arr = sorted({int(x) - 1 for x in json.loads(re.search(r"\{.*\}", txt, re.DOTALL).group())["scene_starts"]})
+            if not arr or arr[0] != 0:
+                arr = [0] + [x for x in arr if x > 0]
+            if any(x < 0 or x >= n for x in arr):
+                reason = "index out of range"
+            elif len(arr) > cap:
+                reason = f"{len(arr)} scenes (cap {cap})"
+            elif max(sum(len(u) for u in units[x:y]) for x, y in zip(arr, arr[1:] + [n])) > int(max_sents * 1.5):
+                reason = "a scene far beyond the size ceiling"
+            else:
+                return arr
+            if why is not None:
+                why.append(reason)
+        except Exception as e:
+            if why is not None:
+                why.append("unparsable: " + str(e)[:40])
+    return None
+
+
 class SceneSegmenter:
-    def __init__(self, client=None, use_llm: bool = True, max_scenes: int = 16):
+    def __init__(self, client=None, use_llm: bool = True, max_scenes: int = None):
+        import config
+        max_scenes = int(max_scenes if max_scenes is not None else getattr(config, "SEGMENT_MAX_SCENES", 15))
         self.client, self.use_llm, self.max_scenes = client, use_llm, max_scenes
         if self.client is None and use_llm:
             try:
@@ -225,19 +380,57 @@ class SceneSegmenter:
 
     # ---------------------------------------------------------------------------------------------- author paragraphs
     def _from_paragraphs(self, paras: List[str]) -> Segmentation:
-        scenes, sents_all, starts = [], [], []
-        for p in paras:
-            ss = split_sentences(p)
-            if len(ss) > 9:                                     # a paragraph far too long for one scene: split it further
-                sub = self._segment_sentences(ss, None, allow_llm=False)
-                for a, b in zip(sub.starts, sub.starts[1:] + [len(ss)]):
-                    starts.append(len(sents_all) + a)
-                    scenes.append(" ".join(ss[a:b]))
+        """Author paragraphs are the atoms; scenes are runs of paragraphs in which the story does not change (see unit_gap_scores). A single paragraph far
+        too long for one scene is still split further by the sentence segmenter."""
+        units = [split_sentences(p) for p in paras]
+        units = [u for u in units if u]
+        sents_all = [x for u in units for x in u]
+        n = len(units)
+        if n == 0:
+            return Segmentation([], [], [], "empty")
+        scores = unit_gap_scores(units)
+        starts_u = pick_unit_starts(units, scores, self.max_scenes)
+        method, notes = "paragraphs+signals", ""
+        if self.use_llm and self.client is not None and n >= 6:
+            why = []
+            total = sum(len(u) for u in units)
+            ceiling = scene_size_ceiling(total, self.max_scenes)
+            ls = llm_unit_starts(units, starts_u, self.client, self.max_scenes, why, ceiling)
+            if ls is not None:
+                lo, hi = max(1, int(0.7 * len(starts_u))), max(int(math.ceil(1.4 * len(starts_u))) + 1, len(starts_u) + 3)
+                if not (lo <= len(ls) <= hi):                    # a referee answer far from the signal-based proposal made the scene count swing from run to run
+                    why.append(f"{len(ls)} scenes vs the proposal's {len(starts_u)}: outside [{lo}, {hi}]")
+                    notes = "llm referee rejected: " + "; ".join(why)
+                    ls = None
+            if ls is not None:
+                starts_u, method = ls, "paragraphs+llm"
             else:
-                starts.append(len(sents_all))
-                scenes.append(" ".join(ss))
-            sents_all += ss
-        return Segmentation(scenes, sents_all, starts, "author-paragraphs")
+                notes = "llm referee rejected: " + "; ".join(why)
+        first_sent = [0]
+        for u in units:
+            first_sent.append(first_sent[-1] + len(u))
+        scenes, starts = [], []
+        ceiling = scene_size_ceiling(len(sents_all), self.max_scenes)
+        for a_, b_ in zip(starts_u, starts_u[1:] + [n]):
+            ss = [x for u in units[a_:b_] for x in u]
+            if len(ss) > ceiling:                          # too long for one scene (merged paragraphs, or one huge paragraph): cut it at its sentence-level
+                method = method if "+sent" in method else method + "+sent"                                       # shifts (cues / cohesion), as for a story without paragraphs
+                sub = self._segment_sentences(ss, None, allow_llm=False)
+                for x, y in zip(sub.starts, sub.starts[1:] + [len(ss)]):
+                    starts.append(first_sent[a_] + x)
+                    scenes.append(" ".join(ss[x:y]))
+            else:
+                cuts = [0] + cue_cuts(ss) + [len(ss)]
+                if len(cuts) > 2:
+                    method = method if "+cue" in method else method + "+cue"
+                for x, y in zip(cuts, cuts[1:]):
+                    starts.append(first_sent[a_] + x)
+                    scenes.append(" ".join(ss[x:y]))
+        while len(scenes) > self.max_scenes:                # the huge-paragraph split can exceed the cap: merge the shortest neighbours
+            k = min(range(len(scenes) - 1), key=lambda i: len(scenes[i]) + len(scenes[i + 1]))
+            scenes[k] = scenes[k] + " " + scenes[k + 1]
+            del scenes[k + 1], starts[k + 1]
+        return Segmentation(scenes, sents_all, starts, method, scores, notes)
 
     # ---------------------------------------------------------------------------------------------- signals (+ LLM referee)
     def _segment_sentences(self, sents: List[str], pauses, allow_llm: bool = True) -> Segmentation:

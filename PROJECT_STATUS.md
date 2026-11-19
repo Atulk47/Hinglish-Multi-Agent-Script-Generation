@@ -1,6 +1,45 @@
 # Hinglish Screenplay Generator — Project Status & Work Plan
 
-_Last updated: 19 Aug 2026_
+_Last updated: 19 Nov 2026 (see also docs/Hinglish_MAS_System_Guide.pdf: every component in plain words) — **the section below is the current state. Everything after the horizontal rule ("Archive") is the August 2026 plan and is kept only as history; where the two disagree, this section is right.**_
+
+## FINAL STATE (November 2026)
+
+### What exists and works
+| Area | State |
+|---|---|
+| Input | Devanagari text **or** voice (cloud ASR + silence/pause detection; local faster-whisper fallback); Scene Segmenter (F1 0.25 → 0.67 over the old chunker) |
+| Story analysis | Agent 1 (events, parallel per scene), Agent 2 (NER profiles), **Persona Agent** (gender, age, relationships, emotion arc, story bible: who is present, secrets) |
+| Pass 1 | Agent 3 writes neutral dialogue under the story bible; **Fidelity Critic** (absent speakers, leaked secrets, invented / missing events → regenerate ≤2) |
+| Pass 2 | Agent 4: **agentic Slang Director** (Claude Sonnet 5.5, one call per scene, falls back to the rule gates if the LLM is down; `docs/DIRECTOR.md`) → local slang editor (**Qwen2.5-1.5B + LoRA v6**, GGUF Q5_K_M on llama.cpp, ~3 s/generation on CPU) → deterministic rule gate; 177-phrase slang pool as data with grammatical frames and usage rules (`docs/SLANG_POOL.md`); mood-slot slang incl. joy / pride / anger / liking, phrase swaps, gender agreement |
+| Validation | **Validator v2**: text-only **edit audit + repair**, centred MuRIL (diagnostic), LLM event check, optional two-family **LLM judge** (docs/VALIDATOR.md, docs/EVALUATION.md). Audit detects 97.8% of corrupted edits (old raw cosine: 36.5%), passes 86.9% of the v5 gold edits (the 29 rejections are grammar errors in the gold labels; re-run 2026-11-16); judges 99.8% / 77% |
+| Audio | Edge (free) / Studio (gpt-audio) / **Maya 2 Native** (pre-rendered clips or Modal serverless GPU, per-drama fallback), reverb + ambience beds, SRT, synced player |
+| UI | Gradio app (`python -m ui.app`): text or voice in, screenplay with highlighted slang diff, characters + emotion arcs, audio drama, pipeline log, downloads |
+| Evaluation | 7-story ablation with bootstrap CIs over stories (docs/RESULTS.md), validated judge, human calibration set (125 blinded items), blinded human-rating tooling, segmenter / voice / fidelity / TTS evals |
+| Tests | 564 offline tests + a 32-story live stress corpus (`docs/TESTING.md`; 32/32 clean in run 4) |
+
+### Training status
+Only the slang editor is trained (v1 → v6, adopted v6; all Kaggle runs are done and documented in `kaggle_v*/`). **The demo needs no further training.** A v7 "context-conditioned line editor" (teacher-distilled, free-form slang) is being built as a separate experiment, not wired into the pipeline: `docs/EDITOR_ROADMAP.md`.
+The validator needed none either (statistics + rules + calibrated thresholds).
+
+### What is still pending (nothing blocks submission)
+0. ~~Re-run the ablation with the final code~~ DONE (7 stories; clean re-run with the current validator in `outputs/ablation_final3`, see `docs/RESULTS.md`; older tables are marked "re-scored").
+0b. **Native-speaker review** (you or a teammate, ~15 min): four emotion idioms, the new usage rules and a few weak phrases, listed at the end of `docs/SLANG_POOL.md`.
+1. **Maya pre-render for the demo stories** (you, on Kaggle): `python -m tools.export_maya_jobs --trace ... --name demo` → upload `notebooks/maya_batch_demo.py` →
+   `python -m tools.import_maya_zip maya_batch.zip`. Needed only for the Maya voice on those stories; the Modal service already covers any story.
+2. **Human calibration**: DONE with one rater (the author, 50 items, `docs/EVALUATION.md` §4a: attention checks 18/18, 94% of real edits kept, Gemini judge κ 0.83, 'either judge' κ 0.75, both-judges rule too strict). A second / third rater would add inter-rater agreement: `outputs/calibration` (125 items) or `outputs/calibration_small` for a quick second pass, then `python -m evaluation.calibration analyze --dir ...`.
+3. **Paper** (due 20 Nov): numbers are in `docs/VALIDATOR.md` and `docs/RESULTS.md`.
+4. Optional polish: more demo stories through the ablation (multiple stories → bootstrap CIs over stories), a real-voice (human recording) test round.
+
+### Known limits (state them in the paper)
+Slang editor is conservative (~20-25% of lines edited); appropriateness beyond the rules is not fully automatable; Pass-1 is LLM-written; LM-fluency check is
+a weak signal (off by default); semantic event coverage is a weak detector (AUC 0.77) so event completeness rests on the Fidelity Critic; Maya needs a GPU;
+real-voice and offline-ASR quality is limited; validator thresholds are calibrated on this project's own stories.
+
+---
+
+## Archive — the August 2026 plan (historical)
+
+
 
 This document explains **what the project is**, **everything that has been built so far** (and why),
 **what is still left to do**, and **how the remaining work is split between the four of us

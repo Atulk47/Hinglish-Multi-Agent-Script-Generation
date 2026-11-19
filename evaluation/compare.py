@@ -17,19 +17,22 @@ _TURN = re.compile(r"^\s*([A-Za-z][A-Za-z_. ]*?)\s*:\s*(.*)$")
 
 
 def _parse_turns(dialogue: str):
-    """Split a multi-line 'SPEAKER: line' block into ordered {speaker, text} turns.
-    Lines that don't start with a speaker tag are folded into the previous turn."""
+    """Split a multi-line 'SPEAKER: line' block into ordered {speaker, text, lines} turns (`lines` = the raw line numbers the turn occupies).
+    Lines that don't start with a speaker tag are folded into the previous turn.
+    A turn with NO text ("Narrator:" placeholder) is not a spoken line and is dropped: Agent 4 skips it too (`if not utt: continue`), so the neutral and
+    the slang script of a scene only line up by position when both ignore it (otherwise every later line of the scene is paired with the wrong partner)."""
     turns = []
-    for raw in (dialogue or "").split("\n"):
+    for no, raw in enumerate((dialogue or "").split("\n")):
         line = raw.strip()
         if not line:
             continue
         m = _TURN.match(line)
         if m:
-            turns.append({"speaker": m.group(1).strip().upper(), "text": m.group(2).strip()})
+            turns.append({"speaker": m.group(1).strip().upper(), "text": m.group(2).strip(), "lines": [no]})
         elif turns:                      # continuation of the previous speaker's line
             turns[-1]["text"] = (turns[-1]["text"] + " " + line).strip()
-    return turns
+            turns[-1]["lines"].append(no)
+    return [t for t in turns if t["text"]]
 
 
 def build_comparison(neutral_script, slang_script):
@@ -59,6 +62,8 @@ def build_comparison(neutral_script, slang_script):
                 "slang_applied": dec.get("applied"),
                 "intent": dec.get("intent"),
                 "gate_stopped": dec.get("gate_stopped"),
+                "review_why": (dec.get("reviewed") or {}).get("why") if (dec.get("reviewed") or {}).get("keep") is False else None,   # set when the review loop reverted the edit
+                "director_why": (dec.get("director") or {}).get("why"),          # Slang Director's one-line reason (None when the classic gates decided)
                 "changed": n_text.strip() != s["text"].strip(),
             })
         out.append({

@@ -46,3 +46,16 @@ models/gguf/
 outputs/_tts_cache/
 outputs/_audio_try/
 outputs/*_audio/*.wav
+
+# ---- experiment outputs, traces and generated audio (hundreds of MB; regenerable). The docs keep the headline numbers.
+outputs/*
+!outputs/diagram/
+*.wav
+*.mp3
+tb_5.json
+tb_15.json
+kaggle_v*/old_adapter/
+models/slang-editor-lora-v6/*
+!models/slang-editor-lora-v6/adapter_config.json
+!models/slang-editor-lora-v6/prompt_version.txt
+data/v7/pilot1/

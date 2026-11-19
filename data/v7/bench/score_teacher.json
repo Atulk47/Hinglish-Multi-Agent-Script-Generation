@@ -1,0 +1,35 @@
+{
+ "label": "teacher",
+ "test_rows": 231,
+ "answered": 55,
+ "forced_keep_ok": null,
+ "eligible": 55,
+ "edit_rate": 0.309,
+ "valid_of_edits": 1.0,
+ "valid_edits": 17,
+ "distinct_slang": 16,
+ "top_share": 0.118,
+ "top": [
+  [
+   "wahiyat",
+   2
+  ],
+  [
+   "bada locha",
+   1
+  ],
+  [
+   "tagda",
+   1
+  ],
+  [
+   "ekdum bindaas",
+   1
+  ],
+  [
+   "pak",
+   1
+  ]
+ ],
+ "valid_per_100": 30.9
+}

@@ -78,7 +78,7 @@ def test_whole_pipeline_runs_offline():
     assert "[generation failed" not in final
     assert "# HINGLISH SCREENPLAY" in final
     slang = pl.scratchpad.read("slang_script")
-    assert slang and len(slang) == len(t["neutral_script"])
+    assert slang and len(slang) == len(pl.scratchpad.read("neutral_script"))      # one slang decision block per scene the pipeline actually produced (the segmenter may merge scenes)
     # Dadi / formal speakers must never be edited, and no mood-loaded slang may sit on the fear line
     for sc in slang:
         for d in sc["decisions"]:

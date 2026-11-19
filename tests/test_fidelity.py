@@ -26,7 +26,9 @@ def test_critic_deterministic_layer_flags_absent_speakers_without_any_llm():
     c.client = None
     dlg = "Ananya: Bhaiya, Nani ka janamdin hai.\nNani: Mujhe sab pata hai.\nVikram: Chup raho.\nNarrator: sab hans diye.\nDukaandaar: Ji beta."
     rep = c.check("src", dlg, ["Ananya", "Vikram"], ["Nani"], extras=["Dukaandaar"])
-    assert not rep["ok"] and [i["line"] for i in rep["issues"]] == [2] and rep["issues"][0]["type"] == "absent_speaker"
+    # line 2: Nani is absent; line 4: a "Narrator" is never a character (it used to be whitelisted, which let invented narrator dialogue through)
+    assert not rep["ok"] and [i["line"] for i in rep["issues"]] == [2, 4] and all(i["type"] == "absent_speaker" for i in rep["issues"])
+    assert "narrator" in rep["issues"][1]["detail"].lower()
     assert FidelityCritic(client=None).check("src", "Ananya: hi\nVikram: hello", ["Ananya", "Vikram"], [])["ok"] in (True, False)
 
 
@@ -58,12 +60,15 @@ EVENTS = [{"scene_id": "scene_01", "characters": ["Ananya", "Vikram", "Nani"], "
 
 
 def test_persona_story_bible_scene_cast_and_secrets():
+    chunks = [dict(CHUNKS[0], text=CHUNKS[0]["text"] + ". dukaandaar ne kaha ji beta"), CHUNKS[1]]       # the shopkeeper really speaks in the story
     llm = {"characters": {}, "relationships": [], "emotions": {},
            "scene_cast": {"scene_01": {"present": ["Ananya", "Vikram", "Ghost"], "mentioned_only": ["Nani"], "extra_speakers": ["Dukaandaar!!", "x"]},
                           "scene_02": {"present": ["Nani", "Ananya"], "mentioned_only": []}},
-           "secrets": [{"what": "birthday surprise for Nani", "hidden_from": ["Nani", "Nobody"], "scenes": ["scene_01", "scene_99"]},
+           "secrets": [{"what": "birthday surprise for Nani", "hidden_from": ["Nani", "Nobody"], "scenes": ["scene_01", "scene_99"],
+                        "evidence": "nani ke liye surprise plan karte hain"},                      # quoted from the story and about concealment
+                       {"what": "the cow was bought with a shady loan", "hidden_from": ["Nani"], "evidence": "aisi koi baat kahi nahi gayi"},       # invented: dropped
                        {"what": "", "hidden_from": ["Nani"]}, {"what": "x", "hidden_from": []}]}
-    p = PersonaAgent(llm_client=fake(json.dumps(llm))).analyze(CHUNKS, EVENTS, NAMES)
+    p = PersonaAgent(llm_client=fake(json.dumps(llm))).analyze(chunks, EVENTS, NAMES)
     cast = p["scene_cast"]
     assert cast["scene_01"]["present"] == ["Ananya", "Vikram"] and cast["scene_01"]["mentioned_only"] == ["Nani"]
     assert cast["scene_01"]["extra_speakers"] == ["Dukaandaar"]
@@ -114,5 +119,74 @@ def test_scene_loop_regenerates_with_feedback_and_removes_leftover_absent_lines(
     out = HinglishPipeline._scene_pass1(p, CHUNKS[0], EVENTS[0], {}, persona, "deva")
     assert seen[0] is None and "absent_speaker" in seen[1]                       # attempt 2 got the reviewer's feedback
     assert out["fidelity"]["attempts"] == 3
-    assert "Nani" not in out["dialogue"] and "Ananya" in out["dialogue"] and out["fidelity"]["lines_removed"] >= 1
+    assert "Nani" not in out["dialogue"] and "Ananya" in out["dialogue"]
+    assert out["fidelity"]["lines_removed"] + out["fidelity"]["flagged_lines_removed"] >= 1       # fail-closed removal (or the older absent-speaker cleanup)
     assert "\n\n" not in out["dialogue"]
+
+
+def test_agent3_prompt_tells_the_writer_two_names_are_one_person():
+    a = _agent3()
+    ev = dict(EVENTS[0], scene_cast={"present": ["Ananya", "Vikram"], "mentioned_only": [], "extra_speakers": []},
+              aliases=[{"alias": "Vicky", "canonical": "Vikram"}])
+    profiles = {n: {"social_role": "peer", "gender": "female" if n != "Vikram" else "male"} for n in NAMES}
+    a.generate_pass1({"scene_id": "scene_01", "text": "x", "deva_text": "अनन्या और विक्रम योजना बनाते हैं।"}, profiles, ev)
+    prompt = a.groq_client.calls[0]["messages"][0]["content"]
+    assert 'SAME PERSON: "Vicky" is only another name for Vikram' in prompt
+
+
+def test_writer_no_longer_forces_a_feeling_into_every_scene_and_asks_for_spoken_hinglish(monkeypatch):
+    import config
+    monkeypatch.setattr(config, "AGENT3_STYLE", "slotrich")                  # the faithful style (the shipped default is slotrich_pad)
+    from agents.agent3_synthesizer import PEER_STYLE_RULES, line_budget
+    assert "at least two lines" not in PEER_STYLE_RULES and "Do NOT add a feeling" in PEER_STYLE_RULES
+    a = _agent3()
+    ev = dict(EVENTS[0], scene_cast={"present": ["Ananya", "Vikram"], "mentioned_only": [], "extra_speakers": []})
+    profiles = {n: {"social_role": "peer", "gender": "female" if n != "Vikram" else "male"} for n in NAMES}
+    a.generate_pass1({"scene_id": "scene_01", "text": "x", "deva_text": "अनन्या और विक्रम योजना बनाते हैं।"}, profiles, ev)
+    prompt = a.groq_client.calls[0]["messages"][0]["content"]
+    assert "the way people really TALK" in prompt and "Never tack" in prompt and "at least two lines" not in prompt
+    assert line_budget("। ".join(["वाक्य"] * 8), 12) == 5                       # 8 sentences, no quotes: 1 + 8 // 2
+
+
+def test_the_shipped_default_is_the_padded_writer_and_the_demo_slang_target_is_two_to_three():
+    import config
+    assert config.AGENT3_STYLE == "slotrich_pad" and config.SLANG_DIRECTOR_TARGET == 2 and config.SLANG_DIRECTOR_MAX_PER_SCENE == 3
+
+
+def test_the_line_budget_leaves_room_for_every_key_event():
+    a = _agent3()
+    ev = dict(EVENTS[0], key_events=[f"event {i}" for i in range(7)], scene_cast={"present": ["Ananya", "Vikram"], "mentioned_only": [], "extra_speakers": []})
+    profiles = {n: {"social_role": "peer", "gender": "female" if n != "Vikram" else "male"} for n in NAMES}
+    a.generate_pass1({"scene_id": "scene_01", "text": "x", "deva_text": "अनन्या और विक्रम योजना बनाते हैं।"}, profiles, ev)
+    assert "At most 8 dialogue lines" in a.groq_client.calls[0]["messages"][0]["content"]
+
+
+def test_writer_prompt_forbids_speaking_scenery_and_added_thanks_or_promises(monkeypatch):
+    import config
+    ev = dict(EVENTS[0], scene_cast={"present": ["Ananya", "Vikram"], "mentioned_only": [], "extra_speakers": []})
+    profiles = {n: {"social_role": "peer", "gender": "female" if n != "Vikram" else "male"} for n in NAMES}
+    prompts = {}
+    for style in ("slotrich", "slotrich_pad"):
+        monkeypatch.setattr(config, "AGENT3_STYLE", style)
+        a = _agent3()
+        a.generate_pass1({"scene_id": "scene_01", "text": "x", "deva_text": "अनन्या और विक्रम योजना बनाते हैं।"}, profiles, ev)
+        prompts[style] = a.groq_client.calls[0]["messages"][0]["content"]
+    p = prompts["slotrich"]                                   # the faithful style
+    assert "DESCRIPTION IS NOT SPEECH" in p and "do NOT add thanks, promises, opinions" in p and "never pad a short scene" in p
+    q = prompts["slotrich_pad"]                               # the padded style no longer contradicts itself: feelings are allowed, scenery is still not speech
+    assert "DESCRIPTION IS NOT SPEECH" in q and "DO let a character say how they FEEL" in q and "opinions, jokes" not in q and "never pad a short scene" not in q
+    assert "at least two lines" in q
+
+
+def test_style_switch_selects_the_padded_legacy_rules_or_the_faithful_ones(monkeypatch):
+    import config
+    ev = dict(EVENTS[0], scene_cast={"present": ["Ananya", "Vikram"], "mentioned_only": [], "extra_speakers": []})
+    profiles = {n: {"social_role": "peer", "gender": "female" if n != "Vikram" else "male"} for n in NAMES}
+    got = {}
+    for style in ("slotrich", "slotrich_pad", "default"):
+        monkeypatch.setattr(config, "AGENT3_STYLE", style)
+        a = _agent3()
+        a.generate_pass1({"scene_id": "scene_01", "text": "x", "deva_text": "अनन्या और विक्रम योजना बनाते हैं।"}, profiles, ev)
+        got[style] = a.groq_client.calls[0]["messages"][0]["content"]
+    assert "at least two lines" in got["slotrich_pad"] and "at least two lines" not in got["slotrich"]
+    assert "Do NOT add a feeling" in got["slotrich"] and "Peer characters" not in got["default"]

@@ -57,6 +57,16 @@ NON_CHARACTER_WORDS = {
     "dukandar", "dukaandar", "dukaan", "dukan", "shopkeeper", "merchant",
 }
 
+def name_in_story(token: str, story_text: str) -> bool:
+    """Is this character name really in the story? An exact whole word, OR a spelling-tolerant match: the romaniser writes the Devanagari names as "adity", "simaran", so the
+    correctly spelled "Aditya" / "Simran" (Agent 1 reads the Devanagari) used to be thrown out as hallucinated, and those characters then had no profile (the Slang Director
+    treated them as formal; voice casting lost their gender)."""
+    if re.search(rf"\b{re.escape(token)}\b", story_text or ""):
+        return True
+    from agents import grounding
+    return grounding.name_grounded(token, story_text or "", min_tokens=1)
+
+
 class CharacterAnalyst:
     def __init__(self, scratchpad: Scratchpad):
         self.scratchpad = scratchpad
@@ -111,7 +121,7 @@ class CharacterAnalyst:
             # Hallucination guard: otherwise the honorific-stripped name must appear
             # in the story as a WHOLE WORD, not just a fragment inside another word
             # (drops "Vijet" from "vijeta", "Aidiy" from an ideas mention, etc.).
-            return re.search(rf"\b{re.escape(token)}\b", story_text) is not None
+            return name_in_story(token, story_text)
 
         for chunk, events in zip(scene_chunks, event_chain):
             # Primary: character names from Agent 1's event chain

@@ -59,6 +59,9 @@ class HinglishPipeline:
         self.critic = FidelityCritic()                            # checks Agent 3 against the author's scene + story bible
         self.intent_clf = GroqIntentClassifier()                  # Groq-first (no BART-MNLI)
         self.agent4 = SlangRewriter(self.scratchpad, self.intent_clf)
+        if getattr(config, "SLANG_DIRECTOR", False):              # scene-level agent replaces the line-by-line Gate 2 + Gate 3 (falls back to the gates per scene)
+            from agents.slang_director import SlangDirector
+            self.agent4.attach_director(SlangDirector(self.scratchpad))
         # Reuse Agent 2's MuRIL weights for the validator (saves ~900MB RAM)
         self.validator = MuRILValidator(
             shared_muril=(self.agent2.muril_tokenizer, self.agent2.muril_model))
@@ -113,9 +116,9 @@ class HinglishPipeline:
             self._log(f"   scene segmenter failed ({str(e)[:80]}); falling back to blank-line paragraphs")
             paragraphs = [p.strip() for p in state["raw_hindi_text"].split("\n\n") if p.strip()] or [state["raw_hindi_text"]]
         self.scratchpad.write("deva_scenes", paragraphs)
-        romanized = "\n\n".join(
-            self.transliterator.transliterate_sentence(p) for p in paragraphs)
-        chunks = self.chunker.chunk(romanized)
+        roman_scenes = [self.transliterator.transliterate_sentence(p) for p in paragraphs]
+        romanized = "\n\n".join(roman_scenes)
+        chunks = self.chunker.from_scenes(roman_scenes)             # exactly the segmenter's scenes (the chunker used to re-split a one-scene story into ~4-sentence pieces)
         self.scratchpad.write("romanized_text", romanized)
         self.scratchpad.write("scene_chunks", chunks)
         self._log(f"   {len(chunks)} scene(s) detected.")
@@ -125,7 +128,7 @@ class HinglishPipeline:
 
     def _plan_narrative(self, state: PipelineState) -> PipelineState:
         self._log("── [2/6] Agent 1: narrative event chain (Groq) ──")
-        chain = self.agent1.extract_event_chain(state["scene_chunks"])
+        chain = self.agent1.extract_event_chain(state["scene_chunks"], deva_scenes=self.scratchpad.read("deva_scenes"))
         self.scratchpad.write("event_chain", chain)
         for e in chain:
             self._log(f"   {e['scene_id']}: chars={e.get('characters')} "
@@ -152,6 +155,11 @@ class HinglishPipeline:
         profiles = apply_persona(profiles, persona, scene_ids)
         self.scratchpad.write("character_profiles", profiles)
         self.scratchpad.write("persona", persona)
+        from agents import edit_gate
+        edit_gate.set_setting(persona.get("setting"))        # era / milieu / formality -> which slang register is believable for THIS story
+        st = persona.get("setting") or {}
+        self._log(f"   story setting: {st.get('era')} / {st.get('milieu')} / {st.get('formality')} ({st.get('source')})"
+                  + (" -> urban-youth slang and 'yaar' between family are blocked" if st.get("traditional") else ""))
         self._log(f"   persona source: {persona.get('source')} | checks: {persona.get('checks')}")
         for n, p in profiles.items():
             arc = " > ".join(f"{e['emotion']}{e['intensity']}" for e in p.get("emotion_arc", []))
@@ -163,7 +171,9 @@ class HinglishPipeline:
     def _prefetch_intents(self, dialogue: str):
         """Classify every line's intent NOW (concurrently) so the slang editor, which needs it for each line, finds it already cached."""
         clf = getattr(self.agent4, "intent_clf", None)
-        utts = [ln.split(":", 1)[1].strip() for ln in dialogue.split("\n") if ":" in ln and ln.split(":", 1)[1].strip()]
+        if getattr(self.agent4, "use_director", False):            # the Director plans the whole scene: no per-line intent calls needed
+            return
+        utts =[ln.split(":", 1)[1].strip() for ln in dialogue.split("\n") if ":" in ln and ln.split(":", 1)[1].strip()]
         if clf is None or not utts:
             return
         from concurrent.futures import ThreadPoolExecutor
@@ -171,7 +181,7 @@ class HinglishPipeline:
             list(ex.map(lambda u: clf.classify(u), utts))
 
     def _edit_scene(self, scene):
-        out = self.agent4.rewrite_script([{"scene_id": scene["scene_id"], "dialogue": scene["dialogue"]}])[0]
+        out = self.agent4.rewrite_script([{"scene_id": scene["scene_id"], "dialogue": scene["dialogue"], "events": scene.get("events")}])[0]
         out["events"] = scene["events"]
         return out
 
@@ -183,16 +193,35 @@ class HinglishPipeline:
         cast = (persona or {}).get("scene_cast", {}).get(sid) or {}
         ev["scene_cast"] = cast
         ev["secrets"] = [s for s in (persona or {}).get("secrets", []) if sid in s.get("scenes", [sid])]
+        ev["aliases"] = list((persona or {}).get("aliases") or [])
         ch = dict(chunk)
         ch["deva_text"] = deva_text
-        present = list(cast.get("present") or events.get("characters") or [])
+        present = list(cast.get("present") or events.get("characters") or list(profiles or {}))      # never run the speaker check against an empty cast
         absent, extras = list(cast.get("mentioned_only") or []), list(cast.get("extra_speakers") or [])
         use_critic = bool(getattr(config, "AGENT3_CRITIC", True)) and self.critic is not None
         tries = 1 + (int(getattr(config, "AGENT3_FIX_ATTEMPTS", 2)) if use_critic else 0)
+        # A paragraph of pure scene-setting ("Eid has come, the village is busy ...") has nobody to speak: no named person and no spoken words. Writing
+        # dialogue for it can only invent a speaker, so such a scene is kept WITHOUT dialogue instead.
+        from agents.grounding import spoken_lines
+        if not (cast.get("present") or events.get("characters") or extras or spoken_lines(deva_text or chunk.get("text", ""))):
+            return {"scene_id": sid, "dialogue": "", "events": events,
+                    "fidelity": {"attempts": 0, "issues_per_attempt": [], "final_issues": [], "lines_removed": 0, "flagged_lines_removed": 0,
+                                 "narration_only": True}}
         best, history, feedback = None, [], None
         for attempt in range(tries):
             ev["feedback"] = feedback
-            dialogue = self.agent3.generate_pass1(ch, profiles, ev)
+            try:
+                dialogue = self.agent3.generate_pass1(ch, profiles, ev)
+            except Exception as exc:                                  # a provider / writer error: this attempt failed, the run goes on
+                dialogue = f"[generation failed after 3 attempts: {type(exc).__name__}]"
+            if not dialogue.strip() and attempt >= tries - 1 and best is not None and best[0].strip():
+                break                                                    # the LAST attempt came back empty: keep the earlier attempt that has lines (an empty scene scores
+                                                                         # "0 issues" and used to beat it, wiping scenes whose source has quoted speech)
+            if not dialogue.strip() and attempt < tries - 1:            # nothing valid survived the sanitiser: ask again, naming who may speak
+                history.append(1)
+                feedback = ("your previous answer contained no valid 'Name: text' dialogue line (only characters of the story may speak, never a narrator). "
+                            "Write 1-3 spoken lines for: " + ", ".join(present[:6]))
+                continue
             # Agent 3 sometimes slips a Devanagari word into the dialogue (seen: "धन्यवाद, दादी!").
             # Everything downstream (register guard, editor, validator) expects Roman script, so
             # romanize any leak with the same rule-based transliterator used on the input.
@@ -203,23 +232,48 @@ class HinglishPipeline:
                 best = (dialogue, {"ok": True, "issues": [], "llm_used": False})
                 history.append(0)
                 break
-            rep = self.critic.check(deva_text or chunk.get("text", ""), dialogue, present, absent, ev["secrets"],
-                                    events.get("key_events"), extras)
+            from agents.agent3b_critic import parse_lines, _is
+            for spk, _ in parse_lines(dialogue):                          # a speaker that survived the sanitiser but is not in the cast is named in the text
+                if not _is(spk, present + absent + extras + list(profiles or {})):
+                    present.append(spk)
+            try:
+                rep = self.critic.check(deva_text or chunk.get("text", ""), dialogue, present, absent, ev["secrets"],
+                                        events.get("key_events"), extras)
+            except Exception:                                          # the critic is an extra safety net: if it fails the scene is kept as written
+                rep = {"ok": True, "issues": [], "llm_used": False}
             history.append(len(rep["issues"]))
             if best is None or len(rep["issues"]) < len(best[1]["issues"]):
                 best = (dialogue, rep)
             if rep["ok"]:
                 break
             feedback = "; ".join(f"line {i['line']}: {i['type']} - {i['detail']}" for i in rep["issues"][:6])
+            if any(i["type"] in ("contradiction", "invented_event", "absent_speaker") for i in rep["issues"]):
+                feedback += ("  ||  CONSTRAINTS: do not write words for a character the original says stayed silent, hid their feelings or did not answer; "
+                             "use only what is said or clearly done in the original; you may write FEWER lines")
+                if not spoken_lines(deva_text or chunk.get("text", "")):                  # silence is an option only when nobody speaks in the source
+                    feedback += ", and if nobody speaks in this scene answer exactly: (no dialogue)"
+                else:
+                    feedback += ". The original DOES contain spoken words: keep those (translated faithfully) and never answer with an empty scene"
+        if best is None:                                              # every attempt came back empty: the scene stays without dialogue
+            best = ("", {"ok": True, "issues": [], "llm_used": False})
         dialogue, rep = best
         dialogue = re.sub(r"\n\s*\n", "\n", dialogue).strip()          # the model sometimes double-spaces the turns
         dialogue = "\n".join(re.sub(r"\s*\([^)]*\)\s*", " ", ln).replace(" :", ":").strip() if ":" in ln else ln for ln in dialogue.split("\n"))   # no (stage directions)
+        dialogue = "\n".join(ln for ln in dialogue.split("\n") if not re.match(r"^\s*[^:\n]{1,40}:\s*$", ln))               # a line that was only a stage direction is gone, not an empty label
         removed = 0
+        flagged_removed = 0
+        if use_critic and getattr(config, "AGENT3_FAIL_CLOSED", True) and rep["issues"]:
+            kept = self.critic.drop_flagged_lines(dialogue, rep["issues"], allow_empty=not spoken_lines(deva_text or chunk.get("text", "")))      # fail closed: invented / contradicting / leaking lines are removed, not shipped
+            flagged_removed = len(dialogue.splitlines()) - len(kept.splitlines())
+            dialogue = kept
+            if flagged_removed:
+                rep = dict(rep, issues=[i for i in rep["issues"] if i["type"] not in self.critic.DROPPABLE or int(i.get("line") or 0) == 0])
         if use_critic and any(i["type"] == "absent_speaker" for i in rep["issues"]):
             cleaned = self.critic.drop_absent_lines(dialogue, present, extras)
             removed = len(dialogue.split("\n")) - len(cleaned.split("\n"))
             dialogue = cleaned
-        fid = {"attempts": len(history), "issues_per_attempt": history, "final_issues": rep["issues"], "lines_removed": removed}
+        fid = {"attempts": len(history), "issues_per_attempt": history, "final_issues": rep["issues"], "lines_removed": removed,
+               "flagged_lines_removed": flagged_removed}
         try:
             self._prefetch_intents(dialogue)
         except Exception:
@@ -259,6 +313,7 @@ class HinglishPipeline:
             f = n["fidelity"]
             self._log(f"   {n['scene_id']}: attempts {f['attempts']} issues {f['issues_per_attempt']}"
                       + (f" | removed {f['lines_removed']} absent-speaker line(s)" if f["lines_removed"] else "")
+                      + (f" | removed {f['flagged_lines_removed']} unsupported line(s)" if f.get("flagged_lines_removed") else "")
                       + (f" | remaining: {[i['type'] for i in f['final_issues']]}" if f["final_issues"] else ""))
         self.scratchpad.write("neutral_script", neutral)
         state["neutral_script"] = neutral
@@ -271,10 +326,9 @@ class HinglishPipeline:
             if failed_p1:
                 print(f"  WARNING: Pass-1 dialogue FAILED for {len(failed_p1)} scene(s): {failed_p1}")
             if empty_ev:
-                print(f"  WARNING: Agent 1 returned NO events for {len(empty_ev)} scene(s): {empty_ev}")
-            print("  Likely a Groq rate / daily-token limit. These results are NOT valid.")
-            print("  Retry with the other model pool, e.g. PowerShell:")
-            print('      $env:GROQ_MODEL="openai/gpt-oss-120b"')
+                print(f"  WARNING: Agent 1 produced NO events for {len(empty_ev)} scene(s): {empty_ev}")
+                print("  The model's answer was empty or unparsable even after 3 attempts (this is NOT necessarily a rate limit: see the 'LLM usage' line).")
+                print("  Those scenes are written from the source text alone, without an event list or cast, so they are less reliable.")
             print("!" * 68 + "\n")
         return state
 
@@ -316,7 +370,8 @@ class HinglishPipeline:
                           f"permissive={self.agent4.gate._permissive})")
             try:
                 rewritten = self.agent4.rewrite_script([{"scene_id": sid,
-                                                         "dialogue": scene["dialogue"]}])[0]
+                                                         "dialogue": scene["dialogue"],
+                                                         "events": scene.get("events")}])[0]
             finally:
                 self.agent4.gate.set_permissive(False)
                 self.agent4.gate.density_threshold = base_threshold
@@ -358,11 +413,28 @@ class HinglishPipeline:
 
     def _validate(self, state: PipelineState) -> PipelineState:
         self._log("── [6/6] MuRIL validation (strict) ──")
-        failed, scores, diagnoses = [], [], {}
+        failed, scores, diagnoses, repaired_script = [], [], {}, []
         profiles = state.get("character_profiles") or {}
         for neutral, slang in zip(state["neutral_script"], state["slang_script"]):
             sid = slang["scene_id"]
-            diag = self.validator.diagnose_scene(neutral, slang, profiles)
+            if not (neutral.get("dialogue") or "").strip():          # narration-only scene: nothing to validate
+                repaired_script.append(slang)
+                diagnoses[sid] = {"passed": True, "action": "accept", "failure_mode": "OK", "similarity": 1.0, "line_min_similarity": 1.0,
+                                  "event_recall": 1.0, "slang_coverage": 0.0, "slang_variety": 1.0, "hint": "scene has no dialogue", "per_line": []}
+                scores.append(1.0)
+                self._log(f"   {sid}: no dialogue (scene-setting narration) -> PASS")
+                continue
+            # every edit is re-audited from the text alone; an unsafe one is reverted to its neutral Pass-1 line (no model call, no retry)
+            slang, diag = self.validator.validate_and_repair(neutral, slang, profiles)
+            repaired_script.append(slang)
+            for r in diag.get("reverted_edits", []):
+                self._log(f"   {sid}: reverted unsafe edit ({', '.join(r['why'])}): {r['edited'][:70]}")
+                try:
+                    rep = self.scratchpad.read("validation_report") or {"reverted": []}
+                    rep.setdefault("reverted", []).append({"scene_id": sid, **r})
+                    self.scratchpad.write("validation_report", rep)
+                except Exception:
+                    pass
             diagnoses[sid] = diag
             scores.append(diag["similarity"])
             flag = ("PASS" if diag["passed"]
@@ -374,13 +446,22 @@ class HinglishPipeline:
                       f"cov={diag['slang_coverage']:.0%} "
                       f"var={diag['slang_variety']:.2f} -> {flag}")
             if not diag["passed"] and diag.get("failure_mode") == "NO_SLANG":
-                # The editor found nothing that fits this scene. Forcing slang here is what produced
-                # "fire" on a fearful line, so a scene that stays neutral is ACCEPTED, not re-done.
+                # The editor found nothing that fits this scene (or every edit was reverted by the audit). Forcing slang here is what
+                # produced "fire" on a fearful line, so a scene that stays neutral is ACCEPTED, not re-done.
                 self._log("       kept neutral by design (no fitting slang) - not re-done")
+            elif not diag["passed"] and diag.get("failure_mode") in ("BAD_EDIT", "MONOTONOUS"):
+                # soft flags: BAD_EDIT can only be the optional LM-fluency flag after the repair; MONOTONOUS (one slang reused in a 3-edit scene) is
+                # reported but not re-done - the editor is seeded and deterministic, so three retries produced the identical scene (measured)
+                self._log(f"       warning: {diag['hint']}")
             elif not diag["passed"]:
                 self._log(f"       reason: {diag['hint']}")
                 failed.append(sid)
 
+        state["slang_script"] = repaired_script
+        try:
+            self.scratchpad.write("slang_script", repaired_script)
+        except Exception:
+            pass
         state["validation_scores"] = scores
         state["failed_scenes"] = failed
         state["scene_diagnoses"] = diagnoses
@@ -411,9 +492,11 @@ class HinglishPipeline:
         for scene in state["slang_script"]:
             ev = scene.get("events", {})
             lines.append(f"## {scene['scene_id'].upper()}")
-            lines.append(f"*Location: {ev.get('location', 'unknown')}*")
+            from agents.grounding import is_unknown_location
+            if not is_unknown_location(ev.get("location")):          # an unknown / hedged location is left out, not printed as a guess
+                lines.append(f"*Location: {ev.get('location')}*")
             lines.append("")
-            lines.append(scene["dialogue"])
+            lines.append(scene["dialogue"] if (scene["dialogue"] or "").strip() else "*(scene-setting narration, no spoken dialogue)*")
             lines.append("\n---\n")
         final = "\n".join(lines)
         self.scratchpad.write("final_script", final)
@@ -426,6 +509,8 @@ class HinglishPipeline:
         from audio.asr.transcribe(...)['pauses'] when the input was a recording - the scene segmenter uses them as evidence."""
         self._pauses = pauses
         self._t_start = time.time()
+        from agents import edit_gate
+        edit_gate.set_setting(None)                           # a new story starts from the default setting; the Persona Agent decides this one
         init: PipelineState = {
             "raw_hindi_text": hindi_story, "romanized_text": "", "scene_chunks": [],
             "event_chain": [], "character_profiles": {}, "neutral_script": [],
@@ -433,6 +518,10 @@ class HinglishPipeline:
             "rewrite_count": 0, "final_script": "",
         }
         init["scene_diagnoses"] = {}
+        try:                                                  # what the validator reverted, accumulated over all validation passes (shown in the UI)
+            self.scratchpad.write("validation_report", {"reverted": [], "judge": bool(getattr(config, "VALIDATOR_JUDGE", False))})
+        except Exception:
+            pass
         final_state = self.graph.invoke(init, {"recursion_limit": 25})
         try:
             import llm_client

@@ -10,7 +10,21 @@ WHAT IS NEW vs v4
     (negation, respectful 'aap', addressed to an elder, hospital scenes, plain facts, questions).
   * two whole domains are held out of training (festival and shaadi, tech / robotics project) -> honest generalisation test.
   * the notebook REFUSES to train on bad data: schema, prompt, shortlist, target consistency, duplicates, truncation, train/eval
-    leakage are all checked first (section 2). Nothing is silently dropped except exact duplicates of eval lines.
+    leakage are all checked first 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    (section 2). Nothing is silently dropped except exact duplicates of eval lines.
   * evaluation also runs the REAL runtime rule gate (edit_gate.py shipped in the dataset folder), per slot type, per eval file.
 
 ==============================================================================

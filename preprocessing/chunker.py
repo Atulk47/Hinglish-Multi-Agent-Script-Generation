@@ -33,6 +33,20 @@ class ProseChunker:
     MAX_SENTENCES = 4    # cap scene length in the sentence-grouping fallback
     MAX_WORDS = 60
 
+    def from_scenes(self, romanized_scenes: List[str]) -> List[dict]:
+        """One chunk per scene, exactly as the SCENE SEGMENTER decided. `chunk` re-splits a text with a single paragraph into groups of ~4 sentences, which
+        silently turned one continuous scene into five chunks and broke the scene <-> original-text alignment every later agent relies on."""
+        out = []
+        for i, para in enumerate(p.strip() for p in romanized_scenes if p and p.strip()):
+            low = para.lower()
+            out.append({
+                "scene_id": f"scene_{i+1:02d}",
+                "text": para,
+                "has_location_cue": any(cue in low for cue in self.LOCATION_CUES),
+                "has_temporal_cue": any(cue in low for cue in self.TEMPORAL_CUES),
+            })
+        return out
+
     def chunk(self, romanized_text: str) -> List[dict]:
         paragraphs = [p.strip() for p in romanized_text.split('\n\n') if p.strip()]
 

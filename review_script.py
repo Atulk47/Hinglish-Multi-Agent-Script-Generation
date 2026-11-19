@@ -99,7 +99,8 @@ def main():
 
     lines = ["# HINGLISH SCREENPLAY (human-reviewed)", ""]
     for sid, loc, dlg in scenes_out:
-        lines += [f"## {sid.upper()}", f"*Location: {loc}*", "", dlg, "\n---\n"]
+        from agents.grounding import is_unknown_location
+        lines += [f"## {sid.upper()}"] + ([] if is_unknown_location(loc) else [f"*Location: {loc}*"]) + ["", dlg, "\n---\n"]
     os.makedirs("outputs", exist_ok=True)
     script_path = f"outputs/{session}_reviewed_script.txt"
     review_path = f"outputs/{session}_review_{args.reviewer}.json"

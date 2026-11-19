@@ -21,6 +21,7 @@ sys.path.insert(0, os.getcwd())
 from dotenv import load_dotenv
 
 load_dotenv()
+import config
 import gradio as gr
 
 from ui import render
@@ -97,7 +98,7 @@ ENGINES = {"Standard (free)": "edge", "Studio (expressive actors, ~$0.1/min)": "
            "Maya (natural Indic voices; pre-rendered stories or a GPU server, else Standard)": "maya"}
 
 
-def on_generate(text, state, make_audio, studio):
+def on_generate(text, state, make_audio, studio, judge=False, director=False):
     studio = ENGINES.get(studio, studio if isinstance(studio, str) else ("gpt" if studio else "edge"))
     nothing = gr.update()
     if not text or len(text.strip()) < 20:
@@ -105,7 +106,7 @@ def on_generate(text, state, make_audio, studio):
         return
     pauses = _pauses_for(text, state)
     head = "Generating... (the first scene appears in the log within a few seconds)"
-    for log, trace, err in RUNNER.run_stream(text, pauses, make_audio, studio):
+    for log, trace, err in RUNNER.run_stream(text, pauses, make_audio, studio, judge, director):
         if err:
             yield (f"**Error:** {err}", log, nothing, nothing, nothing, nothing, nothing, nothing, nothing, nothing, nothing)
             return
@@ -146,6 +147,8 @@ def build():
                     prev_btn = gr.Button("Preview scenes", variant="secondary")
                     make_audio = gr.Checkbox(value=True, label="Render audio drama")
                     studio = gr.Radio(list(ENGINES), value=list(ENGINES)[0], label="Voices")
+                    use_judge = gr.Checkbox(value=False, label="AI judge second opinion on every edit (about 1 cent per story)")
+                    use_director = gr.Checkbox(value=bool(config.SLANG_DIRECTOR), label="Slang Director: an AI agent plans slang scene by scene (about 1 cent per scene)")
                 preview_md = gr.Markdown("")
                 gen_btn = gr.Button("Generate screenplay", variant="primary", size="lg")
             with gr.Column(scale=7):
@@ -174,13 +177,14 @@ def build():
         vs_dd.change(on_voice_sample, vs_dd, audio_in)
         tr_btn.click(on_transcribe, [audio_in, backend, local_model], [text_in, pauses_state, status_md, preview_md])
         prev_btn.click(on_preview, [text_in, pauses_state], preview_md)
-        gen_btn.click(on_generate, [text_in, pauses_state, make_audio, studio],
+        gen_btn.click(on_generate, [text_in, pauses_state, make_audio, studio, use_judge, use_director],
                       [summary, log, scenes, profiles, arcs, comparison, a_slang, a_neutral, timeline, files, final_txt])
     return demo
 
 
 def main():
-    port = int(os.environ.get("PORT", "7860"))
+    # PORT pins the port; without it Gradio starts at 7860 and takes the next free one (up to 7959) instead of crashing when 7860 is busy
+    port = int(os.environ["PORT"]) if os.environ.get("PORT") else None
     demo = build()
     print("Loading models (NER, MuRIL, slang editor) ... the page is usable immediately; Generate waits until they are ready.", flush=True)
     threading.Thread(target=lambda: print(f"Models ready in {RUNNER.load():.0f}s" + (f" (ERROR: {RUNNER.error})" if RUNNER.error else ""),

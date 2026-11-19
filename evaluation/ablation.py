@@ -12,8 +12,14 @@ Variants:
     no_gate3               bypass scene density blocking only (still tracks token totals)
   no_acceptance_rule_gate bypass the deterministic edit_gate rule gate only; lexical
                           meaning/tone checks and repeat limits remain
+  no_validator_repair     full pipeline but WITHOUT the validator's edit audit / repair (isolates what the audit adds)
   no_validation_redo      one editor pass; skip MuRIL validation and retries
   no_editor               neutral Pass-1 dialogue unchanged
+  director                full pipeline, but the scene-level Slang Director (agents/slang_director.py) replaces the line-by-line Gate 2 + Gate 3
+  agentic                 the Director owns the whole decision (also no Gate 1 / respectful regex / serious-scene list / filler cap); validator repair on
+  agentic_no_repair       same, WITHOUT the validator repair: measures whether the agent alone is safe
+  agentic_review          agentic + the runtime review loop (a second agent re-reads the edited scene and reverts awkward edits), then validator repair
+  agentic_review_no_repair  same, WITHOUT the validator repair
 
 This intentionally does not rerun story analysis or Pass-1 generation.
 """
@@ -43,8 +49,14 @@ VARIANTS = (
     "no_gate2",
     "no_gate3",
     "no_acceptance_rule_gate",
+    "no_validator_repair",
     "no_validation_redo",
     "no_editor",
+    "director",
+    "agentic",
+    "agentic_no_repair",
+    "agentic_review",
+    "agentic_review_no_repair",
 )
 
 
@@ -114,6 +126,23 @@ def _ablation_controls(editor: Any, variant: str) -> Iterator[None]:
             editor._judge_ok = rule_override
 
 
+def _repair_all(validator: Any, neutral_script: list[dict], slang_script: list[dict], profiles: dict) -> list[dict]:
+    """The validator's repair step (unsafe edits reverted to the neutral line), exactly as the production pipeline applies it."""
+    if not hasattr(validator, "validate_and_repair"):
+        return slang_script
+    neutral_by_id = {n["scene_id"]: n for n in neutral_script}
+    out = []
+    for scene in slang_script:
+        n = neutral_by_id.get(scene["scene_id"])
+        if n is None:
+            out.append(scene)
+            continue
+        fixed, _ = validator.validate_and_repair(n, scene, profiles)
+        fixed["events"] = copy.deepcopy(scene.get("events", {}))
+        out.append(fixed)
+    return out
+
+
 def _diagnose_all(validator: Any, neutral_script: list[dict],
                   slang_script: list[dict], profiles: dict) -> dict[str, dict]:
     slang_by_id = {s["scene_id"]: s for s in slang_script}
@@ -155,6 +184,26 @@ def run_editor_variant(editor: Any, neutral_script: list[dict], profiles: dict,
     """Run one controlled variant; returns (slang script, final diagnostics)."""
     if variant not in VARIANTS:
         raise ValueError(f"Unknown variant {variant!r}; choose from {', '.join(VARIANTS)}")
+    uses_director = variant in ("director", "agentic", "agentic_no_repair", "agentic_review", "agentic_review_no_repair")
+    if uses_director and getattr(editor, "director", None) is None:
+        raise ValueError(f"the {variant!r} variant needs editor.attach_director(SlangDirector(...))")
+    had = hasattr(editor, "use_director")
+    if had:
+        editor.use_director = uses_director                          # only the director arms use the scene-level plan
+        editor.director_owns = variant.startswith("agentic")         # 'director' keeps Gate 1 and the guards; 'agentic' does not
+        editor.review_on = variant.startswith("agentic_review")      # the review loop is on for the review arms only
+    try:
+        return _run_editor_variant(editor, neutral_script, profiles, variant, validator, max_attempts)
+    finally:
+        if had:
+            editor.use_director = False
+            editor.director_owns = False
+            editor.review_on = False
+
+
+def _run_editor_variant(editor: Any, neutral_script: list[dict], profiles: dict,
+                        variant: str, validator: Any = None,
+                        max_attempts: int = 1) -> tuple[list[dict], dict[str, dict]]:
     if variant == "no_editor":
         unchanged = []
         for scene in neutral_script:
@@ -181,10 +230,15 @@ def run_editor_variant(editor: Any, neutral_script: list[dict], profiles: dict,
         if not needs_validation:
             return current, {}
 
+        # Only the full system gets the validator's repair: the other arms switch ONE mechanism off, and the audit re-checks several of the
+        # same rules (health / respect / elder / the acceptance rule gate), so repairing them would hide what the mechanism does.
+        do_repair = variant in ("full", "director", "agentic", "agentic_review")
+        if do_repair:
+            current = _repair_all(validator, neutral_script, current, profiles)
         diagnoses = _diagnose_all(validator, neutral_script, current, profiles)
         failed = {
             sid for sid, diag in diagnoses.items()
-            if not diag.get("passed") and diag.get("failure_mode") != "NO_SLANG"
+            if not diag.get("passed") and diag.get("failure_mode") not in ("NO_SLANG", "BAD_EDIT")
         }
         attempt = 1
         base_threshold = editor.gate.density_threshold
@@ -209,11 +263,11 @@ def run_editor_variant(editor: Any, neutral_script: list[dict], profiles: dict,
                 rewritten["events"] = copy.deepcopy(neutral.get("events", {}))
                 next_script.append(rewritten)
 
-            current = next_script
+            current = _repair_all(validator, neutral_script, next_script, profiles) if do_repair else next_script
             diagnoses = _diagnose_all(validator, neutral_script, current, profiles)
             failed = {
                 sid for sid, diag in diagnoses.items()
-                if not diag.get("passed") and diag.get("failure_mode") != "NO_SLANG"
+                if not diag.get("passed") and diag.get("failure_mode") not in ("NO_SLANG", "BAD_EDIT")
             }
             attempt += 1
 
@@ -229,14 +283,20 @@ def _write_variant_trace(source: dict, neutral_script: list[dict],
     out["ablation"] = {
         "variant": variant,
         "description": {
-            "full": "Agent 4 + eligibility gates + edit acceptance rule gate + MuRIL validation/redo",
+            "full": "Agent 4 + eligibility gates + edit acceptance rule gate + validator (edit audit/repair, centred MuRIL) + redo",
             "no_eligibility_gates": "Bypass ThreeGateController eligibility gates only",
             "no_gate1": "Bypass Gate 1 speaker eligibility only",
             "no_gate2": "Bypass Gate 2 pragmatic intent eligibility only",
             "no_gate3": "Bypass Gate 3 density blocking only; continue tracking tokens",
             "no_acceptance_rule_gate": "Bypass deterministic edit_gate naturalness rule only",
+            "no_validator_repair": "Full pipeline without the validator's edit audit / repair step",
             "no_validation_redo": "One Agent 4 pass; no MuRIL validation or retry",
             "no_editor": "Pass-1 dialogue unchanged",
+            "director": "Full pipeline with the scene-level Slang Director replacing Gate 2 (intent) and Gate 3 (density); Gate 1, rule gate, validator unchanged",
+            "agentic": "Slang Director owns the decision (no Gate 1 / respectful regex / serious-scene list / filler cap); rule gate + validator repair still verify",
+            "agentic_no_repair": "As 'agentic' but without the validator repair (agent alone)",
+            "agentic_review": "Agentic + runtime review loop (second agent reverts awkward edits) + validator repair",
+            "agentic_review_no_repair": "Agentic + runtime review loop, without the validator repair",
         }[variant],
         "diagnostics": diagnostics,
     }
@@ -293,6 +353,11 @@ def main() -> int:
     if editor.backend == "groq" and args.backend == "qwen":
         parser.error("requested Qwen backend could not be loaded; do not silently compare fallback output")
 
+    if any(m in modes for m in ("director", "agentic", "agentic_no_repair", "agentic_review", "agentic_review_no_repair")):
+        from agents.slang_director import SlangDirector
+        editor.attach_director(SlangDirector(scratchpad))
+        editor.use_director = False                         # switched on per arm by run_editor_variant
+
     validation_modes = [m for m in modes if m not in ("no_validation_redo", "no_editor")]
     validator = None
     if validation_modes:
@@ -312,6 +377,10 @@ def main() -> int:
         "qwen_judge_enabled": getattr(config, "QWEN_JUDGE", None),
         "groq_fallback_enabled": getattr(config, "QWEN_GROQ_FALLBACK", None),
         "seed": getattr(config, "SLANG_SEED", None),
+        # what determines the editor's exact output (greedy decoding is exact only for the same file, context, batch shape and thread count):
+        "gguf": ({"file": os.path.basename(editor._gguf.path), "sha256_16": hashlib.sha256(open(editor._gguf.path, "rb").read(1 << 24)).hexdigest()[:16],
+                  **getattr(editor._gguf, "config", {}), "reuse_prefix": os.getenv("QWEN_GGUF_REUSE_PREFIX", "0")}
+                 if getattr(editor, "_gguf", None) is not None else None),
         "max_validation_attempts": attempts,
         "variants": {},
         "warning": "Run every arm on identical neutral input; inspect API/model errors before using results.",
@@ -333,7 +402,7 @@ def main() -> int:
             "validated_scenes": len(diagnostics),
             "failed_scenes_after_retries": [
                 sid for sid, d in diagnostics.items()
-                if not d.get("passed") and d.get("failure_mode") != "NO_SLANG"
+                if not d.get("passed") and d.get("failure_mode") not in ("NO_SLANG", "BAD_EDIT")
             ],
             "editor_groq_errors": int(editor.stats.get("groq_errors", 0)) - errors_before,
             "valid_for_analysis": (int(editor.stats.get("groq_errors", 0)) - errors_before) == 0,

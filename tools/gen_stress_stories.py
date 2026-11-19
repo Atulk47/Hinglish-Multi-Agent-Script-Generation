@@ -1,0 +1,80 @@
+"""
+tools/gen_stress_stories.py  -  a corpus of stories that differ in SHAPE, not just topic, to stress the whole pipeline.
+
+Every real failure so far came from a story shape the code had not met: speech only in indirect form, no paragraphs, a single scene, pronoun-only openings,
+stage-script format, elders, a village in the past, aliases ... Each spec below pins such a feature. Stories are written once by a model (Claude Haiku) and
+saved under data/stress/ with a manifest, so every later run uses the SAME stories.
+
+    python -m tools.gen_stress_stories            # writes data/stress/sNN_*.txt (skips files that exist)
+"""
+from __future__ import annotations
+import json
+import os
+import re
+import sys
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, ROOT)
+OUT = os.path.join(ROOT, "data", "stress")
+
+BASE = ("Write a short story in Hindi, in Devanagari script (natural everyday Hindi with ordinary English loanwords where people really use them). "
+        "Output ONLY the story text, no title, no commentary, no markdown. ")
+
+SPECS = [
+    ("s01_office_dash", "direct speech introduced by a dash (—) after a speech verb, each spoken line starting a paragraph; modern city office, three colleagues; 7 paragraphs"),
+    ("s02_playground_quotes", "direct speech inside quotation marks (“ ... ”); children in a school playground; 5 paragraphs"),
+    ("s03_trip_indirect_only", "NO quotation marks and NO dashes anywhere: every conversation reported indirectly (\"उसने कहा कि ...\", \"माँ ने पूछा कि ...\"); two friends planning a trip; 5 paragraphs"),
+    ("s04_narration_only", "NO dialogue at all, not even reported speech: only description of one person walking through a monsoon morning and what they see; 4 paragraphs"),
+    ("s05_single_block", "ONE single paragraph with no blank lines, 11 sentences, a family dinner with an argument and a reconciliation, mixing quoted speech and narration"),
+    ("s06_three_sentences", "exactly 3 sentences, a mother and her child at a railway platform"),
+    ("s07_long_wedding", "LONG: 14 paragraphs, wedding preparations in a town over three days with several places (home, market, tailor, hall, station) and clear time jumps; 6 named characters"),
+    ("s08_first_person", "told in the first person (\"मैं\"), a train journey where the narrator talks with a stranger; 6 paragraphs; the narrator is a woman"),
+    ("s09_pronoun_opening", "the first paragraph uses ONLY pronouns (वह, उसने, उसकी) with no name; names appear only from the second paragraph on; a boy preparing for a race; 5 paragraphs"),
+    ("s10_many_names", "seven characters, some with nicknames or two forms of the same name (e.g. राहुल / रॉकी, दादी / दादीजी), a cricket match in a lane; 8 paragraphs"),
+    ("s11_unnamed_people", "NO character has a personal name: only roles (बुढ़िया, दुकानदार, लड़का, डॉक्टर); a small shop on a rainy evening; 5 paragraphs"),
+    ("s12_hospital_grief", "serious and sad: a family at a hospital where the grandfather is dying; restrained emotions; 6 paragraphs"),
+    ("s13_elders_respect", "formal respect: a student, his grandfather, a teacher and the principal; people address elders with आप and ji; 6 paragraphs"),
+    ("s14_startup_english", "a young software team in a startup; many English words inside Hindi sentences (मीटिंग, डेडलाइन, क्लाइंट, ऑनलाइन); 6 paragraphs"),
+    ("s15_play_script", "written as a PLAY SCRIPT: lines like \"रमेश: ...\" and short stage directions in brackets; a husband and wife quarrel about a lost key; 12 lines"),
+    ("s16_fable_animals", "a fable: a fox, a crow and a lion, with a moral at the end; 6 paragraphs"),
+    ("s17_cricket_fast", "fast sports action: a last-over cricket finish, many very short sentences, a commentator voice plus players' shouts; 6 paragraphs"),
+    ("s18_titles_numbers", "contains titles, numbers and times: डॉ. मेहता, श्रीमती वर्मा, ₹500, सुबह 6:30 बजे, 12 तारीख; a clinic visit; 6 paragraphs"),
+    ("s19_historical_rural", "a village in the 1940s: a moneylender (महाजन), a farmer, his wife; formal old-fashioned Hindi, mixing direct and reported speech; 7 paragraphs"),
+    ("s20_siblings_comedy", "comedy: a teenage brother and sister fight over the TV remote, very casual modern slang-like speech; 6 paragraphs"),
+    ("s21_lyrical_minimal", "lyrical, almost no plot: a grandmother's courtyard through the seasons, with a few short remarks by the grandmother; 4 paragraphs"),
+    ("s22_secret_surprise", "a REAL secret: two children hide a birthday gift for their father from him until the evening; the father is present in some scenes and must not learn it; 6 paragraphs"),
+    ("s23_two_sentences", "exactly 2 sentences: a boy finds a coin and gives it to a beggar"),
+    ("s24_roman_hindi", "write it in ROMAN script Hindi (Hinglish letters, like 'Ravi ne kaha ki...'), NOT Devanagari; two cousins in a village mela; 5 paragraphs"),
+]
+
+
+def main():
+    from dotenv import load_dotenv
+    load_dotenv(os.path.join(ROOT, ".env"))
+    import config
+    config.LLM_COST_CAP_USD = 3.0
+    from llm_client import make_client, cost_summary
+    cl = make_client("dialogue")
+    os.makedirs(OUT, exist_ok=True)
+    manifest = {}
+    for sid, spec in SPECS:
+        path = os.path.join(OUT, sid + ".txt")
+        manifest[sid] = spec
+        if os.path.exists(path):
+            continue
+        r = cl.chat.completions.create(model="x", temperature=0.9, max_tokens=2600,
+                                       messages=[{"role": "user", "content": BASE + "Requirements: " + spec + "."}])
+        txt = (r.choices[0].message.content or "").strip()
+        txt = re.sub(r"^```\w*\n|\n```$", "", txt).strip()
+        if not txt:
+            print("EMPTY:", sid)
+            continue
+        open(path, "w", encoding="utf-8").write(txt + "\n")
+        n_par = len([p for p in re.split(r"\n\s*\n", txt) if p.strip()])
+        print(f"{sid}: {len(txt)} chars, {n_par} paragraph(s)")
+    json.dump(manifest, open(os.path.join(OUT, "manifest.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    print(cost_summary())
+
+
+if __name__ == "__main__":
+    main()

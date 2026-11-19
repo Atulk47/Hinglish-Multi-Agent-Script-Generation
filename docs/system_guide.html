@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Hinglish Multi-Agent Screenplay Generator - System Guide</title>
+<style>
+  @page { size: A4; margin: 16mm 15mm 16mm 15mm; }
+  body { font-family: "Segoe UI", Arial, sans-serif; font-size: 10.5pt; line-height: 1.45; color: #1a1a1a; }
+  h1 { font-size: 22pt; margin: 0 0 4px 0; color: #12355b; }
+  h2 { font-size: 15pt; color: #12355b; border-bottom: 2px solid #12355b; padding-bottom: 3px; margin-top: 22px; page-break-after: avoid; }
+  h3 { font-size: 12pt; color: #1d5c8c; margin: 14px 0 3px 0; page-break-after: avoid; }
+  p { margin: 4px 0 6px 0; }
+  ul { margin: 3px 0 7px 0; padding-left: 20px; } li { margin-bottom: 2px; }
+  .sub { color: #555; margin-bottom: 14px; }
+  table { border-collapse: collapse; width: 100%; margin: 6px 0 10px 0; font-size: 9.8pt; page-break-inside: auto; }
+  th { background: #12355b; color: #fff; text-align: left; padding: 4px 6px; }
+  td { border: 1px solid #c8d0d8; padding: 4px 6px; vertical-align: top; }
+  tr { page-break-inside: avoid; }
+  .done { background: #e3f4e5; } .part { background: #fff4d6; } .todo { background: #fde5e5; }
+  .box { border: 1px solid #c8d0d8; background: #f4f7fa; padding: 7px 10px; margin: 8px 0; border-radius: 4px; page-break-inside: avoid; }
+  .flow { font-family: Consolas, monospace; font-size: 9.5pt; background: #f4f7fa; border: 1px solid #c8d0d8; padding: 8px 10px; white-space: pre; page-break-inside: avoid; }
+  code { font-family: Consolas, monospace; font-size: 9.5pt; background: #eef1f4; padding: 0 3px; }
+  .tag { display: inline-block; font-size: 8.5pt; padding: 0 6px; border-radius: 8px; margin-left: 6px; font-weight: 600; }
+  .t-done { background: #2e7d32; color: #fff; } .t-part { background: #b26a00; color: #fff; } .t-todo { background: #b3261e; color: #fff; }
+  img { max-width: 100%; page-break-inside: avoid; }
+  .pb { page-break-before: always; }
+</style></head><body>
+
+<h1>Hinglish Multi-Agent Screenplay Generator</h1>
+<div class="sub">System guide: what it does, how every part works, what is done and what is not. Written in simple words. Status as of 19 November 2026.</div>
+
+<h2>1. What the project does</h2>
+<p>You give it a short <b>story in Hindi</b> (typed in Devanagari, or told aloud as a voice recording). It gives back:</p>
+<ul>
+  <li>a <b>screenplay in Hinglish</b> (Hindi written in Roman letters, mixed with English) with scenes, speakers and dialogue,</li>
+  <li><b>natural youth slang</b> added only where it fits (for example "yaar", "jhakaas", "fatti padi hai", "kya baat hai"),</li>
+  <li>a <b>multi-voice audio drama</b> where every character has their own voice and mood, with subtitles and a player.</li>
+</ul>
+<p>The system never invents plot. It keeps the story's characters, events and meaning, and it avoids slang where it would be rude or wrong (elders, teachers, grief, thanks, apologies, traditional settings).</p>
+
+<h2>2. The big picture</h2>
+<div class="flow">Hindi story (text or voice)
+   |
+   v
+Preprocess ........ Devanagari -> Roman letters, fix tricky words
+   |
+   v
+Scene Segmenter ... cut the story into scenes (places / time jumps)
+   |
+   v
+Agent 1 ........... what happens in each scene (event chain)
+Agent 2 + Persona . who the characters are, gender, age, relations, feelings
+   |
+   v
+Agent 3 (writer) .. neutral Hinglish dialogue, checked by a Fidelity Critic
+   |
+   v
+Slang Director .... decides which lines may get slang (one plan per scene)
+Agent 4 (editor) .. small local model puts the slang in; rule gates check it
+   |
+   v
+Validator ......... re-checks every edit; bad edits go back to plain text
+   |
+   v
+Final screenplay -> Audio drama (voices, mood, room sound, subtitles) -> UI</div>
+<p>A <b>LangGraph</b> orchestrator runs these steps in order (7 steps: preprocess, plan the narrative, build characters, write pass 1, add slang, validate with a redo loop, assemble the output). All steps share one notebook called the <b>scratchpad</b>, which is also saved to disk so every stage can be inspected.</p>
+<img src="architecture.png" alt="architecture diagram">
+
+<h2>3. Every component, in simple words</h2>
+
+<h3>3.1 Input <span class="tag t-done">done</span></h3>
+<ul>
+  <li><b>Text:</b> paste or upload a Devanagari story, or pick a sample.</li>
+  <li><b>Voice:</b> record or upload a spoken story. A speech-to-text step (cloud model by default, local faster-whisper as backup) turns it into Devanagari. It also measures the <b>pauses</b> in the recording, because a long pause often means a new scene.</li>
+</ul>
+
+<h3>3.2 Preprocessing <span class="tag t-done">done</span></h3>
+<p>Converts Devanagari to Roman letters so the rest of the system can work in Roman Hinglish. Special care is taken for English words written in Hindi script (doctor, college, hostel, warden, laptop) so they are not mangled, and for the nukta and candra letters. A small glossary also explains easily misread words (for example "riyayat" means leniency) to the writer.</p>
+
+<h3>3.3 Scene Segmenter <span class="tag t-done">done</span></h3>
+<p>Decides where one scene ends and the next begins. It combines several clues for every gap between sentences:</p>
+<ul>
+  <li><b>Cue words</b> such as "agle din", "usi raat", "kuch der baad" (time or place shift),</li>
+  <li><b>Topic change</b>: the words before and after the gap stop overlapping,</li>
+  <li><b>Pauses</b> in a voice recording,</li>
+  <li><b>Dialogue stays together</b>: two quoted lines next to each other belong to one conversation,</li>
+  <li><b>Author's blank lines</b> are trusted.</li>
+</ul>
+<p>It picks cuts so that a scene is about 2-8 sentences. Optionally one LLM call acts as a referee; if its answer is broken, the code silently keeps its own cut. So the LLM can improve the result but can never break the run. (Measured: boundary F1 went from 0.25 with the old chunker to 0.67.)</p>
+
+<h3>3.4 Agent 1: Narrative Analyst <span class="tag t-done">done</span></h3>
+<p>Reads each scene and writes its <b>event chain</b>: which characters are present, the goal of the scene, the key events, the location, and how it connects to the previous scene. Scenes are processed in parallel. It also cleans up names: it merges spelling variants of the same person, merges kin words ("Nani" and "Nani ji"), and <b>drops any character who is not actually in the text</b> (so a made-up name cannot sneak in).</p>
+
+<h3>3.5 Agent 2: Character Analyst <span class="tag t-done">done</span></h3>
+<p>Finds the characters with a name-detection model plus checks against the story text, and builds a profile for each one. A fix made this week keeps characters whose names were spelled differently by the Roman converter (for example Aditya, Simran), which were being dropped before.</p>
+
+<h3>3.6 Persona Agent <span class="tag t-done">done</span></h3>
+<p>Adds the "human" layer to each character: <b>gender, age group (peer / elder / authority), speaking style, relationships</b> (who is respectful or casual with whom), the <b>emotion in every scene</b> (with intensity 1-3), the <b>setting</b> (modern or traditional, formal or casual), who is present in each scene, and any secrets. It also records <b>aliases</b> (the same person called by different names) but only when the story text proves it with a quote. Slang, voices and the writer all use this information.</p>
+
+<h3>3.7 Agent 3: the dialogue writer <span class="tag t-done">done</span></h3>
+<p>Writes the <b>neutral Hinglish dialogue</b> (no slang yet) for every scene. It runs on a fast LLM (Claude Haiku 5.5). The default style is called <b>padded</b>: it asks for a few clearly stated feelings per scene ("mujhe bahut accha laga", "yeh toh bakwaas hai"), because feeling words are exactly what the slang editor can swap for slang. Rules it follows: stay faithful to the story, respect who is present, use "tum/tu" with friends and "aap" with elders, keep gender forms right, no Devanagari in the output, no markdown. After writing, a <b>sanitiser</b> removes leftover markup, glued words ("Schoolmein"), stray diacritics and meta text. A <b>line budget</b> keeps each scene a sensible length (up to about 12 lines).</p>
+
+<h3>3.8 Fidelity Critic <span class="tag t-done">done</span></h3>
+<p>Reads the writer's scene and checks it against the story: Is someone speaking who is not in the scene? Is a secret leaked? Is an event invented or missing? If yes, the scene is regenerated (up to 2 times). A second layer of grounding checks (every named person and key quote must be traceable to the story) runs in code, not with an LLM.</p>
+
+<h3>3.9 Slang Director <span class="tag t-done">done</span></h3>
+<p>One LLM call per scene (Claude Sonnet 5.5) that acts like a script supervisor: it sees the characters, the emotions, the relationships and every line, and decides <b>which lines should get slang, how strongly, and which are filler-only</b>. It is told which lines actually contain a swappable feeling word, so it does not nominate lines the editor cannot change. Its limits: casual scenes of 4+ lines aim for 2 slang lines (never more than 3 per scene), filler-only lines (just "yaar", "arre") are at most 15% of a scene, and nothing for elders, grief, formal or traditional scenes. If the LLM is unreachable, the older rule gates take over for that scene.</p>
+
+<h3>3.10 Agent 4: the slang editor <span class="tag t-done">done</span></h3>
+<p>This is the part we trained ourselves. A small model (<b>Qwen2.5-1.5B with a LoRA adapter, version 6</b>, run on the laptop CPU as a GGUF file, about 3 seconds per line) gets a line and a short list of slang phrases chosen by code. It picks the <b>one</b> phrase that fits, or says "none fits" and leaves the line unchanged.</p>
+<ul>
+  <li><b>Slang pool:</b> 186 phrases kept as data (not hidden in the model), each with its grammar frame, feeling type (joy, pride, anger, liking, sadness, excitement, worry...), strength, gender form, register (general or urban youth) and usage rules (for example "do not use after 'bahut'").</li>
+  <li><b>Rule gate:</b> after the model answers, strict rules check the result: one small local change, names/numbers/negation/question form unchanged, the slang's mood matches the word it replaced, no slang on a thing-criticism in an "I feel" sentence ("mujhe flop lag raha hai" is blocked), hurt feelings are not turned into praise, and so on.</li>
+  <li><b>Fillers</b> ("yaar", "arre", "bro") are handled separately with caps per scene and no back-to-back repeats.</li>
+</ul>
+
+<h3>3.11 Validator <span class="tag t-done">done</span></h3>
+<p>The last safety net. It re-checks every edited line from the text alone (locality, preserved names/numbers, negation, question form, mood direction, respect and health context). Any line that fails is <b>reverted to its plain Pass-1 text</b>, so the output is safe by construction. It also checks event coverage with centred MuRIL similarity, and can optionally ask two AI judges for a second opinion. Measured: it catches about 98% of deliberately corrupted edits; in the 7-story test the final system had 0% unsafe edits.</p>
+
+<h3>3.12 Orchestrator and the LLM gateway <span class="tag t-done">done</span></h3>
+<p>The orchestrator runs everything and contains a redo loop for scenes that lose meaning. The <b>LLM gateway</b> (<code>llm_client.py</code>) sends each job to the right model through OpenRouter, with Groq as backup, and counts the cost. Models: extraction on gpt-oss-120b, dialogue on Claude Haiku 5.5, the Director on Claude Sonnet 5.5, small jobs on gpt-oss-20b. A typical story costs about <b>$0.05</b> and takes 70-210 seconds.</p>
+
+<h3>3.13 Audio drama <span class="tag t-done">done</span> (Maya needs a GPU)</h3>
+<p>Turns the finished screenplay into a listenable drama, once with slang and once without, so you can compare. Steps:</p>
+<ol>
+  <li><b>Voice casting</b> (no LLM, fully repeatable): every character gets a voice that matches gender and age, plus a personal pitch, speed and volume (children higher and quicker, elders lower and slower, authority figures lower and a bit louder). Characters of the same gender are spread over different voice slots so they sound like different people.</li>
+  <li><b>Emotion to speaking style:</b> each line's emotion and intensity set rate, pitch and volume (excited, scared and angry are faster and higher; sad is slower, softer and lower; "!" lifts the voice, "?" raises pitch, "..." slows down). Everything is clamped so nothing sounds cartoonish.</li>
+  <li><b>Speech engine</b> (three choices):
+    <ul>
+      <li><b>Maya 2 Native</b>: the most natural Indic voices (20 voices). This is the quality voice for the demo. It needs a GPU, so it works in two ways: <i>pre-rendered clips</i> (rendered once on Kaggle and imported, then plays with no GPU or internet) or a <i>live serverless GPU</i> on Modal (any story, pay per second, sleeps when idle, waking takes up to about 2 minutes). If neither is available, the whole drama falls back to the free voices so no character changes voice halfway.</li>
+      <li><b>Standard</b>: free Microsoft neural voices (Hindi and Indian-English). Fast and always available. It is the current default in the app, because it never needs a GPU.</li>
+      <li><b>Studio</b>: expressive actor-style voices through an audio model, about $0.10 per minute.</li>
+    </ul></li>
+  <li><b>Mixing:</b> trims silence, levels every clip to the same loudness, adds human-like gaps (longer after a question or between scenes), adds a short room reverb and a quiet background bed (rain, market, stadium crowd or room tone) chosen from the scene's place. The narrator announces the scene and its place (and stays silent about an unknown place).</li>
+  <li><b>Outputs:</b> MP3s (with slang and neutral), SRT subtitles, and an HTML player with synced subtitles. Every clip is cached, so re-running costs nothing.</li>
+</ol>
+
+<h3>3.14 User interface <span class="tag t-done">done</span></h3>
+<p>A Gradio app (<code>python -m ui.app</code>): text or voice in, then it shows the scene split, the characters with their emotion arcs, the neutral and slang screenplay with the slang highlighted, the audio players, the pipeline log, and download buttons. Options: voice engine, Slang Director on/off, AI judge on/off, audio on/off.</p>
+
+<h3>3.15 Evaluation and tests <span class="tag t-done">done</span></h3>
+<ul>
+  <li><b>564 automated tests</b> that run offline and all pass.</li>
+  <li>A <b>stress corpus of 32 stories</b> (dash-style scripts, narration only, first person, many names, long wedding...) with automatic checks (invariants) for invented names, leaked secrets, Devanagari leaks and so on.</li>
+  <li>A <b>7-story ablation</b> with confidence intervals, a calibrated AI judge, a blind human-rating sheet, and comparisons against a single call to a frontier model.</li>
+</ul>
+
+<h2 class="pb">4. What is done and what is not</h2>
+<table>
+<tr><th style="width:26%">Part</th><th style="width:14%">Status</th><th>Notes</th></tr>
+<tr class="done"><td>Text and voice input</td><td>Done</td><td>Cloud and local speech-to-text, pause detection.</td></tr>
+<tr class="done"><td>Romanisation and loanword fixes</td><td>Done</td><td>Candra vowels, nukta, English words, glossary.</td></tr>
+<tr class="done"><td>Scene Segmenter</td><td>Done</td><td>Multi-signal, LLM referee is optional and safe.</td></tr>
+<tr class="done"><td>Agent 1, Agent 2, Persona Agent</td><td>Done</td><td>Name merging, grounding (no invented characters), aliases with evidence.</td></tr>
+<tr class="done"><td>Agent 3 writer + Fidelity Critic</td><td>Done</td><td>Padded style is the default (more natural, more feeling words).</td></tr>
+<tr class="done"><td>Slang Director</td><td>Done</td><td>Aims for 2-3 slang lines in lively peer scenes.</td></tr>
+<tr class="done"><td>Slang editor (v6) + pool + rule gate</td><td>Done</td><td>186 phrases; runs on CPU; rule gate blocks meaning-changing edits.</td></tr>
+<tr class="done"><td>Validator + redo loop</td><td>Done</td><td>Bad edits are reverted to plain text.</td></tr>
+<tr class="done"><td>Audio: Standard voices</td><td>Done, verified</td><td>Tested end to end through the UI on four stories.</td></tr>
+<tr class="part"><td>Audio: Maya voices</td><td>Built, needs a GPU</td><td>Works from pre-rendered clips or the Modal GPU. Needs a fresh pre-render (Kaggle) or a live server for each new demo story; not re-tested after the latest changes.</td></tr>
+<tr class="part"><td>Audio: Studio voices</td><td>Built, not re-tested</td><td>Costs money (~$0.10/min); not run in the latest checks.</td></tr>
+<tr class="done"><td>UI</td><td>Done</td><td>Restart the app to load the latest code.</td></tr>
+<tr class="done"><td>Tests and stress corpus</td><td>Done</td><td>564 tests pass.</td></tr>
+<tr class="part"><td>Amount and variety of slang</td><td>Improved, limited</td><td>About 15-17% of lines get slang (about 2 per lively peer scene). It cannot go much higher without changing meaning, because the writer must first produce a swappable feeling word.</td></tr>
+<tr class="todo"><td>Native-speaker rating</td><td>Not done</td><td>The blind rating sheet is ready (<code>outputs/human_eval/sheet.csv</code>); it needs 2-3 native speakers. The most valuable missing piece for a paper.</td></tr>
+<tr class="todo"><td>More than one small model / several random seeds</td><td>Not done</td><td>Dropped on purpose to save credits.</td></tr>
+<tr class="todo"><td>Smarter free-form slang editor</td><td>Future work</td><td>In progress as a separate experiment; the demo uses the current v6 editor.</td></tr>
+<tr class="todo"><td>Paper</td><td>Due 20 Nov</td><td>Numbers are in <code>docs/RESULTS.md</code>, <code>docs/VALIDATOR.md</code>, <code>docs/BASELINE.md</code>.</td></tr>
+<tr class="todo"><td>GitHub push</td><td>Your step</td><td>Steps are given separately.</td></tr>
+</table>
+
+<h2>5. Honest limits</h2>
+<ul>
+  <li>The writer is an LLM, so two runs of the same story differ a little. Run the demo story once beforehand and show that run (the app saves everything under <code>outputs/ui_&lt;time&gt;_*</code>).</li>
+  <li>A single call to a strong frontier model with the same rules in its prompt writes as well or slightly better. The project's defensible strengths are <b>robustness</b> (with a weak 8B writer the pipeline gave valid output 7/7 times, a single call only 1-3/7), <b>safety checks</b> and <b>a trained small local editor</b>.</li>
+  <li>Slang is conservative on purpose: wrong slang is worse than no slang.</li>
+  <li>A hallucinated name that equals a common Hindi word cannot be caught by text matching.</li>
+  <li>Real human voice input has been tested on only a few recordings; offline speech recognition is weaker than the cloud one.</li>
+</ul>
+
+<h2>6. Key numbers</h2>
+<table>
+<tr><th>What</th><th>Value</th></tr>
+<tr><td>Automated tests</td><td>564 passing</td></tr>
+<tr><td>Slang pool</td><td>186 phrases with grammar and usage rules</td></tr>
+<tr><td>Slang rate</td><td>about 15-17% of dialogue lines; target 2-3 per lively peer scene</td></tr>
+<tr><td>Unsafe edits after the validator (7 stories, 235 lines)</td><td>0%</td></tr>
+<tr><td>Edits accepted by at least one AI judge</td><td>about 95-100%</td></tr>
+<tr><td>Scene boundary F1</td><td>0.67 (old chunker 0.25)</td></tr>
+<tr><td>Cost per story / time</td><td>about $0.05 / 70-210 s on the free voices</td></tr>
+<tr><td>Editor speed</td><td>about 3 s per generation on CPU</td></tr>
+</table>
+
+<h2>7. How to run it</h2>
+<ul>
+  <li>Start the app: <code>python -m ui.app</code> (from the project folder, in the <code>hinglish</code> environment). Models load in about 50 seconds; close heavy apps first (about 3 GB free RAM needed).</li>
+  <li>Keys go in a <code>.env</code> file (never committed): <code>OPENROUTER_API_KEY</code> (and optionally <code>GROQ_API_KEY</code>, <code>MAYA_URL</code> plus the Modal proxy keys).</li>
+  <li>Command line: <code>python run_pipeline.py &lt;story.txt&gt;</code>; tests: <code>python -m pytest tests -q</code>.</li>
+  <li>For the Maya voice: choose "Maya" in the Voices box. With a live GPU server set in <code>MAYA_URL</code> any story works; otherwise pre-render the story on Kaggle with <code>tools/export_maya_jobs.py</code> and import it with <code>tools/import_maya_zip.py</code>. Without either, the app uses the Standard voices.</li>
+  <li>Demo advice: pick lively peer stories (friends, hostel, cricket, fest). Stories dominated by elders or grief intentionally get little slang.</li>
+</ul>
+
+<h2>8. Where to read more</h2>
+<table>
+<tr><th>File</th><th>Contents</th></tr>
+<tr><td><code>README.md</code>, <code>PROJECT_STATUS.md</code></td><td>Overview and state of the project</td></tr>
+<tr><td><code>docs/DEMO.md</code></td><td>Demo checklist and fixes made for the demo</td></tr>
+<tr><td><code>docs/DIRECTOR.md</code>, <code>docs/SLANG_POOL.md</code></td><td>Slang Director and the slang pool</td></tr>
+<tr><td><code>docs/GROUNDING.md</code></td><td>How invented names and events are prevented</td></tr>
+<tr><td><code>docs/VALIDATOR.md</code>, <code>docs/EVALUATION.md</code>, <code>docs/RESULTS.md</code></td><td>Validator and measured results</td></tr>
+<tr><td><code>docs/BASELINE.md</code></td><td>Comparison with a single frontier-model call</td></tr>
+<tr><td><code>docs/TESTING.md</code>, <code>docs/PENDING.md</code></td><td>Tests and open items</td></tr>
+</table>
+</body></html>

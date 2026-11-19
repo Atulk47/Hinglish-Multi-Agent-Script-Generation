@@ -20,11 +20,12 @@ class GGUFEditor:
             raise FileNotFoundError(path)
         self.path = path
         last = None
+        threads = n_threads or int(os.getenv("QWEN_GGUF_THREADS", "0") or 0) or max(4, (os.cpu_count() or 8) - 2)       # pin with QWEN_GGUF_THREADS for exact repeatability across machines
         for ctx, batch in self.LADDER:
             try:
-                self.llm = Llama(model_path=path, n_ctx=min(ctx, n_ctx), n_threads=n_threads or max(4, (os.cpu_count() or 8) - 2),
+                self.llm = Llama(model_path=path, n_ctx=min(ctx, n_ctx), n_threads=threads,
                                  n_batch=batch, verbose=False, seed=7, use_mmap=True)
-                self.config = {"n_ctx": min(ctx, n_ctx), "n_batch": batch}
+                self.config = {"n_ctx": min(ctx, n_ctx), "n_batch": batch, "n_threads": threads}       # recorded in the ablation manifest: batch shape / threads can change float rounding
                 if (ctx, batch) != self.LADDER[0]:
                     print(f"GGUFEditor: low memory - loaded with context {ctx}, batch {batch}", flush=True)
                 return
@@ -38,6 +39,14 @@ class GGUFEditor:
         return len(self.llm.tokenize(text.encode("utf-8"), add_bos=False))
 
     def generate(self, system: str, user: str, max_new: int) -> str:
+        # DETERMINISM: llama.cpp keeps the KV cache of the previous prompt and, when the new prompt shares a prefix, evaluates only the remaining tokens
+        # (a different batch shape, so float rounding could in principle flip a near-tie argmax depending on what was asked just before).
+        # reset() forgets the previous prompt, so every call evaluates its prompt from position 0 in the same way (costs ~100 prompt tokens per call).
+        # MEASURED (tools/check_determinism.py model, 60 prompts x 4 orderings, 2026-11-16): 0/60 prompts differed with reuse ON and 0/60 with it OFF,
+        # so on this model/machine the cache was NOT shown to change outputs; reset() is a precaution, not a proven fix.
+        # QWEN_GGUF_REUSE_PREFIX=1 switches the reuse back on (faster).
+        if os.getenv("QWEN_GGUF_REUSE_PREFIX", "0") not in ("1", "true", "True"):
+            self.llm.reset()
         r = self.llm.create_chat_completion(
             messages=[{"role": "system", "content": system}, {"role": "user", "content": user}],
             temperature=0.0, max_tokens=int(max_new), stop=["<|im_end|>", "<|endoftext|>"])

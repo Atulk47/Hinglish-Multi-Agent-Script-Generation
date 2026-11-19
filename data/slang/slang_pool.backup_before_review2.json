@@ -1,0 +1,1711 @@
+{
+ "version": 1,
+ "note": "Source of truth for the slot slang lists used by agents/edit_gate.py. status: core = used at runtime; candidate = awaiting native-speaker review (not used).",
+ "entries": [
+  {
+   "phrase": "bindaas",
+   "slots": [
+    "praise",
+    "predicate"
+   ],
+   "sign": 1,
+   "intensity": 2,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "paisa vasool",
+   "slots": [
+    "praise",
+    "predicate"
+   ],
+   "sign": 1,
+   "intensity": 2,
+   "kind": "idiom",
+   "gender": null,
+   "frame": null,
+   "context": [
+    "paisa",
+    "paise",
+    "keemat",
+    "price",
+    "ticket",
+    "film",
+    "movie",
+    "show",
+    "khana",
+    "meal",
+    "dam",
+    "daam",
+    "rupaye",
+    "rupee",
+    "kharcha"
+   ],
+   "controls": [],
+   "status": "core",
+   "note": "only where value-for-money is the topic (film, food, show, purchase)"
+  },
+  {
+   "phrase": "zabardast",
+   "slots": [
+    "praise",
+    "predicate"
+   ],
+   "sign": 1,
+   "intensity": 2,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "kamaal",
+   "slots": [
+    "praise",
+    "predicate"
+   ],
+   "sign": 1,
+   "intensity": 2,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "mast",
+   "slots": [
+    "praise",
+    "predicate"
+   ],
+   "sign": 1,
+   "intensity": 1,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "kadak",
+   "slots": [
+    "praise",
+    "predicate"
+   ],
+   "sign": 1,
+   "intensity": 2,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "solid",
+   "slots": [
+    "praise",
+    "predicate"
+   ],
+   "sign": 1,
+   "intensity": 2,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "lajawaab",
+   "slots": [
+    "praise",
+    "predicate"
+   ],
+   "sign": 1,
+   "intensity": 2,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "jhakaas",
+   "slots": [
+    "praise"
+   ],
+   "sign": 1,
+   "intensity": 3,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "gazab",
+   "slots": [
+    "praise"
+   ],
+   "sign": 1,
+   "intensity": 3,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "faadu",
+   "slots": [
+    "praise"
+   ],
+   "sign": 1,
+   "intensity": 3,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "top class",
+   "slots": [
+    "praise"
+   ],
+   "sign": 1,
+   "intensity": 2,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "on point",
+   "slots": [
+    "praise"
+   ],
+   "sign": 1,
+   "intensity": 2,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": "native speaker: 'on point hai' yes, never 'on point laga'",
+   "forbid_after": [
+    "laga",
+    "lagi",
+    "lage",
+    "lagta",
+    "lagti",
+    "lagte",
+    "lag",
+    "lagna"
+   ]
+  },
+  {
+   "phrase": "ek number",
+   "slots": [
+    "praise"
+   ],
+   "sign": 1,
+   "intensity": 2,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "dhamaal",
+   "slots": [
+    "praise"
+   ],
+   "sign": 1,
+   "intensity": 3,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "ghatiya",
+   "slots": [
+    "criticism"
+   ],
+   "sign": -1,
+   "intensity": 2,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "bakwaas",
+   "slots": [
+    "criticism"
+   ],
+   "sign": -1,
+   "intensity": 2,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "kachra",
+   "slots": [
+    "criticism"
+   ],
+   "sign": -1,
+   "intensity": 3,
+   "kind": "slang_word",
+   "gender": "m",
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "flop",
+   "slots": [
+    "criticism"
+   ],
+   "sign": -1,
+   "intensity": 2,
+   "kind": "slang_word",
+   "gender": "m",
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "jhand",
+   "slots": [
+    "criticism"
+   ],
+   "sign": -1,
+   "intensity": 3,
+   "kind": "slang_word",
+   "gender": "m",
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "bekaar",
+   "slots": [
+    "criticism"
+   ],
+   "sign": -1,
+   "intensity": 1,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "faltu",
+   "slots": [
+    "criticism"
+   ],
+   "sign": -1,
+   "intensity": 1,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "wahiyat",
+   "slots": [
+    "criticism"
+   ],
+   "sign": -1,
+   "intensity": 2,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "third class",
+   "slots": [
+    "criticism"
+   ],
+   "sign": -1,
+   "intensity": 2,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "dil baith raha hai",
+   "slots": [
+    "worry"
+   ],
+   "sign": -1,
+   "intensity": 2,
+   "kind": "idiom",
+   "gender": null,
+   "frame": {
+    "possessive_before": "dil",
+    "gender": "m",
+    "number": "sg"
+   },
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "dimaag fry",
+   "slots": [
+    "worry"
+   ],
+   "sign": -1,
+   "intensity": 2,
+   "kind": "idiom",
+   "gender": "m",
+   "frame": {
+    "possessive_before": "dimaag",
+    "gender": "m",
+    "number": "sg"
+   },
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": "native speaker: needs 'mera' (mera dimaag fry ho raha hai); never as a genitive noun ('sab ki dimaag fry')"
+  },
+  {
+   "phrase": "fatti padi hai",
+   "slots": [
+    "worry"
+   ],
+   "sign": -1,
+   "intensity": 3,
+   "kind": "idiom",
+   "gender": null,
+   "frame": {
+    "possessive_before": "fatti",
+    "gender": "f",
+    "number": "sg"
+   },
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "full tension",
+   "slots": [
+    "worry"
+   ],
+   "sign": -1,
+   "intensity": 1,
+   "kind": "idiom",
+   "gender": "f",
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "haath-pair phool gaye",
+   "slots": [
+    "worry"
+   ],
+   "sign": -1,
+   "intensity": 3,
+   "kind": "idiom",
+   "gender": null,
+   "frame": {
+    "possessive_before": "haath-pair",
+    "gender": "m",
+    "number": "pl"
+   },
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "jaan nikal gayi",
+   "slots": [
+    "worry"
+   ],
+   "sign": -1,
+   "intensity": 3,
+   "kind": "idiom",
+   "gender": null,
+   "frame": {
+    "possessive_before": "jaan",
+    "gender": "f",
+    "number": "sg"
+   },
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "pasine chhoot gaye",
+   "slots": [
+    "worry"
+   ],
+   "sign": -1,
+   "intensity": 3,
+   "kind": "idiom",
+   "gender": null,
+   "frame": {
+    "possessive_before": "pasine",
+    "gender": "m",
+    "number": "pl"
+   },
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "chakkar",
+   "slots": [
+    "trouble"
+   ],
+   "sign": -1,
+   "intensity": 1,
+   "kind": "slang_word",
+   "gender": "m",
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "gadbad",
+   "slots": [
+    "trouble"
+   ],
+   "sign": -1,
+   "intensity": 1,
+   "kind": "slang_word",
+   "gender": "f",
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "ghapla",
+   "slots": [
+    "trouble"
+   ],
+   "sign": -1,
+   "intensity": 2,
+   "kind": "slang_word",
+   "gender": "m",
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "jhamela",
+   "slots": [
+    "trouble"
+   ],
+   "sign": -1,
+   "intensity": 1,
+   "kind": "slang_word",
+   "gender": "m",
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "jhol",
+   "slots": [
+    "trouble"
+   ],
+   "sign": -1,
+   "intensity": 2,
+   "kind": "slang_word",
+   "gender": "m",
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "lafda",
+   "slots": [
+    "trouble"
+   ],
+   "sign": -1,
+   "intensity": 2,
+   "kind": "slang_word",
+   "gender": "m",
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "locha",
+   "slots": [
+    "trouble"
+   ],
+   "sign": -1,
+   "intensity": 2,
+   "kind": "slang_word",
+   "gender": "m",
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "panga",
+   "slots": [
+    "trouble"
+   ],
+   "sign": -1,
+   "intensity": 2,
+   "kind": "slang_word",
+   "gender": "m",
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "bacchon ka khel",
+   "slots": [
+    "ease"
+   ],
+   "sign": 1,
+   "intensity": 2,
+   "kind": "idiom",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "chutki mein",
+   "slots": [
+    "ease"
+   ],
+   "sign": 1,
+   "intensity": 1,
+   "kind": "idiom",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "left hand ka khel",
+   "slots": [
+    "ease"
+   ],
+   "sign": 1,
+   "intensity": 2,
+   "kind": "idiom",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "sorted",
+   "slots": [
+    "predicate"
+   ],
+   "sign": 1,
+   "intensity": 1,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "badiya",
+   "slots": [],
+   "sign": 1,
+   "intensity": 1,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "sahi hai",
+   "slots": [],
+   "sign": 1,
+   "intensity": 1,
+   "kind": "idiom",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [],
+   "status": "core",
+   "note": ""
+  },
+  {
+   "phrase": "cringe",
+   "slots": [
+    "criticism"
+   ],
+   "sign": -1,
+   "intensity": 2,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [
+    "ASSERT_NEGATIVE"
+   ],
+   "status": "core",
+   "note": "talking to elders or in formal reviews; safe"
+  },
+  {
+   "phrase": "mid",
+   "slots": [
+    "criticism"
+   ],
+   "sign": -1,
+   "intensity": 1,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [
+    "ASSERT_NEGATIVE"
+   ],
+   "status": "core",
+   "note": "when something is truly terrible, since it only means average; trendy"
+  },
+  {
+   "phrase": "trash",
+   "slots": [
+    "criticism"
+   ],
+   "sign": -1,
+   "intensity": 2,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [
+    "ASSERT_NEGATIVE"
+   ],
+   "status": "core",
+   "note": "talking to elders or about someone's sincere effort; safe"
+  },
+  {
+   "phrase": "pakau",
+   "slots": [
+    "criticism"
+   ],
+   "sign": -1,
+   "intensity": 2,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [
+    "ASSERT_NEGATIVE"
+   ],
+   "status": "core",
+   "note": "serious or sad moments, or when the thing is bad but not tedious; safe"
+  },
+  {
+   "phrase": "jhelne layak nahi",
+   "slots": [
+    "criticism"
+   ],
+   "sign": -1,
+   "intensity": 2,
+   "kind": "idiom",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [
+    "ASSERT_NEGATIVE"
+   ],
+   "status": "core",
+   "note": "praising or describing something merely average; safe"
+  },
+  {
+   "phrase": "dead",
+   "slots": [
+    "criticism"
+   ],
+   "sign": -1,
+   "intensity": 2,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [
+    "ASSERT_NEGATIVE"
+   ],
+   "status": "core",
+   "note": "describing objects or products, mostly suits parties, places or vibes; trendy"
+  },
+  {
+   "phrase": "scene kharab",
+   "slots": [
+    "criticism"
+   ],
+   "sign": -1,
+   "intensity": 1,
+   "kind": "idiom",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [
+    "ASSERT_NEGATIVE"
+   ],
+   "status": "core",
+   "note": "reviewing films, food or objects; suits situations or plans going wrong; situational"
+  },
+  {
+   "phrase": "vella",
+   "slots": [
+    "criticism"
+   ],
+   "sign": -1,
+   "intensity": 1,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [
+    "ASSERT_NEGATIVE"
+   ],
+   "status": "core",
+   "note": "talking about a movie or food; fits only a pointless time-wasting activity; regional"
+  },
+  {
+   "phrase": "dhakkan",
+   "slots": [
+    "criticism"
+   ],
+   "sign": -1,
+   "intensity": 2,
+   "kind": "slang_word",
+   "gender": "m",
+   "frame": null,
+   "context": null,
+   "controls": [
+    "ASSERT_NEGATIVE"
+   ],
+   "status": "core",
+   "note": "describing anything but a weak performance, game or item; situational"
+  },
+  {
+   "phrase": "red flag",
+   "slots": [
+    "criticism"
+   ],
+   "sign": -1,
+   "intensity": 2,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [
+    "ASSERT_NEGATIVE"
+   ],
+   "status": "core",
+   "note": "describing films or food; only for behaviour, people or choices; situational"
+  },
+  {
+   "phrase": "sadela",
+   "slots": [
+    "criticism"
+   ],
+   "sign": -1,
+   "intensity": 2,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [
+    "ASSERT_NEGATIVE"
+   ],
+   "status": "core",
+   "note": "describing abstract things or in polite company; best for food or old objects; situational"
+  },
+  {
+   "phrase": "bina tension ke",
+   "slots": [
+    "ease"
+   ],
+   "sign": 1,
+   "intensity": 1,
+   "kind": "idiom",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [
+    "ASSERT_POSITIVE"
+   ],
+   "status": "core",
+   "note": "formal or serious work contexts; safe"
+  },
+  {
+   "phrase": "ekdum smooth",
+   "slots": [
+    "ease"
+   ],
+   "sign": 1,
+   "intensity": 1,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [
+    "ASSERT_POSITIVE"
+   ],
+   "status": "core",
+   "note": "talking to elders formally; safe"
+  },
+  {
+   "phrase": "full chill mein",
+   "slots": [
+    "ease"
+   ],
+   "sign": 1,
+   "intensity": 1,
+   "kind": "idiom",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [
+    "ASSERT_POSITIVE"
+   ],
+   "status": "core",
+   "note": "serious or urgent moments; safe"
+  },
+  {
+   "phrase": "araam se",
+   "slots": [
+    "ease"
+   ],
+   "sign": 1,
+   "intensity": 1,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [
+    "ASSERT_POSITIVE"
+   ],
+   "status": "core",
+   "note": "when speed or urgency is the point; safe"
+  },
+  {
+   "phrase": "ek second mein",
+   "slots": [
+    "ease"
+   ],
+   "sign": 1,
+   "intensity": 2,
+   "kind": "idiom",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [
+    "ASSERT_POSITIVE"
+   ],
+   "status": "core",
+   "note": "task is clearly long or complex and the speaker is being literal; safe"
+  },
+  {
+   "phrase": "bina sweat kiye",
+   "slots": [
+    "ease"
+   ],
+   "sign": 1,
+   "intensity": 2,
+   "kind": "idiom",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [
+    "ASSERT_POSITIVE"
+   ],
+   "status": "core",
+   "note": "formal contexts or when effort is being acknowledged; trendy"
+  },
+  {
+   "phrase": "mind-blowing",
+   "slots": [
+    "praise"
+   ],
+   "sign": 1,
+   "intensity": 3,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [
+    "ASSERT_POSITIVE",
+    "ASSERT_EXCITED"
+   ],
+   "status": "core",
+   "note": "serious or formal talk, or for small everyday things; safe"
+  },
+  {
+   "phrase": "killer",
+   "slots": [
+    "praise"
+   ],
+   "sign": 1,
+   "intensity": 2,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [
+    "ASSERT_POSITIVE"
+   ],
+   "status": "core",
+   "note": "talking to elders, or near real violence or crime topics; safe"
+  },
+  {
+   "phrase": "next level",
+   "slots": [
+    "praise"
+   ],
+   "sign": 1,
+   "intensity": 3,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [
+    "ASSERT_POSITIVE",
+    "ASSERT_EXCITED"
+   ],
+   "status": "core",
+   "note": "for ordinary, modest things; safe"
+  },
+  {
+   "phrase": "lit",
+   "slots": [
+    "praise"
+   ],
+   "sign": 1,
+   "intensity": 2,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [
+    "ASSERT_POSITIVE"
+   ],
+   "status": "core",
+   "note": "for ideas or serious things; fits parties, events and songs; trendy"
+  },
+  {
+   "phrase": "dope",
+   "slots": [
+    "praise"
+   ],
+   "sign": 1,
+   "intensity": 2,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [
+    "ASSERT_POSITIVE"
+   ],
+   "status": "core",
+   "note": "formal talk or elders; trendy"
+  },
+  {
+   "phrase": "epic",
+   "slots": [
+    "praise"
+   ],
+   "sign": 1,
+   "intensity": 3,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [
+    "ASSERT_POSITIVE",
+    "ASSERT_EXCITED"
+   ],
+   "status": "core",
+   "note": "for small, mundane things; safe"
+  },
+  {
+   "phrase": "awesome",
+   "slots": [
+    "praise"
+   ],
+   "sign": 1,
+   "intensity": 2,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [
+    "ASSERT_POSITIVE"
+   ],
+   "status": "core",
+   "note": "very formal or deeply emotional moments; safe"
+  },
+  {
+   "phrase": "bhaukaal",
+   "slots": [
+    "praise"
+   ],
+   "sign": 1,
+   "intensity": 3,
+   "kind": "slang_word",
+   "gender": "m",
+   "frame": null,
+   "context": null,
+   "controls": [
+    "ASSERT_POSITIVE",
+    "ASSERT_EXCITED"
+   ],
+   "status": "core",
+   "note": "sad or serious moments; it implies swagger or impact; safe"
+  },
+  {
+   "phrase": "sick",
+   "slots": [
+    "praise"
+   ],
+   "sign": 1,
+   "intensity": 3,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [
+    "ASSERT_POSITIVE",
+    "ASSERT_EXCITED"
+   ],
+   "status": "core",
+   "note": "illness or health talk, where it would confuse; trendy"
+  },
+  {
+   "phrase": "legendary",
+   "slots": [
+    "praise"
+   ],
+   "sign": 1,
+   "intensity": 3,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [
+    "ASSERT_POSITIVE",
+    "ASSERT_EXCITED"
+   ],
+   "status": "core",
+   "note": "for minor things; sounds sarcastic if overused; safe"
+  },
+  {
+   "phrase": "fire",
+   "slots": [
+    "praise"
+   ],
+   "sign": 1,
+   "intensity": 3,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [
+    "ASSERT_POSITIVE",
+    "ASSERT_EXCITED"
+   ],
+   "status": "core",
+   "note": "talk of accidents or danger; formal settings; trendy"
+  },
+  {
+   "phrase": "cool",
+   "slots": [
+    "praise"
+   ],
+   "sign": 1,
+   "intensity": 1,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [
+    "ASSERT_POSITIVE"
+   ],
+   "status": "core",
+   "note": "for strong, emotional praise; safe"
+  },
+  {
+   "phrase": "OP",
+   "slots": [
+    "praise"
+   ],
+   "sign": 1,
+   "intensity": 3,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [
+    "ASSERT_POSITIVE",
+    "ASSERT_EXCITED"
+   ],
+   "status": "core",
+   "note": "talking to elders; gamer-flavoured, so not for gentle or emotional things; trendy"
+  },
+  {
+   "phrase": "banger",
+   "slots": [
+    "praise"
+   ],
+   "sign": 1,
+   "intensity": 3,
+   "kind": "slang_word",
+   "gender": "m",
+   "frame": null,
+   "context": null,
+   "controls": [
+    "ASSERT_POSITIVE",
+    "ASSERT_EXCITED"
+   ],
+   "status": "core",
+   "note": "anything other than songs, videos, movies or performances; situational"
+  },
+  {
+   "phrase": "classy",
+   "slots": [
+    "praise"
+   ],
+   "sign": 1,
+   "intensity": 2,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [
+    "ASSERT_POSITIVE"
+   ],
+   "status": "core",
+   "note": "for loud, wild or cheap-fun things; safe"
+  },
+  {
+   "phrase": "insane",
+   "slots": [
+    "praise"
+   ],
+   "sign": 1,
+   "intensity": 3,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [
+    "ASSERT_POSITIVE",
+    "ASSERT_EXCITED"
+   ],
+   "status": "core",
+   "note": "mental health talk, or when real madness is meant; safe"
+  },
+  {
+   "phrase": "dhansu",
+   "slots": [
+    "praise"
+   ],
+   "sign": 1,
+   "intensity": 3,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [
+    "ASSERT_POSITIVE",
+    "ASSERT_EXCITED"
+   ],
+   "status": "core",
+   "note": "formal talk, elders, or sad moments; safe"
+  },
+  {
+   "phrase": "tagda",
+   "slots": [
+    "praise"
+   ],
+   "sign": 1,
+   "intensity": 2,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [
+    "ASSERT_POSITIVE"
+   ],
+   "status": "core",
+   "note": "with feminine nouns without changing to tagdi; Mumbai-flavoured; not for formal talk; regional"
+  },
+  {
+   "phrase": "god-level",
+   "slots": [
+    "praise"
+   ],
+   "sign": 1,
+   "intensity": 3,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [
+    "ASSERT_POSITIVE",
+    "ASSERT_EXCITED"
+   ],
+   "status": "core",
+   "note": "skill or performance topics only; can sound religious near devotional talk; situational"
+  },
+  {
+   "phrase": "steal",
+   "slots": [
+    "praise"
+   ],
+   "sign": 1,
+   "intensity": 2,
+   "kind": "slang_word",
+   "gender": "m",
+   "frame": null,
+   "context": null,
+   "controls": [
+    "ASSERT_POSITIVE"
+   ],
+   "status": "core",
+   "note": "no money or price context, since it means a bargain; situational"
+  },
+  {
+   "phrase": "wholesome",
+   "slots": [
+    "praise"
+   ],
+   "sign": 1,
+   "intensity": 1,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [
+    "ASSERT_POSITIVE"
+   ],
+   "status": "core",
+   "note": "for loud, thrilling or action things; fits sweet, heartwarming moments; situational"
+  },
+  {
+   "phrase": "chaka-chak",
+   "slots": [
+    "praise"
+   ],
+   "sign": 1,
+   "intensity": 2,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [
+    "ASSERT_POSITIVE"
+   ],
+   "status": "core",
+   "note": "serious or sad moments; very formal talk; safe"
+  },
+  {
+   "phrase": "dhasu",
+   "slots": [
+    "praise"
+   ],
+   "sign": 1,
+   "intensity": 2,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [
+    "ASSERT_POSITIVE"
+   ],
+   "status": "core",
+   "note": "serious or sad moments; talking to elders; formal settings; trendy"
+  },
+  {
+   "phrase": "number one",
+   "slots": [
+    "praise"
+   ],
+   "sign": 1,
+   "intensity": 2,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [
+    "ASSERT_POSITIVE"
+   ],
+   "status": "core",
+   "note": "serious or sad moments; when comparing things with a clear ranking; safe"
+  },
+  {
+   "phrase": "scene",
+   "slots": [
+    "trouble"
+   ],
+   "sign": -1,
+   "intensity": 1,
+   "kind": "slang_word",
+   "gender": "m",
+   "frame": null,
+   "context": null,
+   "controls": [
+    "ASSERT_FRUSTRATION"
+   ],
+   "status": "core",
+   "note": "formal or serious situations like illness or loss; safe"
+  },
+  {
+   "phrase": "kaand",
+   "slots": [
+    "trouble"
+   ],
+   "sign": -1,
+   "intensity": 2,
+   "kind": "slang_word",
+   "gender": "m",
+   "frame": null,
+   "context": null,
+   "controls": [
+    "ASSERT_FRUSTRATION"
+   ],
+   "status": "core",
+   "note": "minor everyday hiccups, tragic situations; safe"
+  },
+  {
+   "phrase": "pange wali situation",
+   "slots": [
+    "trouble"
+   ],
+   "sign": -1,
+   "intensity": 2,
+   "kind": "idiom",
+   "gender": "f",
+   "frame": null,
+   "context": null,
+   "controls": [
+    "ASSERT_FRUSTRATION"
+   ],
+   "status": "core",
+   "note": "formal settings, serious or sad moments; safe"
+  },
+  {
+   "phrase": "vat",
+   "slots": [
+    "trouble"
+   ],
+   "sign": -1,
+   "intensity": 2,
+   "kind": "slang_word",
+   "gender": "f",
+   "frame": null,
+   "context": null,
+   "controls": [
+    "ASSERT_FRUSTRATION"
+   ],
+   "status": "core",
+   "note": "outside Mumbai-influenced speech, serious moments; regional"
+  },
+  {
+   "phrase": "pareshani",
+   "slots": [
+    "trouble"
+   ],
+   "sign": -1,
+   "intensity": 1,
+   "kind": "slang_word",
+   "gender": "f",
+   "frame": null,
+   "context": null,
+   "controls": [
+    "ASSERT_FRUSTRATION"
+   ],
+   "status": "core",
+   "note": "when you want strong slang, it is fairly plain; safe"
+  },
+  {
+   "phrase": "headache",
+   "slots": [
+    "trouble"
+   ],
+   "sign": -1,
+   "intensity": 1,
+   "kind": "slang_word",
+   "gender": "m",
+   "frame": null,
+   "context": null,
+   "controls": [
+    "ASSERT_FRUSTRATION"
+   ],
+   "status": "core",
+   "note": "life-threatening or very emotional situations; safe"
+  },
+  {
+   "phrase": "tension",
+   "slots": [
+    "worry"
+   ],
+   "sign": -1,
+   "intensity": 1,
+   "kind": "slang_word",
+   "gender": "f",
+   "frame": null,
+   "context": null,
+   "controls": [
+    "ASSERT_ANXIETY",
+    "ASSERT_STRESS"
+   ],
+   "status": "core",
+   "note": "formal or very serious situations like illness or death; safe"
+  },
+  {
+   "phrase": "stress",
+   "slots": [
+    "worry"
+   ],
+   "sign": -1,
+   "intensity": 2,
+   "kind": "slang_word",
+   "gender": "m",
+   "frame": null,
+   "context": null,
+   "controls": [
+    "ASSERT_ANXIETY",
+    "ASSERT_STRESS"
+   ],
+   "status": "core",
+   "note": "sudden fright, like seeing a snake or a ghost; safe"
+  },
+  {
+   "phrase": "anxiety",
+   "slots": [
+    "worry"
+   ],
+   "sign": -1,
+   "intensity": 2,
+   "kind": "slang_word",
+   "gender": "f",
+   "frame": null,
+   "context": null,
+   "controls": [
+    "ASSERT_ANXIETY",
+    "ASSERT_STRESS"
+   ],
+   "status": "core",
+   "note": "talking to elders, or when joking about someone with a real medical condition; trendy"
+  },
+  {
+   "phrase": "panic",
+   "slots": [
+    "worry"
+   ],
+   "sign": -1,
+   "intensity": 2,
+   "kind": "slang_word",
+   "gender": "m",
+   "frame": null,
+   "context": null,
+   "controls": [
+    "ASSERT_ANXIETY",
+    "ASSERT_STRESS"
+   ],
+   "status": "core",
+   "note": "a slow, long-running worry; it suits sudden or urgent moments; safe"
+  },
+  {
+   "phrase": "nervous",
+   "slots": [
+    "worry"
+   ],
+   "sign": -1,
+   "intensity": 1,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [
+    "ASSERT_ANXIETY",
+    "ASSERT_STRESS"
+   ],
+   "status": "core",
+   "note": "deep grief or serious family worries; safe"
+  },
+  {
+   "phrase": "scary",
+   "slots": [
+    "worry"
+   ],
+   "sign": -1,
+   "intensity": 1,
+   "kind": "slang_word",
+   "gender": null,
+   "frame": null,
+   "context": null,
+   "controls": [
+    "ASSERT_ANXIETY",
+    "ASSERT_STRESS"
+   ],
+   "status": "core",
+   "note": "worry about the future or money; it fits only a frightening situation; safe"
+  },
+  {
+   "phrase": "dhukdhuki",
+   "slots": [
+    "worry"
+   ],
+   "sign": -1,
+   "intensity": 1,
+   "kind": "slang_word",
+   "gender": "f",
+   "frame": null,
+   "context": null,
+   "controls": [
+    "ASSERT_ANXIETY",
+    "ASSERT_STRESS"
+   ],
+   "status": "core",
+   "note": "serious or sad moments; it suits a nervous, anxious wait; safe"
+  }
+ ],
+ "slot_defs": {
+  "joy": {
+   "sign": 1,
+   "triggers": [
+    "khushi",
+    "khush",
+    "maza",
+    "mazaa"
+   ],
+   "note": "'mujhe bahut khushi ho rahi hai', 'bahut maza aa raha hai'"
+  },
+  "pride": {
+   "sign": 1,
+   "triggers": [
+    "garv",
+    "gurur",
+    "fakhr",
+    "naaz"
+   ],
+   "note": "'mujhe tum par garv hai'"
+  },
+  "anger": {
+   "sign": -1,
+   "triggers": [
+    "gussa",
+    "gussaa",
+    "naraaz",
+    "naraz"
+   ],
+   "note": "'mujhe bahut gussa aa raha hai'"
+  },
+  "like": {
+   "sign": 1,
+   "triggers": [
+    "pasand"
+   ],
+   "note": "'mujhe yeh bahut pasand aaya'"
+  }
+ }
+}
